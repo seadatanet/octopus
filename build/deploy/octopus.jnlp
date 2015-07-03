@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="octopus.jnlp">
+  <information>
+    <title>octopus</title>
+    <vendor>ifremer.fr</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="8.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="octopus.jar" size="59613" download="eager" />
+    <jar href="libs/commons-lang-2.6.jar" size="284220" download="eager" />
+    <jar href="libs/log4j-api-2.3.jar" size="135903" download="eager" />
+    <jar href="libs/log4j-core-2.3.jar" size="827024" download="eager" />
+    <jar href="libs/miglayout-core-4.2.jar" size="66663" download="eager" />
+    <jar href="libs/miglayout-javafx-4.2.jar" size="12601" download="eager" />
+  </resources>
+  <applet-desc  width="0" height="0" main-class="com.javafx.main.NoJavaFXFallback"  name="octopus" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="0" height="0" main-class="fr.ifremer.octopus.MainApp"  name="octopus" />
+  <update check="background"/>
+</jnlp>

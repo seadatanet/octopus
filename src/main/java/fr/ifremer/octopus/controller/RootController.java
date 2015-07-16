@@ -5,11 +5,12 @@ import javafx.fxml.FXML;
 
 
 
-public class MainController {
+public class RootController {
 	/**
 	 * Reference to the main application
 	 */
     private MainApp mainApp;
+    
     
     
     /**

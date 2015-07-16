@@ -35,50 +35,56 @@
 					<!-- optionally sign the jar file if security is needed -->
 					<!-- to create keystore use command line: keytool -genkey -alias example-user 
 						-keystore keystore.jks -->
-					<signJar>
-						<alias>example-user</alias>
-						<storePassword>example-password</storePassword>
-					</signJar>
+<!-- 					<signJar> -->
+<!-- 						<alias>example-user</alias> -->
+<!-- 						<storePassword>example-password</storePassword> -->
+<!-- 					</signJar> -->
 
 					<!-- optionally build webstart bundle -->
-					<webstart>
-						<requiresAllPermissions>true</requiresAllPermissions>
-					</webstart>
+<!-- 					<webstart> -->
+<!-- 						<requiresAllPermissions>true</requiresAllPermissions> -->
+<!-- 					</webstart> -->
 
 					<!-- optionally build native installers -->
-					<nativeInstallers>
+<!-- 					<nativeInstallers> -->
 
-					</nativeInstallers>
+<!-- 					</nativeInstallers> -->
 
 				</configuration>
 			</plugin>
 
 
-			<!-- Build an assembly distribution of sources and/or binaries -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>fr.ifremer.octopus.MainApp</mainClass>
-						</manifest>
-					</archive>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-				</configuration>
-				<executions>
-					<execution>
-						<id>make-assembly</id> <!-- this is used for inheritance merges -->
-						<phase>package</phase> <!-- bind to the packaging phase -->
-						<goals>
-							<goal>single</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-assembly-plugin</artifactId> -->
+<!-- 				<version>2.4</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>package-jar-with-dependencies</id> -->
+<!-- 						<phase>package</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>single</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+							<!-- final name do not contains version -->
+<!-- 							<finalName>${project.artifactId}</finalName> -->
+<!-- 							<appendAssemblyId>false</appendAssemblyId> -->
+<!-- 							<descriptorRefs> -->
+<!-- 								<descriptorRef>jar-with-dependencies</descriptorRef> -->
+<!-- 							</descriptorRefs> -->
+<!-- 							<archive> -->
+<!-- 								<manifest> -->
+<!-- 									<mainClass>fr.ifremer.octopus.MainApp</mainClass> -->
+<!-- 								</manifest> -->
+<!-- 							</archive> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
+
+
+			
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

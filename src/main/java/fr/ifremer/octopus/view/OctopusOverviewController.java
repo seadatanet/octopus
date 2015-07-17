@@ -1,6 +1,7 @@
-package fr.ifremer.octopus.controller;
+package fr.ifremer.octopus.view;
 
 import java.io.File;
+import java.io.IOException;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -10,21 +11,24 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import fr.ifremer.octopus.MainApp;
+import fr.ifremer.octopus.controller.OctopusGUIController;
 import fr.ifremer.octopus.model.OctopusModel;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 public class OctopusOverviewController {
-	
-	 static final Logger logger = LogManager.getLogger(OctopusOverviewController.class.getName());
-	 
-	 
+
+	static final Logger logger = LogManager.getLogger(OctopusOverviewController.class.getName());
+
+
 	/**
 	 *  Reference to the main application
 	 */
 	private MainApp mainApp;
-	private OctopusModel model;
+	private OctopusGUIController octopusGuiController;
+
+	
 
 	@FXML
 	private TextField inputPathTextField;
@@ -44,9 +48,9 @@ public class OctopusOverviewController {
 	private void inputChanged(KeyEvent event){
 
 		if (event.getCode()== KeyCode.ENTER || event.getCode()==KeyCode.TAB){
-			
+
 			File input = new File(inputPathTextField.getText());
-			
+
 			if (!input.exists()){
 				// Show the error message.
 				Alert alert = new Alert(AlertType.ERROR);
@@ -56,15 +60,16 @@ public class OctopusOverviewController {
 				alert.setContentText(inputPathTextField.getText() + " does not exist");
 				alert.showAndWait();
 			}else{
-				init(inputPathTextField.getText());
+				octopusGuiController = new OctopusGUIController(inputPathTextField.getText());
 			}
 		}
 	}
-	
-	private void init(String inputPath){
-		model = new OctopusModel(inputPath);
-		logTextArea.appendText("input path is a "+ (new File(inputPath).isDirectory()?"dir":"file"));
+
+	public void addLogLine(String line){
+		logTextArea.appendText(line + System.getProperty("line.separator"));
 	}
-	
+	public void setController(OctopusGUIController controller) {
+		this.octopusGuiController = controller;
+	}
 
 }

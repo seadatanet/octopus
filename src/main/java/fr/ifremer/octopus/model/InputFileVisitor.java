@@ -9,30 +9,36 @@ import java.nio.file.attribute.BasicFileAttributes;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import fr.ifremer.octopus.controller.Octopus;
+import fr.ifremer.octopus.controller.OctopusGUIController;
 
 public class InputFileVisitor extends SimpleFileVisitor<Path> {
+
+	static final Logger logger = LogManager.getLogger(InputFileVisitor.class.getName());
+	String firstFile;
 	
-	 static final Logger logger = LogManager.getLogger(InputFileVisitor.class.getName());
-	 
-	private Format format; 
-	
-	 @Override public FileVisitResult visitFile(
-		      Path aFile, BasicFileAttributes aAttrs
-		    ) throws IOException {
-		      System.out.println("Processing file:" + aFile);
-		      format =Octopus.getInstance().getFormat(aFile.toAbsolutePath().toString());
-		      return FileVisitResult.TERMINATE;
-		    }
-		    
-		    public Format getFormat() {
-		return format;
+//	private Format format; 
+
+	@Override public FileVisitResult visitFile(
+			Path aFile, BasicFileAttributes aAttrs
+			) throws IOException {
+//		OctopusGUIController.getInstance().log("Processing file:" + aFile);
+//		format =OctopusGUIController.getInstance().getFormat(aFile.toAbsolutePath().toString());
+		firstFile = aFile.toAbsolutePath().toString();
+		return FileVisitResult.TERMINATE;
 	}
 
-			@Override  public FileVisitResult preVisitDirectory(
-		      Path aDir, BasicFileAttributes aAttrs
-		    ) throws IOException {
-		      System.out.println("Processing directory:" + aDir);
-		      return FileVisitResult.CONTINUE;
-		    }
+//	public Format getFormat() {
+//		return format;
+//	}
+
+	public String getFirstFile() {
+		return firstFile;
+	}
+
+	@Override  public FileVisitResult preVisitDirectory(
+			Path aDir, BasicFileAttributes aAttrs
+			) throws IOException {
+//		OctopusGUIController.getInstance().log("Processing directory:" + aDir);
+		return FileVisitResult.CONTINUE;
+	}
 }

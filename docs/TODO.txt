@@ -1,0 +1,2 @@
+logs: ajouter niveau + class d'origine
+voir http://stackoverflow.com/questions/21475576/append-log4j2-output-to-textarea

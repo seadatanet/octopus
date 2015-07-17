@@ -15,27 +15,31 @@ import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import fr.ifremer.octopus.controller.RootController;
-import fr.ifremer.octopus.controller.OctopusOverviewController;
+import fr.ifremer.octopus.controller.BatchController;
+import fr.ifremer.octopus.controller.OctopusGUIController;
+import fr.ifremer.octopus.model.OctopusModel;
+import fr.ifremer.octopus.view.OctopusOverviewController;
+import fr.ifremer.octopus.view.RootController;
 
 public class MainApp extends Application {
 
-	private static final Logger log = LogManager.getLogger(MainApp.class);
+	private static final Logger logger = LogManager.getLogger(MainApp.class);
 
 	private Stage primaryStage;
 	private BorderPane rootLayout;
 
 
 	public static void main(String[] args) throws Exception {
-		log.info("Application launched with args: " );
-		for (String a : args){
-			log.info(a);
+		
+		if (args.length>0){
+			BatchController batch = new BatchController(args);
+		}else{
+			launch(args);
 		}
-		launch(args);
 	}
 	public void start(Stage primaryStage) throws Exception {
 
-		log.info("Starting Octopus application");
+		logger.info("Starting Octopus application");
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("Octopus");
 

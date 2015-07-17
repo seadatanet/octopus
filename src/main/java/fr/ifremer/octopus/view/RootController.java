@@ -1,4 +1,4 @@
-package fr.ifremer.octopus.controller;
+package fr.ifremer.octopus.view;
 
 import fr.ifremer.octopus.MainApp;
 import javafx.fxml.FXML;

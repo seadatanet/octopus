@@ -16,17 +16,26 @@ import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.InputFileVisitor;
 import fr.ifremer.octopus.model.OctopusModel;
 
-public class AbstractController {
-	
+public abstract class AbstractController {
+
 	private static final Logger logger = LogManager.getLogger(AbstractController.class);
 	private DriverManager driverManager = new DriverManagerImpl();
 	protected OctopusModel model;
 
 
+
 	public AbstractController() {
 		this.driverManager.registerNewDriver(new MedatlasDriverImpl());
 	}
-
+	
+	
+	public void init(File inputPath) throws IOException {
+			Format inputFormat = getFirstFileInputFormat(inputPath);
+			model = new OctopusModel(inputPath.getAbsolutePath());
+			model.setInputFormat(inputFormat);
+	}
+	
+	
 	public void process(){
 		// is output format different from input?
 		if (model.getInputFormat().equals(model.getOutputFormat())){
@@ -34,7 +43,7 @@ public class AbstractController {
 		}else{
 			logger.info("output and input format are identical: no need to convert");
 		}
-		
+
 	}
 	/**
 	 * 
@@ -45,6 +54,7 @@ public class AbstractController {
 	private Format getFormat(String file) throws IOException {
 		Driver d = getDriver(file);
 		if (d!=null){
+			logger.info("detected input format: "+d.getFormat().getName());
 			return d.getFormat();
 		}else{
 			throw new IOException("unrecognized input format");

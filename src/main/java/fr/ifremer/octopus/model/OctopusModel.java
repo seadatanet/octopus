@@ -36,21 +36,6 @@ public class OctopusModel {
 		this.cdiList= new ArrayList<>();
 		this.inputPath = new File(inputPath);
 	}
-	/**
-	 * 
-	 * @param inputPath
-	 * @param outputPath
-	 * @param outputFormat
-	 * @param outputType
-	 */
-	public OctopusModel(String inputPath, String outputPath, Format outputFormat, OUTPUT_TYPE outputType)  {
-		this.cdiList= new ArrayList<>();
-		this.inputPath = new File(inputPath);
-		this.setOutputPath(outputPath);
-		this.outputFormat = outputFormat;
-		this.setOutputType(outputType);
-	}
-	
 	
 	public File getInputPath() {
 		return inputPath;

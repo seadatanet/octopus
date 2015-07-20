@@ -29,26 +29,15 @@ public class OctopusGUIController extends AbstractController{
 		super();
 	}
 
-
-	public OctopusGUIController(String inputPath) {
+	public OctopusGUIController(String inputPath)  {
 		super();
-		init(new File(inputPath));
-	}
-
-
-
-	public void log(String logLine){
-		if (octopusOverviewController!=null){
-			octopusOverviewController.addLogLine(logLine);
+		try {
+			init(new File(inputPath));
+		} catch (IOException e) {
+			logger.error("init error");
+			logger.error(e.getMessage());
 		}
-		logger.info(logLine);
 	}
-
-	
-	
-
-
-
 
 	public void setOctopusOverviewController(
 			OctopusOverviewController controller) {
@@ -57,15 +46,7 @@ public class OctopusGUIController extends AbstractController{
 	}
 
 
-	public void init(File inputPath) {
-		model = new OctopusModel(inputPath.getAbsolutePath());
-		try {
-			model.setInputFormat(getFirstFileInputFormat(inputPath));
-		} catch (IOException e) {
-			log("error input format");
-			e.printStackTrace();
-		}
+	
 
-	}
 
 }

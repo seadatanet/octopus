@@ -43,7 +43,14 @@ public class BatchController extends AbstractController{
 		
 
 		initOptionsParser();
+		parseAndFill(args);
+		
+		process();
 
+	}
+
+
+	private void parseAndFill(String[] args) {
 		try {
 			CommandLine cmd = parser.parse( options, args);
 
@@ -77,33 +84,25 @@ public class BatchController extends AbstractController{
 			logger.info("output format: " +outputFormat );
 			logger.info("output type: " + type);
 			
-			init(inputPath, outputPath, outputFormat, type);
+			checkInput(new File(inputPath));
 			
-
-		} catch (ParseException e) {
-			e.printStackTrace();
-			logAndExit();
-		}
-
-	}
-
-	private void init(String inputPath, String outputPath, Format outputFormat, OUTPUT_TYPE type) {
-		
-		
-		checkInput(new File(inputPath));
-			try {
-				Format inputFormat = getFirstFileInputFormat(new File(inputPath));
-				logger.info("detected input format: "+ inputFormat.getName());
-				
+			try{
+				init(new File(inputPath));
 			} catch (IOException e) {
+				logger.error("input Path error");
 				System.exit(INPUT_ERROR_EXIT_CODE);
 			}
-			model = new OctopusModel(
-					inputPath,
-					outputPath,
-					outputFormat,
-					type);
+			
+			model.setOutputFormat(outputFormat);
+			model.setOutputPath(outputPath);
+			model.setOutputType(type);
+
+		} catch (ParseException e) {
+			logger.error(e.getMessage());
+			logAndExit();
+		}
 	}
+
 
 	public BatchController(String[] args)  {
 		this(args, false);
@@ -175,4 +174,5 @@ public class BatchController extends AbstractController{
 		}
 
 	}
+
 }

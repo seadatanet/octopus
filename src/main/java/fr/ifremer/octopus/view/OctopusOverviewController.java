@@ -32,8 +32,8 @@ public class OctopusOverviewController {
 
 	@FXML
 	private TextField inputPathTextField;
-	@FXML
-	private TextArea logTextArea;
+	// to keep the current value, to be able to detect a change
+	private String inputPathTmp="";
 
 
 	/**
@@ -46,9 +46,10 @@ public class OctopusOverviewController {
 	}
 	@FXML
 	private void inputChanged(KeyEvent event){
-
-		if (event.getCode()== KeyCode.ENTER || event.getCode()==KeyCode.TAB){
-
+		if ( (event.getCode()== KeyCode.ENTER || event.getCode()==KeyCode.TAB)&& 
+				! inputPathTmp.equals(inputPathTextField.getText())	)
+				{
+			inputPathTmp = inputPathTextField.getText();
 			File input = new File(inputPathTextField.getText());
 
 			if (!input.exists()){
@@ -65,9 +66,6 @@ public class OctopusOverviewController {
 		}
 	}
 
-	public void addLogLine(String line){
-		logTextArea.appendText(line + System.getProperty("line.separator"));
-	}
 	public void setController(OctopusGUIController controller) {
 		this.octopusGuiController = controller;
 	}

@@ -42,7 +42,7 @@ public class BatchTest {
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
-			Assert.assertTrue(b.model.getInputPath().getAbsolutePath().equals(pwd+"medatlas/diap"));
+			Assert.assertTrue(b.model.getInputPath().equals(pwd+"medatlas/diap"));
 			Assert.assertTrue(b.model.getOutputPath().equals(pwd+"out"));
 			Assert.assertTrue(b.model.getOutputFormat().equals(Format.MEDATLAS_SDN));
 			Assert.assertTrue(b.model.getOutputType().equals(OUTPUT_TYPE.MONO));

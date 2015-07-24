@@ -1,0 +1,83 @@
+package fr.ifremer.octopus.controller;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import fr.ifremer.octopus.io.driver.Driver;
+import fr.ifremer.octopus.io.driver.DriverManager;
+import fr.ifremer.octopus.io.driver.impl.CFPointDriverImpl;
+import fr.ifremer.octopus.io.driver.impl.DriverManagerImpl;
+import fr.ifremer.octopus.io.driver.impl.MedatlasSDNDriverImpl;
+import fr.ifremer.octopus.io.driver.impl.OdvSDNDriverImpl;
+import fr.ifremer.octopus.model.Format;
+
+public class DriverTest {
+	private static final Logger LOGGER = LogManager.getLogger(DriverTest.class);
+	private static String PWD = null;
+	private static DriverManager driverManager = null;
+	
+	@BeforeClass
+	public static void before(){
+		PWD = new File("##").getAbsolutePath().replace("#", "") + "src/test/resources/";
+		driverManager = new DriverManagerImpl();
+		driverManager.registerNewDriver(new MedatlasSDNDriverImpl());
+		driverManager.registerNewDriver(new OdvSDNDriverImpl());
+		driverManager.registerNewDriver(new CFPointDriverImpl());
+	}
+	
+	@Test
+	public void medSDNTest() {
+		
+		try {
+			Driver d = driverManager.findDriverForFile(PWD+"medatlas/diap");
+			LOGGER.info(d.getFormat());
+			Assert.assertTrue(d.getFormat().equals(Format.MEDATLAS_SDN));
+		} catch (IOException e) {
+			LOGGER.error(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	@Test
+	public void medNonSDNTest() {
+		
+		try {
+			Driver d = driverManager.findDriverForFile(PWD+"medatlas/medatlasNonSdn.med");
+			LOGGER.info(d.getFormat());
+			Assert.assertTrue(d.getFormat().equals(Format.MEDATLAS_NON_SDN));
+		} catch (IOException e) {
+			LOGGER.error(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	@Test
+	public void odvTtest() {
+		
+		try {
+			Driver d = driverManager.findDriverForFile(PWD+"odv/diap.txt");
+			LOGGER.info(d.getFormat());
+			Assert.assertTrue(d.getFormat().equals(Format.ODV_SDN));
+		} catch (IOException e) {
+			LOGGER.error(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	@Test
+	public void cfPointTest() {
+		
+		try {
+			Driver d = driverManager.findDriverForFile(PWD+"cfpoint/diap.nc");
+			LOGGER.info(d.getFormat());
+			Assert.assertTrue(d.getFormat().equals(Format.CFPOINT));
+		} catch (IOException e) {
+			LOGGER.error(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+}

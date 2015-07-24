@@ -10,38 +10,90 @@ import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.io.driver.Driver;
 import fr.ifremer.octopus.io.driver.DriverManager;
+import fr.ifremer.octopus.io.driver.impl.CFPointDriverImpl;
 import fr.ifremer.octopus.io.driver.impl.DriverManagerImpl;
-import fr.ifremer.octopus.io.driver.impl.MedatlasDriverImpl;
+import fr.ifremer.octopus.io.driver.impl.MedatlasSDNDriverImpl;
+import fr.ifremer.octopus.io.driver.impl.OdvSDNDriverImpl;
+import fr.ifremer.octopus.model.Conversion;
 import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.InputFileVisitor;
 import fr.ifremer.octopus.model.OctopusModel;
 
 public abstract class AbstractController {
 
-	private static final Logger logger = LogManager.getLogger(AbstractController.class);
+	private static final Logger LOGGER = LogManager.getLogger(AbstractController.class);
+
+	protected static String CDI_SEPARATOR=",";
+
+
 	private DriverManager driverManager = new DriverManagerImpl();
 	protected OctopusModel model;
+	/**
+	 * Required conversion deduced from input and output formats
+	 */
+	private Conversion conversion;
 
 
 
 	public AbstractController() {
-		this.driverManager.registerNewDriver(new MedatlasDriverImpl());
+		this.driverManager.registerNewDriver(new MedatlasSDNDriverImpl());
+		this.driverManager.registerNewDriver(new OdvSDNDriverImpl());
+		this.driverManager.registerNewDriver(new CFPointDriverImpl());
 	}
-	
-	
+
+
 	public void init(File inputPath) throws IOException {
-			Format inputFormat = getFirstFileInputFormat(inputPath);
-			model = new OctopusModel(inputPath.getAbsolutePath());
-			model.setInputFormat(inputFormat);
+		Format inputFormat = getFirstFileInputFormat(inputPath);
+		model = new OctopusModel(inputPath.getAbsolutePath());
+		model.setInputFormat(inputFormat);
 	}
-	
-	
-	public void process(){
-		// is output format different from input?
+	protected void abort(){
+		LOGGER.info("abort"); // TODO msg
+	}
+
+	/**
+	 * Process split and/or conversion
+	 * @throws OctopusException 
+	 */
+	public void process() throws OctopusException{
+		checkInputOutputFormatCompliance();
+
+		if (model.getCdiList().isEmpty()){
+			LOGGER.info("all CDIs exported");
+		}
+	}
+
+	/**
+	 * 
+	 * @return true if conversion is none or an available conversion type, false if conversion is not available
+	 * @throws OctopusException 
+	 */
+	private void checkInputOutputFormatCompliance() throws OctopusException{
 		if (model.getInputFormat().equals(model.getOutputFormat())){
-			logger.info("output format is different from input: need to convert");
+			LOGGER.info("output and input formats are identical: no need to convert");
+			conversion = Conversion.NONE;
 		}else{
-			logger.info("output and input format are identical: no need to convert");
+
+			switch (model.getInputFormat()) {
+			case MEDATLAS_SDN:
+				if (model.getOutputFormat().equals(Format.ODV_SDN)){
+					conversion = Conversion.MEDATLAS_SDN_TO_ODV_SDN;
+				}else if(model.getOutputFormat().equals(Format.CFPOINT)){
+					conversion = Conversion.MEDATLAS_SDN_TO_CF_POINT;
+				}
+				break;
+			case ODV_SDN:
+				if(model.getOutputFormat().equals(Format.CFPOINT)){
+					conversion = Conversion.ODV_SDN_TO_CFPOINT;
+				}else if(model.getOutputFormat().equals(Format.MEDATLAS_SDN)){
+					throw new OctopusException("format " + model.getInputFormat() + " can not be converted to " + model.getOutputFormat().getName());
+				}
+				break;
+			case CFPOINT:
+				throw new OctopusException("format " + model.getInputFormat() + " can not be converted to " + model.getOutputFormat().getName());
+			default:
+				break;
+			}
 		}
 
 	}
@@ -54,7 +106,7 @@ public abstract class AbstractController {
 	private Format getFormat(String file) throws IOException {
 		Driver d = getDriver(file);
 		if (d!=null){
-			logger.info("detected input format: "+d.getFormat().getName());
+			LOGGER.info("detected input format: "+d.getFormat().getName());
 			return d.getFormat();
 		}else{
 			throw new IOException("unrecognized input format");

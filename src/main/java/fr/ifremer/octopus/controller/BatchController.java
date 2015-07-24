@@ -19,126 +19,154 @@ import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 
 public class BatchController extends AbstractController{
-	private static final Logger logger = LogManager.getLogger(BatchController.class);
+	private static final Logger LOGGER = LogManager.getLogger(BatchController.class);
 	private boolean isJunitTest ;
-	
+
 	private Options options;
 	private CommandLineParser parser ;
 	private HelpFormatter formatter;
 
-	private String OPTION_I = "i";
-	private String OPTION_O = "o";
-	private String OPTION_F = "f";
-	private String OPTION_T = "t";
-	private String OPTION_CDI = "cdi";
+	private static String OPTION_I = "i";
+	private static String OPTION_O = "o";
+	private static String OPTION_F = "f";
+	private static String OPTION_T = "t";
+	private static String OPTION_CDI = "cdi";
 	private List<String> mandatory_options = new ArrayList<>();
 
+
+	private static int OK_EXIT_CODE = 0;
 	private static int BAD_OPTIONS_EXIT_CODE = 1;
 	private static int INPUT_ERROR_EXIT_CODE = 2;
+	private static int PROCESS_ERROR_EXIT_CODE = 3;
 
 
-	public BatchController(String[] args, boolean isJunitTest)  {
+	public BatchController(String[] args) throws OctopusException  {
+		this(args, false);
+	}
+	
+	public BatchController(String[] args, boolean isJunitTest) throws OctopusException   {
 		super();
 		this.isJunitTest = isJunitTest;
-		
-
 		initOptionsParser();
-		parseAndFill(args);
-		
-		process();
+		try {
+			parseAndFill(args);
+		} catch (OctopusException e1) {
+			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
+		} catch (IOException e1) {
+			exit(INPUT_ERROR_EXIT_CODE, e1);
+		} catch (ParseException e1) {
+			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
+		}
+
+
+		try {
+			process();
+		} catch (OctopusException e1) {
+			exit(PROCESS_ERROR_EXIT_CODE, e1);
+		}
+			exit(OK_EXIT_CODE, null);
 
 	}
 
 
-	private void parseAndFill(String[] args) {
+
+
+	private void parseAndFill(String[] args) throws OctopusException, IOException, ParseException {
 		try {
 			CommandLine cmd = parser.parse( options, args);
 
 			// check mandatory options are present
 			for (String option : mandatory_options){
 				if (!cmd.hasOption(option)){
-					logger.error("missing option " + option);
-					logAndExit();
+					throw new OctopusException("missing option " + option);
 				}
 			}
-			
+
 			// check mandatory options values
 			String inputPath = cmd.getOptionValue(OPTION_I).trim();
 			if (inputPath.isEmpty()){
-				logger.error("input path is empty");
-				logAndExit();
-				
+				throw new OctopusException("input path is empty");
+
 			}
 			String outputPath = cmd.getOptionValue(OPTION_O).trim();
 			if (outputPath.isEmpty()){
-				logger.error("output path is empty");
-				logAndExit();
+				throw new OctopusException("output path is empty");
 			}
 			Format outputFormat = getFormatFromBatchArg(cmd.getOptionValue(OPTION_F));
 			OUTPUT_TYPE type = getType(cmd.getOptionValue(OPTION_T));
-			
+
+			String cdiList = cmd.getOptionValue(OPTION_CDI);
+			List<String> list =null;
+			if (cdiList!=null){
+				cdiList = cdiList.trim();
+				list = new ArrayList<>();
+				for (String cdi: cdiList.split(CDI_SEPARATOR)){
+					list.add(cdi.trim());
+				}
+			}
+
+
 			// log
-			logger.info("octopus batch mode arguments:");
-			logger.info("input path: " + inputPath);
-			logger.info("output path: " + outputPath);
-			logger.info("output format: " +outputFormat );
-			logger.info("output type: " + type);
-			
+			LOGGER.info("octopus batch mode arguments:");
+			LOGGER.info("input path: " + inputPath);
+			LOGGER.info("output path: " + outputPath);
+			LOGGER.info("output format: " +outputFormat );
+			LOGGER.info("output type: " + type);
+			LOGGER.info("CDI list: " + cdiList);
+
 			checkInput(new File(inputPath));
-			
+
 			try{
 				init(new File(inputPath));
 			} catch (IOException e) {
-				logger.error("input Path error");
-				System.exit(INPUT_ERROR_EXIT_CODE);
+				LOGGER.error("input Path error");
+				throw e;
 			}
 			
 			model.setOutputFormat(outputFormat);
 			model.setOutputPath(outputPath);
 			model.setOutputType(type);
+			if (cdiList!=null){
+				model.setCdiList(list);
+			}
+
 
 		} catch (ParseException e) {
-			logger.error(e.getMessage());
-			logAndExit();
+			LOGGER.error(e.getMessage());
+			throw e;
 		}
 	}
 
 
-	public BatchController(String[] args)  {
-		this(args, false);
-	}
+	
 
-	private Format getFormatFromBatchArg(String optionValue)  {
-		if (optionValue.trim().equalsIgnoreCase((Format.MEDATLAS_SDN.getName()))){
+	private Format getFormatFromBatchArg(String optionValue) throws OctopusException   {
+		if (optionValue.trim().equalsIgnoreCase(Format.MEDATLAS_SDN.getName())){
 			return Format.MEDATLAS_SDN;
 		}
-		if (optionValue.trim().equalsIgnoreCase((Format.ODV_SDN.getName()))){
+		if (optionValue.trim().equalsIgnoreCase(Format.ODV_SDN.getName())){
 			return Format.ODV_SDN;
 		}
-		if (optionValue.trim().equalsIgnoreCase((Format.CFPOINT.getName()))){
+		if (optionValue.trim().equalsIgnoreCase(Format.CFPOINT.getName())){
 			return Format.CFPOINT;
 		}
-		logger.error("unrecognized output format");
-		logAndExit();
-		return null;
+		throw new OctopusException("unrecognized output format");
 	}
 
-	private OUTPUT_TYPE getType(String optionValue)  {
-		if (optionValue.trim().equalsIgnoreCase((OctopusModel.OUTPUT_TYPE.MONO.toString()))){
+	private OUTPUT_TYPE getType(String optionValue) throws OctopusException  {
+		if (optionValue.trim().equalsIgnoreCase(OctopusModel.OUTPUT_TYPE.MONO.toString())){
 			return OctopusModel.OUTPUT_TYPE.MONO;
 		}
-		if (optionValue.trim().equalsIgnoreCase((OctopusModel.OUTPUT_TYPE.MULTI.toString()))){
+		if (optionValue.trim().equalsIgnoreCase(OctopusModel.OUTPUT_TYPE.MULTI.toString())){
 			return OctopusModel.OUTPUT_TYPE.MULTI;
 		}
-		logger.error("unrecognized output type");
-		logAndExit();
-		return null;
+		throw new OctopusException("unrecognized output type");
 	}
 
 	private void initOptionsParser(){
 		// create Options object
 		options = new Options();
-		
+
 		options.addOption(OPTION_I, true, "(mandatory) input path: </home/user/...>");
 		options.addOption(OPTION_O, true, "(mandatory) output path: </home/user/...>");
 		options.addOption(OPTION_F, true, "(mandatory) output format: <medatlas>, <odv> or <cfpoint>");
@@ -156,23 +184,27 @@ public class BatchController extends AbstractController{
 		formatter = new HelpFormatter();
 	}
 
-	
-	private int logAndExit() {
+
+
+	private void logAndExit(int code, Exception e1)throws OctopusException  {
 		formatter.printHelp( "octopus", options , true);
+		exit(code, e1);
+		
+	}
+	private void exit(int code, Exception e1) throws OctopusException {
 		if (!isJunitTest){
-			System.exit(BAD_OPTIONS_EXIT_CODE);
-			return BAD_OPTIONS_EXIT_CODE;
+			System.exit(code);
 		}else{
-			return BAD_OPTIONS_EXIT_CODE;
+			if (code!=OK_EXIT_CODE){
+				throw new OctopusException(e1);
+			}
 		}
 	}
-	
-	private void checkInput(File inputPath)  {
+
+	private void checkInput(File inputPath) throws OctopusException  {
 		if (!inputPath.exists()){
-			logger.error("input path is not a valid directory or file path"); // TODO internat
-			logAndExit();
+			throw new OctopusException("input path is not a valid directory or file path"); // TODO: internat
 		}
 
 	}
-
 }

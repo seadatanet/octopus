@@ -10,8 +10,9 @@ import fr.ifremer.octopus.model.Format;
  * @author Altran
  *
  */
-public interface Driver {
+public abstract class Driver {
 
+	protected  Format format = null;
 	/**
 	 * 
 	 * @param file
@@ -19,8 +20,10 @@ public interface Driver {
 	 * @throws IOException 
 	 */
 	
-	boolean canOpen(String file) throws IOException;
+	public abstract boolean canOpen(String file) throws IOException;
 
-	Format getFormat();
+	public Format getFormat() {
+		return format;
+	}
 
 }

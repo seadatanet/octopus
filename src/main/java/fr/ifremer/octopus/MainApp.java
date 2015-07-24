@@ -23,7 +23,7 @@ import fr.ifremer.octopus.view.RootController;
 
 public class MainApp extends Application {
 
-	private static final Logger logger = LogManager.getLogger(MainApp.class);
+	private static final Logger LOGGER = LogManager.getLogger(MainApp.class);
 
 	private Stage primaryStage;
 	private BorderPane rootLayout;
@@ -37,9 +37,11 @@ public class MainApp extends Application {
 			launch(args);
 		}
 	}
+	
+	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		logger.info("Starting Octopus application");
+		LOGGER.info("Starting Octopus application");
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("Octopus");
 
@@ -75,7 +77,7 @@ public class MainApp extends Application {
 
 			primaryStage.show();
 		} catch (IOException e) {
-			e.printStackTrace();
+			LOGGER.error(e.getMessage());
 		}
 
 	}
@@ -95,7 +97,7 @@ public class MainApp extends Application {
 			controller.setMainApp(this);
 
 		} catch (IOException e) {
-			e.printStackTrace();
+			LOGGER.error(e.getMessage());
 		}
 	}
 }

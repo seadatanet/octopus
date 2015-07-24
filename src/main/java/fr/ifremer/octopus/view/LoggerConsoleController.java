@@ -34,7 +34,7 @@ import org.apache.logging.log4j.core.config.LoggerConfig;
  *
  */
 public class LoggerConsoleController {
-    static final Logger logger = LogManager.getLogger(LoggerConsoleController.class.getName());
+    static final Logger LOGGER = LogManager.getLogger(LoggerConsoleController.class.getName());
 
     @FXML
     private ListView<String> listViewLog;
@@ -90,7 +90,7 @@ public class LoggerConsoleController {
             pIn = new PipedInputStream(pOut);
         }
         catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.error(e.getMessage());
         }
         BufferedReader reader = new BufferedReader(new InputStreamReader(pIn));
 
@@ -116,7 +116,7 @@ public class LoggerConsoleController {
                         }
                     }
                     catch (IOException e) {
-                        e.printStackTrace();
+                        LOGGER.error(e.getMessage());
                     }
                 }
                 return null;

@@ -19,7 +19,7 @@ import org.apache.logging.log4j.LogManager;
 
 public class OctopusOverviewController {
 
-	static final Logger logger = LogManager.getLogger(OctopusOverviewController.class.getName());
+	static final Logger LOGGER = LogManager.getLogger(OctopusOverviewController.class.getName());
 
 
 	/**

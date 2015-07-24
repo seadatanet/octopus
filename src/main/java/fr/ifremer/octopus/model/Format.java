@@ -1,11 +1,10 @@
 package fr.ifremer.octopus.model;
 
 public enum Format {
-
-	MEDATLAS_SDN("medatlas"),
-	ODV_SDN("odv"),
-	CFPOINT("cfpoint"),
-	UNKNOWN("unknown");
+	MEDATLAS_NON_SDN("MEDATLAS NON SDN"),
+	MEDATLAS_SDN("MEDATLAS"),
+	ODV_SDN("ODV"),
+	CFPOINT("CFPoint");
 
 	String name;
 

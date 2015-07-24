@@ -5,6 +5,7 @@ import java.io.File;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import fr.ifremer.octopus.model.Format;
@@ -25,66 +26,87 @@ import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
  */
 public class BatchTest {
 	private static final Logger logger = LogManager.getLogger(BatchTest.class);
+	private static  String pwd ;
 	
+	@BeforeClass
+	public static void before(){
+		pwd = new File("##").getAbsolutePath().replace("#", "") + "src/test/resources/";
+	}
 	
 	@Test
 	public void goodArgsTest() {
 		BatchController b = null ;
-		String[] args = new String[]{"-i resources/diap", "-o resources/out", "-f medatlas", "-t mono"};
+		String in="-i "+pwd+"medatlas/diap";
+		String out = "-o "+pwd+"out";
+		String[] args = new String[]{in, out, "-f medatlas", "-t mono"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
+			Assert.assertTrue(b.model.getInputPath().getAbsolutePath().equals(pwd+"medatlas/diap"));
+			Assert.assertTrue(b.model.getOutputPath().equals(pwd+"out"));
+			Assert.assertTrue(b.model.getOutputFormat().equals(Format.MEDATLAS_SDN));
+			Assert.assertTrue(b.model.getOutputType().equals(OUTPUT_TYPE.MONO));
 		}catch (Exception e){
-
+			logger.error("JUNIT TEST ERROR");
+		
 		}
-		String pwd = new File("##").getAbsolutePath().replace("#", "");
-		Assert.assertTrue(b.model.getInputPath().getAbsolutePath().equals(pwd+"resources/diap"));
-		Assert.assertTrue(b.model.getOutputPath().equals("resources/out"));
-		Assert.assertTrue(b.model.getOutputFormat().equals(Format.MEDATLAS_SDN));
-		Assert.assertTrue(b.model.getOutputType().equals(OUTPUT_TYPE.MONO));
+		
+		
 	}
 	@Test
 	public void EmptyInputTest() {
 		BatchController b = null ;
-		String[] args = new String[]{"-i ", "-o resources/out", "-f medatlas", "-t mono"};
+		String in="-i ";
+		String out = "-o "+pwd+"out";
+		String[] args = new String[]{in, out, "-f medatlas", "-t mono"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
 		}catch (Exception e){
-			Assert.assertTrue(e.getMessage().equals("exit"));
+			logger.info(e.getMessage());
+			Assert.assertTrue(e.getMessage().endsWith("input path is empty"));
 		}
 	}
 	@Test
 	public void emptyOutputTest(){
 		BatchController b = null ;
-		String[] args = new String[]{"-i resources/diap", "-o ", "-f medatlas", "-t mono"};
+		String in="-i "+pwd+"medatlas/diap";
+		String out = "-o ";
+		String[] args = new String[]{in, out, "-f medatlas", "-t mono"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
 		}catch (Exception e){
-			Assert.assertTrue(e.getMessage().equals("exit"));
+			logger.info(e.getMessage());
+			Assert.assertTrue(e.getMessage().endsWith("output path is empty"));
 		}
 	}
 	@Test
 	public void unrecognizedOutputFormatTest(){
 		BatchController b = null ;
-		String[] args = new String[]{"-i resources/diap", "-o resources/out", "-f toto", "-t mono"};
+		String in="-i "+pwd+"medatlas/diap";
+		String out = "-o "+pwd+"out";
+		String[] args = new String[]{in, out, "-f toto", "-t mono"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
 		}catch (Exception e){
-			Assert.assertTrue(e.getMessage().equals("exit"));
+			logger.info(e.getMessage());
+			Assert.assertTrue(e.getMessage().endsWith("unrecognized output format"));
 		}
 	}
 	@Test
 	public void unrecognizedOutputTypeTest(){
 		BatchController b = null ;
-		String[] args = new String[]{"-i resources/diap", "-o resources/out", "-f medatlas", "-t toto"};
+		String in="-i "+pwd+"medatlas/diap";
+		String out = "-o "+pwd+"out";
+		String[] args = new String[]{in, out, "-f medatlas", "-t toto"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
 		}catch (Exception e){
-			Assert.assertTrue(e.getMessage().equals("exit"));
+			logger.info(e.getMessage());
+			Assert.assertTrue(e.getMessage().endsWith("unrecognized output type"));
 		}
 	}
 

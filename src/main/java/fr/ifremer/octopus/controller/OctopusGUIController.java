@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 import fr.ifremer.octopus.io.driver.Driver;
 import fr.ifremer.octopus.io.driver.DriverManager;
 import fr.ifremer.octopus.io.driver.impl.DriverManagerImpl;
-import fr.ifremer.octopus.io.driver.impl.MedatlasDriverImpl;
+import fr.ifremer.octopus.io.driver.impl.MedatlasSDNDriverImpl;
 import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.InputFileVisitor;
 import fr.ifremer.octopus.model.OctopusModel;
@@ -19,7 +19,7 @@ import fr.ifremer.octopus.view.OctopusOverviewController;
 
 public class OctopusGUIController extends AbstractController{
 
-	static final Logger logger = LogManager.getLogger(OctopusGUIController.class.getName());
+	static final Logger LOGGER = LogManager.getLogger(OctopusGUIController.class.getName());
 
 
 	private OctopusOverviewController octopusOverviewController;
@@ -34,8 +34,8 @@ public class OctopusGUIController extends AbstractController{
 		try {
 			init(new File(inputPath));
 		} catch (IOException e) {
-			logger.error("init error");
-			logger.error(e.getMessage());
+			LOGGER.error("init error");
+			LOGGER.error(e.getMessage());
 		}
 	}
 
@@ -44,6 +44,8 @@ public class OctopusGUIController extends AbstractController{
 		this.octopusOverviewController = controller;
 
 	}
+
+	
 
 
 	

@@ -8,6 +8,12 @@ import java.nio.file.Paths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import sdn.vocabulary.implementations.CollectionFactory;
+import sdn.vocabulary.interfaces.ICollectionFactory;
+import sdn.vocabulary.interfaces.VocabularyException;
+import fr.ifremer.medatlas.Medatlas2CFPointConverter;
+import fr.ifremer.medatlas.exceptions.ConverterException;
+import fr.ifremer.medatlas.exceptions.MedatlasReaderException;
 import fr.ifremer.octopus.io.driver.Driver;
 import fr.ifremer.octopus.io.driver.DriverManager;
 import fr.ifremer.octopus.io.driver.impl.CFPointDriverImpl;
@@ -18,6 +24,8 @@ import fr.ifremer.octopus.model.Conversion;
 import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.InputFileVisitor;
 import fr.ifremer.octopus.model.OctopusModel;
+import fr.ifremer.octopus.utils.SDNVocabs;
+import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 public abstract class AbstractController {
 
@@ -35,10 +43,12 @@ public abstract class AbstractController {
 
 
 
-	public AbstractController() {
+	public AbstractController()  {
 		this.driverManager.registerNewDriver(new MedatlasSDNDriverImpl());
 		this.driverManager.registerNewDriver(new OdvSDNDriverImpl());
 		this.driverManager.registerNewDriver(new CFPointDriverImpl());
+
+
 	}
 
 
@@ -54,15 +64,63 @@ public abstract class AbstractController {
 	/**
 	 * Process split and/or conversion
 	 * @throws OctopusException 
+	 * @throws VocabularyException 
 	 */
-	public void process() throws OctopusException{
+	public void process() throws OctopusException {
 		checkInputOutputFormatCompliance();
 
 		if (model.getCdiList().isEmpty()){
 			LOGGER.info("all CDIs exported");
 		}
+
+		try {
+			File in = new File(model.getInputPath());
+			if (in.isDirectory()){
+				for (File f: in.listFiles())
+					processFile (f);
+			}else{
+				processFile (in);
+			}
+		} catch (ConverterException e) {
+			LOGGER.error(e.getMessage());
+			throw new OctopusException(e);
+		} catch (VocabularyException e) {
+			LOGGER.error(e.getMessage());
+			throw new OctopusException(e);
+		} catch (MedatlasReaderException e) {
+			LOGGER.error(e.getMessage());
+			throw new OctopusException(e);
+		}
+
 	}
 
+	private void processFile(File in) throws ConverterException, VocabularyException, MedatlasReaderException {
+		String unitsTranslationFileName = "unitsTranslation.xml";
+
+		
+		// TODO Process cases
+		if (! model.getCdiList().isEmpty()){
+			// 	split
+		}
+		
+		
+		
+		
+		if (conversion==Conversion.MEDATLAS_SDN_TO_CF_POINT){
+			createOutputDir();
+			Medatlas2CFPointConverter conv = new Medatlas2CFPointConverter(" from Octopus", 
+					SDNVocabs.getInstance().getCf(),
+					unitsTranslationFileName);
+
+			conv.processFile(in.getAbsolutePath(), model.getOutputPath(), model.isMono(), true);
+		}
+
+	}
+
+	private void createOutputDir(){
+		File out = new File(model.getOutputPath());
+		out.mkdir();
+	}
 	/**
 	 * 
 	 * @return true if conversion is none or an available conversion type, false if conversion is not available
@@ -92,7 +150,7 @@ public abstract class AbstractController {
 			case CFPOINT:
 				throw new OctopusException("format " + model.getInputFormat() + " can not be converted to " + model.getOutputFormat().getName());
 			default:
-				break;
+				throw new OctopusException("not implemented: " +  model.getInputFormat() + " to " + model.getOutputFormat().getName());
 			}
 		}
 

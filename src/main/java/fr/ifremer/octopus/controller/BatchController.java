@@ -14,6 +14,7 @@ import org.apache.commons.cli.ParseException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
@@ -40,7 +41,7 @@ public class BatchController extends AbstractController{
 	private static int PROCESS_ERROR_EXIT_CODE = 3;
 
 
-	public BatchController(String[] args) throws OctopusException  {
+	public BatchController(String[] args) throws OctopusException, VocabularyException  {
 		this(args, false);
 	}
 	
@@ -63,7 +64,7 @@ public class BatchController extends AbstractController{
 			process();
 		} catch (OctopusException e1) {
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
-		}
+		} 
 			exit(OK_EXIT_CODE, null);
 
 	}

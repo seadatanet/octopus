@@ -1,27 +1,15 @@
 package fr.ifremer.octopus.model;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import fr.ifremer.octopus.controller.OctopusGUIController;
-
 public class OctopusModel {
 
-	static final Logger logger = LogManager.getLogger(OctopusModel.class.getName());
 
 	public enum OUTPUT_TYPE {MONO, MULTI};
-	
-	private File inputPath;
+
+	private String inputPath;
 	private Format inputFormat;
 	private String outputPath;
 	private Format outputFormat;
@@ -34,17 +22,16 @@ public class OctopusModel {
 	 */
 	public OctopusModel(String inputPath)  {
 		this.cdiList= new ArrayList<>();
-		this.inputPath = new File(inputPath);
-	}
-	
-	public File getInputPath() {
-		return inputPath;
-	}
-
-	public void setInputPath(File inputPath) {
 		this.inputPath = inputPath;
 	}
 
+	public String getInputPath() {
+		return inputPath;
+	}
+
+	public void setInputPath(String inputPath) {
+		this.inputPath = inputPath;
+	}
 	public Format getOutputFormat() {
 		return outputFormat;
 	}
@@ -67,7 +54,7 @@ public class OctopusModel {
 
 	public void setInputFormat(Format inputFormat) {
 		this.inputFormat = inputFormat;
-		
+
 	}
 	public String getOutputPath() {
 		return outputPath;
@@ -82,6 +69,10 @@ public class OctopusModel {
 		this.outputType = outputType;
 	}
 
-	
+	public boolean isMono() {
+		return outputType==OUTPUT_TYPE.MONO;
+	}
+
+
 
 }

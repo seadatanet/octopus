@@ -1,6 +1,7 @@
 package fr.ifremer.octopus;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -16,8 +17,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.controller.BatchController;
-import fr.ifremer.octopus.controller.OctopusGUIController;
-import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.view.OctopusOverviewController;
 import fr.ifremer.octopus.view.RootController;
 
@@ -29,15 +28,22 @@ public class MainApp extends Application {
 	private BorderPane rootLayout;
 
 
+	/**
+	 * <pre>
+	 * Application entry point for GUI and batch mode.
+	 * Launches the GUI if no argument is given, launches batch mode if at least one argument is given 
+	 * </pre>
+	 * @param args: arguments for batch mode
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
-		
 		if (args.length>0){
 			BatchController batch = new BatchController(args);
 		}else{
 			launch(args);
 		}
 	}
-	
+
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
@@ -55,17 +61,22 @@ public class MainApp extends Application {
 	public Stage getPrimaryStage() {
 		return primaryStage;
 	}
+
+	/**
+	 * initialize stage
+	 */
 	public void initRootLayout() {
 		try {
 			// Load root layout from fxml file.
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(getClass().getResource("view/Root.fxml"));
+			URL location = MainApp.class.getResource("view/Root.fxml");
+			loader.setLocation(location);
 			rootLayout = (BorderPane) loader.load();
 
-			
+
 			loader.setResources(ResourceBundle.getBundle("bundles.root", Locale.FRENCH));
-			 
-			 
+
+
 			// Show the scene containing the root layout.
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -81,7 +92,9 @@ public class MainApp extends Application {
 		}
 
 	}
-
+	/**
+	 * displays the OctopusOverview view
+	 */
 	public void showView(){
 		try {
 			// Load octopus overview.

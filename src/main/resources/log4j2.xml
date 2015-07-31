@@ -10,7 +10,7 @@
 	<Appenders>
 
 		<Console name="Console" target="SYSTEM_OUT" follow="true">
-			<PatternLayout pattern="%d{HH:mm:ss}  %-5level - %msg%n" />
+			<PatternLayout pattern="%d{HH:mm:ss}  %-5level - %c{1} - %msg%n" />
 		</Console>
 		<RollingFile name="RollingFile" fileName="logs/octopus.log"
 			filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">

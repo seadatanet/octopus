@@ -18,10 +18,10 @@ public class OctopusModel {
 
 	/**
 	 * 
-	 * @param inputPath
+	 * @param inputPath: input file or directory path
 	 */
 	public OctopusModel(String inputPath)  {
-		this.cdiList= new ArrayList<>();
+		this.cdiList= new ArrayList<String>();
 		this.inputPath = inputPath;
 	}
 

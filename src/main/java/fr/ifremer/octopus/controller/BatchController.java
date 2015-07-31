@@ -18,6 +18,7 @@ import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
+import fr.ifremer.seadatanet.splitter.bean.SdnCDIId;
 
 public class BatchController extends AbstractController{
 	private static final Logger LOGGER = LogManager.getLogger(BatchController.class);
@@ -31,7 +32,7 @@ public class BatchController extends AbstractController{
 	private static String OPTION_O = "o";
 	private static String OPTION_F = "f";
 	private static String OPTION_T = "t";
-	private static String OPTION_CDI = "cdi";
+	private static String OPTION_CDI = "c";
 	private List<String> mandatory_options = new ArrayList<>();
 
 
@@ -40,11 +41,25 @@ public class BatchController extends AbstractController{
 	private static int INPUT_ERROR_EXIT_CODE = 2;
 	private static int PROCESS_ERROR_EXIT_CODE = 3;
 
+	protected static String CDI_SEPARATOR=",";
 
+
+	/**
+	 * Controller for batch mode, main constructor
+	 * @param args
+	 * @throws OctopusException
+	 * @throws VocabularyException
+	 */
 	public BatchController(String[] args) throws OctopusException, VocabularyException  {
 		this(args, false);
 	}
-	
+
+	/**
+	 *  Controller for batch mode, constructor for junit tests
+	 * @param args
+	 * @param isJunitTest
+	 * @throws OctopusException
+	 */
 	public BatchController(String[] args, boolean isJunitTest) throws OctopusException   {
 		super();
 		this.isJunitTest = isJunitTest;
@@ -65,7 +80,7 @@ public class BatchController extends AbstractController{
 		} catch (OctopusException e1) {
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
 		} 
-			exit(OK_EXIT_CODE, null);
+		exit(OK_EXIT_CODE, null);
 
 	}
 
@@ -74,9 +89,11 @@ public class BatchController extends AbstractController{
 
 	private void parseAndFill(String[] args) throws OctopusException, IOException, ParseException {
 		try {
+
+			// parse command arguments
 			CommandLine cmd = parser.parse( options, args);
 
-			// check mandatory options are present
+			// check if mandatory options are present
 			for (String option : mandatory_options){
 				if (!cmd.hasOption(option)){
 					throw new OctopusException("missing option " + option);
@@ -97,14 +114,7 @@ public class BatchController extends AbstractController{
 			OUTPUT_TYPE type = getType(cmd.getOptionValue(OPTION_T));
 
 			String cdiList = cmd.getOptionValue(OPTION_CDI);
-			List<String> list =null;
-			if (cdiList!=null){
-				cdiList = cdiList.trim();
-				list = new ArrayList<>();
-				for (String cdi: cdiList.split(CDI_SEPARATOR)){
-					list.add(cdi.trim());
-				}
-			}
+			List<String> list = getCdiList(cdiList);
 
 
 			// log
@@ -123,13 +133,11 @@ public class BatchController extends AbstractController{
 				LOGGER.error("input Path error");
 				throw e;
 			}
-			
+
 			model.setOutputFormat(outputFormat);
 			model.setOutputPath(outputPath);
 			model.setOutputType(type);
-			if (cdiList!=null){
-				model.setCdiList(list);
-			}
+			model.setCdiList(list);
 
 
 		} catch (ParseException e) {
@@ -139,8 +147,39 @@ public class BatchController extends AbstractController{
 	}
 
 
-	
 
+	/**
+	 * 
+	 * @param cdiList : comma separated string CDI list
+	 * @return the list of CDIs contained in the comma separated string
+	 * @throws OctopusException 
+	 */
+	private List<String> getCdiList(String cdiList) throws OctopusException {
+		List<String> list = new ArrayList<>();
+		try{
+			if (cdiList!=null){
+				cdiList = cdiList.trim();
+				for (String cdi: cdiList.split(CDI_SEPARATOR)){
+					cdi = cdi.trim();
+					if (!cdi.startsWith(SdnCDIId.START_URN_SYNTAX)){
+						cdi=SdnCDIId.START_URN_SYNTAX+cdi;
+					}
+					list.add(cdi);
+				}
+			}
+		}catch(Exception e){
+			LOGGER.error(e.getMessage());
+			throw new OctopusException("CDI list can not be read");
+		}
+		return list;
+	}
+
+	/**
+	 * 
+	 * @param optionValue: the format String from command line argument
+	 * @return Format object 
+	 * @throws OctopusException
+	 */
 	private Format getFormatFromBatchArg(String optionValue) throws OctopusException   {
 		if (optionValue.trim().equalsIgnoreCase(Format.MEDATLAS_SDN.getName())){
 			return Format.MEDATLAS_SDN;
@@ -154,6 +193,13 @@ public class BatchController extends AbstractController{
 		throw new OctopusException("unrecognized output format");
 	}
 
+
+	/**
+	 * 
+	 * @param optionValue: the Output Type String from command line argument
+	 * @return OUTPUT_TYPE enum value
+	 * @throws OctopusException
+	 */
 	private OUTPUT_TYPE getType(String optionValue) throws OctopusException  {
 		if (optionValue.trim().equalsIgnoreCase(OctopusModel.OUTPUT_TYPE.MONO.toString())){
 			return OctopusModel.OUTPUT_TYPE.MONO;
@@ -164,6 +210,10 @@ public class BatchController extends AbstractController{
 		throw new OctopusException("unrecognized output type");
 	}
 
+
+	/**
+	 * initialize parser options
+	 */
 	private void initOptionsParser(){
 		// create Options object
 		options = new Options();
@@ -186,12 +236,24 @@ public class BatchController extends AbstractController{
 	}
 
 
-
+	/**
+	 * print command usage and exit (see  {@link #exit(int, Exception) exit} method)
+	 * @param code
+	 * @param e1
+	 * @throws OctopusException
+	 */
 	private void logAndExit(int code, Exception e1)throws OctopusException  {
 		formatter.printHelp( "octopus", options , true);
 		exit(code, e1);
-		
+
 	}
+
+	/**
+	 * if not in junit test, exit with given code, else throw new OctopusException from given Exception
+	 * @param code
+	 * @param e1
+	 * @throws OctopusException
+	 */
 	private void exit(int code, Exception e1) throws OctopusException {
 		if (!isJunitTest){
 			System.exit(code);
@@ -201,7 +263,11 @@ public class BatchController extends AbstractController{
 			}
 		}
 	}
-
+	/**
+	 * check if inputPath exist
+	 * @param inputPath
+	 * @throws OctopusException
+	 */
 	private void checkInput(File inputPath) throws OctopusException  {
 		if (!inputPath.exists()){
 			throw new OctopusException("input path is not a valid directory or file path"); // TODO: internat

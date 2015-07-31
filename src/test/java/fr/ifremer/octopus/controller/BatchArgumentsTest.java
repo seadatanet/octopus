@@ -1,7 +1,9 @@
 package fr.ifremer.octopus.controller;
 
 import java.io.File;
+import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -24,8 +26,8 @@ import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
  * @author altran
  *
  */
-public class BatchTest {
-	private static final Logger logger = LogManager.getLogger(BatchTest.class);
+public class BatchArgumentsTest {
+	private static final Logger logger = LogManager.getLogger(BatchArgumentsTest.class);
 	private static  String pwd ;
 	
 	@BeforeClass
@@ -37,20 +39,25 @@ public class BatchTest {
 	public void goodArgsTest() {
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/diap";
-		String out = "-o "+pwd+"out";
+		String out = "-o "+pwd+"outArgs";
 		String[] args = new String[]{in, out, "-f medatlas", "-t mono"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
 			Assert.assertTrue(b.model.getInputPath().equals(pwd+"medatlas/diap"));
-			Assert.assertTrue(b.model.getOutputPath().equals(pwd+"out"));
+			Assert.assertTrue(b.model.getOutputPath().equals(pwd+"outArgs"));
 			Assert.assertTrue(b.model.getOutputFormat().equals(Format.MEDATLAS_SDN));
 			Assert.assertTrue(b.model.getOutputType().equals(OUTPUT_TYPE.MONO));
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
-		
+		try {
+			FileUtils.deleteDirectory(new File(pwd+"outArgs"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 	@Test

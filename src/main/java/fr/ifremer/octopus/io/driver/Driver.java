@@ -17,7 +17,7 @@ public abstract class Driver {
 	 * 
 	 * @param file
 	 * @return true if the file can be opened, false otherwise
-	 * @throws IOException 
+	 * @throws IOException if file can not be open with this driver
 	 */
 	
 	public abstract boolean canOpen(String file) throws IOException;

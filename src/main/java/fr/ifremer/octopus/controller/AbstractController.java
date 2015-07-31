@@ -1,10 +1,12 @@
 package fr.ifremer.octopus.controller;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,22 +26,29 @@ import fr.ifremer.octopus.model.Conversion;
 import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.InputFileVisitor;
 import fr.ifremer.octopus.model.OctopusModel;
+import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.SDNVocabs;
+import fr.ifremer.seadatanet.splitter.CFSplitter;
+import fr.ifremer.seadatanet.splitter.SdnSplitter;
+import fr.ifremer.seadatanet.splitter.SplitterException;
 import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 public abstract class AbstractController {
 
 	private static final Logger LOGGER = LogManager.getLogger(AbstractController.class);
 
-	protected static String CDI_SEPARATOR=",";
-
-
 	private DriverManager driverManager = new DriverManagerImpl();
 	protected OctopusModel model;
+	
+	
 	/**
 	 * Required conversion deduced from input and output formats
 	 */
 	private Conversion conversion;
+
+
+	private File tmpDir;
+	private String tmpPath = "OctopusTmpDirectory";
 
 
 
@@ -64,14 +73,25 @@ public abstract class AbstractController {
 	/**
 	 * Process split and/or conversion
 	 * @throws OctopusException 
-	 * @throws VocabularyException 
 	 */
 	public void process() throws OctopusException {
 		checkInputOutputFormatCompliance();
 
-		if (model.getCdiList().isEmpty()){
-			LOGGER.info("all CDIs exported");
+		if (conversion == Conversion.NONE){
+			if (model.getCdiList().isEmpty()){
+				if (model.getOutputType() == OUTPUT_TYPE.MONO ){
+					LOGGER.info("split input file in n monostation files");
+				}else{
+					LOGGER.info("nothing to do: no cdi to be exported, no conversion");
+					return;
+				}
+			}
+		}else{
+			if (model.getCdiList().isEmpty()){
+				LOGGER.info("all CDIs exported");
+			}
 		}
+
 
 		try {
 			File in = new File(model.getInputPath());
@@ -87,49 +107,163 @@ public abstract class AbstractController {
 		} catch (VocabularyException e) {
 			LOGGER.error(e.getMessage());
 			throw new OctopusException(e);
-		} catch (MedatlasReaderException e) {
+		}  catch (FileNotFoundException e) {
 			LOGGER.error(e.getMessage());
 			throw new OctopusException(e);
+		} catch (SplitterException e) {
+			LOGGER.error(e.getMessage());
+			throw new OctopusException(e);
+		} finally{
+			try {
+				deleteTmp();
+			} catch (IOException e) {
+				LOGGER.error(e.getMessage());
+			}
 		}
 
 	}
 
-	private void processFile(File in) throws ConverterException, VocabularyException, MedatlasReaderException {
-		String unitsTranslationFileName = "unitsTranslation.xml";
+	private void processFile(File in) 
+			throws 
+			ConverterException, 
+			VocabularyException, 
+//			MedatlasReaderException, 
+			FileNotFoundException, 
+			SplitterException,
+//			fr.ifremer.seadatanet.odvsdn2cfpoint.exceptions.ConverterException,
+			OctopusException {
 
-		
-		// TODO Process cases
-		if (! model.getCdiList().isEmpty()){
-			// 	split
+
+		if (conversion==Conversion.NONE){
+			if( model.getInputFormat()==Format.CFPOINT){
+				// Cf2Cf
+				processCf2Cf(in);
+			}else{
+				// Med2Med or Odv2Odv
+				processSDNSplitter();
+			}
+		}else if (conversion==Conversion.MEDATLAS_SDN_TO_CF_POINT
+				||conversion==Conversion.ODV_SDN_TO_CFPOINT
+				){
+			processX2Cf(in);
+		}else if(conversion==Conversion.MEDATLAS_SDN_TO_ODV_SDN){
+			processSDNSplitter();
 		}
-		
-		
-		
-		
-		if (conversion==Conversion.MEDATLAS_SDN_TO_CF_POINT){
-			createOutputDir();
-			Medatlas2CFPointConverter conv = new Medatlas2CFPointConverter(" from Octopus", 
-					SDNVocabs.getInstance().getCf(),
-					unitsTranslationFileName);
 
-			conv.processFile(in.getAbsolutePath(), model.getOutputPath(), model.isMono(), true);
+	}
+
+
+	private void processSDNSplitter() throws SplitterException,
+			VocabularyException {
+		
+		
+		SdnSplitter splitter = new SdnSplitter(
+				model.getInputPath(), 
+				model.getOutputPath(),
+				model.getOutputFormat().getName(), 
+				model.getOutputType().toString(), 
+				model.getCdiList().toArray(new String[model.getCdiList().size()]), 
+				1L, 
+				SDNVocabs.getInstance().getCf());
+
+		splitter.split();
+	}
+
+
+	private void processX2Cf(File in)
+			throws
+			VocabularyException,
+			 SplitterException, 
+			 OctopusException {
+
+		createOutputDir();
+		ConvertersManager convMgr;
+		try {
+			convMgr = new ConvertersManager(model.getInputFormat());
+		} catch (fr.ifremer.seadatanet.odvsdn2cfpoint.exceptions.ConverterException | ConverterException | VocabularyException e) {
+			throw new OctopusException(e.getMessage());
 		}
 
+
+		// Med to CF -> Medatlas2CFPointConverter
+		if (model.getCdiList().isEmpty()){
+			convMgr.processFile(in.getAbsolutePath(), model.getOutputPath(), model.isMono());
+		}else{
+			// split before
+			if (model.getOutputType()== OUTPUT_TYPE.MONO){
+				createTmpDir();
+			}else{
+				if (model.getInputFormat()==Format.ODV_SDN){
+					tmpPath = tmpPath+".txt"; // splitter checks odv output extensions
+				}
+			}
+			SdnSplitter splitter = new SdnSplitter(
+					model.getInputPath(), 
+					tmpPath,
+					model.getInputFormat().getName(), // split in same format as input
+					model.getOutputType().toString(), 
+					model.getCdiList().toArray(new String[model.getCdiList().size()]), 
+					1L, 
+					SDNVocabs.getInstance().getCf());
+
+			splitter.split();
+
+
+			if (model.getOutputType()== OUTPUT_TYPE.MONO){
+				for (File f : tmpDir.listFiles()){
+					convMgr.processFile(f.getAbsolutePath(), model.getOutputPath(), model.isMono());
+				}
+			}else{
+				convMgr.processFile(tmpPath, model.getOutputPath(), model.isMono());
+			}
+
+		}
+	}
+
+
+	private void processCf2Cf(File in) throws SplitterException,
+	FileNotFoundException, VocabularyException {
+		// 	CF to CF -> cfSplitter
+		CFSplitter splitter = new CFSplitter(
+				in.getAbsolutePath(), 
+				model.getOutputPath(), 
+				model.getOutputFormat().toString(), 
+				model.getOutputType().toString(),
+				model.getCdiList().toArray(new String[model.getCdiList().size()]), 
+				1L, 
+				SDNVocabs.getInstance().getCf());
+		splitter.split();
 	}
 
 	private void createOutputDir(){
 		File out = new File(model.getOutputPath());
 		out.mkdir();
 	}
+	private void createTmpDir(){
+		tmpDir = new File(tmpPath);
+		tmpDir.mkdir();
+	}
+	private void deleteTmp() throws IOException{
+		File tmp = new File(tmpPath);
+		if (tmp.isFile()){
+			tmp.delete();
+		}else{
+			FileUtils.deleteDirectory(new File(tmpPath));
+		}
+	}
+
 	/**
 	 * 
 	 * @return true if conversion is none or an available conversion type, false if conversion is not available
 	 * @throws OctopusException 
 	 */
 	private void checkInputOutputFormatCompliance() throws OctopusException{
+		
+		
 		if (model.getInputFormat().equals(model.getOutputFormat())){
-			LOGGER.info("output and input formats are identical: no need to convert");
+			LOGGER.info("output and input formats are identical");
 			conversion = Conversion.NONE;
+		
 		}else{
 
 			switch (model.getInputFormat()) {

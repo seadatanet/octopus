@@ -127,10 +127,8 @@ public abstract class AbstractController {
 			throws 
 			ConverterException, 
 			VocabularyException, 
-//			MedatlasReaderException, 
 			FileNotFoundException, 
 			SplitterException,
-//			fr.ifremer.seadatanet.odvsdn2cfpoint.exceptions.ConverterException,
 			OctopusException {
 
 
@@ -176,7 +174,7 @@ public abstract class AbstractController {
 			 SplitterException, 
 			 OctopusException {
 
-		createOutputDir();
+	
 		ConvertersManager convMgr;
 		try {
 			convMgr = new ConvertersManager(model.getInputFormat());
@@ -185,8 +183,11 @@ public abstract class AbstractController {
 		}
 
 
-		// Med to CF -> Medatlas2CFPointConverter
+		// X to CF -> X2CFPointConverter
 		if (model.getCdiList().isEmpty()){
+			
+			// create output directory for mono and multi, as converters creates output files with input file names (changing extension)
+			createOutputDir();
 			convMgr.processFile(in.getAbsolutePath(), model.getOutputPath(), model.isMono());
 		}else{
 			// split before
@@ -194,12 +195,14 @@ public abstract class AbstractController {
 				createTmpDir();
 			}else{
 				if (model.getInputFormat()==Format.ODV_SDN){
-					tmpPath = tmpPath+".txt"; // splitter checks odv output extensions
+					tmpPath = model.getOutputPath()+".txt"; // splitter checks odv output extensions
+				}else{
+					tmpPath = model.getOutputPath()+".med"; // splitter checks odv output extensions
 				}
 			}
 			SdnSplitter splitter = new SdnSplitter(
 					model.getInputPath(), 
-					tmpPath,
+					tmpPath, // TODO tmpPath doit être l'arg -o + ext de input
 					model.getInputFormat().getName(), // split in same format as input
 					model.getOutputType().toString(), 
 					model.getCdiList().toArray(new String[model.getCdiList().size()]), 
@@ -210,16 +213,17 @@ public abstract class AbstractController {
 
 
 			if (model.getOutputType()== OUTPUT_TYPE.MONO){
+				createOutputDir();
 				for (File f : tmpDir.listFiles()){
 					convMgr.processFile(f.getAbsolutePath(), model.getOutputPath(), model.isMono());
 				}
 			}else{
+				createOutputDir();
 				convMgr.processFile(tmpPath, model.getOutputPath(), model.isMono());
 			}
 
 		}
 	}
-
 
 	private void processCf2Cf(File in) throws SplitterException,
 	FileNotFoundException, VocabularyException {

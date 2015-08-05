@@ -5,20 +5,25 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.RootController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.RootController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="%menu.file">
             <items>
-                  <MenuItem fx:id="menuOpenFile" mnemonicParsing="false" onAction="#openFile" text="%menu.openFile" />
-                  <MenuItem fx:id="menuOpenDir" mnemonicParsing="false" onAction="#openDir" text="%menu.openDir" />
+                  <MenuItem fx:id="menuOpenFile" mnemonicParsing="false" onAction="#openFile" text="%menu.file.openFile" />
+                  <MenuItem fx:id="menuOpenDir" mnemonicParsing="false" onAction="#openDir" text="%menu.file.openDir" />
             	  <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#handleExit" text="%menu.file.close" />
             </items>
           </Menu>
+            <Menu fx:id="menuEdit" mnemonicParsing="false" text="%menu.edit">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#showPreferences" text="%menu.edit.preferences" />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="%menu.help">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+              <MenuItem mnemonicParsing="false" onAction="#showAbout" text="%menu.help.about" />
             </items>
           </Menu>
         </menus>

@@ -1,3 +1,7 @@
 logs: logger deroulement split et conv
 tests: verifier au moins existence fichier out et absence d'exception
-rep temporaire: supprimer au demarrage au cas ou plantage
+
+
+GUI: voir cas output=file ou dir
+gestion cas d'erreur:
+rep sortie : pas de droits d'ecriture

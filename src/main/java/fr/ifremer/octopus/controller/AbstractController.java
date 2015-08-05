@@ -35,6 +35,8 @@ import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 public abstract class AbstractController {
 
+
+
 	private static final Logger LOGGER = LogManager.getLogger(AbstractController.class);
 
 	private DriverManager driverManager = new DriverManagerImpl();
@@ -53,6 +55,11 @@ public abstract class AbstractController {
 
 
 	public AbstractController()  {
+		try {
+			deleteTmp();
+		} catch (IOException e) {
+		}
+		
 		this.driverManager.registerNewDriver(new MedatlasSDNDriverImpl());
 		this.driverManager.registerNewDriver(new OdvSDNDriverImpl());
 		this.driverManager.registerNewDriver(new CFPointDriverImpl());
@@ -120,6 +127,8 @@ public abstract class AbstractController {
 				LOGGER.error(e.getMessage());
 			}
 		}
+		
+		LOGGER.info("process ended successfully");
 
 	}
 
@@ -325,5 +334,9 @@ public abstract class AbstractController {
 		Format format = getFormat(firstFile);
 		return format;
 
+	}
+	
+	public OctopusModel getModel() {
+		return model;
 	}
 }

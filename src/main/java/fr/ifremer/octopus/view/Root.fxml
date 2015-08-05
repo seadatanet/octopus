@@ -9,19 +9,16 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="%menu.file">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem fx:id="menuOpenFile" mnemonicParsing="false" onAction="#openFile" text="%menu.openFile" />
+                  <MenuItem fx:id="menuOpenDir" mnemonicParsing="false" onAction="#openDir" text="%menu.openDir" />
+            	  <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#handleExit" text="%menu.file.close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
+          <Menu mnemonicParsing="false" text="%menu.help">
             <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
             </items>
           </Menu>
         </menus>

@@ -17,6 +17,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.controller.BatchController;
+import fr.ifremer.octopus.view.AboutController;
 import fr.ifremer.octopus.view.OctopusOverviewController;
 import fr.ifremer.octopus.view.RootController;
 
@@ -26,8 +27,8 @@ public class MainApp extends Application {
 
 	private Stage primaryStage;
 	private BorderPane rootLayout;
-
-
+	private OctopusOverviewController controller;
+	private AnchorPane octopusOverview;
 	/**
 	 * <pre>
 	 * Application entry point for GUI and batch mode.
@@ -64,17 +65,15 @@ public class MainApp extends Application {
 
 	/**
 	 * initialize stage
+	 * @throws IOException 
 	 */
-	public void initRootLayout() {
-		try {
+	public void initRootLayout() throws IOException {
 			// Load root layout from fxml file.
 			FXMLLoader loader = new FXMLLoader();
 			URL location = MainApp.class.getResource("view/Root.fxml");
+			loader.setResources(ResourceBundle.getBundle("bundles.root", Locale.FRENCH));
 			loader.setLocation(location);
 			rootLayout = (BorderPane) loader.load();
-
-
-			loader.setResources(ResourceBundle.getBundle("bundles.root", Locale.FRENCH));
 
 
 			// Show the scene containing the root layout.
@@ -87,9 +86,6 @@ public class MainApp extends Application {
 			controller.setMainApp(this);
 
 			primaryStage.show();
-		} catch (IOException e) {
-			LOGGER.error(e.getMessage());
-		}
 
 	}
 	/**
@@ -101,16 +97,48 @@ public class MainApp extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(getClass().getResource("view/OctopusOverview.fxml"));
 			loader.setResources(ResourceBundle.getBundle("bundles.overview", Locale.FRENCH));
-			AnchorPane octopusOverview = (AnchorPane) loader.load();
+			octopusOverview = (AnchorPane) loader.load();
 
 			// Set octopus overview into the center of root layout.
 			rootLayout.setCenter(octopusOverview);
 			// Give the controller access to the main app.
-			OctopusOverviewController controller = loader.getController();
+			controller = loader.getController();
 			controller.setMainApp(this);
 
 		} catch (IOException e) {
 			LOGGER.error(e.getMessage());
 		}
+	}
+
+	public OctopusOverviewController getController() {
+		return controller;
+	}
+
+	public void showAbout() {
+					// Load octopus overview.
+					FXMLLoader loader = new FXMLLoader();
+					loader.setLocation(getClass().getResource("view/OctopusAbout.fxml"));
+					loader.setResources(ResourceBundle.getBundle("bundles.about", Locale.FRENCH));
+					AnchorPane octopusAbout;
+					try {
+						octopusAbout = (AnchorPane) loader.load();
+						// Set octopus overview into the center of root layout.
+						rootLayout.setCenter(octopusAbout);
+						// Give the controller access to the main app.
+						AboutController aController = loader.getController();
+						aController.setMainApp(this);
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+
+					
+		
+	}
+
+	public void closeAbout() {
+		// Set octopus overview into the center of root layout.
+		rootLayout.setCenter(octopusOverview);
+		
 	}
 }

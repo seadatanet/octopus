@@ -10,12 +10,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import sdn.vocabulary.implementations.CollectionFactory;
-import sdn.vocabulary.interfaces.ICollectionFactory;
 import sdn.vocabulary.interfaces.VocabularyException;
-import fr.ifremer.medatlas.Medatlas2CFPointConverter;
 import fr.ifremer.medatlas.exceptions.ConverterException;
-import fr.ifremer.medatlas.exceptions.MedatlasReaderException;
 import fr.ifremer.octopus.io.driver.Driver;
 import fr.ifremer.octopus.io.driver.DriverManager;
 import fr.ifremer.octopus.io.driver.impl.CFPointDriverImpl;
@@ -31,7 +27,6 @@ import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.seadatanet.splitter.CFSplitter;
 import fr.ifremer.seadatanet.splitter.SdnSplitter;
 import fr.ifremer.seadatanet.splitter.SplitterException;
-import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 public abstract class AbstractController {
 
@@ -41,8 +36,8 @@ public abstract class AbstractController {
 
 	private DriverManager driverManager = new DriverManagerImpl();
 	protected OctopusModel model;
-	
-	
+
+
 	/**
 	 * Required conversion deduced from input and output formats
 	 */
@@ -59,7 +54,7 @@ public abstract class AbstractController {
 			deleteTmp();
 		} catch (IOException e) {
 		}
-		
+
 		this.driverManager.registerNewDriver(new MedatlasSDNDriverImpl());
 		this.driverManager.registerNewDriver(new OdvSDNDriverImpl());
 		this.driverManager.registerNewDriver(new CFPointDriverImpl());
@@ -127,7 +122,7 @@ public abstract class AbstractController {
 				LOGGER.error(e.getMessage());
 			}
 		}
-		
+
 		LOGGER.info("process ended successfully");
 
 	}
@@ -161,9 +156,9 @@ public abstract class AbstractController {
 
 
 	private void processSDNSplitter() throws SplitterException,
-			VocabularyException {
-		
-		
+	VocabularyException {
+
+
 		SdnSplitter splitter = new SdnSplitter(
 				model.getInputPath(), 
 				model.getOutputPath(),
@@ -180,10 +175,10 @@ public abstract class AbstractController {
 	private void processX2Cf(File in)
 			throws
 			VocabularyException,
-			 SplitterException, 
-			 OctopusException {
+			SplitterException, 
+			OctopusException {
 
-	
+
 		ConvertersManager convMgr;
 		try {
 			convMgr = new ConvertersManager(model.getInputFormat());
@@ -194,41 +189,95 @@ public abstract class AbstractController {
 
 		// X to CF -> X2CFPointConverter
 		if (model.getCdiList().isEmpty()){
-			
+
 			// create output directory for mono and multi, as converters creates output files with input file names (changing extension)
-			createOutputDir();
-			convMgr.processFile(in.getAbsolutePath(), model.getOutputPath(), model.isMono());
+			if (model.isMono()){
+				createOutputDir();
+				String convOutputPath = convMgr.processFile(in.getAbsolutePath(), model.getOutputPath(), model.isMono());
+				LOGGER.info("output directory is ready: "+ convOutputPath);
+			}else{
+				// multi: rename file as asked to octopus (instead of converter name)
+				createTmpDir();
+				String convOutputPath = convMgr.processFile(in.getAbsolutePath(), tmpPath, model.isMono());
+				try {
+					FileUtils.moveFile(new File(convOutputPath), new File(model.getOutputPath()));
+				} catch (IOException e) {
+					throw new OctopusException(e.getMessage());
+				}finally{
+					try {
+						deleteTmp();
+					} catch (IOException e) {
+						throw new OctopusException(e.getMessage());
+					}
+				}
+				LOGGER.info("output file is ready: "+ model.getOutputPath());
+
+			}
+
+
 		}else{
+			String tmpSplit="";
 			// split before
 			if (model.getOutputType()== OUTPUT_TYPE.MONO){
 				createTmpDir();
+				tmpSplit = tmpPath;
 			}else{
 				if (model.getInputFormat()==Format.ODV_SDN){
-					tmpPath = model.getOutputPath()+".txt"; // splitter checks odv output extensions
+					//					tmpPath = model.getOutputPath()+".txt"; // splitter checks odv output extensions
+					tmpSplit = model.getOutputPath()+"tmp.txt"; 
 				}else{
-					tmpPath = model.getOutputPath()+".med"; // splitter checks odv output extensions
+					//					tmpPath = model.getOutputPath()+".med"; // splitter checks odv output extensions
+					tmpSplit = model.getOutputPath()+"tmp.med"; 
 				}
 			}
+			
+			
 			SdnSplitter splitter = new SdnSplitter(
 					model.getInputPath(), 
-					tmpPath, // TODO tmpPath doit être l'arg -o + ext de input
+					tmpSplit, 
 					model.getInputFormat().getName(), // split in same format as input
 					model.getOutputType().toString(), 
 					model.getCdiList().toArray(new String[model.getCdiList().size()]), 
 					1L, 
 					SDNVocabs.getInstance().getCf());
+			try{
+				splitter.split();
+			}catch(Exception e){
+				LOGGER.error(e.getMessage());
+			}
 
-			splitter.split();
-
-
+			
+			
 			if (model.getOutputType()== OUTPUT_TYPE.MONO){
 				createOutputDir();
 				for (File f : tmpDir.listFiles()){
 					convMgr.processFile(f.getAbsolutePath(), model.getOutputPath(), model.isMono());
 				}
+				LOGGER.info("output directory is ready: "+ model.getOutputPath());
+				try {
+					deleteTmp();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}else{
-				createOutputDir();
-				convMgr.processFile(tmpPath, model.getOutputPath(), model.isMono());
+				createTmpDir();
+				String convOutputPath = convMgr.processFile(tmpSplit, tmpPath, model.isMono());
+				
+				try {
+					FileUtils.moveFile(new File(convOutputPath), new File(model.getOutputPath()));
+					new File(tmpSplit).delete();
+				} catch (IOException e) {
+					throw new OctopusException(e.getMessage());
+				}finally{
+					try {
+						deleteTmp();
+						new File(tmpSplit).delete();
+					} catch (IOException e) {
+						throw new OctopusException(e.getMessage());
+					}
+				}
+				LOGGER.info("output file is ready: "+ model.getOutputPath());
 			}
 
 		}
@@ -271,12 +320,12 @@ public abstract class AbstractController {
 	 * @throws OctopusException 
 	 */
 	private void checkInputOutputFormatCompliance() throws OctopusException{
-		
-		
+
+
 		if (model.getInputFormat().equals(model.getOutputFormat())){
 			LOGGER.info("output and input formats are identical");
 			conversion = Conversion.NONE;
-		
+
 		}else{
 
 			switch (model.getInputFormat()) {
@@ -335,7 +384,7 @@ public abstract class AbstractController {
 		return format;
 
 	}
-	
+
 	public OctopusModel getModel() {
 		return model;
 	}

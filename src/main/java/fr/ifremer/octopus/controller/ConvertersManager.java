@@ -46,29 +46,32 @@ public class ConvertersManager {
 		conv = new Medatlas2CFPointConverter(CONV_SUBTITLE, 
 				SDNVocabs.getInstance().getCf(),
 				unitsTranslationFileName);
+		
 
 	}
 
-	public void processFile(String in, String outputPath,
+	public String processFile(String in, String outputPath,
 			boolean mono) throws OctopusException   {
 		
+		String resOutput="" ;
 		switch (format) {
 		case MEDATLAS_SDN:
 			try {
-				((Medatlas2CFPointConverter)conv).processFile(in, outputPath, mono, true);
+				fr.ifremer.medatlas.Result res = ((Medatlas2CFPointConverter)conv).processFile(in, outputPath, mono, true);
+				resOutput = res.getOutputPath();
 			} catch (MedatlasReaderException | ConverterException e) {
 				throw new OctopusException(e.getMessage());
 			}
 			break;
 		case ODV_SDN:
-			((OdvSDN2CFPointConverter)conv).processFile(in, outputPath, mono, true);
+			fr.ifremer.seadatanet.odvsdn2cfpoint.Result res = ((OdvSDN2CFPointConverter)conv).processFile(in, outputPath, mono, true);
+			resOutput = res.getOutputPath();
 			break;
 
 		default:
 			break;
 		}
-		
-		
+		return  resOutput;
 		
 
 	}

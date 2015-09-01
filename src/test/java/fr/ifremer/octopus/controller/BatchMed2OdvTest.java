@@ -33,6 +33,7 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 	 */
 	@Test
 	public void med2odvMono_emptyCDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/diap";
 		String out = "-o "+getOutputPath("med2odvMono_emptyCDI");
@@ -40,10 +41,12 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("med2odvMono_emptyCDI")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	/**
 	 * 1 med -> 1 cf
@@ -51,17 +54,20 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 	 */
 	@Test
 	public void med2odvMulti_emptyCDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/diap";
-		String out = "-o "+getOutputPath("med2odvMulti_emptyCDI");
+		String out = "-o "+getOutputPath("med2odvMulti_emptyCDI.txt");
 		String[] args = new String[]{in, out, "-f odv", "-t multi"};
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("med2odvMulti_emptyCDI.txt")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	/**
 	 * 1 med -> n cf
@@ -69,6 +75,7 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 	 */
 	@Test
 	public void med2odvMono_2CDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/diap";
 		String out = "-o "+getOutputPath("med2odvMono_2CDI");
@@ -79,16 +86,19 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("med2odvMono_2CDI")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	@Test
 	public void med2odvMulti_2CDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/diap";
-		String out = "-o "+getOutputPath("med2odvMulti_2CDI");
+		String out = "-o "+getOutputPath("med2odvMulti_2CDI.txt");
 		String[] args = new String[]{in, out, 
 				"-f odv",
 				"-t multi",
@@ -96,11 +106,13 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("med2odvMulti_2CDI.txt")).exists();
 		}catch (Exception e){
 			logger.error(e.getMessage());
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	@Override
 	protected String getInputDir() {

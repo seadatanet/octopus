@@ -1,5 +1,9 @@
 package fr.ifremer.octopus.controller;
 
+import java.io.File;
+
+import junit.framework.Assert;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
@@ -26,6 +30,7 @@ public class BatchCf2CfTest extends AbstractBatchX2YTest{
 	 */
 	@Test
 	public void cf2cfMono_emptyCDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"cfpoint/diap.nc";
 		String out = "-o "+getOutputPath("cf2cfMono_emptyCDI");
@@ -33,10 +38,12 @@ public class BatchCf2CfTest extends AbstractBatchX2YTest{
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("cf2cfMono_emptyCDI")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	
 	/**
@@ -44,6 +51,7 @@ public class BatchCf2CfTest extends AbstractBatchX2YTest{
 	 */
 	@Test
 	public void cf2cfMono_2CDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"cfpoint/diap.nc";
 		String out = "-o "+getOutputPath("cf2cfMono_2CDI");
@@ -54,10 +62,12 @@ public class BatchCf2CfTest extends AbstractBatchX2YTest{
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("cf2cfMono_2CDI")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	
 	/**
@@ -65,9 +75,10 @@ public class BatchCf2CfTest extends AbstractBatchX2YTest{
 	 */
 	@Test
 	public void cf2cfMulti_2CDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"cfpoint/diap.nc";
-		String out = "-o "+getOutputPath("cf2cfMulti_2CDI");
+		String out = "-o "+getOutputPath("cf2cfMulti_2CDI.cf");
 		String[] args = new String[]{in, out, 
 				"-f cfpoint",
 				"-t multi",
@@ -75,10 +86,12 @@ public class BatchCf2CfTest extends AbstractBatchX2YTest{
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("cf2cfMulti_2CDI.cf")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 
 	@Override

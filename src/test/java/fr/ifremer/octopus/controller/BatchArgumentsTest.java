@@ -116,7 +116,62 @@ public class BatchArgumentsTest {
 			Assert.assertTrue(e.getMessage().endsWith("unrecognized output type"));
 		}
 	}
-
+	@Test
+	public void badMedExtension() {
+		boolean success=false;
+		BatchController b = null ;
+		String in="-i "+pwd+"medatlas/diap";
+		String out = "-o "+pwd+"out.toto";
+		String[] args = new String[]{in, out, "-f medatlas", "-t multi","-c FI35200110014_00020_H09,FI35200110014_00022_H09"};
+		logArgs(args);
+		try{
+			b = new BatchController(args, true);
+			success=true;
+		}catch (Exception e){
+			logger.error("JUNIT TEST ERROR");
+			logger.error(e.getMessage());
+//			success=e.getMessage().contains("output file extension is not valid");
+		}
+		new File(pwd+"out.toto").delete();
+		Assert.assertTrue(success);
+	}
+	@Test
+	public void badOdvExtension() {
+		boolean success=false;
+		BatchController b = null ;
+		String in="-i "+pwd+"medatlas/diap";
+		String out = "-o "+pwd+"out.toto";
+		String[] args = new String[]{in, out, "-f odv", "-t multi"};
+		logArgs(args);
+		try{
+			b = new BatchController(args, true);
+		}catch (Exception e){
+			logger.error("JUNIT TEST ERROR");
+			logger.error(e.getMessage());
+			success=e.getMessage().contains("output file extension is not valid");
+		}
+		new File(pwd+"out.toto").delete();
+		Assert.assertTrue(success);
+	}
+	@Test
+	public void badCfpointExtension() {
+		boolean success=false;
+		BatchController b = null ;
+		String in="-i "+pwd+"medatlas/diap";
+		String out = "-o "+pwd+"out.toto";
+		String[] args = new String[]{in, out, "-f cfpoint", "-t multi"};
+		logArgs(args);
+		try{
+			b = new BatchController(args, true);
+		}catch (Exception e){
+			logger.error("JUNIT TEST ERROR");
+			logger.error(e.getMessage());
+			success=e.getMessage().contains("output file extension is not valid");
+		
+		}
+		new File(pwd+"out.toto").delete();
+		Assert.assertTrue(success);
+	}
 	private void logArgs(String[] args){
 		String line = "";
 		for (String s : args){

@@ -78,6 +78,7 @@ public abstract class AbstractController {
 	 */
 	public void process() throws OctopusException {
 		checkInputOutputFormatCompliance();
+		checkOutputNameCompliance();
 
 		if (conversion == Conversion.NONE){
 			if (model.getCdiList().isEmpty()){
@@ -169,6 +170,11 @@ public abstract class AbstractController {
 				SDNVocabs.getInstance().getCf());
 
 		splitter.split();
+		if (model.isMono()){
+			LOGGER.info("output directory is ready: "+ model.getOutputPath());
+		}else{
+			LOGGER.info("output file is ready: "+ model.getOutputPath());
+		}
 	}
 
 
@@ -230,8 +236,8 @@ public abstract class AbstractController {
 					tmpSplit = model.getOutputPath()+"tmp.med"; 
 				}
 			}
-			
-			
+
+
 			SdnSplitter splitter = new SdnSplitter(
 					model.getInputPath(), 
 					tmpSplit, 
@@ -246,8 +252,8 @@ public abstract class AbstractController {
 				LOGGER.error(e.getMessage());
 			}
 
-			
-			
+
+
 			if (model.getOutputType()== OUTPUT_TYPE.MONO){
 				createOutputDir();
 				for (File f : tmpDir.listFiles()){
@@ -263,7 +269,7 @@ public abstract class AbstractController {
 			}else{
 				createTmpDir();
 				String convOutputPath = convMgr.processFile(tmpSplit, tmpPath, model.isMono());
-				
+
 				try {
 					FileUtils.moveFile(new File(convOutputPath), new File(model.getOutputPath()));
 					new File(tmpSplit).delete();
@@ -295,6 +301,11 @@ public abstract class AbstractController {
 				1L, 
 				SDNVocabs.getInstance().getCf());
 		splitter.split();
+		if (model.isMono()){
+			LOGGER.info("output directory is ready: "+ model.getOutputPath());
+		}else{
+			LOGGER.info("output file is ready: "+ model.getOutputPath());
+		}
 	}
 
 	private void createOutputDir(){
@@ -350,6 +361,15 @@ public abstract class AbstractController {
 			}
 		}
 
+	}
+
+	protected void checkOutputNameCompliance() throws OctopusException{
+		if(model.getOutputType()==OUTPUT_TYPE.MULTI 
+				&& !model.getOutputFormat().isExtensionCompliant(model.getOutputPath())){
+			throw new OctopusException("output file extension is not valid:  "+model.getOutputFormat().getName() 
+					+ " files must use \"." +model.getOutputFormat().getExtension()+ "\" extension." );
+
+		}
 	}
 	/**
 	 * 

@@ -23,13 +23,13 @@ public abstract class AbstractBatchX2YTest {
 	@Before
 	public void before(){
 		pwd = new File("##").getAbsolutePath().replace("#", "") + "src/test/resources/";
-		deleteDir(getInputDir(), getTmpDir());
+//		deleteDir(getInputDir(), getTmpDir());
 		
 	}
 	
 	@After
 	public void after(){
-		deleteDir(getInputDir(), getTmpDir());
+//		deleteDir(getInputDir(), getTmpDir());
 	}
 	
 	protected abstract  String getTmpDir();

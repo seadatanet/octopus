@@ -78,6 +78,7 @@ public class BatchController extends AbstractController{
 		try {
 			process();
 		} catch (OctopusException e1) {
+			LOGGER.error(e1.getMessage());
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
 		} 
 		exit(OK_EXIT_CODE, null);

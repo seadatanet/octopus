@@ -32,6 +32,7 @@ public class BatchMed2MedTest  extends AbstractBatchX2YTest {
 	 */
 	@Test
 	public void med2medMono_emptyCDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/diap";
 		String out = "-o "+getOutputPath("med2medMono_emptyCDI");
@@ -39,10 +40,12 @@ public class BatchMed2MedTest  extends AbstractBatchX2YTest {
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("med2medMono_emptyCDI")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	/**
 	 * 1 med -> 1 cf
@@ -50,6 +53,7 @@ public class BatchMed2MedTest  extends AbstractBatchX2YTest {
 	 */
 	@Test
 	public void med2medMulti_emptyCDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/diap";
 		String out = "-o "+getOutputPath("med2medMulti_emptyCDI");
@@ -57,10 +61,13 @@ public class BatchMed2MedTest  extends AbstractBatchX2YTest {
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			// file not created because multi without conv nor cdi list -> nothing to do
+			success = !new File(getOutputPath("med2medMulti_emptyCDI")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	/**
 	 * 1 med -> n cf
@@ -68,6 +75,7 @@ public class BatchMed2MedTest  extends AbstractBatchX2YTest {
 	 */
 	@Test
 	public void med2medMono_2CDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/diap";
 		String out = "-o "+getOutputPath("med2medMono_2CDI");
@@ -78,13 +86,16 @@ public class BatchMed2MedTest  extends AbstractBatchX2YTest {
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("med2medMono_2CDI")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	@Test
 	public void med2medMulti_2CDI() {
+		boolean success = false;
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/diap";
 		String out = "-o "+getOutputPath("med2medMulti_2CDI");
@@ -95,11 +106,13 @@ public class BatchMed2MedTest  extends AbstractBatchX2YTest {
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
+			success = new File(getOutputPath("med2medMulti_2CDI")).exists();
 		}catch (Exception e){
 			logger.error(e.getMessage());
 			logger.error("JUNIT TEST ERROR");
 		
 		}
+		org.junit.Assert.assertTrue(success);
 	}
 	@Override
 	protected String getInputDir() {

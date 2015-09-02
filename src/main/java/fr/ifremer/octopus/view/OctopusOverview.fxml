@@ -6,31 +6,38 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="550.0" prefWidth="693.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.OctopusOverviewController">
+<AnchorPane prefHeight="850.0" prefWidth="1093.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.OctopusOverviewController">
 	<children>
 		<SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="550.0" prefWidth="693.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 			<items>
 				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
 					<children>
-						<Label layoutX="5.0" layoutY="14.0" text="%input.label" AnchorPane.leftAnchor="5.0" />
-						<TextField fx:id="inputPathTextField" layoutX="5.0" layoutY="39.0" prefHeight="25.0" prefWidth="520.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
-                  <Label layoutX="14.0" layoutY="77.0" text="%output.label" AnchorPane.leftAnchor="5.0" />
-                  <TextField fx:id="outputPathTextField" layoutX="5.0" layoutY="102.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
-                  <Label layoutX="5.0" layoutY="143.0" text="%output.type" />
-                  <RadioButton fx:id="radioMono" layoutX="202.0" layoutY="142.0" mnemonicParsing="false" text="%output.type.mono">
+						<Label layoutX="5.0" layoutY="14.0" text="%input.label" AnchorPane.leftAnchor="10.0" />
+						<TextField fx:id="inputPathTextField" layoutX="5.0" layoutY="39.0" onKeyPressed="#inputChanged" prefHeight="25.0" prefWidth="520.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="5.0" />
+                  <Label layoutX="5.0" layoutY="105.0" text="%output.label" AnchorPane.leftAnchor="10.0" />
+                  <TextField fx:id="outputPathTextField" layoutX="200.0" layoutY="130.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="5.0" />
+                  <Label layoutX="5.0" layoutY="82.0" text="%output.type" AnchorPane.leftAnchor="10.0" />
+                  <RadioButton fx:id="radioMono" layoutX="261.0" layoutY="81.0" mnemonicParsing="false" onAction="#checkedMono" text="%output.type.mono">
                      <toggleGroup>
                         <ToggleGroup fx:id="outputType" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="radioMulti" layoutX="346.0" layoutY="142.0" mnemonicParsing="false" selected="true" text="%output.type.multi" toggleGroup="$outputType" />
-                  <Label layoutX="19.0" layoutY="195.0" text="%output.export" AnchorPane.leftAnchor="19.0">
+                  <RadioButton fx:id="radioMulti" layoutX="346.0" layoutY="81.0" mnemonicParsing="false" onAction="#checkedMulti" selected="true" text="%output.type.multi" toggleGroup="$outputType" />
+                  <Label layoutX="905.0" layoutY="190.0" text="%output.export" AnchorPane.leftAnchor="905.0">
                      <font>
                         <Font size="19.0" />
                      </font>
                   </Label>
-                  <Button layoutX="187.0" layoutY="184.0" mnemonicParsing="false" onAction="#exportToMed" prefHeight="46.0" prefWidth="150.0" text="%output.medatlas" />
-                  <Button layoutX="343.0" layoutY="184.0" mnemonicParsing="false" onAction="#exportToODV" prefHeight="46.0" prefWidth="150.0" text="%output.odv" />
-                  <Button layoutX="499.0" layoutY="184.0" mnemonicParsing="false" onAction="#exportToCfPoint" prefHeight="46.0" prefWidth="150.0" text="%output.cfpoint" />
+                  <Button layoutX="905.0" layoutY="229.0" mnemonicParsing="false" onAction="#exportToMed" prefHeight="46.0" prefWidth="150.0" text="%output.medatlas" />
+                  <Button layoutX="905.0" layoutY="282.0" mnemonicParsing="false" onAction="#exportToODV" prefHeight="46.0" prefWidth="150.0" text="%output.odv" />
+                  <Button layoutX="905.0" layoutY="336.0" mnemonicParsing="false" onAction="#exportToCfPoint" prefHeight="46.0" prefWidth="150.0" text="%output.cfpoint" />
+                  <TableView fx:id="cdiTable" layoutX="33.0" layoutY="177.0" prefHeight="200.0" prefWidth="667.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="200.0">
+                    <columns>
+                      <TableColumn fx:id="cdiColumn" minWidth="300.0" prefWidth="300.0" text="%cdiTable.cdiColumn" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="chooseOut" layoutX="4.0" layoutY="130.0" mnemonicParsing="false" onAction="#openChooseOut" text="%output.chooseOut" AnchorPane.leftAnchor="10.0" />
+                  <CheckBox fx:id="showCdi" layoutX="14.0" layoutY="172.0" mnemonicParsing="false" onAction="#showCdiList" text="%input.checkCdi" visible="false" />
 					</children>
 				</AnchorPane>
 				<fx:include source="LoggerConsole.fxml" />

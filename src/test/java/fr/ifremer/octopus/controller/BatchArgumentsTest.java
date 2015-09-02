@@ -77,7 +77,7 @@ public class BatchArgumentsTest {
 	@Test
 	public void emptyOutputTest(){
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o ";
 		String[] args = new String[]{in, out, "-f medatlas", "-t mono"};
 		logArgs(args);
@@ -91,7 +91,7 @@ public class BatchArgumentsTest {
 	@Test
 	public void unrecognizedOutputFormatTest(){
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+pwd+"out";
 		String[] args = new String[]{in, out, "-f toto", "-t mono"};
 		logArgs(args);
@@ -105,7 +105,7 @@ public class BatchArgumentsTest {
 	@Test
 	public void unrecognizedOutputTypeTest(){
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+pwd+"out";
 		String[] args = new String[]{in, out, "-f medatlas", "-t toto"};
 		logArgs(args);
@@ -120,7 +120,7 @@ public class BatchArgumentsTest {
 	public void badMedExtension() {
 		boolean success=false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+pwd+"out.toto";
 		String[] args = new String[]{in, out, "-f medatlas", "-t multi","-c FI35200110014_00020_H09,FI35200110014_00022_H09"};
 		logArgs(args);
@@ -139,7 +139,7 @@ public class BatchArgumentsTest {
 	public void badOdvExtension() {
 		boolean success=false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+pwd+"out.toto";
 		String[] args = new String[]{in, out, "-f odv", "-t multi"};
 		logArgs(args);
@@ -157,7 +157,7 @@ public class BatchArgumentsTest {
 	public void badCfpointExtension() {
 		boolean success=false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+pwd+"out.toto";
 		String[] args = new String[]{in, out, "-f cfpoint", "-t multi"};
 		logArgs(args);

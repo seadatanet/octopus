@@ -35,7 +35,7 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 	public void med2odvMono_emptyCDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+getOutputPath("med2odvMono_emptyCDI");
 		String[] args = new String[]{in, out, "-f odv", "-t mono"};
 		logArgs(args, logger);
@@ -56,7 +56,7 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 	public void med2odvMulti_emptyCDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+getOutputPath("med2odvMulti_emptyCDI.txt");
 		String[] args = new String[]{in, out, "-f odv", "-t multi"};
 		logArgs(args, logger);
@@ -77,7 +77,7 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 	public void med2odvMono_2CDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+getOutputPath("med2odvMono_2CDI");
 		String[] args = new String[]{in, out, 
 				"-f odv",
@@ -97,7 +97,7 @@ public class BatchMed2OdvTest extends AbstractBatchX2YTest{
 	public void med2odvMulti_2CDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+getOutputPath("med2odvMulti_2CDI.txt");
 		String[] args = new String[]{in, out, 
 				"-f odv",

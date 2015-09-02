@@ -35,7 +35,7 @@ public class BatchMed2CfTest extends AbstractBatchX2YTest {
 	public void med2cfMono_emptyCDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+getOutputPath("med2cfMono_emptyCDI");
 		String[] args = new String[]{in, out, "-f cfpoint", "-t mono"};
 		logArgs(args, logger);
@@ -56,7 +56,7 @@ public class BatchMed2CfTest extends AbstractBatchX2YTest {
 	public void med2cfMulti_emptyCDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+getOutputPath("med2cfMulti_emptyCDI.cf");
 		String[] args = new String[]{in, out, "-f cfpoint", "-t multi"};
 		logArgs(args, logger);
@@ -77,7 +77,7 @@ public class BatchMed2CfTest extends AbstractBatchX2YTest {
 	public void med2cfMono_2CDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+getOutputPath("med2cfMono_2CDI");
 		String[] args = new String[]{in, out, 
 				"-f cfpoint",
@@ -97,7 +97,7 @@ public class BatchMed2CfTest extends AbstractBatchX2YTest {
 	public void med2cfMulti_2CDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/diap";
+		String in="-i "+pwd+"medatlas/input/diap";
 		String out = "-o "+getOutputPath("med2cfMulti_2CDI.cf");
 		String[] args = new String[]{in, out, 
 				"-f cfpoint",

@@ -34,7 +34,7 @@ public class BatchOdv2CfTest extends AbstractBatchX2YTest {
 	public void odv2cfMono_emptyCDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"odv/diap.txt";
+		String in="-i "+pwd+"odv/input/diap.txt";
 		String out = "-o "+getOutputPath("odv2cfMono_emptyCDI");
 		String[] args = new String[]{in, out, "-f cfpoint", "-t mono"};
 		logArgs(args, logger);
@@ -55,7 +55,7 @@ public class BatchOdv2CfTest extends AbstractBatchX2YTest {
 	public void odv2cfMulti_emptyCDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"odv/diap.txt";
+		String in="-i "+pwd+"odv/input/diap.txt";
 		String out = "-o "+getOutputPath("odv2cfMulti_emptyCDI.cf");
 		String[] args = new String[]{in, out, "-f cfpoint", "-t multi"};
 		logArgs(args, logger);
@@ -76,7 +76,7 @@ public class BatchOdv2CfTest extends AbstractBatchX2YTest {
 	public void odv2cfMono_2CDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"odv/diap.txt";
+		String in="-i "+pwd+"odv/input/diap.txt";
 		String out = "-o "+getOutputPath("odv2cfMono_2CDI");
 		String[] args = new String[]{in, out, 
 				"-f cfpoint",
@@ -96,7 +96,7 @@ public class BatchOdv2CfTest extends AbstractBatchX2YTest {
 	public void odv2cfMulti_2CDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"odv/diap.txt";
+		String in="-i "+pwd+"odv/input/diap.txt";
 		String out = "-o "+getOutputPath("odv2cfMulti_2CDI.cf");
 		String[] args = new String[]{in, out, 
 				"-f cfpoint",

@@ -43,7 +43,7 @@ public class RootController {
     @FXML
     private void openFile() {
     	FileChooser fileChooser = new FileChooser();
-    	 fileChooser.setTitle("Open file");
+    	 fileChooser.setTitle("Open file"); // TODO
 //    	 fileChooser.getExtensionFilters().addAll(
 //    	         new ExtensionFilter("Text Files", "*.txt"),
 //    	         new ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
@@ -59,7 +59,7 @@ public class RootController {
     @FXML
     private void openDir() {
     	DirectoryChooser dirChooser = new DirectoryChooser();
-    	dirChooser.setTitle("Open directory");
+    	dirChooser.setTitle("Open directory"); // TODO
     	 File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
     	 if (selectedFile != null) {
     		 mainApp.getController().setInputText(selectedFile.getAbsolutePath());

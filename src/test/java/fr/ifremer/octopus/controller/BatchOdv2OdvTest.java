@@ -40,7 +40,7 @@ public class BatchOdv2OdvTest extends AbstractBatchX2YTest {
 	public void odv2odvMono_emptyCDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"odv/diap.txt";
+		String in="-i "+pwd+"odv/input/diap.txt";
 		String out = "-o "+getOutputPath("odv2odvMono_emptyCDI");
 		String[] args = new String[]{in, out, "-f odv", "-t mono"};
 		logArgs(args, logger);
@@ -61,13 +61,13 @@ public class BatchOdv2OdvTest extends AbstractBatchX2YTest {
 	public void odv2odvMulti_emptyCDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"odv/diap.txt";
+		String in="-i "+pwd+"odv/input/diap.txt";
 		String out = "-o "+getOutputPath("odv2odvMulti_emptyCDI.txt");
 		String[] args = new String[]{in, out, "-f odv", "-t multi"};
 		logArgs(args, logger);
 		try{
 			b = new BatchController(args, true);
-			success = new File(getOutputPath("odv2odvMulti_emptyCDI.txt")).exists();
+			success = !new File(getOutputPath("odv2odvMulti_emptyCDI.txt")).exists();
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 		
@@ -82,7 +82,7 @@ public class BatchOdv2OdvTest extends AbstractBatchX2YTest {
 	public void odv2odvMono_2CDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"odv/diap.txt";
+		String in="-i "+pwd+"odv/input/diap.txt";
 		String out = "-o "+getOutputPath("odv2odvMono_2CDI");
 		String[] args = new String[]{in, out, 
 				"-f odv",
@@ -102,7 +102,7 @@ public class BatchOdv2OdvTest extends AbstractBatchX2YTest {
 	public void odv2odvMulti_2CDI() {
 		boolean success = false;
 		BatchController b = null ;
-		String in="-i "+pwd+"odv/diap.txt";
+		String in="-i "+pwd+"odv/input/diap.txt";
 		String out = "-o "+getOutputPath("odv2odvMulti_2CDI.txt");
 		String[] args = new String[]{in, out, 
 				"-f odv",

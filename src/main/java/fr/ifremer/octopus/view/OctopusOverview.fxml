@@ -37,7 +37,8 @@
                     </columns>
                   </TableView>
                   <Button fx:id="chooseOut" layoutX="4.0" layoutY="130.0" mnemonicParsing="false" onAction="#openChooseOut" text="%output.chooseOut" AnchorPane.leftAnchor="10.0" />
-                  <CheckBox fx:id="showCdi" layoutX="14.0" layoutY="172.0" mnemonicParsing="false" onAction="#showCdiList" text="%input.checkCdi" visible="false" />
+                  <CheckBox fx:id="showCdi" layoutX="14.0" layoutY="172.0" mnemonicParsing="false" onAction="#showCdiList" text="%input.checkCdi" />
+                  <Button layoutX="135.0" layoutY="169.0" mnemonicParsing="false" onAction="#cdiTableDeselect" text="%cdiTable.deselectAll" />
 					</children>
 				</AnchorPane>
 				<fx:include source="LoggerConsole.fxml" />

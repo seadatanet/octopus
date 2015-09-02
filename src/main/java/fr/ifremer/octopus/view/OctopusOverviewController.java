@@ -10,6 +10,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -73,6 +74,8 @@ public class OctopusOverviewController {
 		switchGui(false);
 
 		// set cdiTable columns
+		cdiTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+
 		cdiColumn.setCellValueFactory(cellData -> cellData.getValue().cdiProperty());
 
 		// if inputPathTextField value changed, reinit GUI
@@ -152,8 +155,6 @@ public class OctopusOverviewController {
 		showCdi.setSelected(false);
 		showCdi.setVisible(false);
 		cdiListManager = null;
-
-
 	}
 
 	private void switchGui(boolean inputOk){
@@ -189,6 +190,11 @@ public class OctopusOverviewController {
 	public void checkedMulti(){
 		outputPathTextField.setText("");
 	}	
+	
+	@FXML
+	public void cdiTableDeselect(){
+		cdiTable.getSelectionModel().clearSelection();
+	}
 	/**
 	 * get input file(s) CDIs list and show it in the table
 	 * @throws OctopusException
@@ -254,6 +260,11 @@ public class OctopusOverviewController {
 
 			octopusGuiController.getModel().setOutputPath(outputPathTextField.getText());
 			octopusGuiController.getModel().setOutputType(getOutputType());
+			octopusGuiController.getModel().getCdiList().clear();
+			for (SDNCdiIdObservable cdi :cdiTable.getSelectionModel().getSelectedItems()){
+				octopusGuiController.getModel().getCdiList().add("SDN:LOCAL::"+cdi.cdiProperty().getValue());
+			}
+			
 
 			LOGGER.info("export to "+format.getName()); // TODO
 			octopusGuiController.getModel().setOutputFormat(format);

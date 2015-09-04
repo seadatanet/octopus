@@ -2,8 +2,6 @@ package fr.ifremer.octopus.view;
 
 import java.io.File;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -69,7 +67,7 @@ public class OctopusOverviewController {
 
 	@FXML
 	private void initialize() {
-
+		LOGGER.debug("initialize");
 		// disable all but inputPathTextField
 		switchGui(false);
 
@@ -77,17 +75,6 @@ public class OctopusOverviewController {
 		cdiTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
 		cdiColumn.setCellValueFactory(cellData -> cellData.getValue().cdiProperty());
-
-		// if inputPathTextField value changed, reinit GUI
-		inputPathTextField.focusedProperty().addListener(new ChangeListener<Boolean>() {
-			@Override
-			public void changed(ObservableValue<? extends Boolean> ov, Boolean t, Boolean t1) {
-				if (t1) {
-					initGui();
-					switchGui(false);
-				} 
-			}
-		});
 
 	}
 	/**
@@ -132,7 +119,8 @@ public class OctopusOverviewController {
 	/**
 	 * initialize GUI, load controller if input path is valid
 	 */
-	private void initInput() {
+	public void initInput() {
+		LOGGER.debug("init input");
 		LOGGER.info("-----------------------------------------------------------");
 
 		initGui();
@@ -142,29 +130,32 @@ public class OctopusOverviewController {
 			if (octopusGuiController.getModel() !=null){
 				showCdi.setVisible(true);
 				cdiListManager = new CdiListManager(octopusGuiController);
+				LOGGER.debug("init input ok -> switch true");
 				switchGui(true);
 			}
 		} catch (OctopusException e) {
 			// TODO
 		}
 	}
-	private void initGui(){
+	public void initGui(){
 		// reinit GUI
 		cdiTable.getItems().clear();
 		cdiTable.setVisible(false);
 		showCdi.setSelected(false);
 		showCdi.setVisible(false);
 		cdiListManager = null;
+		switchGui(false);
 	}
 
 	private void switchGui(boolean inputOk){
+		LOGGER.debug("switch ok "+ inputOk);
 		radioMono.setDisable(!inputOk);
 		radioMulti.setDisable(!inputOk);
 		outputPathTextField.setDisable(!inputOk);
 		chooseOut.setDisable(!inputOk);
 	}
 	private void checkInput() throws OctopusException {
-
+		LOGGER.debug("check input");
 		File input = new File(inputPathTextField.getText());
 		if (!input.exists()){
 			// Show the error message.
@@ -177,7 +168,7 @@ public class OctopusOverviewController {
 			}else{
 				alert.setContentText("invalid input path");// TODO
 			}
-			switchGui(false);
+
 			alert.showAndWait();
 			throw new OctopusException("invalid input path");// TODO
 		}

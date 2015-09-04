@@ -1,7 +1,5 @@
-logs: logger deroulement split et conv
-tests: verifier au moins existence fichier out et absence d'exception
+get cdi list: fr.ifremer.octopus.view.CdiListManager.getCdiList()
 
-
-GUI: voir cas output=file ou dir
+GUI: voir cas output=file ou dir: mettre un seul bouton dont le code change en fct de monon/multi in=file/dir
 gestion cas d'erreur:
 rep sortie : pas de droits d'ecriture

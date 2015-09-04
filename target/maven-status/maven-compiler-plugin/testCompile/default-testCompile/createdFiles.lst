@@ -1,0 +1,10 @@
+fr/ifremer/octopus/controller/BatchArgumentsTest.class
+fr/ifremer/octopus/controller/BatchOdv2OdvTest.class
+fr/ifremer/octopus/controller/DriverTest.class
+fr/ifremer/octopus/controller/BatchMed2OdvTest.class
+fr/ifremer/octopus/controller/BatchCf2CfTest.class
+fr/ifremer/octopus/utils/PreferencesTest.class
+fr/ifremer/octopus/controller/BatchMed2CfTest.class
+fr/ifremer/octopus/controller/BatchMed2MedTest.class
+fr/ifremer/octopus/controller/BatchOdv2CfTest.class
+fr/ifremer/octopus/controller/AbstractBatchX2YTest.class

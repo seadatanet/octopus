@@ -1,15 +1,12 @@
 package fr.ifremer.octopus.view;
 
 import java.io.File;
-import java.io.IOException;
-import java.util.Locale;
 
-import fr.ifremer.octopus.MainApp;
-import fr.ifremer.octopus.utils.PreferencesManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+import fr.ifremer.octopus.MainApp;
 
 
 
@@ -51,6 +48,7 @@ public class RootController {
 //    	         new ExtensionFilter("All Files", "*.*"));
     	 File selectedFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
     	 if (selectedFile != null) {
+    		 mainApp.getController().initGui();
     		 mainApp.getController().setInputText(selectedFile.getAbsolutePath());
     	 }
     }
@@ -62,6 +60,7 @@ public class RootController {
     	dirChooser.setTitle("Open directory"); // TODO
     	 File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
     	 if (selectedFile != null) {
+    		 mainApp.getController().initGui();
     		 mainApp.getController().setInputText(selectedFile.getAbsolutePath());
     	 }
     }

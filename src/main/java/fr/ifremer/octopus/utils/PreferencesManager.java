@@ -17,7 +17,7 @@ public class PreferencesManager {
 
 
 	private static final Logger LOGGER = LogManager.getLogger(PreferencesManager.class);
-	private static final String preferencesFile = "preferences.xml";
+	private static final String preferencesFile = "resources/preferences.xml";
 	private static PreferencesManager mgr;
 
 	private Preferences preferences;

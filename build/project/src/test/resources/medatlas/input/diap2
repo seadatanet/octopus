@@ -1,0 +1,819 @@
+*FI29200110014 DIAPALIS 2                       35AY Alis                     
+10/12/2001-21/12/2001 Coral Sea                                         
+35 IRD, CNRS, IUEM et Universite                                              
+LE BOUTEILLER Aubert                     Project=JGOFS - FRANCE/PROOF        
+Regional Archiving= FI                   Availability=P
+Data Type=B02 n=13   QC=N
+Data Type=B06 n=8    QC=N
+Data Type=B71 n=8    QC=N
+Data Type=H09 n=13   QC=N
+Data Type=H22 n=12   QC=N
+Data Type=H24 n=11   QC=N
+Data Type=H25 n=11   QC=N
+Data Type=H76 n=11   QC=N
+COMMENT
+Ces donnees hydrologiques sont issues de la base de donnees DIAPAZON :
+http://www.com.univ-mrs.fr/IRD/urcyano/bdd/diapazon/bddiapaz.htm
+
+L'utilisation de ces donnees est soumise aux conditions suivantes :
+- demander l'autorisation aux responsables dont les noms et contacts figurent
+sur la page correspondant a la campagne.
+- faire reference a leur origine.
+
+PRESSION :
+---------
+En l'absence de valeurs de temperature et salinite et compte-tenu des faibles
+profondeurs de mesure, on considere que la pression est egale a la profondeur
+donnee.
+
+Mesures de sels nutritifs :
+--------------------------
+Les prelevements ont ete realises sur 12 bouteilles de prelevement Niskin de 8
+litres, greees a la rosette. Les  phosphates et l'ammonium ont ete analyses a
+bord, immediatement apres le prelevement (en general < 1h). Dans le cas des
+nitrates et nitrites, les echantillons ont ete conserves au froid apres ajout de
+HgCl2 (Kattner, 1999) et analyses a posteriori au laboratoire a Noumea. Les
+resultats sont exprimes en micromoles par litre.
+
+- Nitrates et Nitrites :
+Les nitrates et les nitrites ont ete determines par dosage colorimetrique
+automatise a flux continu sur un autoanalyseur II Technicon. Pour les
+concentrations de nitrate > 0.1 micromoles/l, les protocoles analytiques sont
+adaptes de ceux decrits dans Strickland and Parsons (1972). Pour les
+concentrations de nitrates < 0.1 micromoles/l, l'analyse a ete realisee selon la
+methode "haute sensibilite" decrite par Raimbault et al. (1990).
+La limite de detection pour le nitrate basse et haute sensibilite est de 0.02
+micromoles/l et 0.003 micromoles/l, respectivement. La limite pour le nitrite
+est de 0.003 micromoles/l.
+
+- Phosphates (phosphates solubles reactifs PSR) :
+Les phosphates PSR (phosphate soluble reactif) ont ete mesures manuellement par
+dosage colorimetrique au spectrophotometre (CECIL) a 885nm selon la methode de
+Murphy and Riley (1962). La mesure a ete realisee sur une cuve de 10cm afin
+d'augmenter la sensibilite.
+Pour le phosphate, la limite de detection est de 0.020 micromoles/l.
+
+- Ammonium :
+L'ammonium a ete mesure manuellement par fluorimetrie, selon la methode decrite
+par Holmes et al. (1999). L'analyse est realisee sur un fluorimetre Turner
+Design TD-700 (photo ci-contre) equipe d'un filtre d'excitation a 350 nm et d'un
+filtre d'emission de 410-600nm. La lecture au fluorimetre est realisee 3h apres
+ajout des reactifs, delai necessaire au developpement complet de la
+fluorescence.
+
+
+Mesure des pigments chlorophylliens :
+------------------------------------
+- Recolte du phytoplancton :
+Le phytoplancton etait recolte, par filtration de 265 ml d'eau de mer, sur des
+filtres en fibre de verre Whatman GF/F de 25 mm de diametre. Les filtres etaient
+congeles a bord dans l'azote liquide, puis conserves a -80 DegC au laboratoire
+avant l'analyse.
+
+- Extraction des pigments :
+L'extraction des pigments etait realisee dans 4.8 ml d'acetone a 93% (pigments
+dans l'acetone a 90% tenant compte de l'eau retenue sur le filtre), en broyant
+le filtre avec une baguette de verre a l'extremite fraichement cassee et en
+laissant le broyat pendant environ 12 h au refrigerateur a 4 DegC. Apres
+centrifugation 5 minutes a 3500 t.p.m, la fluorescence du surnageant etait
+mesuree a l'aide d'un spectrofluorimetre HITACHI F4500.
+
+- Estimation de la concentration des pigments chlorophylliens :
+La concentration des pigments chlorophylliens [chlorophylle a, b et c (c1+c2;
+c3); divinyle-chlorophylle a et b] et de leurs derives de type pheopigments a
+ete estimee par la methode modifiee de Neveux et Lantoine (1993).
+
+Methode modifiee de mesure des pigments chlorophylliens (Neveux et Lantoine,
+1993)
+- Mode d'acquisition des donnees de fluorescence : realisation d'une serie de 31
+spectres d'emission fixant d'abord la longueur d'onde d'excitation a 390 nm puis
+l'incrementant de 3 en 3 nm jusqu'a 480 nm. Utilisation de 806 points de mesure
+dans le calcul des concentrations en pigments (Neveux et al., 2003).
+- Introduction d'un nouveau standard dans l'analyse, la chlorophylle c3 et une
+analyse qui elimine les solutions negatives.
+
+- Calibration du spectrofluorimetre :
+La calibration du spectrofluorimetre a ete realisee a partir de solutions
+standards preparees au laboratoire Arago (Neveux et Lantoine, 1993), excepte la
+chlorophylle c3 qui a ete achetee chez DHI (Danemark).
+*FI2920011001400001 Data Type=H09
+*DATE=10122001 TIME=1729 LAT=S21 57.10 LON=E166 44.82 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00007
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000000
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00001_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00001_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.14  0.013  0.004  0.251  0.207  0.019  0.016  0.017  0.005   0.10  0.0661  0.0344  0.2416 00000000000000
+   5.0  0.12  0.009  0.003  0.236  0.192  0.019  0.015  0.019  0.004   0.09 99.9999 99.9999 99.9999 00000000000999
+  10.0  0.08  0.006  0.003  0.235  0.189  0.022  0.016  0.018  0.005   0.08 99.9999 99.9999 99.9999 00000000000999
+  15.0  0.14  0.002  0.003  0.232  0.184  0.022  0.015  0.018  0.006   0.17 99.9999 99.9999 99.9999 00000000000999
+  20.0  0.11  0.001  0.002  0.248  0.172  0.025  0.017  0.021  0.004   0.13 99.9999 99.9999 99.9999 00000000000999
+  25.0  0.12  0.003  0.003  0.375  0.255  0.044  0.027  0.036  0.017 999.99 99.9999 99.9999 99.9999 00000000009999
+  30.0  0.11  0.025  0.008  0.488  0.357  0.070  0.038  0.057  0.026   0.10 99.9999 99.9999 99.9999 00000000000999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400005 Data Type=H09
+*DATE=11122001 TIME=1724 LAT=S21 57.23 LON=E166 44.90 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00007
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000000
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00005_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00005_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.05  0.018  0.004  0.213  0.168  0.016  0.013  0.015  0.001   0.12  0.1612  0.0333  0.2467 00000000000000
+   5.0  0.04  0.003  0.001  0.199  0.155  0.024  0.014  0.014  0.003   0.12  0.2092  0.0271  0.2743 00000000000000
+  10.0  0.06  0.003  0.001  0.220  0.174  0.022  0.014  0.014  0.006   0.17  0.1931  0.0258  0.2806 00000000000000
+  15.0  0.06  0.010  0.002  0.225  0.160  0.028  0.018  0.017  0.005   0.11  0.1950  0.0249  0.2768 00000000000000
+  20.0  0.07  0.004  0.001  0.311  0.215  0.038  0.023  0.025  0.011   0.12  0.1647  0.0259  0.2617 00000000000000
+  25.0  0.06  0.003  0.000  0.352  0.237  0.045  0.026  0.028  0.014   0.15  0.1916  0.0333  0.2818 00000000000000
+  30.0  0.07  0.001  0.002  0.365  0.248  0.042  0.025  0.029  0.016   0.13  0.1945  0.0388  0.3044 00000000000000
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400007 Data Type=H09
+*DATE=12122001 TIME=1725 LAT=S21 57.21 LON=E166 45.14 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00007
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000000
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00007_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00007_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.03  0.002  0.002  0.217  0.175  0.017  0.013  0.016 -0.001   0.05  0.1866  0.0314  0.2442 00000000000000
+   5.0  0.06  0.001  0.001  0.203  0.158  0.014  0.012  0.016  0.002   0.06 99.9999 99.9999 99.9999 00000000000999
+  10.0  0.04  0.001  0.001  0.202  0.156  0.016  0.013  0.016  0.001   0.05 99.9999 99.9999 99.9999 00000000000999
+  15.0  0.04  0.003  0.002  0.218  0.165  0.020  0.015  0.019  0.004   0.06  0.1506  0.0267  0.2153 00000000000000
+  20.0  0.05  0.015  0.003  0.289  0.190  0.036  0.021  0.026  0.010   0.11 99.9999 99.9999 99.9999 00000000000999
+  25.0  0.03  0.048  0.005  0.283  0.171  0.030  0.021  0.034  0.006   0.07 99.9999 99.9999 99.9999 00000000000999
+  30.0  0.06  0.167  0.015  0.356  0.243  0.050  0.027  0.036  0.023   0.07  0.1834  0.0305  0.2756 00000000000000
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400010 Data Type=H09
+*DATE=13122001 TIME=1748 LAT=S21 54.74 LON=E166 46.26 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00005
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000999
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00010_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00010_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.05  0.005  0.001  0.234  0.168  0.019  0.016  0.023  0.011   0.12 99.9999 99.9999 99.9999 00000000000999
+  10.0  0.05  0.005  0.000  0.221  0.158  0.021  0.016  0.020  0.008   0.10 99.9999 99.9999 99.9999 00000000000999
+  20.0  0.05  0.005  0.000  0.269  0.197  0.030  0.020  0.030  0.015   0.31 99.9999 99.9999 99.9999 00000000000999
+  30.0  0.09  0.007  0.002  0.355  0.228  0.047  0.024  0.029  0.020   0.07 99.9999 99.9999 99.9999 00000000000999
+  40.0  0.14  0.321  0.037  0.655  0.531  0.167  0.051  0.088  0.047   0.09 99.9999 99.9999 99.9999 00000000000999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400011 Data Type=H09
+*DATE=13122001 TIME=2149 LAT=S21 47.88 LON=E166 48.46 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00011
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000009999
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00011_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00011_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.05  0.005  0.005  0.171  0.116  0.009  0.010  0.016  0.004 999.99 99.9999 99.9999 99.9999 00000000009999
+  10.0  0.03  0.005  0.002  0.150  0.097  0.011  0.010  0.012  0.004 999.99 99.9999 99.9999 99.9999 00000000009999
+  20.0  0.06  0.005  0.002  0.157  0.106  0.012  0.011  0.011  0.003 999.99 99.9999 99.9999 99.9999 00000000009999
+  30.0  0.03  0.011  0.014 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 00009999999999
+  40.0  0.12  0.005  0.004  0.196  0.114  0.017  0.016  0.019  0.008 999.99 99.9999 99.9999 99.9999 00000000009999
+  60.0  0.05  0.005  0.005  0.385  0.200  0.075  0.034  0.053  0.029 999.99 99.9999 99.9999 99.9999 00000000009999
+  70.0 99.99 99.999 99.999  0.515  0.297  0.081  0.057  0.124  0.066 999.99 99.9999 99.9999 99.9999 09990000009999
+  80.0  0.13  0.698  0.095  1.838  1.593  0.169  0.244  0.635  0.315 999.99 99.9999 99.9999 99.9999 00000000009999
+ 100.0  0.33  3.846  0.289  0.298  0.190  0.065  0.033  0.071  0.052 999.99 99.9999 99.9999 99.9999 00000000009999
+ 120.0  0.32  4.401  0.099  0.152  0.083  0.025  0.017  0.032  0.018 999.99 99.9999 99.9999 99.9999 00000000009999
+ 150.0  0.34  4.732  0.044  0.060  0.040  0.012  0.008  0.018  0.011 999.99 99.9999 99.9999 99.9999 00000000009999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400012 Data Type=H09
+*DATE=14122001 TIME=1747 LAT=S20 51.54 LON=E167 05.14 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00009
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000000
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00012_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00012_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.01  0.026  0.006  0.194  0.125  0.018  0.012  0.010  0.004   0.04  0.2573  0.0222  0.2894 00000000000000
+  10.0  0.01  0.021  0.006  0.164  0.094  0.010  0.011  0.014  0.002 999.99 99.9999 99.9999 99.9999 00000000009999
+  20.0  0.00  0.023  0.004  0.166  0.096  0.012  0.012  0.011  0.002   0.04 99.9999 99.9999 99.9999 00000000000999
+  30.0  0.01  0.021  0.004 99.999 99.999 99.999 99.999 99.999 99.999   0.04 99.9999 99.9999 99.9999 00009999990999
+  40.0  0.03  0.019  0.002  0.222  0.114  0.020  0.017  0.022  0.008 999.99 99.9999 99.9999 99.9999 00000000009999
+  60.0  0.02  0.018  0.001  0.325  0.149  0.033  0.025  0.039  0.017   0.03 99.9999 99.9999 99.9999 00000000000999
+  80.0  0.09  0.241  0.097  0.496  0.264  0.093  0.046  0.074  0.031   0.07 99.9999 99.9999 99.9999 00000000000999
+ 100.0  0.18  1.479  0.149  0.251  0.156  0.048  0.029  0.081  0.054   0.05 99.9999 99.9999 99.9999 00000000000999
+ 120.0  0.29  2.778  0.058  0.098  0.050  0.018  0.011  0.018  0.010   0.04 99.9999 99.9999 99.9999 00000000000999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400014 Data Type=H09
+*DATE=15122001 TIME=1736 LAT=S20 51.86 LON=E167 04.65 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00010
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000000
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00014_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00014_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.01  0.016  0.004  0.139  0.081  0.010  0.011  0.009  0.006   0.01  0.2390  0.0237  0.2768 00000000000000
+   5.0  0.02  0.014  0.003  0.171  0.113  0.010  0.010  0.011  0.002   0.02 99.9999 99.9999 99.9999 00000000000999
+  10.0  0.01  0.014  0.004  0.166  0.106  0.009  0.011  0.012  0.005 999.99  0.2205  0.0246  0.2592 00000000009000
+  20.0  0.01  0.011  0.003  0.172  0.109  0.010  0.011  0.013  0.004   0.01 99.9999 99.9999 99.9999 00000000000999
+  30.0  0.02  0.012  0.004  0.179  0.105  0.013  0.013  0.015  0.009   0.02 99.9999 99.9999 99.9999 00000000000999
+  40.0  0.02  0.013  0.003  0.216  0.112  0.015  0.016  0.019  0.008   0.02 99.9999 99.9999 99.9999 00000000000999
+  60.0  0.04  0.009  0.004  0.298  0.137  0.028  0.023  0.027  0.015   0.03 99.9999 99.9999 99.9999 00000000000999
+  80.0  0.08  0.190  0.064  0.460  0.223  0.090  0.043  0.063  0.025   0.03  0.2330  0.0169  0.3346 00000000000000
+ 100.0  0.18  1.260  0.175  0.249  0.119  0.039  0.027  0.042  0.010   0.02 99.9999 99.9999 99.9999 00000000000999
+ 120.0  0.27  2.545  0.067  0.113  0.057  0.020  0.013  0.021  0.008   0.02 99.9999 99.9999 99.9999 00000000000999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400016 Data Type=H09
+*DATE=16122001 TIME=1728 LAT=S20 51.60 LON=E167 04.34 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00010
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000000
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00016_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00016_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.04  0.011  0.002  0.146  0.091  0.009  0.009  0.012  0.003   0.02  0.2039  0.0265  0.2680 00000000000000
+   5.0  0.03  0.010  0.002  0.176  0.119  0.008  0.010  0.012  0.003 999.99  0.1869  0.0215  0.2366 00000000009000
+  10.0  0.02  0.012  0.002  0.148  0.093  0.009  0.009  0.010  0.003   0.02  0.2234  0.0220  0.2642 00000000000000
+  20.0  0.02  0.012  0.002  0.162  0.103  0.011  0.011  0.013  0.003 999.99  0.2265  0.0241  0.2718 00000000009000
+  30.0  0.03  0.010  0.004  0.000 99.999 99.999 99.999 99.999 99.999   0.01  0.1456  0.0251  0.1989 00000999990000
+  40.0  0.03  0.010  0.002  0.181  0.108  0.014  0.013  0.017  0.003   0.01  0.2321  0.0291  0.2894 00000000000000
+  60.0  0.04  0.010  0.002  0.244  0.116  0.022  0.017  0.026  0.007 999.99  0.2329  0.0263  0.2969 00000000009000
+  80.0  0.08  0.046  0.015  0.426  0.183  0.068  0.035  0.048  0.015   0.02  0.1961  0.0208  0.2969 00000000000000
+ 100.0  0.18  1.321  0.164  0.256  0.128  0.040  0.027  0.043  0.009   0.04  0.2266  0.0099  0.4200 00000000000000
+ 120.0  0.25  2.250  0.081  0.133  0.070  0.023  0.015  0.025  0.005   0.04  0.1702  0.0071  0.4313 00000000000000
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400018 Data Type=H09
+*DATE=17122001 TIME=1708 LAT=S21 30.55 LON=E167 00.05 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00010
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000000
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00018_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00018_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.01  0.010  0.002  0.110  0.063  0.008  0.008  0.009  0.005   0.01  0.3047  0.0133  0.3296 00000000000000
+   5.0  0.01  0.010  0.001  0.102  0.055  0.009  0.008  0.007  0.007   0.01  0.3042  0.0127  0.3308 00000000000000
+  10.0  0.01  0.013  0.005  0.122  0.074  0.007  0.008  0.011  0.003   0.01  0.2632  0.0135  0.2906 00000000000000
+  20.0  0.01  0.013  0.001  0.103  0.056  0.007  0.008  0.011  0.007   0.02  0.2650  0.0178  0.2944 00000000000000
+  30.0  0.03  0.007  0.004  0.118  0.069  0.007  0.008  0.012  0.006   0.04  0.2969  0.0175  0.3421 00000000000000
+  40.0  0.03  0.015  0.009  0.117  0.070  0.009  0.008  0.010  0.006   0.02  0.2282  0.0187  0.2793 00000000000000
+  60.0  0.05  0.010  0.002  0.157  0.094  0.013  0.011  0.016  0.002   0.02  0.1595  0.0162  0.2266 00000000000000
+  80.0  0.06  0.010  0.002  0.209  0.087  0.025  0.016  0.023  0.003   0.01  0.1580  0.0152  0.2379 00000000000000
+ 100.0  0.16  0.580  0.117  0.466  0.231  0.093  0.047  0.065  0.020   0.02  0.1539  0.0114  0.3270 00000000000000
+ 120.0  0.29  2.432  0.060  0.187  0.086  0.027  0.021  0.029  0.004   0.05  0.1091  0.0067  0.4024 00000000000000
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400020 Data Type=H09
+*DATE=18122001 TIME=1711 LAT=S21 38.26 LON=E167 07.63 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00010
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000000
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00020_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00020_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.02  0.014  0.002  0.131  0.083  0.007  0.008  0.008  0.003   0.01  0.2090  0.0171  0.2492 00000000000000
+   5.0  0.03  0.016  0.002  0.103  0.058  0.006  0.007  0.008  0.006   0.06 99.9999 99.9999 99.9999 00000000000999
+  10.0  0.02  0.019  0.003  0.121  0.076  0.007  0.008  0.006  0.012   0.01  0.2683  0.0226  0.3095 00000000000000
+  20.0  0.01  0.024  0.004  0.127  0.081  0.006  0.007  0.008  0.016   0.02 99.9999 99.9999 99.9999 00000000000999
+  30.0  0.01  0.011  0.001  0.104  0.059  0.008  0.008  0.007  0.005   0.05 99.9999 99.9999 99.9999 00000000000999
+  40.0  0.02  0.051  0.003  0.136  0.092  0.008  0.009  0.009  0.003   0.02 99.9999 99.9999 99.9999 00000000000999
+  60.0  0.03  0.011  0.001  0.174  0.112  0.013  0.012  0.015  0.006   0.07  0.2579  0.0213  0.3069 00000000000000
+  80.0  0.07  0.009  0.002  0.194  0.080  0.031  0.016  0.017  0.000   0.01 99.9999 99.9999 99.9999 00000000000999
+ 100.0  0.18  1.071  0.168  0.359  0.176  0.066  0.038  0.059  0.014   0.03  0.2037  0.0130  0.3924 00000000000000
+ 120.0  0.29  2.797  0.047  0.152  0.073  0.022  0.018  0.024  0.004   0.02 99.9999 99.9999 99.9999 00000000000999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400022 Data Type=H09
+*DATE=19122001 TIME=1708 LAT=S21 31.64 LON=E166 58.52 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00010
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000999
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00022_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00022_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.02  0.031  0.002  0.123  0.069  0.009  0.010  0.010  0.004   0.02 99.9999 99.9999 99.9999 00000000000999
+   5.0 99.99  0.034  0.004 99.999 99.999 99.999 99.999 99.999 99.999   0.10 99.9999 99.9999 99.9999 09009999990999
+  10.0  0.04  0.034  0.005  0.105  0.055  0.009  0.008  0.007  0.004   0.06 99.9999 99.9999 99.9999 00000000000999
+  20.0  0.02  0.027  0.006  0.099  0.047  0.009  0.008  0.005  0.007   0.10 99.9999 99.9999 99.9999 00000000000999
+  30.0  0.02  0.019  0.008  0.132  0.065  0.017  0.009  0.007  0.005   0.10 99.9999 99.9999 99.9999 00000000000999
+  40.0  0.02  0.017  0.010  0.135  0.091  0.009  0.009  0.009  0.001   0.05 99.9999 99.9999 99.9999 00000000000999
+  60.0  0.02  0.010  0.010  0.151  0.089  0.014  0.013  0.015  0.003 999.99 99.9999 99.9999 99.9999 00000000009999
+  80.0  0.07  0.010  0.013  0.209  0.091  0.026  0.017  0.019  0.002   0.29 99.9999 99.9999 99.9999 00000000000999
+ 100.0  0.10  0.179  0.055  0.825  0.519  0.134  0.070  0.101  0.041   0.07 99.9999 99.9999 99.9999 00000000000999
+ 120.0  0.17  1.645  0.086  0.206  0.093  0.029  0.023  0.030  0.007   0.03 99.9999 99.9999 99.9999 00000000000999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400024 Data Type=H09
+*DATE=20122001 TIME=1659 LAT=S21 39.23 LON=E167 03.74 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00010
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=09990000009999
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00024_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00024_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0 99.99 99.999 99.999  0.136  0.072  0.011  0.010  0.006  0.002 999.99 99.9999 99.9999 99.9999 09990000009999
+   5.0 99.99 99.999 99.999  0.136  0.076  0.011  0.011  0.009  0.002 999.99 99.9999 99.9999 99.9999 09990000009999
+  10.0 99.99 99.999 99.999  0.111  0.052  0.010  0.010  0.005  0.006 999.99 99.9999 99.9999 99.9999 09990000009999
+  20.0 99.99 99.999 99.999  0.132  0.079  0.010  0.009  0.007  0.003 999.99 99.9999 99.9999 99.9999 09990000009999
+  30.0 99.99 99.999 99.999  0.145  0.093  0.011  0.010  0.011  0.001 999.99 99.9999 99.9999 99.9999 09990000009999
+  40.0 99.99 99.999 99.999  0.154  0.103  0.010  0.010  0.012  0.001 999.99 99.9999 99.9999 99.9999 09990000009999
+  60.0 99.99 99.999 99.999  0.184  0.089  0.017  0.015  0.021  0.001 999.99 99.9999 99.9999 99.9999 09990000009999
+  80.0 99.99 99.999 99.999  0.439  0.233  0.088  0.047  0.067  0.027 999.99 99.9999 99.9999 99.9999 09990000009999
+ 100.0 99.99 99.999 99.999  0.311  0.132  0.047  0.032  0.052  0.013 999.99 99.9999 99.9999 99.9999 09990000009999
+ 120.0 99.99 99.999 99.999  0.183  0.082  0.024  0.020  0.030  0.003 999.99 99.9999 99.9999 99.9999 09990000009999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999
+*FI2920011001400025 Data Type=H09
+*DATE=21122001 TIME=0259 LAT=S21 57.26 LON=E166 45.34 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00004
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00990000009999
+*DC HISTORY=
+*
+*DM HISTORY=
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI29200110014_00025_H09
+*<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+*<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI29200110014_00025_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI"/>
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.07 99.999 99.999  0.219  0.151  0.020  0.014  0.018 -0.001 999.99 99.9999 99.9999 99.9999 00990000009999
+  10.0  0.07 99.999 99.999  0.203  0.139  0.019  0.014  0.012  0.001 999.99 99.9999 99.9999 99.9999 00990000009999
+  20.0  0.06 99.999 99.999  0.212  0.143  0.021  0.013  0.015 -0.001 999.99 99.9999 99.9999 99.9999 00990000009999
+  30.0  0.01 99.999 99.999  0.494  0.353  0.079  0.035  0.040  0.022 999.99 99.9999 99.9999 99.9999 00990000009999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999

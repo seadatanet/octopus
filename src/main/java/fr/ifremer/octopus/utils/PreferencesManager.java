@@ -70,13 +70,12 @@ public class PreferencesManager {
 			context = JAXBContext.newInstance(Preferences.class);
 			Marshaller m = context.createMarshaller();
 			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-
 			m.marshal(preferences, o);
 		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
+			LOGGER.error("Error while writing preferences.");// TODO
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+			LOGGER.error("can not find preferences files.");// TODO
 			e.printStackTrace();
 		}
 	}
@@ -94,6 +93,27 @@ public class PreferencesManager {
 		
 	}
 
-
+	public String getInputDefaultPath(){
+		File f = new File(preferences.getInputDefaultPath());
+		if (f.exists()){
+			return preferences.getInputDefaultPath();
+		}else{
+			return null;
+		}
+	}
+	public String getOutputDefaultPath(){
+		File f = new File(preferences.getOutputDefaultPath());
+		if (f.exists()){
+			return preferences.getOutputDefaultPath();
+		}else{
+			return null;
+		}
+	}
+	public void setInputDefaultPath(String inputDefaultPath){
+		preferences.setInputDefaultPath(inputDefaultPath);
+	}
+	public void setOutputDefaultPath(String outputDefaultPath){
+		preferences.setOutputDefaultPath(outputDefaultPath);
+	}
 
 }

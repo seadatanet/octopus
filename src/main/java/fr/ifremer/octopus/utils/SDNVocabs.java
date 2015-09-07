@@ -2,12 +2,15 @@ package fr.ifremer.octopus.utils;
 
 import java.io.File;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import sdn.vocabulary.implementations.CollectionFactory;
 import sdn.vocabulary.interfaces.ICollectionFactory;
 import sdn.vocabulary.interfaces.VocabularyException;
-import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 public class SDNVocabs {
+	static final Logger LOGGER = LogManager.getLogger(SDNVocabs.class.getName());
 
 	private static SDNVocabs sdnVocabs;
 	ICollectionFactory cf ;
@@ -19,7 +22,6 @@ public class SDNVocabs {
 		CollectionFactory.newInstance(vocab);
 		cf = CollectionFactory.getInstance();
 		cf.reload();
-		SdnVocabularyManager vocabMgr  = new SdnVocabularyManager(cf);
 	}
 	
 	public static SDNVocabs getInstance() throws VocabularyException{

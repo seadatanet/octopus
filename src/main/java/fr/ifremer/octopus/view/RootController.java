@@ -7,6 +7,7 @@ import javafx.scene.control.MenuItem;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import fr.ifremer.octopus.MainApp;
+import fr.ifremer.octopus.utils.PreferencesManager;
 
 
 
@@ -46,6 +47,7 @@ public class RootController {
 //    	         new ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
 //    	         new ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
 //    	         new ExtensionFilter("All Files", "*.*"));
+    	 fileChooser.setInitialDirectory(new File(PreferencesManager.getInstance().getInputDefaultPath()));
     	 File selectedFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
     	 if (selectedFile != null) {
     		 mainApp.getController().initGui();
@@ -58,6 +60,7 @@ public class RootController {
     private void openDir() {
     	DirectoryChooser dirChooser = new DirectoryChooser();
     	dirChooser.setTitle("Open directory"); // TODO
+    	dirChooser.setInitialDirectory(new File(PreferencesManager.getInstance().getInputDefaultPath()));
     	 File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
     	 if (selectedFile != null) {
     		 mainApp.getController().initGui();

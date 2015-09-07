@@ -3,6 +3,7 @@ package fr.ifremer.octopus.view;
 import java.io.File;
 
 import javafx.fxml.FXML;
+import javafx.scene.Cursor;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
@@ -25,6 +26,7 @@ import fr.ifremer.octopus.controller.OctopusException;
 import fr.ifremer.octopus.controller.OctopusGUIController;
 import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
+import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.utils.SDNCdiIdObservable;
 
 public class OctopusOverviewController {
@@ -95,6 +97,7 @@ public class OctopusOverviewController {
 		if (in.isFile() && getOutputType()==OUTPUT_TYPE.MULTI ){
 			FileChooser fileChooser = new FileChooser();
 			fileChooser.setTitle("Choose output File"); // TODO
+			fileChooser.setInitialDirectory(new File(PreferencesManager.getInstance().getOutputDefaultPath()));
 			selectedFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
 		}
 		// output = dir
@@ -102,6 +105,7 @@ public class OctopusOverviewController {
 		{
 			DirectoryChooser dirChooser = new DirectoryChooser();
 			dirChooser.setTitle("Choose output directory"); // TODO
+			dirChooser.setInitialDirectory(new File(PreferencesManager.getInstance().getOutputDefaultPath()));
 			selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
 		}
 		if (selectedFile != null) {
@@ -247,6 +251,7 @@ public class OctopusOverviewController {
 	private void export(Format format){
 
 		try {
+			mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
 			checkOutput();
 
 			octopusGuiController.getModel().setOutputPath(outputPathTextField.getText());
@@ -262,6 +267,8 @@ public class OctopusOverviewController {
 			octopusGuiController.process();
 		} catch (OctopusException e) {
 			LOGGER.error(e.getMessage());
+		}finally{
+			mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 		}
 
 	}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <preferences>
-    <inputDefaultPath>input</inputDefaultPath>
+    <inputDefaultPath></inputDefaultPath>
     <language>fr</language>
-    <outputDefaultPath>output</outputDefaultPath>
+    <outputDefaultPath></outputDefaultPath>
 </preferences>

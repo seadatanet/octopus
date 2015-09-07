@@ -83,8 +83,12 @@ public class MainApp extends Application {
 		// Load root layout from fxml file.
 		FXMLLoader loader = new FXMLLoader();
 		URL location = MainApp.class.getResource("view/Root.fxml");
-
-		loader.setResources(ResourceBundle.getBundle("bundles.root", prefsMgr.getLocale()));
+		try{
+			loader.setResources(ResourceBundle.getBundle("bundles.root", prefsMgr.getLocale()));
+		}catch(Exception e){
+			System.out.println("can not find preferences files. Exit"); // TODO
+			LOGGER.error("can not find preferences files. Exit");// TODO
+		}
 		loader.setLocation(location);
 		rootLayout = (BorderPane) loader.load();
 

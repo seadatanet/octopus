@@ -9,12 +9,15 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1093.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.PreferencesController">
    <children>
-      <Button layoutX="261.0" layoutY="361.0" mnemonicParsing="false" onAction="#closePreferences" text="%preferences.close" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" />
-      <VBox layoutX="15.0" layoutY="143.0" prefHeight="200.0" prefWidth="570.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+      <Button fx:id="closeButton" layoutX="261.0" layoutY="361.0" mnemonicParsing="false" onAction="#closePreferences" text="%preferences.close" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" />
+      <VBox fx:id="directoriesBox" layoutX="15.0" layoutY="143.0" prefHeight="200.0" prefWidth="570.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
          <children>
-            <HBox>
+            <HBox prefHeight="28.0" prefWidth="1063.0">
                <children>
-                  <Label text="%preferences.inputLabel" />
+                  <Label text="%preferences.inputLabel">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
                <padding>
                   <Insets bottom="15.0" top="15.0" />
@@ -25,8 +28,8 @@
                   <Insets bottom="15.0" top="15.0" />
                </padding>
                <children>
-                  <Button mnemonicParsing="false" onAction="#browseIn" text="%preferences.chooseIn" />
-                  <TextField fx:id="inputDefault" prefHeight="25.0" prefWidth="373.0" HBox.hgrow="ALWAYS">
+                  <Button mnemonicParsing="false" onAction="#browseIn" prefHeight="25.0" prefWidth="120.0" text="%preferences.chooseIn" />
+                  <TextField fx:id="inputDefault" prefHeight="25.0" prefWidth="918.0" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets left="15.0" right="15.0" />
                      </HBox.margin>
@@ -35,7 +38,10 @@
             </HBox>
             <HBox>
                <children>
-                  <Label text="%preferences.outputLabel" />
+                  <Label text="%preferences.outputLabel">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
                <padding>
                   <Insets bottom="15.0" top="15.0" />
@@ -43,7 +49,7 @@
             </HBox>
             <HBox>
                <children>
-                  <Button mnemonicParsing="false" onAction="#browseOut" text="%preferences.chooseOut" />
+                  <Button mnemonicParsing="false" onAction="#browseOut" prefHeight="25.0" prefWidth="116.0" text="%preferences.chooseOut" />
                   <TextField fx:id="outputDefault" prefHeight="25.0" prefWidth="372.0" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets left="15.0" right="15.0" />
@@ -56,21 +62,25 @@
             </HBox>
          </children>
       </VBox>
-      <HBox layoutX="14.0" layoutY="118.0">
+      <HBox fx:id="languageBox" layoutX="14.0" layoutY="98.0" prefHeight="30.0" prefWidth="323.0">
          <children>
-            <HBox>
-               <children>
-                  <Label text="%preferences.language" />
-                  <ChoiceBox fx:id="languageChoiceBox" prefWidth="150.0">
-                     <padding>
-                        <Insets left="1.0" right="1.0" />
-                     </padding>
-                     <HBox.margin>
-                        <Insets left="15.0" right="15.0" />
-                     </HBox.margin>
-                  </ChoiceBox>
-               </children>
-            </HBox>
+            <Label prefHeight="20.0" prefWidth="120.0" text="%preferences.language">
+               <HBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="languageChoiceBox" prefHeight="25.0" prefWidth="107.0">
+               <padding>
+                  <Insets left="1.0" right="1.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <HBox />
          </children>
       </HBox>
       <Label layoutX="14.0" layoutY="14.0" text="%preferences.title">
@@ -78,5 +88,27 @@
             <Font name="FreeMono" size="65.0" />
          </font>
       </Label>
+      <VBox layoutX="15.0" layoutY="385.0" prefHeight="267.0" prefWidth="1063.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="bodcButton" mnemonicParsing="false" onAction="#updateBODC" prefHeight="32.0" prefWidth="636.0" text="%preferences.updateBODC">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <ProgressBar fx:id="progress" prefHeight="39.0" prefWidth="775.0" progress="0.0">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </ProgressBar>
+               </children>
+            </HBox>
+            <TextArea fx:id="bodcLog" editable="false" prefHeight="284.0" prefWidth="1063.0" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

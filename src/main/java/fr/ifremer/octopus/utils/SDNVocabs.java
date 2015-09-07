@@ -34,4 +34,12 @@ public class SDNVocabs {
 	public ICollectionFactory getCf(){
 		return cf;
 	}
+	
+	public void reload(){
+		try {
+			cf.reload();
+		} catch (VocabularyException e) {
+			LOGGER.error(e.getMessage());
+		}
+	}
 }

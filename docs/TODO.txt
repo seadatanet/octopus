@@ -1,5 +1,8 @@
-get cdi list: fr.ifremer.octopus.view.CdiListManager.getCdiList()
+BODC: telechargement pendant export reporte affichage de la log 
+-> on laisse comme ça, car l'appli est livrée avec les fichiers BODC, donc ne doit pas se produire
+on pourrait tester l'existence et le contenu du rep BODC pour afficher un message d'attente si besoin
 
-GUI: voir cas output=file ou dir: mettre un seul bouton dont le code change en fct de monon/multi in=file/dir
+
 gestion cas d'erreur:
 rep sortie : pas de droits d'ecriture
+

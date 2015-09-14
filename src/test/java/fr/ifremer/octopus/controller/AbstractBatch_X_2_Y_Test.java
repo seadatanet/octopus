@@ -1,0 +1,192 @@
+package fr.ifremer.octopus.controller;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.Logger;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+
+public abstract class AbstractBatch_X_2_Y_Test {
+	protected static  String pwd ;
+	protected static  String outDir="out";
+
+
+	protected BatchController b = null ;
+	protected String type;
+	protected static String inFormat;// for resume only
+	protected String in;
+	protected String out;
+	protected static String outFormat;
+	protected String cdiList;
+	protected boolean success = false;
+	protected boolean expectOutputExist = true;
+
+
+	public AbstractBatch_X_2_Y_Test() {
+	}
+
+
+	@Before
+	public void before(){
+		pwd = new File("##").getAbsolutePath().replace("#", "") + "src/test/resources/";
+		deleteDir(getInputDir(), getTmpDir());
+		cdiList="";
+		success = false;
+		expectOutputExist= true;
+	}
+
+	@After
+	public void after(){
+		deleteDir(getInputDir(), getTmpDir());
+	}
+	@BeforeClass
+	public static void beforeClass(){
+	}
+	@AfterClass
+	public static void afterClass(){
+
+	}
+
+
+	protected abstract  String getTmpDir();
+	protected abstract  String getInputDir();
+
+
+	protected void launchTest(Logger logger) {
+		logArgs(getArgs(), logger);
+		try{
+			b = new BatchController(getArgs(), true);
+
+		}catch (Exception e){
+			e.printStackTrace();
+			logger.error(e.getMessage());
+			logger.error("JUNIT TEST ERROR");
+		}
+
+	}
+
+	protected void checkResult(boolean fileMustExist){
+		if (fileMustExist){
+			success = new File(getOutputPath(out)).exists();
+		}else{
+			success = !new File(getOutputPath(out)).exists();
+		}
+		org.junit.Assert.assertTrue(success);
+
+	}
+
+	protected void resume(String in, String out,  Logger logger) {
+		File inFile = new File(pwd+in);
+		logger.info("input = " + in);
+		String inFiles="";
+		if (inFile.isDirectory()){
+			for (String f : inFile.list()){
+				logger.info("   - "+f);
+				inFiles += f+",";
+			}
+		}else{
+			logger.info("   - "+inFile.getName());
+			inFiles += inFile.getName();
+		}
+		String outFiles="";
+		File outFile = new File(getOutputPath(out));
+		logger.info("output = " + getOutputPath(out).substring(pwd.length()));
+		if (outFile.isDirectory()){
+			for (String f : outFile.list()){
+				if (new File(f).isDirectory()){
+					for (String ff : new File(f).list()){
+						outFiles+=f+File.separator+ff;
+					}
+				}else{
+					logger.info("   - "+f);
+					outFiles += f+",";
+				}
+			}
+		}
+		else{
+			logger.info("   - "+outFile.getName());
+			outFiles += outFile.getName();
+		}
+		try {
+			FileWriter _writer=TestListener.getWriter();
+			if (_writer!=null){
+				_writer.append(success? "OK\t": "!!!KO!!!\t");
+				_writer.append(expectOutputExist? "output must exist \t": "NA\t");
+
+				_writer.append(type+"\t");
+				_writer.append(inFormat+"\t");
+				_writer.append(outFormat+"\t");
+				_writer.append(cdiList.isEmpty()? "empty\t":"filled\t");
+
+				_writer.append((inFile.isDirectory() ) ? "DIR"+"\t" : "FILE"+"\t");
+				_writer.append( inFile.getAbsolutePath().substring(pwd.length())+"\t");
+				_writer.append(inFiles+"\t");
+
+
+
+
+				_writer.append(outFile.isDirectory()  ? "DIR"+"\t" : "FILE"+"\t");
+
+				_writer.append(out+"\t");
+				_writer.append(outFiles+"\t");
+
+				_writer.append('\n');
+				_writer.flush();
+			}
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	protected static void deleteDir(String inputDir, String tmpDir){
+		try {
+			File d = new File(pwd+inputDir+File.separatorChar+outDir+File.separatorChar+tmpDir);
+			for (File ff : d.listFiles()){
+				if (ff.isFile()){
+					ff.delete();
+				}else{
+					FileUtils.deleteDirectory(ff);
+				}
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	protected String[] getArgs(){
+		String[] args;
+
+		if (cdiList.isEmpty()){
+			args= new String[]{"-i "+ pwd+in,
+					"-o " + getOutputPath(out),
+					"-f "+outFormat,
+					"-t "+type};
+		}else{
+			args= new String[]{"-i "+ pwd+in,
+					"-o " +getOutputPath(out),
+					"-f "+outFormat,
+					"-t "+type,
+					"-c "+ cdiList};
+		}
+		return args;
+	}
+	protected void logArgs(String[] args, Logger logger){
+		String line = "";
+		for (String s : args){
+			line+= " "+ s;
+		}
+		logger.info("--------------------------------");
+		logger.info(">>> " +line);
+	}
+
+	protected String getOutputPath(String endDir){
+		return pwd+getInputDir()+File.separatorChar+outDir+File.separatorChar+getTmpDir()+File.separatorChar+endDir;
+	}
+}

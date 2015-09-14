@@ -2,7 +2,6 @@ package fr.ifremer.octopus;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 import javafx.application.Application;
@@ -62,7 +61,7 @@ public class MainApp extends Application {
 		// load preferences from XMl file
 		prefsMgr = PreferencesManager.getInstance();
 		prefsMgr.load();
-
+		LOGGER.info("LANGUAGE: "+prefsMgr.getLocale());
 		// init and show GUI
 		initRootLayout();
 		showRootLayout();

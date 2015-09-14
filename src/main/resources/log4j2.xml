@@ -10,7 +10,9 @@
 	<Appenders>
 
 		<Console name="Console" target="SYSTEM_OUT" follow="true">
-			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5level %c{1} - %msg%n" />
+<!-- 		for debug only (%L cost) -->
+			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5level %c{1} %L - %msg%n" />
+<!-- 			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5level %c{1} - %msg%n" /> -->
 		</Console>
 		<RollingFile name="RollingFile" fileName="logs/octopus.log"
 			filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
@@ -26,7 +28,7 @@
 
 
 	<Loggers>
-		<Root level="debug">
+		<Root level="info">
 			<AppenderRef ref="Console" level="DEBUG" />
 			<AppenderRef ref="RollingFile" level="DEBUG" />
 		</Root>

@@ -1,8 +1,28 @@
+TODO
+========================================================
+1/
+gestion des cas avec directory en entree 
+-> noms de fichiers multi=nom fichier input dans repertoire outArg -> ok pour MEd2ODV
+-> modifier GUI: demander repertoire si entrée=répertoire
+
+2/
+gestion cas d'erreur:
+rep sortie : pas de droits d'ecriture
+
+A VOIR
+=========================================================
+1/
 BODC: telechargement pendant export reporte affichage de la log 
 -> on laisse comme ça, car l'appli est livrée avec les fichiers BODC, donc ne doit pas se produire
 on pourrait tester l'existence et le contenu du rep BODC pour afficher un message d'attente si besoin
 
+2/
+splitter cf2cf: error si cdi non trouve
+laisser erreur (pour le DM)? car pour octopus qui recherche dans un repertoire, ce peut ne pas être une erreur...
++ voir cohérence avec autres formats
 
-gestion cas d'erreur:
-rep sortie : pas de droits d'ecriture
 
+
+ERREURS
+=========================================================
+Med2Med: si le CDI n'est pas present, on ecrit qd mm le header -> a corriger

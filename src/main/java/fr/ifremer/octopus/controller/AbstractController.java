@@ -141,28 +141,47 @@ public abstract class AbstractController {
 			if( model.getInputFormat()==Format.CFPOINT){
 				// Cf2Cf
 				processCf2Cf(in);
-			}else{
-				// Med2Med or Odv2Odv
-				processSDNSplitter();
+//			}else if(model.getInputFormat()==Format.MEDATLAS_SDN){
+//				// Med2Med
+//				processMedSDN2MedSDN(in);
+			}
+			else{
+				// Odv2Odv
+				processSDNSplitter(in);
 			}
 		}else if (conversion==Conversion.MEDATLAS_SDN_TO_CF_POINT
 				||conversion==Conversion.ODV_SDN_TO_CFPOINT
 				){
 			processX2Cf(in);
 		}else if(conversion==Conversion.MEDATLAS_SDN_TO_ODV_SDN){
-			processSDNSplitter();
+			processSDNSplitter(in);
 		}
 
 	}
 
 
-	private void processSDNSplitter() throws SplitterException,
+	private void processSDNSplitter(File in) throws SplitterException,
 	VocabularyException {
 
+		String outputName;
+
+		if (model.isInputADirectory()){
+			createOutputDir();
+			if (in.getName().indexOf(".") != -1){
+				outputName = model.getOutputPath() +File.separator+ in.getName().substring(0, in.getName().indexOf("."));
+			}else{
+				outputName = model.getOutputPath() +File.separator+ in.getName();
+			}
+			if (!model.isMono()){
+				outputName+="."+model.getOutputFormat().getExtension();
+			}
+		}else{
+			outputName = model.getOutputPath();
+		}
 
 		SdnSplitter splitter = new SdnSplitter(
-				model.getInputPath(), 
-				model.getOutputPath(),
+				in.getAbsolutePath(),//model.getInputPath(), 
+				outputName,//model.getOutputPath(),
 				model.getOutputFormat().getName(), 
 				model.getOutputType().toString(), 
 				model.getCdiList().toArray(new String[model.getCdiList().size()]), 
@@ -176,7 +195,19 @@ public abstract class AbstractController {
 			LOGGER.info("output file is ready: "+ model.getOutputPath());
 		}
 	}
-
+	private void processMedSDN2MedSDN(File in){
+//		MedatlasInputFileManager mgr = new MedatlasInputFileManager(in.getAbsolutePath(), SDNVocabs.getInstance().getCf());
+//		
+//		if (model.isMono() || new File(model.getInputPath()).isDirectory()){
+//			createOutputDir();
+//			
+//			mgr.print(model.getCdiList(), outputFileAbsolutePath);
+//			
+//		}else{
+//			mgr.print(model.getCdiList(), outputFileAbsolutePath);
+//		}
+		
+	}
 
 	private void processX2Cf(File in)
 			throws
@@ -239,7 +270,7 @@ public abstract class AbstractController {
 
 
 			SdnSplitter splitter = new SdnSplitter(
-					model.getInputPath(), 
+					in.getAbsolutePath(),//model.getInputPath(), 
 					tmpSplit, 
 					model.getInputFormat().getName(), // split in same format as input
 					model.getOutputType().toString(), 
@@ -364,7 +395,8 @@ public abstract class AbstractController {
 	}
 
 	protected void checkOutputNameCompliance() throws OctopusException{
-		if(model.getOutputType()==OUTPUT_TYPE.MULTI 
+		if(new File (model.getInputPath()).isFile()
+				&& model.getOutputType()==OUTPUT_TYPE.MULTI 
 				&& !model.getOutputFormat().isExtensionCompliant(model.getOutputPath())){
 			throw new OctopusException("output file extension is not valid:  "+model.getOutputFormat().getName() 
 					+ " files must use \"." +model.getOutputFormat().getExtension()+ "\" extension." );

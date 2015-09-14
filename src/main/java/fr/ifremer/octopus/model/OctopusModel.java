@@ -73,6 +73,8 @@ public class OctopusModel {
 		return outputType==OUTPUT_TYPE.MONO;
 	}
 
-
+	public boolean isInputADirectory(){
+		return new File(inputPath).isDirectory();
+	}
 
 }

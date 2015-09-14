@@ -60,6 +60,8 @@ public class OctopusOverviewController {
 	@FXML
 	private TableView<SDNCdiIdObservable> cdiTable;
 	@FXML
+	private Button cancelCdiSelect;
+	@FXML
 	private CheckBox showCdi;
 	@FXML
 	private TableColumn<SDNCdiIdObservable, String> cdiColumn;
@@ -147,6 +149,7 @@ public class OctopusOverviewController {
 		cdiTable.setVisible(false);
 		showCdi.setSelected(false);
 		showCdi.setVisible(false);
+		cancelCdiSelect.setVisible(false);
 		cdiListManager = null;
 		switchGui(false);
 	}
@@ -196,6 +199,7 @@ public class OctopusOverviewController {
 	 */
 	public void showCdiList() throws OctopusException{
 		cdiTable.setVisible(showCdi.isSelected());
+		cancelCdiSelect.setVisible(showCdi.isSelected());
 		if (showCdi.isSelected()){
 			try {
 				cdiTable.setItems(cdiListManager.getCdiList());

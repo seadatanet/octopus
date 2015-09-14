@@ -38,6 +38,11 @@ public class PreferencesManager {
 			Unmarshaller u = jc.createUnmarshaller();
 
 			File f = new File(preferencesFile);
+			if (f.exists()){
+				LOGGER.info("preferences file found: "+ f.getAbsolutePath());// TODO
+			}else{
+				LOGGER.error("preferences file not found: "+ preferencesFile); //TODO
+			}
 			preferences = (Preferences) u.unmarshal(f);
 
 		} catch (JAXBException e) {

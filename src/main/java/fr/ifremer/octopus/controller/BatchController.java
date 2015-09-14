@@ -244,6 +244,7 @@ public class BatchController extends AbstractController{
 	 * @throws OctopusException
 	 */
 	private void logAndExit(int code, Exception e1)throws OctopusException  {
+		LOGGER.error(e1.getMessage());
 		formatter.printHelp( "octopus", options , true);
 		exit(code, e1);
 

@@ -159,25 +159,30 @@ public abstract class AbstractController {
 
 	}
 
-
+private String getOutputName(File in){
+	
+	String outputName;
+	if (model.isInputADirectory()){
+		createOutputDir();
+		if (in.getName().indexOf(".") != -1){
+			outputName = model.getOutputPath() +File.separator+ in.getName().substring(0, in.getName().indexOf("."));
+		}else{
+			outputName = model.getOutputPath() +File.separator+ in.getName();
+		}
+		if (!model.isMono() && !model.getOutputFormat().getExtension().isEmpty()){
+			outputName+="."+model.getOutputFormat().getExtension();
+		}
+	}else{
+		outputName = model.getOutputPath();
+	}
+	return outputName;
+}
 	private void processSDNSplitter(File in) throws SplitterException,
 	VocabularyException {
 
-		String outputName;
+		String outputName = getOutputName(in);
 
-		if (model.isInputADirectory()){
-			createOutputDir();
-			if (in.getName().indexOf(".") != -1){
-				outputName = model.getOutputPath() +File.separator+ in.getName().substring(0, in.getName().indexOf("."));
-			}else{
-				outputName = model.getOutputPath() +File.separator+ in.getName();
-			}
-			if (!model.isMono()){
-				outputName+="."+model.getOutputFormat().getExtension();
-			}
-		}else{
-			outputName = model.getOutputPath();
-		}
+		
 
 		SdnSplitter splitter = new SdnSplitter(
 				in.getAbsolutePath(),//model.getInputPath(), 
@@ -237,7 +242,7 @@ public abstract class AbstractController {
 				createTmpDir();
 				String convOutputPath = convMgr.processFile(in.getAbsolutePath(), tmpPath, model.isMono());
 				try {
-					FileUtils.moveFile(new File(convOutputPath), new File(model.getOutputPath()));
+					FileUtils.moveFile(new File(convOutputPath), new File(getOutputName(in)));
 				} catch (IOException e) {
 					throw new OctopusException(e.getMessage());
 				}finally{
@@ -302,7 +307,7 @@ public abstract class AbstractController {
 				String convOutputPath = convMgr.processFile(tmpSplit, tmpPath, model.isMono());
 
 				try {
-					FileUtils.moveFile(new File(convOutputPath), new File(model.getOutputPath()));
+					FileUtils.moveFile(new File(convOutputPath), new File(getOutputName(in)));
 					new File(tmpSplit).delete();
 				} catch (IOException e) {
 					throw new OctopusException(e.getMessage());

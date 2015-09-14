@@ -44,7 +44,7 @@ public class Batch_Dir_Med_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		resume(in, out, logger);
 	}
 	/**
-	 * 1 med dir of n files-> n cf
+	 * 1 med dir of n files-> nothing to do
 	 * cdi list : empty
 	 */
 	@Test

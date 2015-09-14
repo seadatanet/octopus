@@ -45,20 +45,20 @@ public class TestListener  extends RunListener{
 		
 		
 		
-//		core.run(Batch_File_Med_2_Med_Test.class);
-//		core.run(Batch_File_Med_2_Odv_Test.class);
-//		core.run(Batch_File_Med_2_Cf_Test.class);
-//		core.run(Batch_File_Odv_2_Odv_Test.class);
-//		core.run(Batch_File_Odv_2_Cf_Test.class);
-//		core.run(Batch_File_Cf_2_Cf_Test.class);
-//		
-//		
-//		core.run(Batch_Dir_Med_2_Med_Test.class);
-//		core.run(Batch_Dir_Med_2_Odv_Test.class);
+		core.run(Batch_File_Med_2_Med_Test.class);
+		core.run(Batch_File_Med_2_Odv_Test.class);
+		core.run(Batch_File_Med_2_Cf_Test.class);
+		core.run(Batch_File_Odv_2_Odv_Test.class);
+		core.run(Batch_File_Odv_2_Cf_Test.class);
+		core.run(Batch_File_Cf_2_Cf_Test.class);
+		
+		
+		core.run(Batch_Dir_Med_2_Med_Test.class);
+		core.run(Batch_Dir_Med_2_Odv_Test.class);
 		core.run(Batch_Dir_Med_2_Cf_Test.class);
-//		core.run(Batch_Dir_Odv_2_Odv_Test.class);
-//		core.run(Batch_Dir_Odv_2_Cf_Test.class);
-//		core.run(Batch_Dir_Cf_2_Cf_Test.class);
+		core.run(Batch_Dir_Odv_2_Odv_Test.class);
+		core.run(Batch_Dir_Odv_2_Cf_Test.class);
+		core.run(Batch_Dir_Cf_2_Cf_Test.class);
 		
 		
 		closeResultWriter();

@@ -29,10 +29,10 @@ public class Batch_Dir_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 	 * split all CDIs in n mono station cf files
 	 */
 	@Test
-	public void file_cf_2_cf_Mono_emptyCDI() {
+	public void dir_cf_2_cf_Mono_emptyCDI() {
 		inFormat="cfpoint";
 		in="cfpoint/input";
-		out = "file_cf_2_cf_Mono_emptyCDI";
+		out = "dir_cf_2_cf_Mono_emptyCDI";
 		type= "mono";
 		outFormat = "cfpoint";
 		
@@ -46,10 +46,10 @@ public class Batch_Dir_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 	 * split 2 cdis in 2 mono station cf files
 	 */
 	@Test
-	public void file_cf_2_cf_Mono_2CDI() {
+	public void dir_cf_2_cf_Mono_2CDI() {
 		inFormat="cfpoint";
 		in="cfpoint/input";
-		out = "file_cf_2_cf_Mono_2CDI";
+		out = "dir_cf_2_cf_Mono_2CDI";
 		type= "mono";
 		outFormat = "cfpoint";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";
@@ -65,11 +65,11 @@ public class Batch_Dir_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 	 * nothing to do
 	 */
 	@Test
-	public void file_cf_2_cf_Multi_emptyCDI() {
+	public void dir_cf_2_cf_Multi_emptyCDI() {
 		
 		inFormat="cfpoint";
 		in="cfpoint/input";
-		out = "file_cf_2_cf_Multi_emptyCDI";
+		out = "dir_cf_2_cf_Multi_emptyCDI";
 		type= "multi";
 		outFormat = "cfpoint";
 		expectOutputExist=false;
@@ -83,11 +83,11 @@ public class Batch_Dir_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 	 * split 2 cdis in 1 multi station cf file
 	 */
 	@Test
-	public void file_cf_2_cf_Multi_2CDI() {
+	public void dir_cf_2_cf_Multi_2CDI() {
 		
 		inFormat="cfpoint";
 		in="cfpoint/input";
-		out = "file_cf_2_cf_Multi_2CDI";
+		out = "dir_cf_2_cf_Multi_2CDI";
 		type= "multi";
 		outFormat = "cfpoint";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";

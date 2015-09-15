@@ -25,6 +25,7 @@ public class TestListener  extends RunListener{
 	
 	// resume results file
 	private static FileWriter _writer;
+	public static String RESU_SEP=";";
 	private int nbTest=0;
 	private int nbTestIgnore=0;
 	private int nbTestFail=0;
@@ -115,24 +116,20 @@ public class TestListener  extends RunListener{
 //		File _resFile = new File(resFileName);
 		try {
 			_writer = new FileWriter(resFileName, false);
-			_writer.append("success"+"\t");
-			_writer.append("expected result"+"\t");
-			
-			_writer.append("type mono/multi"+"\t");
-			_writer.append("input Format"+"\t");
-			_writer.append("output Format"+"\t");
-			_writer.append("cdiList\t");
-			
-			_writer.append("input type"+"\t");
-			_writer.append("input"+"\t");
-			_writer.append("inputFiles"+"\t");
+			_writer.append("success"+RESU_SEP);
+			_writer.append("input type"+RESU_SEP);
+			_writer.append("type mono/multi"+RESU_SEP);
+			_writer.append("input Format"+RESU_SEP);
+			_writer.append("output Format"+RESU_SEP);
+			_writer.append("cdiList"+RESU_SEP);
 			
 			
+			_writer.append("input"+RESU_SEP);
+			_writer.append("input sub"+RESU_SEP);
 			
-			
-			_writer.append("output type"+"\t");
-			_writer.append("output"+"\t");
-			_writer.append("output files"+"\t");
+			_writer.append("output type"+RESU_SEP);
+			_writer.append("output"+RESU_SEP);
+			_writer.append("output sub"+RESU_SEP);
 			
 			_writer.append('\n');
 

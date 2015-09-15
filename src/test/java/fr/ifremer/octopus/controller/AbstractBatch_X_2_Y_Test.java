@@ -34,7 +34,7 @@ public abstract class AbstractBatch_X_2_Y_Test {
 	@Before
 	public void before(){
 		pwd = new File("##").getAbsolutePath().replace("#", "") + "src/test/resources/";
-//		deleteDir(getInputDir(), getTmpDir());
+		//		deleteDir(getInputDir(), getTmpDir());
 		cdiList="";
 		success = false;
 		expectOutputExist= true;
@@ -42,7 +42,7 @@ public abstract class AbstractBatch_X_2_Y_Test {
 
 	@After
 	public void after(){
-//		deleteDir(getInputDir(), getTmpDir());
+		//		deleteDir(getInputDir(), getTmpDir());
 	}
 	@BeforeClass
 	public static void beforeClass(){
@@ -89,9 +89,6 @@ public abstract class AbstractBatch_X_2_Y_Test {
 				logger.info("   - "+f);
 				inFiles += f+",";
 			}
-		}else{
-			logger.info("   - "+inFile.getName());
-			inFiles += inFile.getName();
 		}
 		String outFiles="";
 		File outFile = new File(getOutputPath(out));
@@ -102,10 +99,11 @@ public abstract class AbstractBatch_X_2_Y_Test {
 					for (String ff : new File(f).list()){
 						outFiles+=f+File.separator+ff;
 					}
-				}else{
-					logger.info("   - "+f);
-					outFiles += f+",";
 				}
+//				else{
+//					logger.info("   - "+f);
+//					outFiles += f+",";
+//				}
 			}
 		}
 		else{
@@ -115,25 +113,27 @@ public abstract class AbstractBatch_X_2_Y_Test {
 		try {
 			FileWriter _writer=TestListener.getWriter();
 			if (_writer!=null){
-				_writer.append(success? "OK\t": "!!!KO!!!\t");
-				_writer.append(expectOutputExist? "output must exist \t": "NA\t");
+				_writer.append(success? "OK"+TestListener.RESU_SEP: "!!!KO!!!"+TestListener.RESU_SEP);
+				_writer.append((inFile.isDirectory() ) ? "DIR"+TestListener.RESU_SEP : "FILE"+TestListener.RESU_SEP);
+				_writer.append(type+TestListener.RESU_SEP);
+				_writer.append(inFormat+TestListener.RESU_SEP);
+				_writer.append(outFormat+TestListener.RESU_SEP);
+				_writer.append(cdiList.isEmpty()? "empty"+TestListener.RESU_SEP:"filled"+TestListener.RESU_SEP);
 
-				_writer.append(type+"\t");
-				_writer.append(inFormat+"\t");
-				_writer.append(outFormat+"\t");
-				_writer.append(cdiList.isEmpty()? "empty\t":"filled\t");
-
-				_writer.append((inFile.isDirectory() ) ? "DIR"+"\t" : "FILE"+"\t");
-				_writer.append( inFile.getAbsolutePath().substring(pwd.length())+"\t");
-				_writer.append(inFiles+"\t");
-
+				
+				_writer.append( inFile.getAbsolutePath().substring(pwd.length())+TestListener.RESU_SEP);
+				_writer.append(inFiles+TestListener.RESU_SEP);
 
 
-
-				_writer.append(outFile.isDirectory()  ? "DIR"+"\t" : "FILE"+"\t");
-
-				_writer.append(out+"\t");
-				_writer.append(outFiles+"\t");
+				if (expectOutputExist){
+					_writer.append(outFile.isDirectory()  ? "DIR"+TestListener.RESU_SEP : "FILE"+TestListener.RESU_SEP);
+					_writer.append(out+TestListener.RESU_SEP);
+					_writer.append(outFiles+TestListener.RESU_SEP);
+				}else{
+					_writer.append("NA"+TestListener.RESU_SEP);
+					_writer.append("NA"+TestListener.RESU_SEP);
+					_writer.append("NA"+TestListener.RESU_SEP);
+				}
 
 				_writer.append('\n');
 				_writer.flush();

@@ -57,7 +57,7 @@ public class PreferencesManager {
 		case "fr":
 			locale = Locale.FRANCE;
 			break;
-		case "en":
+		case "uk":
 			locale = Locale.ENGLISH;
 			break;
 		default:

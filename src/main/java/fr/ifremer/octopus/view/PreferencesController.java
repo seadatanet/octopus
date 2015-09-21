@@ -68,7 +68,7 @@ public class PreferencesController {
 				ResourceBundle.getBundle("bundles.preferences", 
 						PreferencesManager.getInstance().getLocale());
 		languageChoiceBox.getItems().add("fr");
-		languageChoiceBox.getItems().add("en");
+		languageChoiceBox.getItems().add("uk");
 
 
 		int index=0;

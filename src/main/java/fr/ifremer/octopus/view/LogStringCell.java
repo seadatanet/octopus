@@ -31,7 +31,7 @@ public class LogStringCell extends ListCell<String> {
                 text.setStyle("-fx-fill: #FF00FF");
             }
             if (text.toString().contains(" ERROR ")) {
-                text.setStyle("-fx-fill: #FF8080");
+                text.setStyle("-fx-fill: #FF0000");
             }
             if (text.toString().contains(" INFO ")) {
                 text.setStyle("-fx-fill: #000000");

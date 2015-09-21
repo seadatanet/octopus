@@ -47,7 +47,10 @@ public class RootController {
 //    	         new ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
 //    	         new ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
 //    	         new ExtensionFilter("All Files", "*.*"));
-    	 fileChooser.setInitialDirectory(new File(PreferencesManager.getInstance().getInputDefaultPath()));
+    	 String def= PreferencesManager.getInstance().getInputDefaultPath();
+    	 if (def !=null){
+    		 fileChooser.setInitialDirectory(new File(def));
+    	 }
     	 File selectedFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
     	 if (selectedFile != null) {
     		 mainApp.getController().initGui();
@@ -60,7 +63,10 @@ public class RootController {
     private void openDir() {
     	DirectoryChooser dirChooser = new DirectoryChooser();
     	dirChooser.setTitle("Open directory"); // TODO
-    	dirChooser.setInitialDirectory(new File(PreferencesManager.getInstance().getInputDefaultPath()));
+    	 String def= PreferencesManager.getInstance().getInputDefaultPath();
+    	 if (def !=null){
+    		 dirChooser.setInitialDirectory(new File(def));
+    	 }
     	 File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
     	 if (selectedFile != null) {
     		 mainApp.getController().initGui();

@@ -99,7 +99,10 @@ public class OctopusOverviewController {
 		if (in.isFile() && getOutputType()==OUTPUT_TYPE.MULTI ){
 			FileChooser fileChooser = new FileChooser();
 			fileChooser.setTitle("Choose output File"); // TODO
-			fileChooser.setInitialDirectory(new File(PreferencesManager.getInstance().getOutputDefaultPath()));
+			String def = PreferencesManager.getInstance().getOutputDefaultPath();
+			if (def!=null){
+				fileChooser.setInitialDirectory(new File(def));
+			}
 			selectedFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
 		}
 		// output = dir
@@ -107,7 +110,10 @@ public class OctopusOverviewController {
 		{
 			DirectoryChooser dirChooser = new DirectoryChooser();
 			dirChooser.setTitle("Choose output directory"); // TODO
-			dirChooser.setInitialDirectory(new File(PreferencesManager.getInstance().getOutputDefaultPath()));
+			String def = PreferencesManager.getInstance().getOutputDefaultPath();
+			if (def!=null){
+				dirChooser.setInitialDirectory(new File(def));
+			}
 			selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
 		}
 		if (selectedFile != null) {
@@ -205,7 +211,7 @@ public class OctopusOverviewController {
 				cdiTable.setItems(cdiListManager.getCdiList());
 			} catch (Exception e) {
 				LOGGER.error("unable to get CDIs list");// TODO
-			} 
+			}
 		}
 	}
 
@@ -262,7 +268,7 @@ public class OctopusOverviewController {
 			octopusGuiController.getModel().setOutputType(getOutputType());
 			octopusGuiController.getModel().getCdiList().clear();
 			for (SDNCdiIdObservable cdi :cdiTable.getSelectionModel().getSelectedItems()){
-				octopusGuiController.getModel().getCdiList().add("SDN:LOCAL::"+cdi.cdiProperty().getValue());
+				octopusGuiController.getModel().getCdiList().add(cdi.cdiProperty().getValue());
 			}
 			
 
@@ -276,6 +282,9 @@ public class OctopusOverviewController {
 		}
 
 	}
-
+	@FXML
+	public void validate(){
+		LOGGER.info("validation not implemented yet");// TODO
+	}
 
 }

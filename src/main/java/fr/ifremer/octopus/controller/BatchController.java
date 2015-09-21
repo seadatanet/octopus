@@ -18,7 +18,6 @@ import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
-import fr.ifremer.seadatanet.splitter.bean.SdnCDIId;
 
 public class BatchController extends AbstractController{
 	private static final Logger LOGGER = LogManager.getLogger(BatchController.class);
@@ -162,9 +161,6 @@ public class BatchController extends AbstractController{
 				cdiList = cdiList.trim();
 				for (String cdi: cdiList.split(CDI_SEPARATOR)){
 					cdi = cdi.trim();
-					if (!cdi.startsWith(SdnCDIId.START_URN_SYNTAX)){
-						cdi=SdnCDIId.START_URN_SYNTAX+cdi;
-					}
 					list.add(cdi);
 				}
 			}

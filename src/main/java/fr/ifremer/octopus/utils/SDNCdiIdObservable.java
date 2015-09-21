@@ -13,6 +13,11 @@ public class SDNCdiIdObservable  {
 		this.cdi = new SimpleStringProperty(sdnCdi.getLocalCdiId());
 
 	}
+	public SDNCdiIdObservable(String cdi) {
+		this.cdi = new SimpleStringProperty(cdi);
+
+	}
+	
 	public StringProperty cdiProperty() {
         return cdi;
     }

@@ -12,7 +12,9 @@ import javafx.collections.ObservableList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import fr.ifremer.octopus.controller.OctopusGUIController;
+import sdn.vocabulary.interfaces.VocabularyException;
+import fr.ifremer.medatlas.input.MedatlasInputFileManager;
+import fr.ifremer.medatlas.model.Station;
 import fr.ifremer.octopus.utils.SDNCdiIdObservable;
 import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.seadatanet.splitter.CFSplitter;
@@ -37,6 +39,18 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 
 		switch (format) {
 		case MEDATLAS_SDN:
+			MedatlasInputFileManager mgr;
+			try {
+				mgr = new MedatlasInputFileManager(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf());
+				for (Station st: mgr.getMetadataReader().getCruise().getStationList()){
+					cdiList.add(new SDNCdiIdObservable(st.getLocalcdiId()));
+				}
+			} catch (VocabularyException e1) {
+				throw new IOException(e1.getMessage());
+			} catch (Exception e1) {
+				throw new IOException(e1.getMessage());
+			}
+			
 		case ODV_SDN:
 			try{
 				SdnSplitter splitterSDN = new SdnSplitter(aFile.toAbsolutePath().toString(), "/tmp", "odv", 

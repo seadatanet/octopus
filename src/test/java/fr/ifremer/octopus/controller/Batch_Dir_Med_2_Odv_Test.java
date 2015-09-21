@@ -1,13 +1,9 @@
 package fr.ifremer.octopus.controller;
 
-import java.io.File;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import fr.ifremer.octopus.controller.BatchController;
 
 
 /**

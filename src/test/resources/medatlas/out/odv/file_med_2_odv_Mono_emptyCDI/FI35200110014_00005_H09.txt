@@ -1,0 +1,115 @@
+//Ces donnees hydrologiques sont issues de la base de donnees DIAPAZON :
+//http://www.com.univ-mrs.fr/IRD/urcyano/bdd/diapazon/bddiapaz.htm
+//L'utilisation de ces donnees est soumise aux conditions suivantes :
+//- demander l'autorisation aux responsables dont les noms et contacts figurent
+//sur la page correspondant a la campagne.
+//- faire reference a leur origine.
+//PRESSION :
+//---------
+//En l'absence de valeurs de temperature et salinite et compte-tenu des faibles
+//profondeurs de mesure, on considere que la pression est egale a la profondeur
+//donnee.
+//Mesures de sels nutritifs :
+//--------------------------
+//Les prelevements ont ete realises sur 12 bouteilles de prelevement Niskin de 8
+//litres, greees a la rosette. Les  phosphates et l'ammonium ont ete analyses a
+//bord, immediatement apres le prelevement (en general < 1h). Dans le cas des
+//nitrates et nitrites, les echantillons ont ete conserves au froid apres ajout de
+//HgCl2 (Kattner, 1999) et analyses a posteriori au laboratoire a Noumea. Les
+//resultats sont exprimes en micromoles par litre.
+//- Nitrates et Nitrites :
+//Les nitrates et les nitrites ont ete determines par dosage colorimetrique
+//automatise a flux continu sur un autoanalyseur II Technicon. Pour les
+//concentrations de nitrate > 0.1 micromoles/l, les protocoles analytiques sont
+//adaptes de ceux decrits dans Strickland and Parsons (1972). Pour les
+//concentrations de nitrates < 0.1 micromoles/l, l'analyse a ete realisee selon la
+//methode "haute sensibilite" decrite par Raimbault et al. (1990).
+//La limite de detection pour le nitrate basse et haute sensibilite est de 0.02
+//micromoles/l et 0.003 micromoles/l, respectivement. La limite pour le nitrite
+//est de 0.003 micromoles/l.
+//- Phosphates (phosphates solubles reactifs PSR) :
+//Les phosphates PSR (phosphate soluble reactif) ont ete mesures manuellement par
+//dosage colorimetrique au spectrophotometre (CECIL) a 885nm selon la methode de
+//Murphy and Riley (1962). La mesure a ete realisee sur une cuve de 10cm afin
+//d'augmenter la sensibilite.
+//Pour le phosphate, la limite de detection est de 0.020 micromoles/l.
+//- Ammonium :
+//L'ammonium a ete mesure manuellement par fluorimetrie, selon la methode decrite
+//par Holmes et al. (1999). L'analyse est realisee sur un fluorimetre Turner
+//Design TD-700 (photo ci-contre) equipe d'un filtre d'excitation a 350 nm et d'un
+//filtre d'emission de 410-600nm. La lecture au fluorimetre est realisee 3h apres
+//ajout des reactifs, delai necessaire au developpement complet de la
+//fluorescence.
+//Mesure des pigments chlorophylliens :
+//------------------------------------
+//- Recolte du phytoplancton :
+//Le phytoplancton etait recolte, par filtration de 265 ml d'eau de mer, sur des
+//filtres en fibre de verre Whatman GF/F de 25 mm de diametre. Les filtres etaient
+//congeles a bord dans l'azote liquide, puis conserves a -80 DegC au laboratoire
+//avant l'analyse.
+//- Extraction des pigments :
+//L'extraction des pigments etait realisee dans 4.8 ml d'acetone a 93% (pigments
+//dans l'acetone a 90% tenant compte de l'eau retenue sur le filtre), en broyant
+//le filtre avec une baguette de verre a l'extremite fraichement cassee et en
+//laissant le broyat pendant environ 12 h au refrigerateur a 4 DegC. Apres
+//centrifugation 5 minutes a 3500 t.p.m, la fluorescence du surnageant etait
+//mesuree a l'aide d'un spectrofluorimetre HITACHI F4500.
+//- Estimation de la concentration des pigments chlorophylliens :
+//La concentration des pigments chlorophylliens [chlorophylle a, b et c (c1+c2;
+//c3); divinyle-chlorophylle a et b] et de leurs derives de type pheopigments a
+//ete estimee par la methode modifiee de Neveux et Lantoine (1993).
+//Methode modifiee de mesure des pigments chlorophylliens (Neveux et Lantoine,
+//1993)
+//- Mode d'acquisition des donnees de fluorescence : realisation d'une serie de 31
+//spectres d'emission fixant d'abord la longueur d'onde d'excitation a 390 nm puis
+//l'incrementant de 3 en 3 nm jusqu'a 480 nm. Utilisation de 806 points de mesure
+//dans le calcul des concentrations en pigments (Neveux et al., 2003).
+//- Introduction d'un nouveau standard dans l'analyse, la chlorophylle c3 et une
+//analyse qui elimine les solutions negatives.
+//- Calibration du spectrofluorimetre :
+//La calibration du spectrofluorimetre a ete realisee a partir de solutions
+//standards preparees au laboratoire Arago (Neveux et Lantoine, 1993), excepte la
+//chlorophylle c3 qui a ete achetee chez DHI (Danemark).
+//
+//<sdn_reference xlink:href="http://vocab.nerc.ac.uk/collection/C17/current/35AY" xlink:role="isObservedBy" xlink:type="SDN:L23::NVS2CON"/>
+//<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI35200110014_00005_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI" sdn:scope="486:FI35200110014_00005_H09"/>
+//SDN_parameter_mapping
+//<subject>SDN:LOCAL:DEPH</subject><object>SDN:P01::ADEPZZ01</object><units>SDN:P06::ULAA</units>
+//<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+//<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:DEPH</subject><object>SDN:P01::ADEPZZ01</object><units>SDN:P06::ULAA</units>
+//<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+//<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+//<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+//<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+//
+Cruise	Station	Type	yyyy-mm-ddThh:mm:ss.sss	Longitude [degrees_east]	Latitude [degrees_north]	LOCAL_CDI_ID	EDMO_code	Bot. Depth [m]	DEPH [meter]	QV:SEADATANET	PRES [decibar=10000 pascals]	QV:SEADATANET	PHOS [millimole/m3]	QV:SEADATANET	NTRA [millimole/m3]	QV:SEADATANET	NTRI [millimole/m3]	QV:SEADATANET	CPHL [milligram/m3]	QV:SEADATANET	CPH1 [milligram/m3]	QV:SEADATANET	CHLB [milligram/m3]	QV:SEADATANET	CHLC [milligram/m3]	QV:SEADATANET	CHC3 [milligram/m3]	QV:SEADATANET	TPHP [milligram/m3]	QV:SEADATANET	AMON [millimole/m3]	QV:SEADATANET	DOPW [millimole/m3]	QV:SEADATANET	PP1P [millimole/m3]	QV:SEADATANET	TPHS [millimole/m3]	QV:SEADATANET	DEPH [meter]	QV:SEADATANET	PRES [decibar=10000 pascals]	QV:SEADATANET	PHOS [millimole/m3]	QV:SEADATANET	NTRA [millimole/m3]	QV:SEADATANET	NTRI [millimole/m3]	QV:SEADATANET	CPHL [milligram/m3]	QV:SEADATANET	CPH1 [milligram/m3]	QV:SEADATANET	CHLB [milligram/m3]	QV:SEADATANET	CHLC [milligram/m3]	QV:SEADATANET	CHC3 [milligram/m3]	QV:SEADATANET	TPHP [milligram/m3]	QV:SEADATANET	AMON [millimole/m3]	QV:SEADATANET	DOPW [millimole/m3]	QV:SEADATANET	PP1P [millimole/m3]	QV:SEADATANET	TPHS [millimole/m3]	QV:SEADATANET
+DIAPALIS 2	00005	B	2001-12-11T17:24:00.000	+166.748333	-21.953833	FI35200110014_00005_H09	486	0.0	0.0	0	0.0	0	0.05	0	0.018	0	0.004	0	0.213	0	0.168	0	0.016	0	0.013	0	0.015	0	0.001	0	0.12	0	0.1612	0	0.0333	0	0.2467	0	0.0	0	0.0	0	0.05	0	0.018	0	0.004	0	0.213	0	0.168	0	0.016	0	0.013	0	0.015	0	0.001	0	0.12	0	0.1612	0	0.0333	0	0.2467	0
+									5.0	0	5.0	0	0.04	0	0.003	0	0.001	0	0.199	0	0.155	0	0.024	0	0.014	0	0.014	0	0.003	0	0.12	0	0.2092	0	0.0271	0	0.2743	0	5.0	0	5.0	0	0.04	0	0.003	0	0.001	0	0.199	0	0.155	0	0.024	0	0.014	0	0.014	0	0.003	0	0.12	0	0.2092	0	0.0271	0	0.2743	0
+									9.9	0	10.0	0	0.06	0	0.003	0	0.001	0	0.220	0	0.174	0	0.022	0	0.014	0	0.014	0	0.006	0	0.17	0	0.1931	0	0.0258	0	0.2806	0	9.9	0	10.0	0	0.06	0	0.003	0	0.001	0	0.220	0	0.174	0	0.022	0	0.014	0	0.014	0	0.006	0	0.17	0	0.1931	0	0.0258	0	0.2806	0
+									14.9	0	15.0	0	0.06	0	0.010	0	0.002	0	0.225	0	0.160	0	0.028	0	0.018	0	0.017	0	0.005	0	0.11	0	0.1950	0	0.0249	0	0.2768	0	14.9	0	15.0	0	0.06	0	0.010	0	0.002	0	0.225	0	0.160	0	0.028	0	0.018	0	0.017	0	0.005	0	0.11	0	0.1950	0	0.0249	0	0.2768	0
+									19.9	0	20.0	0	0.07	0	0.004	0	0.001	0	0.311	0	0.215	0	0.038	0	0.023	0	0.025	0	0.011	0	0.12	0	0.1647	0	0.0259	0	0.2617	0	19.9	0	20.0	0	0.07	0	0.004	0	0.001	0	0.311	0	0.215	0	0.038	0	0.023	0	0.025	0	0.011	0	0.12	0	0.1647	0	0.0259	0	0.2617	0
+									24.8	0	25.0	0	0.06	0	0.003	0	0.000	0	0.352	0	0.237	0	0.045	0	0.026	0	0.028	0	0.014	0	0.15	0	0.1916	0	0.0333	0	0.2818	0	24.8	0	25.0	0	0.06	0	0.003	0	0.000	0	0.352	0	0.237	0	0.045	0	0.026	0	0.028	0	0.014	0	0.15	0	0.1916	0	0.0333	0	0.2818	0
+									29.8	0	30.0	0	0.07	0	0.001	0	0.002	0	0.365	0	0.248	0	0.042	0	0.025	0	0.029	0	0.016	0	0.13	0	0.1945	0	0.0388	0	0.3044	0	29.8	0	30.0	0	0.07	0	0.001	0	0.002	0	0.365	0	0.248	0	0.042	0	0.025	0	0.029	0	0.016	0	0.13	0	0.1945	0	0.0388	0	0.3044	0

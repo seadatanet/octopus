@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.ifremer.seadatanet.splitter.bean.SdnCDIId;
+
 public class OctopusModel {
 
 
@@ -14,6 +16,9 @@ public class OctopusModel {
 	private String outputPath;
 	private Format outputFormat;
 	private OUTPUT_TYPE outputType;
+	/**
+	 * list of local_cdi_id (without the splitter "SDN:LOCAL::" prefix)
+	 */
 	private List<String> cdiList;
 
 	/**
@@ -42,6 +47,15 @@ public class OctopusModel {
 
 	public List<String> getCdiList() {
 		return cdiList;
+	}
+	public String[] getCdiListForSplitter() {
+		String[] list=new String[cdiList.size()];
+		int i=0;
+		for (String cdi: cdiList){
+			list[i]= SdnCDIId.START_URN_SYNTAX+cdi;
+			i++;
+		}
+		return list;
 	}
 
 	public void setCdiList(List<String> cdiList) {

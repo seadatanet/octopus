@@ -1,0 +1,153 @@
+*FI35200110014 DIAPALIS 2                       35AY Alis                     
+10/12/2001 21/12/2001 Coral Sea                          
+35 IRD, CNRS, IUEM et Universite                                              
+LE BOUTEILLER Aubert                     Project=JGOFS - FRANCE/PROOF        
+Regional Archiving= FI                   Availability=P
+Data Type=B02 n=13   QC=N
+Data Type=B06 n=8    QC=N
+Data Type=B71 n=8    QC=N
+Data Type=H09 n=13   QC=N
+Data Type=H22 n=12   QC=N
+Data Type=H24 n=11   QC=N
+Data Type=H25 n=11   QC=N
+Data Type=H76 n=11   QC=N
+COMMENT
+Ces donnees hydrologiques sont issues de la base de donnees DIAPAZON :
+http://www.com.univ-mrs.fr/IRD/urcyano/bdd/diapazon/bddiapaz.htm
+
+L'utilisation de ces donnees est soumise aux conditions suivantes :
+- demander l'autorisation aux responsables dont les noms et contacts figurent
+sur la page correspondant a la campagne.
+- faire reference a leur origine.
+
+PRESSION :
+---------
+En l'absence de valeurs de temperature et salinite et compte-tenu des faibles
+profondeurs de mesure, on considere que la pression est egale a la profondeur
+donnee.
+
+Mesures de sels nutritifs :
+--------------------------
+Les prelevements ont ete realises sur 12 bouteilles de prelevement Niskin de 8
+litres, greees a la rosette. Les  phosphates et l'ammonium ont ete analyses a
+bord, immediatement apres le prelevement (en general < 1h). Dans le cas des
+nitrates et nitrites, les echantillons ont ete conserves au froid apres ajout de
+HgCl2 (Kattner, 1999) et analyses a posteriori au laboratoire a Noumea. Les
+resultats sont exprimes en micromoles par litre.
+
+- Nitrates et Nitrites :
+Les nitrates et les nitrites ont ete determines par dosage colorimetrique
+automatise a flux continu sur un autoanalyseur II Technicon. Pour les
+concentrations de nitrate > 0.1 micromoles/l, les protocoles analytiques sont
+adaptes de ceux decrits dans Strickland and Parsons (1972). Pour les
+concentrations de nitrates < 0.1 micromoles/l, l'analyse a ete realisee selon la
+methode "haute sensibilite" decrite par Raimbault et al. (1990).
+La limite de detection pour le nitrate basse et haute sensibilite est de 0.02
+micromoles/l et 0.003 micromoles/l, respectivement. La limite pour le nitrite
+est de 0.003 micromoles/l.
+
+- Phosphates (phosphates solubles reactifs PSR) :
+Les phosphates PSR (phosphate soluble reactif) ont ete mesures manuellement par
+dosage colorimetrique au spectrophotometre (CECIL) a 885nm selon la methode de
+Murphy and Riley (1962). La mesure a ete realisee sur une cuve de 10cm afin
+d'augmenter la sensibilite.
+Pour le phosphate, la limite de detection est de 0.020 micromoles/l.
+
+- Ammonium :
+L'ammonium a ete mesure manuellement par fluorimetrie, selon la methode decrite
+par Holmes et al. (1999). L'analyse est realisee sur un fluorimetre Turner
+Design TD-700 (photo ci-contre) equipe d'un filtre d'excitation a 350 nm et d'un
+filtre d'emission de 410-600nm. La lecture au fluorimetre est realisee 3h apres
+ajout des reactifs, delai necessaire au developpement complet de la
+fluorescence.
+
+
+Mesure des pigments chlorophylliens :
+------------------------------------
+- Recolte du phytoplancton :
+Le phytoplancton etait recolte, par filtration de 265 ml d'eau de mer, sur des
+filtres en fibre de verre Whatman GF/F de 25 mm de diametre. Les filtres etaient
+congeles a bord dans l'azote liquide, puis conserves a -80 DegC au laboratoire
+avant l'analyse.
+
+- Extraction des pigments :
+L'extraction des pigments etait realisee dans 4.8 ml d'acetone a 93% (pigments
+dans l'acetone a 90% tenant compte de l'eau retenue sur le filtre), en broyant
+le filtre avec une baguette de verre a l'extremite fraichement cassee et en
+laissant le broyat pendant environ 12 h au refrigerateur a 4 DegC. Apres
+centrifugation 5 minutes a 3500 t.p.m, la fluorescence du surnageant etait
+mesuree a l'aide d'un spectrofluorimetre HITACHI F4500.
+
+- Estimation de la concentration des pigments chlorophylliens :
+La concentration des pigments chlorophylliens [chlorophylle a, b et c (c1+c2;
+c3); divinyle-chlorophylle a et b] et de leurs derives de type pheopigments a
+ete estimee par la methode modifiee de Neveux et Lantoine (1993).
+
+Methode modifiee de mesure des pigments chlorophylliens (Neveux et Lantoine,
+1993)
+- Mode d'acquisition des donnees de fluorescence : realisation d'une serie de 31
+spectres d'emission fixant d'abord la longueur d'onde d'excitation a 390 nm puis
+l'incrementant de 3 en 3 nm jusqu'a 480 nm. Utilisation de 806 points de mesure
+dans le calcul des concentrations en pigments (Neveux et al., 2003).
+- Introduction d'un nouveau standard dans l'analyse, la chlorophylle c3 et une
+analyse qui elimine les solutions negatives.
+
+- Calibration du spectrofluorimetre :
+La calibration du spectrofluorimetre a ete realisee a partir de solutions
+standards preparees au laboratoire Arago (Neveux et Lantoine, 1993), excepte la
+chlorophylle c3 qui a ete achetee chez DHI (Danemark).
+*FI3520011001400020 Data Type=H09
+*DATE=18122001 TIME=1711 LAT=S21 38.26 LON=E167 07.63 DEPTH=       QC=0000
+*NB PARAMETERS=14 RECORD LINES=00010
+*PRES SEA PRESSURE sea surface=0    (decibar=10000 pascals       ) def.=-999.9
+*PHOS PHOSPHATE (PO4-P) CONTENT     (millimole/m3                ) def.=99.99
+*NTRA NITRATE (NO3-N) CONTENT       (millimole/m3                ) def.=99.999
+*NTRI NITRITE (NO2-N) CONTENT       (millimole/m3                ) def.=99.999
+*CPHL CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CPH1 CHLOROPHYLL-A TOTAL           (milligram/m3                ) def.=99.999
+*CHLB CHLOROPHYLL-B TOTAL           (milligram/m3                ) def.=99.999
+*CHLC CHLOROPHYLL-C TOTAL           (milligram/m3                ) def.=99.999
+*CHC3 CHLOROPHYLL-C3                (milligram/m3                ) def.=99.999
+*TPHP TOTAL PHAEOPIGMENTS           (milligram/m3                ) def.=99.999
+*AMON AMMONIUM (NH4-N) CONTENT      (millimole/m3                ) def.=999.99
+*DOPW DISSOLVED ORGANIC PHOSPHORUS  (millimole/m3                ) def.=99.9999
+*PP1P PART. ORGANIC PHOSPHORUS (P)  (millimole/m3                ) def.=99.9999
+*TPHS TOTAL PHOSPHORUS (P) CONTENT  (millimole/m3                ) def.=99.9999
+*GLOBAL PROFILE QUALITY FLAG=0 GLOBAL PARAMETERS QC FLAGS=00000000000000
+*DC HISTORY=
+*
+*DM HISTORY 
+*
+*COMMENT
+*
+*SDN_parameter_mapping
+*<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+*<subject>SDN:LOCAL:PHOS</subject><object>SDN:P01::PHOSZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRA</subject><object>SDN:P01::NTRAZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:NTRI</subject><object>SDN:P01::NTRIZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:CPHL</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CPH1</subject><object>SDN:P01::CPHLZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLB</subject><object>SDN:P01::CHLBXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHLC</subject><object>SDN:P01::CHLCXXPX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:CHC3</subject><object>SDN:P01::CHLC03PX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:TPHP</subject><object>SDN:P01::PHAEZZXX</object><units>SDN:P06::UMMC</units>
+*<subject>SDN:LOCAL:AMON</subject><object>SDN:P01::AMONZZXX</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:DOPW</subject><object>SDN:P01::ORGPDSZZ</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:PP1P</subject><object>SDN:P01::OPHSVLPT</object><units>SDN:P06::UPOX</units>
+*<subject>SDN:LOCAL:TPHS</subject><object>SDN:P01::TPHSZZXX</object><units>SDN:P06::UPOX</units>
+*EDMO_CODE=486
+*LOCAL_CDI_ID=FI35200110014_00020_H09
+*SURFACE SAMPLES=
+*
+*PRES   PHOS  NTRA   NTRI   CPHL   CPH1   CHLB   CHLC   CHC3   TPHP   AMON   DOPW    PP1P    TPHS    
+   0.0  0.02  0.014  0.002  0.131  0.083  0.007  0.008  0.008  0.003   0.01  0.2090  0.0171  0.2492 00000000000000
+   5.0  0.03  0.016  0.002  0.103  0.058  0.006  0.007  0.008  0.006   0.06 99.9999 99.9999 99.9999 00000000000999
+  10.0  0.02  0.019  0.003  0.121  0.076  0.007  0.008  0.006  0.012   0.01  0.2683  0.0226  0.3095 00000000000000
+  20.0  0.01  0.024  0.004  0.127  0.081  0.006  0.007  0.008  0.016   0.02 99.9999 99.9999 99.9999 00000000000999
+  30.0  0.01  0.011  0.001  0.104  0.059  0.008  0.008  0.007  0.005   0.05 99.9999 99.9999 99.9999 00000000000999
+  40.0  0.02  0.051  0.003  0.136  0.092  0.008  0.009  0.009  0.003   0.02 99.9999 99.9999 99.9999 00000000000999
+  60.0  0.03  0.011  0.001  0.174  0.112  0.013  0.012  0.015  0.006   0.07  0.2579  0.0213  0.3069 00000000000000
+  80.0  0.07  0.009  0.002  0.194  0.080  0.031  0.016  0.017  0.000   0.01 99.9999 99.9999 99.9999 00000000000999
+ 100.0  0.18  1.071  0.168  0.359  0.176  0.066  0.038  0.059  0.014   0.03  0.2037  0.0130  0.3924 00000000000000
+ 120.0  0.29  2.797  0.047  0.152  0.073  0.022  0.018  0.024  0.004   0.02 99.9999 99.9999 99.9999 00000000000999
+-999.9 99.99 99.999 99.999 99.999 99.999 99.999 99.999 99.999 99.999 999.99 99.9999 99.9999 99.9999 99999999999999

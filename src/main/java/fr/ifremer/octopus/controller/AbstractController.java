@@ -5,6 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
@@ -12,6 +15,7 @@ import org.apache.logging.log4j.Logger;
 
 import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.medatlas.exceptions.ConverterException;
+import fr.ifremer.medatlas.input.MedatlasInputFileManager;
 import fr.ifremer.octopus.io.driver.Driver;
 import fr.ifremer.octopus.io.driver.DriverManager;
 import fr.ifremer.octopus.io.driver.impl.CFPointDriverImpl;
@@ -116,6 +120,9 @@ public abstract class AbstractController {
 		} catch (SplitterException e) {
 			LOGGER.error(e.getMessage());
 			throw new OctopusException(e);
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage());
+			throw new OctopusException(e);
 		} finally{
 			try {
 				deleteTmp();
@@ -130,20 +137,16 @@ public abstract class AbstractController {
 
 	private void processFile(File in) 
 			throws 
-			ConverterException, 
-			VocabularyException, 
-			FileNotFoundException, 
-			SplitterException,
-			OctopusException {
+			Exception {
 
 
 		if (conversion==Conversion.NONE){
 			if( model.getInputFormat()==Format.CFPOINT){
 				// Cf2Cf
 				processCf2Cf(in);
-//			}else if(model.getInputFormat()==Format.MEDATLAS_SDN){
-//				// Med2Med
-//				processMedSDN2MedSDN(in);
+			}else if(model.getInputFormat()==Format.MEDATLAS_SDN){
+				// Med2Med
+				processMedSDN2MedSDN(in);
 			}
 			else{
 				// Odv2Odv
@@ -159,37 +162,37 @@ public abstract class AbstractController {
 
 	}
 
-private String getOutputName(File in){
-	
-	String outputName;
-	if (model.isInputADirectory()){
-		createOutputDir();
-		if (in.getName().indexOf(".") != -1){
-			outputName = model.getOutputPath() +File.separator+ in.getName().substring(0, in.getName().indexOf("."));
+	private String getOutputName(File in){
+
+		String outputName;
+		if (model.isInputADirectory()){
+			createOutputDir();
+			if (in.getName().indexOf(".") != -1){
+				outputName = model.getOutputPath() +File.separator+ in.getName().substring(0, in.getName().indexOf("."));
+			}else{
+				outputName = model.getOutputPath() +File.separator+ in.getName();
+			}
+			if (!model.isMono() && !model.getOutputFormat().getMandatoryExtension().isEmpty()){
+				outputName+="."+model.getOutputFormat().getMandatoryExtension();
+			}
 		}else{
-			outputName = model.getOutputPath() +File.separator+ in.getName();
+			outputName = model.getOutputPath();
 		}
-		if (!model.isMono() && !model.getOutputFormat().getExtension().isEmpty()){
-			outputName+="."+model.getOutputFormat().getExtension();
-		}
-	}else{
-		outputName = model.getOutputPath();
+		return outputName;
 	}
-	return outputName;
-}
 	private void processSDNSplitter(File in) throws SplitterException,
 	VocabularyException {
 
 		String outputName = getOutputName(in);
 
-		
+
 
 		SdnSplitter splitter = new SdnSplitter(
 				in.getAbsolutePath(),//model.getInputPath(), 
 				outputName,//model.getOutputPath(),
 				model.getOutputFormat().getName(), 
 				model.getOutputType().toString(), 
-				model.getCdiList().toArray(new String[model.getCdiList().size()]), 
+				model.getCdiListForSplitter(), 
 				1L, 
 				SDNVocabs.getInstance().getCf());
 
@@ -200,18 +203,57 @@ private String getOutputName(File in){
 			LOGGER.info("output file is ready: "+ model.getOutputPath());
 		}
 	}
-	private void processMedSDN2MedSDN(File in){
-//		MedatlasInputFileManager mgr = new MedatlasInputFileManager(in.getAbsolutePath(), SDNVocabs.getInstance().getCf());
-//		
-//		if (model.isMono() || new File(model.getInputPath()).isDirectory()){
-//			createOutputDir();
-//			
-//			mgr.print(model.getCdiList(), outputFileAbsolutePath);
-//			
-//		}else{
-//			mgr.print(model.getCdiList(), outputFileAbsolutePath);
-//		}
+	private void processMedSDN2MedSDN(File in) throws VocabularyException, Exception{
+		MedatlasInputFileManager mgr = new MedatlasInputFileManager(
+				in.getAbsolutePath(), 
+				SDNVocabs.getInstance().getCf());
+
+		boolean isInputDir= new File(model.getInputPath()).isDirectory();
+		// CDI
+		List<String>cdiL = new ArrayList<>();
+		if (model.getCdiList().isEmpty()){
+			cdiL = mgr.getMetadataReader().getCDIsList();
+		}else{
+			for (String cdi: model.getCdiList()){
+				if (mgr.getMetadataReader().getCDIsList().contains(cdi)){
+					cdiL.add(cdi);
+				}
+			}
+		}
 		
+		
+		
+		if (model.isMono() || isInputDir){
+			createOutputDir();
+		}
+
+		if (model.isMono()){
+			File subDir ;
+			String subDirPath = null;
+			if (isInputDir){
+				if (in.getName().indexOf(".") != -1){
+					subDirPath = model.getOutputPath() +File.separator+ in.getName().substring(0, in.getName().indexOf("."));
+				}else{
+					subDirPath = model.getOutputPath() +File.separator+ in.getName();
+				}
+				
+				subDir = new File(subDirPath);
+				subDir.mkdir();
+				
+			}
+			String outputName ;
+			for (String cdi: cdiL){
+				if (subDirPath !=null){
+					outputName = subDirPath + File.separator +cdi+"."+Format.MEDATLAS_SDN.getOutExtension();
+				}else{
+					outputName = model.getOutputPath() + File.separator +cdi+"."+Format.MEDATLAS_SDN.getOutExtension();
+				}
+				mgr.print(new ArrayList<String>(Arrays.asList(cdi)), outputName);
+			}
+		}else{
+			// TODO case cdi empty
+			mgr.print(model.getCdiList(), getOutputName(in));
+		}
 	}
 
 	private void processX2Cf(File in)
@@ -279,7 +321,7 @@ private String getOutputName(File in){
 					tmpSplit, 
 					model.getInputFormat().getName(), // split in same format as input
 					model.getOutputType().toString(), 
-					model.getCdiList().toArray(new String[model.getCdiList().size()]), 
+					model.getCdiListForSplitter(), 
 					1L, 
 					SDNVocabs.getInstance().getCf());
 			try{
@@ -333,7 +375,7 @@ private String getOutputName(File in){
 				model.getOutputPath(), 
 				model.getOutputFormat().toString(), 
 				model.getOutputType().toString(),
-				model.getCdiList().toArray(new String[model.getCdiList().size()]), 
+				model.getCdiListForSplitter(), 
 				1L, 
 				SDNVocabs.getInstance().getCf());
 		splitter.split();
@@ -404,7 +446,7 @@ private String getOutputName(File in){
 				&& model.getOutputType()==OUTPUT_TYPE.MULTI 
 				&& !model.getOutputFormat().isExtensionCompliant(model.getOutputPath())){
 			throw new OctopusException("output file extension is not valid:  "+model.getOutputFormat().getName() 
-					+ " files must use \"." +model.getOutputFormat().getExtension()+ "\" extension." );
+					+ " files must use \"." +model.getOutputFormat().getMandatoryExtension()+ "\" extension." );
 
 		}
 	}

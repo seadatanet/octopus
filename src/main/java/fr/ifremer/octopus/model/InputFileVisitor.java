@@ -9,8 +9,6 @@ import java.nio.file.attribute.BasicFileAttributes;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import fr.ifremer.octopus.controller.OctopusGUIController;
-
 public class InputFileVisitor extends SimpleFileVisitor<Path> {
 
 	static final Logger LOGGER = LogManager.getLogger(InputFileVisitor.class.getName());

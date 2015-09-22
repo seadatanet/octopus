@@ -12,34 +12,34 @@
 			<items>
 				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
 					<children>
-						<Label layoutX="5.0" layoutY="14.0" text="%input.label" AnchorPane.leftAnchor="10.0" />
-						<TextField fx:id="inputPathTextField" layoutX="10.0" layoutY="35.0" onKeyPressed="#inputChanged" prefHeight="32.0" prefWidth="1074.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
-                  <Label layoutX="10.0" layoutY="132.0" text="%output.label" AnchorPane.leftAnchor="10.0" />
-                  <TextField fx:id="outputPathTextField" layoutX="2.0" layoutY="153.0" prefHeight="32.0" prefWidth="956.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="125.0" />
-                  <Label layoutX="10.0" layoutY="79.0" text="%output.type" AnchorPane.leftAnchor="10.0" />
-                  <RadioButton fx:id="radioMono" layoutX="10.0" layoutY="108.0" mnemonicParsing="false" onAction="#checkedMono" text="%output.type.mono" AnchorPane.leftAnchor="10.0">
+						<Label layoutX="10.0" layoutY="7.0" text="%input.label" AnchorPane.leftAnchor="10.0" />
+						<TextField fx:id="inputPathTextField" layoutX="10.0" layoutY="26.0" onKeyPressed="#inputChanged" prefHeight="32.0" prefWidth="1074.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                  <Label layoutX="10.0" layoutY="144.0" text="%output.label" AnchorPane.leftAnchor="10.0" />
+                  <TextField fx:id="outputPathTextField" layoutX="10.0" layoutY="162.0" prefHeight="32.0" prefWidth="956.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="125.0" />
+                  <Label layoutX="10.0" layoutY="115.0" text="%output.type" AnchorPane.leftAnchor="10.0" />
+                  <RadioButton fx:id="radioMono" layoutX="264.0" layoutY="116.0" mnemonicParsing="false" onAction="#checkedMono" text="%output.type.mono" AnchorPane.leftAnchor="264.0">
                      <toggleGroup>
                         <ToggleGroup fx:id="outputType" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="radioMulti" layoutX="85.0" layoutY="108.0" mnemonicParsing="false" onAction="#checkedMulti" selected="true" text="%output.type.multi" toggleGroup="$outputType" />
-                  <Label layoutX="931.0" layoutY="201.0" text="%output.export" AnchorPane.leftAnchor="931.0">
+                  <RadioButton fx:id="radioMulti" layoutX="331.0" layoutY="116.0" mnemonicParsing="false" onAction="#checkedMulti" selected="true" text="%output.type.multi" toggleGroup="$outputType" />
+                  <Label layoutX="713.0" layoutY="225.0" text="%output.export" AnchorPane.leftAnchor="713.0">
                      <font>
                         <Font size="19.0" />
                      </font>
                   </Label>
-                  <Button layoutX="905.0" layoutY="229.0" mnemonicParsing="false" onAction="#exportToMed" prefHeight="46.0" prefWidth="150.0" text="%output.medatlas" />
-                  <Button layoutX="905.0" layoutY="282.0" mnemonicParsing="false" onAction="#exportToODV" prefHeight="46.0" prefWidth="150.0" text="%output.odv" />
-                  <Button layoutX="905.0" layoutY="336.0" mnemonicParsing="false" onAction="#exportToCfPoint" prefHeight="46.0" prefWidth="150.0" text="%output.cfpoint" />
-                  <TableView fx:id="cdiTable" layoutX="33.0" layoutY="227.0" prefHeight="173.0" prefWidth="667.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="227.0">
+                  <Button fx:id="buttonExportMedatlas" layoutX="713.0" layoutY="264.0" mnemonicParsing="false" onAction="#exportToMed" prefHeight="31.0" prefWidth="99.0" text="%output.medatlas" />
+                  <Button fx:id="buttonExportOdv" layoutX="820.0" layoutY="264.0" mnemonicParsing="false" onAction="#exportToODV" prefHeight="31.0" prefWidth="99.0" text="%output.odv" />
+                  <Button fx:id="buttonExportCfpoint" layoutX="928.0" layoutY="264.0" mnemonicParsing="false" onAction="#exportToCfPoint" prefHeight="31.0" prefWidth="99.0" text="%output.cfpoint" />
+                  <TableView fx:id="cdiTable" layoutX="33.0" layoutY="227.0" prefHeight="173.0" prefWidth="667.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="227.0">
                     <columns>
                       <TableColumn fx:id="cdiColumn" minWidth="300.0" prefWidth="300.0" text="%cdiTable.cdiColumn" />
                     </columns>
                   </TableView>
-                  <Button fx:id="chooseOut" layoutX="998.0" layoutY="154.0" mnemonicParsing="false" onAction="#openChooseOut" text="%output.chooseOut" AnchorPane.rightAnchor="10.0" />
-                  <CheckBox fx:id="showCdi" layoutX="11.0" layoutY="206.0" mnemonicParsing="false" onAction="#showCdiList" text="%input.checkCdi" AnchorPane.leftAnchor="10.0" />
-                  <Button fx:id="cancelCdiSelect" layoutX="135.0" layoutY="169.0" mnemonicParsing="false" onAction="#cdiTableDeselect" text="%cdiTable.deselectAll" visible="false" />
-                  <Button layoutX="696.0" layoutY="231.0" mnemonicParsing="false" onAction="#validate" prefHeight="154.0" prefWidth="187.0" text="%input.validate" />
+                  <Button fx:id="chooseOut" layoutX="972.0" layoutY="163.0" mnemonicParsing="false" onAction="#openChooseOut" prefHeight="31.0" prefWidth="109.0" text="%output.chooseOut" AnchorPane.rightAnchor="10.0" />
+                  <CheckBox fx:id="showCdi" layoutX="10.0" layoutY="201.0" mnemonicParsing="false" onAction="#showCdiList" text="%input.checkCdi" AnchorPane.leftAnchor="10.0" />
+                  <Button fx:id="cancelCdiSelect" layoutX="112.0" layoutY="193.0" mnemonicParsing="false" onAction="#cdiTableDeselect" text="%cdiTable.deselectAll" visible="false" />
+                  <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#validate" prefHeight="12.0" prefWidth="318.0" text="%input.validate" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
 					</children>
 				</AnchorPane>
 				<fx:include source="LoggerConsole.fxml" />

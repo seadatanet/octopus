@@ -65,8 +65,12 @@ public class OctopusOverviewController {
 	private CheckBox showCdi;
 	@FXML
 	private TableColumn<SDNCdiIdObservable, String> cdiColumn;
-
-
+	@FXML
+	private Button buttonExportMedatlas;
+	@FXML
+	private Button buttonExportOdv;
+	@FXML
+	private Button buttonExportCfpoint;
 
 
 	@FXML
@@ -144,6 +148,7 @@ public class OctopusOverviewController {
 				cdiListManager = new CdiListManager(octopusGuiController);
 				LOGGER.debug("init input ok -> switch true");
 				switchGui(true);
+				
 			}
 		} catch (OctopusException e) {
 			// TODO
@@ -166,6 +171,17 @@ public class OctopusOverviewController {
 		radioMulti.setDisable(!inputOk);
 		outputPathTextField.setDisable(!inputOk);
 		chooseOut.setDisable(!inputOk);
+		
+		if (inputOk){
+			Format f = octopusGuiController.getModel().getInputFormat();
+			buttonExportMedatlas.disableProperty().setValue(f!=Format.MEDATLAS_SDN);
+			buttonExportOdv.disableProperty().setValue(f==Format.CFPOINT);
+			buttonExportCfpoint.disableProperty().setValue(false);
+		}else{
+			buttonExportMedatlas.disableProperty().setValue(true);
+			buttonExportOdv.disableProperty().setValue(true);
+			buttonExportCfpoint.disableProperty().setValue(true);
+		}
 	}
 	private void checkInput() throws OctopusException {
 		LOGGER.debug("check input");
@@ -194,7 +210,7 @@ public class OctopusOverviewController {
 	public void checkedMulti(){
 		outputPathTextField.setText("");
 	}	
-	
+
 	@FXML
 	public void cdiTableDeselect(){
 		cdiTable.getSelectionModel().clearSelection();
@@ -204,15 +220,23 @@ public class OctopusOverviewController {
 	 * @throws OctopusException
 	 */
 	public void showCdiList() throws OctopusException{
-		cdiTable.setVisible(showCdi.isSelected());
-		cancelCdiSelect.setVisible(showCdi.isSelected());
 		if (showCdi.isSelected()){
-			try {
-				cdiTable.setItems(cdiListManager.getCdiList());
-			} catch (Exception e) {
-				LOGGER.error("unable to get CDIs list");// TODO
+			try{
+				checkInput();
+				cdiTable.setVisible(showCdi.isSelected());
+				cancelCdiSelect.setVisible(showCdi.isSelected());
+				if (showCdi.isSelected()){
+					try {
+						cdiTable.setItems(cdiListManager.getCdiList());
+					} catch (Exception e) {
+						LOGGER.error("unable to get CDIs list");// TODO
+					}
+				}
+			}catch(OctopusException e){
+				showCdi.setSelected(false);
 			}
 		}
+
 	}
 
 	public void setInputText(String input){
@@ -270,7 +294,7 @@ public class OctopusOverviewController {
 			for (SDNCdiIdObservable cdi :cdiTable.getSelectionModel().getSelectedItems()){
 				octopusGuiController.getModel().getCdiList().add(cdi.cdiProperty().getValue());
 			}
-			
+
 
 			LOGGER.info("export to "+format.getName()); // TODO
 			octopusGuiController.getModel().setOutputFormat(format);

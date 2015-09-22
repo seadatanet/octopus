@@ -26,3 +26,20 @@ laisser erreur (pour le DM)? car pour octopus qui recherche dans un repertoire, 
 ERREURS
 =========================================================
 Med2Med: si le CDI n'est pas present, on ecrit qd mm le header -> a corriger
+
+
+
+
+
+
+
+
+LIVRABLE
+==============
+mvn clean install
+build ant
+
+zipper un repertoire contenant
+octopus/build/dist/octopus.jar
+octopus/build/dist/libs/* 
+octopus/resources

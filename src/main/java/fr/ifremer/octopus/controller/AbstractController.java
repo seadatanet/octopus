@@ -16,6 +16,9 @@ import org.apache.logging.log4j.Logger;
 import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.medatlas.exceptions.ConverterException;
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
+import fr.ifremer.octopus.controller.checker.FormatChecker;
+import fr.ifremer.octopus.controller.checker.MedatlasFormatChecker;
+import fr.ifremer.octopus.controller.checker.OdvFormatChecker;
 import fr.ifremer.octopus.io.driver.Driver;
 import fr.ifremer.octopus.io.driver.DriverManager;
 import fr.ifremer.octopus.io.driver.impl.CFPointDriverImpl;
@@ -28,6 +31,7 @@ import fr.ifremer.octopus.model.InputFileVisitor;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.SDNVocabs;
+import fr.ifremer.octopus.view.CdiListManager;
 import fr.ifremer.seadatanet.splitter.CFSplitter;
 import fr.ifremer.seadatanet.splitter.SdnSplitter;
 import fr.ifremer.seadatanet.splitter.SplitterException;
@@ -39,6 +43,7 @@ public abstract class AbstractController {
 	private static final Logger LOGGER = LogManager.getLogger(AbstractController.class);
 
 	private DriverManager driverManager = new DriverManagerImpl();
+	private CdiListManager cdiListManager;
 	protected OctopusModel model;
 
 
@@ -52,7 +57,9 @@ public abstract class AbstractController {
 	private String tmpPath = "OctopusTmpDirectory";
 
 
-
+	/**
+	 * 
+	 */
 	public AbstractController()  {
 		try {
 			deleteTmp();
@@ -66,12 +73,29 @@ public abstract class AbstractController {
 
 	}
 
-
+	/**
+	 * 
+	 * @param inputPath
+	 * @throws IOException
+	 */
 	public void init(File inputPath) throws IOException {
 		Format inputFormat = getFirstFileInputFormat(inputPath);
 		model = new OctopusModel(inputPath.getAbsolutePath());
 		model.setInputFormat(inputFormat);
+
+		createCdiManager();
 	}
+	public void createCdiManager(){
+		cdiListManager = new CdiListManager(this);
+	}
+
+	public CdiListManager getCdiListManager() {
+		return cdiListManager;
+	}
+
+	/**
+	 * 
+	 */
 	protected void abort(){
 		LOGGER.info("abort"); // TODO msg
 	}
@@ -134,7 +158,11 @@ public abstract class AbstractController {
 		LOGGER.info("process ended successfully");
 
 	}
-
+	/**
+	 * 
+	 * @param in
+	 * @throws Exception
+	 */
 	private void processFile(File in) 
 			throws 
 			Exception {
@@ -161,7 +189,11 @@ public abstract class AbstractController {
 		}
 
 	}
-
+	/**
+	 * 
+	 * @param in
+	 * @return
+	 */
 	private String getOutputName(File in){
 
 		String outputName;
@@ -180,6 +212,13 @@ public abstract class AbstractController {
 		}
 		return outputName;
 	}
+
+	/**
+	 * 
+	 * @param in
+	 * @throws SplitterException
+	 * @throws VocabularyException
+	 */
 	private void processSDNSplitter(File in) throws SplitterException,
 	VocabularyException {
 
@@ -203,6 +242,13 @@ public abstract class AbstractController {
 			LOGGER.info("output file is ready: "+ model.getOutputPath());
 		}
 	}
+
+	/**
+	 * 
+	 * @param in
+	 * @throws VocabularyException
+	 * @throws Exception
+	 */
 	private void processMedSDN2MedSDN(File in) throws VocabularyException, Exception{
 		MedatlasInputFileManager mgr = new MedatlasInputFileManager(
 				in.getAbsolutePath(), 
@@ -220,9 +266,9 @@ public abstract class AbstractController {
 				}
 			}
 		}
-		
-		
-		
+
+
+
 		if (model.isMono() || isInputDir){
 			createOutputDir();
 		}
@@ -236,10 +282,10 @@ public abstract class AbstractController {
 				}else{
 					subDirPath = model.getOutputPath() +File.separator+ in.getName();
 				}
-				
+
 				subDir = new File(subDirPath);
 				subDir.mkdir();
-				
+
 			}
 			String outputName ;
 			for (String cdi: cdiL){
@@ -255,7 +301,13 @@ public abstract class AbstractController {
 			mgr.print(model.getCdiList(), getOutputName(in));
 		}
 	}
-
+	/**
+	 * 
+	 * @param in
+	 * @throws VocabularyException
+	 * @throws SplitterException
+	 * @throws OctopusException
+	 */
 	private void processX2Cf(File in)
 			throws
 			VocabularyException,
@@ -367,6 +419,13 @@ public abstract class AbstractController {
 		}
 	}
 
+	/**
+	 * 
+	 * @param in
+	 * @throws SplitterException
+	 * @throws FileNotFoundException
+	 * @throws VocabularyException
+	 */
 	private void processCf2Cf(File in) throws SplitterException,
 	FileNotFoundException, VocabularyException {
 		// 	CF to CF -> cfSplitter
@@ -385,15 +444,24 @@ public abstract class AbstractController {
 			LOGGER.info("output file is ready: "+ model.getOutputPath());
 		}
 	}
-
+	/**
+	 * 
+	 */
 	private void createOutputDir(){
 		File out = new File(model.getOutputPath());
 		out.mkdir();
 	}
+	/**
+	 * 
+	 */
 	private void createTmpDir(){
 		tmpDir = new File(tmpPath);
 		tmpDir.mkdir();
 	}
+	/**
+	 * 
+	 * @throws IOException
+	 */
 	private void deleteTmp() throws IOException{
 		File tmp = new File(tmpPath);
 		if (tmp.isFile()){
@@ -484,6 +552,47 @@ public abstract class AbstractController {
 
 	}
 
+	/**
+	 * @throws Exception 
+	 * 
+	 */
+	public void checkFormat() throws Exception {
+
+		FormatChecker checker = getFormatChecker();
+		if (checker==null){
+			throw new OctopusException("No checker for format "+model.getInputFormat().getName()+" implemented yet");// TODO
+		}
+		File in = new File(model.getInputPath());
+		if (in.isDirectory()){
+			for (File f: in.listFiles())
+				checker.check (f);
+		}else{
+			checker.check (in);
+		}
+	}
+
+	/**
+	 * 
+	 * @return
+	 * @throws OctopusException 
+	 */
+	private FormatChecker getFormatChecker() throws OctopusException{
+		FormatChecker checker = null;
+		switch (model.getInputFormat()) {
+		case MEDATLAS_SDN:
+			checker= new MedatlasFormatChecker();
+		case ODV_SDN:
+			checker= new OdvFormatChecker();
+		default:
+			break;
+		}
+		return checker;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
 	public OctopusModel getModel() {
 		return model;
 	}

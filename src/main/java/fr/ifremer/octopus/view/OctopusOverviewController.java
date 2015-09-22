@@ -61,7 +61,7 @@ public class OctopusOverviewController {
 	 */
 	private MainApp mainApp;
 	private OctopusGUIController octopusGuiController;
-	private CdiListManager cdiListManager;
+	
 
 
 
@@ -230,8 +230,9 @@ public class OctopusOverviewController {
 	private ObservableList<SDNCdiIdObservable> getCDIData() {
 		ObservableList<SDNCdiIdObservable> cdiList = FXCollections.observableArrayList();
 		try {
-			return cdiListManager.getCdiList();
+			return octopusGuiController.getCdiListManager().getCdiList();
 		} catch (OctopusException e) {
+			LOGGER.error(e.getMessage());
 			return  cdiList ;
 		}
 		  
@@ -284,7 +285,7 @@ public class OctopusOverviewController {
 			if (def!=null){
 				fileChooser.setInitialDirectory(new File(def));
 			}
-			selectedFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
+			selectedFile = fileChooser.showSaveDialog(mainApp.getPrimaryStage());
 		}
 		// output = dir
 		else
@@ -322,7 +323,7 @@ public class OctopusOverviewController {
 			octopusGuiController = new OctopusGUIController(inputPathTextField.getText());
 			if (octopusGuiController.getModel() !=null){
 				showCdi.setVisible(true);
-				cdiListManager = new CdiListManager(octopusGuiController);
+//				cdiListManager = new CdiListManager(octopusGuiController);
 				LOGGER.debug("init input ok -> switch true");
 				switchGui(true);
 
@@ -337,7 +338,7 @@ public class OctopusOverviewController {
 		cdiContainer.setVisible(false);
 		showCdi.setSelected(false);
 		showCdi.setVisible(false);
-		cdiListManager = null;
+//		cdiListManager = null;
 		switchGui(false);
 	}
 
@@ -471,10 +472,11 @@ public class OctopusOverviewController {
 			octopusGuiController.getModel().setOutputPath(outputPathTextField.getText());
 			octopusGuiController.getModel().setOutputType(getOutputType());
 			octopusGuiController.getModel().getCdiList().clear();
-			for (SDNCdiIdObservable cdi :cdiTable.getSelectionModel().getSelectedItems()){
-				octopusGuiController.getModel().getCdiList().add(cdi.cdiProperty().getValue());
+			for (SDNCdiIdObservable p : cdiTable.getItems()) {
+				if (p.getSelected()){
+					octopusGuiController.getModel().getCdiList().add(p.cdiProperty().getValue());
+				}
 			}
-
 
 			LOGGER.info("export to "+format.getName()); // TODO
 			octopusGuiController.getModel().setOutputFormat(format);
@@ -488,7 +490,11 @@ public class OctopusOverviewController {
 	}
 	@FXML
 	public void validate(){
-		LOGGER.info("validation not implemented yet");// TODO
+			try {
+				octopusGuiController.checkFormat();
+			} catch (Exception e) {
+				LOGGER.error("file is not valid");// TODO
+			}
 	}
 
 }

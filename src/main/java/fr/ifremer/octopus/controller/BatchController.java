@@ -73,7 +73,6 @@ public class BatchController extends AbstractController{
 			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
 		}
 
-
 		try {
 			process();
 		} catch (OctopusException e1) {

@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import fr.ifremer.octopus.view.CdiListManager;
 import fr.ifremer.octopus.view.OctopusOverviewController;
 
 public class OctopusGUIController extends AbstractController{
@@ -24,6 +25,7 @@ public class OctopusGUIController extends AbstractController{
 		super();
 		try {
 			init(new File(inputPath));
+			
 		} catch (IOException e) {
 			LOGGER.error("init error");
 			LOGGER.error(e.getMessage());
@@ -35,6 +37,8 @@ public class OctopusGUIController extends AbstractController{
 		this.octopusOverviewController = controller;
 
 	}
+
+	
 
 	
 

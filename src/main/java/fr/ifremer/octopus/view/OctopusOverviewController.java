@@ -1,22 +1,38 @@
 package fr.ifremer.octopus.view;
 
 import java.io.File;
+import java.util.ResourceBundle;
 
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
+import javafx.beans.binding.ListBinding;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.CheckBoxBuilder;
 import javafx.scene.control.RadioButton;
-import javafx.scene.control.SelectionMode;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+import javafx.util.Callback;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,10 +45,16 @@ import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.utils.SDNCdiIdObservable;
 
+/**
+ * Main Octopus View Controller
+ * The TableView code inspired from http://code.google.com/p/javafx-demos/
+ * @author altran
+ *
+ */
 public class OctopusOverviewController {
 
 	static final Logger LOGGER = LogManager.getLogger(OctopusOverviewController.class.getName());
-
+	ResourceBundle bundle ;
 
 	/**
 	 *  Reference to the main application
@@ -57,14 +79,17 @@ public class OctopusOverviewController {
 	private RadioButton radioMulti;
 	@FXML	
 	private RadioButton radioMono;
-	@FXML
-	private TableView<SDNCdiIdObservable> cdiTable;
-	@FXML
-	private Button cancelCdiSelect;
+	
+	
 	@FXML
 	private CheckBox showCdi;
-	@FXML
-	private TableColumn<SDNCdiIdObservable, String> cdiColumn;
+	@FXML 
+	private VBox cdiContainer;
+	private TableView<SDNCdiIdObservable> cdiTable;
+	private CheckBox selectAllCheckBox;
+
+
+
 	@FXML
 	private Button buttonExportMedatlas;
 	@FXML
@@ -79,11 +104,163 @@ public class OctopusOverviewController {
 		// disable all but inputPathTextField
 		switchGui(false);
 
-		// set cdiTable columns
-		cdiTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+	}
+	public TableView<SDNCdiIdObservable> getCDITable() {
+		if (cdiTable == null) {
+			// "Selected" column
+			TableColumn<SDNCdiIdObservable, Boolean> selectedCol = new TableColumn<SDNCdiIdObservable, Boolean>();
+			selectedCol.setMinWidth(50);
+			selectedCol.setGraphic(getSelectAllCheckBox());
+			selectedCol.setCellValueFactory(new PropertyValueFactory<SDNCdiIdObservable, Boolean>("selected"));
+			selectedCol.setCellFactory(new Callback<TableColumn<SDNCdiIdObservable, Boolean>, TableCell<SDNCdiIdObservable, Boolean>>() {
+				public TableCell<SDNCdiIdObservable, Boolean> call(TableColumn<SDNCdiIdObservable, Boolean> p) {
+					final TableCell<SDNCdiIdObservable, Boolean> cell = new TableCell<SDNCdiIdObservable, Boolean>() {
+						@Override
+						public void updateItem(final Boolean item, boolean empty) {
+							if (item == null)
+								return;
+							super.updateItem(item, empty);
+							if (!isEmpty()) {
+								final SDNCdiIdObservable cdi = getTableView().getItems().get(getIndex());
+								CheckBox checkBox = new CheckBox();
+								checkBox.selectedProperty().bindBidirectional(cdi.selectedProperty());
+								setGraphic(checkBox);
+							}
+							// if one item is deselected, deselect selectAllCheckBox
+							if (!item){
+								selectAllCheckBox.selectedProperty().setValue(false);
+							}
+						}
+					};
+					cell.setAlignment(Pos.CENTER);
+					return cell;
+				}
+			});
+			// "CDI" column
+			TableColumn<SDNCdiIdObservable, String> cdiCol = new TableColumn<SDNCdiIdObservable, String>();
+			cdiCol.setMinWidth(200);
+			bundle =
+					ResourceBundle.getBundle("bundles.overview", 
+							PreferencesManager.getInstance().getLocale());
+			cdiCol.setText(bundle.getString("cdiTable.cdiColumn"));
+			cdiCol.setCellValueFactory(new PropertyValueFactory<SDNCdiIdObservable, String>("cdi"));
 
-		cdiColumn.setCellValueFactory(cellData -> cellData.getValue().cdiProperty());
 
+			final TableView<SDNCdiIdObservable> tableView = new TableView<SDNCdiIdObservable>();
+			tableView.setItems(getCDIData());
+			tableView.getColumns().addAll(selectedCol, cdiCol);
+
+			ListBinding<Boolean> lb = new ListBinding<Boolean>() {
+				{
+					bind(tableView.getItems());
+				}
+
+				@Override
+				protected ObservableList<Boolean> computeValue() {
+					ObservableList<Boolean> list = FXCollections.observableArrayList();
+					for (SDNCdiIdObservable p : tableView.getItems()) {
+						list.add(p.getSelected());
+					}
+					return list;
+				}
+			};
+
+			lb.addListener(new ChangeListener<ObservableList<Boolean>>() {
+				@Override
+				public void changed(ObservableValue<? extends ObservableList<Boolean>> arg0, ObservableList<Boolean> arg1,
+						ObservableList<Boolean> l) {
+					// Checking for an unselected employee in the table view.
+					boolean unSelectedFlag = false;
+							for (boolean b : l) {
+								if (!b) {
+									unSelectedFlag = true;
+									break;
+								}
+							}
+							/*
+							 * If at least one cdi is not selected, then deselecting the check box in the table column header, else if all
+							 * employees are selected, then selecting the check box in the header.
+							 */
+							 if (unSelectedFlag) {
+								 getSelectAllCheckBox().setSelected(false);
+							 } else {
+								 getSelectAllCheckBox().setSelected(true);
+							 }
+
+							 // Checking for a selected employee in the table view.
+							 boolean selectedFlag = false;
+							 for (boolean b : l) {
+								 if (!b) {
+									 selectedFlag = true;
+									 break;
+								 }
+							 }
+
+							 /*
+							  * If at least one employee is selected, then enabling the "Export" button, else if none of the employees are selected,
+							  * then disabling the "Export" button.
+							  */
+//							                                      if (selectedFlag) {
+//							                                             enableExportButton();
+//							                                     } else {
+//							                                             disableExportButton();
+//							                                     }
+				}
+			});
+
+			tableView.getItems().addListener(new InvalidationListener() {
+
+				@Override
+				public void invalidated(Observable arg0) {
+					System.out.println("invalidated");
+				}
+			});
+			tableView.getItems().addListener(new ListChangeListener<SDNCdiIdObservable>() {
+
+				@Override
+				public void onChanged(javafx.collections.ListChangeListener.Change<? extends SDNCdiIdObservable> arg0) {
+					System.out.println("changed");
+				}
+			});
+			this.cdiTable = tableView;
+
+		}
+		return cdiTable;
+	}
+	private ObservableList<SDNCdiIdObservable> getCDIData() {
+		ObservableList<SDNCdiIdObservable> cdiList = FXCollections.observableArrayList();
+		try {
+			return cdiListManager.getCdiList();
+		} catch (OctopusException e) {
+			return  cdiList ;
+		}
+		  
+	}
+	/**
+	 * Lazy getter for the selectAllCheckBox.
+	 *
+	 * @return selectAllCheckBox
+	 */
+	@SuppressWarnings("deprecation")
+	public CheckBox getSelectAllCheckBox() {
+		if (selectAllCheckBox == null) {
+			final CheckBox selectAllCheckBox = CheckBoxBuilder.create().build();
+			selectAllCheckBox.setSelected(true);
+			// Adding EventHandler to the CheckBox to select/deselect all cdis in table.
+			selectAllCheckBox.setOnAction(new EventHandler<ActionEvent>() {
+				@Override
+				public void handle(ActionEvent event) {
+					// Setting the value in all the cdis.
+					for (SDNCdiIdObservable item : getCDITable().getItems()) {
+						item.setSelected(selectAllCheckBox.isSelected());
+					}
+					//                                        getExportButton().setDisable(!selectAllCheckBox.isSelected());
+				}
+			});
+
+			this.selectAllCheckBox = selectAllCheckBox;
+		}
+		return selectAllCheckBox;
 	}
 	/**
 	 * Is called by the main application to give a reference back to itself.
@@ -148,7 +325,7 @@ public class OctopusOverviewController {
 				cdiListManager = new CdiListManager(octopusGuiController);
 				LOGGER.debug("init input ok -> switch true");
 				switchGui(true);
-				
+
 			}
 		} catch (OctopusException e) {
 			// TODO
@@ -156,11 +333,10 @@ public class OctopusOverviewController {
 	}
 	public void initGui(){
 		// reinit GUI
-		cdiTable.getItems().clear();
-		cdiTable.setVisible(false);
+		cdiContainer.getChildren().clear();
+		cdiContainer.setVisible(false);
 		showCdi.setSelected(false);
 		showCdi.setVisible(false);
-		cancelCdiSelect.setVisible(false);
 		cdiListManager = null;
 		switchGui(false);
 	}
@@ -171,6 +347,7 @@ public class OctopusOverviewController {
 		radioMulti.setDisable(!inputOk);
 		outputPathTextField.setDisable(!inputOk);
 		chooseOut.setDisable(!inputOk);
+		showCdi.disableProperty().setValue(!inputOk);
 		
 		if (inputOk){
 			Format f = octopusGuiController.getModel().getInputFormat();
@@ -220,14 +397,17 @@ public class OctopusOverviewController {
 	 * @throws OctopusException
 	 */
 	public void showCdiList() throws OctopusException{
+		cdiContainer.setVisible(showCdi.isSelected());
 		if (showCdi.isSelected()){
 			try{
 				checkInput();
-				cdiTable.setVisible(showCdi.isSelected());
-				cancelCdiSelect.setVisible(showCdi.isSelected());
+				cdiContainer.setVisible(showCdi.isSelected());
 				if (showCdi.isSelected()){
 					try {
-						cdiTable.setItems(cdiListManager.getCdiList());
+						cdiTable=null;
+						cdiContainer.getChildren().clear();
+						cdiContainer.getChildren().addAll(getCDITable());
+						
 					} catch (Exception e) {
 						LOGGER.error("unable to get CDIs list");// TODO
 					}

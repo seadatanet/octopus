@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import org.apache.logging.log4j.LogManager;
@@ -27,16 +28,21 @@ public class CdiListManager {
 
 	public ObservableList<SDNCdiIdObservable> getCdiList() throws  OctopusException{
 
-		InputFileGetCDIsVisitor visitor = new InputFileGetCDIsVisitor(octopusGuiController.getModel().getInputFormat());
-		try {
-			Files.walkFileTree(Paths.get(octopusGuiController.getModel().getInputPath()), visitor);
-		} catch (IOException e) {
-			throw new OctopusException(e.getMessage());
+		ObservableList<SDNCdiIdObservable> cdiList = FXCollections.observableArrayList();
+
+
+		if (octopusGuiController.getModel().getInputFormat()!=null){
+			InputFileGetCDIsVisitor visitor = new InputFileGetCDIsVisitor(octopusGuiController.getModel().getInputFormat());
+			try {
+				Files.walkFileTree(Paths.get(octopusGuiController.getModel().getInputPath()), visitor);
+			} catch (IOException e) {
+				throw new OctopusException(e.getMessage());
+			}
+			cdiList = visitor.getCdiList();
+
 		}
-		ObservableList<SDNCdiIdObservable> cdiList = visitor.getCdiList();
-
-
 		return cdiList;
+
 	}
 
 

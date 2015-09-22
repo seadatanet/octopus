@@ -43,7 +43,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			try {
 				mgr = new MedatlasInputFileManager(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf());
 				for (Station st: mgr.getMetadataReader().getCruise().getStationList()){
-					cdiList.add(new SDNCdiIdObservable(st.getLocalcdiId()));
+					cdiList.add(new SDNCdiIdObservable(st.getLocalcdiId(), true));
 				}
 			} catch (VocabularyException e1) {
 				throw new IOException(e1.getMessage());
@@ -56,7 +56,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 				SdnSplitter splitterSDN = new SdnSplitter(aFile.toAbsolutePath().toString(), "/tmp", "odv", 
 						null, 1L, SDNVocabs.getInstance().getCf());
 				for (SdnCDIId cdi :splitterSDN.getInputFileCdiIdList()){
-					cdiList.add(new SDNCdiIdObservable(cdi));
+					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}
 			}catch (Exception e){
 				throw new IOException(e.getMessage());
@@ -67,7 +67,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 				CFSplitter splitterCF = new CFSplitter(aFile.toAbsolutePath().toString(), "/tmp", "cfpoint", 
 						null, 1L, SDNVocabs.getInstance().getCf());
 				for (SdnCDIId cdi :splitterCF.getInputFileCdiIdList()){
-					cdiList.add(new SDNCdiIdObservable(cdi));
+					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}
 			}catch (Exception e){
 				throw new IOException(e.getMessage());

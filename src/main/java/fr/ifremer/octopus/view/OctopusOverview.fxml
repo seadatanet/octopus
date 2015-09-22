@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -12,34 +13,72 @@
 			<items>
 				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
 					<children>
-						<Label layoutX="10.0" layoutY="7.0" text="%input.label" AnchorPane.leftAnchor="10.0" />
-						<TextField fx:id="inputPathTextField" layoutX="10.0" layoutY="26.0" onKeyPressed="#inputChanged" prefHeight="32.0" prefWidth="1074.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
-                  <Label layoutX="10.0" layoutY="144.0" text="%output.label" AnchorPane.leftAnchor="10.0" />
-                  <TextField fx:id="outputPathTextField" layoutX="10.0" layoutY="162.0" prefHeight="32.0" prefWidth="956.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="125.0" />
-                  <Label layoutX="10.0" layoutY="115.0" text="%output.type" AnchorPane.leftAnchor="10.0" />
-                  <RadioButton fx:id="radioMono" layoutX="264.0" layoutY="116.0" mnemonicParsing="false" onAction="#checkedMono" text="%output.type.mono" AnchorPane.leftAnchor="264.0">
-                     <toggleGroup>
-                        <ToggleGroup fx:id="outputType" />
-                     </toggleGroup>
-                  </RadioButton>
-                  <RadioButton fx:id="radioMulti" layoutX="331.0" layoutY="116.0" mnemonicParsing="false" onAction="#checkedMulti" selected="true" text="%output.type.multi" toggleGroup="$outputType" />
-                  <Label layoutX="713.0" layoutY="225.0" text="%output.export" AnchorPane.leftAnchor="713.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Label>
-                  <Button fx:id="buttonExportMedatlas" layoutX="713.0" layoutY="264.0" mnemonicParsing="false" onAction="#exportToMed" prefHeight="31.0" prefWidth="99.0" text="%output.medatlas" />
-                  <Button fx:id="buttonExportOdv" layoutX="820.0" layoutY="264.0" mnemonicParsing="false" onAction="#exportToODV" prefHeight="31.0" prefWidth="99.0" text="%output.odv" />
-                  <Button fx:id="buttonExportCfpoint" layoutX="928.0" layoutY="264.0" mnemonicParsing="false" onAction="#exportToCfPoint" prefHeight="31.0" prefWidth="99.0" text="%output.cfpoint" />
-                  <TableView fx:id="cdiTable" layoutX="33.0" layoutY="227.0" prefHeight="173.0" prefWidth="667.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="227.0">
-                    <columns>
-                      <TableColumn fx:id="cdiColumn" minWidth="300.0" prefWidth="300.0" text="%cdiTable.cdiColumn" />
-                    </columns>
-                  </TableView>
-                  <Button fx:id="chooseOut" layoutX="972.0" layoutY="163.0" mnemonicParsing="false" onAction="#openChooseOut" prefHeight="31.0" prefWidth="109.0" text="%output.chooseOut" AnchorPane.rightAnchor="10.0" />
                   <CheckBox fx:id="showCdi" layoutX="10.0" layoutY="201.0" mnemonicParsing="false" onAction="#showCdiList" text="%input.checkCdi" AnchorPane.leftAnchor="10.0" />
-                  <Button fx:id="cancelCdiSelect" layoutX="112.0" layoutY="193.0" mnemonicParsing="false" onAction="#cdiTableDeselect" text="%cdiTable.deselectAll" visible="false" />
-                  <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#validate" prefHeight="12.0" prefWidth="318.0" text="%input.validate" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                  <VBox fx:id="cdiContainer" layoutX="16.0" layoutY="229.0" prefHeight="181.0" prefWidth="676.0" visible="false" />
+                  <VBox layoutX="738.0" layoutY="337.0" prefHeight="69.0" prefWidth="299.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="%output.export">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <Button fx:id="buttonExportMedatlas" mnemonicParsing="false" onAction="#exportToMed" prefHeight="31.0" prefWidth="99.0" text="%output.medatlas" />
+                              <Button fx:id="buttonExportCfpoint" mnemonicParsing="false" onAction="#exportToCfPoint" prefHeight="31.0" prefWidth="99.0" text="%output.cfpoint" />
+                              <Button fx:id="buttonExportOdv" mnemonicParsing="false" onAction="#exportToODV" prefHeight="31.0" prefWidth="99.0" text="%output.odv" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="8.0" layoutY="-6.0" prefHeight="122.0" prefWidth="831.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="328.0">
+                           <children>
+            						<Label text="%input.label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="328.0">
+                           <children>
+            						<TextField fx:id="inputPathTextField" onKeyPressed="#inputChanged" prefHeight="32.0" prefWidth="1074.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="328.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#validate" prefHeight="25.0" prefWidth="291.0" text="%input.validate" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="176.0" layoutY="134.0" prefHeight="59.0" prefWidth="1071.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                           <children>
+                              <Label text="%output.type" />
+                              <RadioButton fx:id="radioMono" mnemonicParsing="false" onAction="#checkedMono" text="%output.type.mono">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="outputType" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="radioMulti" mnemonicParsing="false" onAction="#checkedMulti" selected="true" text="%output.type.multi" toggleGroup="$outputType" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                           <children>
+                              <Label text="%output.label" />
+                              <TextField fx:id="outputPathTextField" prefHeight="32.0" prefWidth="743.0" />
+                              <Button fx:id="chooseOut" mnemonicParsing="false" onAction="#openChooseOut" prefHeight="31.0" prefWidth="109.0" text="%output.chooseOut" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
 					</children>
 				</AnchorPane>
 				<fx:include source="LoggerConsole.fxml" />

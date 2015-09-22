@@ -36,7 +36,7 @@ RadioButton{
 }
 
 .menu-bar .label {
-    -fx-font-size: 12pt;
+    -fx-font-size: 10pt;
     -fx-font-family: "Segoe UI Light";
     -fx-text-fill: #465561;
     -fx-opacity: 0.9;
@@ -52,7 +52,7 @@ RadioButton{
     -fx-font-size: 12pt;
     -fx-font-family: "Segoe UI Semibold";
 }
-
+/*
 
 .button {
     -fx-padding: 5 5 5 5;   
@@ -66,6 +66,8 @@ RadioButton{
     -fx-text-fill:  #d0d1d2;
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
 }
+
+*/
 /*
 .button:hover {
     -fx-background-color: #3a3a3a;
@@ -124,12 +126,13 @@ RadioButton{
     -fx-table-header-border-color: transparent;
     -fx-padding: 5;
 }
+/*
 .table-view .column-header-background {
     -fx-background-color: transparent;
 }
 
 .table-view .column-header, .table-view .filler {
-    -fx-size: 20;
+    -fx-size: 15;
     -fx-border-width: 0 0 1 0;
     -fx-background-color: transparent;
     -fx-border-color: 
@@ -141,13 +144,15 @@ RadioButton{
 }
 
 .table-view .column-header .label {
-    -fx-font-size: 15pt;
+    -fx-font-size: 10pt;
     -fx-font-family: "Segoe UI Light";
     -fx-text-fill: #465561;
     -fx-alignment: center-left;
     -fx-opacity: 1;
 }
 
+
+*/
 .table-view:focused .table-row-cell:filled:selected {
     -fx-background-color: #465561;
 }

@@ -97,7 +97,6 @@
 //<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI35200110014_00022_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI" sdn:scope="486:FI35200110014_00022_H09"/>
 //<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI35200110014_00024_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI" sdn:scope="486:FI35200110014_00024_H09"/>
 //<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=486&identifier=FI35200110014_00025_H09" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI" sdn:scope="486:FI35200110014_00025_H09"/>
-//SDN_parameter_mapping
 //<subject>SDN:LOCAL:DEPHPR01</subject><object>SDN:P01::DEPHPR01</object><units>SDN:P06::ULAA</units>
 //<subject>SDN:LOCAL:PRESPR01</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::PASX</units>
 //<subject>SDN:LOCAL:NTRAYYDZ</subject><object>SDN:P01::NTRAYYDZ</object><units>SDN:P06::UPOX</units>

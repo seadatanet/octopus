@@ -30,10 +30,12 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void file_odv_2_odv_Mono_emptyCDI() {
 		inFormat="odv";
-		in="odv/input/diap.txt";
-		out = "file_odv_2_odv_Mono_emptyCDI";
+		in="odv/input/profile/diap.txt";
+		out = "profile/file_odv_2_odv_Mono_emptyCDI";
 		type= "mono";
 		outFormat = "odv";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
@@ -46,10 +48,11 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void file_odv_2_odv_Multi_emptyCDI() {
 		inFormat="odv";
-		in="odv/input/diap.txt";
-		out = "file_odv_2_odv_Multi_emptyCDI.txt";
+		in="odv/input/profile/diap.txt";
+		out = "profile/file_odv_2_odv_Multi_emptyCDI.txt";
 		type= "multi";
-		outFormat = "odv";expectOutputExist=false;
+		outFormat = "odv";
+		expectOutputExist=false;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
@@ -63,11 +66,13 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void file_odv_2_odv_Mono_2CDI() {
 		inFormat="odv";
-		in="odv/input/diap.txt";
-		out = "file_odv_2_odv_Mono_2CDI";
+		in="odv/input/profile/diap.txt";
+		out = "profile/file_odv_2_odv_Mono_2CDI";
 		type= "mono";
 		outFormat = "odv";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
@@ -75,11 +80,12 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void file_odv_2_odv_Mono_nonExistingCDI() {
 		inFormat="odv";
-		in="odv/input/diap.txt";
-		out = "file_odv_2_odv_Mono_nonExistingCDI";
+		in="odv/input/profile/diap.txt";
+		out = "profile/file_odv_2_odv_Mono_nonExistingCDI";
 		type= "mono";
 		outFormat = "odv";
 		cdiList="toto";
+		expectOutputExist=false;
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
@@ -90,11 +96,13 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void file_odv_2_odv_Multi_2CDI() {
 		inFormat="odv";
-		in="odv/input/diap.txt";
-		out = "file_odv_2_odv_Multi_2CDI.txt";
+		in="odv/input/profile/diap.txt";
+		out = "profile/file_odv_2_odv_Multi_2CDI.txt";
 		type= "multi";
 		outFormat = "odv";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
+		
+		expectOutputExist=true;
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);

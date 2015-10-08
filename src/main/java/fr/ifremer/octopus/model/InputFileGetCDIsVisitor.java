@@ -14,12 +14,11 @@ import org.apache.logging.log4j.Logger;
 
 import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
-import fr.ifremer.medatlas.model.Station;
 import fr.ifremer.octopus.utils.SDNCdiIdObservable;
 import fr.ifremer.octopus.utils.SDNVocabs;
-import fr.ifremer.seadatanet.splitter.CFSplitter;
-import fr.ifremer.seadatanet.splitter.SdnSplitter;
-import fr.ifremer.seadatanet.splitter.bean.SdnCDIId;
+import fr.ifremer.seadatanet.cfpoint.input.CFReader;
+import fr.ifremer.seadatanet.odv.input.OdvReader;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 
@@ -33,7 +32,8 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 	}
 
 
-	@Override public FileVisitResult visitFile(
+	@Override 
+	public FileVisitResult visitFile(
 			Path aFile, BasicFileAttributes aAttrs
 			) throws IOException {
 
@@ -42,8 +42,8 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			MedatlasInputFileManager mgr;
 			try {
 				mgr = new MedatlasInputFileManager(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf());
-				for (Station st: mgr.getMetadataReader().getCruise().getStationList()){
-					cdiList.add(new SDNCdiIdObservable(st.getLocalcdiId(), true));
+				for (String cdi: mgr.getInputFileCdiIdList()){
+					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}
 			} catch (VocabularyException e1) {
 				throw new IOException(e1.getMessage());
@@ -53,9 +53,8 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			
 		case ODV_SDN:
 			try{
-				SdnSplitter splitterSDN = new SdnSplitter(aFile.toAbsolutePath().toString(), "/tmp", "odv", 
-						null, 1L, SDNVocabs.getInstance().getCf());
-				for (SdnCDIId cdi :splitterSDN.getInputFileCdiIdList()){
+				OdvReader reader = new OdvReader(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf());
+				for (String cdi :reader.getInputFileCdiIdList()){
 					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}
 			}catch (Exception e){
@@ -64,9 +63,8 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			break;
 		case CFPOINT:
 			try{
-				CFSplitter splitterCF = new CFSplitter(aFile.toAbsolutePath().toString(), "/tmp", "cfpoint", 
-						null, 1L, SDNVocabs.getInstance().getCf());
-				for (SdnCDIId cdi :splitterCF.getInputFileCdiIdList()){
+				CFReader reader = new CFReader(aFile.toAbsolutePath().toString());
+				for (String cdi :reader.getInputFileCdiIdList()){
 					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}
 			}catch (Exception e){
@@ -80,7 +78,8 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 
 
 
-	@Override  public FileVisitResult preVisitDirectory(
+	@Override  
+	public FileVisitResult preVisitDirectory(
 			Path aDir, BasicFileAttributes aAttrs
 			) throws IOException {
 		return FileVisitResult.CONTINUE;

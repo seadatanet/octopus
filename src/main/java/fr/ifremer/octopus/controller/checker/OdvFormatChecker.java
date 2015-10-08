@@ -6,7 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.utils.SDNVocabs;
-import fr.ifremer.seadatanet.odvsdn2cfpoint.odv.OdvReader;
+import fr.ifremer.seadatanet.odv.input.OdvReader;
 
 public class OdvFormatChecker extends FormatChecker {
 	private static final Logger LOGGER = LogManager.getLogger(OdvFormatChecker.class);
@@ -16,7 +16,6 @@ public class OdvFormatChecker extends FormatChecker {
 		
 		try {
 			OdvReader mgr = new OdvReader(f.getAbsolutePath(), SDNVocabs.getInstance().getCf());
-			mgr.parseMetadata();
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
 			throw e;

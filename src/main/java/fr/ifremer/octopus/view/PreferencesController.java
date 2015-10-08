@@ -231,7 +231,7 @@ public class PreferencesController {
 			th.start();
 
 		}else{
-			bodcLog.appendText("operation cancelled");
+			bodcLog.appendText("operation cancelled");// TODO
 		}
 
 	}

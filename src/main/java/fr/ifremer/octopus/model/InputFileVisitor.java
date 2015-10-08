@@ -15,7 +15,8 @@ public class InputFileVisitor extends SimpleFileVisitor<Path> {
 	String firstFile;
 	
 
-	@Override public FileVisitResult visitFile(
+	@Override
+	public FileVisitResult visitFile(
 			Path aFile, BasicFileAttributes aAttrs
 			) throws IOException {
 		firstFile = aFile.toAbsolutePath().toString();
@@ -27,7 +28,8 @@ public class InputFileVisitor extends SimpleFileVisitor<Path> {
 		return firstFile;
 	}
 
-	@Override  public FileVisitResult preVisitDirectory(
+	@Override
+	public FileVisitResult preVisitDirectory(
 			Path aDir, BasicFileAttributes aAttrs
 			) throws IOException {
 		return FileVisitResult.CONTINUE;

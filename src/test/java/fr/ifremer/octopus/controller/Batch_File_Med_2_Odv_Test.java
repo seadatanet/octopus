@@ -27,12 +27,14 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 	 * cdi list : empty
 	 */
 	@Test
-	public void file_med_2_odv_Mono_emptyCDI() {
+	public void file_profile_med_2_odv_Mono_emptyCDI() {
 		inFormat="medatlas";
-		in="medatlas/input/diap";
-		out = "file_med_2_odv_Mono_emptyCDI";
+		in="medatlas/input/profile/diap";
+		out = "profile/file_profile_med_2_odv_Mono_emptyCDI";
 		type= "mono";
 		outFormat = "odv";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
@@ -43,12 +45,14 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 	 * cdi list : empty
 	 */
 	@Test
-	public void file_med_2_odv_Multi_emptyCDI() {
+	public void file_profile_med_2_odv_Multi_emptyCDI() {
 		inFormat="medatlas";
-		in="medatlas/input/diap";
-		out = "file_med_2_odv_Multi_emptyCDI.txt";
+		in="medatlas/input/profile/diap";
+		out = "profile/file_profile_med_2_odv_Multi_emptyCDI.txt";
 		type= "multi";
 		outFormat = "odv";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
@@ -60,13 +64,15 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 	 * cdi list : 2
 	 */
 	@Test
-	public void file_med_2_odv_Mono_2CDI() {
+	public void file_profile_med_2_odv_Mono_2CDI() {
 		inFormat="medatlas";
-		in="medatlas/input/diap";
-		out = "file_med_2_odv_Mono_2CDI";
+		in="medatlas/input/profile/diap";
+		out = "profile/file_profile_med_2_odv_Mono_2CDI";
 		type= "mono";
 		outFormat = "odv";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
@@ -74,19 +80,117 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		
 	}
 	@Test
-	public void file_med_2_odv_Multi_2CDI() {
+	public void file_profile_med_2_odv_Mono_2CDI_withoutRef() {
 		inFormat="medatlas";
-		in="medatlas/input/diap";
-		out = "file_med_2_odv_Multi_2CDI.txt";
-		type= "multi";
+		in="medatlas/input/profile/diap_inputNoRef";
+		out = "profile/file_profile_med_2_odv_Mono_2CDI_inputNoRef";
+		type= "mono";
 		outFormat = "odv";
-		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
+		cdiList="FI29200110014_00020_H09,FI29200110014_00022_H09";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
 		
 		
 	}
+	@Test
+	public void file_profile_med_2_odv_Multi_2CDI() {
+		inFormat="medatlas";
+		in="medatlas/input/profile/diap";
+		out = "profile/file_profile_med_2_odv_Multi_2CDI.txt";
+		type= "multi";
+		outFormat = "odv";
+		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+		
+	}
+	
+/**
+ * ===================
+ */
+	
+	/**
+	 * 1 med -> n cf
+	 * cdi list : empty
+	 */
+	@Test
+	public void file_trajectory_med_2_odv_Mono_emptyCDI() {
+		inFormat="medatlas";
+		in="medatlas/input/trajectory/M_trajectory_bath";
+		out = "trajectory/file_trajectory_med_2_odv_Mono_emptyCDI";
+		type= "mono";
+		outFormat = "odv";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+	}
+	/**
+	 * 1 med -> 1 cf
+	 * cdi list : empty
+	 */
+	@Test
+	public void file_trajectory_med_2_odv_Multi_emptyCDI() {
+		inFormat="medatlas";
+		in="medatlas/input/trajectory/M_trajectory_bath";
+		out = "trajectory/file_trajectory_med_2_odv_Multi_emptyCDI.txt";
+		type= "multi";
+		outFormat = "odv";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+		
+	}
+	/**
+	 * 1 med -> n cf
+	 * cdi list : 2
+	 */
+	@Test
+	public void file_trajectory_med_2_odv_Mono_2CDI() {
+		inFormat="medatlas";
+		in="medatlas/input/trajectory/M_trajectory_bath";
+		out = "trajectory/file_trajectory_med_2_odv_Mono_2CDI";
+		type= "mono";
+		outFormat = "odv";
+		cdiList="FI35199480001_00001_H09,FI35199480002_00001_H09";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+		
+	}
+	@Test
+	public void file_trajectory_med_2_odv_Multi_2CDI() {
+		inFormat="medatlas";
+		in="medatlas/input/trajectory/M_trajectory_bath";
+		out = "trajectory/file_trajectory_med_2_odv_Multi_2CDI.txt";
+		type= "multi";
+		outFormat = "odv";
+		cdiList="FI35199480001_00001_H09,FI35199480002_00001_H09";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+		
+	}
+	
+	
 	@Override
 	protected String getInputDir() {
 		return "medatlas";

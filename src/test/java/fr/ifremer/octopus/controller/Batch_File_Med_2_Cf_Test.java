@@ -27,13 +27,14 @@ public class Batch_File_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	 * cdi list : empty
 	 */
 	@Test
-	public void file_med_2_cf_Mono_emptyCDI() {
+	public void file_profile_med_2_cf_Mono_emptyCDI() {
 		
 		inFormat="medatlas";
-		in="medatlas/input/diap";
-		out = "file_med_2_cf_Mono_emptyCDI";
+		in="medatlas/input/profile/diap";
+		out = "profile/file_profile_med_2_cf_Mono_emptyCDI";
 		type= "mono";
 		outFormat = "cfpoint";
+		expectOutputExist=true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
@@ -44,12 +45,13 @@ public class Batch_File_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	 * cdi list : empty
 	 */
 	@Test
-	public void file_med_2_cf_Multi_emptyCDI() {
+	public void file_profile_med_2_cf_Multi_emptyCDI() {
 		inFormat="medatlas";
-		in="medatlas/input/diap";
-		out = "file_med_2_cf_Multi_emptyCDI.cf";
+		in="medatlas/input/profile/diap";
+		out = "profile/file_profile_med_2_cf_Multi_emptyCDI.cf";
 		type= "multi";
 		outFormat = "cfpoint";
+		expectOutputExist=true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
@@ -62,13 +64,14 @@ public class Batch_File_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	 * cdi list : 2
 	 */
 	@Test
-	public void file_med_2_cf_Mono_2CDI() {
+	public void file_profile_med_2_cf_Mono_2CDI() {
 		inFormat="medatlas";
-		in="medatlas/input/diap";
-		out = "file_med_2_cf_Mono_2CDI";
+		in="medatlas/input/profile/diap";
+		out = "profile/file_profile_med_2_cf_Mono_2CDI";
 		type= "mono";
 		outFormat = "cfpoint";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09";
+		expectOutputExist=true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
@@ -77,13 +80,14 @@ public class Batch_File_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 		
 	}
 	@Test
-	public void file_med_2_cf_Multi_2CDI() {
+	public void file_profile_med_2_cf_Multi_2CDI() {
 		inFormat="medatlas";
-		in="medatlas/input/diap";
-		out = "file_med_2_cf_Multi_2CDI.cf";
+		in="medatlas/input/profile/diap";
+		out = "profile/file_profile_med_2_cf_Multi_2CDI.cf";
 		type= "multi";
 		outFormat = "cfpoint";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09";
+		expectOutputExist=true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);

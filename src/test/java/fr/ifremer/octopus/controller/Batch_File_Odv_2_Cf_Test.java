@@ -28,10 +28,12 @@ public class Batch_File_Odv_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void file_odv_2_cf_Mono_emptyCDI() {
 		inFormat="odv";
-		in="odv/input/diap.txt";
-		out = "file_odv_2_cf_Mono_emptyCDI";
+		in="odv/input/profile/diap.txt";
+		out = "profile/file_odv_2_cf_Mono_emptyCDI";
 		type= "mono";
 		outFormat = "cfpoint";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
@@ -44,10 +46,12 @@ public class Batch_File_Odv_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void file_odv_2_cf_Multi_emptyCDI() {
 		inFormat="odv";
-		in="odv/input/diap.txt";
-		out = "file_odv_2_cf_Multi_emptyCDI.cf";
+		in="odv/input/profile/diap.txt";
+		out = "profile/file_odv_2_cf_Multi_emptyCDI.cf";
 		type= "multi";
 		outFormat = "cfpoint";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
@@ -60,11 +64,13 @@ public class Batch_File_Odv_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void file_odv_2_cf_Mono_2CDI() {
 		inFormat="odv";
-		in="odv/input/diap.txt";
-		out = "file_odv_2_cf_Mono_2CDI";
+		in="odv/input/profile/diap.txt";
+		out = "profile/file_odv_2_cf_Mono_2CDI";
 		type= "mono";
 		outFormat = "cfpoint";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
@@ -73,11 +79,13 @@ public class Batch_File_Odv_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void file_odv_2_cf_Multi_2CDI() {
 		inFormat="odv";
-		in="odv/input/diap.txt";
-		out = "file_odv_2_cf_Multi_2CDI.cf";
+		in="odv/input/profile/diap.txt";
+		out = "profile/file_odv_2_cf_Multi_2CDI.cf";
 		type= "multi";
 		outFormat = "cfpoint";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
+		expectOutputExist=true;
+		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);

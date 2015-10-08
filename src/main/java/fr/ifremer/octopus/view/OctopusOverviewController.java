@@ -40,10 +40,10 @@ import org.apache.logging.log4j.Logger;
 import fr.ifremer.octopus.MainApp;
 import fr.ifremer.octopus.controller.OctopusException;
 import fr.ifremer.octopus.controller.OctopusGUIController;
-import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.utils.SDNCdiIdObservable;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 /**
  * Main Octopus View Controller
@@ -329,7 +329,7 @@ public class OctopusOverviewController {
 
 			}
 		} catch (OctopusException e) {
-			// TODO
+			LOGGER.error(e.getMessage());
 		}
 	}
 	public void initGui(){
@@ -338,7 +338,6 @@ public class OctopusOverviewController {
 		cdiContainer.setVisible(false);
 		showCdi.setSelected(false);
 		showCdi.setVisible(false);
-//		cdiListManager = null;
 		switchGui(false);
 	}
 
@@ -472,7 +471,7 @@ public class OctopusOverviewController {
 			octopusGuiController.getModel().setOutputPath(outputPathTextField.getText());
 			octopusGuiController.getModel().setOutputType(getOutputType());
 			octopusGuiController.getModel().getCdiList().clear();
-			for (SDNCdiIdObservable p : cdiTable.getItems()) {
+			for (SDNCdiIdObservable p : getCDITable().getItems()) {
 				if (p.getSelected()){
 					octopusGuiController.getModel().getCdiList().add(p.cdiProperty().getValue());
 				}

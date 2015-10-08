@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.ifremer.seadatanet.splitter.bean.SdnCDIId;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class OctopusModel {
 
@@ -17,7 +17,11 @@ public class OctopusModel {
 	private Format outputFormat;
 	private OUTPUT_TYPE outputType;
 	/**
-	 * list of local_cdi_id (without the splitter "SDN:LOCAL::" prefix)
+	 * can be a file or a directory
+	 */
+	private File inputFile;
+	/**
+	 * list of local_cdi_id requested
 	 */
 	private List<String> cdiList;
 
@@ -28,8 +32,12 @@ public class OctopusModel {
 	public OctopusModel(String inputPath)  {
 		this.cdiList= new ArrayList<String>();
 		this.inputPath = inputPath;
+		
+		this.inputFile= new File(inputPath);
 	}
-
+	public File getInputFile() {
+		return inputFile;
+	}
 	public String getInputPath() {
 		return inputPath;
 	}
@@ -47,15 +55,6 @@ public class OctopusModel {
 
 	public List<String> getCdiList() {
 		return cdiList;
-	}
-	public String[] getCdiListForSplitter() {
-		String[] list=new String[cdiList.size()];
-		int i=0;
-		for (String cdi: cdiList){
-			list[i]= SdnCDIId.START_URN_SYNTAX+cdi;
-			i++;
-		}
-		return list;
 	}
 
 	public void setCdiList(List<String> cdiList) {
@@ -87,8 +86,5 @@ public class OctopusModel {
 		return outputType==OUTPUT_TYPE.MONO;
 	}
 
-	public boolean isInputADirectory(){
-		return new File(inputPath).isDirectory();
-	}
 
 }

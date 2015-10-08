@@ -42,11 +42,6 @@ public class RootController {
     private void openFile() {
     	FileChooser fileChooser = new FileChooser();
     	 fileChooser.setTitle("Open file"); // TODO
-//    	 fileChooser.getExtensionFilters().addAll(
-//    	         new ExtensionFilter("Text Files", "*.txt"),
-//    	         new ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
-//    	         new ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
-//    	         new ExtensionFilter("All Files", "*.*"));
     	 String def= PreferencesManager.getInstance().getInputDefaultPath();
     	 if (def !=null){
     		 fileChooser.setInitialDirectory(new File(def));

@@ -1,21 +1,17 @@
 package fr.ifremer.octopus.controller;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import sdn.vocabulary.interfaces.VocabularyException;
-import fr.ifremer.medatlas.exceptions.ConverterException;
-import fr.ifremer.medatlas.input.MedatlasInputFileManager;
 import fr.ifremer.octopus.controller.checker.FormatChecker;
 import fr.ifremer.octopus.controller.checker.MedatlasFormatChecker;
 import fr.ifremer.octopus.controller.checker.OdvFormatChecker;
@@ -26,15 +22,11 @@ import fr.ifremer.octopus.io.driver.impl.DriverManagerImpl;
 import fr.ifremer.octopus.io.driver.impl.MedatlasSDNDriverImpl;
 import fr.ifremer.octopus.io.driver.impl.OdvSDNDriverImpl;
 import fr.ifremer.octopus.model.Conversion;
-import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.InputFileVisitor;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
-import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.octopus.view.CdiListManager;
-import fr.ifremer.seadatanet.splitter.CFSplitter;
-import fr.ifremer.seadatanet.splitter.SdnSplitter;
-import fr.ifremer.seadatanet.splitter.SplitterException;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public abstract class AbstractController {
 
@@ -45,32 +37,19 @@ public abstract class AbstractController {
 	private DriverManager driverManager = new DriverManagerImpl();
 	private CdiListManager cdiListManager;
 	protected OctopusModel model;
-
-
 	/**
 	 * Required conversion deduced from input and output formats
 	 */
 	private Conversion conversion;
 
-
-	private File tmpDir;
-	private String tmpPath = "OctopusTmpDirectory";
-
-
 	/**
 	 * 
 	 */
 	public AbstractController()  {
-		try {
-			deleteTmp();
-		} catch (IOException e) {
-		}
 
 		this.driverManager.registerNewDriver(new MedatlasSDNDriverImpl());
 		this.driverManager.registerNewDriver(new OdvSDNDriverImpl());
 		this.driverManager.registerNewDriver(new CFPointDriverImpl());
-
-
 	}
 
 	/**
@@ -102,9 +81,13 @@ public abstract class AbstractController {
 
 	/**
 	 * Process split and/or conversion
-	 * @throws OctopusException 
+	 * @return list of output files paths
+	 * @throws OctopusException
 	 */
-	public void process() throws OctopusException {
+	public List<String> process() throws OctopusException {
+
+		List<String> outputFilesList=new ArrayList<String>();
+
 		checkInputOutputFormatCompliance();
 		checkOutputNameCompliance();
 
@@ -114,7 +97,7 @@ public abstract class AbstractController {
 					LOGGER.info("split input file in n monostation files");
 				}else{
 					LOGGER.info("nothing to do: no cdi to be exported, no conversion");
-					return;
+					return outputFilesList;
 				}
 			}
 		}else{
@@ -125,351 +108,171 @@ public abstract class AbstractController {
 
 
 		try {
-			File in = new File(model.getInputPath());
-			if (in.isDirectory()){
-				for (File f: in.listFiles())
-					processFile (f);
-			}else{
-				processFile (in);
+			if (model.isMono() || model.getInputFile().isDirectory()){
+				createOutputDir();
 			}
-		} catch (ConverterException e) {
-			LOGGER.error(e.getMessage());
-			throw new OctopusException(e);
-		} catch (VocabularyException e) {
-			LOGGER.error(e.getMessage());
-			throw new OctopusException(e);
-		}  catch (FileNotFoundException e) {
-			LOGGER.error(e.getMessage());
-			throw new OctopusException(e);
-		} catch (SplitterException e) {
-			LOGGER.error(e.getMessage());
-			throw new OctopusException(e);
-		} catch (Exception e) {
+			if (model.getInputFile().isDirectory()){
+				for (File f: model.getInputFile().listFiles())
+					outputFilesList=processFile (f, outputFilesList);
+			}else{
+				outputFilesList=processFile (model.getInputFile(), outputFilesList);
+			}
+		} 
+		catch (Exception e) {
 			LOGGER.error(e.getMessage());
 			throw new OctopusException(e);
 		} finally{
-			try {
-				deleteTmp();
-			} catch (IOException e) {
-				LOGGER.error(e.getMessage());
-			}
 		}
+		if (outputFilesList.isEmpty()){
+			deleteOutputDir();
+		}
+		return outputFilesList;
 
-		LOGGER.info("process ended successfully");
 
 	}
-	/**
-	 * 
-	 * @param in
-	 * @throws Exception
-	 */
-	private void processFile(File in) 
-			throws 
-			Exception {
 
-
-		if (conversion==Conversion.NONE){
-			if( model.getInputFormat()==Format.CFPOINT){
-				// Cf2Cf
-				processCf2Cf(in);
-			}else if(model.getInputFormat()==Format.MEDATLAS_SDN){
-				// Med2Med
-				processMedSDN2MedSDN(in);
-			}
-			else{
-				// Odv2Odv
-				processSDNSplitter(in);
-			}
-		}else if (conversion==Conversion.MEDATLAS_SDN_TO_CF_POINT
-				||conversion==Conversion.ODV_SDN_TO_CFPOINT
-				){
-			processX2Cf(in);
-		}else if(conversion==Conversion.MEDATLAS_SDN_TO_ODV_SDN){
-			processSDNSplitter(in);
-		}
-
-	}
-	/**
-	 * 
-	 * @param in
-	 * @return
-	 */
-	private String getOutputName(File in){
-
-		String outputName;
-		if (model.isInputADirectory()){
-			createOutputDir();
-			if (in.getName().indexOf(".") != -1){
-				outputName = model.getOutputPath() +File.separator+ in.getName().substring(0, in.getName().indexOf("."));
-			}else{
-				outputName = model.getOutputPath() +File.separator+ in.getName();
-			}
-			if (!model.isMono() && !model.getOutputFormat().getMandatoryExtension().isEmpty()){
-				outputName+="."+model.getOutputFormat().getMandatoryExtension();
-			}
-		}else{
-			outputName = model.getOutputPath();
-		}
-		return outputName;
-	}
-
-	/**
-	 * 
-	 * @param in
-	 * @throws SplitterException
-	 * @throws VocabularyException
-	 */
-	private void processSDNSplitter(File in) throws SplitterException,
-	VocabularyException {
-
-		String outputName = getOutputName(in);
-
-
-
-		SdnSplitter splitter = new SdnSplitter(
-				in.getAbsolutePath(),//model.getInputPath(), 
-				outputName,//model.getOutputPath(),
-				model.getOutputFormat().getName(), 
-				model.getOutputType().toString(), 
-				model.getCdiListForSplitter(), 
-				1L, 
-				SDNVocabs.getInstance().getCf());
-
-		splitter.split();
-		if (model.isMono()){
-			LOGGER.info("output directory is ready: "+ model.getOutputPath());
-		}else{
-			LOGGER.info("output file is ready: "+ model.getOutputPath());
-		}
-	}
-
-	/**
-	 * 
-	 * @param in
-	 * @throws VocabularyException
-	 * @throws Exception
-	 */
-	private void processMedSDN2MedSDN(File in) throws VocabularyException, Exception{
-		MedatlasInputFileManager mgr = new MedatlasInputFileManager(
-				in.getAbsolutePath(), 
-				SDNVocabs.getInstance().getCf());
-
-		boolean isInputDir= new File(model.getInputPath()).isDirectory();
-		// CDI
-		List<String>cdiL = new ArrayList<>();
-		if (model.getCdiList().isEmpty()){
-			cdiL = mgr.getMetadataReader().getCDIsList();
-		}else{
-			for (String cdi: model.getCdiList()){
-				if (mgr.getMetadataReader().getCDIsList().contains(cdi)){
-					cdiL.add(cdi);
-				}
-			}
-		}
-
-
-
-		if (model.isMono() || isInputDir){
-			createOutputDir();
-		}
-
-		if (model.isMono()){
-			File subDir ;
-			String subDirPath = null;
-			if (isInputDir){
-				if (in.getName().indexOf(".") != -1){
-					subDirPath = model.getOutputPath() +File.separator+ in.getName().substring(0, in.getName().indexOf("."));
-				}else{
-					subDirPath = model.getOutputPath() +File.separator+ in.getName();
-				}
-
-				subDir = new File(subDirPath);
-				subDir.mkdir();
-
-			}
-			String outputName ;
-			for (String cdi: cdiL){
-				if (subDirPath !=null){
-					outputName = subDirPath + File.separator +cdi+"."+Format.MEDATLAS_SDN.getOutExtension();
-				}else{
-					outputName = model.getOutputPath() + File.separator +cdi+"."+Format.MEDATLAS_SDN.getOutExtension();
-				}
-				mgr.print(new ArrayList<String>(Arrays.asList(cdi)), outputName);
-			}
-		}else{
-			// TODO case cdi empty
-			mgr.print(model.getCdiList(), getOutputName(in));
+	private  void deleteOutputDir(){
+		try {
+			File out = new File(model.getOutputPath());
+			FileUtils.deleteDirectory(out);
+		} catch (IOException e) {
+			LOGGER.error("error on output directory deletion"); // TODO
 		}
 	}
 	/**
 	 * 
 	 * @param in
-	 * @throws VocabularyException
-	 * @throws SplitterException
+	 * @param outputFilesList
+	 * @return list of output files paths
 	 * @throws OctopusException
 	 */
-	private void processX2Cf(File in)
-			throws
-			VocabularyException,
-			SplitterException, 
-			OctopusException {
-
-
-		ConvertersManager convMgr;
+	private  List<String> processFile(File in, List<String> outputFilesList) throws OctopusException {
+		ConvertersManager manager;
 		try {
-			convMgr = new ConvertersManager(model.getInputFormat());
-		} catch (fr.ifremer.seadatanet.odvsdn2cfpoint.exceptions.ConverterException | ConverterException | VocabularyException e) {
-			throw new OctopusException(e.getMessage());
+			manager = new ConvertersManager(in, model.getInputFormat());
+		} catch (OctopusException e1) {
+			LOGGER.error(e1.getMessage());
+			throw new OctopusException("error on input file");
 		}
+		List<String> cdiToPrint;
+		try {
+			cdiToPrint = getCdiList(manager, in.getAbsolutePath());
+		} catch (OctopusException e1) {
+			return outputFilesList;
+		}
+		try {
+			String out;
 
 
-		// X to CF -> X2CFPointConverter
-		if (model.getCdiList().isEmpty()){
-
-			// create output directory for mono and multi, as converters creates output files with input file names (changing extension)
+			// MONO
 			if (model.isMono()){
-				createOutputDir();
-				String convOutputPath = convMgr.processFile(in.getAbsolutePath(), model.getOutputPath(), model.isMono());
-				LOGGER.info("output directory is ready: "+ convOutputPath);
-			}else{
-				// multi: rename file as asked to octopus (instead of converter name)
-				createTmpDir();
-				String convOutputPath = convMgr.processFile(in.getAbsolutePath(), tmpPath, model.isMono());
-				try {
-					FileUtils.moveFile(new File(convOutputPath), new File(getOutputName(in)));
-				} catch (IOException e) {
-					throw new OctopusException(e.getMessage());
-				}finally{
-					try {
-						deleteTmp();
-					} catch (IOException e) {
-						throw new OctopusException(e.getMessage());
+				// Process
+				for (String cdi: cdiToPrint){
+					if (model.getInputFile().isDirectory()){
+						createOutputSubDir(in.getName());
+						out = getOutFilePath(in.getName(), cdi);
+					}else{
+						out = getOutFilePath(null, cdi);
 					}
+
+					manager.print(getOneCdiAsList(cdi),out, model.getOutputFormat());
+					outputFilesList.add(out);
 				}
-				LOGGER.info("output file is ready: "+ model.getOutputPath());
-
 			}
-
-
-		}else{
-			String tmpSplit="";
-			// split before
-			if (model.getOutputType()== OUTPUT_TYPE.MONO){
-				createTmpDir();
-				tmpSplit = tmpPath;
-			}else{
-				if (model.getInputFormat()==Format.ODV_SDN){
-					//					tmpPath = model.getOutputPath()+".txt"; // splitter checks odv output extensions
-					tmpSplit = model.getOutputPath()+"tmp.txt"; 
+			//MULTI
+			else{
+				if (model.getInputFile().isDirectory()){
+					createOutputSubDir(in.getName());
+					out = getOutFilePath(in.getName(), null);
 				}else{
-					//					tmpPath = model.getOutputPath()+".med"; // splitter checks odv output extensions
-					tmpSplit = model.getOutputPath()+"tmp.med"; 
+					out = getOutFilePath(null, null);
 				}
+				// Process
+				manager.print(cdiToPrint, out, model.getOutputFormat());
+				outputFilesList.add(out);
 			}
 
 
-			SdnSplitter splitter = new SdnSplitter(
-					in.getAbsolutePath(),//model.getInputPath(), 
-					tmpSplit, 
-					model.getInputFormat().getName(), // split in same format as input
-					model.getOutputType().toString(), 
-					model.getCdiListForSplitter(), 
-					1L, 
-					SDNVocabs.getInstance().getCf());
-			try{
-				splitter.split();
-			}catch(Exception e){
-				LOGGER.error(e.getMessage());
-			}
+			manager.close();
+		} catch (Exception e) {
+			LOGGER.error("error on file "+ in.getAbsolutePath());
+			LOGGER.error(e.getMessage());
+			throw new OctopusException("error on input file");
+		}
 
 
+		return outputFilesList;
 
-			if (model.getOutputType()== OUTPUT_TYPE.MONO){
-				createOutputDir();
-				for (File f : tmpDir.listFiles()){
-					convMgr.processFile(f.getAbsolutePath(), model.getOutputPath(), model.isMono());
-				}
-				LOGGER.info("output directory is ready: "+ model.getOutputPath());
-				try {
-					deleteTmp();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+	}
+
+
+	private String getOutFilePath(String in, String cdi){
+		String outPath;
+		String extension = "."+model.getOutputFormat().getOutExtension();
+		// DIRECTORY
+		if (model.getInputFile().isDirectory()){
+			if (model.isMono()){
+				outPath = model.getOutputPath()+File.separator+ in +File.separator+cdi+extension;
 			}else{
-				createTmpDir();
-				String convOutputPath = convMgr.processFile(tmpSplit, tmpPath, model.isMono());
-
-				try {
-					FileUtils.moveFile(new File(convOutputPath), new File(getOutputName(in)));
-					new File(tmpSplit).delete();
-				} catch (IOException e) {
-					throw new OctopusException(e.getMessage());
-				}finally{
-					try {
-						deleteTmp();
-						new File(tmpSplit).delete();
-					} catch (IOException e) {
-						throw new OctopusException(e.getMessage());
-					}
-				}
-				LOGGER.info("output file is ready: "+ model.getOutputPath());
+				outPath = model.getOutputPath()+ in +extension;
 			}
-
 		}
+		// FILE
+		else{
+			if (model.isMono()){
+				outPath = model.getOutputPath()+File.separator+cdi+extension;
+			}else{
+				outPath = model.getOutputPath();
+			}
+		}
+		return outPath;
 	}
 
-	/**
-	 * 
-	 * @param in
-	 * @throws SplitterException
-	 * @throws FileNotFoundException
-	 * @throws VocabularyException
-	 */
-	private void processCf2Cf(File in) throws SplitterException,
-	FileNotFoundException, VocabularyException {
-		// 	CF to CF -> cfSplitter
-		CFSplitter splitter = new CFSplitter(
-				in.getAbsolutePath(), 
-				model.getOutputPath(), 
-				model.getOutputFormat().toString(), 
-				model.getOutputType().toString(),
-				model.getCdiListForSplitter(), 
-				1L, 
-				SDNVocabs.getInstance().getCf());
-		splitter.split();
-		if (model.isMono()){
-			LOGGER.info("output directory is ready: "+ model.getOutputPath());
+
+	private List<String> getOneCdiAsList(String cdi){
+		List<String> oneCdi=new ArrayList<String>();
+		oneCdi.add(cdi);
+		return oneCdi;
+	}
+	private List<String> getCdiList(ConvertersManager mgr, String filePath ) throws OctopusException{
+		List<String>cdiL = new ArrayList<>();
+		if (model.getCdiList().isEmpty()){
+			cdiL = mgr.getInputFileCdiIdList();
 		}else{
-			LOGGER.info("output file is ready: "+ model.getOutputPath());
+			for (String cdi: model.getCdiList()){
+				if (mgr.containsCdi(cdi)){
+					cdiL.add(cdi);
+				}else{
+					LOGGER.warn("local CDI ID "+cdi+" has not been found in "+filePath);
+				}
+			}
+			if(cdiL.isEmpty()){
+				throw new OctopusException("None of the local CDI ID has been found in file " + filePath);// TODO
+			}
+		}
+		return cdiL;
+	}
+
+	private void createOutputDir() throws OctopusException{
+		boolean ok=true;
+		File out = new File(model.getOutputPath());
+		if (!out.exists()){
+			ok = out.mkdir();
+		}
+		if (!ok){
+			Path p = Paths.get(model.getOutputPath());
+
+			if (!p.getParent().toFile().exists()){
+				LOGGER.error("directory "+ p.getParent() + " does not exist");// TODO
+			}
+			throw new OctopusException("unable to create output directory "+ model.getOutputPath());// TODO
 		}
 	}
-	/**
-	 * 
-	 */
-	private void createOutputDir(){
-		File out = new File(model.getOutputPath());
+	private void createOutputSubDir(String in){
+		File out = new File(model.getOutputPath()+File.separator+in);
 		out.mkdir();
 	}
-	/**
-	 * 
-	 */
-	private void createTmpDir(){
-		tmpDir = new File(tmpPath);
-		tmpDir.mkdir();
-	}
-	/**
-	 * 
-	 * @throws IOException
-	 */
-	private void deleteTmp() throws IOException{
-		File tmp = new File(tmpPath);
-		if (tmp.isFile()){
-			tmp.delete();
-		}else{
-			FileUtils.deleteDirectory(new File(tmpPath));
-		}
-	}
+
 
 	/**
 	 * 

@@ -2,7 +2,8 @@ package fr.ifremer.octopus.io.driver;
 
 import java.io.IOException;
 
-import fr.ifremer.octopus.model.Format;
+import fr.ifremer.sismer_tools.seadatanet.Format;
+
 
 
 /**

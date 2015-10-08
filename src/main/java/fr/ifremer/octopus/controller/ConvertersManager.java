@@ -1,78 +1,119 @@
 package fr.ifremer.octopus.controller;
 
+import java.io.File;
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import sdn.vocabulary.interfaces.VocabularyException;
-import fr.ifremer.medatlas.Medatlas2CFPointConverter;
-import fr.ifremer.medatlas.exceptions.ConverterException;
-import fr.ifremer.medatlas.exceptions.MedatlasReaderException;
-import fr.ifremer.octopus.model.Format;
+import fr.ifremer.medatlas.exceptions.MedatlasWriterException;
+import fr.ifremer.medatlas.input.MedatlasInputFileManager;
 import fr.ifremer.octopus.utils.SDNVocabs;
-import fr.ifremer.seadatanet.odvsdn2cfpoint.OdvSDN2CFPointConverter;
+import fr.ifremer.seadatanet.cfpoint.exceptions.CFPointException;
+import fr.ifremer.seadatanet.cfpoint.input.CFReader;
+import fr.ifremer.seadatanet.odv.input.OdvReader;
+import fr.ifremer.seadatanet.odv.output.OdvException;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class ConvertersManager {
 	private static final Logger LOGGER = LogManager.getLogger(ConvertersManager.class);
-	private static final String CONV_SUBTITLE = " from Octopus";
+	private static final String TITLE_COMPLEMENT = " from Octopus";
 	private static final String unitsTranslationFileName = "unitsTranslation.xml";
 	private Object conv;
-	private Format format;
+	private Format inputFormat;
 
-	public ConvertersManager(Format format) throws ConverterException, VocabularyException, fr.ifremer.seadatanet.odvsdn2cfpoint.exceptions.ConverterException {
+	public ConvertersManager(File inputFile, Format inputFormat) throws OctopusException  {
+		this.inputFormat = inputFormat;
 
-		this.format = format;
-		switch (format) {
-		case MEDATLAS_SDN:
-			createMed2CfConv();
-			break;
-		case ODV_SDN:
-			createOdv2CfConv();
-			break;
-
-		default:
-			break;
-		}
-
-	}
-
-	private void createOdv2CfConv() throws fr.ifremer.seadatanet.odvsdn2cfpoint.exceptions.ConverterException, VocabularyException {
-		conv = new OdvSDN2CFPointConverter(CONV_SUBTITLE, 
-				SDNVocabs.getInstance().getCf(),
-				unitsTranslationFileName);
-
-	}
-
-	private void createMed2CfConv() throws ConverterException, VocabularyException {
-		conv = new Medatlas2CFPointConverter(CONV_SUBTITLE, 
-				SDNVocabs.getInstance().getCf(),
-				unitsTranslationFileName);
-		
-
-	}
-
-	public String processFile(String in, String outputPath,
-			boolean mono) throws OctopusException   {
-		
-		String resOutput="" ;
-		switch (format) {
-		case MEDATLAS_SDN:
-			try {
-				fr.ifremer.medatlas.Result res = ((Medatlas2CFPointConverter)conv).processFile(in, outputPath, mono, true);
-				resOutput = res.getOutputPath();
-			} catch (MedatlasReaderException | ConverterException e) {
-				throw new OctopusException(e.getMessage());
+		try{
+			switch (inputFormat) {
+			case MEDATLAS_SDN:
+				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf());
+				break;
+			case ODV_SDN:
+				conv = new OdvReader(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf());
+				break;
+			case CFPOINT:
+				conv = new CFReader(inputFile.getAbsolutePath());
+				break;
+			default:
+				break;
 			}
+		}catch(Exception e){
+			LOGGER.error(e.getMessage());
+			throw new OctopusException("error while initializing input file reader"); // TODO
+		}
+
+	}
+
+
+	public List<String> getInputFileCdiIdList() {
+		switch (inputFormat) {
+		case MEDATLAS_SDN:
+			return ((MedatlasInputFileManager)conv).getInputFileCdiIdList();
+		case ODV_SDN:
+			return ((OdvReader)conv).getInputFileCdiIdList();
+		case CFPOINT:
+			return ((CFReader)conv).getInputFileCdiIdList();
+		default:
+			return null;
+		}
+	}
+
+
+	public boolean containsCdi(String cdi) {
+		switch (inputFormat) {
+		case MEDATLAS_SDN:
+			return ((MedatlasInputFileManager)conv).containsCdi(cdi);
+		case ODV_SDN:
+			return ((OdvReader)conv).containsCdi(cdi);
+		case CFPOINT:
+			return ((CFReader)conv).containsCdi(cdi);
+		default:
+			LOGGER.error("undefined input format");
+			return false;
+		}
+	}
+
+
+	public void print(List<String> cdiList, String outputFileAbsolutePath, Format outputFormat) throws MedatlasWriterException, OdvException, CFPointException {
+		String titleComplement="";
+		if (outputFormat==Format.CFPOINT){
+			titleComplement = TITLE_COMPLEMENT;
+		}
+		switch (inputFormat) {
+		case MEDATLAS_SDN:
+			((MedatlasInputFileManager)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement);
 			break;
 		case ODV_SDN:
-			fr.ifremer.seadatanet.odvsdn2cfpoint.Result res = ((OdvSDN2CFPointConverter)conv).processFile(in, outputPath, mono, true);
-			resOutput = res.getOutputPath();
+			((OdvReader)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement);
 			break;
-
+		case CFPOINT:
+			((CFReader)conv).print(cdiList, outputFileAbsolutePath, titleComplement);
+			break;
 		default:
-			break;
+			LOGGER.error("undefined input format"); // TODO
 		}
-		return  resOutput;
-		
+
+	}
+	public void close()  {
+		try {
+			switch (inputFormat) {
+			case MEDATLAS_SDN:
+				((MedatlasInputFileManager)conv).close();
+				break;
+			case ODV_SDN:
+				((OdvReader)conv).close();
+				break;
+			case CFPOINT:
+				((CFReader)conv).close();
+				break;
+			default:
+				LOGGER.error("undefined input format");// TODO
+			}
+		} catch (Exception e) {
+			LOGGER.error("error while closing input file ");// TODO
+		}
 
 	}
 

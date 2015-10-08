@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.io.driver.Driver;
-import fr.ifremer.octopus.model.Format;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class OdvSDNDriverImpl extends Driver {
 	private static final Logger LOGGER = LogManager.getLogger(OdvSDNDriverImpl.class);

@@ -34,7 +34,7 @@ public abstract class AbstractBatch_X_2_Y_Test {
 	@Before
 	public void before(){
 		pwd = new File("##").getAbsolutePath().replace("#", "") + "src/test/resources/";
-		//		deleteDir(getInputDir(), getTmpDir());
+		deleteDir(getInputDir(), getTmpDir());
 		cdiList="";
 		success = false;
 		expectOutputExist= true;
@@ -42,7 +42,7 @@ public abstract class AbstractBatch_X_2_Y_Test {
 
 	@After
 	public void after(){
-		//		deleteDir(getInputDir(), getTmpDir());
+		deleteDir(getInputDir(), getTmpDir());
 	}
 	@BeforeClass
 	public static void beforeClass(){
@@ -100,10 +100,10 @@ public abstract class AbstractBatch_X_2_Y_Test {
 						outFiles+=f+File.separator+ff;
 					}
 				}
-//				else{
-//					logger.info("   - "+f);
-//					outFiles += f+",";
-//				}
+				//				else{
+				//					logger.info("   - "+f);
+				//					outFiles += f+",";
+				//				}
 			}
 		}
 		else{
@@ -120,7 +120,7 @@ public abstract class AbstractBatch_X_2_Y_Test {
 				_writer.append(outFormat+TestListener.RESU_SEP);
 				_writer.append(cdiList.isEmpty()? "empty"+TestListener.RESU_SEP:"filled"+TestListener.RESU_SEP);
 
-				
+
 				_writer.append( inFile.getAbsolutePath().substring(pwd.length())+TestListener.RESU_SEP);
 				_writer.append(inFiles+TestListener.RESU_SEP);
 
@@ -147,11 +147,13 @@ public abstract class AbstractBatch_X_2_Y_Test {
 	protected static void deleteDir(String inputDir, String tmpDir){
 		try {
 			File d = new File(pwd+inputDir+File.separatorChar+outDir+File.separatorChar+tmpDir);
-			for (File ff : d.listFiles()){
-				if (ff.isFile()){
-					ff.delete();
-				}else{
-					FileUtils.deleteDirectory(ff);
+			for (File sub: d.listFiles()){
+				for (File ff : sub.listFiles()){
+					if (ff.isFile()){
+						ff.delete();
+					}else{
+						FileUtils.deleteDirectory(ff);
+					}
 				}
 			}
 		} catch (IOException e) {

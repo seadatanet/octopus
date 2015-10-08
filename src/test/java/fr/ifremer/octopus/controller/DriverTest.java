@@ -15,7 +15,7 @@ import fr.ifremer.octopus.io.driver.impl.CFPointDriverImpl;
 import fr.ifremer.octopus.io.driver.impl.DriverManagerImpl;
 import fr.ifremer.octopus.io.driver.impl.MedatlasSDNDriverImpl;
 import fr.ifremer.octopus.io.driver.impl.OdvSDNDriverImpl;
-import fr.ifremer.octopus.model.Format;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class DriverTest {
 	private static final Logger LOGGER = LogManager.getLogger(DriverTest.class);
@@ -35,7 +35,7 @@ public class DriverTest {
 	public void medSDNTest() {
 		
 		try {
-			Driver d = driverManager.findDriverForFile(PWD+"medatlas/input/diap");
+			Driver d = driverManager.findDriverForFile(PWD+"medatlas/input/profile/diap");
 			LOGGER.info(d.getFormat());
 			Assert.assertTrue(d.getFormat().equals(Format.MEDATLAS_SDN));
 		} catch (IOException e) {

@@ -15,9 +15,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import sdn.vocabulary.interfaces.VocabularyException;
-import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class BatchController extends AbstractController{
 	private static final Logger LOGGER = LogManager.getLogger(BatchController.class);
@@ -74,7 +74,13 @@ public class BatchController extends AbstractController{
 		}
 
 		try {
-			process();
+			List<String> outputFiles = process();
+			if (outputFiles.size()>0){
+				LOGGER.info("process ended without error. "+ outputFiles.size() + " files have been written");// TODO
+				LOGGER.info(outputFiles);
+			}else{
+				LOGGER.warn("process ended without error. "+ outputFiles.size() + " files have been written");// TODO
+			}
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
@@ -165,7 +171,7 @@ public class BatchController extends AbstractController{
 			}
 		}catch(Exception e){
 			LOGGER.error(e.getMessage());
-			throw new OctopusException("CDI list can not be read");
+			throw new OctopusException("CDI list can not be read");// TODO
 		}
 		return list;
 	}

@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.medatlas.utils.MedatlasKeywords;
 import fr.ifremer.octopus.io.driver.Driver;
-import fr.ifremer.octopus.model.Format;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class MedatlasSDNDriverImpl extends Driver {
 	private static final Logger LOGGER = LogManager.getLogger(MedatlasSDNDriverImpl.class);

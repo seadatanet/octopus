@@ -8,8 +8,8 @@ import org.apache.logging.log4j.Logger;
 import ucar.nc2.NetcdfFile;
 import ucar.nc2.Variable;
 import fr.ifremer.octopus.io.driver.Driver;
-import fr.ifremer.octopus.model.Format;
 import fr.ifremer.seadatanet.cfpoint.util.ParameterNames;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class CFPointDriverImpl extends Driver {
 	private static final Logger LOGGER = LogManager.getLogger(CFPointDriverImpl.class);
@@ -22,7 +22,7 @@ public class CFPointDriverImpl extends Driver {
 			NetcdfFile inputFile = NetcdfFile.open(file);
 			Variable varCDI = inputFile.findVariable(ParameterNames.SDN_LOCAL_CDI_ID);
 			if (varCDI==null){
-				LOGGER.info("file is netCDF but is not SDN CFPoint format: missing LOCAL_CDI_ID variable");
+				LOGGER.info("file is netCDF but is not SDN CFPoint format: missing LOCAL_CDI_ID variable");// TODO
 			}else{
 				format = Format.CFPOINT;
 				canOpen = true;

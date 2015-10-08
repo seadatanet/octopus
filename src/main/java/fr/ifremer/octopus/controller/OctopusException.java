@@ -2,6 +2,11 @@ package fr.ifremer.octopus.controller;
 
 public class OctopusException extends Exception {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public OctopusException() {
 	}
 

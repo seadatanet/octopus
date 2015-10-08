@@ -30,8 +30,8 @@ public class Batch_Dir_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void dir_odv_2_odv_Mono_emptyCDI() {
 		inFormat="odv";
-		in="odv/input";
-		out = "dir_odv_2_odv_Mono_emptyCDI";
+		in="odv/input/profile";
+		out = "profile/dir_odv_2_odv_Mono_emptyCDI";
 		type= "mono";
 		outFormat = "odv";
 		launchTest(logger);
@@ -46,8 +46,8 @@ public class Batch_Dir_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void dir_odv_2_odv_Multi_emptyCDI() {
 		inFormat="odv";
-		in="odv/input";
-		out = "dir_odv_2_odv_Multi_emptyCDI";
+		in="odv/input/profile";
+		out = "profile/dir_odv_2_odv_Multi_emptyCDI";
 		type= "multi";
 		outFormat = "odv";expectOutputExist=false;
 		
@@ -63,8 +63,8 @@ public class Batch_Dir_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void dir_odv_2_odv_Mono_2CDI() {
 		inFormat="odv";
-		in="odv/input";
-		out = "dir_odv_2_odv_Mono_2CDI";
+		in="odv/input/profile";
+		out = "profile/dir_odv_2_odv_Mono_2CDI";
 		type= "mono";
 		outFormat = "odv";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";
@@ -81,8 +81,8 @@ public class Batch_Dir_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	@Test
 	public void dir_odv_2_odv_Multi_2CDI() {
 		inFormat="odv";
-		in="odv/input";
-		out = "dir_odv_2_odv_Multi_2CDI";
+		in="odv/input/profile";
+		out = "profile/dir_odv_2_odv_Multi_2CDI";
 		type= "multi";
 		outFormat = "odv";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";

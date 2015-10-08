@@ -10,8 +10,8 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import fr.ifremer.octopus.model.Format;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 /**
  * usage: octopus

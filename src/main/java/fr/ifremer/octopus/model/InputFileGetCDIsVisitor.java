@@ -50,7 +50,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			} catch (Exception e1) {
 				throw new IOException(e1.getMessage());
 			}
-			
+			break;
 		case ODV_SDN:
 			try{
 				OdvReader reader = new OdvReader(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf());

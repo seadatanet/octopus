@@ -29,8 +29,8 @@
                         <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
                            <children>
                               <Button fx:id="buttonExportMedatlas" mnemonicParsing="false" onAction="#exportToMed" prefHeight="31.0" prefWidth="99.0" text="%output.medatlas" />
-                              <Button fx:id="buttonExportCfpoint" mnemonicParsing="false" onAction="#exportToCfPoint" prefHeight="31.0" prefWidth="99.0" text="%output.cfpoint" />
                               <Button fx:id="buttonExportOdv" mnemonicParsing="false" onAction="#exportToODV" prefHeight="31.0" prefWidth="99.0" text="%output.odv" />
+                              <Button fx:id="buttonExportCfpoint" mnemonicParsing="false" onAction="#exportToCfPoint" prefHeight="31.0" prefWidth="99.0" text="%output.cfpoint" />
                            </children>
                            <VBox.margin>
                               <Insets />

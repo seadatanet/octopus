@@ -8,7 +8,7 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import fr.ifremer.medatlas.utils.MedatlasKeywords;
+import fr.ifremer.medatlas.utils.MedatlasConstants;
 import fr.ifremer.octopus.io.driver.Driver;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
@@ -30,7 +30,7 @@ public class MedatlasSDNDriverImpl extends Driver {
 				canOpen=true;
 				
 				while((currentLine = reader.readLine()) != null) {
-					if(currentLine.contains(MedatlasKeywords.SDN_PARAMETER_MAPPING_KEYWORD)) { 
+					if(currentLine.contains(MedatlasConstants.SDN_PARAMETER_MAPPING_KEYWORD)) { 
 						format = Format.MEDATLAS_SDN;
 						canOpen=true;
 					}

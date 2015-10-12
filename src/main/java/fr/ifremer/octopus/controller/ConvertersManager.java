@@ -17,8 +17,8 @@ import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class ConvertersManager {
 	private static final Logger LOGGER = LogManager.getLogger(ConvertersManager.class);
-	private static final String TITLE_COMPLEMENT = " from Octopus";
-	private static final String unitsTranslationFileName = "unitsTranslation.xml";
+	private static final String TITLE_COMPLEMENT = " from Octopus";// FIXME version
+	private static final String unitsTranslationFileName = "octopusUnitsTranslation.xml";
 	private Object conv;
 	private Format inputFormat;
 
@@ -70,7 +70,7 @@ public class ConvertersManager {
 		case CFPOINT:
 			return ((CFReader)conv).containsCdi(cdi);
 		default:
-			LOGGER.error("undefined input format");
+			LOGGER.error("undefined input format"); // TODO
 			return false;
 		}
 	}
@@ -83,10 +83,10 @@ public class ConvertersManager {
 		}
 		switch (inputFormat) {
 		case MEDATLAS_SDN:
-			((MedatlasInputFileManager)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement);
+			((MedatlasInputFileManager)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement,  unitsTranslationFileName);
 			break;
 		case ODV_SDN:
-			((OdvReader)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement);
+			((OdvReader)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement, unitsTranslationFileName);
 			break;
 		case CFPOINT:
 			((CFReader)conv).print(cdiList, outputFileAbsolutePath, titleComplement);

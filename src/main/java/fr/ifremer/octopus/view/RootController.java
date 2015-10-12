@@ -48,8 +48,8 @@ public class RootController {
     	 }
     	 File selectedFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
     	 if (selectedFile != null) {
-    		 mainApp.getController().initGui();
     		 mainApp.getController().setInputText(selectedFile.getAbsolutePath());
+    		 mainApp.getController().initInput();
     	 }
     }
     
@@ -64,8 +64,8 @@ public class RootController {
     	 }
     	 File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
     	 if (selectedFile != null) {
-    		 mainApp.getController().initGui();
     		 mainApp.getController().setInputText(selectedFile.getAbsolutePath());
+    		 mainApp.getController().initInput();
     	 }
     }
     

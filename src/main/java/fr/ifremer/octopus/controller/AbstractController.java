@@ -96,8 +96,9 @@ public abstract class AbstractController {
 				if (model.getOutputType() == OUTPUT_TYPE.MONO ){
 					LOGGER.info("split input file in n monostation files");
 				}else{
-					LOGGER.info("nothing to do: no cdi to be exported, no conversion");
-					return outputFilesList;
+					LOGGER.info("output will be identical to input, but the file will be updated if needed (SDN references...");// TODO
+//					LOGGER.info("nothing to do: no cdi to be exported, no conversion");
+//					return outputFilesList;
 				}
 			}
 		}else{

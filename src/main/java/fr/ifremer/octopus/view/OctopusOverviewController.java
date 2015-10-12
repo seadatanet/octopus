@@ -1,6 +1,7 @@
 package fr.ifremer.octopus.view;
 
 import java.io.File;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.beans.InvalidationListener;
@@ -318,6 +319,7 @@ public class OctopusOverviewController {
 		LOGGER.info("-----------------------------------------------------------");
 
 		initGui();
+		
 		try {
 			checkInput();
 			octopusGuiController = new OctopusGUIController(inputPathTextField.getText());
@@ -338,6 +340,8 @@ public class OctopusOverviewController {
 		cdiContainer.setVisible(false);
 		showCdi.setSelected(false);
 		showCdi.setVisible(false);
+		cdiTable=null;
+		outputPathTextField.setText("");
 		switchGui(false);
 	}
 
@@ -404,7 +408,7 @@ public class OctopusOverviewController {
 				cdiContainer.setVisible(showCdi.isSelected());
 				if (showCdi.isSelected()){
 					try {
-						cdiTable=null;
+						cdiTable=null; // FIXME: cdis are read from input each time we select!!!
 						cdiContainer.getChildren().clear();
 						cdiContainer.getChildren().addAll(getCDITable());
 						
@@ -479,7 +483,13 @@ public class OctopusOverviewController {
 
 			LOGGER.info("export to "+format.getName()); // TODO
 			octopusGuiController.getModel().setOutputFormat(format);
-			octopusGuiController.process();
+			List<String> outputFiles = octopusGuiController.process();
+			if (outputFiles.size()>0){
+				LOGGER.info("process ended without error. "+ outputFiles.size() + " files have been written");// TODO
+				LOGGER.info(outputFiles);
+			}else{
+				LOGGER.warn("process ended without error. "+ outputFiles.size() + " files have been written");// TODO
+			}
 		} catch (OctopusException e) {
 			LOGGER.error(e.getMessage());
 		}finally{

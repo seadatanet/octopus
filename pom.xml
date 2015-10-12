@@ -126,6 +126,9 @@
 						<goals>
 							<goal>jar</goal>
 						</goals>
+						 <configuration>
+                <additionalparam>-Xdoclint:none</additionalparam>
+            </configuration>
 					</execution>
 				</executions>
 			</plugin>
@@ -138,12 +141,6 @@
 	<dependencies>
 		<!-- ************************* IFREMER ************************* -->
 
-	<dependency>
-			<groupId>fr.ifremer.seadatanet</groupId>
-			<artifactId>odvSDN2CFPointLib</artifactId>
-			<version>1.0.9-SNAPSHOT</version>
-<!-- 			<classifier>jar-with-dependencies</classifier> -->
-		</dependency>
 		
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>

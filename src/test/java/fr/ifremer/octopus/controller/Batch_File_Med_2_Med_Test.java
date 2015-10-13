@@ -50,7 +50,7 @@ public class Batch_File_Med_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		out = "profile/file_profile_med_2_med_Multi_emptyCDI";
 		type= "multi";
 		outFormat = "medatlas";
-		expectOutputExist = false;
+		expectOutputExist = true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
@@ -149,7 +149,7 @@ public class Batch_File_Med_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		out = "timeseries/file_timeseries_med_2_med_Multi_emptyCDI";
 		type= "multi";
 		outFormat = "medatlas";
-		expectOutputExist = false;
+		expectOutputExist = true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
@@ -255,7 +255,7 @@ public class Batch_File_Med_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		out = "trajectory/file_trajectory_med_2_med_Multi_emptyCDI";
 		type= "multi";
 		outFormat = "medatlas";
-		expectOutputExist = false;
+		expectOutputExist = true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);

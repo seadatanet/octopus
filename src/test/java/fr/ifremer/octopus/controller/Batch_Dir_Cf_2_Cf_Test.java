@@ -68,7 +68,7 @@ public class Batch_Dir_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 		out = "profile/dir_cf_2_cf_Multi_emptyCDI";
 		type= "multi";
 		outFormat = "cfpoint";
-		expectOutputExist=false;
+		expectOutputExist = true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);

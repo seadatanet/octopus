@@ -49,7 +49,8 @@ public class Batch_Dir_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		in="odv/input/profile";
 		out = "profile/dir_odv_2_odv_Multi_emptyCDI";
 		type= "multi";
-		outFormat = "odv";expectOutputExist=false;
+		outFormat = "odv";
+		expectOutputExist = true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);

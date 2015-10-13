@@ -66,10 +66,10 @@ public class Batch_File_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 		
 		inFormat="cfpoint";
 		in="cfpoint/input/profile/diap.nc";
-		out = "profile/file_cf_2_cf_Multi_emptyCDI.cf";
+		out = "profile/file_cf_2_cf_Multi_emptyCDI.nc";
 		type= "multi";
 		outFormat = "cfpoint";
-		expectOutputExist=false;
+		expectOutputExist=true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
@@ -84,7 +84,7 @@ public class Batch_File_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 		
 		inFormat="cfpoint";
 		in="cfpoint/input/profile/diap.nc";
-		out = "profile/file_cf_2_cf_Multi_2CDI.cf";
+		out = "profile/file_cf_2_cf_Multi_2CDI.nc";
 		type= "multi";
 		outFormat = "cfpoint";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";

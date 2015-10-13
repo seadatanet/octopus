@@ -47,7 +47,7 @@ public class Batch_File_Odv_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	public void file_odv_2_cf_Multi_emptyCDI() {
 		inFormat="odv";
 		in="odv/input/profile/diap.txt";
-		out = "profile/file_odv_2_cf_Multi_emptyCDI.cf";
+		out = "profile/file_odv_2_cf_Multi_emptyCDI.nc";
 		type= "multi";
 		outFormat = "cfpoint";
 		expectOutputExist=true;
@@ -80,7 +80,7 @@ public class Batch_File_Odv_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	public void file_odv_2_cf_Multi_2CDI() {
 		inFormat="odv";
 		in="odv/input/profile/diap.txt";
-		out = "profile/file_odv_2_cf_Multi_2CDI.cf";
+		out = "profile/file_odv_2_cf_Multi_2CDI.nc";
 		type= "multi";
 		outFormat = "cfpoint";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";

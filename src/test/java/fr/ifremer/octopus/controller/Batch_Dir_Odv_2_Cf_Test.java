@@ -45,7 +45,7 @@ public class Batch_Dir_Odv_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	public void dir_odv_2_cf_Multi_emptyCDI() {
 		inFormat="odv";
 		in="odv/input/profile";
-		out = "profile/dir_odv_2_cf_Multi_emptyCDI";
+		out = "profile/dir_odv_2_cf_Multi_emptyCDI.nc";
 		type= "multi";
 		outFormat = "cfpoint";
 		launchTest(logger);
@@ -75,7 +75,7 @@ public class Batch_Dir_Odv_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	public void dir_odv_2_cf_Multi_2CDI() {
 		inFormat="odv";
 		in="odv/input/profile";
-		out = "profile/dir_odv_2_cf_Multi_2CDI";
+		out = "profile/dir_odv_2_cf_Multi_2CDI.nc";
 		type= "multi";
 		outFormat = "cfpoint";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";

@@ -47,7 +47,7 @@ public class Batch_Dir_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	public void dir_profile_med_2_cf_Multi_emptyCDI() {
 		inFormat="medatlas";
 		in="medatlas/input/profile";
-		out = "profile/dir_profile_med_2_cf_Multi_emptyCDI";
+		out = "profile/dir_profile_med_2_cf_Multi_emptyCDI.nc";
 		type= "multi";
 		outFormat = "cfpoint";
 		
@@ -81,7 +81,7 @@ public class Batch_Dir_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 	public void dir_profile_med_2_cf_Multi_2CDI() {
 		inFormat="medatlas";
 		in="medatlas/input/profile";
-		out = "profile/dir_profile_med_2_cf_Multi_2CDI";
+		out = "profile/dir_profile_med_2_cf_Multi_2CDI.nc";
 		type= "multi";
 		outFormat = "cfpoint";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";

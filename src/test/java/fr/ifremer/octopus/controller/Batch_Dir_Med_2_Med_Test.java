@@ -53,7 +53,7 @@ public class Batch_Dir_Med_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		in="medatlas/input/profile";
 		out = "profile/dir_profile_med_2_med_Multi_emptyCDI";
 		type= "multi";
-		expectOutputExist = false;
+		expectOutputExist = true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);

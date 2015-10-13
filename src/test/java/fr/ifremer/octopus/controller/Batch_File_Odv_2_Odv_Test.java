@@ -52,7 +52,7 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		out = "profile/file_odv_2_odv_Multi_emptyCDI.txt";
 		type= "multi";
 		outFormat = "odv";
-		expectOutputExist=false;
+		expectOutputExist=true;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);

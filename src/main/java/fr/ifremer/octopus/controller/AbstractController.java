@@ -183,7 +183,6 @@ public abstract class AbstractController {
 			//MULTI
 			else{
 				if (model.getInputFile().isDirectory()){
-					createOutputSubDir(in.getName());
 					out = getOutFilePath(in.getName(), null);
 				}else{
 					out = getOutFilePath(null, null);
@@ -215,7 +214,7 @@ public abstract class AbstractController {
 			if (model.isMono()){
 				outPath = model.getOutputPath()+File.separator+ in +File.separator+cdi+extension;
 			}else{
-				outPath = model.getOutputPath()+ in +extension;
+				outPath = model.getOutputPath()+File.separator+ in +extension;
 			}
 		}
 		// FILE

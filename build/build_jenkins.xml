@@ -159,22 +159,22 @@
 	
 		<!-- Copy project sources itself -->
 		<copy todir="build/src">
-			<fileset dir="project/src/test/java">
+			<fileset dir="../src/test/java">
 				<include name="**/*"/>
 			</fileset>
 		</copy>
 		<copy todir="build/src">
-			<fileset dir="project/src/test/resources">
+			<fileset dir="../src/test/resources">
 				<include name="**/*"/>
 			</fileset>
 		</copy>
 		<copy todir="build/src">
-			<fileset dir="project/src/main/resources">
+			<fileset dir="../src/main/resources">
 				<include name="**/*"/>
 			</fileset>
 		</copy>
 		<copy todir="build/src">
-			<fileset dir="project/src/main/java">
+			<fileset dir="../src/main/java">
 				<include name="**/*"/>
 			</fileset>
 		</copy>

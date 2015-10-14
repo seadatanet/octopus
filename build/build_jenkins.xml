@@ -13,6 +13,15 @@
 			classpathref="fxant"/>
 	</target>
 	<target name="setup-staging-area">
+		
+		<echo message=" basedir ${basedir}"/>
+		<echo message=" user.dir ${user.dir}"/>
+		<echo message=" env.workspace ${env.workspace}"/>
+		<echo message=" env.build_id ${env.build_id}"/>
+		<echo message=" jenkins_home ${jenkins_home}"/>
+		<echo message=" BuildDir ${BuildDir}"/>
+		
+		
 		<delete dir="externalLibs" />
 		<delete dir="project" />
 		<delete dir="projectRefs" />
@@ -197,12 +206,7 @@
 	
 	</target>
 	<target name="do-deploy" depends="setup-staging-area, do-compile, init-fx-tasks">
-		 <echo message=" basedir ${basedir}"/>
-		 <echo message=" user.dir ${user.dir}"/>
-		 <echo message=" env.workspace ${env.workspace}"/>
-		 <echo message=" env.build_id ${env.build_id}"/>
-		 <echo message=" jenkins_home ${jenkins_home}"/>
-		 <echo message=" BuildDir ${BuildDir}"/>
+		 
 		
 		<delete file="dist"/>
 		<delete file="deploy" />

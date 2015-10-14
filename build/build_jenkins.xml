@@ -97,22 +97,22 @@
 	
 		<mkdir dir="project" />
 		<copy todir="project">
-			<fileset dir="/home/altran/workspaces/lunaFx/octopus">
+			<fileset dir=".">
 				<include name="src/main/java/**" />
 			</fileset>
 		</copy>
 		<copy todir="project">
-			<fileset dir="/home/altran/workspaces/lunaFx/octopus">
+			<fileset dir=".">
 				<include name="src/test/java/**" />
 			</fileset>
 		</copy>
 		<copy todir="project">
-			<fileset dir="/home/altran/workspaces/lunaFx/octopus">
+			<fileset dir=".">
 				<include name="src/main/resources/**" />
 			</fileset>
 		</copy>
 		<copy todir="project">
-			<fileset dir="/home/altran/workspaces/lunaFx/octopus">
+			<fileset dir=".">
 				<include name="src/test/resources/**" />
 			</fileset>
 		</copy>

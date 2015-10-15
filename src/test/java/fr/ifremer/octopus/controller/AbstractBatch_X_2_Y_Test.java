@@ -34,7 +34,7 @@ public abstract class AbstractBatch_X_2_Y_Test {
 	@Before
 	public void before(){
 		pwd = new File("##").getAbsolutePath().replace("#", "") + "src/test/resources/";
-//		deleteDir(getInputDir(), getTmpDir());
+		deleteDir(getInputDir(), getTmpDir());
 		cdiList="";
 		success = false;
 		expectOutputExist= true;

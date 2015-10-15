@@ -9,15 +9,18 @@ import java.util.ResourceBundle;
 
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
@@ -29,12 +32,14 @@ import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.octopus.MainApp;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.utils.SDNVocabs;
+import fr.ifremer.octopus.view.edmo.EdmoController;
+import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 
 
 public class PreferencesController {
 	static final Logger LOGGER = LogManager.getLogger(PreferencesController.class.getName());
-
+	
 
 	/**
 	 * Reference to the main application
@@ -45,6 +50,10 @@ public class PreferencesController {
 	private ChoiceBox<String> languageChoiceBox;
 	@FXML
 	private HBox languageBox;
+	@FXML
+	private Button edmoChoiceButton;
+	@FXML 
+	private Label edmoCodeValue;
 	@FXML
 	private VBox directoriesBox;
 	@FXML
@@ -84,6 +93,9 @@ public class PreferencesController {
 		languageChoiceBox.valueProperty().addListener((observable, oldValue, newValue) ->
 		updateLanguage(newValue));
 
+		// 	edmo
+		edmoCodeValue.setText(PreferencesManager.getInstance().getEdmoCode());
+
 		// DEFAULT DIRECTORIES
 		inputDefault.setText(PreferencesManager.getInstance().getInputDefaultPath());
 		outputDefault.setText(PreferencesManager.getInstance().getOutputDefaultPath());
@@ -99,6 +111,31 @@ public class PreferencesController {
 		this.mainApp = mainApp;
 	}
 
+
+	@FXML
+	public void showEdmo() {
+		// Load octopus overview.
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(getClass().getResource("OctopusEdmoTable.fxml"));
+		loader.setResources(ResourceBundle.getBundle("bundles.edmo", PreferencesManager.getInstance().getLocale()));
+		AnchorPane octopusEdmoTable;
+		try {
+			octopusEdmoTable = (AnchorPane) loader.load();
+			// Set octopus overview into the center of root layout.
+			mainApp.setCenter(octopusEdmoTable);
+			// Give the controller access to the main app.
+			EdmoController aController = loader.getController();
+			aController.setMainApp(this.mainApp);
+			aController.setPreferencesController(this);
+		} catch (IOException e) {
+			LOGGER.error(e.getMessage());
+		}
+
+	}
+	
+	public void setEdmoLabelValue(String value){
+		edmoCodeValue.setText(value);
+	}
 
 	/**
 	 * called when user changes language in the languageChoiceBox
@@ -119,7 +156,7 @@ public class PreferencesController {
 
 	@FXML
 	private void closePreferences(){
-		mainApp.closePreferences();
+		mainApp.setCenterOverview();
 	}
 	@FXML
 	public void browseIn(){
@@ -162,7 +199,9 @@ public class PreferencesController {
 
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
 				disablePane(true);
-				String[] vocabsList = {"P01","P06"};
+				String[] vocabsList = {
+						SdnVocabularyManager.LIST_P01, SdnVocabularyManager.LIST_P06, SdnVocabularyManager.LIST_P09,
+						SdnVocabularyManager.LIST_L22, SdnVocabularyManager.LIST_L33};
 				int version;
 				HashMap<String, Integer> oldVersions = new HashMap<>();
 				HashMap<String, Integer> newVersions = new HashMap<>();
@@ -196,11 +235,11 @@ public class PreferencesController {
 
 				}
 				updateProgress(10 , 10);
-				
-				
-				
+
+
+
 				for (String list: vocabsList){
-					
+
 					if (oldVersions.get(list).equals(newVersions.get(list))){
 						bodcLog.appendText(list + ": already up to date (version "+  newVersions.get(list) + ")"+System.getProperty("line.separator") );
 					}else{
@@ -235,4 +274,8 @@ public class PreferencesController {
 		}
 
 	}
+	
+	
+	
+
 }

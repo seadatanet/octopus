@@ -8,6 +8,14 @@ public class Preferences {
 	private String language;
 	private String inputDefaultPath;
 	private String outputDefaultPath;
+	private String edmocode;
+	
+	public String getEdmocode() {
+		return edmocode;
+	}
+	public void setEdmocode(String edmocode) {
+		this.edmocode = edmocode;
+	}
 	public String getLanguage() {
 		return language;
 	}

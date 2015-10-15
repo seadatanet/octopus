@@ -22,8 +22,8 @@ public class AboutController {
     
     
     @FXML
-    private void closeAbout(){
-    	mainApp.closeAbout();
+    private void closeEdmo(){
+    	mainApp.setCenterOverview();
     }
     
     

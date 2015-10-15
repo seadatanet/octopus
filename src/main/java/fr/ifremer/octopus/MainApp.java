@@ -32,6 +32,7 @@ public class MainApp extends Application {
 	private AnchorPane octopusOverview;
 
 	private PreferencesManager prefsMgr;
+	private AnchorPane octopusPreferences;
 	/**
 	 * <pre>
 	 * Application entry point for GUI and batch mode.
@@ -150,8 +151,7 @@ public class MainApp extends Application {
 			AboutController aController = loader.getController();
 			aController.setMainApp(this);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.error(e.getMessage());
 		}
 
 
@@ -164,7 +164,7 @@ public class MainApp extends Application {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(getClass().getResource("view/OctopusPreferences.fxml"));
 		loader.setResources(ResourceBundle.getBundle("bundles.preferences", prefsMgr.getLocale()));
-		AnchorPane octopusPreferences;
+
 		try {
 			octopusPreferences = (AnchorPane) loader.load();
 			// Set octopus overview into the center of root layout.
@@ -173,23 +173,23 @@ public class MainApp extends Application {
 			PreferencesController pController = loader.getController();
 			pController.setMainApp(this);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.error(e.getMessage());
 		}
 
 
 	}
 
-	public void closeAbout() {
+	public void setCenterOverview() {
 		// Set octopus overview into the center of root layout.
 		rootLayout.setCenter(octopusOverview);
-
 	}
-
-
-	public void closePreferences() {
+	public void setCenterPreferences() {
 		// Set octopus overview into the center of root layout.
-		rootLayout.setCenter(octopusOverview);
+		rootLayout.setCenter(octopusPreferences);
+	}
+	public void setCenter(AnchorPane pane) {
+		rootLayout.setCenter(pane);
+		
 	}
 
 }

@@ -86,6 +86,8 @@ public class OctopusOverviewController {
 	private CheckBox showCdi;
 	@FXML 
 	private VBox cdiContainer;
+	
+	// added from the java code
 	private TableView<SDNCdiIdObservable> cdiTable;
 	private CheckBox selectAllCheckBox;
 
@@ -213,14 +215,14 @@ public class OctopusOverviewController {
 
 				@Override
 				public void invalidated(Observable arg0) {
-					System.out.println("invalidated");
+					LOGGER.debug("invalidated");
 				}
 			});
 			tableView.getItems().addListener(new ListChangeListener<SDNCdiIdObservable>() {
 
 				@Override
 				public void onChanged(javafx.collections.ListChangeListener.Change<? extends SDNCdiIdObservable> arg0) {
-					System.out.println("changed");
+					LOGGER.debug("changed");
 				}
 			});
 			this.cdiTable = tableView;
@@ -355,7 +357,7 @@ public class OctopusOverviewController {
 		
 		if (inputOk){
 			Format f = octopusGuiController.getModel().getInputFormat();
-			buttonExportMedatlas.disableProperty().setValue(f!=Format.MEDATLAS_SDN);
+			buttonExportMedatlas.disableProperty().setValue(f!=Format.MEDATLAS_SDN && f!=Format.MEDATLAS_NON_SDN );
 			buttonExportOdv.disableProperty().setValue(f==Format.CFPOINT);
 			buttonExportCfpoint.disableProperty().setValue(false);
 		}else{

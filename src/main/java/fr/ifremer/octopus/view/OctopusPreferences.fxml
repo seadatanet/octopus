@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.collections.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1093.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.PreferencesController">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.PreferencesController">
    <children>
       <Button fx:id="closeButton" layoutX="261.0" layoutY="361.0" mnemonicParsing="false" onAction="#closePreferences" text="%preferences.close" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" />
       <VBox fx:id="directoriesBox" layoutX="15.0" layoutY="143.0" prefHeight="200.0" prefWidth="570.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
@@ -62,7 +62,7 @@
             </HBox>
          </children>
       </VBox>
-      <HBox fx:id="languageBox" layoutX="14.0" layoutY="98.0" prefHeight="30.0" prefWidth="323.0">
+      <HBox fx:id="languageBox" layoutX="14.0" layoutY="98.0" prefHeight="30.0" prefWidth="1051.0">
          <children>
             <Label prefHeight="20.0" prefWidth="120.0" text="%preferences.language">
                <HBox.margin>
@@ -80,7 +80,27 @@
                   <Insets left="15.0" right="15.0" />
                </HBox.margin>
             </ChoiceBox>
-            <HBox />
+            <Label text="%preferences.edmocodeLabel">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="edmoCodeValue" text="%preferences.edmoCodeValue">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="edmoChoiceButton" mnemonicParsing="false" onAction="#showEdmo" text="%preferences.edmobutton">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
          </children>
       </HBox>
       <Label layoutX="14.0" layoutY="14.0" text="%preferences.title">

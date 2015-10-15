@@ -121,4 +121,19 @@ public class PreferencesManager {
 		preferences.setOutputDefaultPath(outputDefaultPath);
 	}
 
+	public String getEdmoCode() {
+		if (preferences.getEdmocode()==null){
+			return null;
+		}else{
+			return preferences.getEdmocode();
+		}
+	}
+
+	public void setEdmoCode(Integer code) {
+		if (code!=null){
+			preferences.setEdmocode(String.valueOf(code));
+		}
+		
+	}
+
 }

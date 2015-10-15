@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.medatlas.exceptions.MedatlasWriterException;
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
+import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.seadatanet.cfpoint.exceptions.CFPointException;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
@@ -26,7 +27,15 @@ public class ConvertersManager {
 		this.inputFormat = inputFormat;
 
 		try{
+			String edmo;
 			switch (inputFormat) {
+			case MEDATLAS_NON_SDN:
+				edmo = PreferencesManager.getInstance().getEdmoCode();
+				if (edmo==null){
+					throw new OctopusException("you must set EDMO code in settings panel"); //TODO
+				}
+				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), Integer.valueOf(edmo));
+				break;
 			case MEDATLAS_SDN:
 				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf());
 				break;
@@ -76,13 +85,14 @@ public class ConvertersManager {
 	}
 
 
-	public void print(List<String> cdiList, String outputFileAbsolutePath, Format outputFormat) throws MedatlasWriterException, OdvException, CFPointException {
+	public void print(List<String> cdiList, String outputFileAbsolutePath, Format outputFormat) throws MedatlasWriterException, OdvException, CFPointException, OctopusException {
 		String titleComplement="";
 		if (outputFormat==Format.CFPOINT){
 			titleComplement = TITLE_COMPLEMENT;
 		}
 		switch (inputFormat) {
 		case MEDATLAS_SDN:
+		case MEDATLAS_NON_SDN:
 			((MedatlasInputFileManager)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement,  unitsTranslationFileName);
 			break;
 		case ODV_SDN:
@@ -92,7 +102,8 @@ public class ConvertersManager {
 			((CFReader)conv).print(cdiList, outputFileAbsolutePath, titleComplement);
 			break;
 		default:
-			LOGGER.error("undefined input format"); // TODO
+//			LOGGER.error("undefined input format"); // TODO
+			throw new OctopusException("undefined input format");
 		}
 
 	}
@@ -100,6 +111,7 @@ public class ConvertersManager {
 		try {
 			switch (inputFormat) {
 			case MEDATLAS_SDN:
+			case MEDATLAS_NON_SDN:
 				((MedatlasInputFileManager)conv).close();
 				break;
 			case ODV_SDN:

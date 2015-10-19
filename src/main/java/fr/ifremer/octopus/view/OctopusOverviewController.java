@@ -30,6 +30,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
@@ -84,6 +85,8 @@ public class OctopusOverviewController {
 	
 	@FXML
 	private CheckBox showCdi;
+	@FXML 
+	private HBox outputCdiContainer;
 	@FXML 
 	private VBox cdiContainer;
 	
@@ -326,8 +329,6 @@ public class OctopusOverviewController {
 			checkInput();
 			octopusGuiController = new OctopusGUIController(inputPathTextField.getText());
 			if (octopusGuiController.getModel() !=null){
-				showCdi.setVisible(true);
-//				cdiListManager = new CdiListManager(octopusGuiController);
 				LOGGER.debug("init input ok -> switch true");
 				switchGui(true);
 
@@ -342,6 +343,7 @@ public class OctopusOverviewController {
 		cdiContainer.setVisible(false);
 		showCdi.setSelected(false);
 		showCdi.setVisible(false);
+		outputCdiContainer.setVisible(false);
 		cdiTable=null;
 		outputPathTextField.setText("");
 		switchGui(false);
@@ -353,13 +355,30 @@ public class OctopusOverviewController {
 		radioMulti.setDisable(!inputOk);
 		outputPathTextField.setDisable(!inputOk);
 		chooseOut.setDisable(!inputOk);
-		showCdi.disableProperty().setValue(!inputOk);
+
+		
+		showCdi.visibleProperty().setValue(
+				inputOk 
+				&& octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
+				&&  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98);
+		
+		
+		outputCdiContainer.visibleProperty().setValue(
+				inputOk &&
+				(
+				octopusGuiController.getModel().getInputFormat()==Format.MGD_81
+				||octopusGuiController.getModel().getInputFormat()==Format.MGD_98)
+				);
+		
 		
 		if (inputOk){
 			Format f = octopusGuiController.getModel().getInputFormat();
-			buttonExportMedatlas.disableProperty().setValue(f!=Format.MEDATLAS_SDN && f!=Format.MEDATLAS_NON_SDN );
-			buttonExportOdv.disableProperty().setValue(f==Format.CFPOINT);
-			buttonExportCfpoint.disableProperty().setValue(false);
+			boolean disableMedatlas = f!=Format.MEDATLAS_SDN && f!=Format.MEDATLAS_NON_SDN ;
+			boolean disableOdv = (f==Format.CFPOINT);
+			boolean disableCfPoint = f==Format.MGD_81 || f==Format.MGD_98; 
+			buttonExportMedatlas.disableProperty().setValue(disableMedatlas);
+			buttonExportOdv.disableProperty().setValue(disableOdv);
+			buttonExportCfpoint.disableProperty().setValue(disableCfPoint);
 		}else{
 			buttonExportMedatlas.disableProperty().setValue(true);
 			buttonExportOdv.disableProperty().setValue(true);

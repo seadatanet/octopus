@@ -13,7 +13,32 @@
 			<items>
 				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
 					<children>
-                  <CheckBox fx:id="showCdi" layoutX="10.0" layoutY="201.0" mnemonicParsing="false" onAction="#showCdiList" text="%input.checkCdi" AnchorPane.leftAnchor="10.0" />
+                  <FlowPane layoutX="11.0" layoutY="194.0" prefHeight="35.0" prefWidth="586.0">
+                    <children>
+                <CheckBox fx:id="showCdi" mnemonicParsing="false" onAction="#showCdiList" prefHeight="20.0" prefWidth="93.0" text="%input.checkCdi">
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </CheckBox>
+<!--                         <HBox fx:id="outputCdiContainer" prefHeight="31.0" prefWidth="500.0"> -->
+                         <HBox fx:id="outputCdiContainer" prefHeight="31.0" prefWidth="600.0">
+                           <children>
+                              <Label prefHeight="31.0" prefWidth="600.0" text="%output.outputLocalCdiId">
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                              <TextField prefHeight="31.0" prefWidth="604.0">
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        
+                        
+                  </children>
+                    </FlowPane>
                   <VBox fx:id="cdiContainer" layoutX="16.0" layoutY="229.0" prefHeight="181.0" prefWidth="676.0" visible="false" />
                   <VBox layoutX="738.0" layoutY="337.0" prefHeight="69.0" prefWidth="299.0" AnchorPane.rightAnchor="10.0">
                      <children>

@@ -32,6 +32,7 @@ public class BatchController extends AbstractController{
 	private static String OPTION_F = "f";
 	private static String OPTION_T = "t";
 	private static String OPTION_CDI = "c";
+	private static String OPTION_OUT_LOCAL_CDI_ID = "l";
 	private List<String> mandatory_options = new ArrayList<>();
 
 
@@ -120,7 +121,9 @@ public class BatchController extends AbstractController{
 
 			String cdiList = cmd.getOptionValue(OPTION_CDI);
 			List<String> list = getCdiList(cdiList);
-
+			
+			
+			String outputLocalCdiId = cmd.getOptionValue(OPTION_OUT_LOCAL_CDI_ID);
 
 			// log
 			LOGGER.info("octopus batch mode arguments:");
@@ -129,6 +132,7 @@ public class BatchController extends AbstractController{
 			LOGGER.info("output format: " +outputFormat );
 			LOGGER.info("output type: " + type);
 			LOGGER.info("CDI list: " + cdiList);
+			LOGGER.info("output local_cdi_id: " + outputLocalCdiId);
 
 			checkInput(new File(inputPath));
 
@@ -143,6 +147,7 @@ public class BatchController extends AbstractController{
 			model.setOutputPath(outputPath);
 			model.setOutputType(type);
 			model.setCdiList(list);
+			model.setOuputLocalCdiId(outputLocalCdiId);
 
 
 		} catch (ParseException e) {

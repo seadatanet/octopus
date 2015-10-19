@@ -136,4 +136,20 @@ public class PreferencesManager {
 		
 	}
 
+	public String getCouplingPrefix() {
+		if(preferences.getCouplingPrefix()==null){
+			return "";
+		}else{
+			return preferences.getCouplingPrefix();
+		}
+	}
+	public void setCouplingPrefix(String couplingPrefix) {
+		preferences.setCouplingPrefix(couplingPrefix);
+	}
+	public void setCouplingIsEnabled(boolean enabled) {
+		preferences.setCouplingEnabled(enabled);
+	}
+	public boolean isCouplingEnabled() {
+		return preferences.isCouplingEnabled();
+	}
 }

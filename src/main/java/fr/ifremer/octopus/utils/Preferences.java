@@ -9,6 +9,8 @@ public class Preferences {
 	private String inputDefaultPath;
 	private String outputDefaultPath;
 	private String edmocode;
+	private String couplingPrefix;
+	private boolean isCouplingEnabled;
 	
 	public String getEdmocode() {
 		return edmocode;
@@ -33,6 +35,19 @@ public class Preferences {
 	}
 	public void setOutputDefaultPath(String outputDefaultPath) {
 		this.outputDefaultPath = outputDefaultPath;
+	}
+	public String getCouplingPrefix() {
+		return couplingPrefix;
+	}
+	public void setCouplingPrefix(String couplingPrefix) {
+		this.couplingPrefix = couplingPrefix;
+	}
+	public void setCouplingEnabled(boolean enabled) {
+		isCouplingEnabled=enabled;
+		
+	}
+	public boolean isCouplingEnabled() {
+		return isCouplingEnabled;
 	}
 
 }

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,17 +16,21 @@ import org.apache.logging.log4j.Logger;
 import fr.ifremer.octopus.controller.checker.FormatChecker;
 import fr.ifremer.octopus.controller.checker.MedatlasFormatChecker;
 import fr.ifremer.octopus.controller.checker.OdvFormatChecker;
+import fr.ifremer.octopus.controller.couplingTable.CouplingTableManager;
 import fr.ifremer.octopus.io.driver.Driver;
 import fr.ifremer.octopus.io.driver.DriverManager;
 import fr.ifremer.octopus.io.driver.impl.CFPointDriverImpl;
 import fr.ifremer.octopus.io.driver.impl.DriverManagerImpl;
+import fr.ifremer.octopus.io.driver.impl.MGDDriverImpl;
 import fr.ifremer.octopus.io.driver.impl.MedatlasSDNDriverImpl;
 import fr.ifremer.octopus.io.driver.impl.OdvSDNDriverImpl;
 import fr.ifremer.octopus.model.Conversion;
 import fr.ifremer.octopus.model.InputFileVisitor;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
+import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.view.CdiListManager;
+import fr.ifremer.sismer_tools.coupling.CouplingRecord;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public abstract class AbstractController {
@@ -37,6 +42,7 @@ public abstract class AbstractController {
 	private DriverManager driverManager = new DriverManagerImpl();
 	private CdiListManager cdiListManager;
 	protected OctopusModel model;
+	private PreferencesManager prefsMgr;
 	/**
 	 * Required conversion deduced from input and output formats
 	 */
@@ -50,6 +56,13 @@ public abstract class AbstractController {
 		this.driverManager.registerNewDriver(new MedatlasSDNDriverImpl());
 		this.driverManager.registerNewDriver(new OdvSDNDriverImpl());
 		this.driverManager.registerNewDriver(new CFPointDriverImpl());
+		this.driverManager.registerNewDriver(new MGDDriverImpl());
+		
+		// load preferences from XMl file
+		prefsMgr = PreferencesManager.getInstance();
+		prefsMgr.load();
+		LOGGER.info("LANGUAGE: "+prefsMgr.getLocale());
+				
 	}
 
 	/**
@@ -87,7 +100,19 @@ public abstract class AbstractController {
 	public List<String> process() throws OctopusException {
 
 		List<String> outputFilesList=new ArrayList<String>();
-
+		
+		try {
+			if (PreferencesManager.getInstance().isCouplingEnabled()){
+				if (!CouplingTableManager.getInstance().checkPrefixCompliance(model.getOutputPath())){
+					throw new OctopusException("coupling table prefix is not compliant with output path. Output path must start with prefix.");
+				}
+			}
+		} catch (ClassNotFoundException e1) {
+			throw new OctopusException(e1.getMessage());
+		} catch (SQLException e1) {
+			throw new OctopusException(e1.getMessage());
+		}
+		
 		checkInputOutputFormatCompliance();
 		checkOutputNameCompliance();
 
@@ -127,6 +152,20 @@ public abstract class AbstractController {
 		if (outputFilesList.isEmpty()){
 			deleteOutputDir();
 		}
+		
+		
+		/**
+		 * for debug only
+		 */
+//		try {
+//			List<CouplingRecord> list = CouplingTableManager.getInstance().list();
+//			for (CouplingRecord cr : list){
+//				LOGGER.info(cr.toString());
+//			}
+//		} catch (ClassNotFoundException | SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		return outputFilesList;
 
 
@@ -176,7 +215,8 @@ public abstract class AbstractController {
 						out = getOutFilePath(null, cdi);
 					}
 
-					manager.print(getOneCdiAsList(cdi),out, model.getOutputFormat());
+					List<CouplingRecord> records = manager.print(getOneCdiAsList(cdi),out, model.getOutputFormat(), model.getOuputLocalCdiId());
+					CouplingTableManager.getInstance().add(records);					
 					outputFilesList.add(out);
 				}
 			}
@@ -188,7 +228,8 @@ public abstract class AbstractController {
 					out = getOutFilePath(null, null);
 				}
 				// Process
-				manager.print(cdiToPrint, out, model.getOutputFormat());
+				List<CouplingRecord> records = manager.print(cdiToPrint, out, model.getOutputFormat(), model.getOuputLocalCdiId());
+				CouplingTableManager.getInstance().add(records);		
 				outputFilesList.add(out);
 			}
 
@@ -306,6 +347,13 @@ public abstract class AbstractController {
 				break;
 			case CFPOINT:
 				throw new OctopusException("format " + model.getInputFormat() + " can not be converted to " + model.getOutputFormat().getName());
+			case MGD_81:
+			case MGD_98:
+				if(!model.getOutputFormat().equals(Format.ODV_SDN)){
+					conversion = Conversion.MGD_TO_ODV;
+					throw new OctopusException("format " + model.getInputFormat() + " can not be converted to " + model.getOutputFormat().getName());
+				}
+				break;
 			default:
 				throw new OctopusException("not implemented: " +  model.getInputFormat() + " to " + model.getOutputFormat().getName());
 			}

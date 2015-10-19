@@ -19,6 +19,7 @@
             <Menu fx:id="menuEdit" mnemonicParsing="false" text="%menu.edit">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#showPreferences" text="%menu.edit.preferences" />
+                  <MenuItem mnemonicParsing="false" onAction="#showCoupling" text="%menu.edit.coupling" />
               </items>
             </Menu>
           <Menu mnemonicParsing="false" text="%menu.help">

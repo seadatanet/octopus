@@ -4,7 +4,8 @@ public enum Conversion {
 	NONE ("no conversion"),
 	MEDATLAS_SDN_TO_CF_POINT("MEDATLAS to CFPoint"),
 	MEDATLAS_SDN_TO_ODV_SDN("MEDATLAS to odv"),
-	ODV_SDN_TO_CFPOINT("ODV to cfpoint");
+	ODV_SDN_TO_CFPOINT("ODV to cfpoint"),
+	MGD_TO_ODV("MGD to cfPoint");
 
 	String name;
 

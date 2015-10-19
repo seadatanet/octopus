@@ -8,12 +8,12 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.edmo.EdmoController">
    <children>
-      <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Octopus edmo codes" textAlignment="CENTER" AnchorPane.topAnchor="14.0">
+      <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Octopus EDMO Codes" textAlignment="CENTER" AnchorPane.topAnchor="14.0">
          <font>
-            <Font name="FreeMono" size="65.0" />
+            <Font size="24.0" />
          </font>
       </Text>
-      <Button layoutX="270.0" layoutY="354.0" mnemonicParsing="false" onAction="#closeEdmo" text="%edmo.close" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" />
-      <Pane fx:id="edmoContainer" layoutX="137.0" layoutY="129.0" minHeight="200.0" minWidth="200.0" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="100.0" />
+      <Button layoutX="270.0" layoutY="354.0" mnemonicParsing="false" onAction="#closeEdmo" text="%edmo.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Pane fx:id="edmoContainer" layoutX="137.0" layoutY="129.0" minHeight="200.0" minWidth="200.0" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="100.0" />
    </children>
 </AnchorPane>

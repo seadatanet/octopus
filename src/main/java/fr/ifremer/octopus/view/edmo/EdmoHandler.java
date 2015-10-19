@@ -20,7 +20,7 @@ public class EdmoHandler extends DefaultHandler {
 	private static String c_country = "c_country";
 
 	private final java.util.HashMap<Integer, String> _valeurs = new HashMap<Integer, String>();
-	private static List<EdmoEntity> edmoList = new ArrayList<EdmoEntity>();
+	private static HashMap<Integer, EdmoEntity> edmoList = new HashMap<Integer, EdmoEntity>();
 	private Integer intCode;
 	private String entityName;
 	private String orgExist;
@@ -36,10 +36,12 @@ public class EdmoHandler extends DefaultHandler {
 		return _valeurs;
 	}
 
-	public static List<EdmoEntity> getEdmoList() {
+	public static HashMap<Integer, EdmoEntity> getEdmoList() {
 		return edmoList;
 	}
-
+	public static String getEdmoName(int edmo_code){
+		return edmoList.get(edmo_code).name;
+	}
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) {
 
@@ -71,7 +73,7 @@ public class EdmoHandler extends DefaultHandler {
 			orgExist = getOrgExistLabel(buffer.toString());
 			buffer = null;
 		} else if (qName.equals(c_country)) {
-			edmoList.add(new EdmoEntity(intCode, entityName, orgExist, buffer.toString()));
+			edmoList.put(intCode, new EdmoEntity(intCode, entityName, orgExist, buffer.toString()));
 			buffer = null;
 		}
 	}

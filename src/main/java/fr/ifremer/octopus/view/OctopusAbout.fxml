@@ -13,6 +13,6 @@
             <Font name="FreeMono" size="65.0" />
          </font>
       </Text>
-      <Button layoutX="270.0" layoutY="354.0" mnemonicParsing="false" onAction="#closeAbout" text="%about.close" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" />
+      <Button layoutX="270.0" layoutY="354.0" mnemonicParsing="false" onAction="#closeAbout" text="%about.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
    </children>
 </AnchorPane>

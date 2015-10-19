@@ -8,12 +8,17 @@ import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.medatlas.exceptions.MedatlasWriterException;
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
+import fr.ifremer.mgd.MGD77Manager;
+import fr.ifremer.mgd.MGD77V81Manager;
+import fr.ifremer.mgd.MGD77V98Manager;
+import fr.ifremer.mgd.MGDException;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.seadatanet.cfpoint.exceptions.CFPointException;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
 import fr.ifremer.seadatanet.odv.input.OdvReader;
 import fr.ifremer.seadatanet.odv.output.OdvException;
+import fr.ifremer.sismer_tools.coupling.CouplingRecord;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class ConvertersManager {
@@ -45,6 +50,20 @@ public class ConvertersManager {
 			case CFPOINT:
 				conv = new CFReader(inputFile.getAbsolutePath());
 				break;
+			case MGD_81:
+				edmo = PreferencesManager.getInstance().getEdmoCode();
+				if (edmo==null){
+					throw new OctopusException("you must set EDMO code in settings panel"); //TODO
+				}
+				conv= new MGD77V81Manager(inputFile.getAbsolutePath(), Integer.valueOf(edmo));
+				break;
+			case MGD_98:
+				edmo = PreferencesManager.getInstance().getEdmoCode();
+				if (edmo==null){
+					throw new OctopusException("you must set EDMO code in settings panel"); //TODO
+				}
+				conv = new MGD77V98Manager(inputFile.getAbsolutePath(), Integer.valueOf(edmo));
+				break;
 			default:
 				break;
 			}
@@ -64,6 +83,10 @@ public class ConvertersManager {
 			return ((OdvReader)conv).getInputFileCdiIdList();
 		case CFPOINT:
 			return ((CFReader)conv).getInputFileCdiIdList();
+		case MGD_81:
+		case MGD_98:
+			LOGGER.warn("MGD files does not contains local CDI Ids");
+			return null;
 		default:
 			return null;
 		}
@@ -78,14 +101,24 @@ public class ConvertersManager {
 			return ((OdvReader)conv).containsCdi(cdi);
 		case CFPOINT:
 			return ((CFReader)conv).containsCdi(cdi);
+		case MGD_81:
+		case MGD_98:
+			LOGGER.warn("MGD files does not contains local CDI Ids");
 		default:
 			LOGGER.error("undefined input format"); // TODO
 			return false;
 		}
 	}
 
-
-	public void print(List<String> cdiList, String outputFileAbsolutePath, Format outputFormat) throws MedatlasWriterException, OdvException, CFPointException, OctopusException {
+	public List<CouplingRecord>  print(List<String> cdiList, String outputFileAbsolutePath, Format outputFormat, String outputLocalCdiId) throws MedatlasWriterException, OdvException, CFPointException, OctopusException, MGDException {
+		
+		if (inputFormat== Format.MGD_81 || inputFormat== Format.MGD_98){
+			if (outputLocalCdiId == null){
+				throw new OctopusException("output local CDI Id must be defined for MGD files");// TODO
+			}
+		}
+			
+			
 		String titleComplement="";
 		if (outputFormat==Format.CFPOINT){
 			titleComplement = TITLE_COMPLEMENT;
@@ -93,19 +126,17 @@ public class ConvertersManager {
 		switch (inputFormat) {
 		case MEDATLAS_SDN:
 		case MEDATLAS_NON_SDN:
-			((MedatlasInputFileManager)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement,  unitsTranslationFileName);
-			break;
+			return ((MedatlasInputFileManager)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement,  unitsTranslationFileName);
 		case ODV_SDN:
-			((OdvReader)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement, unitsTranslationFileName);
-			break;
+			return ((OdvReader)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement, unitsTranslationFileName);
 		case CFPOINT:
-			((CFReader)conv).print(cdiList, outputFileAbsolutePath, titleComplement);
-			break;
+			return ((CFReader)conv).print(cdiList, outputFileAbsolutePath, titleComplement);
+		case MGD_81:
+		case MGD_98:
+			return ((MGD77Manager)conv).print( outputFileAbsolutePath, outputLocalCdiId);
 		default:
-//			LOGGER.error("undefined input format"); // TODO
-			throw new OctopusException("undefined input format");
+			throw new OctopusException("undefined input format");// TODO
 		}
-
 	}
 	public void close()  {
 		try {

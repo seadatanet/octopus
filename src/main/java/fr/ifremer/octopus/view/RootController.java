@@ -78,5 +78,8 @@ public class RootController {
     private void showPreferences(){
     	mainApp.showPreferences();
     }
-    
+    @FXML
+    private void showCoupling(){
+    	mainApp.showCoupling();
+    }
 }

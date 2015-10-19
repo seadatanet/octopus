@@ -18,6 +18,7 @@ import org.apache.logging.log4j.Logger;
 import fr.ifremer.octopus.controller.BatchController;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.view.AboutController;
+import fr.ifremer.octopus.view.CouplingController;
 import fr.ifremer.octopus.view.OctopusOverviewController;
 import fr.ifremer.octopus.view.PreferencesController;
 import fr.ifremer.octopus.view.RootController;
@@ -32,7 +33,7 @@ public class MainApp extends Application {
 	private AnchorPane octopusOverview;
 
 	private PreferencesManager prefsMgr;
-	private AnchorPane octopusPreferences;
+	private AnchorPane octopusPreferences,octopusCoupling;
 	/**
 	 * <pre>
 	 * Application entry point for GUI and batch mode.
@@ -174,11 +175,28 @@ public class MainApp extends Application {
 			pController.setMainApp(this);
 		} catch (IOException e) {
 			LOGGER.error(e.getMessage());
+			e.printStackTrace();
 		}
-
-
 	}
+	
+	public void showCoupling() {
+		// Load octopus overview.
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(getClass().getResource("view/OctopusCoupling.fxml"));
+				loader.setResources(ResourceBundle.getBundle("bundles.coupling", prefsMgr.getLocale()));
 
+				try {
+					octopusCoupling = (AnchorPane) loader.load();
+					// Set octopus overview into the center of root layout.
+					rootLayout.setCenter(octopusCoupling);
+					// Give the controller access to the main app.
+					CouplingController cController = loader.getController();
+					cController.setMainApp(this);
+				} catch (IOException e) {
+					LOGGER.error(e.getMessage());
+				}
+		
+	}
 	public void setCenterOverview() {
 		// Set octopus overview into the center of root layout.
 		rootLayout.setCenter(octopusOverview);
@@ -191,5 +209,7 @@ public class MainApp extends Application {
 		rootLayout.setCenter(pane);
 		
 	}
+
+
 
 }

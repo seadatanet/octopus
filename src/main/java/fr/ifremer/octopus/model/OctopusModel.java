@@ -24,6 +24,7 @@ public class OctopusModel {
 	 * list of local_cdi_id requested
 	 */
 	private List<String> cdiList;
+	private String outputLocalCdiId;
 
 	/**
 	 * 
@@ -84,6 +85,14 @@ public class OctopusModel {
 
 	public boolean isMono() {
 		return outputType==OUTPUT_TYPE.MONO;
+	}
+	public void setOuputLocalCdiId(String outputLocalCdiId) {
+		this.outputLocalCdiId = outputLocalCdiId;
+		
+	}
+	public String getOuputLocalCdiId() {
+		return this.outputLocalCdiId ;
+		
 	}
 
 

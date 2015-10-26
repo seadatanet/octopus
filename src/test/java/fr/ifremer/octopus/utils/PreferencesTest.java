@@ -3,16 +3,36 @@ package fr.ifremer.octopus.utils;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.util.Locale;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class PreferencesTest {
 
+	
 	@Test
+	public void testPreferencesClean()
+	{
+		PreferencesManager.getInstance().load();
+		// coupling is disabled
+		Assert.assertTrue(!PreferencesManager.getInstance().isCouplingEnabled());
+		// edmo code is empty
+		Assert.assertTrue(PreferencesManager.getInstance().getEdmoCode().isEmpty());
+		// default paths empty
+		Assert.assertTrue(PreferencesManager.getInstance().getInputDefaultPath() == null);
+		Assert.assertTrue(PreferencesManager.getInstance().getOutputDefaultPath() == null);
+		Assert.assertTrue(PreferencesManager.getInstance().getCouplingPrefix().isEmpty());
+		
+		//default language is french
+		Assert.assertTrue(PreferencesManager.getInstance().getLocale() == Locale.FRANCE);
+		
+	}
+//	@Test
 	public void test() {
 		JAXBContext context;
 		try {

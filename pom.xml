@@ -44,43 +44,7 @@
 			</plugin>
 
 
-
-
-			<!-- <plugin> -->
-			<!-- <groupId>com.zenjava</groupId> -->
-			<!-- <artifactId>javafx-maven-plugin</artifactId> -->
-			<!-- <version>8.1.4</version> -->
-			<!-- <configuration> -->
-			<!-- <source>1.8</source> -->
-			<!-- <target>1.8</target> -->
-			<!-- <mainClass>fr.ifremer.octopus.MainApp</mainClass> -->
-
-			<!-- optionally override settings (such as jar file name, html file, -->
-			<!-- etc) -->
-			<!-- <jfxMainAppJarName>octopustoto.jar</jfxMainAppJarName> -->
-
-			<!-- optionally sign the jar file if security is needed -->
-			<!-- to create keystore use command line: keytool -genkey -alias example-user -->
-			<!-- -keystore keystore.jks -->
-			<!-- <signJar> -->
-			<!-- <alias>example-user</alias> -->
-			<!-- <storePassword>example-password</storePassword> -->
-			<!-- </signJar> -->
-
-			<!-- optionally build webstart bundle -->
-			<!-- <webstart> -->
-			<!-- <requiresAllPermissions>true</requiresAllPermissions> -->
-			<!-- </webstart> -->
-
-			<!-- optionally build native installers -->
-			<!-- <nativeInstallers> -->
-
-			<!-- </nativeInstallers> -->
-
-			<!-- </configuration> -->
-			<!-- </plugin> -->
-
-
+			<!-- ===================================== ASSEMBLY =========================================== -->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -111,8 +75,7 @@
 			</plugin>
 
 
-
-
+			<!-- ===================================== JAVADOC =========================================== -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -132,7 +95,47 @@
 					</execution>
 				</executions>
 			</plugin>
-
+			<!-- ===================================== COPY RESOURCES =========================================== -->
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrable/resources</outputDirectory>
+							<resources>
+								<resource>
+									<directory>resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+				<!-- ===================================== COPY AND RENAME JAR =========================================== -->
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-jar</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<destinationFile>target/livrable/octopus.jar</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 
 		</plugins>
 	</build>

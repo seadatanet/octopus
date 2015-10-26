@@ -36,7 +36,7 @@ public class ConvertersManager {
 			switch (inputFormat) {
 			case MEDATLAS_NON_SDN:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
-				if (edmo==null){
+				if (edmo==null || edmo.isEmpty()){
 					throw new OctopusException("you must set EDMO code in settings panel"); //TODO
 				}
 				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), Integer.valueOf(edmo));
@@ -52,7 +52,7 @@ public class ConvertersManager {
 				break;
 			case MGD_81:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
-				if (edmo==null){
+				if (edmo==null|| edmo.isEmpty()){
 					throw new OctopusException("you must set EDMO code in settings panel"); //TODO
 				}
 				conv= new MGD77V81Manager(inputFile.getAbsolutePath(), Integer.valueOf(edmo));

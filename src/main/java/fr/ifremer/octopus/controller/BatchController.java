@@ -18,6 +18,7 @@ import org.apache.logging.log4j.Logger;
 import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
+import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class BatchController extends AbstractController{
@@ -65,7 +66,13 @@ public class BatchController extends AbstractController{
 	 */
 	public BatchController(String[] args, boolean isJunitTest) throws OctopusException   {
 		super();
+		//***************************************************************
 		this.isJunitTest = isJunitTest;
+		// use altran edmo code for junit tests (preferences.xml file value must be empty)
+		if (this.isJunitTest){
+			PreferencesManager.getInstance().setEdmoCode(3367);
+		}
+		//***************************************************************
 		initOptionsParser();
 		try {
 			parseAndFill(args);

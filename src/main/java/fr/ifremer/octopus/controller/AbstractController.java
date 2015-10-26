@@ -57,12 +57,12 @@ public abstract class AbstractController {
 		this.driverManager.registerNewDriver(new OdvSDNDriverImpl());
 		this.driverManager.registerNewDriver(new CFPointDriverImpl());
 		this.driverManager.registerNewDriver(new MGDDriverImpl());
-		
+
 		// load preferences from XMl file
 		prefsMgr = PreferencesManager.getInstance();
 		prefsMgr.load();
 		LOGGER.info("LANGUAGE: "+prefsMgr.getLocale());
-				
+
 	}
 
 	/**
@@ -96,11 +96,12 @@ public abstract class AbstractController {
 	 * Process split and/or conversion
 	 * @return list of output files paths
 	 * @throws OctopusException
+	 * @throws SQLException 
 	 */
-	public List<String> process() throws OctopusException {
+	public List<String> process() throws OctopusException, SQLException {
 
 		List<String> outputFilesList=new ArrayList<String>();
-		
+
 		try {
 			if (PreferencesManager.getInstance().isCouplingEnabled()){
 				if (!CouplingTableManager.getInstance().checkPrefixCompliance(model.getOutputPath())){
@@ -110,9 +111,9 @@ public abstract class AbstractController {
 		} catch (ClassNotFoundException e1) {
 			throw new OctopusException(e1.getMessage());
 		} catch (SQLException e1) {
-			throw new OctopusException(e1.getMessage());
+			throw e1;
 		}
-		
+
 		checkInputOutputFormatCompliance();
 		checkOutputNameCompliance();
 
@@ -122,8 +123,8 @@ public abstract class AbstractController {
 					LOGGER.info("split input file in n monostation files");
 				}else{
 					LOGGER.info("output will be identical to input, but the file will be updated if needed (SDN references...");// TODO
-//					LOGGER.info("nothing to do: no cdi to be exported, no conversion");
-//					return outputFilesList;
+					//					LOGGER.info("nothing to do: no cdi to be exported, no conversion");
+					//					return outputFilesList;
 				}
 			}
 		}else{
@@ -152,20 +153,20 @@ public abstract class AbstractController {
 		if (outputFilesList.isEmpty()){
 			deleteOutputDir();
 		}
-		
-		
+
+
 		/**
 		 * for debug only
 		 */
-//		try {
-//			List<CouplingRecord> list = CouplingTableManager.getInstance().list();
-//			for (CouplingRecord cr : list){
-//				LOGGER.info(cr.toString());
-//			}
-//		} catch (ClassNotFoundException | SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		//		try {
+		//			List<CouplingRecord> list = CouplingTableManager.getInstance().list();
+		//			for (CouplingRecord cr : list){
+		//				LOGGER.info(cr.toString());
+		//			}
+		//		} catch (ClassNotFoundException | SQLException e) {
+		//			// TODO Auto-generated catch block
+		//			e.printStackTrace();
+		//		}
 		return outputFilesList;
 
 
@@ -284,7 +285,10 @@ public abstract class AbstractController {
 				if (mgr.containsCdi(cdi)){
 					cdiL.add(cdi);
 				}else{
-					LOGGER.warn("local CDI ID "+cdi+" has not been found in "+filePath);
+					// log only in batch mode (in GUI mode, user can not ask for inexisting CDI)
+					if (this instanceof BatchController){
+						LOGGER.warn("local CDI ID "+cdi+" has not been found in "+filePath);
+					}
 				}
 			}
 			if(cdiL.isEmpty()){
@@ -416,10 +420,28 @@ public abstract class AbstractController {
 		}
 		File in = new File(model.getInputPath());
 		if (in.isDirectory()){
-			for (File f: in.listFiles())
-				checker.check (f);
+			int errors=0;
+			for (File f: in.listFiles()){
+				try{
+					checker.check (f);
+				}catch(Exception e){
+					errors++;
+					LOGGER.error("invalid file "+ f.getAbsolutePath());
+				}
+			}
+			if (errors==0){
+				LOGGER.info("All files are valid");// TODO
+			}else{
+				LOGGER.error( errors +" invalid file(s) on "+in.listFiles().length );// TODO
+			}
 		}else{
-			checker.check (in);
+			try{
+				checker.check (in);
+				LOGGER.info("Format is valid");// TODO
+			}catch(Exception e){
+				LOGGER.error("invalid file "+ in.getAbsolutePath());
+			}
+			
 		}
 	}
 

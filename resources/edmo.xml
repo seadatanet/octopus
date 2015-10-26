@@ -105440,7 +105440,7 @@ Sydney, NS</address>
   <Organisation>
     <n_code>4386</n_code>
     <input_date>10/6/2015 4:40:12 PM</input_date>
-    <last_update>10/7/2015 5:05:30 PM</last_update>
+    <last_update>10/16/2015 6:46:14 PM</last_update>
     <date_created>10/6/2015 4:40:12 PM</date_created>
     <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
@@ -105449,9 +105449,9 @@ Sydney, NS</address>
     <Latitude>43.300193</Latitude>
     <collate_id>1979</collate_id>
     <logo />
-    <name>Canada Center for Inland Waters - Bayfield Laboratory for Marine Science and Surveys</name>
+    <name>Canada Centre for Inland Waters - Bayfield Laboratory for Marine Science and Surveys</name>
     <native_name />
-    <abbreviated_name />
+    <abbreviated_name>BLMSS</abbreviated_name>
     <address>67 Lakeshore Road
 Burlington
 </address>
@@ -105546,7 +105546,7 @@ Burlington
   <Organisation>
     <n_code>4390</n_code>
     <input_date>10/14/2015 8:59:40 AM</input_date>
-    <last_update>10/14/2015 9:01:00 AM</last_update>
+    <last_update>10/15/2015 4:09:20 AM</last_update>
     <date_created>10/14/2015 8:59:40 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />

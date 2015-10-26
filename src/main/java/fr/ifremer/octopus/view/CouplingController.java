@@ -1,5 +1,6 @@
 package fr.ifremer.octopus.view;
 
+import java.io.File;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -7,16 +8,18 @@ import java.util.List;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.stage.FileChooser;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.MainApp;
-import fr.ifremer.octopus.controller.OctopusException;
 import fr.ifremer.octopus.controller.couplingTable.CouplingRecordFx;
 import fr.ifremer.octopus.controller.couplingTable.CouplingTableManager;
+import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.sismer_tools.coupling.CouplingRecord;
 
 
@@ -41,6 +44,10 @@ public class CouplingController {
 	TableColumn<CouplingRecordFx, String>  path_column;
 	@FXML
 	TableColumn<CouplingRecordFx, LocalDateTime>  date_column;
+	
+	@FXML
+	Button export;
+	String couplingPath = "";
 	@FXML
 	private void initialize() {
 
@@ -84,7 +91,26 @@ public class CouplingController {
 		mainApp.setCenterOverview();
 	}
 
-	
+	@FXML
+	public void exportToCsv(){
+			File selectedFile ;
+
+				FileChooser fileChooser = new FileChooser();
+				fileChooser.setTitle("Choose coupling table path"); // TODO
+				String def = PreferencesManager.getInstance().getOutputDefaultPath();
+				if (def!=null){
+					fileChooser.setInitialDirectory(new File(def));
+				}
+				selectedFile = fileChooser.showSaveDialog(mainApp.getPrimaryStage());
+			if (selectedFile != null) {
+				couplingPath = selectedFile.getAbsolutePath();
+				try {
+					CouplingTableManager.getInstance().export(couplingPath);
+				} catch (Exception e) {
+					LOGGER.error(e.getMessage());
+				} 
+			}
+	}
 	
 	
 

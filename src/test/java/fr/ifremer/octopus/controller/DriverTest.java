@@ -47,7 +47,7 @@ public class DriverTest {
 	public void medNonSDNTest() {
 		
 		try {
-			Driver d = driverManager.findDriverForFile(PWD+"medatlas/inputNonSDN/medatlasNonSdn.med");
+			Driver d = driverManager.findDriverForFile(PWD+"medatlas/inputNonSDN/profile/medatlasNonSdn.med");
 			LOGGER.info(d.getFormat());
 			Assert.assertTrue(d.getFormat().equals(Format.MEDATLAS_NON_SDN));
 		} catch (IOException e) {
@@ -59,7 +59,7 @@ public class DriverTest {
 	public void odvTtest() {
 		
 		try {
-			Driver d = driverManager.findDriverForFile(PWD+"odv/input/diap.txt");
+			Driver d = driverManager.findDriverForFile(PWD+"odv/input/profile/diap.txt");
 			LOGGER.info(d.getFormat());
 			Assert.assertTrue(d.getFormat().equals(Format.ODV_SDN));
 		} catch (IOException e) {
@@ -71,7 +71,7 @@ public class DriverTest {
 	public void cfPointTest() {
 		
 		try {
-			Driver d = driverManager.findDriverForFile(PWD+"cfpoint/input/diap.nc");
+			Driver d = driverManager.findDriverForFile(PWD+"cfpoint/input/profile/diap.nc");
 			LOGGER.info(d.getFormat());
 			Assert.assertTrue(d.getFormat().equals(Format.CFPOINT));
 		} catch (IOException e) {

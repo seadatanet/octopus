@@ -1,6 +1,7 @@
 package fr.ifremer.octopus.view;
 
 import java.io.File;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -513,6 +514,8 @@ public class OctopusOverviewController {
 			}
 		} catch (OctopusException e) {
 			LOGGER.error(e.getMessage());
+		} catch (SQLException e) {
+			LOGGER.error(e.getMessage());
 		}finally{
 			mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 		}
@@ -525,6 +528,7 @@ public class OctopusOverviewController {
 			} catch (Exception e) {
 				LOGGER.error("file is not valid");// TODO
 			}
+			
 	}
 
 }

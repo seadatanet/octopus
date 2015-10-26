@@ -1,5 +1,8 @@
 package fr.ifremer.octopus.controller.couplingTable;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.Connection;
@@ -99,7 +102,12 @@ public class CouplingTableManager {
 		String driver = "org.apache.derby.jdbc.EmbeddedDriver";
 		Class.forName(driver);
 		String url = "jdbc:derby:octopusDB;create=true";
-		c = DriverManager.getConnection(url);
+		try{
+			c = DriverManager.getConnection(url);
+		}catch(SQLException e){
+			LOGGER.error("unable to connect to database");
+			throw e;
+		}
 		return c;
 	}
 
@@ -228,8 +236,47 @@ public class CouplingTableManager {
 		}
 
 	}
-	
+	/**
+	 * export HSQLDB coupling table in a csv file
+	 * @param couplingPath absolute path
+	 * @throws OctopusException
+	 */
+	public void export(String couplingPath) throws OctopusException{
+		String COUPLING_SEP = ";";
+		FileWriter _writer = null;
 
+		try {
+			_writer = new FileWriter(couplingPath, false);
+			_writer.append("LOCAL_CDI_ID"+COUPLING_SEP+"MODUS"+COUPLING_SEP+"FORMAT"+COUPLING_SEP+"FILENAME"+System.getProperty("line.separator"));
+			for (CouplingRecord cr : list()){
+				_writer.append(cr.getLocal_cdi_id()+COUPLING_SEP+cr.getModus()+COUPLING_SEP+cr.getFormat().toCouplingFormat()+COUPLING_SEP+cr.getPath()+System.getProperty("line.separator"));
+			}
 
+		} catch (IOException e1) {
+			LOGGER.error(e1.getMessage());
+			throw new OctopusException("error exporting coupling table");
+		} catch (SQLException e) {
+			LOGGER.error(e.getMessage());
+			throw new OctopusException("error exporting coupling table");
+		}finally{
+
+			try {
+				_writer.close();
+			} catch (IOException e) {
+				LOGGER.error(e.getMessage());
+				throw new OctopusException("error exporting coupling table");
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		try {
+			CouplingTableManager.getInstance().export("coupling.txt");
+
+		} catch ( OctopusException | ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
 
 }

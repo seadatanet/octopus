@@ -2,6 +2,7 @@ package fr.ifremer.octopus.controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,6 +50,7 @@ public class BatchController extends AbstractController{
 	 * @param args
 	 * @throws OctopusException
 	 * @throws VocabularyException
+	 * @throws SQLException 
 	 */
 	public BatchController(String[] args) throws OctopusException, VocabularyException  {
 		this(args, false);
@@ -59,6 +61,7 @@ public class BatchController extends AbstractController{
 	 * @param args
 	 * @param isJunitTest
 	 * @throws OctopusException
+	 * @throws SQLException 
 	 */
 	public BatchController(String[] args, boolean isJunitTest) throws OctopusException   {
 		super();
@@ -85,6 +88,9 @@ public class BatchController extends AbstractController{
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
+		} catch (SQLException e) {
+			LOGGER.error(e.getCause());
+			LOGGER.error("Octopus GUI may be running. Please stop it before launching Octopus in Batch mode");
 		} 
 		exit(OK_EXIT_CODE, null);
 

@@ -89,8 +89,8 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		out = "profile/file_profile_medNonSDN_2_med_Mono_2CDI";
 		type= "mono";
 		outFormat = "medatlas";
-		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
-		expectOutputExist=true;
+		cdiList="FI35199810007_00002_H09,FI35200110014_00022_H09";
+		expectOutputExist=false;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
@@ -111,7 +111,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		type= "mono";
 		outFormat = "medatlas";
 		cdiList="FI29200110014_00025_H09,FI29200110014_00024_H09";
-		expectOutputExist=true;
+		expectOutputExist=false;
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);

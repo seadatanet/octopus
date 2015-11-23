@@ -76,7 +76,7 @@ public class PreferencesController {
 	@FXML
 	private Button closeButton;
 
-	
+
 	private static int nonPresent_bodc=-1;
 	@FXML
 	private void initialize() {
@@ -109,7 +109,7 @@ public class PreferencesController {
 		// DEFAULT DIRECTORIES
 		inputDefault.setText(PreferencesManager.getInstance().getInputDefaultPath());
 		outputDefault.setText(PreferencesManager.getInstance().getOutputDefaultPath());
-		
+
 		// coupling
 		couplingCheck.setSelected(PreferencesManager.getInstance().isCouplingEnabled());
 		couplingPrefix.setText(PreferencesManager.getInstance().getCouplingPrefix());
@@ -117,10 +117,12 @@ public class PreferencesController {
 
 	}
 	public void updateEdmoText(){
-		int edmo_code = Integer.valueOf(PreferencesManager.getInstance().getEdmoCode());
-		String edmo_name = EdmoHandler.getEdmoName(edmo_code);
-
-		edmoCodeValue.setText(edmo_code + " - "+edmo_name);
+		String edmo=PreferencesManager.getInstance().getEdmoCode();
+		if (!edmo.isEmpty()){
+			int edmo_code = Integer.valueOf(PreferencesManager.getInstance().getEdmoCode());
+			String edmo_name = EdmoHandler.getEdmoName(edmo_code);
+			edmoCodeValue.setText(edmo_code + " - "+edmo_name);
+		}
 
 	}
 	public void updateEdmoText(Integer edmo_code, String edmo_name){
@@ -235,14 +237,14 @@ public class PreferencesController {
 
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
 				disablePane(true);
-				
+
 				try{
 					int before = EdmoManager.getInstance().getEdmoList().size();
 					EdmoManager.getInstance().updateEdmo();
 					int after = EdmoManager.getInstance().getEdmoList().size();
 					bodcLog.appendText("edmo codes number: "+ before + " -> "+ after+System.getProperty("line.separator"));
 				}catch(Exception e){
-					
+
 				}
 				try{
 					String[] vocabsList = {
@@ -291,13 +293,13 @@ public class PreferencesController {
 							if (oldVersions.get(list).equals(newVersions.get(list))){
 								bodcLog.appendText(list + ": already up to date (version "+  newVersions.get(list) + ")"+System.getProperty("line.separator") );
 							}else{
-								 int old=oldVersions.get(list) ;
-								 String oldString;
-								 if (old==nonPresent_bodc){
-									 oldString = "not present";// TODO
-								 }else{
-									 oldString=String.valueOf(old);
-								 }
+								int old=oldVersions.get(list) ;
+								String oldString;
+								if (old==nonPresent_bodc){
+									oldString = "not present";// TODO
+								}else{
+									oldString=String.valueOf(old);
+								}
 								bodcLog.appendText(list + ": " +oldString+ " -> " + newVersions.get(list)+System.getProperty("line.separator") );
 							}
 						}

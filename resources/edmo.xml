@@ -32347,27 +32347,28 @@ Place Victor Horta, 40 bte 10</address>
   <Organisation>
     <n_code>1484</n_code>
     <input_date>12/20/2007 11:58:19 AM</input_date>
-    <last_update>5/25/2015 8:13:01 AM</last_update>
+    <last_update>10/26/2015 1:37:17 PM</last_update>
     <date_created>12/20/2007 11:58:19 AM</date_created>
     <organisation_exists>True</organisation_exists>
-    <organisation_changed_into />
+    <organisation_changed_into>0</organisation_changed_into>
     <organisation_changed_year />
     <Longitude>147.3329</Longitude>
     <Latitude>-42.8865</Latitude>
     <collate_id>2454</collate_id>
-    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/2454/csirologo.gif</logo>
-    <name>CSIRO Oceans &amp; Atmosphere Flagship</name>
-    <native_name>CSIRO Marine and Atmospheric Research</native_name>
-    <abbreviated_name>CMAR</abbreviated_name>
+    <logo />
+    <name>CSIRO Oceans &amp; Atmosphere</name>
+    <native_name>CSIRO Oceans &amp; Atmosphere</native_name>
+    <abbreviated_name />
     <address>Castray Esplanade</address>
-    <zipcode>7000</zipcode>
-    <city>HOBART</city>
+    <zipcode>7001</zipcode>
+    <city>Hobart</city>
     <state>Tasmania</state>
     <country>54</country>
     <email>Enquiries@csiro.au</email>
-    <phone>+61 3 6232 5222</phone>
-    <fax>+61 3 6232 5000</fax>
-    <website>http://www.csiro.au/en/Research/OandA</website>
+    <phone />
+    <fax />
+    <website>http://www.csiro.au/en/Research/OandA
+</website>
     <c_country>Australia</c_country>
   </Organisation>
   <Organisation>
@@ -44728,7 +44729,7 @@ G.P.O. Box 378</address>
   <Organisation>
     <n_code>1974</n_code>
     <input_date>2/26/2009 4:51:24 PM</input_date>
-    <last_update>4/23/2014 8:30:40 AM</last_update>
+    <last_update>10/26/2015 1:38:17 PM</last_update>
     <date_created>2/26/2009 4:51:24 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -44737,7 +44738,7 @@ G.P.O. Box 378</address>
     <Latitude />
     <collate_id>2454</collate_id>
     <logo />
-    <name>Csiro - Commonwealth Scientific and Industrial Research Org. / Centre for Australian Weather and Climate Research</name>
+    <name>CSIRO - Commonwealth Scientific and Industrial Research Org. / Centre for Australian Weather and Climate Research</name>
     <native_name>Csiro - Commonwealth Scientific and Industrial Research Org. / Centre For Australian Weather And Climate Research</native_name>
     <abbreviated_name />
     <address>Bureau of Meteorology
@@ -95173,7 +95174,7 @@ Place Nicolas Copernic
   <Organisation>
     <n_code>3941</n_code>
     <input_date>3/16/2015 8:29:33 AM</input_date>
-    <last_update>3/26/2015 3:22:06 AM</last_update>
+    <last_update>10/26/2015 11:47:36 AM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -95182,7 +95183,7 @@ Place Nicolas Copernic
     <Latitude>-35.278171</Latitude>
     <collate_id>2454</collate_id>
     <logo />
-    <name>CSIRO Land &amp; Water Flagship</name>
+    <name>CSIRO Land &amp; Water</name>
     <native_name />
     <abbreviated_name />
     <address>Clunies Ross Street</address>
@@ -98044,7 +98045,7 @@ Pilgrim House</address>
   <Organisation>
     <n_code>4062</n_code>
     <input_date>5/22/2015 3:57:33 PM</input_date>
-    <last_update>5/25/2015 6:21:50 AM</last_update>
+    <last_update>10/26/2015 11:47:19 AM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -98053,7 +98054,7 @@ Pilgrim House</address>
     <Latitude>-42.8865</Latitude>
     <collate_id>2454</collate_id>
     <logo />
-    <name>Information and Data Centre, CSIRO Oceans &amp; Atmosphere Flagship</name>
+    <name>Information and Data Centre, CSIRO Oceans &amp; Atmosphere</name>
     <native_name />
     <abbreviated_name />
     <address>Castray Esplanade</address>
@@ -100391,7 +100392,7 @@ NWAFC</abbreviated_name>
   <Organisation>
     <n_code>4160</n_code>
     <input_date>5/27/2015 9:25:24 AM</input_date>
-    <last_update>9/25/2015 3:20:43 PM</last_update>
+    <last_update>10/23/2015 4:57:54 PM</last_update>
     <date_created>5/27/2015 9:25:24 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -100402,9 +100403,8 @@ NWAFC</abbreviated_name>
     <logo />
     <name>Maurice-Lamontagne Institute</name>
     <native_name>Institut Maurice-Lamontagne</native_name>
-    <abbreviated_name>IML
-MLI</abbreviated_name>
-    <address>850, route de la Mer, C. P. 1000, Mont-Joli</address>
+    <abbreviated_name>IML, MLI</abbreviated_name>
+    <address>850, route de la Mer, Sainte-Flavie</address>
     <zipcode>G5H 3Z4</zipcode>
     <city>Mont-Joli</city>
     <state>Québec</state>
@@ -100923,7 +100923,7 @@ CP 26
   <Organisation>
     <n_code>4181</n_code>
     <input_date>6/12/2015 9:34:13 AM</input_date>
-    <last_update>9/25/2015 3:20:35 PM</last_update>
+    <last_update>10/22/2015 8:26:33 AM</last_update>
     <date_created>6/12/2015 9:34:13 AM</date_created>
     <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
@@ -105440,10 +105440,10 @@ Sydney, NS</address>
   <Organisation>
     <n_code>4386</n_code>
     <input_date>10/6/2015 4:40:12 PM</input_date>
-    <last_update>10/16/2015 6:46:14 PM</last_update>
+    <last_update>10/22/2015 8:17:57 AM</last_update>
     <date_created>10/6/2015 4:40:12 PM</date_created>
     <organisation_exists>False</organisation_exists>
-    <organisation_changed_into />
+    <organisation_changed_into>4393</organisation_changed_into>
     <organisation_changed_year>1985</organisation_changed_year>
     <Longitude>-79.798822</Longitude>
     <Latitude>43.300193</Latitude>
@@ -105568,5 +105568,111 @@ Burlington
     <fax />
     <website>http://www.tpac.org.au/</website>
     <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4391</n_code>
+    <input_date>10/19/2015 10:14:44 AM</input_date>
+    <last_update>10/22/2015 8:13:28 AM</last_update>
+    <date_created>10/19/2015 10:14:44 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-57.92913</Longitude>
+    <Latitude>48.965229</Latitude>
+    <collate_id>1979</collate_id>
+    <logo />
+    <name>ACAP Humber Arms Inc.</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Suite 204, RA Pollett Building
+61 Riverside Dr</address>
+    <zipcode>A2H 6E6</zipcode>
+    <city>Corner Brook</city>
+    <state>NL</state>
+    <country>40</country>
+    <email>speddle@acaphumberarm.com</email>
+    <phone>709.637.2883</phone>
+    <fax />
+    <website>http://www.acaphumberarm.com/</website>
+    <c_country>Canada</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4392</n_code>
+    <input_date>10/19/2015 10:15:09 AM</input_date>
+    <last_update>10/23/2015 4:42:57 PM</last_update>
+    <date_created>10/19/2015 10:15:09 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-64.37142</Longitude>
+    <Latitude>45.906675</Latitude>
+    <collate_id>1979</collate_id>
+    <logo />
+    <name>Canadian Wildlife Service - Atlantic Region</name>
+    <native_name />
+    <abbreviated_name>CWS - Atlantic</abbreviated_name>
+    <address>17 Waterfowl Lane</address>
+    <zipcode>E4L 1G6</zipcode>
+    <city>Sackville</city>
+    <state>NB</state>
+    <country>40</country>
+    <email>enviroinfo@ec.gc.ca</email>
+    <phone>1-800-668-6767</phone>
+    <fax />
+    <website>https://www.ec.gc.ca/paom-itmb/default.asp?lang=En&amp;n=5F569149-1</website>
+    <c_country>Canada</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4393</n_code>
+    <input_date>10/19/2015 10:15:48 AM</input_date>
+    <last_update>10/22/2015 8:29:03 AM</last_update>
+    <date_created>10/19/2015 10:15:48 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-79.798822</Longitude>
+    <Latitude>43.300193</Latitude>
+    <collate_id>1979</collate_id>
+    <logo />
+    <name>Canada Centre for Inland Waters - Bayfield Institute</name>
+    <native_name />
+    <abbreviated_name>CCIW BI</abbreviated_name>
+    <address>67 Lakeshore Road
+</address>
+    <zipcode>L7R 4A6</zipcode>
+    <city>Burlington</city>
+    <state>ON</state>
+    <country>40</country>
+    <email>info@dfo-mpo.gc.ca</email>
+    <phone />
+    <fax />
+    <website />
+    <c_country>Canada</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4396</n_code>
+    <input_date>10/21/2015 6:33:58 PM</input_date>
+    <last_update>10/21/2015 6:35:55 PM</last_update>
+    <date_created>10/21/2015 6:33:58 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.4955138</Longitude>
+    <Latitude>50.9889345</Latitude>
+    <collate_id>43</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/43/eta_logo.png</logo>
+    <name>Engineering Technology Applications Ltd</name>
+    <native_name />
+    <abbreviated_name>ETA</abbreviated_name>
+    <address>108 The Hundred, Romsey</address>
+    <zipcode>SO51 8BY</zipcode>
+    <city>Romsey</city>
+    <state>Hampshire</state>
+    <country>11</country>
+    <email />
+    <phone>+44 (0)1794 521215</phone>
+    <fax />
+    <website>http://www.eta-ltd.com</website>
+    <c_country>United Kingdom</c_country>
   </Organisation>
 </Organisations>

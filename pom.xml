@@ -101,13 +101,55 @@
 				<version>2.7</version>
 				<executions>
 					<execution>
-						<id>copy-resources</id>
+						<id>copy-resources-linux</id>
 						<phase>install</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrable/resources</outputDirectory>
+							<outputDirectory>${basedir}/target/livrableLinux/resources</outputDirectory>
+							<resources>
+								<resource>
+									<directory>resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-resource-win32s</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrableWin32/resources</outputDirectory>
+							<resources>
+								<resource>
+									<directory>resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-resources-win64</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrableWin64/resources</outputDirectory>
 							<resources>
 								<resource>
 									<directory>resources</directory>
@@ -124,19 +166,91 @@
 				<version>1.0</version>
 				<executions>
 					<execution>
-						<id>copy-jar</id>
+						<id>copy-jar-linux</id>
 						<phase>install</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
 							<sourceFile>target/octopus-maven.jar</sourceFile>
-							<destinationFile>target/livrable/octopus.jar</destinationFile>
+							<destinationFile>target/livrableLinux/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-jar-win32</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<destinationFile>target/livrableWin32/octopus.jar</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-jar-win64</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<destinationFile>target/livrableWin64/octopus.jar</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+	<!-- ===================================== COPY EXE =========================================== -->
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-exe-win32</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>build/octopus_32.exe</sourceFile>
+							<destinationFile>target/livrableWin32/octopus.exe</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-exe-win64</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>build/octopus_64.exe</sourceFile>
+							<destinationFile>target/livrableWin64/octopus.exe</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 

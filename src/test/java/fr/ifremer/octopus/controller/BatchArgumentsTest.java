@@ -32,19 +32,19 @@ public class BatchArgumentsTest {
 	
 	@BeforeClass
 	public static void before(){
-		pwd = new File("##").getAbsolutePath().replace("#", "") + "src/test/resources/";
+		pwd = new File("##").getAbsolutePath().replace("#", "") + "src"+File.separator+"test"+File.separator+"resources"+File.separator;
 	}
 	
 	@Test
 	public void goodArgsTest() {
 		BatchController b = null ;
-		String in="-i "+pwd+"medatlas/input/profile/diap";
+		String in="-i "+pwd+"medatlas"+File.separator+"input"+File.separator+"profile"+File.separator+"diap";
 		String out = "-o "+pwd+"outArgs";
 		String[] args = new String[]{in, out, "-f medatlas", "-t mono"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
-			Assert.assertTrue(b.model.getInputPath().equals(pwd+"medatlas/input/profile/diap"));
+			Assert.assertTrue(b.model.getInputPath().equals(pwd+"medatlas"+File.separator+"input"+File.separator+"profile"+File.separator+"diap"));
 			Assert.assertTrue(b.model.getOutputPath().equals(pwd+"outArgs"));
 			Assert.assertTrue(b.model.getOutputFormat().equals(Format.MEDATLAS_SDN));
 			Assert.assertTrue(b.model.getOutputType().equals(OUTPUT_TYPE.MONO));

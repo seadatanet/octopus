@@ -3145,7 +3145,7 @@ Via E Weiss 2</address>
   <Organisation>
     <n_code>120</n_code>
     <input_date />
-    <last_update>11/18/2013 6:00:20 PM</last_update>
+    <last_update>11/6/2015 10:55:22 AM</last_update>
     <date_created>7/28/1995 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -3884,7 +3884,7 @@ Consiglio Nazionale delle Ricerche</address>
   <Organisation>
     <n_code>150</n_code>
     <input_date />
-    <last_update>11/18/2013 6:02:07 PM</last_update>
+    <last_update>11/6/2015 10:53:38 AM</last_update>
     <date_created>9/26/1995 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -4366,7 +4366,7 @@ Building 540</address>
   <Organisation>
     <n_code>181</n_code>
     <input_date />
-    <last_update>9/27/2011 11:49:40 AM</last_update>
+    <last_update>11/11/2015 2:00:44 PM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -4375,7 +4375,7 @@ Building 540</address>
     <Latitude>63.8232</Latitude>
     <collate_id>545</collate_id>
     <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/545/lst_vasterbotten_logga.gif</logo>
-    <name>County Administration of Vasterbotten</name>
+    <name>County Administration of Västerbotten</name>
     <native_name>Länsstyrelsen Västerbotten</native_name>
     <abbreviated_name />
     <address>Storgatan 71 B
@@ -29716,7 +29716,7 @@ Ferry Reach
   <Organisation>
     <n_code>1384</n_code>
     <input_date>8/30/2007 1:10:24 PM</input_date>
-    <last_update>10/24/2014 9:43:12 PM</last_update>
+    <last_update>11/16/2015 9:57:13 PM</last_update>
     <date_created>8/30/2007 1:10:24 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -29725,9 +29725,9 @@ Ferry Reach
     <Latitude>41.0111</Latitude>
     <collate_id>1390</collate_id>
     <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/ldeo.jpg</logo>
-    <name>Lamont-Doherty Earth Observatory (LDEO), Columbia University</name>
+    <name>Lamont-Doherty Earth Observatory, Columbia University</name>
     <native_name />
-    <abbreviated_name />
+    <abbreviated_name>LDEO</abbreviated_name>
     <address>P.O. Box 1000
 61 Route 9W
 </address>
@@ -32347,10 +32347,10 @@ Place Victor Horta, 40 bte 10</address>
   <Organisation>
     <n_code>1484</n_code>
     <input_date>12/20/2007 11:58:19 AM</input_date>
-    <last_update>10/26/2015 1:37:17 PM</last_update>
+    <last_update>10/29/2015 2:16:51 AM</last_update>
     <date_created>12/20/2007 11:58:19 AM</date_created>
     <organisation_exists>True</organisation_exists>
-    <organisation_changed_into>0</organisation_changed_into>
+    <organisation_changed_into />
     <organisation_changed_year />
     <Longitude>147.3329</Longitude>
     <Latitude>-42.8865</Latitude>
@@ -50991,7 +50991,7 @@ Svante Arrhenius väg 16C
   <Organisation>
     <n_code>2220</n_code>
     <input_date>9/2/2009 11:02:41 AM</input_date>
-    <last_update>7/14/2015 4:14:26 PM</last_update>
+    <last_update>11/13/2015 5:51:10 PM</last_update>
     <date_created>9/2/2009 11:02:41 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -52395,7 +52395,7 @@ PO Box 3065 STN CSC</address>
   <Organisation>
     <n_code>2276</n_code>
     <input_date>11/4/2009 6:04:08 PM</input_date>
-    <last_update>11/18/2013 6:03:19 PM</last_update>
+    <last_update>11/6/2015 10:51:49 AM</last_update>
     <date_created>11/4/2009 6:04:08 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -56068,13 +56068,13 @@ Admiralty Road</address>
   <Organisation>
     <n_code>2431</n_code>
     <input_date>4/16/2010 2:22:14 PM</input_date>
-    <last_update>11/18/2013 6:03:51 PM</last_update>
+    <last_update>11/6/2015 10:49:15 AM</last_update>
     <date_created>4/16/2010 2:22:15 PM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into>120</organisation_changed_into>
     <organisation_changed_year />
-    <Longitude>13.6915</Longitude>
-    <Latitude>45.7259</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>120</collate_id>
     <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/120/logo_ogs.gif</logo>
     <name>OGS (Istituto Nazionale di Oceanografia e di Geofisica Sperimentale), Department of Biological Oceanography</name>
@@ -77792,13 +77792,13 @@ Seestraße 15</address>
   <Organisation>
     <n_code>3278</n_code>
     <input_date>6/7/2013 4:09:29 PM</input_date>
-    <last_update>6/7/2013 4:10:25 PM</last_update>
+    <last_update>11/9/2015 11:48:59 AM</last_update>
     <date_created>6/7/2013 4:09:29 PM</date_created>
-    <organisation_exists>True</organisation_exists>
-    <organisation_changed_into>0</organisation_changed_into>
-    <organisation_changed_year />
-    <Longitude>-2.97</Longitude>
-    <Latitude>53.33</Latitude>
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into>4445</organisation_changed_into>
+    <organisation_changed_year>2015</organisation_changed_year>
+    <Longitude />
+    <Latitude />
     <collate_id>43</collate_id>
     <logo />
     <name>Osiris Projects</name>
@@ -94374,6 +94374,37 @@ case courrier
     <c_country>France</c_country>
   </Organisation>
   <Organisation>
+    <n_code>3910</n_code>
+    <input_date>2/11/2015 9:37:32 AM</input_date>
+    <last_update>10/28/2015 4:35:09 PM</last_update>
+    <date_created>2/11/2015 9:37:32 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>11.772001</Longitude>
+    <Latitude>54.116816</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Leibniz-Institute of Atmospheric Physics</name>
+    <native_name>Leibniz-Institute of Atmospheric Physics</native_name>
+    <abbreviated_name>IAP</abbreviated_name>
+    <address>Leibniz-Institute of Atmospheric Physics
+e.V. at the University Rostock
+Schlossstraße 6
+18225 Kühlungsborn</address>
+    <zipcode>18225</zipcode>
+    <city>Kühlungsborn</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.iap-kborn.de/1/home/
+
+</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
     <n_code>3911</n_code>
     <input_date>2/11/2015 9:38:37 AM</input_date>
     <last_update>6/2/2015 4:14:57 PM</last_update>
@@ -94962,7 +94993,7 @@ Place Nicolas Copernic
   <Organisation>
     <n_code>3933</n_code>
     <input_date>3/16/2015 8:29:33 AM</input_date>
-    <last_update>3/26/2015 3:22:14 AM</last_update>
+    <last_update>10/30/2015 3:29:08 AM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -94971,9 +95002,9 @@ Place Nicolas Copernic
     <Latitude>-35.310663</Latitude>
     <collate_id>2454</collate_id>
     <logo />
-    <name>Defence Science and Technology Organisation (DSTO), Department of Defence (DoD), Australian Government</name>
+    <name>Defence Science and Technology Group (DST Group), Department of Defence (DoD), Australian Government</name>
     <native_name />
-    <abbreviated_name>DSTO</abbreviated_name>
+    <abbreviated_name>DST Group</abbreviated_name>
     <address>David Warren Building, 24 Scherger Drive
 </address>
     <zipcode>2609</zipcode>
@@ -94989,7 +95020,7 @@ Place Nicolas Copernic
   <Organisation>
     <n_code>3934</n_code>
     <input_date>3/16/2015 8:29:33 AM</input_date>
-    <last_update>3/26/2015 3:22:13 AM</last_update>
+    <last_update>10/30/2015 3:28:50 AM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -94998,7 +95029,7 @@ Place Nicolas Copernic
     <Latitude>-35.310663</Latitude>
     <collate_id>2454</collate_id>
     <logo />
-    <name>Maritime Division, Defence Science and Technology Organisation (DSTO), Department of Defence (DoD), Australian Government</name>
+    <name>Maritime Division, Defence Science and Technology Group (DST Group), Department of Defence (DoD), Australian Government</name>
     <native_name />
     <abbreviated_name />
     <address>David Warren Building, 24 Scherger Drive
@@ -95174,7 +95205,7 @@ Place Nicolas Copernic
   <Organisation>
     <n_code>3941</n_code>
     <input_date>3/16/2015 8:29:33 AM</input_date>
-    <last_update>10/26/2015 11:47:36 AM</last_update>
+    <last_update>10/29/2015 2:06:27 AM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -96190,13 +96221,13 @@ Place Nicolas Copernic
   <Organisation>
     <n_code>3989</n_code>
     <input_date>4/8/2015 8:23:39 AM</input_date>
-    <last_update>6/23/2015 5:26:59 PM</last_update>
+    <last_update>11/11/2015 2:46:18 PM</last_update>
     <date_created>4/8/2015 8:23:39 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude />
-    <Latitude />
+    <Longitude>12.8629</Longitude>
+    <Latitude>56.2386</Latitude>
     <collate_id>545</collate_id>
     <logo />
     <name>WEAQ AB</name>
@@ -98045,7 +98076,7 @@ Pilgrim House</address>
   <Organisation>
     <n_code>4062</n_code>
     <input_date>5/22/2015 3:57:33 PM</input_date>
-    <last_update>10/26/2015 11:47:19 AM</last_update>
+    <last_update>10/29/2015 2:08:31 AM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -100286,7 +100317,7 @@ Co. Galway</address>
   <Organisation>
     <n_code>4156</n_code>
     <input_date>5/27/2015 9:17:47 AM</input_date>
-    <last_update>9/25/2015 3:20:50 PM</last_update>
+    <last_update>11/13/2015 5:43:40 PM</last_update>
     <date_created>5/27/2015 9:17:47 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -100418,7 +100449,7 @@ NWAFC</abbreviated_name>
   <Organisation>
     <n_code>4161</n_code>
     <input_date>5/27/2015 9:25:54 AM</input_date>
-    <last_update>9/25/2015 3:20:43 PM</last_update>
+    <last_update>11/13/2015 3:02:09 PM</last_update>
     <date_created>5/27/2015 9:25:54 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -101001,10 +101032,10 @@ CP 26
   <Organisation>
     <n_code>4184</n_code>
     <input_date>6/12/2015 9:41:51 AM</input_date>
-    <last_update>9/25/2015 3:20:33 PM</last_update>
+    <last_update>11/13/2015 5:46:03 PM</last_update>
     <date_created>6/12/2015 9:41:51 AM</date_created>
     <organisation_exists>False</organisation_exists>
-    <organisation_changed_into />
+    <organisation_changed_into>1811</organisation_changed_into>
     <organisation_changed_year>1997</organisation_changed_year>
     <Longitude>-63.570417</Longitude>
     <Latitude>44.64818</Latitude>
@@ -102122,6 +102153,58 @@ B.P. 767</address>
     <fax />
     <website>http://www.soletanche-bachy.com/Intranet/aides/interaide.nsf</website>
     <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4247</n_code>
+    <input_date>7/1/2015 4:23:30 PM</input_date>
+    <last_update>10/28/2015 5:47:21 PM</last_update>
+    <date_created>7/1/2015 4:23:30 PM</date_created>
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-3.68</Longitude>
+    <Latitude>40.03</Latitude>
+    <collate_id>353</collate_id>
+    <logo />
+    <name>Adaro National Company of mining research</name>
+    <native_name>Empresa Nacional Adaro de Investigaciones Mineras. S.A</native_name>
+    <abbreviated_name>ADARO</abbreviated_name>
+    <address>Cerro de los Angeles</address>
+    <zipcode>28909</zipcode>
+    <city>Madrid</city>
+    <state />
+    <country>8</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Spain</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4248</n_code>
+    <input_date>7/1/2015 4:24:08 PM</input_date>
+    <last_update>10/28/2015 1:57:35 PM</last_update>
+    <date_created>7/1/2015 4:24:08 PM</date_created>
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-3.41</Longitude>
+    <Latitude>40.43</Latitude>
+    <collate_id>353</collate_id>
+    <logo />
+    <name>Interministerial Commission of Science and Technology</name>
+    <native_name>Comisión Interministerial de Ciencia y Tecnología</native_name>
+    <abbreviated_name>CICYT</abbreviated_name>
+    <address>Calle Rosario Pino 10</address>
+    <zipcode>28020</zipcode>
+    <city>Madrid</city>
+    <state />
+    <country>8</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Spain</c_country>
   </Organisation>
   <Organisation>
     <n_code>4249</n_code>
@@ -104389,6 +104472,206 @@ B.P. 767</address>
     <c_country>United Kingdom</c_country>
   </Organisation>
   <Organisation>
+    <n_code>4336</n_code>
+    <input_date>7/15/2015 4:57:30 PM</input_date>
+    <last_update>10/28/2015 2:27:37 PM</last_update>
+    <date_created>7/15/2015 4:57:30 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>12.077367</Longitude>
+    <Latitude>54.110228</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Institute of Sea Fisheries Rostock</name>
+    <native_name>Institut fuer Hochseefischerei und Fischverarbeitung-Betrieb des VEB Fischkombinat Rostock</native_name>
+    <abbreviated_name>IHRO</abbreviated_name>
+    <address>An der JAEGERBAEK 2, 2510 ROSTOCK 5, GERMAN DEMOCRATIC REPUBLIC</address>
+    <zipcode>2510</zipcode>
+    <city>Rostock</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4337</n_code>
+    <input_date>7/15/2015 4:58:00 PM</input_date>
+    <last_update>10/28/2015 4:29:07 PM</last_update>
+    <date_created>7/15/2015 4:58:00 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>10.112059</Longitude>
+    <Latitude>54.34799</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Institute of Experimental and Applied Physics at University of Kiel</name>
+    <native_name>Institut für Experimentelle und Angewandte Physik</native_name>
+    <abbreviated_name>IEAP</abbreviated_name>
+    <address>Physikzentrum
+Christian-Albrechts-Universität zu Kiel
+Leibnizstr. 11-19, D-24118 Kiel</address>
+    <zipcode>24118</zipcode>
+    <city>Kiel</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.ieap.uni-kiel.de/</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4338</n_code>
+    <input_date>7/15/2015 4:58:33 PM</input_date>
+    <last_update>10/28/2015 4:18:26 PM</last_update>
+    <date_created>7/15/2015 4:58:33 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>6.759299</Longitude>
+    <Latitude>50.671625</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Amt fur Wehrgeophysik</name>
+    <native_name>Zentrum für Geoinformationswesen der Bundeswehr </native_name>
+    <abbreviated_name>AWGTT</abbreviated_name>
+    <address>Frauenberger Straße 250
+53879 Euskirchen </address>
+    <zipcode />
+    <city />
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.kommando.streitkraeftebasis.de/portal/a/kdoskb/!ut/p/c4/04_SB8K8xLLM9MSSzPy8xBz9CP3I5EyrpHK94uyk-OyUfL3s4kS9xPTU_KRy_YJsR0UAf5rIVA!!/
+
+</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4339</n_code>
+    <input_date>7/15/2015 4:58:58 PM</input_date>
+    <last_update>10/28/2015 4:04:12 PM</last_update>
+    <date_created>7/15/2015 4:58:58 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>9.8617</Longitude>
+    <Latitude>53.5585</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Biocentre Klein Flottbek and Botanical Garden Biodiversity, Evolution and Ecology of Plants</name>
+    <native_name>Institut fur Allgemeine Botanik der Universitat Hamburg</native_name>
+    <abbreviated_name>ABUH</abbreviated_name>
+    <address>Biozentrum Klein Flottbek
+Universität Hamburg
+Ohnhorststr. 18
+22609 Hamburg
+Deutschland</address>
+    <zipcode>22609</zipcode>
+    <city>Hamburg</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.biologie.uni-hamburg.de/biozentrum-klein-flottbek.html</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4340</n_code>
+    <input_date>7/15/2015 4:59:27 PM</input_date>
+    <last_update>10/28/2015 3:53:04 PM</last_update>
+    <date_created>7/15/2015 4:59:27 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>7.232418</Longitude>
+    <Latitude>53.594332</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Telematikzentrum Norden</name>
+    <native_name>Team Telematikzentrum GmbH</native_name>
+    <abbreviated_name>SCT</abbreviated_name>
+    <address>Rheinstr. 13
+26506 Norden</address>
+    <zipcode>26506</zipcode>
+    <city>Norden</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4341</n_code>
+    <input_date>7/15/2015 5:00:04 PM</input_date>
+    <last_update>10/28/2015 3:42:38 PM</last_update>
+    <date_created>7/15/2015 5:00:04 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>8.773956</Longitude>
+    <Latitude>50.810223</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Philipps-Universität Marburg</name>
+    <native_name>Philipps-Universität Marburg</native_name>
+    <abbreviated_name>UMAR</abbreviated_name>
+    <address>Philipps-Universität Marburg, 
+Biegenstraße 10,
+ D-35032 Marburg</address>
+    <zipcode>35032</zipcode>
+    <city>Marburg</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.uni-marburg.de/
+
+</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4342</n_code>
+    <input_date>7/15/2015 5:00:33 PM</input_date>
+    <last_update>10/28/2015 3:32:44 PM</last_update>
+    <date_created>7/15/2015 5:00:33 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>10.116869</Longitude>
+    <Latitude>54.348568</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Zoological Institute and Museum Kiel</name>
+    <native_name>Zoologisches Institut der Universitat Kiel</native_name>
+    <abbreviated_name>ZIUK</abbreviated_name>
+    <address>Zoologisches Institut
+Am Botanischen Garten 1-9
+24118 Kiel, Germany</address>
+    <zipcode>24118</zipcode>
+    <city>Kiel</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.zoologie.uni-kiel.de/en?set_language=en
+
+</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
     <n_code>4343</n_code>
     <input_date>7/15/2015 5:00:57 PM</input_date>
     <last_update>7/21/2015 4:57:30 PM</last_update>
@@ -105149,6 +105432,98 @@ Avenue Louise 231 Louizalaan
     <c_country>Switzerland</c_country>
   </Organisation>
   <Organisation>
+    <n_code>4372</n_code>
+    <input_date>8/26/2015 12:14:15 PM</input_date>
+    <last_update>10/27/2015 6:07:32 PM</last_update>
+    <date_created>8/26/2015 12:14:15 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>6.05001</Longitude>
+    <Latitude>50.785427</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Fraunhofer Institute for Molecular Biology and Applied Ecology</name>
+    <native_name>Fraunhofer-Institut für Molekularbiologie und Angewandte Oekologie</native_name>
+    <abbreviated_name>IME</abbreviated_name>
+    <address>Fraunhofer IME - Division Molecular Biology
+Forckenbeckstraße 6
+52074 Aachen</address>
+    <zipcode>52074</zipcode>
+    <city>Aachen</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.ime.fraunhofer.de/en/about_us.html
+
+</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4373</n_code>
+    <input_date>8/26/2015 12:14:59 PM</input_date>
+    <last_update>10/27/2015 5:58:11 PM</last_update>
+    <date_created>8/26/2015 12:14:59 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>8.78726</Longitude>
+    <Latitude>53.08443</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Landesuntersuchungsamt für Chemie, Hygiene und Veterinärmedizin</name>
+    <native_name />
+    <abbreviated_name>LUA</abbreviated_name>
+    <address>Lloydstraße 4
+28217 Bremen</address>
+    <zipcode>28217</zipcode>
+    <city>Bremen</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.lua.bremen.de/sixcms/detail.php?gsid=bremen02.c.730.de</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4374</n_code>
+    <input_date>8/26/2015 12:15:50 PM</input_date>
+    <last_update>10/27/2015 5:49:33 PM</last_update>
+    <date_created>8/26/2015 12:15:50 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>13.285519</Longitude>
+    <Latitude>52.445756</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Environmental Specimen Bank</name>
+    <native_name>Umweltprobenbank</native_name>
+    <abbreviated_name>ESB</abbreviated_name>
+    <address>Dr. Marike Kolossa-Gehring
+Toxicology, Health-Related Environmental Monitoring
+Building Berlin-Dahlem
+Corrensplatz 1
+14195 Berlin</address>
+    <zipcode>14195</zipcode>
+    <city>Berlin</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.umweltprobenbank.de/en/documents/10017
+
+
+Corrensplatz 1
+14195 Berlin
+52.445756</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
     <n_code>4375</n_code>
     <input_date>9/4/2015 7:12:21 PM</input_date>
     <last_update>9/4/2015 7:13:42 PM</last_update>
@@ -105386,7 +105761,7 @@ Avenue Louise 231 Louizalaan
   <Organisation>
     <n_code>4384</n_code>
     <input_date>10/6/2015 2:03:22 PM</input_date>
-    <last_update>10/6/2015 4:21:38 PM</last_update>
+    <last_update>11/13/2015 5:49:00 PM</last_update>
     <date_created>10/6/2015 2:03:22 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -105413,7 +105788,7 @@ Avenue Louise 231 Louizalaan
   <Organisation>
     <n_code>4385</n_code>
     <input_date>10/6/2015 2:03:50 PM</input_date>
-    <last_update>10/6/2015 4:13:03 PM</last_update>
+    <last_update>10/29/2015 3:08:00 PM</last_update>
     <date_created>10/6/2015 2:03:50 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -105424,7 +105799,7 @@ Avenue Louise 231 Louizalaan
     <logo />
     <name>Cape Breton University – Bras D’Or Institute for Ecosystem Research</name>
     <native_name />
-    <abbreviated_name />
+    <abbreviated_name>Bras D'Or Institute</abbreviated_name>
     <address>1250 Grand Lake Rd
 Sydney, NS</address>
     <zipcode>B1P 6L2</zipcode>
@@ -105599,7 +105974,7 @@ Burlington
   <Organisation>
     <n_code>4392</n_code>
     <input_date>10/19/2015 10:15:09 AM</input_date>
-    <last_update>10/23/2015 4:42:57 PM</last_update>
+    <last_update>10/29/2015 3:04:33 PM</last_update>
     <date_created>10/19/2015 10:15:09 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -105674,5 +106049,1388 @@ Burlington
     <fax />
     <website>http://www.eta-ltd.com</website>
     <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4398</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 8:29:31 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Arete Associates</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4399</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 8:29:11 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-72.88319</Longitude>
+    <Latitude>40.869612</Latitude>
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Brookhaven National Laboratory</name>
+    <native_name />
+    <abbreviated_name />
+    <address>P.O. Box 5000</address>
+    <zipcode>11973-5000</zipcode>
+    <city>Upton</city>
+    <state>NY</state>
+    <country>43</country>
+    <email />
+    <phone>+1 631-344-8000</phone>
+    <fax />
+    <website>http://www.bnl.gov</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4400</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:42:45 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-73.950571</Longitude>
+    <Latitude>40.630918</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/brooklyncollegeseal.jpg</logo>
+    <name>Brooklyn College</name>
+    <native_name />
+    <abbreviated_name />
+    <address>2900 Bedford Avenue</address>
+    <zipcode>11210</zipcode>
+    <city>Brooklyn</city>
+    <state>NY</state>
+    <country>43</country>
+    <email />
+    <phone>+1 718-951-5000</phone>
+    <fax />
+    <website>http://www.brooklyn.cuny.edu</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4401</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:37:34 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-77.042512</Longitude>
+    <Latitude>38.894386</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/us-doi-blm-logo.png</logo>
+    <name>Bureau of Land Management</name>
+    <native_name />
+    <abbreviated_name />
+    <address>1849 C Street NW, Rm. 5665</address>
+    <zipcode>20240</zipcode>
+    <city>Washington</city>
+    <state>DC</state>
+    <country>43</country>
+    <email />
+    <phone>+1 202-208-3801</phone>
+    <fax />
+    <website>http://www.blm.gov</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4402</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:30:15 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-117.251227</Longitude>
+    <Latitude>32.87054</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/calcofi_logo.png</logo>
+    <name>California Cooperative Oceanic Fisheries Investigations</name>
+    <native_name />
+    <abbreviated_name>CalCOFI</abbreviated_name>
+    <address>8901 La Jolla Shores Drive</address>
+    <zipcode />
+    <city>La Jolla</city>
+    <state>CA</state>
+    <country>43</country>
+    <email />
+    <phone>+1 858-546-7000</phone>
+    <fax />
+    <website>http://www.calcofi.org</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4403</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:25:07 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Cape Fear Technical Institute</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4404</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:24:59 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Carnegie Institution of Washington</name>
+    <native_name />
+    <abbreviated_name>CIW</abbreviated_name>
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4405</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:24:05 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Cities Service Company</name>
+    <native_name />
+    <abbreviated_name>CSC</abbreviated_name>
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4406</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:23:42 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Coastal Engineering Research Center</name>
+    <native_name />
+    <abbreviated_name>CERC</abbreviated_name>
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4407</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:22:01 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-68.221822</Longitude>
+    <Latitude>44.395355</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/coa_seal.png</logo>
+    <name>College of the Atlantic</name>
+    <native_name />
+    <abbreviated_name>COA</abbreviated_name>
+    <address>105 Eden St</address>
+    <zipcode>4609</zipcode>
+    <city>Bar Harbor</city>
+    <state>ME</state>
+    <country>43</country>
+    <email />
+    <phone>+1 207-288-5015</phone>
+    <fax />
+    <website>http://www.coa.edu/index.htm</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4408</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:17:49 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Dames &amp; Moore Group</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4409</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:16:55 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-95.450448</Longitude>
+    <Latitude>30.132331</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/ercologo.gif</logo>
+    <name>Energy Resources Company</name>
+    <native_name />
+    <abbreviated_name>ERCO</abbreviated_name>
+    <address>25511 Budde Rd., Brownstone-Milano Building, Suite 1802</address>
+    <zipcode>77380</zipcode>
+    <city>The Woodlands</city>
+    <state>TX</state>
+    <country>43</country>
+    <email />
+    <phone>+1 281-962-0400</phone>
+    <fax />
+    <website>http://erco-energyresources.com</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4410</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:51:08 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>FDNR</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4411</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:50:20 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Fisheries Research Institute</name>
+    <native_name />
+    <abbreviated_name>FRI</abbreviated_name>
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4412</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 1:00:36 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>GEOSECS Scientific Advisory Committee</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4413</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 12:59:42 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-73.865464</Longitude>
+    <Latitude>42.820778</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/kapllogo.jpg</logo>
+    <name>Knolls Atomic Power Laboratory</name>
+    <native_name />
+    <abbreviated_name>KAPL</abbreviated_name>
+    <address>2401 River Rd</address>
+    <zipcode>12309</zipcode>
+    <city>Niskayuna</city>
+    <state>NY</state>
+    <country>43</country>
+    <email />
+    <phone>+1 518-395-4317</phone>
+    <fax />
+    <website>http://www.knollslab.com/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4414</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 12:59:44 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Marcona Ocean Industries, Florida</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4415</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 12:51:15 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-81.033694</Longitude>
+    <Latitude>33.998933</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/dnr.png</logo>
+    <name>Marine Resources Research Institute</name>
+    <native_name />
+    <abbreviated_name>MRRI</abbreviated_name>
+    <address>P.O. Box 12559</address>
+    <zipcode>29422</zipcode>
+    <city>Charleston</city>
+    <state>SC</state>
+    <country>43</country>
+    <email />
+    <phone>+1 843-953-9819</phone>
+    <fax />
+    <website>http://www.dnr.sc.gov/marine/mrri/index.html</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4416</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 12:39:18 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Martin Marietta Laboratories</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4417</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 12:39:17 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Mec Analytical Systems Inc</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4418</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 11:36:12 PM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>National Marine Fisheries Service - Atlantic Environmental Group</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4419</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 11:35:44 PM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>NOAA Outer Continental Shelf Environmental Assessment Program</name>
+    <native_name />
+    <abbreviated_name>OCSEAP</abbreviated_name>
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4420</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 11:34:20 PM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>NORDA</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4421</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 12:38:33 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-76.484938</Longitude>
+    <Latitude>42.443637</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/cornell_seal.png</logo>
+    <name>Ocean Resources &amp; Ecosystems Program, Cornell University</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Snee Hall, 4 Central Ave, Cornell University</address>
+    <zipcode>14850</zipcode>
+    <city>Ithaca</city>
+    <state>NY</state>
+    <country>43</country>
+    <email />
+    <phone>+1 607-275-1662</phone>
+    <fax />
+    <website>http://climatechange.cornell.edu/ocean-resources-ecosystems-program/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4422</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 12:25:28 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-134.410417</Longitude>
+    <Latitude>58.302006</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/alaska-stateseal.png</logo>
+    <name>State of Alaska</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Alaska State Capitol, 120 East 4th Street</address>
+    <zipcode>99801</zipcode>
+    <city>Juneau</city>
+    <state>AK</state>
+    <country>43</country>
+    <email />
+    <phone>+1 907-465-3500</phone>
+    <fax />
+    <website>http://alaska.gov</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4423</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/4/2015 12:10:12 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-78.639077</Longitude>
+    <Latitude>35.780899</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/north-carolina-seal.png</logo>
+    <name>State of North Carolina</name>
+    <native_name />
+    <abbreviated_name />
+    <address>North Carolina State Capitol, 1 E Edenton St</address>
+    <zipcode>27601</zipcode>
+    <city>Raleigh</city>
+    <state>NC</state>
+    <country>43</country>
+    <email />
+    <phone>+1 919-814-2000</phone>
+    <fax />
+    <website>http://www.nc.gov</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4424</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 11:46:52 PM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-96.755239</Longitude>
+    <Latitude>32.911477</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/ti.gif</logo>
+    <name>Texas Instruments</name>
+    <native_name />
+    <abbreviated_name />
+    <address>12500 TI Boulevard</address>
+    <zipcode>75243</zipcode>
+    <city>Dallas</city>
+    <state>TX</state>
+    <country>43</country>
+    <email />
+    <phone>+1 972-995-2011</phone>
+    <fax />
+    <website>http://www.ti.com/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4425</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 11:34:18 PM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>The Naval Command, Control and Ocean Surveillance Center (NCCOSC) RDT&amp;E Division (NRaD)</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4426</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:47:48 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>TTO Scientific Advisory Committee</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4427</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:46:50 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-77.03271</Longitude>
+    <Latitude>38.892953</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/doc2.png</logo>
+    <name>United States Department of Commerce</name>
+    <native_name />
+    <abbreviated_name />
+    <address>1401 Constitution Ave., NW</address>
+    <zipcode>20230</zipcode>
+    <city>Washington, D.C.</city>
+    <state />
+    <country>43</country>
+    <email />
+    <phone>+1 202-482-2000</phone>
+    <fax />
+    <website>http://www.commerce.gov/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4428</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:38:41 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-77.0289</Longitude>
+    <Latitude>38.894828</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/epa.png</logo>
+    <name>United States Environmental Protection Agency</name>
+    <native_name />
+    <abbreviated_name>EPA</abbreviated_name>
+    <address>1200 Pennsylvania Avenue, N.W.</address>
+    <zipcode>20460</zipcode>
+    <city>Washington</city>
+    <state>DC</state>
+    <country>43</country>
+    <email />
+    <phone>+1 202-272-0167</phone>
+    <fax />
+    <website>http://www.epa.gov/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4429</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:39:18 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-95.34011</Longitude>
+    <Latitude>29.721873</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/uh.png</logo>
+    <name>University of Houston</name>
+    <native_name />
+    <abbreviated_name>UH</abbreviated_name>
+    <address>4800 Calhoun Rd</address>
+    <zipcode>77004</zipcode>
+    <city>Houston</city>
+    <state>TX</state>
+    <country>43</country>
+    <email />
+    <phone>+1 713-743-2255</phone>
+    <fax />
+    <website>http://www.uh.edu</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4430</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:18:08 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-87.88104</Longitude>
+    <Latitude>43.078081</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/uwm.jpg</logo>
+    <name>University of Wisconsin-Milwaukee</name>
+    <native_name />
+    <abbreviated_name>UWM</abbreviated_name>
+    <address>Chapman Hall, 2310 E Hartford Ave, University of Wisconsin-Milwaukee</address>
+    <zipcode>53201</zipcode>
+    <city>Milwaukee</city>
+    <state>WI</state>
+    <country>43</country>
+    <email />
+    <phone>+1 414-229-1122</phone>
+    <fax />
+    <website>http://www4.uwm.edu</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4431</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:11:59 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Woodward-Clyde Consultants</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4432</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:10:36 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Osborn Laboratories of Marine Sciences</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4433</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:09:34 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-75.13066</Longitude>
+    <Latitude>39.944132</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/cas.png</logo>
+    <name>Center for Aquatic Sciences at Adventure Aquarium</name>
+    <native_name />
+    <abbreviated_name />
+    <address>1 Riverside Drive</address>
+    <zipcode>08103</zipcode>
+    <city>Camden</city>
+    <state>NJ</state>
+    <country>43</country>
+    <email />
+    <phone>+1 856-365-0352</phone>
+    <fax />
+    <website>http://www.aquaticsciences.org</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4434</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:04:52 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-81.69193</Longitude>
+    <Latitude>41.500043</Latitude>
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Cliffs Natural Resources</name>
+    <native_name />
+    <abbreviated_name>Cliffs</abbreviated_name>
+    <address>200 Public Square, Suite 3300</address>
+    <zipcode>44114</zipcode>
+    <city>Cleveland</city>
+    <state>OH</state>
+    <country>43</country>
+    <email />
+    <phone>+1 216-694-5700</phone>
+    <fax />
+    <website>http://www.cliffsnaturalresources.com</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4435</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 2:56:32 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-83.00465</Longitude>
+    <Latitude>39.981485</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/irc.png</logo>
+    <name>International Risk Consultants Inc</name>
+    <native_name />
+    <abbreviated_name>IRC</abbreviated_name>
+    <address>939 North High Street Suite 204</address>
+    <zipcode>43201</zipcode>
+    <city>Columbus</city>
+    <state>OH</state>
+    <country>43</country>
+    <email />
+    <phone>+1 614-224-7623</phone>
+    <fax />
+    <website>http://www.irc-group.com/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4436</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 3:39:40 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-118.1328</Longitude>
+    <Latitude>34.148566</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/jacobs.png</logo>
+    <name>Jacobs Engineering Group Inc.</name>
+    <native_name />
+    <abbreviated_name>Jacobs</abbreviated_name>
+    <address>155 North Lake Avenue</address>
+    <zipcode>91101</zipcode>
+    <city>Pasadena</city>
+    <state>CA</state>
+    <country>43</country>
+    <email />
+    <phone>+1 626-578-3500</phone>
+    <fax />
+    <website>http://www.jacobs.com</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4437</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 2:46:40 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-117.2399</Longitude>
+    <Latitude>33.341175</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/mcsi.jpg</logo>
+    <name>Marine Conservation Science Institute</name>
+    <native_name />
+    <abbreviated_name>MCSI</abbreviated_name>
+    <address>2809 South Mission Road, Suite G</address>
+    <zipcode>92028</zipcode>
+    <city>Fallbrook</city>
+    <state>CA</state>
+    <country>43</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.marinecsi.org/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4438</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 2:42:21 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-77.0905</Longitude>
+    <Latitude>38.888618</Latitude>
+    <collate_id>1390</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1390/tnc.png</logo>
+    <name>The Nature Conservancy</name>
+    <native_name />
+    <abbreviated_name>TNC</abbreviated_name>
+    <address>4245 North Fairfax Drive, Suite 100</address>
+    <zipcode>22201</zipcode>
+    <city>Arlington</city>
+    <state>VA</state>
+    <country>43</country>
+    <email />
+    <phone>+1 703-841-5300</phone>
+    <fax />
+    <website>http://www.nature.org/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4439</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 2:30:16 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-105.1111</Longitude>
+    <Latitude>39.715704</Latitude>
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Ocean Biogeographic Information System USA</name>
+    <native_name />
+    <abbreviated_name>OBIS-USA</abbreviated_name>
+    <address>Core Science Systems, W 6th Ave Kipling St</address>
+    <zipcode>80225</zipcode>
+    <city>Lakewood</city>
+    <state>CO</state>
+    <country>43</country>
+    <email />
+    <phone>+1 303-202-4087</phone>
+    <fax />
+    <website>http://www.usgs.gov/obis-usa/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4440</n_code>
+    <input_date>10/26/2015 3:21:50 PM</input_date>
+    <last_update>11/3/2015 2:41:41 AM</last_update>
+    <date_created />
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-73.59497</Longitude>
+    <Latitude>41.034495</Latitude>
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Oceanweather Inc.</name>
+    <native_name />
+    <abbreviated_name />
+    <address>5 River Road, Suite 1</address>
+    <zipcode>06807</zipcode>
+    <city>Cos Cob</city>
+    <state>CT</state>
+    <country>43</country>
+    <email />
+    <phone>+1 203-661-3091</phone>
+    <fax />
+    <website>http://www.oceanweather.com/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4441</n_code>
+    <input_date>10/29/2015 2:23:11 PM</input_date>
+    <last_update>10/29/2015 3:12:09 PM</last_update>
+    <date_created>10/29/2015 2:23:11 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-71.9294</Longitude>
+    <Latitude>45.378712</Latitude>
+    <collate_id>1979</collate_id>
+    <logo />
+    <name>Sherbrooke University</name>
+    <native_name>Université de Sherbrooke</native_name>
+    <abbreviated_name />
+    <address>2500, boul. de l'Université</address>
+    <zipcode>J1K 2R1</zipcode>
+    <city>Sherbrooke</city>
+    <state>QC</state>
+    <country>40</country>
+    <email />
+    <phone>819 821-7000</phone>
+    <fax />
+    <website>http://www.usherbrooke.ca</website>
+    <c_country>Canada</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4442</n_code>
+    <input_date>11/4/2015 9:07:44 AM</input_date>
+    <last_update>11/4/2015 9:16:04 AM</last_update>
+    <date_created>11/4/2015 9:07:44 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>138.571328</Longitude>
+    <Latitude>-35.024495</Latitude>
+    <collate_id>2454</collate_id>
+    <logo />
+    <name>School of Biological Sciences, Flinders University</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Room 201, Biological Sciences Building (Building 40)</address>
+    <zipcode>5001</zipcode>
+    <city>Adelaide</city>
+    <state>South Australia</state>
+    <country>54</country>
+    <email>info.biology@flinders.edu.au</email>
+    <phone>+61 8 8201 2280</phone>
+    <fax />
+    <website>http://www.flinders.edu.au/science_engineering/biology/</website>
+    <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4443</n_code>
+    <input_date>11/4/2015 9:15:21 AM</input_date>
+    <last_update>11/4/2015 9:16:03 AM</last_update>
+    <date_created>11/4/2015 9:15:21 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>153.38384</Longitude>
+    <Latitude>-27.963155</Latitude>
+    <collate_id>2454</collate_id>
+    <logo />
+    <name>National Climate Change Adaptation Research Facility (NCCARF), Griffith University (GU)</name>
+    <native_name />
+    <abbreviated_name>NCCARF</abbreviated_name>
+    <address>Level 4, Building G39, Parklands Drive</address>
+    <zipcode>4222</zipcode>
+    <city>Southport</city>
+    <state>Queensland</state>
+    <country>54</country>
+    <email>nccarf@griffith.edu.au</email>
+    <phone>+61 7 5552 9333</phone>
+    <fax />
+    <website>https://www.nccarf.edu.au/</website>
+    <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4444</n_code>
+    <input_date>11/4/2015 4:34:57 PM</input_date>
+    <last_update>11/5/2015 8:03:09 AM</last_update>
+    <date_created>11/4/2015 4:34:57 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>1.4665</Longitude>
+    <Latitude>43.5571</Latitude>
+    <collate_id>486</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/486/logo_ecolab.png</logo>
+    <name>University of Toulouse III - Ecolab</name>
+    <native_name>Université de Toulouse III - Ecolab</native_name>
+    <abbreviated_name />
+    <address>Campus UPS
+118 route de Narbonne
+Bâtiment 4R1</address>
+    <zipcode>31062</zipcode>
+    <city>Toulouse</city>
+    <state />
+    <country>10</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.ecolab.omp.eu/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4445</n_code>
+    <input_date>11/9/2015 11:46:01 AM</input_date>
+    <last_update>11/9/2015 11:48:04 AM</last_update>
+    <date_created>11/9/2015 11:46:01 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-2.969472</Longitude>
+    <Latitude>53.334006</Latitude>
+    <collate_id>43</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/43/bibby_hydromap_logo.png</logo>
+    <name>Bibby HydroMap Ltd</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Maritime House,
+4 Brunel Road</address>
+    <zipcode>CH62 3NY</zipcode>
+    <city>Bromborough</city>
+    <state>Wirral</state>
+    <country>11</country>
+    <email>enquiries@bibbyhydromap.com</email>
+    <phone>+44 (0)151 328 1120</phone>
+    <fax>+44 (0)151 343 1057</fax>
+    <website>http://www.bibbyhydromap.com</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4446</n_code>
+    <input_date>11/11/2015 2:06:06 PM</input_date>
+    <last_update>11/11/2015 2:44:32 PM</last_update>
+    <date_created>11/11/2015 2:06:06 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>18.0852</Longitude>
+    <Latitude>59.3463</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>AquaBiota Water Research</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>30</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4447</n_code>
+    <input_date>11/16/2015 10:32:03 AM</input_date>
+    <last_update>11/16/2015 10:41:14 AM</last_update>
+    <date_created>11/16/2015 10:32:03 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-21.9493</Longitude>
+    <Latitude>64.1404</Latitude>
+    <collate_id>583</collate_id>
+    <logo />
+    <name>University of Iceland</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Saemundargata 2</address>
+    <zipcode>101</zipcode>
+    <city>Reykjavik</city>
+    <state />
+    <country>17</country>
+    <email>hi@hi.is</email>
+    <phone>+354 525 4000</phone>
+    <fax />
+    <website>http://english.hi.is/</website>
+    <c_country>Iceland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4448</n_code>
+    <input_date>11/16/2015 11:02:27 AM</input_date>
+    <last_update>11/16/2015 11:05:07 AM</last_update>
+    <date_created>11/16/2015 11:02:27 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>5.3027</Longitude>
+    <Latitude>60.4234</Latitude>
+    <collate_id>612</collate_id>
+    <logo />
+    <name>Institute for Research in Economics and Business Administration</name>
+    <native_name>Samfunns- og naeingslivsforskning AS</native_name>
+    <abbreviated_name>SNF</abbreviated_name>
+    <address>Helleveien 30</address>
+    <zipcode>5045</zipcode>
+    <city>Bergen</city>
+    <state />
+    <country>25</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.snf.no/</website>
+    <c_country>Norway</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4449</n_code>
+    <input_date>11/16/2015 11:07:16 AM</input_date>
+    <last_update>11/16/2015 2:26:52 PM</last_update>
+    <date_created>11/16/2015 11:07:16 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>13.01309</Longitude>
+    <Latitude>52.400461</Latitude>
+    <collate_id>96</collate_id>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/96/up_logo_university_2.png</logo>
+    <name>University of Potsdam</name>
+    <native_name>Universität Potsdam</native_name>
+    <abbreviated_name>UP</abbreviated_name>
+    <address>Am Neuen Palais 10,</address>
+    <zipcode>14469</zipcode>
+    <city>Potsdam</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.uni-potsdam.de/en/
+
+</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4450</n_code>
+    <input_date>11/17/2015 11:43:16 AM</input_date>
+    <last_update>11/20/2015 1:50:29 AM</last_update>
+    <date_created>11/17/2015 11:43:16 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-83.03844</Longitude>
+    <Latitude>40.00332</Latitude>
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Byrd Polar and Climate Research</name>
+    <native_name />
+    <abbreviated_name>BPCRC</abbreviated_name>
+    <address>108 Scott Hall, 1090 Carmack Rd</address>
+    <zipcode>43210</zipcode>
+    <city>Columbus</city>
+    <state>OH</state>
+    <country>43</country>
+    <email>www@bprc.mps.ohio-state.edu</email>
+    <phone>+1 614-292-6531</phone>
+    <fax />
+    <website>http://bpcrc.osu.edu/</website>
+    <c_country>United States</c_country>
   </Organisation>
 </Organisations>

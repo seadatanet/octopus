@@ -189,7 +189,22 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		
 		
 	}
-	
+	@Test
+	public void file_profile_med_2_odv_Multi_2CDI_stefane() {
+		inFormat="medatlas";
+		in="medatlas/input/profile/2010030170.ctd";
+		out = "profile/file_profile_med_2_odv_Multi_2CDI_stefane.txt";
+		type= "multi";
+		outFormat = "odv";
+		cdiList="FI35201003017_00001_H10,FI35201003017_00002_H10";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+		
+	}
 	
 	@Override
 	protected String getInputDir() {

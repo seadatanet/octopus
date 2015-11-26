@@ -23,6 +23,7 @@ public abstract class AbstractBatch_X_2_Y_Test {
 	protected String out;
 	protected static String outFormat;
 	protected String cdiList;
+
 	protected boolean success = false;
 	protected boolean expectOutputExist = true;
 
@@ -147,12 +148,16 @@ public abstract class AbstractBatch_X_2_Y_Test {
 	protected static void deleteDir(String inputDir, String tmpDir){
 		try {
 			File d = new File(pwd+inputDir+File.separatorChar+outDir+File.separatorChar+tmpDir);
-			for (File sub: d.listFiles()){
-				for (File ff : sub.listFiles()){
-					if (ff.isFile()){
-						ff.delete();
-					}else{
-						FileUtils.deleteDirectory(ff);
+			if (d.exists()){
+				for (File sub: d.listFiles()){
+					if (sub.isDirectory()){
+						for (File ff : sub.listFiles()){
+							if (ff.isFile()){
+								ff.delete();
+							}else{
+								FileUtils.deleteDirectory(ff);
+							}
+						}
 					}
 				}
 			}

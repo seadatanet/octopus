@@ -1,6 +1,7 @@
 package fr.ifremer.octopus.view;
 
 import java.io.File;
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -64,7 +65,7 @@ public class OctopusOverviewController {
 	 */
 	private MainApp mainApp;
 	private OctopusGUIController octopusGuiController;
-	
+
 
 
 
@@ -82,15 +83,14 @@ public class OctopusOverviewController {
 	private RadioButton radioMulti;
 	@FXML	
 	private RadioButton radioMono;
-	
-	
+
+
 	@FXML
 	private CheckBox showCdi;
-	@FXML 
-	private HBox outputCdiContainer;
+
 	@FXML 
 	private VBox cdiContainer;
-	
+
 	// added from the java code
 	private TableView<SDNCdiIdObservable> cdiTable;
 	private CheckBox selectAllCheckBox;
@@ -103,13 +103,22 @@ public class OctopusOverviewController {
 	private Button buttonExportOdv;
 	@FXML
 	private Button buttonExportCfpoint;
+	@FXML
+	private Button checkButton;
 
+	// output CDI for input MGD files
+	@FXML
+	private TextField outCDI;
+	@FXML
+	private Button chooseOutCdi;
+	
 
 	@FXML
 	private void initialize() {
 		LOGGER.debug("initialize");
 		// disable all but inputPathTextField
 		switchGui(false);
+
 
 	}
 	public TableView<SDNCdiIdObservable> getCDITable() {
@@ -178,40 +187,40 @@ public class OctopusOverviewController {
 						ObservableList<Boolean> l) {
 					// Checking for an unselected employee in the table view.
 					boolean unSelectedFlag = false;
-							for (boolean b : l) {
-								if (!b) {
-									unSelectedFlag = true;
-									break;
-								}
-							}
-							/*
-							 * If at least one cdi is not selected, then deselecting the check box in the table column header, else if all
-							 * employees are selected, then selecting the check box in the header.
-							 */
-							 if (unSelectedFlag) {
-								 getSelectAllCheckBox().setSelected(false);
-							 } else {
-								 getSelectAllCheckBox().setSelected(true);
-							 }
+					for (boolean b : l) {
+						if (!b) {
+							unSelectedFlag = true;
+							break;
+						}
+					}
+					/*
+					 * If at least one cdi is not selected, then deselecting the check box in the table column header, else if all
+					 * employees are selected, then selecting the check box in the header.
+					 */
+					if (unSelectedFlag) {
+						getSelectAllCheckBox().setSelected(false);
+					} else {
+						getSelectAllCheckBox().setSelected(true);
+					}
 
-							 // Checking for a selected employee in the table view.
-							 boolean selectedFlag = false;
-							 for (boolean b : l) {
-								 if (!b) {
-									 selectedFlag = true;
-									 break;
-								 }
-							 }
+					// Checking for a selected employee in the table view.
+					boolean selectedFlag = false;
+					for (boolean b : l) {
+						if (!b) {
+							selectedFlag = true;
+							break;
+						}
+					}
 
-							 /*
-							  * If at least one employee is selected, then enabling the "Export" button, else if none of the employees are selected,
-							  * then disabling the "Export" button.
-							  */
-//							                                      if (selectedFlag) {
-//							                                             enableExportButton();
-//							                                     } else {
-//							                                             disableExportButton();
-//							                                     }
+					/*
+					 * If at least one employee is selected, then enabling the "Export" button, else if none of the employees are selected,
+					 * then disabling the "Export" button.
+					 */
+					//							                                      if (selectedFlag) {
+					//							                                             enableExportButton();
+					//							                                     } else {
+					//							                                             disableExportButton();
+					//							                                     }
 				}
 			});
 
@@ -242,7 +251,7 @@ public class OctopusOverviewController {
 			LOGGER.error(e.getMessage());
 			return  cdiList ;
 		}
-		  
+
 	}
 	/**
 	 * Lazy getter for the selectAllCheckBox.
@@ -309,6 +318,24 @@ public class OctopusOverviewController {
 			outputPathTextField.setText(selectedFile.getAbsolutePath());
 		}
 	}
+	
+	@FXML
+	private void openChooseOutCdi(){
+		File selectedFile ;
+		FileChooser fileChooser = new FileChooser();
+		fileChooser.setTitle("Choose output file for ODV local CDI Ids"); // TODO
+		String def = PreferencesManager.getInstance().getInputDefaultPath();
+		if (def!=null){
+			fileChooser.setInitialDirectory(new File(def));
+		}
+		selectedFile = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
+		if (selectedFile != null) {
+			outCDI.setText(selectedFile.getAbsolutePath());
+		}
+	}
+	
+	
+	
 	@FXML
 	private void inputChanged(KeyEvent event) {
 
@@ -322,19 +349,25 @@ public class OctopusOverviewController {
 	 */
 	public void initInput() {
 		LOGGER.debug("init input");
-		LOGGER.info("-----------------------------------------------------------");
+		LOGGER.info("init " + inputPathTextField.getText());
 
 		initGui();
-		
+
 		try {
 			checkInput();
-			octopusGuiController = new OctopusGUIController(inputPathTextField.getText());
+			if (octopusGuiController==null){
+				octopusGuiController = new OctopusGUIController(inputPathTextField.getText());
+			}else{
+				octopusGuiController.init(inputPathTextField.getText());
+			}
 			if (octopusGuiController.getModel() !=null){
 				LOGGER.debug("init input ok -> switch true");
 				switchGui(true);
 
 			}
 		} catch (OctopusException e) {
+			LOGGER.error(e.getMessage());
+		} catch (IOException e) {
 			LOGGER.error(e.getMessage());
 		}
 	}
@@ -344,34 +377,56 @@ public class OctopusOverviewController {
 		cdiContainer.setVisible(false);
 		showCdi.setSelected(false);
 		showCdi.setVisible(false);
-		outputCdiContainer.setVisible(false);
 		cdiTable=null;
 		outputPathTextField.setText("");
+		outCDI.setText("");
 		switchGui(false);
 	}
 
 	private void switchGui(boolean inputOk){
 		LOGGER.debug("switch ok "+ inputOk);
-		radioMono.setDisable(!inputOk);
-		radioMulti.setDisable(!inputOk);
+		
+		
+		radioMono.setDisable(!inputOk|| (octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
+				||  octopusGuiController.getModel().getInputFormat()==Format.MGD_98));
+		radioMulti.setDisable(!inputOk|| ( octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
+				||  octopusGuiController.getModel().getInputFormat()==Format.MGD_98));
+		
+		
 		outputPathTextField.setDisable(!inputOk);
 		chooseOut.setDisable(!inputOk);
+		
+		checkButton.setDisable(!inputOk);
+		
+		outCDI.setDisable(!inputOk || ( octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
+				&&  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
+		
 
+				
+				if (inputOk){
+					File in = new File (octopusGuiController.getModel().getInputPath());
+					chooseOutCdi.setVisible(in.isDirectory()&& (octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
+							||  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
+				}else{
+					chooseOutCdi.setVisible(false);
+				}
+		
+		
 		
 		showCdi.visibleProperty().setValue(
 				inputOk 
 				&& octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
 				&&  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98);
-		
-		
-		outputCdiContainer.visibleProperty().setValue(
-				inputOk &&
-				(
-				octopusGuiController.getModel().getInputFormat()==Format.MGD_81
-				||octopusGuiController.getModel().getInputFormat()==Format.MGD_98)
-				);
-		
-		
+
+
+//		outputCdiContainer.visibleProperty().setValue(
+//				inputOk &&
+//				(
+//						octopusGuiController.getModel().getInputFormat()==Format.MGD_81
+//						||octopusGuiController.getModel().getInputFormat()==Format.MGD_98)
+//				);
+
+
 		if (inputOk){
 			Format f = octopusGuiController.getModel().getInputFormat();
 			boolean disableMedatlas = f!=Format.MEDATLAS_SDN && f!=Format.MEDATLAS_NON_SDN ;
@@ -380,6 +435,8 @@ public class OctopusOverviewController {
 			buttonExportMedatlas.disableProperty().setValue(disableMedatlas);
 			buttonExportOdv.disableProperty().setValue(disableOdv);
 			buttonExportCfpoint.disableProperty().setValue(disableCfPoint);
+			
+			outCDI.setDisable(! (f==Format.MGD_81 || f==Format.MGD_98));
 		}else{
 			buttonExportMedatlas.disableProperty().setValue(true);
 			buttonExportOdv.disableProperty().setValue(true);
@@ -433,7 +490,7 @@ public class OctopusOverviewController {
 						cdiTable=null; // FIXME: cdis are read from input each time we select!!!
 						cdiContainer.getChildren().clear();
 						cdiContainer.getChildren().addAll(getCDITable());
-						
+
 					} catch (Exception e) {
 						LOGGER.error("unable to get CDIs list");// TODO
 					}
@@ -462,7 +519,17 @@ public class OctopusOverviewController {
 			alert.showAndWait();
 			throw new OctopusException("invalid output path"); // TODO
 		}
-
+		if (octopusGuiController.getModel().getInputFormat()==Format.MGD_81||octopusGuiController.getModel().getInputFormat()==Format.MGD_98){
+			if (outCDI.getText().isEmpty()){
+				Alert alert = new Alert(AlertType.ERROR);
+				alert.initOwner(mainApp.getPrimaryStage());
+				alert.setTitle("Invalid output local CDI ID");// TODO
+				alert.setHeaderText("Please set an output local CDI ID");// TODO
+				alert.setContentText("output output local CDI ID field is empty"); // TODO
+				alert.showAndWait();
+				throw new OctopusException("invalid output local CDI ID"); // TODO
+			}
+		}
 
 	}
 	private OUTPUT_TYPE getOutputType(){
@@ -497,6 +564,9 @@ public class OctopusOverviewController {
 			octopusGuiController.getModel().setOutputPath(outputPathTextField.getText());
 			octopusGuiController.getModel().setOutputType(getOutputType());
 			octopusGuiController.getModel().getCdiList().clear();
+			if (!outCDI.getText().isEmpty()){
+				octopusGuiController.getModel().setOuputLocalCdiId(outCDI.getText());
+			}
 			for (SDNCdiIdObservable p : getCDITable().getItems()) {
 				if (p.getSelected()){
 					octopusGuiController.getModel().getCdiList().add(p.cdiProperty().getValue());
@@ -507,10 +577,10 @@ public class OctopusOverviewController {
 			octopusGuiController.getModel().setOutputFormat(format);
 			List<String> outputFiles = octopusGuiController.process();
 			if (outputFiles.size()>0){
-				LOGGER.info("process ended without error. "+ outputFiles.size() + " files have been written");// TODO
+				LOGGER.info("process ended successfully. "+ outputFiles.size() + " files have been written");// TODO
 				LOGGER.info(outputFiles);
 			}else{
-				LOGGER.warn("process ended without error. "+ outputFiles.size() + " files have been written");// TODO
+				LOGGER.warn("process ended successfully. "+ outputFiles.size() + " files have been written");// TODO
 			}
 		} catch (OctopusException e) {
 			LOGGER.error(e.getMessage());
@@ -523,12 +593,12 @@ public class OctopusOverviewController {
 	}
 	@FXML
 	public void validate(){
-			try {
-				octopusGuiController.checkFormat();
-			} catch (Exception e) {
-				LOGGER.error("file is not valid");// TODO
-			}
-			
+		try {
+			octopusGuiController.checkFormat();
+		} catch (Exception e) {
+			LOGGER.error("file is not valid");// TODO
+		}
+
 	}
 
 }

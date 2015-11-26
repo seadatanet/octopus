@@ -70,9 +70,9 @@ public abstract class AbstractController {
 	 * @param inputPath
 	 * @throws IOException
 	 */
-	public void init(File inputPath) throws IOException {
-		Format inputFormat = getFirstFileInputFormat(inputPath);
-		model = new OctopusModel(inputPath.getAbsolutePath());
+	public void init(String inputPath) throws IOException {
+		Format inputFormat = getFirstFileInputFormat(new File(inputPath));
+		model = new OctopusModel(inputPath);
 		model.setInputFormat(inputFormat);
 
 		createCdiManager();
@@ -216,7 +216,7 @@ public abstract class AbstractController {
 						out = getOutFilePath(null, cdi);
 					}
 
-					List<CouplingRecord> records = manager.print(getOneCdiAsList(cdi),out, model.getOutputFormat(), model.getOuputLocalCdiId());
+					List<CouplingRecord> records = manager.print(getOneCdiAsList(cdi),out, model.getOutputFormat(), null);
 					CouplingTableManager.getInstance().add(records);					
 					outputFilesList.add(out);
 				}
@@ -229,7 +229,7 @@ public abstract class AbstractController {
 					out = getOutFilePath(null, null);
 				}
 				// Process
-				List<CouplingRecord> records = manager.print(cdiToPrint, out, model.getOutputFormat(), model.getOuputLocalCdiId());
+				List<CouplingRecord> records = manager.print(cdiToPrint, out, model.getOutputFormat(), getOutputCDI(in.getName()));
 				CouplingTableManager.getInstance().add(records);		
 				outputFilesList.add(out);
 			}
@@ -239,15 +239,29 @@ public abstract class AbstractController {
 		} catch (Exception e) {
 			LOGGER.error("error on file "+ in.getAbsolutePath());
 			LOGGER.error(e.getMessage());
-			throw new OctopusException("error on input file");
+			throw new OctopusException("error processing file "+in.getAbsolutePath());
 		}
 
 
 		return outputFilesList;
 
 	}
-
-
+	/**
+	 * 
+	 * @param inputFileName
+	 * @return local_cdi_id to be used for inputFileName, if input format is MGD
+	 * @throws OctopusException
+	 */
+	private String getOutputCDI(String inputFileName) throws OctopusException{
+		if (model.getInputFormat()==Format.MGD_81||model.getInputFormat()==Format.MGD_98){
+			if (model.getInputFile().isDirectory()){
+				return  model.getOuputLocalCdiId(inputFileName);
+			}else{
+				return  model.getOuputLocalCdiId();
+			}}else{
+				return null;
+			}
+	}
 	private String getOutFilePath(String in, String cdi){
 		String outPath;
 		String extension = "."+model.getOutputFormat().getOutExtension();
@@ -416,13 +430,15 @@ public abstract class AbstractController {
 
 		FormatChecker checker = getFormatChecker();
 		if (checker==null){
-			throw new OctopusException("No checker for format "+model.getInputFormat().getName()+" implemented yet");// TODO
+			LOGGER.warn("No checker for format "+model.getInputFormat().getName()+" implemented yet");// TODO
+			return;
 		}
 		File in = new File(model.getInputPath());
 		if (in.isDirectory()){
 			int errors=0;
 			for (File f: in.listFiles()){
 				try{
+					// TODO do not check dirs  -> recursive
 					checker.check (f);
 				}catch(Exception e){
 					errors++;
@@ -441,7 +457,7 @@ public abstract class AbstractController {
 			}catch(Exception e){
 				LOGGER.error("invalid file "+ in.getAbsolutePath());
 			}
-			
+
 		}
 	}
 
@@ -455,8 +471,10 @@ public abstract class AbstractController {
 		switch (model.getInputFormat()) {
 		case MEDATLAS_SDN:
 			checker= new MedatlasFormatChecker();
+			break;
 		case ODV_SDN:
 			checker= new OdvFormatChecker();
+			break;
 		default:
 			break;
 		}

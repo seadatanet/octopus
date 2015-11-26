@@ -1,13 +1,21 @@
 package fr.ifremer.octopus.model;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import fr.ifremer.octopus.controller.OctopusException;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class OctopusModel {
-
+	private static final Logger LOGGER = LogManager.getLogger(OctopusModel.class);
 
 	public enum OUTPUT_TYPE {MONO, MULTI};
 
@@ -25,6 +33,10 @@ public class OctopusModel {
 	 */
 	private List<String> cdiList;
 	private String outputLocalCdiId;
+	/**
+	 * mapping filename / local_cdi_id for mgd conversion
+	 */
+	private HashMap<String, String>cdiMap;
 
 	/**
 	 * 
@@ -33,8 +45,9 @@ public class OctopusModel {
 	public OctopusModel(String inputPath)  {
 		this.cdiList= new ArrayList<String>();
 		this.inputPath = inputPath;
-		
+
 		this.inputFile= new File(inputPath);
+		this.cdiMap = null;
 	}
 	public File getInputFile() {
 		return inputFile;
@@ -86,14 +99,56 @@ public class OctopusModel {
 	public boolean isMono() {
 		return outputType==OUTPUT_TYPE.MONO;
 	}
-	public void setOuputLocalCdiId(String outputLocalCdiId) {
+	public void setOuputLocalCdiId(String outputLocalCdiId) throws OctopusException {
 		this.outputLocalCdiId = outputLocalCdiId;
-		
+
+		loadOutputCDIs();
+
 	}
 	public String getOuputLocalCdiId() {
 		return this.outputLocalCdiId ;
-		
-	}
 
+	}
+	public String getOuputLocalCdiId(String inputFileName) throws OctopusException {
+		if (cdiMap==null){
+			loadOutputCDIs();
+		}
+		String cdi=cdiMap.get(inputFileName);
+
+		if (cdi==null){
+			throw new OctopusException("no local CDI ID found for file " + inputFileName + " in mapping file " + this.outputLocalCdiId);
+		}
+		return cdi;
+
+	}
+	public void loadOutputCDIs() throws OctopusException{
+		if (this.outputLocalCdiId!=null && new File(outputLocalCdiId).exists()){
+			String line = "";
+			String cvsSplitBy=";";
+			BufferedReader br=null;
+			try {
+				br = new BufferedReader(new FileReader(this.outputLocalCdiId));
+				cdiMap=new HashMap<String, String>();
+				while ((line = br.readLine()) != null) {
+
+					String[] bean = line.split(cvsSplitBy);
+					cdiMap.put(bean[0], bean[1]);
+
+				}
+			}  catch (Exception e) {
+				LOGGER.error(e.getMessage());
+				throw new OctopusException("unable to read mapping file with MGD filenames / local CDI ID");// TODO
+			}finally{
+				try {
+					if (br!=null){
+						br.close();
+					}
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+	}
 
 }

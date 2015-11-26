@@ -4,13 +4,17 @@ import java.io.File;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.FileChooser;
 
 import org.apache.logging.log4j.LogManager;
@@ -26,7 +30,7 @@ import fr.ifremer.sismer_tools.coupling.CouplingRecord;
 
 public class CouplingController {
 	static final Logger LOGGER = LogManager.getLogger(CouplingController.class.getName());
-	
+
 
 	/**
 	 * Reference to the main application
@@ -44,20 +48,20 @@ public class CouplingController {
 	TableColumn<CouplingRecordFx, String>  path_column;
 	@FXML
 	TableColumn<CouplingRecordFx, LocalDateTime>  date_column;
-	
+
 	@FXML
 	Button export;
 	String couplingPath = "";
 	@FXML
 	private void initialize() {
 
-		
+
 		local_cdi_id_column.setCellValueFactory(cellData -> cellData.getValue().getLocal_cdi_id());
 		modus_column.setCellValueFactory(cellData -> cellData.getValue().getModus().asObject());
 		format_column.setCellValueFactory(cellData -> cellData.getValue().getFormat());
 		path_column.setCellValueFactory(cellData -> cellData.getValue().getPath());
 		date_column.setCellValueFactory(cellData -> cellData.getValue().getDate());
-		
+
 		List<CouplingRecord> records;
 		try {
 			records = CouplingTableManager.getInstance().list();
@@ -65,14 +69,14 @@ public class CouplingController {
 			for (CouplingRecord cr : records){
 				couplingList.add(new CouplingRecordFx(cr));
 			}
-			
+
 			couplingTable.setItems(couplingList);
 		} catch (ClassNotFoundException e) {
 			LOGGER.error(e.getMessage());
 		} catch (SQLException e) {
 			LOGGER.error(e.getMessage());
 		}
-		
+
 
 	}
 	/**
@@ -93,25 +97,46 @@ public class CouplingController {
 
 	@FXML
 	public void exportToCsv(){
-			File selectedFile ;
+		File selectedFile ;
 
-				FileChooser fileChooser = new FileChooser();
-				fileChooser.setTitle("Choose coupling table path"); // TODO
-				String def = PreferencesManager.getInstance().getOutputDefaultPath();
-				if (def!=null){
-					fileChooser.setInitialDirectory(new File(def));
-				}
-				selectedFile = fileChooser.showSaveDialog(mainApp.getPrimaryStage());
-			if (selectedFile != null) {
-				couplingPath = selectedFile.getAbsolutePath();
-				try {
-					CouplingTableManager.getInstance().export(couplingPath);
-				} catch (Exception e) {
-					LOGGER.error(e.getMessage());
-				} 
-			}
+		FileChooser fileChooser = new FileChooser();
+		fileChooser.setTitle("Choose coupling table path"); // TODO
+		String def = PreferencesManager.getInstance().getOutputDefaultPath();
+		if (def!=null){
+			fileChooser.setInitialDirectory(new File(def));
+		}
+		selectedFile = fileChooser.showSaveDialog(mainApp.getPrimaryStage());
+		if (selectedFile != null) {
+			couplingPath = selectedFile.getAbsolutePath();
+			try {
+				CouplingTableManager.getInstance().export(couplingPath);
+			} catch (Exception e) {
+				LOGGER.error(e.getMessage());
+			} 
+		}
 	}
-	
-	
+	@FXML
+	public void cleanCoupling(){
+		Alert alert = new Alert(AlertType.CONFIRMATION);
+		alert.initOwner(mainApp.getPrimaryStage());
+		alert.setTitle("Clean coupling table");// TODO
+		alert.setHeaderText("Please confirm");// TODO
+		alert.setContentText("This operation will delete all coupling table lines. Are you sure?");// TODO
+
+		Optional<ButtonType> result = alert.showAndWait();
+
+		if (result.get() == ButtonType.OK){
+			try {
+				CouplingTableManager.getInstance().cleanCoupling();
+			} catch (ClassNotFoundException e) {
+				LOGGER.error(e.getMessage());
+			} catch (SQLException e) {
+				LOGGER.error(e.getMessage());
+			}
+			this.initialize();
+		}
+
+	}
+
 
 }

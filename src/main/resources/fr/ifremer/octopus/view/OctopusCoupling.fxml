@@ -24,5 +24,6 @@
       </TableView>
       <Button fx:id="closeButton" layoutX="916.0" layoutY="23.0" mnemonicParsing="false" onAction="#closeCoupling" text="%coupling.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
       <Button fx:id="export" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#exportToCsv" text="%coupling.export" />
+      <Button fx:id="clean" layoutX="81.0" layoutY="50.0" mnemonicParsing="false" onAction="#cleanCoupling" text="%coupling.clean" />
    </children>
 </AnchorPane>

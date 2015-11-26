@@ -13,6 +13,8 @@
             <Font name="FreeMono" size="65.0" />
          </font>
       </Text>
-      <Button layoutX="270.0" layoutY="354.0" mnemonicParsing="false" onAction="#closeAbout" text="%about.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Button layoutX="1078.0" layoutY="711.0" mnemonicParsing="false" onAction="#closeAbout" text="%about.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Label layoutX="297.0" layoutY="55.0" text="%about.licence" />
+      <Label layoutX="22.0" layoutY="202.0" text="%about.text" />
    </children>
 </AnchorPane>

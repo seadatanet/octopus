@@ -151,6 +151,10 @@ public class ConvertersManager {
 			case CFPOINT:
 				((CFReader)conv).close();
 				break;
+			case MGD_81:
+			case MGD_98:
+				((MGD77Manager)conv).close();
+				break;
 			default:
 				LOGGER.error("undefined input format");// TODO
 			}

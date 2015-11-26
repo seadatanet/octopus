@@ -43,6 +43,10 @@ public class CouplingTableManager {
 		return instance;
 	}
 	private CouplingTableManager() throws SQLException, ClassNotFoundException {
+		init();
+
+	}
+	public void init()throws SQLException, ClassNotFoundException {
 		createDatabaseConnection();
 
 		/**
@@ -56,7 +60,6 @@ public class CouplingTableManager {
 		getPreparedStatementSelect();
 		getPreparedStatementUpdate();
 		getPreparedStatementNew();
-
 	}
 
 	public List<CouplingRecord> list() throws SQLException {
@@ -73,6 +76,7 @@ public class CouplingTableManager {
 			CouplingRecord cr = new CouplingRecord(cdi, modus, Format.valueOfFromCouplingString(format), path, date);
 			list.add(cr);
 		}
+		rs.close();
 		return list;
 	}
 
@@ -91,6 +95,11 @@ public class CouplingTableManager {
 		}
 
 
+	}
+	
+	public void cleanCoupling() throws SQLException, ClassNotFoundException{
+		deleteTable();
+		init();		
 	}
 	public void deleteTable() throws SQLException{
 		String create = "DROP TABLE COUPLING";

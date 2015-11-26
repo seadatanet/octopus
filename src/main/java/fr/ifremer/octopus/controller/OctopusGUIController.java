@@ -16,14 +16,12 @@ public class OctopusGUIController extends AbstractController{
 	private OctopusOverviewController octopusOverviewController;
 
 
-	public OctopusGUIController() {
-		super();
-	}
+
 
 	public OctopusGUIController(String inputPath)  {
 		super();
 		try {
-			init(new File(inputPath));
+			init(inputPath);
 			
 		} catch (IOException e) {
 			LOGGER.error("init error");

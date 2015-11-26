@@ -130,13 +130,22 @@ public class BatchController extends AbstractController{
 				throw new OctopusException("output path is empty");
 			}
 			Format outputFormat = getFormatFromBatchArg(cmd.getOptionValue(OPTION_F));
-			OUTPUT_TYPE type = getType(cmd.getOptionValue(OPTION_T));
+			
+			
+			String typeString=cmd.getOptionValue(OPTION_T);
+			OUTPUT_TYPE type = OUTPUT_TYPE.MULTI;
+			if (typeString!=null){
+				 type = getType(typeString);
+			}
 
 			String cdiList = cmd.getOptionValue(OPTION_CDI);
 			List<String> list = getCdiList(cdiList);
 			
-			
-			String outputLocalCdiId = cmd.getOptionValue(OPTION_OUT_LOCAL_CDI_ID);
+			String outputLocalCdiIdString = cmd.getOptionValue(OPTION_OUT_LOCAL_CDI_ID);
+			String outputLocalCdiId = null ;
+			if (outputLocalCdiIdString!=null){
+				outputLocalCdiId = outputLocalCdiIdString.trim();
+			}
 
 			// log
 			LOGGER.info("octopus batch mode arguments:");
@@ -150,7 +159,7 @@ public class BatchController extends AbstractController{
 			checkInput(new File(inputPath));
 
 			try{
-				init(new File(inputPath));
+				init(inputPath);
 			} catch (IOException e) {
 				LOGGER.error("input Path error");
 				throw e;
@@ -241,14 +250,14 @@ public class BatchController extends AbstractController{
 		options.addOption(OPTION_I, true, "(mandatory) input path: </home/user/...>");
 		options.addOption(OPTION_O, true, "(mandatory) output path: </home/user/...>");
 		options.addOption(OPTION_F, true, "(mandatory) output format: <medatlas>, <odv> or <cfpoint>");
-		options.addOption(OPTION_T, true, "(mandatory) output type: <mono> or <multi>");
+		options.addOption(OPTION_T, true, "(mandatory except if input is MGD) output type: <mono> or <multi>");
 		options.addOption(OPTION_CDI, true, "(optionnal) list of local_cdi_id, eg <FI35AAB, FI35AAC>, all cdi are exported if this argument is ommited");
-
+		options.addOption(OPTION_OUT_LOCAL_CDI_ID, true, "(mandatory if input is MGD) local CDI Id value if input is a file, mapping file is input is a directory");
 
 		mandatory_options.add(OPTION_I);
 		mandatory_options.add(OPTION_O);
 		mandatory_options.add(OPTION_F);
-		mandatory_options.add(OPTION_T);
+//		mandatory_options.add(OPTION_T);
 
 		parser = new DefaultParser();
 

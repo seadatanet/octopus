@@ -17,15 +17,12 @@ BODC: telechargement pendant export reporte affichage de la log
 on pourrait tester l'existence et le contenu du rep BODC pour afficher un message d'attente si besoin
 
 2/
-splitter cf2cf: error si cdi non trouve
-laisser erreur (pour le DM)? car pour octopus qui recherche dans un repertoire, ce peut ne pas être une erreur...
-+ voir cohérence avec autres formats
-
-
+restriction sur MEdnon SDN: impossible de demander un split avec une liste de local_cdi_id (cdi non trouvés)
+-> on pourrait essayer de detecter les CDI en les recomposant (co on fait pour ecrire en sortie)
 
 ERREURS
 =========================================================
-Med2Med: si le CDI n'est pas present, on ecrit qd mm le header -> a corriger
+Med2Med: si le CDI n'est pas present, on ecrit qd mm le header -> correction a verifier
 
 
 
@@ -36,6 +33,7 @@ Med2Med: si le CDI n'est pas present, on ecrit qd mm le header -> a corriger
 
 LIVRABLE
 ==============
+FERMER les projets dependances de Octopus dans le workspace eclipse (sinon ils ne sont pas inclus dans le path du build!)
 mvn clean install
 build ant
 

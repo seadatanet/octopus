@@ -107,7 +107,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrableLinux/resources</outputDirectory>
+							<outputDirectory>${basedir}/target/livrableLinux/octopus/resources</outputDirectory>
 							<resources>
 								<resource>
 									<directory>resources</directory>
@@ -128,7 +128,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrableWin32/resources</outputDirectory>
+							<outputDirectory>${basedir}/target/livrableWin32/octopus/resources</outputDirectory>
 							<resources>
 								<resource>
 									<directory>resources</directory>
@@ -149,7 +149,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrableWin64/resources</outputDirectory>
+							<outputDirectory>${basedir}/target/livrableWin64/octopus/resources</outputDirectory>
 							<resources>
 								<resource>
 									<directory>resources</directory>
@@ -173,7 +173,7 @@
 						</goals>
 						<configuration>
 							<sourceFile>target/octopus-maven.jar</sourceFile>
-							<destinationFile>target/livrableLinux/octopus.jar</destinationFile>
+							<destinationFile>target/livrableLinux/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
@@ -191,7 +191,7 @@
 						</goals>
 						<configuration>
 							<sourceFile>target/octopus-maven.jar</sourceFile>
-							<destinationFile>target/livrableWin32/octopus.jar</destinationFile>
+							<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
@@ -209,7 +209,7 @@
 						</goals>
 						<configuration>
 							<sourceFile>target/octopus-maven.jar</sourceFile>
-							<destinationFile>target/livrableWin64/octopus.jar</destinationFile>
+							<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
@@ -228,7 +228,7 @@
 						</goals>
 						<configuration>
 							<sourceFile>build/octopus_32.exe</sourceFile>
-							<destinationFile>target/livrableWin32/octopus.exe</destinationFile>
+							<destinationFile>target/livrableWin32/octopus/octopus.exe</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
@@ -246,7 +246,7 @@
 						</goals>
 						<configuration>
 							<sourceFile>build/octopus_64.exe</sourceFile>
-							<destinationFile>target/livrableWin64/octopus.exe</destinationFile>
+							<destinationFile>target/livrableWin64/octopus/octopus.exe</destinationFile>
 						</configuration>
 					</execution>
 				</executions>

@@ -135,7 +135,7 @@ public class CouplingTableManager {
 						" FORMAT = ? ," +
 						" PATH = ? ," +
 						" DATEUPDATE = ? " +
-				"WHERE LOCAL_CDI_ID = ? AND MODUS=?");
+				"WHERE LOCAL_CDI_ID = ? AND MODUS=? AND FORMAT=?");
 
 	}
 
@@ -180,6 +180,7 @@ public class CouplingTableManager {
 
 			stmtUpdateExistingRecord.setString(6, record.getLocal_cdi_id());
 			stmtUpdateExistingRecord.setInt(7, record.getModus());
+			stmtUpdateExistingRecord.setString(8, record.getFormat().toCouplingFormat());
 
 			stmtUpdateExistingRecord.executeUpdate();
 		} catch (SQLException e) {

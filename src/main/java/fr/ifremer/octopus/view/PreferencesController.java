@@ -90,7 +90,7 @@ public class PreferencesController {
 
 
 		int index=0;
-		if (PreferencesManager.getInstance().getLocale()== Locale.FRANCE){
+		if (PreferencesManager.getInstance().getLocale()== PreferencesManager.LOCALE_FR){
 			index=0;
 		}else{
 			index=1;

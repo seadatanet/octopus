@@ -18,6 +18,8 @@ public class PreferencesManager {
 
 	private static final Logger LOGGER = LogManager.getLogger(PreferencesManager.class);
 	private static final String preferencesFile = "resources/preferences.xml";
+	public static final Locale LOCALE_FR = new Locale(Locale.FRENCH.getLanguage(), Locale.FRANCE.getCountry());
+	public static final Locale LOCALE_UK = new Locale(Locale.ENGLISH.getLanguage(), Locale.UK.getCountry());
 	private static PreferencesManager mgr;
 
 	private Preferences preferences;
@@ -55,13 +57,13 @@ public class PreferencesManager {
 		Locale locale;
 		switch (preferences.getLanguage()) {
 		case "fr":
-			locale = Locale.FRANCE;
+			locale =LOCALE_FR;
 			break;
 		case "uk":
-			locale = Locale.ENGLISH;
+			locale = LOCALE_UK;
 			break;
 		default:
-			locale = Locale.ENGLISH;
+			locale = LOCALE_UK;
 			break;
 		}
 

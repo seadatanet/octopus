@@ -1,9 +1,9 @@
 package fr.ifremer.octopus.view;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.util.Locale;
 
-import javafx.application.HostServices;
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
 import javafx.stage.DirectoryChooser;
@@ -77,14 +77,15 @@ public class RootController {
 			Locale locale = PreferencesManager.getInstance().getLocale();
 			String docPath ;
 			if (locale==Locale.FRANCE){
-				docPath = "resources/manuel.pdf";
+				docPath = "resources\\manuel.pdf";
 			}else{
-				docPath = "resources/manual.pdf";
+				docPath = "resources\\manual.pdf";
 			}
 
-			HostServices hostServices = mainApp.getHostServices();
-			hostServices.showDocument(docPath);
-
+//			HostServices hostServices = mainApp.getHostServices();
+//			hostServices.showDocument(docPath);
+			File f = new File(docPath);
+			Desktop.getDesktop().browse(f.toURI());			
 
 		} catch (Exception ex) {
 			ex.printStackTrace();

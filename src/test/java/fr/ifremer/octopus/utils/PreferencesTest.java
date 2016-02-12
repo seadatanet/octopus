@@ -12,13 +12,19 @@ import javax.xml.bind.Marshaller;
 import org.junit.Assert;
 import org.junit.Test;
 
+import fr.ifremer.octopus.controller.OctopusException;
+
 public class PreferencesTest {
 
 	
 	@Test
 	public void testPreferencesClean()
 	{
-		PreferencesManager.getInstance().load();
+		try {
+			PreferencesManager.getInstance().load();
+		} catch (OctopusException e) {
+			e.printStackTrace();
+		}
 		// coupling is disabled
 		Assert.assertTrue(!PreferencesManager.getInstance().isCouplingEnabled());
 		// edmo code is empty
@@ -49,10 +55,8 @@ public class PreferencesTest {
 
 			m.marshal(object, o);
 		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

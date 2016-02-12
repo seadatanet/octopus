@@ -6,8 +6,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.SQLException;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
@@ -47,12 +49,13 @@ public abstract class AbstractController {
 	 * Required conversion deduced from input and output formats
 	 */
 	private Conversion conversion;
-
+	protected ResourceBundle messages ;
 	/**
+	 * @throws OctopusException 
 	 * 
 	 */
-	public AbstractController()  {
-
+	public AbstractController() throws OctopusException  {
+		
 		this.driverManager.registerNewDriver(new MedatlasSDNDriverImpl());
 		this.driverManager.registerNewDriver(new OdvSDNDriverImpl());
 		this.driverManager.registerNewDriver(new CFPointDriverImpl());
@@ -62,6 +65,9 @@ public abstract class AbstractController {
 		prefsMgr = PreferencesManager.getInstance();
 		prefsMgr.load();
 		LOGGER.info("LANGUAGE: "+prefsMgr.getLocale());
+		
+		
+		messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
 
 	}
 
@@ -89,7 +95,7 @@ public abstract class AbstractController {
 	 * 
 	 */
 	protected void abort(){
-		LOGGER.info("abort"); // TODO msg
+		LOGGER.info(messages.getString("abstractcontroller.abort")); 
 	}
 
 	/**
@@ -105,7 +111,7 @@ public abstract class AbstractController {
 		try {
 			if (PreferencesManager.getInstance().isCouplingEnabled()){
 				if (!CouplingTableManager.getInstance().checkPrefixCompliance(model.getOutputPath())){
-					throw new OctopusException("coupling table prefix is not compliant with output path. Output path must start with prefix.");
+					throw new OctopusException(messages.getString("abstractcontroller.couplingPrefixNotCompliant"));
 				}
 			}
 		} catch (ClassNotFoundException e1) {
@@ -116,23 +122,23 @@ public abstract class AbstractController {
 
 		checkInputOutputFormatCompliance();
 		checkOutputNameCompliance();
-
+		
 		if (conversion == Conversion.NONE){
 			if (model.getCdiList().isEmpty()){
 				if (model.getOutputType() == OUTPUT_TYPE.MONO ){
-					LOGGER.info("split input file in n monostation files");
+					LOGGER.info(messages.getString("abstractcontroller.splitMono"));
+					
 				}else{
-					LOGGER.info("output will be identical to input, but the file will be updated if needed (SDN references...");// TODO
-					//					LOGGER.info("nothing to do: no cdi to be exported, no conversion");
-					//					return outputFilesList;
+					LOGGER.info(messages.getString("abstractcontroller.outputIdentical"));
 				}
 			}
 		}else{
-			if (model.getCdiList().isEmpty()){
-				LOGGER.info("all CDIs exported");
+			if (model.getInputFormat()==Format.MGD_81 ||model.getInputFormat()==Format.MGD_98){
+				
+			}else if(model.getCdiList().isEmpty()){
+				LOGGER.info(messages.getString("abstractcontroller.allCDIExported"));
 			}
 		}
-
 
 		try {
 			if (model.isMono() || model.getInputFile().isDirectory()){
@@ -164,7 +170,6 @@ public abstract class AbstractController {
 		//				LOGGER.info(cr.toString());
 		//			}
 		//		} catch (ClassNotFoundException | SQLException e) {
-		//			// TODO Auto-generated catch block
 		//			e.printStackTrace();
 		//		}
 		return outputFilesList;
@@ -177,7 +182,7 @@ public abstract class AbstractController {
 			File out = new File(model.getOutputPath());
 			FileUtils.deleteDirectory(out);
 		} catch (IOException e) {
-			LOGGER.error("error on output directory deletion"); // TODO
+			LOGGER.error(messages.getString("abstractcontroller.errorOnOutputDirDeletion"));
 		}
 	}
 	/**
@@ -201,6 +206,7 @@ public abstract class AbstractController {
 		} catch (OctopusException e1) {
 			return outputFilesList;
 		}
+		
 		try {
 			String out;
 
@@ -299,14 +305,14 @@ public abstract class AbstractController {
 				if (mgr.containsCdi(cdi)){
 					cdiL.add(cdi);
 				}else{
-					// log only in batch mode (in GUI mode, user can not ask for inexisting CDI)
+					// log only in batch mode (in GUI mode, user can not ask for non existing CDI)
 					if (this instanceof BatchController){
-						LOGGER.warn("local CDI ID "+cdi+" has not been found in "+filePath);
+						LOGGER.warn(MessageFormat.format(messages.getString("abstractcontroller.cdiNotFound"), cdi, filePath));
 					}
 				}
 			}
 			if(cdiL.isEmpty()){
-				throw new OctopusException("None of the local CDI ID has been found in file " + filePath);// TODO
+				throw new OctopusException(MessageFormat.format(messages.getString("abstractcontroller.noCdiFound"),  filePath));
 			}
 		}
 		return cdiL;
@@ -322,10 +328,10 @@ public abstract class AbstractController {
 			Path p = Paths.get(model.getOutputPath());
 
 			if (!p.getParent().toFile().exists()){
-				LOGGER.error("directory "+ p.getParent() + " does not exist");// TODO
+				LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.directoryDoesNotExist"),  p.getParent()));
 			}
-			throw new OctopusException("unable to create output directory "+ model.getOutputPath());// TODO
-		}
+				throw new OctopusException(MessageFormat.format(messages.getString("abstractcontroller.errorOnOutputDirCreation"), model.getOutputPath()));
+			}
 	}
 	private void createOutputSubDir(String in){
 		File out = new File(model.getOutputPath()+File.separator+in);
@@ -342,7 +348,7 @@ public abstract class AbstractController {
 
 
 		if (model.getInputFormat().equals(model.getOutputFormat())){
-			LOGGER.info("output and input formats are identical");
+			LOGGER.info(messages.getString("abstractcontroller.formatsIdentical"));
 			conversion = Conversion.NONE;
 
 		}else{
@@ -360,20 +366,37 @@ public abstract class AbstractController {
 				if(model.getOutputFormat().equals(Format.CFPOINT)){
 					conversion = Conversion.ODV_SDN_TO_CFPOINT;
 				}else if(model.getOutputFormat().equals(Format.MEDATLAS_SDN)){
-					throw new OctopusException("format " + model.getInputFormat() + " can not be converted to " + model.getOutputFormat().getName());
+					throw new OctopusException(
+							MessageFormat.format(messages.getString("abstractcontroller.canNotConvertFromTo"),
+									model.getInputFormat().getName(), 
+									model.getOutputFormat().getName())
+					);
+					
 				}
 				break;
 			case CFPOINT:
-				throw new OctopusException("format " + model.getInputFormat() + " can not be converted to " + model.getOutputFormat().getName());
+				throw new OctopusException(
+						MessageFormat.format(messages.getString("abstractcontroller.canNotConvertFromTo"),
+								model.getInputFormat().getName(), 
+								model.getOutputFormat().getName())
+				);
 			case MGD_81:
 			case MGD_98:
 				if(!model.getOutputFormat().equals(Format.ODV_SDN)){
 					conversion = Conversion.MGD_TO_ODV;
-					throw new OctopusException("format " + model.getInputFormat() + " can not be converted to " + model.getOutputFormat().getName());
+					throw new OctopusException(
+							MessageFormat.format(messages.getString("abstractcontroller.canNotConvertFromTo"),
+									model.getInputFormat().getName(), 
+									model.getOutputFormat().getName())
+					);
 				}
 				break;
 			default:
-				throw new OctopusException("not implemented: " +  model.getInputFormat() + " to " + model.getOutputFormat().getName());
+				throw new OctopusException(
+						MessageFormat.format(messages.getString("abstractcontroller.conversionNotImplemented"),
+								model.getInputFormat().getName(), 
+								model.getOutputFormat().getName())
+						);
 			}
 		}
 
@@ -383,8 +406,11 @@ public abstract class AbstractController {
 		if(new File (model.getInputPath()).isFile()
 				&& model.getOutputType()==OUTPUT_TYPE.MULTI 
 				&& !model.getOutputFormat().isExtensionCompliant(model.getOutputPath())){
-			throw new OctopusException("output file extension is not valid:  "+model.getOutputFormat().getName() 
-					+ " files must use \"." +model.getOutputFormat().getMandatoryExtension()+ "\" extension." );
+			throw new OctopusException(
+					MessageFormat.format(messages.getString("abstractcontroller.invalidOutputExtension"),
+							model.getOutputFormat().getName() , 
+							model.getOutputFormat().getMandatoryExtension())
+					);
 
 		}
 	}
@@ -397,10 +423,13 @@ public abstract class AbstractController {
 	private Format getFormat(String file) throws IOException {
 		Driver d = getDriver(file);
 		if (d!=null){
-			LOGGER.info("detected input format: "+d.getFormat().getName());
+			LOGGER.info(
+					MessageFormat.format(messages.getString("abstractcontroller.detectedInputFormat"),
+							d.getFormat().getName() )
+					);
 			return d.getFormat();
 		}else{
-			throw new IOException("unrecognized input format");
+			throw new IOException(messages.getString("abstractcontroller.unrecognizedInputFormat"));
 		}
 	}
 	private Driver getDriver(String file) throws IOException {
@@ -426,11 +455,14 @@ public abstract class AbstractController {
 	 * @throws Exception 
 	 * 
 	 */
-	public void checkFormat() throws Exception {
+	public void checkFormat()  {
 
 		FormatChecker checker = getFormatChecker();
 		if (checker==null){
-			LOGGER.warn("No checker for format "+model.getInputFormat().getName()+" implemented yet");// TODO
+			LOGGER.warn(
+					MessageFormat.format(messages.getString("abstractcontroller.checkerNotImmplemented"),
+							model.getInputFormat().getName() )
+					);
 			return;
 		}
 		File in = new File(model.getInputPath());
@@ -442,20 +474,27 @@ public abstract class AbstractController {
 					checker.check (f);
 				}catch(Exception e){
 					errors++;
-					LOGGER.error("invalid file "+ f.getAbsolutePath());
+					LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),
+							 f.getAbsolutePath()));
 				}
 			}
 			if (errors==0){
-				LOGGER.info("All files are valid");// TODO
+				LOGGER.info(messages.getString("abstractcontroller.allFilesValid"));
 			}else{
-				LOGGER.error( errors +" invalid file(s) on "+in.listFiles().length );// TODO
+				LOGGER.error( 
+						MessageFormat.format(messages.getString("abstractcontroller.XInvalidFilesOnY"),
+								errors, in.listFiles().length)
+						);
 			}
 		}else{
 			try{
 				checker.check (in);
-				LOGGER.info("Format is valid");// TODO
+				LOGGER.info(messages.getString("abstractcontroller.formatIsValid"));
 			}catch(Exception e){
-				LOGGER.error("invalid file "+ in.getAbsolutePath());
+				LOGGER.error(
+						MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),
+								in.getAbsolutePath())
+						);
 			}
 
 		}
@@ -466,7 +505,7 @@ public abstract class AbstractController {
 	 * @return
 	 * @throws OctopusException 
 	 */
-	private FormatChecker getFormatChecker() throws OctopusException{
+	private FormatChecker getFormatChecker() {
 		FormatChecker checker = null;
 		switch (model.getInputFormat()) {
 		case MEDATLAS_SDN:

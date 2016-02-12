@@ -2,8 +2,8 @@ package fr.ifremer.octopus.view;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.MessageFormat;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -43,7 +43,7 @@ import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 public class PreferencesController {
 	static final Logger LOGGER = LogManager.getLogger(PreferencesController.class.getName());
 
-
+	private ResourceBundle messages;
 	/**
 	 * Reference to the main application
 	 */
@@ -80,6 +80,7 @@ public class PreferencesController {
 	private static int nonPresent_bodc=-1;
 	@FXML
 	private void initialize() {
+		messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
 
 		// LANGUAGE
 		ResourceBundle bundle =
@@ -188,7 +189,7 @@ public class PreferencesController {
 	@FXML
 	public void browseIn(){
 		DirectoryChooser dirChooser = new DirectoryChooser();
-		dirChooser.setTitle("Choose directory"); // TODO
+		dirChooser.setTitle(messages.getString("preferences.chooseDirectory")); 
 		File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
 		if (selectedFile != null) {
 			inputDefault.setText(selectedFile.getAbsolutePath());
@@ -199,7 +200,7 @@ public class PreferencesController {
 	@FXML
 	public void browseOut(){
 		DirectoryChooser dirChooser = new DirectoryChooser();
-		dirChooser.setTitle("Choose directory"); // TODO
+		dirChooser.setTitle(messages.getString("preferences.chooseDirectory")); 
 		File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
 		if (selectedFile != null) {
 			outputDefault.setText(selectedFile.getAbsolutePath());
@@ -211,7 +212,7 @@ public class PreferencesController {
 	@FXML
 	public void browseCouplingPrefix(){
 		DirectoryChooser dirChooser = new DirectoryChooser();
-		dirChooser.setTitle("Choose directory"); // TODO
+		dirChooser.setTitle(messages.getString("preferences.chooseDirectory")); 
 		File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
 		if (selectedFile != null) {
 			couplingPrefix.setText(selectedFile.getAbsolutePath());
@@ -242,7 +243,7 @@ public class PreferencesController {
 					int before = EdmoManager.getInstance().getEdmoList().size();
 					EdmoManager.getInstance().updateEdmo();
 					int after = EdmoManager.getInstance().getEdmoList().size();
-					bodcLog.appendText("edmo codes number: "+ before + " -> "+ after+System.getProperty("line.separator"));
+					bodcLog.appendText(MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after) +System.getProperty("line.separator"));
 				}catch(Exception e){
 
 				}
@@ -291,7 +292,7 @@ public class PreferencesController {
 						for (String list: vocabsList){
 
 							if (oldVersions.get(list).equals(newVersions.get(list))){
-								bodcLog.appendText(list + ": already up to date (version "+  newVersions.get(list) + ")"+System.getProperty("line.separator") );
+								bodcLog.appendText(MessageFormat.format(messages.getString("preferences.listAlreadyUpToDate"), list, newVersions.get(list)) +System.getProperty("line.separator"));
 							}else{
 								int old=oldVersions.get(list) ;
 								String oldString;
@@ -329,9 +330,9 @@ public class PreferencesController {
 
 		Alert alert = new Alert(AlertType.CONFIRMATION);
 		alert.initOwner(mainApp.getPrimaryStage());
-		alert.setTitle("Lists update");// TODO
-		alert.setHeaderText("This will launch BODC vocabularies and EDMO list update");// TODO
-		alert.setContentText("This operation can take several minutes"); // TODO
+		alert.setTitle(messages.getString("preferences.listsUpdateTitle"));
+		alert.setHeaderText(messages.getString("preferences.listsUpdateHeader"));
+		alert.setContentText(messages.getString("preferences.listsUpdateContent")); 
 		Optional<ButtonType> result = alert.showAndWait();
 
 		if (result.get() == ButtonType.OK){
@@ -342,7 +343,7 @@ public class PreferencesController {
 			th.start();
 
 		}else{
-			bodcLog.appendText("operation cancelled");// TODO
+			bodcLog.appendText(messages.getString("preferences.listsUpdateCancel"));
 		}
 
 	}

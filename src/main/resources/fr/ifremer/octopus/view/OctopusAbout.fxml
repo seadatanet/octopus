@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.shape.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1093.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.AboutController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="1078.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.AboutController">
    <children>
-      <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Octopus" textAlignment="CENTER" AnchorPane.topAnchor="14.0">
-         <font>
-            <Font name="FreeMono" size="65.0" />
-         </font>
-      </Text>
       <Button layoutX="1078.0" layoutY="711.0" mnemonicParsing="false" onAction="#closeAbout" text="%about.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
-      <Label layoutX="297.0" layoutY="55.0" text="%about.licence" />
-      <Label layoutX="22.0" layoutY="202.0" text="%about.text" />
+      <Label layoutX="433.0" layoutY="652.0" text="%about.licence" />
+      <Label layoutX="34.0" layoutY="98.0" styleClass="aboutTitle" text="%about.title" />
+      <Label layoutX="632.0" layoutY="35.0" styleClass="aboutVersion" text="%about.version" />
+      <Label layoutX="34.0" layoutY="156.0" prefHeight="402.0" prefWidth="1010.0" text="%about.desc" />
+      <Label layoutX="501.0" layoutY="35.0" styleClass="aboutVersion" text="Version" />
+      <Label layoutX="34.0" layoutY="20.0" styleClass="aboutName" text="Octopus" />
+      <ImageView fitHeight="215.0" fitWidth="234.0" layoutX="759.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/octopus_transp.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

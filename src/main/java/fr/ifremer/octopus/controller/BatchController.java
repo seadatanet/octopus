@@ -3,6 +3,7 @@ package fr.ifremer.octopus.controller;
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -86,18 +87,16 @@ public class BatchController extends AbstractController{
 
 		try {
 			List<String> outputFiles = process();
+			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.processSucessNBFiles"), outputFiles.size()));
 			if (outputFiles.size()>0){
-				LOGGER.info("process ended without error. "+ outputFiles.size() + " files have been written");// TODO
 				LOGGER.info(outputFiles);
-			}else{
-				LOGGER.warn("process ended without error. "+ outputFiles.size() + " files have been written");// TODO
 			}
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
 		} catch (SQLException e) {
 			LOGGER.error(e.getCause());
-			LOGGER.error("Octopus GUI may be running. Please stop it before launching Octopus in Batch mode");
+			LOGGER.error("batchcontroller.guiRunning");
 		} 
 		exit(OK_EXIT_CODE, null);
 
@@ -115,19 +114,19 @@ public class BatchController extends AbstractController{
 			// check if mandatory options are present
 			for (String option : mandatory_options){
 				if (!cmd.hasOption(option)){
-					throw new OctopusException("missing option " + option);
+					throw new OctopusException(MessageFormat.format(messages.getString("batchcontroller.missingOption"), option));
+					
 				}
 			}
 
 			// check mandatory options values
 			String inputPath = cmd.getOptionValue(OPTION_I).trim();
 			if (inputPath.isEmpty()){
-				throw new OctopusException("input path is empty");
-
+				throw new OctopusException(messages.getString("batchcontroller.inputPathEmpty"));
 			}
 			String outputPath = cmd.getOptionValue(OPTION_O).trim();
 			if (outputPath.isEmpty()){
-				throw new OctopusException("output path is empty");
+				throw new OctopusException(messages.getString("batchcontroller.outputPathEmpty"));
 			}
 			Format outputFormat = getFormatFromBatchArg(cmd.getOptionValue(OPTION_F));
 			
@@ -148,20 +147,21 @@ public class BatchController extends AbstractController{
 			}
 
 			// log
-			LOGGER.info("octopus batch mode arguments:");
-			LOGGER.info("input path: " + inputPath);
-			LOGGER.info("output path: " + outputPath);
-			LOGGER.info("output format: " +outputFormat );
-			LOGGER.info("output type: " + type);
-			LOGGER.info("CDI list: " + cdiList);
-			LOGGER.info("output local_cdi_id: " + outputLocalCdiId);
+			LOGGER.info(messages.getString("batchcontroller.argumentsResumeTitle"));
+			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsInputPath"), inputPath));
+			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputPath"), outputPath));
+			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputFormat"), outputFormat));
+			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputType"), type));
+			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsCdiList"), cdiList));
+			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutCDI"), outputLocalCdiId));
+			
 
 			checkInput(new File(inputPath));
 
 			try{
 				init(inputPath);
 			} catch (IOException e) {
-				LOGGER.error("input Path error");
+				LOGGER.error(messages.getString("batchcontroller.inputPathError"));
 				throw e;
 			}
 
@@ -198,7 +198,7 @@ public class BatchController extends AbstractController{
 			}
 		}catch(Exception e){
 			LOGGER.error(e.getMessage());
-			throw new OctopusException("CDI list can not be read");// TODO
+			throw new OctopusException(messages.getString("batchcontroller.cdiListNotReadable"));
 		}
 		return list;
 	}
@@ -219,7 +219,7 @@ public class BatchController extends AbstractController{
 		if (optionValue.trim().equalsIgnoreCase(Format.CFPOINT.getName())){
 			return Format.CFPOINT;
 		}
-		throw new OctopusException("unrecognized output format");
+		throw new OctopusException(messages.getString("abstractcontroller.unrecognizedOutputFormat"));
 	}
 
 
@@ -236,7 +236,7 @@ public class BatchController extends AbstractController{
 		if (optionValue.trim().equalsIgnoreCase(OctopusModel.OUTPUT_TYPE.MULTI.toString())){
 			return OctopusModel.OUTPUT_TYPE.MULTI;
 		}
-		throw new OctopusException("unrecognized output type");
+		throw new OctopusException(messages.getString("abstractcontroller.unrecognizedOutputType"));
 	}
 
 
@@ -247,12 +247,13 @@ public class BatchController extends AbstractController{
 		// create Options object
 		options = new Options();
 
-		options.addOption(OPTION_I, true, "(mandatory) input path: </home/user/...>");
-		options.addOption(OPTION_O, true, "(mandatory) output path: </home/user/...>");
-		options.addOption(OPTION_F, true, "(mandatory) output format: <medatlas>, <odv> or <cfpoint>");
-		options.addOption(OPTION_T, true, "(mandatory except if input is MGD) output type: <mono> or <multi>");
-		options.addOption(OPTION_CDI, true, "(optionnal) list of local_cdi_id, eg <FI35AAB, FI35AAC>, all cdi are exported if this argument is ommited");
-		options.addOption(OPTION_OUT_LOCAL_CDI_ID, true, "(mandatory if input is MGD) local CDI Id value if input is a file, mapping file is input is a directory");
+		
+		options.addOption(OPTION_I, true, messages.getString("batchcontroller.argumentsInputPathHelp"));
+		options.addOption(OPTION_O, true, messages.getString("batchcontroller.argumentsOutputPathHelp"));
+		options.addOption(OPTION_F, true, messages.getString("batchcontroller.argumentsFormatHelp"));
+		options.addOption(OPTION_T, true, messages.getString("batchcontroller.argumentsTypeHelp"));
+		options.addOption(OPTION_CDI, true, messages.getString("batchcontroller.argumentsCdiListHelp"));
+		options.addOption(OPTION_OUT_LOCAL_CDI_ID, true, messages.getString("batchcontroller.argumentsOutputCdiHelp"));
 
 		mandatory_options.add(OPTION_I);
 		mandatory_options.add(OPTION_O);
@@ -300,7 +301,7 @@ public class BatchController extends AbstractController{
 	 */
 	private void checkInput(File inputPath) throws OctopusException  {
 		if (!inputPath.exists()){
-			throw new OctopusException("input path is not a valid directory or file path"); // TODO: internat
+			throw new OctopusException(messages.getString("batchcontroller.inputPathInvalid")); 
 		}
 
 	}

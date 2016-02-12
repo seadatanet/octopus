@@ -7,11 +7,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.ResourceBundle;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.controller.OctopusException;
+import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class OctopusModel {
@@ -101,8 +103,10 @@ public class OctopusModel {
 	}
 	public void setOuputLocalCdiId(String outputLocalCdiId) throws OctopusException {
 		this.outputLocalCdiId = outputLocalCdiId;
-
-		loadOutputCDIs();
+		File in = new File(this.getInputPath());
+		if (in.isDirectory()){
+			loadOutputCDIs();
+		}
 
 	}
 	public String getOuputLocalCdiId() {
@@ -122,6 +126,8 @@ public class OctopusModel {
 
 	}
 	public void loadOutputCDIs() throws OctopusException{
+		ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
+
 		if (this.outputLocalCdiId!=null && new File(outputLocalCdiId).exists()){
 			String line = "";
 			String cvsSplitBy=";";
@@ -137,17 +143,18 @@ public class OctopusModel {
 				}
 			}  catch (Exception e) {
 				LOGGER.error(e.getMessage());
-				throw new OctopusException("unable to read mapping file with MGD filenames / local CDI ID");// TODO
+				throw new OctopusException(messages.getString("model.mappingMgdCdiUnreadable"));
 			}finally{
 				try {
 					if (br!=null){
 						br.close();
 					}
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+					LOGGER.error(e.getMessage());
 				}
 			}
+		}else{
+			throw new OctopusException(messages.getString("model.mappingMgdCdiUnreadable"));
 		}
 	}
 

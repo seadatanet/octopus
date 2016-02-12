@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.Locale;
+import java.util.ResourceBundle;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -12,6 +13,8 @@ import javax.xml.bind.Unmarshaller;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import fr.ifremer.octopus.controller.OctopusException;
 
 public class PreferencesManager {
 
@@ -34,7 +37,8 @@ public class PreferencesManager {
 	private PreferencesManager() {
 	}
 
-	public void load(){
+	public void load() throws OctopusException{
+		
 		try {
 			JAXBContext jc = JAXBContext.newInstance(Preferences.class);
 			Unmarshaller u = jc.createUnmarshaller();
@@ -43,12 +47,13 @@ public class PreferencesManager {
 			if (f.exists()){
 				LOGGER.info("preferences file found: "+ f.getAbsolutePath());// TODO
 			}else{
-				LOGGER.error("preferences file not found: "+ preferencesFile); //TODO
+				throw new OctopusException("preferences file not found: "+ preferencesFile); //TODO
 			}
 			preferences = (Preferences) u.unmarshal(f);
 
 		} catch (JAXBException e) {
-			LOGGER.error(e.getMessage());
+			LOGGER.error("error reading preferences file");
+			throw new OctopusException(e.getMessage());
 		}
 	}
 
@@ -71,6 +76,8 @@ public class PreferencesManager {
 	}
 	public void save(){
 		JAXBContext context;
+		ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
+
 		try {
 
 			FileOutputStream o = new FileOutputStream(new File(preferencesFile));
@@ -79,11 +86,11 @@ public class PreferencesManager {
 			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 			m.marshal(preferences, o);
 		} catch (JAXBException e) {
-			LOGGER.error("Error while writing preferences.");// TODO
-			e.printStackTrace();
+			LOGGER.error(messages.getString("preferences.errorWritingPreferencesFile"));
+			LOGGER.error(e.getMessage());
 		} catch (FileNotFoundException e) {
-			LOGGER.error("can not find preferences files.");// TODO
-			e.printStackTrace();
+			LOGGER.error(messages.getString("preferences.errorPreferencesFileNotFound."));
+			LOGGER.error(e.getMessage());
 		}
 	}
 

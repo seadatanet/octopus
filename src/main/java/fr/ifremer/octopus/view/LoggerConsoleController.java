@@ -116,7 +116,7 @@ public class LoggerConsoleController {
                         }
                     }
                     catch (IOException e) {
-                        LOGGER.error(e.getMessage());
+                        LOGGER.debug("log interrupted");
                     }
                 }
                 return null;

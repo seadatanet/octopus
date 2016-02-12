@@ -156,3 +156,18 @@ RadioButton{
 .table-view:focused .table-row-cell:filled:selected {
     -fx-background-color: #465561;
 }
+.aboutName{
+		-fx-font-size: 40pt;
+    -fx-font-family: "Segoe UI Semibold";
+        -fx-text-fill: #465561;
+}
+.aboutVersion{
+	-fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+.aboutTitle{
+	-fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #465561;
+}
+

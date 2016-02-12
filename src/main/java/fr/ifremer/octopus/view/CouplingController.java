@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -30,8 +31,7 @@ import fr.ifremer.sismer_tools.coupling.CouplingRecord;
 
 public class CouplingController {
 	static final Logger LOGGER = LogManager.getLogger(CouplingController.class.getName());
-
-
+	
 	/**
 	 * Reference to the main application
 	 */
@@ -97,10 +97,12 @@ public class CouplingController {
 
 	@FXML
 	public void exportToCsv(){
+		ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
+
 		File selectedFile ;
 
 		FileChooser fileChooser = new FileChooser();
-		fileChooser.setTitle("Choose coupling table path"); // TODO
+		fileChooser.setTitle(messages.getString("coupling.chooseExportPath")); 
 		String def = PreferencesManager.getInstance().getOutputDefaultPath();
 		if (def!=null){
 			fileChooser.setInitialDirectory(new File(def));
@@ -117,11 +119,13 @@ public class CouplingController {
 	}
 	@FXML
 	public void cleanCoupling(){
+		ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
+
 		Alert alert = new Alert(AlertType.CONFIRMATION);
 		alert.initOwner(mainApp.getPrimaryStage());
-		alert.setTitle("Clean coupling table");// TODO
-		alert.setHeaderText("Please confirm");// TODO
-		alert.setContentText("This operation will delete all coupling table lines. Are you sure?");// TODO
+		alert.setTitle(messages.getString("coupling.clean"));
+		alert.setHeaderText(messages.getString("coupling.confirm"));
+		alert.setContentText(messages.getString("coupling.confirmContent"));
 
 		Optional<ButtonType> result = alert.showAndWait();
 

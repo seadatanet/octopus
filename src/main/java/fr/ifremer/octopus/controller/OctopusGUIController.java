@@ -18,7 +18,7 @@ public class OctopusGUIController extends AbstractController{
 
 
 
-	public OctopusGUIController(String inputPath)  {
+	public OctopusGUIController(String inputPath) throws OctopusException  {
 		super();
 		try {
 			init(inputPath);

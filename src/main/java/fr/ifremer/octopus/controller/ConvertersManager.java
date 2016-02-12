@@ -2,6 +2,7 @@ package fr.ifremer.octopus.controller;
 
 import java.io.File;
 import java.util.List;
+import java.util.ResourceBundle;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,9 +28,11 @@ public class ConvertersManager {
 	private static final String unitsTranslationFileName = "octopusUnitsTranslation.xml";
 	private Object conv;
 	private Format inputFormat;
+	protected  ResourceBundle messages;
 
 	public ConvertersManager(File inputFile, Format inputFormat) throws OctopusException  {
 		this.inputFormat = inputFormat;
+		messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
 
 		try{
 			String edmo;
@@ -37,7 +40,7 @@ public class ConvertersManager {
 			case MEDATLAS_NON_SDN:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
 				if (edmo==null || edmo.isEmpty()){
-					throw new OctopusException("you must set EDMO code in settings panel"); //TODO
+					throw new OctopusException(messages.getString("converter.setEdmoInSettings")); 
 				}
 				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), Integer.valueOf(edmo));
 				break;
@@ -53,14 +56,14 @@ public class ConvertersManager {
 			case MGD_81:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
 				if (edmo==null|| edmo.isEmpty()){
-					throw new OctopusException("you must set EDMO code in settings panel"); //TODO
+					throw new OctopusException(messages.getString("converter.setEdmoInSettings"));
 				}
 				conv= new MGD77V81Manager(inputFile.getAbsolutePath(), Integer.valueOf(edmo));
 				break;
 			case MGD_98:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
 				if (edmo==null){
-					throw new OctopusException("you must set EDMO code in settings panel"); //TODO
+					throw new OctopusException(messages.getString("converter.setEdmoInSettings")); 
 				}
 				conv = new MGD77V98Manager(inputFile.getAbsolutePath(), Integer.valueOf(edmo));
 				break;
@@ -69,7 +72,7 @@ public class ConvertersManager {
 			}
 		}catch(Exception e){
 			LOGGER.error(e.getMessage());
-			throw new OctopusException("error while initializing input file reader"); // TODO
+			throw new OctopusException(messages.getString("converter.errorInitInputReader")); 
 		}
 
 	}
@@ -85,7 +88,7 @@ public class ConvertersManager {
 			return ((CFReader)conv).getInputFileCdiIdList();
 		case MGD_81:
 		case MGD_98:
-			LOGGER.warn("MGD files does not contains local CDI Ids");
+			LOGGER.warn(messages.getString("converter.mgdNotContainsCDI"));
 			return null;
 		default:
 			return null;
@@ -103,22 +106,22 @@ public class ConvertersManager {
 			return ((CFReader)conv).containsCdi(cdi);
 		case MGD_81:
 		case MGD_98:
-			LOGGER.warn("MGD files does not contains local CDI Ids");
+			LOGGER.warn(messages.getString("converter.mgdNotContainsCDI"));
 		default:
-			LOGGER.error("undefined input format"); // TODO
+			LOGGER.error(messages.getString("abstractcontroller.unrecognizedInputFormat")); 
 			return false;
 		}
 	}
 
 	public List<CouplingRecord>  print(List<String> cdiList, String outputFileAbsolutePath, Format outputFormat, String outputLocalCdiId) throws MedatlasWriterException, OdvException, CFPointException, OctopusException, MGDException {
-		
+
 		if (inputFormat== Format.MGD_81 || inputFormat== Format.MGD_98){
 			if (outputLocalCdiId == null){
-				throw new OctopusException("output local CDI Id must be defined for MGD files");// TODO
+				throw new OctopusException(messages.getString("converter.outputCDIMustBeDefinedForMGD"));
 			}
 		}
-			
-			
+
+
 		String titleComplement="";
 		if (outputFormat==Format.CFPOINT){
 			titleComplement = TITLE_COMPLEMENT;
@@ -135,7 +138,7 @@ public class ConvertersManager {
 		case MGD_98:
 			return ((MGD77Manager)conv).print( outputFileAbsolutePath, outputLocalCdiId);
 		default:
-			throw new OctopusException("undefined input format");// TODO
+			throw new OctopusException(messages.getString("abstractcontroller.unrecognizedInputFormat"));
 		}
 	}
 	public void close()  {
@@ -156,10 +159,10 @@ public class ConvertersManager {
 				((MGD77Manager)conv).close();
 				break;
 			default:
-				LOGGER.error("undefined input format");// TODO
+				LOGGER.error(messages.getString("abstractcontroller.unrecognizedInputFormat"));
 			}
 		} catch (Exception e) {
-			LOGGER.error("error while closing input file ");// TODO
+			LOGGER.error(messages.getString("errorClosingInputFile"));
 		}
 
 	}

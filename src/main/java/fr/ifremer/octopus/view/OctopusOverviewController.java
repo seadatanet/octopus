@@ -3,6 +3,7 @@ package fr.ifremer.octopus.view;
 import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.text.MessageFormat;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -14,6 +15,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -58,8 +60,8 @@ import fr.ifremer.sismer_tools.seadatanet.Format;
 public class OctopusOverviewController {
 
 	static final Logger LOGGER = LogManager.getLogger(OctopusOverviewController.class.getName());
-	ResourceBundle bundle ;
-
+	private ResourceBundle bundle ;
+	private ResourceBundle messages;
 	/**
 	 *  Reference to the main application
 	 */
@@ -111,11 +113,13 @@ public class OctopusOverviewController {
 	private TextField outCDI;
 	@FXML
 	private Button chooseOutCdi;
-	
+
 
 	@FXML
 	private void initialize() {
 		LOGGER.debug("initialize");
+		messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
+
 		// disable all but inputPathTextField
 		switchGui(false);
 
@@ -296,7 +300,7 @@ public class OctopusOverviewController {
 		// input = file and output = multi -> output = file
 		if (in.isFile() && getOutputType()==OUTPUT_TYPE.MULTI ){
 			FileChooser fileChooser = new FileChooser();
-			fileChooser.setTitle("Choose output File"); // TODO
+			fileChooser.setTitle(messages.getString("octopusOverviewController.chooseOutputFile")); 
 			String def = PreferencesManager.getInstance().getOutputDefaultPath();
 			if (def!=null){
 				fileChooser.setInitialDirectory(new File(def));
@@ -307,7 +311,7 @@ public class OctopusOverviewController {
 		else
 		{
 			DirectoryChooser dirChooser = new DirectoryChooser();
-			dirChooser.setTitle("Choose output directory"); // TODO
+			dirChooser.setTitle(messages.getString("octopusOverviewController.chooseOutputDirectory")); 
 			String def = PreferencesManager.getInstance().getOutputDefaultPath();
 			if (def!=null){
 				dirChooser.setInitialDirectory(new File(def));
@@ -318,12 +322,12 @@ public class OctopusOverviewController {
 			outputPathTextField.setText(selectedFile.getAbsolutePath());
 		}
 	}
-	
+
 	@FXML
 	private void openChooseOutCdi(){
 		File selectedFile ;
 		FileChooser fileChooser = new FileChooser();
-		fileChooser.setTitle("Choose output file for ODV local CDI Ids"); // TODO
+		fileChooser.setTitle(messages.getString("octopusOverviewController.chooseMappingMgdCdi")); 
 		String def = PreferencesManager.getInstance().getInputDefaultPath();
 		if (def!=null){
 			fileChooser.setInitialDirectory(new File(def));
@@ -333,9 +337,9 @@ public class OctopusOverviewController {
 			outCDI.setText(selectedFile.getAbsolutePath());
 		}
 	}
-	
-	
-	
+
+
+
 	@FXML
 	private void inputChanged(KeyEvent event) {
 
@@ -349,7 +353,7 @@ public class OctopusOverviewController {
 	 */
 	public void initInput() {
 		LOGGER.debug("init input");
-		LOGGER.info("init " + inputPathTextField.getText());
+		LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.initInput"), inputPathTextField.getText()));
 
 		initGui();
 
@@ -385,46 +389,46 @@ public class OctopusOverviewController {
 
 	private void switchGui(boolean inputOk){
 		LOGGER.debug("switch ok "+ inputOk);
-		
-		
+
+
 		radioMono.setDisable(!inputOk|| (octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
 				||  octopusGuiController.getModel().getInputFormat()==Format.MGD_98));
 		radioMulti.setDisable(!inputOk|| ( octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
 				||  octopusGuiController.getModel().getInputFormat()==Format.MGD_98));
-		
-		
+
+
 		outputPathTextField.setDisable(!inputOk);
 		chooseOut.setDisable(!inputOk);
-		
+
 		checkButton.setDisable(!inputOk);
-		
+
 		outCDI.setDisable(!inputOk || ( octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
 				&&  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
-		
 
-				
-				if (inputOk){
-					File in = new File (octopusGuiController.getModel().getInputPath());
-					chooseOutCdi.setVisible(in.isDirectory()&& (octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
-							||  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
-				}else{
-					chooseOutCdi.setVisible(false);
-				}
-		
-		
-		
+
+
+		if (inputOk){
+			File in = new File (octopusGuiController.getModel().getInputPath());
+			chooseOutCdi.setVisible(in.isDirectory()&& (octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
+					||  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
+		}else{
+			chooseOutCdi.setVisible(false);
+		}
+
+
+
 		showCdi.visibleProperty().setValue(
 				inputOk 
 				&& octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
 				&&  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98);
 
 
-//		outputCdiContainer.visibleProperty().setValue(
-//				inputOk &&
-//				(
-//						octopusGuiController.getModel().getInputFormat()==Format.MGD_81
-//						||octopusGuiController.getModel().getInputFormat()==Format.MGD_98)
-//				);
+		//		outputCdiContainer.visibleProperty().setValue(
+		//				inputOk &&
+		//				(
+		//						octopusGuiController.getModel().getInputFormat()==Format.MGD_81
+		//						||octopusGuiController.getModel().getInputFormat()==Format.MGD_98)
+		//				);
 
 
 		if (inputOk){
@@ -435,7 +439,7 @@ public class OctopusOverviewController {
 			buttonExportMedatlas.disableProperty().setValue(disableMedatlas);
 			buttonExportOdv.disableProperty().setValue(disableOdv);
 			buttonExportCfpoint.disableProperty().setValue(disableCfPoint);
-			
+
 			outCDI.setDisable(! (f==Format.MGD_81 || f==Format.MGD_98));
 		}else{
 			buttonExportMedatlas.disableProperty().setValue(true);
@@ -450,16 +454,16 @@ public class OctopusOverviewController {
 			// Show the error message.
 			Alert alert = new Alert(AlertType.ERROR);
 			alert.initOwner(mainApp.getPrimaryStage());
-			alert.setTitle("Invalid path");// TODO
-			alert.setHeaderText("Please correct input path field");// TODO
+			alert.setTitle(messages.getString("octopusOverviewController.invalidInputPath"));
+			alert.setHeaderText(messages.getString("octopusOverviewController.fixInputPathField"));
 			if (inputPathTextField.getText().isEmpty()){
-				alert.setContentText("input path field is empty");// TODO
+				alert.setContentText(messages.getString("octopusOverviewController.emptyInputPathField"));
 			}else{
-				alert.setContentText("invalid input path");// TODO
+				alert.setContentText(messages.getString("octopusOverviewController.invalidInputPath"));
 			}
 
 			alert.showAndWait();
-			throw new OctopusException("invalid input path");// TODO
+			throw new OctopusException(messages.getString("octopusOverviewController.invalidInputPath"));
 		}
 	}
 	@FXML
@@ -492,7 +496,7 @@ public class OctopusOverviewController {
 						cdiContainer.getChildren().addAll(getCDITable());
 
 					} catch (Exception e) {
-						LOGGER.error("unable to get CDIs list");// TODO
+						LOGGER.error(messages.getObject("octopusOverviewController.unableToGetCDIList"));
 					}
 				}
 			}catch(OctopusException e){
@@ -513,21 +517,21 @@ public class OctopusOverviewController {
 		if (outputPathTextField.getText().isEmpty()){
 			Alert alert = new Alert(AlertType.ERROR);
 			alert.initOwner(mainApp.getPrimaryStage());
-			alert.setTitle("Invalid path");// TODO
-			alert.setHeaderText("Please correct output path field");// TODO
-			alert.setContentText("output path field is empty"); // TODO
+			alert.setTitle(messages.getString("octopusOverviewController.invalidOutputPath"));
+			alert.setHeaderText(messages.getString("octopusOverviewController.fixOutputPathField"));
+			alert.setContentText(messages.getString("octopusOverviewController.emptyOutputPathField"));
 			alert.showAndWait();
-			throw new OctopusException("invalid output path"); // TODO
+			throw new OctopusException(messages.getString("octopusOverviewController.invalidOutputPath")); 
 		}
 		if (octopusGuiController.getModel().getInputFormat()==Format.MGD_81||octopusGuiController.getModel().getInputFormat()==Format.MGD_98){
 			if (outCDI.getText().isEmpty()){
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.initOwner(mainApp.getPrimaryStage());
-				alert.setTitle("Invalid output local CDI ID");// TODO
-				alert.setHeaderText("Please set an output local CDI ID");// TODO
-				alert.setContentText("output output local CDI ID field is empty"); // TODO
+				alert.setTitle(messages.getString("octopusOverviewController.invalidOutputCDI"));
+				alert.setHeaderText(messages.getString("octopusOverviewController.fixOutputCDI"));
+				alert.setContentText(messages.getString("octopusOverviewController.emptyOutputCdiField")); 
 				alert.showAndWait();
-				throw new OctopusException("invalid output local CDI ID"); // TODO
+				throw new OctopusException(messages.getString("octopusOverviewController.invalidOutputCDI")); 
 			}
 		}
 
@@ -556,49 +560,60 @@ public class OctopusOverviewController {
 
 
 	private void export(Format format){
-
 		try {
-			mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
 			checkOutput();
-
-			octopusGuiController.getModel().setOutputPath(outputPathTextField.getText());
-			octopusGuiController.getModel().setOutputType(getOutputType());
-			octopusGuiController.getModel().getCdiList().clear();
-			if (!outCDI.getText().isEmpty()){
-				octopusGuiController.getModel().setOuputLocalCdiId(outCDI.getText());
-			}
-			for (SDNCdiIdObservable p : getCDITable().getItems()) {
-				if (p.getSelected()){
-					octopusGuiController.getModel().getCdiList().add(p.cdiProperty().getValue());
-				}
-			}
-
-			LOGGER.info("export to "+format.getName()); // TODO
-			octopusGuiController.getModel().setOutputFormat(format);
-			List<String> outputFiles = octopusGuiController.process();
-			if (outputFiles.size()>0){
-				LOGGER.info("process ended successfully. "+ outputFiles.size() + " files have been written");// TODO
-				LOGGER.info(outputFiles);
-			}else{
-				LOGGER.warn("process ended successfully. "+ outputFiles.size() + " files have been written");// TODO
-			}
-		} catch (OctopusException e) {
-			LOGGER.error(e.getMessage());
-		} catch (SQLException e) {
-			LOGGER.error(e.getMessage());
-		}finally{
-			mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
+		} catch (OctopusException e1) {
+			LOGGER.error(e1.getMessage());
+			return;
 		}
+
+		Task<Void> task = new Task<Void>(){
+			@Override
+			public Void call(){
+				try {
+					mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
+
+					octopusGuiController.getModel().setOutputPath(outputPathTextField.getText());
+					octopusGuiController.getModel().setOutputType(getOutputType());
+					octopusGuiController.getModel().getCdiList().clear();
+					if (!outCDI.getText().isEmpty()){
+						octopusGuiController.getModel().setOuputLocalCdiId(outCDI.getText());
+					}
+					for (SDNCdiIdObservable p : getCDITable().getItems()) {
+						if (p.getSelected()){
+							octopusGuiController.getModel().getCdiList().add(p.cdiProperty().getValue());
+						}
+					}
+
+					LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.exportTo"), format.getName())); 
+					octopusGuiController.getModel().setOutputFormat(format);
+					List<String> outputFiles = octopusGuiController.process();
+					LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.processSucessNBFiles"), outputFiles.size() ));
+					if (outputFiles.size()>0){
+						LOGGER.info(outputFiles);
+					}
+				} catch (OctopusException e) {
+					LOGGER.error(e.getMessage());
+				} catch (SQLException e) {
+					LOGGER.error(e.getMessage());
+				}finally{
+					mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
+				}
+				return null;           
+			}
+		};
+
+		Thread th = new Thread(task);
+		th.setDaemon(true);
+		th.start();
+
+
+		
 
 	}
 	@FXML
 	public void validate(){
-		try {
-			octopusGuiController.checkFormat();
-		} catch (Exception e) {
-			LOGGER.error("file is not valid");// TODO
-		}
-
+		octopusGuiController.checkFormat();
 	}
 
 }

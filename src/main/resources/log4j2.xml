@@ -28,8 +28,8 @@
 
 	<Loggers>
 		<Root level="info">
-			<AppenderRef ref="Console" level="DEBUG" />
-			<AppenderRef ref="RollingFile" level="DEBUG" />
+			<AppenderRef ref="Console" level="INFO" />
+			<AppenderRef ref="RollingFile" level="INFO" />
 		</Root>
 	</Loggers>
 </Configuration>

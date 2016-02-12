@@ -22,7 +22,7 @@ public class CouplingRecordFx {
 	public CouplingRecordFx(CouplingRecord cr) {
 		this.local_cdi_id = new SimpleStringProperty(cr.getLocal_cdi_id());
 		this.modus = new SimpleIntegerProperty(cr.getModus());
-		this.format = new SimpleStringProperty(cr.getFormat().toString());
+		this.format = new SimpleStringProperty(cr.getFormat().toCouplingFormat());//28748
 		this.path = new SimpleStringProperty(cr.getPath());
 		this.date = new SimpleObjectProperty<LocalDateTime>(cr.getDate().toLocalDateTime());
 	}

@@ -103,9 +103,11 @@ public class OctopusModel {
 	}
 	public void setOuputLocalCdiId(String outputLocalCdiId) throws OctopusException {
 		this.outputLocalCdiId = outputLocalCdiId;
-		File in = new File(this.getInputPath());
-		if (in.isDirectory()){
-			loadOutputCDIs();
+		if (outputLocalCdiId!=null){
+			File in = new File(this.getInputPath());
+			if (in.isDirectory()){
+				loadOutputCDIs();
+			}
 		}
 
 	}

@@ -262,13 +262,13 @@
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.6-SNAPSHOT</version>
+			<version>0.6</version>
 			<!-- <classifier>jar-with-dependencies</classifier> -->
 		</dependency>
 		<dependency>
 			<groupId>fr.ifremer</groupId>
 			<artifactId>mgd</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>1.0</version>
 		</dependency>
 		<!-- ************************* ****** ************************* -->
 		<dependency>

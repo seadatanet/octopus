@@ -39,6 +39,23 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		resume(in, out, logger);
 		
 	}
+	
+//	@Test
+	public void file_profile_med_2_odv_Mono_emptyCDI() {
+		inFormat="medatlas";
+		in="medatlas/inputNonSDN/profile/medatlasNonSdn.med";
+		out = "profile/file_profile_medNonSDN_2_odv_Mono_emptyCDI";
+		type= "mono";
+		outFormat = "odv";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+	}
+	
+	
 	/**
 	 * 1 med -> 1 cf
 	 * cdi list : empty

@@ -141,7 +141,6 @@ public abstract class AbstractBatch_X_2_Y_Test {
 			}
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -162,7 +161,6 @@ public abstract class AbstractBatch_X_2_Y_Test {
 				}
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

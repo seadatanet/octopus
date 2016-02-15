@@ -55,7 +55,6 @@ public class BatchArgumentsTest {
 		try {
 			FileUtils.deleteDirectory(new File(pwd+"outArgs"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

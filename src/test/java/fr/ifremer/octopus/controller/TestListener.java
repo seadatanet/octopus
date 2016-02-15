@@ -156,7 +156,6 @@ public class TestListener  extends RunListener{
 			_writer.append('\n');
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -165,7 +164,6 @@ public class TestListener  extends RunListener{
 		try {
 			_writer.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

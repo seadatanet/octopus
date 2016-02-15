@@ -2,6 +2,7 @@ package fr.ifremer.octopus.controller;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 
 
@@ -293,6 +294,29 @@ public class Batch_File_Med_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		type= "multi";
 		outFormat = "medatlas";
 		cdiList="FI35199480001_00001_H09,FI35199480002_00001_H09";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+		
+	}
+	
+	/**
+	 * 1 med -> n cf
+	 * cdi list : 2
+	 */
+	@Test
+	@Ignore
+	public void debug() {
+		
+		inFormat="medatlas";
+		in="medatlas/input/profile/diap";
+		out = "profile/file_profile_med_2_med_Mono_2CDI.txt";
+		type= "multi";
+		outFormat = "odv";
+		cdiList="FI35200110014_0002sssss0_H09,FI35200110014_00022_H09";
 		expectOutputExist=true;
 		
 		launchTest(logger);

@@ -382,8 +382,9 @@ public abstract class AbstractController {
 				);
 			case MGD_81:
 			case MGD_98:
-				if(!model.getOutputFormat().equals(Format.ODV_SDN)){
+				if (model.getOutputFormat().equals(Format.ODV_SDN)){
 					conversion = Conversion.MGD_TO_ODV;
+				}else{
 					throw new OctopusException(
 							MessageFormat.format(messages.getString("abstractcontroller.canNotConvertFromTo"),
 									model.getInputFormat().getName(), 

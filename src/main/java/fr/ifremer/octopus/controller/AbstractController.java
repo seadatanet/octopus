@@ -334,7 +334,14 @@ public abstract class AbstractController {
 			}
 	}
 	private void createOutputSubDir(String in){
-		File out = new File(model.getOutputPath()+File.separator+in);
+		File out ;
+		// remove extension
+		int dotIndex = in.lastIndexOf(".");
+		if (dotIndex==-1){
+			 out = new File(model.getOutputPath()+File.separator+in);
+		}else{
+			 out = new File(model.getOutputPath()+File.separator+in.substring(0, dotIndex));
+		}
 		out.mkdir();
 	}
 

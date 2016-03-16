@@ -281,7 +281,7 @@
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.6</version>
+			<version>0.7</version>
 			<!-- <classifier>jar-with-dependencies</classifier> -->
 		</dependency>
 		<dependency>

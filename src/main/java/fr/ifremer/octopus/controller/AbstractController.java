@@ -155,6 +155,11 @@ public abstract class AbstractController {
 			LOGGER.error(e.getMessage());
 			throw new OctopusException(e);
 		} finally{
+			try {
+				CouplingTableManager.getInstance().closeConnection();
+			} catch (ClassNotFoundException e) {
+				LOGGER.error("error closing coupling table connection "+ e.getMessage());
+			}
 		}
 		if (outputFilesList.isEmpty()){
 			deleteOutputDir();
@@ -217,7 +222,7 @@ public abstract class AbstractController {
 				for (String cdi: cdiToPrint){
 					if (model.getInputFile().isDirectory()){
 						createOutputSubDir(in.getName());
-						out = getOutFilePath(in.getName(), cdi);
+						out = getOutFilePath(getInpufNameWithoutExtension(in.getName()), cdi);
 					}else{
 						out = getOutFilePath(null, cdi);
 					}
@@ -230,7 +235,7 @@ public abstract class AbstractController {
 			//MULTI
 			else{
 				if (model.getInputFile().isDirectory()){
-					out = getOutFilePath(in.getName(), null);
+					out = getOutFilePath(getInpufNameWithoutExtension(in.getName()), null);
 				}else{
 					out = getOutFilePath(null, null);
 				}
@@ -333,15 +338,18 @@ public abstract class AbstractController {
 				throw new OctopusException(MessageFormat.format(messages.getString("abstractcontroller.errorOnOutputDirCreation"), model.getOutputPath()));
 			}
 	}
-	private void createOutputSubDir(String in){
-		File out ;
-		// remove extension
+	
+	private String getInpufNameWithoutExtension(String in){
 		int dotIndex = in.lastIndexOf(".");
 		if (dotIndex==-1){
-			 out = new File(model.getOutputPath()+File.separator+in);
+			 return in;
 		}else{
-			 out = new File(model.getOutputPath()+File.separator+in.substring(0, dotIndex));
+			return in.substring(0, dotIndex);
 		}
+	}
+	private void createOutputSubDir(String in){
+		File out ;
+		out = new File(model.getOutputPath()+File.separator+getInpufNameWithoutExtension(in));
 		out.mkdir();
 	}
 

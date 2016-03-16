@@ -36,6 +36,12 @@ public class CouplingController {
 	 * Reference to the main application
 	 */
 	private MainApp mainApp;
+	
+	@FXML
+	private Button 	export;
+	@FXML
+	private Button 	clean;
+	
 	@FXML
 	private TableView<CouplingRecordFx> couplingTable;
 	@FXML
@@ -49,13 +55,10 @@ public class CouplingController {
 	@FXML
 	TableColumn<CouplingRecordFx, LocalDateTime>  date_column;
 
-	@FXML
-	Button export;
 	String couplingPath = "";
 	@FXML
 	private void initialize() {
-
-
+		
 		local_cdi_id_column.setCellValueFactory(cellData -> cellData.getValue().getLocal_cdi_id());
 		modus_column.setCellValueFactory(cellData -> cellData.getValue().getModus().asObject());
 		format_column.setCellValueFactory(cellData -> cellData.getValue().getFormat());

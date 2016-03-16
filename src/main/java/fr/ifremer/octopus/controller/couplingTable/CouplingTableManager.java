@@ -92,11 +92,12 @@ public class CouplingTableManager {
 					+"FORMAT VARCHAR(12), PATH VARCHAR(255), DATEUPDATE TIMESTAMP)";
 			PreparedStatement stmt = c.prepareStatement(create);
 			stmt.execute();
+			stmt.close();
 		}
 
 
 	}
-	
+
 	public void cleanCoupling() throws SQLException, ClassNotFoundException{
 		deleteTable();
 		init();		
@@ -105,6 +106,7 @@ public class CouplingTableManager {
 		String create = "DROP TABLE COUPLING";
 		PreparedStatement stmt = c.prepareStatement(create);
 		stmt.execute();
+		stmt.close();
 	}
 	public Connection createDatabaseConnection()
 			throws SQLException, ClassNotFoundException {
@@ -119,7 +121,18 @@ public class CouplingTableManager {
 		}
 		return c;
 	}
-
+	public void closeConnection(){
+//		if (c!=null){
+//			try {
+//				stmtUpdateExistingRecord.closeOnCompletion();
+//				stmtSaveNewRecord.closeOnCompletion();
+//				c.commit();
+//				c.close();
+//			} catch (Exception e) {
+//				LOGGER.error("error closing coupling table connection "+ e.getMessage());
+//			}
+//		}
+	}
 	private void getPreparedStatementList() throws SQLException {
 		stmtListRecord = c.prepareStatement(	"SELECT * FROM COUPLING "); 
 
@@ -154,12 +167,8 @@ public class CouplingTableManager {
 			stmtSaveNewRecord.setString(1, record.getLocal_cdi_id());
 			stmtSaveNewRecord.setInt(2, record.getModus());
 			stmtSaveNewRecord.setString(3, record.getFormat().toCouplingFormat());
-
-
-
 			stmtSaveNewRecord.setString(4, record.getPath());
 			stmtSaveNewRecord.setTimestamp(5, record.getDate());
-
 			stmtSaveNewRecord.executeUpdate();
 
 		} catch(SQLException e) {
@@ -213,6 +222,7 @@ public class CouplingTableManager {
 					saveRecord(cr, couplingPrefix);
 				}
 			}
+
 		}
 	}
 
@@ -239,6 +249,7 @@ public class CouplingTableManager {
 			if (results.next()) {
 				return true;
 			}
+			results.close();
 			return false;
 		} catch (SQLException e) {
 			LOGGER.error("error reading coupling table");
@@ -284,6 +295,7 @@ public class CouplingTableManager {
 			CouplingTableManager.getInstance().export("coupling.txt");
 
 		} catch ( OctopusException | ClassNotFoundException | SQLException e) {
+			LOGGER.error(e.getMessage());
 			e.printStackTrace();
 		}
 

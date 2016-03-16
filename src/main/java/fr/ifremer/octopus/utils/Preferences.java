@@ -6,6 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Preferences {
 
 	private String language;
+	private int theme;
 	private String inputDefaultPath;
 	private String outputDefaultPath;
 	private String edmocode;
@@ -48,6 +49,12 @@ public class Preferences {
 	}
 	public boolean isCouplingEnabled() {
 		return isCouplingEnabled;
+	}
+	public int getTheme() {
+		return theme;
+	}
+	public void setTheme(int theme) {
+		this.theme = theme;
 	}
 
 }

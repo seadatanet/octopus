@@ -2,9 +2,10 @@
 /*
  * fonce #465561
  * clair #d0d1d2
+ * octopus #aaaaaa
  */
 AnchorPane{
-	-fx-background-color: #d0d1d2;
+	-fx-background-color: #ffffff;
 }
 
 
@@ -13,7 +14,7 @@ AnchorPane{
 .label {
     -fx-font-size: 11pt;
     -fx-font-family: "Segoe UI Semibold";
-    -fx-text-fill: #465561;
+    -fx-text-fill: #555555;
     -fx-opacity: 1;
 }
 
@@ -22,25 +23,45 @@ AnchorPane{
 
 /**radio buttons labels */
 RadioButton{
-	  -fx-text-fill: #465561;
+	  -fx-text-fill: #555555;
 }
 
 
 /** ================= menu bar==================== */
 .menu-bar {
-    -fx-background-color: derive(#d0d1d2,20%);
+    -fx-background-color: #aaaaaa;
+     -fx-text-fill: #ffffff;
+    
 }
 
 .context-menu {
-    -fx-background-color: derive(#d0d1d2,50%); /*menus deroulants */
+    -fx-background-color: derive(#ffffff,50%); /*menus deroulants */
 }
 
 .menu-bar .label {
     -fx-font-size: 10pt;
     -fx-font-family: "Segoe UI Light";
-    -fx-text-fill: #465561;
     -fx-opacity: 0.9;
+     -fx-text-fill: #ffffff;
 }
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #aaaaaa;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+/*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}
+/*
+.menu{
+	  -fx-background-color: #cc66ff;
+}
+
+.menu-item .label{
+      -fx-background-color: #cc66ff;
+}
+ */
+
 /*
 .menu .left-container {
     -fx-background-color: red;
@@ -52,45 +73,34 @@ RadioButton{
     -fx-font-size: 12pt;
     -fx-font-family: "Segoe UI Semibold";
 }
-/*
 
 .button {
-    -fx-padding: 5 5 5 5;   
-    -fx-border-color: #000000;
-    -fx-border-width: 0.1;
-    -fx-background-radius: 5;
-    -fx-border-radius: 5;
-    -fx-background-color: #465561;
-    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    -fx-font-size: 11pt;
-    -fx-text-fill:  #d0d1d2;
-    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-background-color: linear-gradient(#999999, #333333);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
 }
-
-*/
-/*
 .button:hover {
-    -fx-background-color: #3a3a3a;
+    -fx-background-color: linear-gradient(#aaaaaa, #555555);
 }
-
 .button:pressed, .button:default:hover:pressed {
   -fx-background-color: white;
-  -fx-text-fill: #1d1d1d;
-}
-
-.button:focused {
-    -fx-border-color: white, white;
-    -fx-border-width: 1, 1;
-    -fx-border-style: solid, segments(1, 1);
-    -fx-border-radius: 0, 0;
-    -fx-border-insets: 1 1 1 1, 0;
-}
-
+  -fx-text-fill: #aaaaaa;
+  }
 .button:disabled, .button:default:disabled {
-    -fx-opacity: 0.4;
-    -fx-background-color: #1d1d1d;
+    -fx-opacity: 0.6;
+    -fx-background-color: #aaaaaa;
     -fx-text-fill: white;
 }
+
+/*
+
+
+
+
+
+
+
 
 .button:default {
     -fx-background-color: -fx-focus-color;
@@ -126,33 +136,7 @@ RadioButton{
     -fx-table-header-border-color: transparent;
     -fx-padding: 5;
 }
-/*
-.table-view .column-header-background {
-    -fx-background-color: transparent;
-}
 
-.table-view .column-header, .table-view .filler {
-    -fx-size: 15;
-    -fx-border-width: 0 0 1 0;
-    -fx-background-color: transparent;
-    -fx-border-color: 
-        transparent
-        transparent
-        derive(-fx-base, 80%) 
-        transparent;
-    -fx-border-insets: 0 10 1 0;
-}
-
-.table-view .column-header .label {
-    -fx-font-size: 10pt;
-    -fx-font-family: "Segoe UI Light";
-    -fx-text-fill: #465561;
-    -fx-alignment: center-left;
-    -fx-opacity: 1;
-}
-
-
-*/
 .table-view:focused .table-row-cell:filled:selected {
     -fx-background-color: #465561;
 }
@@ -170,4 +154,9 @@ RadioButton{
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: #465561;
 }
-
+.panelH1{
+	  -fx-font-size: 21pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #555555;
+    -fx-opacity: 1;
+}

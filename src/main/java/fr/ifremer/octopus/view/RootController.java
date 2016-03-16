@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
+import javafx.application.Application;
 import javafx.application.HostServices;
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
@@ -38,9 +38,6 @@ public class RootController {
 	private void initialize() {
 		LOGGER.debug("initialize");
 		messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
-
-
-
 	}
 	
 	
@@ -51,6 +48,7 @@ public class RootController {
 	 */
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
+		
 	}
 	/**
 	 * Closes the application.
@@ -62,6 +60,7 @@ public class RootController {
 
 	@FXML
 	private void openFile() {
+		mainApp.setCenterOverview();
 		ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
 		FileChooser fileChooser = new FileChooser();
 		fileChooser.setTitle(messages.getString("rootController.openFile")); 
@@ -78,6 +77,7 @@ public class RootController {
 
 	@FXML
 	private void openDir() {
+		mainApp.setCenterOverview();
 		ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
 		DirectoryChooser dirChooser = new DirectoryChooser();
 		dirChooser.setTitle(messages.getString("rootController.openDirectory")); 

@@ -71,6 +71,7 @@ public class MainApp extends Application {
 		showRootLayout();
 		initOverview();
 		showOverview();
+		 
 	}
 
 
@@ -95,12 +96,20 @@ public class MainApp extends Application {
 		controller.setMainApp(this);
 
 
-
+		  
 	}
 	public void showRootLayout(){
 		// Show the scene containing the root layout.
 		Scene scene = new Scene(rootLayout);
 		primaryStage.setScene(scene);
+
+//		scene.getStylesheets()
+//		.add(getClass().getResource("view/whiteTheme.css")
+//				.toExternalForm());
+		scene.getStylesheets()
+		.add(getClass().getResource("view/"+PreferencesManager.getInstance().getThemeFileName())
+				.toExternalForm());
+		
 		primaryStage.show();
 	}
 

@@ -26,7 +26,7 @@
                </padding>
                <children>
                   <Button mnemonicParsing="false" onAction="#browseIn" prefHeight="25.0" prefWidth="100.0" text="%preferences.chooseIn" />
-                  <TextField fx:id="inputDefault" prefHeight="25.0" prefWidth="918.0" HBox.hgrow="ALWAYS">
+                  <TextField fx:id="inputDefault" editable="false" prefHeight="25.0" prefWidth="918.0" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets left="15.0" right="15.0" />
                      </HBox.margin>
@@ -36,7 +36,7 @@
             <HBox>
                <children>
                   <Button mnemonicParsing="false" onAction="#browseOut" prefHeight="25.0" prefWidth="100.0" text="%preferences.chooseOut" />
-                  <TextField fx:id="outputDefault" prefHeight="25.0" prefWidth="372.0" HBox.hgrow="ALWAYS">
+                  <TextField fx:id="outputDefault" editable="false" prefHeight="25.0" prefWidth="372.0" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets left="15.0" right="15.0" />
                      </HBox.margin>
@@ -57,7 +57,7 @@
             <HBox>
                <children>
                   <Button mnemonicParsing="false" onAction="#browseCouplingPrefix" prefHeight="25.0" prefWidth="100.0" text="%preferences.chooseCouplingPrefix" />
-                  <TextField fx:id="couplingPrefix" prefHeight="25.0" prefWidth="905.0" HBox.hgrow="ALWAYS">
+                  <TextField fx:id="couplingPrefix" editable="false" prefHeight="25.0" prefWidth="905.0" HBox.hgrow="ALWAYS">
                      <HBox.margin>
                         <Insets left="15.0" right="15.0" />
                      </HBox.margin>
@@ -90,7 +90,7 @@
             <Insets bottom="5.0" right="5.0" top="5.0" />
          </padding>
       </HBox>
-      <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="624.0" text="%preferences.title">
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="624.0" styleClass="panelH1" text="%preferences.title">
          <font>
             <Font name="FreeMono" size="30.0" />
          </font>
@@ -126,6 +126,8 @@
                   <Insets left="15.0" right="15.0" />
                </HBox.margin>
             </ChoiceBox>
+            <Label prefHeight="28.0" prefWidth="100.0" text="%preferences.theme" />
+            <ChoiceBox fx:id="themeChoiceBox" prefWidth="150.0" />
          </children>
       </HBox>
    </children>

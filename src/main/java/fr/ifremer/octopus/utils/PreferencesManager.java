@@ -23,6 +23,11 @@ public class PreferencesManager {
 	private static final String preferencesFile = "resources/preferences.xml";
 	public static final Locale LOCALE_FR = new Locale(Locale.FRENCH.getLanguage(), Locale.FRANCE.getCountry());
 	public static final Locale LOCALE_UK = new Locale(Locale.ENGLISH.getLanguage(), Locale.UK.getCountry());
+	
+	
+	public static final int THEME_WHITE=0;
+	public static final int THEME_OCTOPUS=1;
+	
 	private static PreferencesManager mgr;
 
 	private Preferences preferences;
@@ -160,5 +165,36 @@ public class PreferencesManager {
 	}
 	public boolean isCouplingEnabled() {
 		return preferences.isCouplingEnabled();
+	}
+
+	public int getTheme() {
+		return preferences.getTheme();
+	}
+	public void setTheme(int index) {
+		preferences.setTheme(index);
+	}
+	
+	/**
+	 * 
+	 * @return current theme file name
+	 */
+	public String getThemeFileName(){
+		return getThemeFileName(preferences.getTheme());
+	}
+	/**
+	 * 
+	 * @param index: theme index
+	 * @return theme file name associated to the index
+	 */
+	public String getThemeFileName(int index){
+		switch (index) {
+		case 0:
+			return "whiteTheme.css";
+		case 1:
+			return "octopusTheme.css";
+		default:
+			return "whiteTheme.css";
+		}
+		
 	}
 }

@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -10,7 +12,7 @@
         <items>
             <Button mnemonicParsing="false" onAction="#handleRemoveSelected" text="Remove selected" />
             <Button fx:id="buttonClearLog" mnemonicParsing="false" onAction="#handleClearLog" text="Clear" />
-            <ToggleButton fx:id="toggleButtonAutoScroll" mnemonicParsing="false" text="Auto-Scroll" />
+            <ToggleButton fx:id="toggleButtonAutoScroll" mnemonicParsing="false" selected="true" text="Auto-Scroll" />
             <ChoiceBox fx:id="choiceBoxLogLevel" prefWidth="150.0" />
         </items>
       </ToolBar>

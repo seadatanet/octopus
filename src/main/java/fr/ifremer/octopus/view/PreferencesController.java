@@ -54,6 +54,8 @@ public class PreferencesController {
 	@FXML
 	private HBox languageBox;
 	@FXML
+	private ChoiceBox<String> themeChoiceBox;
+	@FXML
 	private Button edmoChoiceButton;
 	@FXML 
 	private Label edmoCodeValue;
@@ -88,7 +90,12 @@ public class PreferencesController {
 						PreferencesManager.getInstance().getLocale());
 		languageChoiceBox.getItems().add("fr");
 		languageChoiceBox.getItems().add("uk");
-
+		
+		
+		// theme order is important: same order as in fr.ifremer.octopus.utils.PreferencesManager.getThemeFileName(int)
+		themeChoiceBox.getItems().add("white");
+		themeChoiceBox.getItems().add("octopus");
+		
 
 		int index=0;
 		if (PreferencesManager.getInstance().getLocale()== PreferencesManager.LOCALE_FR){
@@ -103,6 +110,13 @@ public class PreferencesController {
 		languageChoiceBox.valueProperty().addListener((observable, oldValue, newValue) ->
 		updateLanguage(newValue));
 
+		//theme
+		themeChoiceBox.getSelectionModel().select(PreferencesManager.getInstance().getTheme());
+		// add listener AFTER first select
+		themeChoiceBox.valueProperty().addListener((observable, oldValue, newValue) ->
+				updateTheme(themeChoiceBox.getSelectionModel().getSelectedIndex()));
+				
+				
 		// 	edmo
 		// call manager to create instance and init EDMO list
 		EdmoManager.getInstance();
@@ -181,7 +195,26 @@ public class PreferencesController {
 		}
 		mainApp.initOverview();
 	}
-
+	private void updateTheme (int newValue){
+		PreferencesManager.getInstance().setTheme(newValue);
+		LOGGER.debug("theme "+newValue+":"+ PreferencesManager.getInstance().getThemeFileName(newValue));
+		mainApp.getPrimaryStage().getScene().getStylesheets()
+		.add(getClass().getResource(PreferencesManager.getInstance().getThemeFileName(newValue))
+				.toExternalForm());
+		
+		
+		PreferencesManager.getInstance().save();
+		try {
+			mainApp.initRootLayout();
+			mainApp.showRootLayout();
+			mainApp.showPreferences();
+		} catch (IOException e) {
+			LOGGER.error(e.getMessage());
+		}
+		mainApp.initOverview();
+		
+	}
+	
 	@FXML
 	private void closePreferences(){
 		mainApp.setCenterOverview();

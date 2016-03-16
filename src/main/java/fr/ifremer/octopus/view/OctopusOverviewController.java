@@ -26,6 +26,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.CheckBoxBuilder;
+import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
@@ -34,6 +35,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
@@ -73,6 +75,9 @@ public class OctopusOverviewController {
 
 	@FXML
 	private TextField inputPathTextField;
+	private boolean inputChanged;
+	@FXML
+	private Button 	submitInput;
 	@FXML
 	private Button chooseInFile;
 	@FXML
@@ -110,6 +115,8 @@ public class OctopusOverviewController {
 
 	// output CDI for input MGD files
 	@FXML
+	private Label outCDILabel;
+	@FXML
 	private TextField outCDI;
 	@FXML
 	private Button chooseOutCdi;
@@ -119,7 +126,14 @@ public class OctopusOverviewController {
 	private void initialize() {
 		LOGGER.debug("initialize");
 		messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
-
+		//		 Handle TextField text changes.
+		inputPathTextField.textProperty().addListener((observable, oldValue, newValue) -> {
+			if (!oldValue.equals(newValue)){
+				inputChanged=true;
+				switchGui(false);
+				submitInput.setVisible(true);
+			}
+		});
 		// disable all but inputPathTextField
 		switchGui(false);
 
@@ -347,6 +361,10 @@ public class OctopusOverviewController {
 			initInput();
 		}
 	}
+	@FXML
+	private void inputChangedManual() {
+			initInput();
+	}
 
 	/**
 	 * initialize GUI, load controller if input path is valid
@@ -384,13 +402,51 @@ public class OctopusOverviewController {
 		cdiTable=null;
 		outputPathTextField.setText("");
 		outCDI.setText("");
+		submitInput.setVisible(false);
+	
+
 		switchGui(false);
 	}
 
+	
+	private void switchOutCDI(boolean inputOk){
+		
+		if (!inputOk){
+			chooseOutCdi.setVisible(false);
+			outCDI.setVisible(false);
+			outCDILabel.setVisible(false);
+		}
+		else if(octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
+				&& octopusGuiController.getModel().getInputFormat()!=Format.MGD_98){
+			chooseOutCdi.setVisible(false);
+			outCDI.setVisible(false);
+			outCDILabel.setVisible(false);
+		}else{ // input ok & MGD
+			outCDI.setDisable(!inputOk );
+			File in = new File (octopusGuiController.getModel().getInputPath());
+			chooseOutCdi.setVisible(in.isDirectory());
+			outCDI.setVisible(true);
+			outCDILabel.setVisible(true);
+		}
+	
+
+
+
+//		if (inputOk){
+//			File in = new File (octopusGuiController.getModel().getInputPath());
+//			// choose button only if input is a directory (mapping CDI file)
+//			chooseOutCdi.setVisible(in.isDirectory()&& (octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
+//					||  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
+//		}else{
+//			chooseOutCdi.setVisible(false);
+//			outCDI.setVisible(false);
+//		}
+	}
 	private void switchGui(boolean inputOk){
 		LOGGER.debug("switch ok "+ inputOk);
 
-
+		submitInput.setVisible(false);
+		
 		radioMono.setDisable(!inputOk|| (octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
 				||  octopusGuiController.getModel().getInputFormat()==Format.MGD_98));
 		radioMulti.setDisable(!inputOk|| ( octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
@@ -401,19 +457,9 @@ public class OctopusOverviewController {
 		chooseOut.setDisable(!inputOk);
 
 		checkButton.setDisable(!inputOk);
-
-		outCDI.setDisable(!inputOk || ( octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
-				&&  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
-
-
-
-		if (inputOk){
-			File in = new File (octopusGuiController.getModel().getInputPath());
-			chooseOutCdi.setVisible(in.isDirectory()&& (octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
-					||  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
-		}else{
-			chooseOutCdi.setVisible(false);
-		}
+		
+		switchOutCDI(inputOk);
+		
 
 
 
@@ -423,12 +469,6 @@ public class OctopusOverviewController {
 				&&  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98);
 
 
-		//		outputCdiContainer.visibleProperty().setValue(
-		//				inputOk &&
-		//				(
-		//						octopusGuiController.getModel().getInputFormat()==Format.MGD_81
-		//						||octopusGuiController.getModel().getInputFormat()==Format.MGD_98)
-		//				);
 
 
 		if (inputOk){
@@ -608,7 +648,7 @@ public class OctopusOverviewController {
 		th.start();
 
 
-		
+
 
 	}
 	@FXML

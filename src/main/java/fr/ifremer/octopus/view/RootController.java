@@ -94,14 +94,14 @@ public class RootController {
 	@FXML
 	private void showManual(){
 		try {
-
-			Locale locale = PreferencesManager.getInstance().getLocale();
+			// version 1.0: manual is only in EN
+//			Locale locale = PreferencesManager.getInstance().getLocale();
 			String docPath ;
-			if (locale==PreferencesManager.LOCALE_FR){
-				docPath = "resources\\manuel.pdf";
-			}else{
+//			if (locale==PreferencesManager.LOCALE_FR){
+//				docPath = "resources\\manuel.pdf";
+//			}else{
 				docPath = "resources\\manual.pdf";
-			}
+//			}
 
 			File f = new File(docPath);
 			if (f.exists()){
@@ -109,11 +109,11 @@ public class RootController {
 			}
 			// linux
 			else{
-				if (locale==Locale.FRANCE){
+//				if (locale==Locale.FRANCE){
 					docPath = "resources/manuel.pdf";
-				}else{
-					docPath = "resources/manual.pdf";
-				}
+//				}else{
+//					docPath = "resources/manual.pdf";
+//				}
 				f = new File(docPath);
 				if (f.exists()){
 					HostServices hostServices = mainApp.getHostServices();

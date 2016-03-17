@@ -110,9 +110,9 @@ public class RootController {
 			// linux
 			else{
 //				if (locale==Locale.FRANCE){
-					docPath = "resources/manuel.pdf";
+//					docPath = "resources/manuel.pdf";
 //				}else{
-//					docPath = "resources/manual.pdf";
+					docPath = "resources/manual.pdf";
 //				}
 				f = new File(docPath);
 				if (f.exists()){

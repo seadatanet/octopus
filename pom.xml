@@ -9,7 +9,7 @@
 	<name>octopus</name>
 	<description>Octopus is a tool to convert and/or split files to SDN files </description>
 	<packaging>jar</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->

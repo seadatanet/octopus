@@ -525,6 +525,7 @@ public abstract class AbstractController {
 		FormatChecker checker = null;
 		switch (model.getInputFormat()) {
 		case MEDATLAS_SDN:
+		case MEDATLAS_NON_SDN:
 			checker= new MedatlasFormatChecker();
 			break;
 		case ODV_SDN:

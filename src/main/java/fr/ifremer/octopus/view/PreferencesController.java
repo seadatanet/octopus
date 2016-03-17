@@ -255,6 +255,8 @@ public class PreferencesController {
 	}
 	private void disablePane(boolean disable){
 		languageBox.setDisable(disable);
+		languageChoiceBox.setDisable(disable);
+		themeChoiceBox.setDisable(disable);
 		directoriesBox.setDisable(disable);
 		bodcLog.setDisable(disable);
 		updateListsButton.setDisable(disable);

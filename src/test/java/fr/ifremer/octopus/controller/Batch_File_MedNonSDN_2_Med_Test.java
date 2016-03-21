@@ -30,7 +30,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/inputNonSDN/profile/medatlasNonSdn.med";
 		out = "profile/file_profile_medNonSDN_2_med_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "medatlas";
 		expectOutputExist=true;
 		
@@ -45,7 +45,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/inputNonSDN/profile/medatlasNonSdn.med";
 		out = "profile/file_profile_medNonSDN_2_odv_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "odv";
 		expectOutputExist=true;
 		
@@ -65,7 +65,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/inputNonSDN/profile/medatlasNonSdn.med";
 		out = "profile/file_profile_medNonSDN_2_med_Multi_emptyCDI";
-		type= "multi";
+		type= "keep";
 		outFormat = "medatlas";
 		expectOutputExist = true;
 		
@@ -84,7 +84,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/inputNonSDN/profile/coriolis_H10_CO_4900778_20101214_180437.txt";
 		out = "profile/file_profile_medNonSDNCoriolis_2_med_Multi_emptyCDI";
-		type= "multi";
+		type= "keep";
 		outFormat = "medatlas";
 		expectOutputExist = true;
 		
@@ -104,7 +104,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/inputNonSDN/profile/medatlasNonSdn.med";
 		out = "profile/file_profile_medNonSDN_2_med_Mono_2CDI";
-		type= "mono";
+		type= "split";
 		outFormat = "medatlas";
 		cdiList="FI35199810007_00002_H09,FI35200110014_00022_H09";
 		expectOutputExist=false;
@@ -125,7 +125,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/inputNonSDN/profile/medatlasNonSdn.med";
 		out = "profile/file_profile_medNonSDN_2_med_Mono_2CDI_inputNoRef";
-		type= "mono";
+		type= "split";
 		outFormat = "medatlas";
 		cdiList="FI29200110014_00025_H09,FI29200110014_00024_H09";
 		expectOutputExist=false;
@@ -143,7 +143,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/profile/diap";
 		out = "profile/file_profile_med_2_med_Multi_2CDI";
-		type= "multi";
+		type= "keep";
 		outFormat = "medatlas";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
 		expectOutputExist=true;
@@ -165,7 +165,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/timeseries/suva";
 		out = "timeseries/file_timeseries_med_2_med_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "medatlas";
 		expectOutputExist=true;
 		
@@ -183,7 +183,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/timeseries/suva";
 		out = "timeseries/file_timeseries_med_2_med_Multi_emptyCDI";
-		type= "multi";
+		type= "keep";
 		outFormat = "medatlas";
 		expectOutputExist = true;
 		
@@ -203,7 +203,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/timeseries/suva";
 		out = "timeseries/file_timeseries_med_2_med_Mono_2CDI";
-		type= "mono";
+		type= "split";
 		outFormat = "medatlas";
 		cdiList="FI35199810007_00002_D09,FI35199810007_00001_D09";
 		expectOutputExist=true;
@@ -224,7 +224,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/timeseries/suva_inputNoRef";
 		out = "timeseries/file_timeseries_med_2_med_Mono_2CDI_inputNoRef";
-		type= "mono";
+		type= "split";
 		outFormat = "medatlas";
 		cdiList="FI35199810007_00002_D09,FI35199810007_00001_D09";
 		expectOutputExist=true;
@@ -242,7 +242,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/timeseries/suva";
 		out = "timeseries/file_timeseries_med_2_med_Multi_2CDI";
-		type= "multi";
+		type= "keep";
 		outFormat = "medatlas";
 		cdiList="FI35199810007_00002_D09,FI35199810007_00001_D09";
 		
@@ -271,7 +271,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/trajectory/M_trajectory_bath";
 		out = "trajectory/file_trajectory_med_2_med_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "medatlas";
 		expectOutputExist=true;
 		
@@ -289,7 +289,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/trajectory/M_trajectory_bath";
 		out = "trajectory/file_trajectory_med_2_med_Multi_emptyCDI";
-		type= "multi";
+		type= "keep";
 		outFormat = "medatlas";
 		expectOutputExist = true;
 		
@@ -309,7 +309,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/trajectory/M_trajectory_bath";
 		out = "trajectory/file_trajectory_med_2_med_Mono_2CDI";
-		type= "mono";
+		type= "split";
 		outFormat = "medatlas";
 		cdiList="FI35199480001_00001_H09,FI35199480002_00001_H09";
 		expectOutputExist=true;
@@ -326,7 +326,7 @@ public class Batch_File_MedNonSDN_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/trajectory/M_trajectory_bath";
 		out = "trajectory/file_trajectory_med_2_med_Multi_2CDI";
-		type= "multi";
+		type= "keep";
 		outFormat = "medatlas";
 		cdiList="FI35199480001_00001_H09,FI35199480002_00001_H09";
 		expectOutputExist=true;

@@ -34,13 +34,24 @@ public class BatchArgumentsTest {
 	public static void before(){
 		pwd = new File("##").getAbsolutePath().replace("#", "") + "src"+File.separator+"test"+File.separator+"resources"+File.separator;
 	}
-	
+	@Test
+	public void noArgsTest() {
+		BatchController b = null ;
+		String[] args = new String[]{};
+		logArgs(args);
+		try{
+			b = new BatchController(args, true);
+		}catch (Exception e){
+			logger.error("JUNIT TEST ERROR");
+		
+		}
+	}
 	@Test
 	public void goodArgsTest() {
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas"+File.separator+"input"+File.separator+"profile"+File.separator+"diap";
 		String out = "-o "+pwd+"outArgs";
-		String[] args = new String[]{in, out, "-f medatlas", "-t mono"};
+		String[] args = new String[]{in, out, "-f medatlas", "-t split"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
@@ -64,7 +75,7 @@ public class BatchArgumentsTest {
 		BatchController b = null ;
 		String in="-i ";
 		String out = "-o "+pwd+"out";
-		String[] args = new String[]{in, out, "-f medatlas", "-t mono"};
+		String[] args = new String[]{in, out, "-f medatlas", "-t split"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
@@ -78,7 +89,7 @@ public class BatchArgumentsTest {
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/input/profile/diap";
 		String out = "-o ";
-		String[] args = new String[]{in, out, "-f medatlas", "-t mono"};
+		String[] args = new String[]{in, out, "-f medatlas", "-t split"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
@@ -92,7 +103,7 @@ public class BatchArgumentsTest {
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/input/profile/diap";
 		String out = "-o "+pwd+"out";
-		String[] args = new String[]{in, out, "-f toto", "-t mono"};
+		String[] args = new String[]{in, out, "-f toto", "-t split"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
@@ -121,7 +132,7 @@ public class BatchArgumentsTest {
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/input/profile/diap";
 		String out = "-o "+pwd+"out.toto";
-		String[] args = new String[]{in, out, "-f medatlas", "-t multi","-c FI35200110014_00020_H09,FI35200110014_00022_H09"};
+		String[] args = new String[]{in, out, "-f medatlas", "-t keep","-c FI35200110014_00020_H09,FI35200110014_00022_H09"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
@@ -140,7 +151,7 @@ public class BatchArgumentsTest {
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/input/profile/diap";
 		String out = "-o "+pwd+"out.toto";
-		String[] args = new String[]{in, out, "-f odv", "-t multi"};
+		String[] args = new String[]{in, out, "-f odv", "-t keep"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);
@@ -158,7 +169,7 @@ public class BatchArgumentsTest {
 		BatchController b = null ;
 		String in="-i "+pwd+"medatlas/input/profile/diap";
 		String out = "-o "+pwd+"out.toto";
-		String[] args = new String[]{in, out, "-f cfpoint", "-t multi"};
+		String[] args = new String[]{in, out, "-f cfpoint", "-t keep"};
 		logArgs(args);
 		try{
 			b = new BatchController(args, true);

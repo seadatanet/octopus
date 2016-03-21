@@ -32,7 +32,7 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="odv";
 		in="odv/input/profile/diap.txt";
 		out = "profile/file_odv_2_odv_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "odv";
 		expectOutputExist=true;
 		
@@ -50,7 +50,7 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="odv";
 		in="odv/input/profile/diap.txt";
 		out = "profile/file_odv_2_odv_Multi_emptyCDI.txt";
-		type= "multi";
+		type= "keep";
 		outFormat = "odv";
 		expectOutputExist=true;
 		
@@ -68,7 +68,7 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="odv";
 		in="odv/input/profile/diap.txt";
 		out = "profile/file_odv_2_odv_Mono_2CDI";
-		type= "mono";
+		type= "split";
 		outFormat = "odv";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
 		expectOutputExist=true;
@@ -82,7 +82,7 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="odv";
 		in="odv/input/profile/diap.txt";
 		out = "profile/file_odv_2_odv_Mono_nonExistingCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "odv";
 		cdiList="toto";
 		expectOutputExist=false;
@@ -98,7 +98,7 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="odv";
 		in="odv/input/profile/diap.txt";
 		out = "profile/file_odv_2_odv_Multi_2CDI.txt";
-		type= "multi";
+		type= "keep";
 		outFormat = "odv";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
 		

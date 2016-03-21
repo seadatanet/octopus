@@ -32,7 +32,7 @@ public class Batch_Dir_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/profile";
 		out = "profile/dir_profile_med_2_cf_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "cfpoint";
 		
 		launchTest(logger);
@@ -48,7 +48,7 @@ public class Batch_Dir_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/profile";
 		out = "profile/dir_profile_med_2_cf_Multi_emptyCDI.nc";
-		type= "multi";
+		type= "keep";
 		outFormat = "cfpoint";
 		
 		launchTest(logger);
@@ -66,7 +66,7 @@ public class Batch_Dir_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/profile";
 		out = "profile/dir_profile_med_2_cf_Mono_2CDI";
-		type= "mono";
+		type= "split";
 		outFormat = "cfpoint";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";
 		
@@ -82,7 +82,7 @@ public class Batch_Dir_Med_2_Cf_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="medatlas";
 		in="medatlas/input/profile";
 		out = "profile/dir_profile_med_2_cf_Multi_2CDI.nc";
-		type= "multi";
+		type= "keep";
 		outFormat = "cfpoint";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";
 		

@@ -35,7 +35,7 @@ public class Batch_Dir_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 	public void dir_profile_med_2_odv_Mono_emptyCDI() {
 		in="medatlas/input/profile";
 		out = "profile/dir_profile_med_2_odv_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
@@ -49,7 +49,7 @@ public class Batch_Dir_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 	public void dir_profile_med_2_odv_Multi_emptyCDI() {
 		in="medatlas/input/profile";
 		out = "profile/dir_profile_med_2_odv_Multi_emptyCDI";
-		type= "multi";
+		type= "keep";
 		
 		
 		launchTest(logger);
@@ -64,7 +64,7 @@ public class Batch_Dir_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 	public void dir_profile_med_2_odv_Mono_2CDI() {
 		in="medatlas/input/profile";
 		out = "profile/dir_profile_med_2_odv_Mono_2CDI";
-		type= "mono";
+		type= "split";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";
 		
 		launchTest(logger);
@@ -75,7 +75,7 @@ public class Batch_Dir_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 	public void dir_profile_med_2_odv_Multi_2CDI() {
 		in="medatlas/input/profile";
 		out = "profile/dir_profile_med_2_odv_Multi_2CDI";
-		type= "multi";
+		type= "keep";
 		cdiList = "FI35200110014_00020_H09,FI35200110014_00022_H09,FI29200110014_00020_H09,FI29200110014_00022_H09";
 		
 		launchTest(logger);

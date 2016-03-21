@@ -31,7 +31,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/profile/diap";
 		out = "profile/file_profile_med_2_odv_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "odv";
 		expectOutputExist=true;
 		
@@ -49,7 +49,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/profile/diap";
 		out = "profile/file_profile_med_2_odv_Multi_emptyCDI.txt";
-		type= "multi";
+		type= "keep";
 		outFormat = "odv";
 		expectOutputExist=true;
 		
@@ -68,7 +68,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/profile/diap";
 		out = "profile/file_profile_med_2_odv_Mono_2CDI";
-		type= "mono";
+		type= "split";
 		outFormat = "odv";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
 		expectOutputExist=true;
@@ -84,7 +84,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/profile/diap_inputNoRef";
 		out = "profile/file_profile_med_2_odv_Mono_2CDI_inputNoRef";
-		type= "mono";
+		type= "split";
 		outFormat = "odv";
 		cdiList="FI29200110014_00020_H09,FI29200110014_00022_H09";
 		expectOutputExist=true;
@@ -100,7 +100,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/profile/diap";
 		out = "profile/file_profile_med_2_odv_Multi_2CDI.txt";
-		type= "multi";
+		type= "keep";
 		outFormat = "odv";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
 		expectOutputExist=true;
@@ -125,7 +125,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/trajectory/M_trajectory_bath";
 		out = "trajectory/file_trajectory_med_2_odv_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "odv";
 		expectOutputExist=true;
 		
@@ -143,7 +143,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/trajectory/M_trajectory_bath";
 		out = "trajectory/file_trajectory_med_2_odv_Multi_emptyCDI.txt";
-		type= "multi";
+		type= "keep";
 		outFormat = "odv";
 		expectOutputExist=true;
 		
@@ -162,7 +162,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/trajectory/M_trajectory_bath";
 		out = "trajectory/file_trajectory_med_2_odv_Mono_2CDI";
-		type= "mono";
+		type= "split";
 		outFormat = "odv";
 		cdiList="FI35199480001_00001_H09,FI35199480002_00001_H09";
 		expectOutputExist=true;
@@ -178,7 +178,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/trajectory/M_trajectory_bath";
 		out = "trajectory/file_trajectory_med_2_odv_Multi_2CDI.txt";
-		type= "multi";
+		type= "keep";
 		outFormat = "odv";
 		cdiList="FI35199480001_00001_H09,FI35199480002_00001_H09";
 		expectOutputExist=true;
@@ -194,7 +194,7 @@ public class Batch_File_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="medatlas";
 		in="medatlas/input/profile/2010030170.ctd";
 		out = "profile/file_profile_med_2_odv_Multi_2CDI_stefane.txt";
-		type= "multi";
+		type= "keep";
 		outFormat = "odv";
 		cdiList="FI35201003017_00001_H10,FI35201003017_00002_H10";
 		expectOutputExist=true;

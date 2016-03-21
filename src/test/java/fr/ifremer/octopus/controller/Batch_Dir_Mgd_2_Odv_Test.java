@@ -30,7 +30,7 @@ public class Batch_Dir_Mgd_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="MGD81";
 		in="MGD81/input";
 		out = "81";
-		type= "multi";
+		type= "keep";
 		outFormat = "odv";
 		local_cdi_id=pwd+"MGD81/mapping.txt";
 		expectOutputExist=true;

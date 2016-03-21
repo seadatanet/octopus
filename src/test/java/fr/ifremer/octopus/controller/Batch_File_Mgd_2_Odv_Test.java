@@ -30,7 +30,7 @@ public class Batch_File_Mgd_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		inFormat="MGD81";
 		in="MGD81/input/200201002062_v81.mgd77";
 		out = "200201002062_v81.txt";
-		type= "multi";
+		type= "keep";
 		outFormat = "odv";
 		local_cdi_id="toto";
 		expectOutputExist=true;

@@ -29,7 +29,7 @@ public class Batch_File_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="cfpoint";
 		in="cfpoint/input/profile/diap.nc";
 		out = "profile/file_cf_2_cf_Mono_emptyCDI";
-		type= "mono";
+		type= "split";
 		outFormat = "cfpoint";
 		expectOutputExist=true;
 		
@@ -47,7 +47,7 @@ public class Batch_File_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="cfpoint";
 		in="cfpoint/input/profile/diap.nc";
 		out = "profile/file_cf_2_cf_Mono_2CDI";
-		type= "mono";
+		type= "split";
 		outFormat = "cfpoint";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
 		expectOutputExist=true;
@@ -67,7 +67,7 @@ public class Batch_File_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="cfpoint";
 		in="cfpoint/input/profile/diap.nc";
 		out = "profile/file_cf_2_cf_Multi_emptyCDI.nc";
-		type= "multi";
+		type= "keep";
 		outFormat = "cfpoint";
 		expectOutputExist=true;
 		
@@ -85,7 +85,7 @@ public class Batch_File_Cf_2_Cf_Test extends AbstractBatch_X_2_Y_Test{
 		inFormat="cfpoint";
 		in="cfpoint/input/profile/diap.nc";
 		out = "profile/file_cf_2_cf_Multi_2CDI.nc";
-		type= "multi";
+		type= "keep";
 		outFormat = "cfpoint";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
 		expectOutputExist=true;

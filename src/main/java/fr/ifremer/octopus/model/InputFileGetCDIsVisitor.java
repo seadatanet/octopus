@@ -38,6 +38,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			) throws IOException {
 
 		switch (format) {
+		case MEDATLAS_NON_SDN:
 		case MEDATLAS_SDN:
 			MedatlasInputFileManager mgr;
 			try {

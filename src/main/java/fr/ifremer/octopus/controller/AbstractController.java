@@ -371,7 +371,9 @@ public abstract class AbstractController {
 			switch (model.getInputFormat()) {
 			case MEDATLAS_SDN:
 			case MEDATLAS_NON_SDN:
-				if (model.getOutputFormat().equals(Format.ODV_SDN)){
+				if (model.getOutputFormat().equals(Format.MEDATLAS_SDN)){
+					conversion = Conversion.NONE;
+				}else if (model.getOutputFormat().equals(Format.ODV_SDN)){
 					conversion = Conversion.MEDATLAS_SDN_TO_ODV_SDN;
 				}else if(model.getOutputFormat().equals(Format.CFPOINT)){
 					conversion = Conversion.MEDATLAS_SDN_TO_CF_POINT;

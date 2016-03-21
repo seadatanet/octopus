@@ -108572,4 +108572,31 @@ Bâtiment Méditerranée</address>
     <website>http://www.observatoire-pelagis.cnrs.fr/</website>
     <c_country>France</c_country>
   </Organisation>
+  <Organisation>
+    <n_code>4492</n_code>
+    <input_date>3/21/2016 3:58:21 PM</input_date>
+    <last_update>3/21/2016 3:58:59 PM</last_update>
+    <date_created>3/21/2016 3:58:21 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>710</collate_id>
+    <logo />
+    <name>Geological And Environmental Sciences</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Ben Gurion University
+P.O.Box 653</address>
+    <zipcode>84105</zipcode>
+    <city>Beer Sheva</city>
+    <state />
+    <country>16</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://in.bgu.ac.il/en/natural_science/Pages/default.aspx</website>
+    <c_country>Israel</c_country>
+  </Organisation>
 </Organisations>

@@ -81,6 +81,7 @@ public class ConvertersManager {
 	public List<String> getInputFileCdiIdList() {
 		switch (inputFormat) {
 		case MEDATLAS_SDN:
+		case MEDATLAS_NON_SDN:
 			return ((MedatlasInputFileManager)conv).getInputFileCdiIdList();
 		case ODV_SDN:
 			return ((OdvReader)conv).getInputFileCdiIdList();
@@ -99,6 +100,7 @@ public class ConvertersManager {
 	public boolean containsCdi(String cdi) {
 		switch (inputFormat) {
 		case MEDATLAS_SDN:
+		case MEDATLAS_NON_SDN:
 			return ((MedatlasInputFileManager)conv).containsCdi(cdi);
 		case ODV_SDN:
 			return ((OdvReader)conv).containsCdi(cdi);

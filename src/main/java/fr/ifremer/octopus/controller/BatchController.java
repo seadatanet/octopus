@@ -45,7 +45,8 @@ public class BatchController extends AbstractController{
 	private static int PROCESS_ERROR_EXIT_CODE = 3;
 
 	protected static String CDI_SEPARATOR=",";
-
+	private static String T_OPTION_KEEP = "keep";
+	private static String T_OPTION_SPLIT = "split";
 
 	/**
 	 * Controller for batch mode, main constructor
@@ -230,10 +231,10 @@ public class BatchController extends AbstractController{
 	 * @throws OctopusException
 	 */
 	private OUTPUT_TYPE getType(String optionValue) throws OctopusException  {
-		if (optionValue.trim().equalsIgnoreCase(OctopusModel.OUTPUT_TYPE.MONO.toString())){
+		if (optionValue.trim().equalsIgnoreCase(T_OPTION_SPLIT)){
 			return OctopusModel.OUTPUT_TYPE.MONO;
 		}
-		if (optionValue.trim().equalsIgnoreCase(OctopusModel.OUTPUT_TYPE.MULTI.toString())){
+		if (optionValue.trim().equalsIgnoreCase(T_OPTION_KEEP)){
 			return OctopusModel.OUTPUT_TYPE.MULTI;
 		}
 		throw new OctopusException(messages.getString("abstractcontroller.unrecognizedOutputType"));

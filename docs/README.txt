@@ -1,3 +1,9 @@
+FICHIER .EXE POUR  WINDOWS
+==========================
+CREATION EXE: LAUNCH4J (http://launch4j.sourceforge.net/)
+MODIFICATION ICONE: utiliser javaexe (http://devwizard.free.fr/html/fr/JavaExe.html)
+
+
 LIVRABLE
 ==============
 Méthode manuelle

@@ -2,6 +2,7 @@ package fr.ifremer.octopus.view;
 
 import java.io.File;
 import java.sql.SQLException;
+import java.text.MessageFormat;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
@@ -16,6 +17,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.layout.Region;
 import javafx.stage.FileChooser;
 
 import org.apache.logging.log4j.LogManager;
@@ -115,10 +117,30 @@ public class CouplingController {
 			couplingPath = selectedFile.getAbsolutePath();
 			try {
 				CouplingTableManager.getInstance().export(couplingPath);
+				Alert alert = new Alert(AlertType.INFORMATION);
+				alert.initOwner(mainApp.getPrimaryStage());
+				alert.setTitle(messages.getString("coupling.export"));
+				alert.setHeaderText(messages.getString("coupling.exportSuccessHeader"));
+				alert.setContentText(
+						MessageFormat.format(messages.getString("coupling.exportSuccessContent"), couplingPath.toString())
+						);
+				alert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); // workaround for adapt size to content
+				alert.show();
 			} catch (Exception e) {
 				LOGGER.error(e.getMessage());
+				Alert alert = new Alert(AlertType.INFORMATION);
+				alert.initOwner(mainApp.getPrimaryStage());
+				alert.setTitle(messages.getString("coupling.export"));
+				alert.setHeaderText(messages.getString("coupling.exportFailHeader"));
+				alert.setContentText(
+						MessageFormat.format(messages.getString("coupling.exportFailContent"), couplingPath.toString())
+						);
+				alert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE); // workaround for adapt size to content
+				alert.show();
 			} 
 		}
+		
+		
 	}
 	@FXML
 	public void cleanCoupling(){
@@ -139,7 +161,12 @@ public class CouplingController {
 				LOGGER.error(e.getMessage());
 			} catch (SQLException e) {
 				LOGGER.error(e.getMessage());
+			} catch (Exception e){
+				LOGGER.error("Unknown error on coupling");
+				e.printStackTrace();
 			}
+			
+			LOGGER.debug("init coupling graphic");
 			this.initialize();
 		}
 

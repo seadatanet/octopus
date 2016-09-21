@@ -1,18 +1,25 @@
 package fr.ifremer.octopus.utils;
 
 import java.util.HashMap;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import sdn.vocabulary.interfaces.ICollectionFactory;
+import sdn.vocabulary.interfaces.IElement;
 import sdn.vocabulary.interfaces.VocabularyException;
+import fr.ifremer.seadatanet.odv.utils.Vocabulary;
 import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 public class SDNVocabsTest {
 	static final Logger LOGGER = LogManager.getLogger(SDNVocabsTest.class.getName());
-	@Test
+	
+	
+	
+//	@Test
 //	@Ignore
 	public void test() {
 		int nonPresent_bodc=-1;

@@ -81,7 +81,7 @@ public class BatchArgumentsTest {
 			b = new BatchController(args, true);
 		}catch (Exception e){
 			logger.info(e.getMessage());
-			Assert.assertTrue(e.getMessage().endsWith("input path is empty"));
+			Assert.assertTrue(e.getMessage().endsWith("Input path is empty"));
 		}
 	}
 	@Test
@@ -95,7 +95,7 @@ public class BatchArgumentsTest {
 			b = new BatchController(args, true);
 		}catch (Exception e){
 			logger.info(e.getMessage());
-			Assert.assertTrue(e.getMessage().endsWith("output path is empty"));
+			Assert.assertTrue(e.getMessage().endsWith("Output path is empty"));
 		}
 	}
 	@Test
@@ -109,7 +109,7 @@ public class BatchArgumentsTest {
 			b = new BatchController(args, true);
 		}catch (Exception e){
 			logger.info(e.getMessage());
-			Assert.assertTrue(e.getMessage().endsWith("unrecognized output format"));
+			Assert.assertTrue(e.getMessage().endsWith("Unrecognized output format"));
 		}
 	}
 	@Test
@@ -123,7 +123,7 @@ public class BatchArgumentsTest {
 			b = new BatchController(args, true);
 		}catch (Exception e){
 			logger.info(e.getMessage());
-			Assert.assertTrue(e.getMessage().endsWith("unrecognized output type"));
+			Assert.assertTrue(e.getMessage().endsWith("Unrecognized output type"));
 		}
 	}
 	@Test
@@ -158,7 +158,7 @@ public class BatchArgumentsTest {
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 			logger.error(e.getMessage());
-			success=e.getMessage().contains("output file extension is not valid");
+			success=e.getMessage().contains("Output file extension is not valid");
 		}
 		new File(pwd+"out.toto").delete();
 		Assert.assertTrue(success);
@@ -176,7 +176,7 @@ public class BatchArgumentsTest {
 		}catch (Exception e){
 			logger.error("JUNIT TEST ERROR");
 			logger.error(e.getMessage());
-			success=e.getMessage().contains("output file extension is not valid");
+			success=e.getMessage().contains("Output file extension is not valid");
 		
 		}
 		new File(pwd+"out.toto").delete();

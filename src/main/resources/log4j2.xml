@@ -7,13 +7,18 @@
 	<Appenders>
 
 		<Console name="Console" target="SYSTEM_OUT" follow="true">
-			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5level %c{1} %L - %msg%n" /><!-- for debug only (%L cost)-->
-<!-- 			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5level %c{1} - %msg%n" /> -->
+<!-- 			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5level %c20.30c{1} %L - %msg%n" />for debug only (%L cost) -->
+<!-- 			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5.5level %-20.20c{1} - %-30.50msg%n" /> -->
+			<PatternLayout>
+				<pattern>%d{HH:mm:ss}- %-5.7level - %msg%n</pattern>
+			</PatternLayout> 
+<!-- 			pattern="%d [%7.7r] %6.6p - %c{30} - %m%n" -->
+			
 		</Console>
 		<RollingFile name="RollingFile" fileName="logs/octopus.log"
 			filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
 			<PatternLayout>
-				<Pattern>%d %p [octopus] %c{1} - %m%n</Pattern>
+				<pattern>%d{HH:mm:ss}- %-5.7level - %-30.30c{1} - %msg%n</pattern>
 			</PatternLayout>
 			<Policies>
 				<TimeBasedTriggeringPolicy />
@@ -24,9 +29,9 @@
 
 
 	<Loggers>
-		<Root level="info">
-			<AppenderRef ref="Console" level="INFO" />
-			<AppenderRef ref="RollingFile" level="INFO" />
+		<Root level="DEBUG">
+			<AppenderRef ref="Console" level="DEBUG" />
+			<AppenderRef ref="RollingFile" level="DEBUG" />
 		</Root>
 	</Loggers>
 </Configuration>

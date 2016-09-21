@@ -209,6 +209,7 @@ public abstract class AbstractController {
 		try {
 			cdiToPrint = getCdiList(manager, in.getAbsolutePath());
 		} catch (OctopusException e1) {
+			LOGGER.warn(e1.getMessage());
 			return outputFilesList;
 		}
 		

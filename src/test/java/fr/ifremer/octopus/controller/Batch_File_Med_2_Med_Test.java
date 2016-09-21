@@ -60,7 +60,7 @@ public class Batch_File_Med_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		
 	}
 	/**
-	 * 1 med -> n cf
+	 * 1 med -> n med
 	 * cdi list : 2
 	 */
 	@Test
@@ -72,6 +72,48 @@ public class Batch_File_Med_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		type= "split";
 		outFormat = "medatlas";
 		cdiList="FI35200110014_00020_H09,FI35200110014_00022_H09";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+		
+	}
+	/**
+	 * 1 med -> 1 med
+	 * cdi list : 1
+	 */
+	@Test
+	public void file_profile_med_2_med_Multi_bodcv1() {
+		
+		inFormat="medatlas";
+		in="medatlas/inputNonSDN/profile/med_bodcv1.med";
+		out = "profile/med_bodcv1_2_med_multi";
+		type= "keep";
+		outFormat = "medatlas";
+		cdiList="lci_mod3_med_to_med";
+		expectOutputExist=true;
+		
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+		
+	}
+	/**
+	 * 1 med -> 1 med
+	 * cdi list : 1
+	 */
+	@Test
+	public void file_profile_nonSdnMed_2_med_Multi_bodcv1() {
+		
+		inFormat="medatlas";
+		in="medatlas/inputNonSDN/profile/medatlasNonSdn.med";
+		out = "profile/medatlasNonSdn_2_med_multi";
+		type= "keep";
+		outFormat = "medatlas";
+		cdiList="lci_mod3_med_to_med";
 		expectOutputExist=true;
 		
 		launchTest(logger);

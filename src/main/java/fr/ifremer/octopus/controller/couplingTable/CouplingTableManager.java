@@ -47,6 +47,7 @@ public class CouplingTableManager {
 
 	}
 	public void init()throws SQLException, ClassNotFoundException {
+		LOGGER.debug("init coupling table");
 		createDatabaseConnection();
 
 		/**
@@ -103,6 +104,7 @@ public class CouplingTableManager {
 		init();		
 	}
 	public void deleteTable() throws SQLException{
+		LOGGER.debug("delete coupling table");
 		String create = "DROP TABLE COUPLING";
 		PreparedStatement stmt = c.prepareStatement(create);
 		stmt.execute();
@@ -122,16 +124,16 @@ public class CouplingTableManager {
 		return c;
 	}
 	public void closeConnection(){
-//		if (c!=null){
-//			try {
-//				stmtUpdateExistingRecord.closeOnCompletion();
-//				stmtSaveNewRecord.closeOnCompletion();
-//				c.commit();
-//				c.close();
-//			} catch (Exception e) {
-//				LOGGER.error("error closing coupling table connection "+ e.getMessage());
-//			}
-//		}
+		//		if (c!=null){
+		//			try {
+		//				stmtUpdateExistingRecord.closeOnCompletion();
+		//				stmtSaveNewRecord.closeOnCompletion();
+		//				c.commit();
+		//				c.close();
+		//			} catch (Exception e) {
+		//				LOGGER.error("error closing coupling table connection "+ e.getMessage());
+		//			}
+		//		}
 	}
 	private void getPreparedStatementList() throws SQLException {
 		stmtListRecord = c.prepareStatement(	"SELECT * FROM COUPLING "); 
@@ -161,7 +163,7 @@ public class CouplingTableManager {
 	}
 
 
-	public void saveRecord(CouplingRecord record, String couplingPrefix) throws OctopusException {
+	public void saveRecord(CouplingRecord record) throws OctopusException {
 		try {
 			stmtSaveNewRecord.clearParameters();
 			stmtSaveNewRecord.setString(1, record.getLocal_cdi_id());
@@ -178,7 +180,7 @@ public class CouplingTableManager {
 			throw new OctopusException(e.getMessage());
 		}
 	} 
-	private void updateRecord(CouplingRecord record, String couplingPrefix) throws OctopusException {
+	private void updateRecord(CouplingRecord record) throws OctopusException {
 		try {
 			stmtUpdateExistingRecord.clearParameters();
 			stmtUpdateExistingRecord.setString(1, record.getLocal_cdi_id());
@@ -206,21 +208,40 @@ public class CouplingTableManager {
 		if (PreferencesManager.getInstance().isCouplingEnabled()){
 			// first, get the current coupling prefix (can be changed in settings)
 			String couplingPrefix = PreferencesManager.getInstance().getCouplingPrefix();
+			boolean isPrefixEmpty= couplingPrefix.isEmpty();
+
 			Path prefix = Paths.get(couplingPrefix);
 			Path absolute, relative;
 
-			for (CouplingRecord cr : records){
-				absolute = Paths.get(cr.getPath());
+			try{
+				for (CouplingRecord cr : records){
 
-				relative = prefix.relativize(absolute);
-				cr.setPath(relative.toString());
+					if (isPrefixEmpty){
+						absolute = Paths.get(cr.getPath());
+						cr.setPath(absolute.toString());
+					}else{
+						absolute = Paths.get(cr.getPath());
+						relative = prefix.relativize(absolute);
+						cr.setPath(relative.toString());
+					}
 
 
-				if (isAlreadyInTable(cr)){
-					updateRecord(cr, couplingPrefix);
-				}else{
-					saveRecord(cr, couplingPrefix);
+					if (isAlreadyInTable(cr)){
+						updateRecord(cr);
+					}else{
+						saveRecord(cr);
+					}
 				}
+			}finally{
+//				try {
+//					stmtSaveNewRecord.close();
+//					stmtUpdateExistingRecord.close();
+//					stmtSelectRecord.close();
+//				} catch (SQLException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+				
 			}
 
 		}
@@ -231,20 +252,24 @@ public class CouplingTableManager {
 		// first, get the current coupling prefix (can be changed in settings)
 		if (PreferencesManager.getInstance().isCouplingEnabled()){
 			String couplingPrefix = PreferencesManager.getInstance().getCouplingPrefix();
-			Path prefix = Paths.get(couplingPrefix);
-			Path absolute = Paths.get(outputAbsolutePath);
-			if (!absolute.startsWith(prefix)){
-				return false;
+			if (couplingPrefix.isEmpty()){
+				return true;
+			}else{
+				Path prefix = Paths.get(couplingPrefix);
+				Path absolute = Paths.get(outputAbsolutePath);
+				if (!absolute.startsWith(prefix) ){
+					return false;
+				}
 			}
 		}
 		return true;
 	}
 	private boolean isAlreadyInTable(CouplingRecord cr) throws OctopusException {
-
+		ResultSet results = null;
 		try {
 			stmtSelectRecord.setString(1, cr.getLocal_cdi_id());
 			stmtSelectRecord.setString(2, cr.getFormat().toCouplingFormat());
-			ResultSet results;
+			
 			results = stmtSelectRecord.executeQuery();
 			if (results.next()) {
 				return true;
@@ -254,6 +279,13 @@ public class CouplingTableManager {
 		} catch (SQLException e) {
 			LOGGER.error("error reading coupling table");
 			throw new OctopusException(e.getMessage());
+		}finally{
+			//28751
+			try {
+				results.close();
+			} catch (SQLException e) {
+				LOGGER.error("error closing coupling table select results");
+			}
 		}
 
 	}

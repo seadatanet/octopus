@@ -9,7 +9,7 @@
 	<name>octopus</name>
 	<description>Octopus is a tool to convert and/or split files to SDN files </description>
 	<packaging>jar</packaging>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
@@ -281,13 +281,13 @@
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.7</version>
+			<version>0.8</version>
 			<!-- <classifier>jar-with-dependencies</classifier> -->
 		</dependency>
 		<dependency>
 			<groupId>fr.ifremer</groupId>
 			<artifactId>mgd</artifactId>
-			<version>1.0</version>
+			<version>1.1</version>
 		</dependency>
 		<!-- ************************* ****** ************************* -->
 		<dependency>

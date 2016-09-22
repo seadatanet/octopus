@@ -113,7 +113,7 @@ public class Batch_File_Med_2_Med_Test  extends AbstractBatch_X_2_Y_Test {
 		out = "profile/medatlasNonSdn_2_med_multi";
 		type= "keep";
 		outFormat = "medatlas";
-		cdiList="lci_mod3_med_to_med";
+		cdiList="FI35199810007_00001_D09";
 		expectOutputExist=true;
 		
 		launchTest(logger);

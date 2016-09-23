@@ -87,6 +87,7 @@ public class BatchController extends AbstractController{
 		}
 
 		try {
+			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startExport"), model.getInputPath()));
 			List<String> outputFiles = process();
 			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.processSucessNBFiles"), outputFiles.size()));
 			if (outputFiles.size()>0){
@@ -305,5 +306,11 @@ public class BatchController extends AbstractController{
 			throw new OctopusException(messages.getString("batchcontroller.inputPathInvalid")); 
 		}
 
+	}
+
+	@Override
+	protected void logStart() {
+		LOGGER.info("==================== OCTOPUS START  ====================");
+		
 	}
 }

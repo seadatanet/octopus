@@ -1,6 +1,5 @@
 package fr.ifremer.octopus.controller;
 
-import java.io.File;
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
@@ -33,6 +32,11 @@ public class OctopusGUIController extends AbstractController{
 			OctopusOverviewController controller) {
 		this.octopusOverviewController = controller;
 
+	}
+
+	@Override
+	protected void logStart() {
+		
 	}
 
 	

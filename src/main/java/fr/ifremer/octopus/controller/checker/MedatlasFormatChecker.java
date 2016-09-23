@@ -9,15 +9,22 @@ import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
 import fr.ifremer.octopus.controller.AbstractController;
 import fr.ifremer.octopus.utils.SDNVocabs;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 
 
 public class MedatlasFormatChecker extends FormatChecker {
 	private static final Logger LOGGER = LogManager.getLogger(MedatlasFormatChecker.class);
 
 	@Override
-	public void check(File f) throws Exception {
+	public Format check(File f) throws Exception {
 		try {
 			MedatlasInputFileManager mgr = new MedatlasInputFileManager(f.getAbsolutePath(), SDNVocabs.getInstance().getCf());
+			if (mgr.isSDNMedatlas())
+			{
+				return Format.MEDATLAS_SDN;
+			}else{
+				return Format.MEDATLAS_NON_SDN;
+			}
 		} catch (VocabularyException e) {
 			LOGGER.error(e);
 			throw e;

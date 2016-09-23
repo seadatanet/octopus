@@ -56,6 +56,9 @@ public abstract class AbstractController {
 	 */
 	public AbstractController() throws OctopusException  {
 		
+		this.logStart();
+		
+		
 		this.driverManager.registerNewDriver(new MedatlasSDNDriverImpl());
 		this.driverManager.registerNewDriver(new OdvSDNDriverImpl());
 		this.driverManager.registerNewDriver(new CFPointDriverImpl());
@@ -70,6 +73,8 @@ public abstract class AbstractController {
 		messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
 
 	}
+
+	protected abstract void logStart() ;
 
 	/**
 	 * 
@@ -485,12 +490,17 @@ public abstract class AbstractController {
 			return;
 		}
 		File in = new File(model.getInputPath());
+		Format inputFormat = null; 
 		if (in.isDirectory()){
 			int errors=0;
 			for (File f: in.listFiles()){
 				try{
 					// TODO do not check dirs  -> recursive
-					checker.check (f);
+					if (inputFormat == null){
+						inputFormat = checker.check (f);
+					}else{
+						checker.check (f);
+					}
 				}catch(Exception e){
 					errors++;
 					LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),
@@ -498,7 +508,9 @@ public abstract class AbstractController {
 				}
 			}
 			if (errors==0){
-				LOGGER.info(messages.getString("abstractcontroller.allFilesValid"));
+//				LOGGER.info(messages.getString("abstractcontroller.allFilesValid"));
+				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.allFilesValid"), inputFormat.name()));
+				
 			}else{
 				LOGGER.error( 
 						MessageFormat.format(messages.getString("abstractcontroller.XInvalidFilesOnY"),
@@ -507,8 +519,8 @@ public abstract class AbstractController {
 			}
 		}else{
 			try{
-				checker.check (in);
-				LOGGER.info(messages.getString("abstractcontroller.formatIsValid"));
+				inputFormat = checker.check (in);
+				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.formatIsValid"), inputFormat.getName()));
 			}catch(Exception e){
 				LOGGER.error(
 						MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),

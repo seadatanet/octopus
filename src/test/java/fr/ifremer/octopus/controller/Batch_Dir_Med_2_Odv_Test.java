@@ -1,5 +1,7 @@
 package fr.ifremer.octopus.controller;
 
+import java.io.File;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
@@ -33,13 +35,33 @@ public class Batch_Dir_Med_2_Odv_Test extends AbstractBatch_X_2_Y_Test{
 	 */
 	@Test
 	public void dir_profile_med_2_odv_Mono_emptyCDI() {
-		in="medatlas/input/profile";
-		out = "profile/dir_profile_med_2_odv_Mono_emptyCDI";
+		in="medatlas"+File.separator+"input"+File.separator+"profile";
+		out = "profile"+File.separator+"dir_profile_med_2_odv_Mono_emptyCDI"+File.separator;
 		type= "split";
 		
 		launchTest(logger);
 		checkResult(expectOutputExist);
 		resume(in, out, logger);
+	}
+	
+	//@Test
+	public void testPathWin(){
+		String[] args = {
+		
+		"-i", "C:\\Users\\sbregent\\Documents\\DEV\\workspaces\\octopus\\octopus\\src\\test\\resources\\medatlas\\input\\profile",
+		"-o", "C:\\Users\\sbregent\\Documents\\DEV\\IFREMER\\OCTOPUS\\out test\\" ,
+		"-f", "odv",
+		"-t" ,"split"
+		};
+		try{
+			b = new BatchController(args, true);
+
+		}catch (Exception e){
+			e.printStackTrace();
+			logger.error(e.getMessage());
+			logger.error("JUNIT TEST ERROR");
+		}
+		 
 	}
 	/**
 	 * 1 med -> 1 cf

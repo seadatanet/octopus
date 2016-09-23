@@ -43,10 +43,12 @@ public class MainApp extends Application {
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-
+		System.out.println("arguments : "+ args);
 		if (args.length>0){
+			System.out.println("launch Octopus in batch mode");
 			BatchController batch = new BatchController(args);
 		}else{
+			System.out.println("launch Octopus in GUI mode");
 			launch(args);
 		}
 	}

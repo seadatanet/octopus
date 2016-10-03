@@ -24,7 +24,9 @@ import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class ConvertersManager {
 	private static final Logger LOGGER = LogManager.getLogger(ConvertersManager.class);
-	private static final String TITLE_COMPLEMENT = " from Octopus";// FIXME version
+	private static final ResourceBundle  aboutBundle = ResourceBundle.getBundle("bundles/about", PreferencesManager.getInstance().getLocale());
+
+	private static final String TITLE_COMPLEMENT = " from Octopus " + aboutBundle.getString("about.version");
 	private static final String unitsTranslationFileName = "octopusUnitsTranslation.xml";
 	private Object conv;
 	private Format inputFormat;

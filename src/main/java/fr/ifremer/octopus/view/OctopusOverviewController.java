@@ -371,7 +371,9 @@ public class OctopusOverviewController {
 	 */
 	public void initInput() {
 		LOGGER.debug("init input");
-		LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.initInput"), inputPathTextField.getText()));
+		LOGGER.info(messages.getString("octopusOverviewController.initInput"));
+		LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.initInputMsg"), inputPathTextField.getText()));
+
 
 		initGui();
 
@@ -600,7 +602,8 @@ public class OctopusOverviewController {
 
 
 	private void export(Format format){
-		LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.startExport"), inputPathTextField.getText()));
+		LOGGER.info(messages.getString("octopusOverviewController.startExport"));
+		LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.startExportMsg"), inputPathTextField.getText()));
 		try {
 			checkOutput();
 		} catch (OctopusException e1) {

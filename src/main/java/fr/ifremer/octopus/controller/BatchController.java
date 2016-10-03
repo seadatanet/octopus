@@ -310,7 +310,7 @@ public class BatchController extends AbstractController{
 
 	@Override
 	protected void logStart() {
-		LOGGER.info("==================== OCTOPUS START  ====================");
+		LOGGER.info("==================== OCTOPUS BATCH START  ====================");
 		
 	}
 }

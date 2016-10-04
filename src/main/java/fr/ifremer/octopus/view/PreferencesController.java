@@ -29,6 +29,8 @@ import javafx.stage.DirectoryChooser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import sdn.vocabulary.interfaces.ICollection;
+import sdn.vocabulary.interfaces.ICollectionMapping;
 import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.octopus.MainApp;
 import fr.ifremer.octopus.utils.EdmoManager;
@@ -90,12 +92,12 @@ public class PreferencesController {
 						PreferencesManager.getInstance().getLocale());
 		languageChoiceBox.getItems().add("fr");
 		languageChoiceBox.getItems().add("uk");
-		
-		
+
+
 		// theme order is important: same order as in fr.ifremer.octopus.utils.PreferencesManager.getThemeFileName(int)
 		themeChoiceBox.getItems().add("white");
 		themeChoiceBox.getItems().add("octopus");
-		
+
 
 		int index=0;
 		if (PreferencesManager.getInstance().getLocale()== PreferencesManager.LOCALE_FR){
@@ -114,9 +116,9 @@ public class PreferencesController {
 		themeChoiceBox.getSelectionModel().select(PreferencesManager.getInstance().getTheme());
 		// add listener AFTER first select
 		themeChoiceBox.valueProperty().addListener((observable, oldValue, newValue) ->
-				updateTheme(themeChoiceBox.getSelectionModel().getSelectedIndex()));
-				
-				
+		updateTheme(themeChoiceBox.getSelectionModel().getSelectedIndex()));
+
+
 		// 	edmo
 		// call manager to create instance and init EDMO list
 		EdmoManager.getInstance();
@@ -201,8 +203,8 @@ public class PreferencesController {
 		mainApp.getPrimaryStage().getScene().getStylesheets()
 		.add(getClass().getResource(PreferencesManager.getInstance().getThemeFileName(newValue))
 				.toExternalForm());
-		
-		
+
+
 		PreferencesManager.getInstance().save();
 		try {
 			mainApp.initRootLayout();
@@ -212,9 +214,9 @@ public class PreferencesController {
 			LOGGER.error(e.getMessage());
 		}
 		mainApp.initOverview();
-		
+
 	}
-	
+
 	@FXML
 	private void closePreferences(){
 		mainApp.setCenterOverview();
@@ -289,12 +291,14 @@ public class PreferencesController {
 					int version;
 					HashMap<String, Integer> oldVersions = new HashMap<>();
 					HashMap<String, Integer> newVersions = new HashMap<>();
+					LOGGER.info("check current vocabulary files");
+					bodcLog.appendText("check current vocabulary files"+System.getProperty("line.separator"));
 					for (String list: vocabsList){
 						try {
 							version = SDNVocabs.getInstance().getCf().getCollection(false, list).getDescription().getVersion();
 							oldVersions.put(list, version );
 						} catch (VocabularyException e) {
-							LOGGER.error(e.getMessage());
+							LOGGER.info(e.getMessage());
 							bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
 							// if getCollection offLine raises an exception, that means that the list in not in the local directory -> set old version to 0
 							oldVersions.put(list, nonPresent_bodc );
@@ -303,6 +307,8 @@ public class PreferencesController {
 					}
 
 					// reload
+					LOGGER.info("download or update vocabulary files");
+					bodcLog.appendText("download or update vocabulary files"+System.getProperty("line.separator"));
 					try{
 						SDNVocabs.getInstance().reload();
 					}catch(Exception e){
@@ -342,10 +348,29 @@ public class PreferencesController {
 					}catch(Exception e){
 						LOGGER.error(e.getMessage());
 						bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
+					}
+
+					//mappings
+					LOGGER.info("update mapping files");
+					bodcLog.appendText("update mapping files"+System.getProperty("line.separator"));
+					ICollection p06 = SDNVocabs.getInstance().getCf().getCollection(true, "P06");
+					ICollection p09 = SDNVocabs.getInstance().getCf().getCollection(true, "P09");
+					ICollection p02 = SDNVocabs.getInstance().getCf().getCollection(true, "P02");
+					ICollection p01 = SDNVocabs.getInstance().getCf().getCollection(true, "P01");
+
+					try {
+						ICollectionMapping p06_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p06, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
+						ICollectionMapping p01_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
+						ICollectionMapping p01_from_P02 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p02.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P02));
+					} catch (VocabularyException e) {
+						bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
+						LOGGER.info(e.getMessage()+System.getProperty("line.separator"));
 					}finally{
 						mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 						disablePane(false);
 					}
+
+
 				}catch(Exception e){
 					LOGGER.error(e.getMessage());
 					bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));

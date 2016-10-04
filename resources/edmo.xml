@@ -36541,7 +36541,7 @@ Saint Joan D'Alacant</address>
   <Organisation>
     <n_code>1654</n_code>
     <input_date>9/4/2008 4:37:57 PM</input_date>
-    <last_update>11/28/2008 8:17:43 AM</last_update>
+    <last_update>9/21/2016 9:18:16 AM</last_update>
     <date_created>9/4/2008 4:37:57 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -36550,7 +36550,7 @@ Saint Joan D'Alacant</address>
     <Latitude>50.6</Latitude>
     <collate_id>486</collate_id>
     <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/486/logogepvhome.gif</logo>
-    <name>UNIV. SCIENCES et TECHNOLOGIES DE LILLE 1  Laboratoire de Génétique et Evolution des Populations Végétales (GEPV).</name>
+    <name>Univ. Sciences et Technologies de Lille 1 / Laboratoire de Génétique et Evolution des Populations Végétales (GEPV).</name>
     <native_name />
     <abbreviated_name />
     <address>UMR CNRS 8016 ; UFR de Biologie
@@ -110853,7 +110853,7 @@ Institutet för hälsa och välfärd (sv)</native_name>
   <Organisation>
     <n_code>4576</n_code>
     <input_date>8/25/2016 1:29:17 PM</input_date>
-    <last_update>8/25/2016 1:29:23 PM</last_update>
+    <last_update>9/13/2016 9:23:04 AM</last_update>
     <date_created>8/25/2016 1:29:17 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -110862,7 +110862,7 @@ Institutet för hälsa och välfärd (sv)</native_name>
     <Latitude>53.113348</Latitude>
     <collate_id>43</collate_id>
     <logo />
-    <name />
+    <name>Baker Consultants</name>
     <native_name>Baker Consultants</native_name>
     <abbreviated_name />
     <address>West Platform, Cromford Station</address>
@@ -110901,5 +110901,61 @@ Institutet för hälsa och välfärd (sv)</native_name>
     <fax />
     <website>http://www.maritimearchaeology.co.uk/</website>
     <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4578</n_code>
+    <input_date>9/13/2016 9:24:14 AM</input_date>
+    <last_update>9/13/2016 1:25:37 PM</last_update>
+    <date_created>9/13/2016 9:24:14 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>9.9522</Longitude>
+    <Latitude>51.558</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Institute of Microbiology and Genetics</name>
+    <native_name>Institut für Mikrobiologie und Genetik der Universität Göttingen</native_name>
+    <abbreviated_name />
+    <address>Grisebachstr.8
+</address>
+    <zipcode>37077</zipcode>
+    <city>Göttingen</city>
+    <state />
+    <country>5</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.uni-goettingen.de/en/11845.html
+
+</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4579</n_code>
+    <input_date>9/21/2016 9:16:01 AM</input_date>
+    <last_update>9/21/2016 9:17:21 AM</last_update>
+    <date_created>9/21/2016 9:16:01 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>3.1431</Longitude>
+    <Latitude>50.6102</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Laboratory Of Oceanology And Geosciences</name>
+    <native_name>CNRS / Laboratoire d'Océanologie et de Géosciences</native_name>
+    <abbreviated_name />
+    <address>Université de Lille1 - UFR Sciences de la Terre
+Bâtiment SN5</address>
+    <zipcode>59655</zipcode>
+    <city>Villeneuve d'Ascq</city>
+    <state />
+    <country>10</country>
+    <email>log-com@univ-littoral.fr</email>
+    <phone />
+    <fax />
+    <website>http://log.cnrs.fr/</website>
+    <c_country>France</c_country>
   </Organisation>
 </Organisations>

@@ -29,9 +29,10 @@
 
 
 	<Loggers>
+<!-- 	default level is INFO -->
 		<Root level="INFO">
-			<AppenderRef ref="Console" level="INFO" />
-			<AppenderRef ref="RollingFile" level="INFO" />
+			<AppenderRef ref="Console" level="DEBUG" />
+			<AppenderRef ref="RollingFile" level="DEBUG" />
 		</Root>
 	</Loggers>
 </Configuration>

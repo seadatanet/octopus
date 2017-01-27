@@ -47,7 +47,8 @@ public class Batch_Dir_Mgd_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		args= new String[]{"-i "+ pwd+in,
 				"-o " +getOutputPath(out),
 				"-f "+outFormat,
-				"-l "+ local_cdi_id};
+				"-l "+ local_cdi_id,
+				"-t "+type};
 
 		return args;
 	}

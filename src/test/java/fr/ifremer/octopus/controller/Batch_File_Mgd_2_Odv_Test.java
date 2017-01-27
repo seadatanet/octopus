@@ -29,7 +29,7 @@ public class Batch_File_Mgd_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 	public void file_mgd_2_odv_Multi_emptyCDI() {
 		inFormat="MGD81";
 		in="MGD81/input/200201002062_v81.mgd77";
-		out = "200201002062_v81.txt";
+		out = "200201002062_v81";
 		type= "keep";
 		outFormat = "odv";
 		local_cdi_id="toto";
@@ -47,7 +47,8 @@ public class Batch_File_Mgd_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		args= new String[]{"-i "+ pwd+in,
 				"-o " +getOutputPath(out),
 				"-f "+outFormat,
-				"-l "+ local_cdi_id};
+				"-l "+ local_cdi_id,
+				"-t "+type};
 
 		return args;
 	}

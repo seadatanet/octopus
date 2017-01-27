@@ -15,6 +15,7 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,7 +33,7 @@ public class CouplingTableManager {
 	private PreparedStatement stmtSelectRecord;
 	private PreparedStatement stmtUpdateExistingRecord;
 	private PreparedStatement stmtSaveNewRecord;
-
+	protected ResourceBundle messages ;
 
 	private static CouplingTableManager instance;
 
@@ -48,6 +49,7 @@ public class CouplingTableManager {
 	}
 	public void init()throws SQLException, ClassNotFoundException {
 		LOGGER.debug("init coupling table");
+		messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
 		createDatabaseConnection();
 
 		/**
@@ -118,7 +120,7 @@ public class CouplingTableManager {
 		try{
 			c = DriverManager.getConnection(url);
 		}catch(SQLException e){
-			LOGGER.error("unable to connect to database");
+			LOGGER.error(messages.getString("couplingTableManager.connectionFail"));
 			throw e;
 		}
 		return c;

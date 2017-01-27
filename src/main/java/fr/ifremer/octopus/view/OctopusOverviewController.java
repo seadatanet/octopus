@@ -454,7 +454,7 @@ public class OctopusOverviewController {
 		radioMulti.setDisable(!inputOk|| ( octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
 				||  octopusGuiController.getModel().getInputFormat()==Format.MGD_98));
 
-
+		
 		outputPathTextField.setDisable(!inputOk);
 		chooseOut.setDisable(!inputOk);
 
@@ -481,6 +481,9 @@ public class OctopusOverviewController {
 			buttonExportMedatlas.disableProperty().setValue(disableMedatlas);
 			buttonExportOdv.disableProperty().setValue(disableOdv);
 			buttonExportCfpoint.disableProperty().setValue(disableCfPoint);
+			// 32965 For MGD, always use split in mono station
+			radioMono.setSelected(octopusGuiController.getModel().getInputFormat()==Format.MGD_81 ||octopusGuiController.getModel().getInputFormat()==Format.MGD_98);
+			
 
 			outCDI.setDisable(! (f==Format.MGD_81 || f==Format.MGD_98));
 		}else{

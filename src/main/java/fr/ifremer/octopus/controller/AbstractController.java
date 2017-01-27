@@ -85,6 +85,10 @@ public abstract class AbstractController {
 		Format inputFormat = getFirstFileInputFormat(new File(inputPath));
 		model = new OctopusModel(inputPath);
 		model.setInputFormat(inputFormat);
+		//32965
+		if (inputFormat.equals(Format.MGD_81) || inputFormat.equals(Format.MGD_98) ){
+			model.setOutputType(OUTPUT_TYPE.MONO);
+		}
 
 		createCdiManager();
 	}
@@ -139,7 +143,7 @@ public abstract class AbstractController {
 			}
 		}else{
 			if (model.getInputFormat()==Format.MGD_81 ||model.getInputFormat()==Format.MGD_98){
-				
+//				model.setOutputType(OUTPUT_TYPE.MONO);//32965
 			}else if(model.getCdiList().isEmpty()){
 				LOGGER.info(messages.getString("abstractcontroller.allCDIExported"));
 			}
@@ -225,6 +229,15 @@ public abstract class AbstractController {
 			// MONO
 			if (model.isMono()){
 				// Process
+				if (model.getInputFormat().equals(Format.MGD_81) ||model.getInputFormat().equals(Format.MGD_98) ){
+//					createOutputSubDir(in.getName());
+					String extension = "."+model.getOutputFormat().getOutExtension();
+					out=model.getOutputPath()+File.separator+getOutputCDI(in.getName())+extension;
+					List<CouplingRecord> records = manager.print(null,out, model.getOutputFormat(),  getOutputCDI(in.getName()));
+					CouplingTableManager.getInstance().add(records);					
+					outputFilesList.add(out);
+					
+				}else{
 				for (String cdi: cdiToPrint){
 					if (model.getInputFile().isDirectory()){
 						createOutputSubDir(in.getName());
@@ -237,14 +250,20 @@ public abstract class AbstractController {
 					CouplingTableManager.getInstance().add(records);					
 					outputFilesList.add(out);
 				}
+				}
 			}
 			//MULTI
 			else{
-				if (model.getInputFile().isDirectory()){
+//				if (model.getInputFormat().equals(Format.MGD_81)||model.getInputFormat().equals(Format.MGD_98)){
+//					String extension = "."+model.getOutputFormat().getOutExtension();
+//					out=model.getOutputPath()+File.separator+getOutputCDI(in.getName())+extension;
+//				}else
+					if (model.getInputFile().isDirectory()){
 					out = getOutFilePath(getInpufNameWithoutExtension(in.getName()), null);
 				}else{
 					out = getOutFilePath(null, null);
 				}
+				
 				// Process
 				List<CouplingRecord> records = manager.print(cdiToPrint, out, model.getOutputFormat(), getOutputCDI(in.getName()));
 				CouplingTableManager.getInstance().add(records);		

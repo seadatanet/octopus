@@ -98,7 +98,7 @@ public class BatchController extends AbstractController{
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
 		} catch (SQLException e) {
 			LOGGER.error(e.getCause());
-			LOGGER.error("batchcontroller.guiRunning");
+			LOGGER.error(messages.getString("batchcontroller.guiRunning"));
 		} 
 		exit(OK_EXIT_CODE, null);
 
@@ -169,7 +169,10 @@ public class BatchController extends AbstractController{
 
 			model.setOutputFormat(outputFormat);
 			model.setOutputPath(outputPath);
-			model.setOutputType(type);
+			// output type may have been initialized in init method (forced for MGD)
+			if (model.getOutputType()==null){
+				model.setOutputType(type);
+			}
 			model.setCdiList(list);
 			model.setOuputLocalCdiId(outputLocalCdiId);
 

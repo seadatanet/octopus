@@ -64,7 +64,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			break;
 		case CFPOINT:
 			try{
-				CFReader reader = new CFReader(aFile.toAbsolutePath().toString());
+				CFReader reader = new CFReader(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf());
 				for (String cdi :reader.getInputFileCdiIdList()){
 					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}

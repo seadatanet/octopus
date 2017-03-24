@@ -19,6 +19,7 @@ import fr.ifremer.seadatanet.cfpoint.exceptions.CFPointException;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
 import fr.ifremer.seadatanet.odv.input.OdvReader;
 import fr.ifremer.seadatanet.odv.output.OdvException;
+import fr.ifremer.seadatanet.odvsdn2cfpoint.exceptions.ConverterException;
 import fr.ifremer.sismer_tools.coupling.CouplingRecord;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
@@ -53,7 +54,7 @@ public class ConvertersManager {
 				conv = new OdvReader(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf());
 				break;
 			case CFPOINT:
-				conv = new CFReader(inputFile.getAbsolutePath());
+				conv = new CFReader(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf());
 				break;
 			case MGD_81:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
@@ -117,7 +118,7 @@ public class ConvertersManager {
 		}
 	}
 
-	public List<CouplingRecord>  print(List<String> cdiList, String outputFileAbsolutePath, Format outputFormat, String outputLocalCdiId) throws MedatlasWriterException, OdvException, CFPointException, OctopusException, MGDException {
+	public List<CouplingRecord>  print(List<String> cdiList, String outputFileAbsolutePath, Format outputFormat, String outputLocalCdiId) throws MedatlasWriterException, OdvException, CFPointException, OctopusException, MGDException, ConverterException {
 
 		if (inputFormat== Format.MGD_81 || inputFormat== Format.MGD_98){
 			if (outputLocalCdiId == null){

@@ -353,15 +353,19 @@ public class PreferencesController {
 					//mappings
 					LOGGER.info("update mapping files");
 					bodcLog.appendText("update mapping files"+System.getProperty("line.separator"));
-					ICollection p06 = SDNVocabs.getInstance().getCf().getCollection(true, "P06");
-					ICollection p09 = SDNVocabs.getInstance().getCf().getCollection(true, "P09");
-					ICollection p02 = SDNVocabs.getInstance().getCf().getCollection(true, "P02");
-					ICollection p01 = SDNVocabs.getInstance().getCf().getCollection(true, "P01");
-
+					ICollection p06 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P06);
+					ICollection p09 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P09);
+					ICollection p02 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P02);
+					ICollection p01 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P01);
+					ICollection l22 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_L22);
 					try {
 						ICollectionMapping p06_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p06, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
 						ICollectionMapping p01_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
 						ICollectionMapping p01_from_P02 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p02.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P02));
+						/*P01 from P01 is needed to detect deprecated P01 */
+						ICollectionMapping p01_from_P01 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p01.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P01));
+						ICollectionMapping p06_from_P06 = SDNVocabs.getInstance().getCf().getMapping(true, p06, p06.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P06));
+						ICollectionMapping l22_from_L22 = SDNVocabs.getInstance().getCf().getMapping(true, l22, l22.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_L22));
 					} catch (VocabularyException e) {
 						bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
 						LOGGER.info(e.getMessage()+System.getProperty("line.separator"));

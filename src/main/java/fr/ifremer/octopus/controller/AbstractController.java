@@ -50,6 +50,8 @@ public abstract class AbstractController {
 	 */
 	private Conversion conversion;
 	protected ResourceBundle messages ;
+	protected int nbFilesInInputDirectory;
+	protected int nbErrorFilesInInputDirectory;
 	/**
 	 * @throws OctopusException 
 	 * 
@@ -114,7 +116,13 @@ public abstract class AbstractController {
 	 * @throws SQLException 
 	 */
 	public List<String> process() throws OctopusException, SQLException {
-
+		// used only if input is a directory, to store info on eventual errors on some files
+		nbFilesInInputDirectory=0;
+		nbErrorFilesInInputDirectory=0;
+		if(model.getInputFile().isDirectory()){
+			LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.inputDirectoryNbFiles"), model.getInputFile().listFiles().length));
+		}
+		
 		List<String> outputFilesList=new ArrayList<String>();
 
 		try {
@@ -154,8 +162,16 @@ public abstract class AbstractController {
 				createOutputDir();
 			}
 			if (model.getInputFile().isDirectory()){
-				for (File f: model.getInputFile().listFiles())
-					outputFilesList=processFile (f, outputFilesList);
+				for (File f: model.getInputFile().listFiles()){
+					nbFilesInInputDirectory+=1;
+					try{
+						outputFilesList=processFile (f, outputFilesList);
+					}catch(Exception e){
+						LOGGER.error(e.getMessage());
+						LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.errorOnOneFileInADirectory"), f.getAbsolutePath()));
+						nbErrorFilesInInputDirectory+=1;
+					}
+				}
 			}else{
 				outputFilesList=processFile (model.getInputFile(), outputFilesList);
 			}
@@ -186,6 +202,35 @@ public abstract class AbstractController {
 		//		} catch (ClassNotFoundException | SQLException e) {
 		//			e.printStackTrace();
 		//		}
+		
+		/**
+		 * INFOS AFTER PROCESS
+		 */
+		if(model.getInputFile().isDirectory()){
+			// some files on error
+			if(nbErrorFilesInInputDirectory>0 && nbFilesInInputDirectory>nbErrorFilesInInputDirectory){
+				LOGGER.warn(MessageFormat.format(messages.getString("abstractcontroller.processDirWarnNBFiles"), nbErrorFilesInInputDirectory, nbFilesInInputDirectory));
+			}
+			// all files on error
+			else if(nbErrorFilesInInputDirectory==nbFilesInInputDirectory){
+				LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.processDirErrorNBFiles"), nbErrorFilesInInputDirectory));
+			}
+			// all files ok
+			else{
+				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.processSucessNBFiles"), nbFilesInInputDirectory, outputFilesList.size()));
+				LOGGER.info(outputFilesList);
+			}
+
+		}else{
+			if (outputFilesList.size()>0){
+				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.processSucessNBFiles"), outputFilesList.size()));
+				LOGGER.info(outputFilesList);
+			}else{
+				LOGGER.error("no file exported");// should not append because an exception should have been raised
+			}
+		}
+		
+		
 		return outputFilesList;
 
 

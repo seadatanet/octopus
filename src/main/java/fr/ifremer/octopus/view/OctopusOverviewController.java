@@ -635,10 +635,6 @@ public class OctopusOverviewController {
 					LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.exportTo"), format.getName())); 
 					octopusGuiController.getModel().setOutputFormat(format);
 					List<String> outputFiles = octopusGuiController.process();
-					LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.processSucessNBFiles"), outputFiles.size() ));
-					if (outputFiles.size()>0){
-						LOGGER.info(outputFiles);
-					}
 				} catch (OctopusException e) {
 					LOGGER.error(e.getMessage());
 				} catch (SQLException e) {

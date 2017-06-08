@@ -85,14 +85,22 @@ public class BatchController extends AbstractController{
 		} catch (ParseException e1) {
 			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
 		}
-
+		
+		
 		try {
+			
 			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startExport"), model.getInputPath()));
+			
+			
+			/**
+			 * PROCESS
+			 */
 			List<String> outputFiles = process();
-			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.processSucessNBFiles"), outputFiles.size()));
-			if (outputFiles.size()>0){
-				LOGGER.info(outputFiles);
-			}
+			
+			
+			
+			
+			
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
@@ -224,7 +232,7 @@ public class BatchController extends AbstractController{
 		if (optionValue.trim().equalsIgnoreCase(Format.CFPOINT.getName())){
 			return Format.CFPOINT;
 		}
-		throw new OctopusException(messages.getString("abstractcontroller.unrecognizedOutputFormat"));
+		throw new OctopusException(messages.getString("batchcontroller.unrecognizedOutputFormat"));
 	}
 
 
@@ -241,7 +249,7 @@ public class BatchController extends AbstractController{
 		if (optionValue.trim().equalsIgnoreCase(T_OPTION_KEEP)){
 			return OctopusModel.OUTPUT_TYPE.MULTI;
 		}
-		throw new OctopusException(messages.getString("abstractcontroller.unrecognizedOutputType"));
+		throw new OctopusException(messages.getString("batchcontroller.unrecognizedOutputType"));
 	}
 
 

@@ -52,7 +52,7 @@ public class AboutController {
 		}
 if (!ok){
 	try {
-		String content = new String(Files.readAllBytes(Paths.get(getClass().getResource("roadmap/roadmap_"+locale.toString()+".txt").toURI())));
+		String content = new String(Files.readAllBytes(Paths.get(getClass().getResource("../../../../roadmap/roadmap_"+locale.toString()+".txt").toURI())));
 		LOGGER.debug("content :" +content);
 		roadmapweb.getEngine().loadContent(content);
 		

@@ -1,12 +1,16 @@
 package fr.ifremer.octopus.view;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 import javafx.fxml.FXML;
 import javafx.scene.web.WebView;
@@ -34,32 +38,31 @@ public class AboutController {
 		Locale locale = PreferencesManager.getInstance().getLocale();
 		LOGGER.debug("initialize about panel with roadmap: " +getClass().getCanonicalName());
 		boolean ok=true;
-//		try{
-//			String pathString="/roadmap/roadmap_"+locale.toString()+".txt";
-//			URL res = getClass().getResource(pathString);
-//			LOGGER.info(pathString + " -> " + res);
-//			
-//			if (res==null){
-//				pathString="roadmap/roadmap_"+locale.toString()+".txt";
-//				res = getClass().getResource(pathString);
-//				LOGGER.info(pathString + " -> " + res);
-//			}
-//			
+		try{
+			String pathString="/roadmap/roadmap_"+locale.toString()+".txt";
+			URL res = getClass().getResource(pathString);
+			LOGGER.info(pathString + " -> " + res);
+			
+			if (res==null){
+				pathString="roadmap/roadmap_"+locale.toString()+".txt";
+				res = getClass().getResource(pathString);
+				LOGGER.info(pathString + " -> " + res);
+			}
+			
 //			String content = new String(Files.readAllBytes(Paths.get(getClass().getResource(pathString).toURI())));
-//			
+			InputStream toto = getClass().getResourceAsStream(pathString);
+			String content = new BufferedReader(new InputStreamReader(toto))
+			  .lines().collect(Collectors.joining("\n"));
 //			LOGGER.debug("content :" +content);
-//			roadmapweb.getEngine().loadContent(content);
-//			
-//			
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//			LOGGER.error(e.getMessage());
-//			
-//		} catch (URISyntaxException e) {
-//			// TODO Auto-generated catch block
-//			LOGGER.error(e.getMessage());
-//		}
+			roadmapweb.getEngine().loadContent(content);
+			
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			LOGGER.error(e.getMessage());
+			
+		} 
 	}
 	 
 	/**

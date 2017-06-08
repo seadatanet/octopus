@@ -34,32 +34,32 @@ public class AboutController {
 		Locale locale = PreferencesManager.getInstance().getLocale();
 		LOGGER.debug("initialize about panel with roadmap: " +getClass().getCanonicalName());
 		boolean ok=true;
-		try{
-			String pathString="/roadmap/roadmap_"+locale.toString()+".txt";
-			URL res = getClass().getResource(pathString);
-			LOGGER.info(pathString + " -> " + res);
-			
-			if (res==null){
-				pathString="roadmap/roadmap_"+locale.toString()+".txt";
-				res = getClass().getResource(pathString);
-				LOGGER.info(pathString + " -> " + res);
-			}
-			
-			String content = new String(Files.readAllBytes(Paths.get(getClass().getResource(pathString).toURI())));
-			
-			LOGGER.debug("content :" +content);
-			roadmapweb.getEngine().loadContent(content);
-			
-			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			LOGGER.error(e.getMessage());
-			
-		} catch (URISyntaxException e) {
-			// TODO Auto-generated catch block
-			LOGGER.error(e.getMessage());
-		}
+//		try{
+//			String pathString="/roadmap/roadmap_"+locale.toString()+".txt";
+//			URL res = getClass().getResource(pathString);
+//			LOGGER.info(pathString + " -> " + res);
+//			
+//			if (res==null){
+//				pathString="roadmap/roadmap_"+locale.toString()+".txt";
+//				res = getClass().getResource(pathString);
+//				LOGGER.info(pathString + " -> " + res);
+//			}
+//			
+//			String content = new String(Files.readAllBytes(Paths.get(getClass().getResource(pathString).toURI())));
+//			
+//			LOGGER.debug("content :" +content);
+//			roadmapweb.getEngine().loadContent(content);
+//			
+//			
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//			LOGGER.error(e.getMessage());
+//			
+//		} catch (URISyntaxException e) {
+//			// TODO Auto-generated catch block
+//			LOGGER.error(e.getMessage());
+//		}
 	}
 	 
 	/**

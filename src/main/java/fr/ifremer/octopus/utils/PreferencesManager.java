@@ -27,6 +27,7 @@ public class PreferencesManager {
 	
 	public static final int THEME_WHITE=0;
 	public static final int THEME_OCTOPUS=1;
+	public static final int THEME_WHITE_PIXEL=2;
 	
 	private static PreferencesManager mgr;
 
@@ -192,6 +193,8 @@ public class PreferencesManager {
 			return "whiteTheme.css";
 		case 1:
 			return "octopusTheme.css";
+		case 2:
+			return "whitePixelTheme.css";
 		default:
 			return "whiteTheme.css";
 		}

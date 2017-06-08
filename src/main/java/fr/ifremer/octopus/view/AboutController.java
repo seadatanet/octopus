@@ -32,18 +32,21 @@ public class AboutController {
 	@FXML
 	private void initialize() {
 		Locale locale = PreferencesManager.getInstance().getLocale();
-		LOGGER.debug("initialize about panel with roadmap: " +"/roadmap/roadmap_"+locale.toString()+".txt");
+		LOGGER.debug("initialize about panel with roadmap: " +getClass().getCanonicalName());
 		boolean ok=true;
 		try{
 			String pathString="/roadmap/roadmap_"+locale.toString()+".txt";
 			URL res = getClass().getResource(pathString);
+			LOGGER.info(pathString + " -> " + res);
 			
 			if (res==null){
 				pathString="roadmap/roadmap_"+locale.toString()+".txt";
 				res = getClass().getResource(pathString);
+				LOGGER.info(pathString + " -> " + res);
 			}
 			
 			String content = new String(Files.readAllBytes(Paths.get(getClass().getResource(pathString).toURI())));
+			
 			LOGGER.debug("content :" +content);
 			roadmapweb.getEngine().loadContent(content);
 			

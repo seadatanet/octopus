@@ -94,6 +94,20 @@ public class Batch_Dir_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		
 		
 	}
+	/**
+	 * 1 odv dir with invalid file files ->
+	 */
+	//@Test
+	public void dir_odv_invalid() {
+		inFormat="odv";
+		in="odv/input/profile_invalid";
+		out = "profile/invalid";
+		type= "keep";
+		outFormat = "odv";
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+	}
 	@Override
 	protected String getInputDir() {
 		return "odv";

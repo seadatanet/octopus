@@ -160,7 +160,7 @@ public class MainApp extends Application {
 			// Give the controller access to the main app.
 			AboutController aController = loader.getController();
 			aController.setMainApp(this);
-		} catch (IOException e) {
+		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
 		}
 

@@ -2,6 +2,7 @@ package fr.ifremer.octopus.view;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Locale;
@@ -33,8 +34,16 @@ public class AboutController {
 		Locale locale = PreferencesManager.getInstance().getLocale();
 		LOGGER.debug("initialize about panel with roadmap: " +"/roadmap/roadmap_"+locale.toString()+".txt");
 		boolean ok=true;
-		try {
-			String content = new String(Files.readAllBytes(Paths.get(getClass().getResource("/roadmap/roadmap_"+locale.toString()+".txt").toURI())));
+		try{
+			String pathString="/roadmap/roadmap_"+locale.toString()+".txt";
+			URL res = getClass().getResource(pathString);
+			
+			if (res==null){
+				pathString="roadmap/roadmap_"+locale.toString()+".txt";
+				res = getClass().getResource(pathString);
+			}
+			
+			String content = new String(Files.readAllBytes(Paths.get(getClass().getResource(pathString).toURI())));
 			LOGGER.debug("content :" +content);
 			roadmapweb.getEngine().loadContent(content);
 			
@@ -43,32 +52,11 @@ public class AboutController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			LOGGER.error(e.getMessage());
-			ok=false;
 			
 		} catch (URISyntaxException e) {
 			// TODO Auto-generated catch block
 			LOGGER.error(e.getMessage());
-			ok=false;
 		}
-if (!ok){
-	try {
-		String content = new String(Files.readAllBytes(Paths.get(getClass().getResource("../../../../roadmap/roadmap_"+locale.toString()+".txt").toURI())));
-		LOGGER.debug("content :" +content);
-		roadmapweb.getEngine().loadContent(content);
-		
-		
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-		LOGGER.error(e.getMessage());
-		ok=false;
-		
-	} catch (URISyntaxException e) {
-		// TODO Auto-generated catch block
-		LOGGER.error(e.getMessage());
-		ok=false;
-	}
-}
 	}
 	 
 	/**

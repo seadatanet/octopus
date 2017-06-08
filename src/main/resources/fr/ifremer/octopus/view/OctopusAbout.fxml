@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.web.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
@@ -22,6 +23,7 @@
             <Image url="@../../../../images/octopus_transp.png" />
          </image>
       </ImageView>
-      <WebView fx:id="roadmapweb" layoutX="34.0" layoutY="521.0" prefHeight="213.0" prefWidth="1118.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <WebView fx:id="roadmapweb" layoutX="34.0" layoutY="521.0" prefHeight="250.0" prefWidth="1160.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Separator layoutX="88.0" layoutY="523.0" prefHeight="0.0" prefWidth="954.0" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
    </children>
 </AnchorPane>

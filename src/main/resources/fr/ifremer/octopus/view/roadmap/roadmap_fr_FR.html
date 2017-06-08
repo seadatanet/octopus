@@ -1,0 +1,49 @@
+<html lang="fr">
+<body>
+<h4>Version 1.0</h4>
+
+<i>Première version</i>
+
+<h4>Version 1.1</h4>
+
+<h5>Corrections</h5>
+	<ul>
+    	<li>Ne plus ajouter une ligne de commentaire vide lors de la conversion MedATLAS ou ODV vers ODV</li>
+    	<li>Correction de l'attribut global "title" dans les fichiers CFPoint générés</li>
+    	<li>Correction des noms de format apparaissant dans l'onglet coupling table</li>
+    	<li>Le préfixe pour la coupling table ne doit pas être obligatoire</li>
+    	<li>Correction d'un bug sur le vidage de la coupling table</li>
+    	<li>Conversion vers ODV: correction du format ISO de la colonne de date des métadonnées</li>
+    </ul>
+    
+<h5>Evolutions</h5>
+	<ul>
+		<li>Amélioration des messages dans les journaux</li>
+		<li>Conversion CFPoint vers CFPoint: optimisation des dimensions des variables dans le fichier de sortie</li>
+		<li>L'écrasement de fichiers en sortie est possible pour tous les types de conversion</li>
+ 	</ul>
+
+<h4>Version 1.2</h4>
+	<ul>
+		<li>Possibilité d'utiliser un préfixe vide pour la coupling</li>
+		<li>Correction pour le  chemin de sortie en mode batch</li>
+		<li>Correction d'un bug sur le vidage de la coupling table</li>
+		<li>Amelioration de la log, affichage des messages de succès en vert</li>
+		<li>Correction des noms de fichiers ODV générés depuis des fichiers MGD</li>
+ 	</ul>
+ 	
+ 	
+<h4>Version 1.3</h4>
+<h5>Corrections</h5>
+	<ul>
+		<li>Fichiers ODV, séries temporelles, date (variable primaire): possibilité d'utiliser n'importe quel format ISO</li>
+		<li>Fichiers ODV: gestion des fichiers contenant des lignes vides, ou ne contenant que des tabulations.</li>
+		<li>Fichiers ODV: gestion des fichiers UTF-8 avec BOM (Byte Order Mark)</li>
+ 	</ul>
+ <h5>Evolutions</h5>
+ 	<ul>
+		<li>Fichiers ODV, formats de date: vérification de la validité des formats de dates ISO et de la cohérence entre les formats des valeurs et les formats ISO (en-têtes des colonnes date de métadonnées et date variable primaire des séries temporelles)</li>
+		<li>Gestion des paramètres BODC: détection des paramètres non existant ou obsolètes. Remplacement automatique des paramètres obsolètes.</li>
+		<li>Amélioration des journaux: affichage du fichier en erreur dans le cas de la conversion d'un répertoire</li>
+	</ul>
+</body>

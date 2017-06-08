@@ -1,0 +1,8 @@
+Version 1.2:
+Possibilit\u00E9 d'utiliser un pr\u00E9fixe vide pour la coupling
+Correction pour le  chemin de sortie en mode batch
+Correction d'un bug sur le vidage de la coupling table
+Amelioration de la log, affichage des messages de succ\u00E8s en vert
+Correction des noms de fichiers ODV g\u00E9n\u00E9r\u00E9s depuis des fichiers MGD
+
+Version 1.3

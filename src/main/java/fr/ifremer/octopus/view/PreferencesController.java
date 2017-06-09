@@ -273,7 +273,7 @@ public class PreferencesController {
 		Task<Void> task = new Task<Void>(){
 			@Override
 			public Void call(){
-
+				String LINESEP=System.getProperty("line.separator");
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
 				disablePane(true);
 
@@ -281,26 +281,30 @@ public class PreferencesController {
 					int before = EdmoManager.getInstance().getEdmoList().size();
 					EdmoManager.getInstance().updateEdmo();
 					int after = EdmoManager.getInstance().getEdmoList().size();
-					bodcLog.appendText(MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after) +System.getProperty("line.separator"));
+					bodcLog.appendText(MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after) +LINESEP);
 				}catch(Exception e){
 
 				}
 				try{
 					String[] vocabsList = {
-							SdnVocabularyManager.LIST_P01, SdnVocabularyManager.LIST_P06, SdnVocabularyManager.LIST_P09,
-							SdnVocabularyManager.LIST_L22, SdnVocabularyManager.LIST_L33};
+							SdnVocabularyManager.LIST_C17, SdnVocabularyManager.LIST_C77,
+							SdnVocabularyManager.LIST_L05,
+							SdnVocabularyManager.LIST_L22, SdnVocabularyManager.LIST_L23, SdnVocabularyManager.LIST_L33,
+							SdnVocabularyManager.LIST_P01, SdnVocabularyManager.LIST_P02, SdnVocabularyManager.LIST_P06, SdnVocabularyManager.LIST_P09
+							};
+					
 					int version;
 					HashMap<String, Integer> oldVersions = new HashMap<>();
 					HashMap<String, Integer> newVersions = new HashMap<>();
 					LOGGER.info("check current vocabulary files");
-					bodcLog.appendText("check current vocabulary files"+System.getProperty("line.separator"));
+					bodcLog.appendText("check current vocabulary files"+LINESEP);
 					for (String list: vocabsList){
 						try {
 							version = SDNVocabs.getInstance().getCf().getCollection(false, list).getDescription().getVersion();
 							oldVersions.put(list, version );
 						} catch (VocabularyException e) {
 							LOGGER.info(e.getMessage());
-							bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
+							bodcLog.appendText(e.getMessage()+LINESEP);
 							// if getCollection offLine raises an exception, that means that the list in not in the local directory -> set old version to 0
 							oldVersions.put(list, nonPresent_bodc );
 						}
@@ -309,11 +313,11 @@ public class PreferencesController {
 
 					// reload
 					LOGGER.info("download or update vocabulary files");
-					bodcLog.appendText("download or update vocabulary files"+System.getProperty("line.separator"));
+					bodcLog.appendText("download or update vocabulary files"+LINESEP);
 					try{
 						SDNVocabs.getInstance().reload();
 					}catch(Exception e){
-						bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
+						bodcLog.appendText(e.getMessage()+LINESEP);
 					}
 					updateProgress(8 , 10);
 
@@ -323,7 +327,7 @@ public class PreferencesController {
 							version = SDNVocabs.getInstance().getCf().getCollection(true, list).getDescription().getVersion();
 							newVersions.put(list, version );
 						} catch (VocabularyException e) {
-							bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
+							bodcLog.appendText(e.getMessage()+LINESEP);
 						}
 
 					}
@@ -334,7 +338,7 @@ public class PreferencesController {
 						for (String list: vocabsList){
 
 							if (oldVersions.get(list).equals(newVersions.get(list))){
-								bodcLog.appendText(MessageFormat.format(messages.getString("preferences.listAlreadyUpToDate"), list, newVersions.get(list)) +System.getProperty("line.separator"));
+								bodcLog.appendText(MessageFormat.format(messages.getString("preferences.listAlreadyUpToDate"), list, newVersions.get(list)) +LINESEP);
 							}else{
 								int old=oldVersions.get(list) ;
 								String oldString;
@@ -343,33 +347,51 @@ public class PreferencesController {
 								}else{
 									oldString=String.valueOf(old);
 								}
-								bodcLog.appendText(list + ": " +oldString+ " -> " + newVersions.get(list)+System.getProperty("line.separator") );
+								bodcLog.appendText(list + ": " +oldString+ " -> " + newVersions.get(list)+LINESEP );
 							}
 						}
 					}catch(Exception e){
 						LOGGER.error(e.getMessage());
-						bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
+						bodcLog.appendText(e.getMessage()+LINESEP);
 					}
 
 					//mappings
 					LOGGER.info("update mapping files");
-					bodcLog.appendText("update mapping files"+System.getProperty("line.separator"));
+					bodcLog.appendText("update mapping files"+LINESEP);
+					
+					ICollection p01 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P01);
+					ICollection p02 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P02);
 					ICollection p06 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P06);
 					ICollection p09 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P09);
-					ICollection p02 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P02);
-					ICollection p01 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P01);
-					ICollection l22 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_L22);
+					
 					try {
+						LOGGER.debug("mapping P06/P09");
 						ICollectionMapping p06_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p06, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
+						bodcLog.appendText("mapping P06/P09 : ok"+LINESEP);
+					
+						LOGGER.debug("mapping P01/P09");
 						ICollectionMapping p01_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
+						bodcLog.appendText("mapping P01/P09 : ok"+LINESEP);
+						
+						LOGGER.debug("mapping P01/P02");
 						ICollectionMapping p01_from_P02 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p02.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P02));
-						/*P01 from P01 is needed to detect deprecated P01 */
-						ICollectionMapping p01_from_P01 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p01.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P01));
-						ICollectionMapping p06_from_P06 = SDNVocabs.getInstance().getCf().getMapping(true, p06, p06.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P06));
-						ICollectionMapping l22_from_L22 = SDNVocabs.getInstance().getCf().getMapping(true, l22, l22.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_L22));
+						bodcLog.appendText("mapping P01/P02 : ok"+LINESEP);
+						/*mapping on list itself (xxx from xxx) is needed to detect deprecated xxx */
+						for (String list: vocabsList){
+							ICollection collec = SDNVocabs.getInstance().getCf().getCollection(true, list);
+							LOGGER.debug("mapping "+list+"/"+list);
+							try{
+								ICollectionMapping automapping = SDNVocabs.getInstance().getCf().getMapping(true, collec, collec.getMappedDescriptionFromKey(list));
+								bodcLog.appendText("mapping "+list+"/"+list+": ok" + LINESEP);
+								LOGGER.debug("mapping "+list+"/"+list+": ok" + LINESEP);
+							}catch(Exception e){
+								LOGGER.warn("mapping "+list+"/"+list + " does not exist. BODC tems deprecation checks will not be possible for this list.");
+								bodcLog.appendText("mapping "+list+"/"+list + " does not exist. BODC tems deprecation checks will not be possible for this list."+LINESEP);
+							}
+						}
 					} catch (VocabularyException e) {
-						bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
-						LOGGER.info(e.getMessage()+System.getProperty("line.separator"));
+						bodcLog.appendText(e.getMessage()+LINESEP);
+						LOGGER.info(e.getMessage()+LINESEP);
 					}finally{
 						mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 						disablePane(false);
@@ -378,7 +400,7 @@ public class PreferencesController {
 
 				}catch(Exception e){
 					LOGGER.error(e.getMessage());
-					bodcLog.appendText(e.getMessage()+System.getProperty("line.separator"));
+					bodcLog.appendText(e.getMessage()+LINESEP);
 				}finally{
 					mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 					disablePane(false);

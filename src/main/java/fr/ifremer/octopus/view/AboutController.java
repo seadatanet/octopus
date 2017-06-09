@@ -3,7 +3,6 @@ package fr.ifremer.octopus.view;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.URL;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
@@ -34,16 +33,19 @@ public class AboutController {
 		LOGGER.debug("initialize about panel with roadmap: " +getClass().getCanonicalName());
 		try{
 			String pathString="/roadmap/roadmap_"+locale.toString()+".html";
-
-			
 			InputStream inputRoadmap = getClass().getResourceAsStream(pathString);
+			if (inputRoadmap==null){
+				 pathString="roadmap/roadmap_"+locale.toString()+".html";
+				 inputRoadmap = getClass().getResourceAsStream(pathString);
+			}
+			
 			String content = new BufferedReader(new InputStreamReader(inputRoadmap))
 			  .lines().collect(Collectors.joining("\n"));
 			roadmapweb.getEngine().loadContent(content);
 			
-			
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
+			LOGGER.error("error on roadmap read");
 		} 
 	}
 	 

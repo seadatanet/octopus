@@ -18,7 +18,13 @@ AnchorPane{
     -fx-opacity: 1;
 }
 
-
+.description{
+	-fx-font-size: 9pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-style: italic;
+    -fx-text-fill: #555555;
+    -fx-opacity: 1;
+}
 
 
 /**radio buttons labels */
@@ -160,3 +166,5 @@ RadioButton{
     -fx-text-fill: #555555;
     -fx-opacity: 1;
 }
+
+

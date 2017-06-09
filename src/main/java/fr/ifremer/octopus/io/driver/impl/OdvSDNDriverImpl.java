@@ -12,7 +12,7 @@ import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class OdvSDNDriverImpl extends Driver {
 	private static final Logger LOGGER = LogManager.getLogger(OdvSDNDriverImpl.class);
-
+	public static final String UTF8_BOM = "\uFEFF";
 
 	@Override
 	public boolean canOpen(String file)  {
@@ -23,6 +23,10 @@ public class OdvSDNDriverImpl extends Driver {
 			String firstLine = reader.readLine();
 			// TODO BGT specs: define more criteria here?
 			// Actual criteria: if first character is "//", the file is a odv file
+			
+			if (firstLine.startsWith(UTF8_BOM)){
+				firstLine = firstLine.substring(1, firstLine.length());
+			}
 			if( firstLine.trim().startsWith("//")){
 				format = Format.ODV_SDN;
 				canOpen= true;

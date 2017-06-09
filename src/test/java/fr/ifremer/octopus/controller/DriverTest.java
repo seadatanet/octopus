@@ -15,6 +15,7 @@ import fr.ifremer.octopus.io.driver.impl.CFPointDriverImpl;
 import fr.ifremer.octopus.io.driver.impl.DriverManagerImpl;
 import fr.ifremer.octopus.io.driver.impl.MedatlasSDNDriverImpl;
 import fr.ifremer.octopus.io.driver.impl.OdvSDNDriverImpl;
+import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class DriverTest {
@@ -74,6 +75,24 @@ public class DriverTest {
 			Driver d = driverManager.findDriverForFile(PWD+"cfpoint/input/profile/diap.nc");
 			LOGGER.info(d.getFormat());
 			Assert.assertTrue(d.getFormat().equals(Format.CFPOINT));
+		} catch (IOException e) {
+			LOGGER.error(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	@Test
+	public void debugEncodingODVWithBOMTest() {
+		
+		try {
+			try {
+				PreferencesManager.getInstance().load();
+			} catch (OctopusException e) {
+				e.printStackTrace();
+			}
+			Driver d = driverManager.findDriverForFile(PWD+"odv/input/profile/00563439_ODV_withBOM.txt");
+//			Driver d = driverManager.findDriverForFile(PWD+"tmp/dick/00563439_ODV.txt");
+			LOGGER.info("format is :" +d.getFormat());
+			Assert.assertTrue(d.getFormat().equals(Format.ODV_SDN));
 		} catch (IOException e) {
 			LOGGER.error(e.getMessage());
 			e.printStackTrace();

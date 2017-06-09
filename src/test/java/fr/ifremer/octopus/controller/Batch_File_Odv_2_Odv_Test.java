@@ -109,6 +109,28 @@ public class Batch_File_Odv_2_Odv_Test extends AbstractBatch_X_2_Y_Test {
 		
 		
 	}
+	@Test
+	public void file_odv_2_odv_withBOM() {
+		/** check an ODV file in UTF-8 with a BOM (byte order mark)
+		https://fr.wikipedia.org/wiki/Indicateur_d'ordre_des_octets
+		 DO NOT COPY OR RENAME THIS ODV TEST FILE!!!
+		 To check if a file has a BOM, use the linux cmd "file":
+		sophie@debian:~/Documents/workspaces/SISMER/lunaFx/octopus/src/test/resources/odv/input/profile$ file -b 00563439_ODV_withBOM.txt 
+		-> result is: UTF-8 Unicode (with BOM) text
+		 **/
+		inFormat="odv";
+		in="odv/input/profile/00563439_ODV_withBOM.txt";
+		out = "profile/00563439_ODV_withBOM.txt";
+		type= "keep";
+		outFormat = "odv";
+		
+		expectOutputExist=true;
+		launchTest(logger);
+		checkResult(expectOutputExist);
+		resume(in, out, logger);
+		
+		
+	}
 	@Override
 	protected String getInputDir() {
 		return "odv";

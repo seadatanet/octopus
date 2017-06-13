@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -37,6 +38,8 @@ public class BatchController extends AbstractController{
 	private static String OPTION_CDI = "c";
 	private static String OPTION_OUT_LOCAL_CDI_ID = "l";
 	private List<String> mandatory_options = new ArrayList<>();
+	private ResourceBundle aboutBundle;
+	
 
 
 	private static int OK_EXIT_CODE = 0;
@@ -70,6 +73,8 @@ public class BatchController extends AbstractController{
 		super();
 		//***************************************************************
 		this.isJunitTest = isJunitTest;
+		aboutBundle = ResourceBundle.getBundle("bundles/about", PreferencesManager.getInstance().getLocale());
+		LOGGER.info(MessageFormat.format("Octopus version {0}",  aboutBundle.getString("about.version")));
 		// use altran edmo code for junit tests (preferences.xml file value must be empty)
 		if (this.isJunitTest){
 			PreferencesManager.getInstance().setEdmoCode(3367);

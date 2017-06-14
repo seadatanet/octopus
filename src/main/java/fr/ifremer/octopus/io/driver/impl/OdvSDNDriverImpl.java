@@ -19,30 +19,16 @@ public class OdvSDNDriverImpl extends Driver {
 	@Override
 	public boolean canOpen(String file)  {
 		boolean canOpen = false;
-		BufferedReader reader  = null;
+		BufferedReader buffer  = null;
 		try{
-
-
-			reader = new BufferedReader(new FileReader(file)) ;
-			String firstLine = reader.readLine();
-			// TODO BGT specs: define more criteria here?
-			// Actual criteria: if first character is "//", the file is a odv file
-
-			if (firstLine.startsWith(UTF8_BOM)){
-				firstLine = firstLine.substring(1, firstLine.length());
-			}
-			if( firstLine.trim().startsWith("//")){
-				format = Format.ODV_SDN;
-				canOpen= true;
-			}else{
-				canOpen= false;
-			}
+			buffer = new BufferedReader(new FileReader(file)) ;
+			canOpen=checkFirstLineOk(buffer);
 
 		}catch(Exception e){
 			LOGGER.error(e.getMessage());
 		}finally{
 			try {
-				reader.close();
+				buffer.close();
 			} catch (IOException e) {
 				LOGGER.debug(e.getMessage());
 			}
@@ -50,26 +36,17 @@ public class OdvSDNDriverImpl extends Driver {
 
 		if (!canOpen){
 
-			FileInputStream fis = null;BufferedReader bf = null ;
+			FileInputStream fis = null;
 			try{
 				fis = new FileInputStream(file);
-				bf = new BufferedReader(new InputStreamReader(fis, "UTF8"));
-				String firstLine = bf.readLine();
-				if (firstLine.startsWith(UTF8_BOM)){
-					firstLine = firstLine.substring(1, firstLine.length());
-				}
-				if( firstLine.trim().startsWith("//")){
-					format = Format.ODV_SDN;
-					canOpen= true;
-				}else{
-					canOpen= false;
-				}
+				buffer = new BufferedReader(new InputStreamReader(fis, "UTF8"));
+				canOpen=checkFirstLineOk(buffer);
 			}catch(Exception e){
 				LOGGER.error(e.getMessage());
 			}finally{
 				try{
 					fis.close();
-					bf.close();
+					buffer.close();
 				} catch (IOException e) {
 					LOGGER.debug(e.getMessage());
 				}
@@ -77,6 +54,25 @@ public class OdvSDNDriverImpl extends Driver {
 		}
 		return canOpen;
 	}
+private boolean checkFirstLineOk (BufferedReader buffer){
+	try{
+		String firstLine = buffer.readLine();
+		
+		if (firstLine.startsWith(UTF8_BOM)){
+			firstLine = firstLine.substring(1, firstLine.length());
+		}
+		if( firstLine.trim().startsWith("//")){
+			format = Format.ODV_SDN;
+			return  true;
+		}else{
+			return false;
+		}
+	}catch(Exception e){
+		LOGGER.error(e.getMessage());
+	}
+	return false;
+}
+
 
 
 }

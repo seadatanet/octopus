@@ -34,6 +34,7 @@ public class DriverManagerImpl implements DriverManager {
 		for(Driver driver : drivers) {
 			if(driver.canOpen(file)) {
 				availableDriver = driver;
+				return availableDriver;
 			}
 		}
 		

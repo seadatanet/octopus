@@ -47,7 +47,7 @@
                                     <RadioButton fx:id="radioMulti" mnemonicParsing="false" onAction="#checkedMulti" selected="true" text="%output.type.multi" toggleGroup="$outputType" />
                                  </children>
                               </HBox>
-            						<Label text="%input.label">
+            						<Label text="%input.label" GridPane.rowIndex="1">
                                  <GridPane.margin>
                                     <Insets right="2.0" />
                                  </GridPane.margin>
@@ -55,13 +55,16 @@
                                     <Insets right="3.0" />
                                  </padding>
                               </Label>
-            						<TextField fx:id="inputPathTextField" onKeyPressed="#inputChanged" prefHeight="32.0" prefWidth="691.0" GridPane.columnIndex="1" />
-                              <Button fx:id="checkButton" mnemonicParsing="false" onAction="#validate" text="%input.validate" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            						<TextField fx:id="inputPathTextField" onKeyPressed="#inputChanged" prefHeight="32.0" prefWidth="691.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Button fx:id="checkButton" mnemonicParsing="false" onAction="#validate" text="%input.validate" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets top="1.0" />
+                                 </GridPane.margin></Button>
                               <Label fx:id="outCDILabel" prefHeight="30.0" prefWidth="311.0" text="%output.outputLocalCdiId" GridPane.rowIndex="5" />
                               <TextField fx:id="outCDI" prefHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                               <Button fx:id="chooseOutCdi" mnemonicParsing="false" onAction="#openChooseOutCdi" text="%output.chooseOutCDI" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                              <Button fx:id="submitInput" mnemonicParsing="false" onAction="#inputChangedManual" text="%input.submit" GridPane.columnIndex="2" />
-                              <Label styleClass="description" text="%input.desc" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <Button fx:id="submitInput" mnemonicParsing="false" onAction="#inputChangedManual" text="%input.submit" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label styleClass="description" text="%input.desc" GridPane.columnIndex="1">
                                  <font>
                                     <Font name="System Italic" size="9.0" />
                                  </font>

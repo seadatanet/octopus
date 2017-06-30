@@ -223,7 +223,7 @@ public abstract class AbstractController {
 
 		}else{
 			if (outputFilesList.size()>0){
-				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.processSucessNBFiles"), outputFilesList.size()));
+				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.processSucessNBFiles"), 1, outputFilesList.size()));
 				LOGGER.info(outputFilesList);
 			}else{
 				LOGGER.error("no file exported");// should not append because an exception should have been raised

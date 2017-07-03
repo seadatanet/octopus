@@ -122,6 +122,28 @@
 				<version>2.7</version>
 				<executions>
 					<execution>
+						<id>copy-resource-win</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrableWin/octopus/resources</outputDirectory>
+							<resources>
+								<resource>
+									<directory>resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- 
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
 						<id>copy-resource-win32s</id>
 						<phase>install</phase>
 						<goals>
@@ -159,6 +181,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			 -->
 				<!-- ===================================== COPY AND RENAME JAR =========================================== -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
@@ -178,6 +201,25 @@
 					</execution>
 				</executions>
 			</plugin>
+				<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-jar-win</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<destinationFile>target/livrableWin/octopus/octopus.jar</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- 
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -214,7 +256,27 @@
 					</execution>
 				</executions>
 			</plugin>
+			 -->
 	<!-- ===================================== COPY EXE =========================================== -->
+	<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-exe-win</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>build/octopus.exe</sourceFile>
+							<destinationFile>target/livrableWin/octopus/octopus.exe</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- 
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -251,6 +313,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			 -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>

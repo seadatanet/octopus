@@ -8112,24 +8112,24 @@ Avda. Doctor Moliner, s/nº
   <Organisation>
     <n_code>353</n_code>
     <input_date />
-    <last_update>3/22/2012 6:16:41 PM</last_update>
+    <last_update>6/14/2017 8:49:03 PM</last_update>
     <date_created>7/24/1995 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year>2012</organisation_changed_year>
-    <Longitude>-3.693466667</Longitude>
-    <Latitude>40.45860833</Latitude>
+    <Longitude>-3.6709</Longitude>
+    <Latitude>40.4402</Latitude>
     <collate_id>353</collate_id>
     <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/353/l_ieo.gif</logo>
     <name>IEO/Spanish Oceanographic Institute</name>
-    <native_name>IEO/Instituto Espanol de Oceanografia </native_name>
+    <native_name>IEO/Instituto Espanol de Oceanografia</native_name>
     <abbreviated_name>IEO</abbreviated_name>
-    <address>Corazon de Maria,8</address>
+    <address>Corazon de Maria, 8</address>
     <zipcode>28002</zipcode>
     <city>MADRID</city>
     <state />
     <country>8</country>
-    <email>cedo@md.ieo.es</email>
+    <email>cedo@ieo.es</email>
     <phone>+34 915 107513</phone>
     <fax>+34 914 135597</fax>
     <website>http://www.ieo.es</website>
@@ -18680,7 +18680,7 @@ CS 10070</address>
   <Organisation>
     <n_code>849</n_code>
     <input_date />
-    <last_update>8/7/2010 4:17:24 PM</last_update>
+    <last_update>7/2/2017 10:04:11 AM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -18691,17 +18691,17 @@ CS 10070</address>
     <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/697/indd logo.jpg</logo>
     <name>Danube Delta National Institute for  Research and Development</name>
     <native_name />
-    <abbreviated_name />
+    <abbreviated_name>DDNI</abbreviated_name>
     <address>165 Babadag Street
 </address>
     <zipcode />
     <city>Tulcea</city>
     <state />
     <country>28</country>
-    <email>office@indd.tim.ro</email>
+    <email>office@ddni.ro</email>
     <phone>+40 240 531520</phone>
     <fax>+40 240 533547</fax>
-    <website>http://www.indd.tim.ro</website>
+    <website>http://www.ddni.ro</website>
     <c_country>Romania</c_country>
   </Organisation>
   <Organisation>
@@ -72445,30 +72445,29 @@ Station Marine d'Endoume Rue de la Batterie des Lions</address>
   <Organisation>
     <n_code>3078</n_code>
     <input_date>9/11/2012 5:11:31 PM</input_date>
-    <last_update>2/16/2017 2:55:01 PM</last_update>
+    <last_update>6/20/2017 9:56:42 AM</last_update>
     <date_created>9/11/2012 5:11:31 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>5.7333</Longitude>
-    <Latitude>43.4</Latitude>
+    <Longitude>5.4388</Longitude>
+    <Latitude>43.232</Latitude>
     <collate_id>486</collate_id>
     <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/486/logo_mio.jpg</logo>
-    <name>Mediterranean Institute of Oceanography - LUMINY (MIO) UMR 7294</name>
-    <native_name>Institut Mediteranneen D'Oceanologie- Luminy (MIO) UMR 7294
-</native_name>
+    <name>Mediterranean Institute of Oceanography - LUMINY (MIO) - UMR 7294 / 235 / 110</name>
+    <native_name>Institut Mediteranneen D'Oceanologie- Luminy (MIO) - UMR 7294 / 235 / 110</native_name>
     <abbreviated_name>MIO</abbreviated_name>
-    <address>University Of  Mediterrannee
-Campus de Luminy - OCEANOMED
-Bâtiment Méditerranée</address>
+    <address>M.I.O. Institut Méditerranéen d’Océanologie
+OCEANOMED
+163, Avenue de Luminy</address>
     <zipcode>13288</zipcode>
-    <city>Marseille</city>
+    <city>Marseille Cedex 09</city>
     <state />
     <country>10</country>
     <email />
-    <phone>+33(0)4 91 82 96 50</phone>
+    <phone>+33(0)4 91 82 92 12</phone>
     <fax />
-    <website>http://mio.pytheas.univ-amu.fr/</website>
+    <website>http://www.mio.univ-amu.fr/</website>
     <c_country>France</c_country>
   </Organisation>
   <Organisation>
@@ -108452,13 +108451,13 @@ CS 30171
   <Organisation>
     <n_code>4490</n_code>
     <input_date>3/8/2016 12:15:45 PM</input_date>
-    <last_update>2/16/2017 2:55:24 PM</last_update>
+    <last_update>6/20/2017 9:43:30 AM</last_update>
     <date_created>3/8/2016 12:15:45 PM</date_created>
-    <organisation_exists>True</organisation_exists>
-    <organisation_changed_into />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into>3078</organisation_changed_into>
     <organisation_changed_year />
-    <Longitude>5.7333</Longitude>
-    <Latitude>43.4</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>486</collate_id>
     <logo />
     <name>Mediterranean Institute Of Oceanography - Luminy (MIO) UMR 235</name>
@@ -109693,7 +109692,7 @@ GERMANY</address>
   <Organisation>
     <n_code>4536</n_code>
     <input_date>7/1/2016 1:54:14 PM</input_date>
-    <last_update>7/1/2016 1:54:22 PM</last_update>
+    <last_update>6/20/2017 11:05:50 AM</last_update>
     <date_created>7/1/2016 1:54:14 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -109702,8 +109701,8 @@ GERMANY</address>
     <Latitude>48.36</Latitude>
     <collate_id>486</collate_id>
     <logo />
-    <name>IFREMER / Ocean Physics and Satellite Oceanography Lab</name>
-    <native_name>IFREMER / Laboratoire d'Océanographie Physique et Spatiale
+    <name>Ocean Physics and Satellite oceanography laboratory (LOPS) - UMR 6523 CNRS-Ifremer-IRD-UBO</name>
+    <native_name>LABORATOIRE D'OCÉANOGRAPHIE PHYSIQUE ET SPATIALE (LOPS) - UMR 6523 CNRS-IFREMER-IRD-UBO
 </native_name>
     <abbreviated_name>LOPS</abbreviated_name>
     <address>IFREMER Centre de Bretagne
@@ -113830,6 +113829,398 @@ Strandgatan 37</address>
     <c_country>Denmark</c_country>
   </Organisation>
   <Organisation>
+    <n_code>4704</n_code>
+    <input_date>6/1/2017 9:09:43 AM</input_date>
+    <last_update>6/14/2017 3:33:41 PM</last_update>
+    <date_created>6/1/2017 9:09:43 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>16.266355</Longitude>
+    <Latitude>56.632746</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Jan Andersson Dykeri AB</name>
+    <native_name>Jan Andersson Dykeri AB</native_name>
+    <abbreviated_name />
+    <address>Dunövägen 32</address>
+    <zipcode>SE-394 77</zipcode>
+    <city>Kalmar</city>
+    <state />
+    <country>30</country>
+    <email />
+    <phone>+46 (0)480 47 05 39</phone>
+    <fax />
+    <website />
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4705</n_code>
+    <input_date>6/1/2017 9:23:44 AM</input_date>
+    <last_update>6/14/2017 3:33:16 PM</last_update>
+    <date_created>6/1/2017 9:23:44 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>13.02643</Longitude>
+    <Latitude>55.634625</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>MarCon</name>
+    <native_name>MarCon</native_name>
+    <abbreviated_name>MarCon</abbreviated_name>
+    <address>Oljevägen 14</address>
+    <zipcode>SE-211 24</zipcode>
+    <city>Malmö</city>
+    <state />
+    <country>30</country>
+    <email>jorn.ryberg@marcon.se</email>
+    <phone>+46 (0)40 29 86 62</phone>
+    <fax />
+    <website>http://marcon.se</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4706</n_code>
+    <input_date>6/1/2017 9:41:52 AM</input_date>
+    <last_update>6/14/2017 3:32:50 PM</last_update>
+    <date_created>6/1/2017 9:41:52 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>11.999653</Longitude>
+    <Latitude>57.679011</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Marin Miljöanalys AB</name>
+    <native_name>Marin Miljöanalys AB</native_name>
+    <abbreviated_name>MMA</abbreviated_name>
+    <address>Varbergsgatan 12B</address>
+    <zipcode>SE-412 65</zipcode>
+    <city>Göteborg</city>
+    <state />
+    <country>30</country>
+    <email />
+    <phone>+46 (0)31 704 65 25</phone>
+    <fax />
+    <website>http://www.marin.se</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4707</n_code>
+    <input_date>6/1/2017 9:47:39 AM</input_date>
+    <last_update>6/14/2017 3:32:45 PM</last_update>
+    <date_created>6/1/2017 9:47:39 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>17.927848</Longitude>
+    <Latitude>62.633405</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Norrlands Sjöentreprenad (NSE)</name>
+    <native_name>Norrlands Sjöentreprenad (NSE)</native_name>
+    <abbreviated_name>NSE</abbreviated_name>
+    <address>Järnvägsgatan 2</address>
+    <zipcode>SE-871 45</zipcode>
+    <city>Härnösand</city>
+    <state />
+    <country>30</country>
+    <email>torbjorn@nse.nu</email>
+    <phone>+46 (0)706 77 86 53</phone>
+    <fax />
+    <website>http://www.nse.nu</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4708</n_code>
+    <input_date>6/1/2017 9:49:30 AM</input_date>
+    <last_update>6/14/2017 3:27:56 PM</last_update>
+    <date_created>6/1/2017 9:49:30 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>18.008563</Longitude>
+    <Latitude>59.338477</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>SB Consulting</name>
+    <native_name>SB Consulting</native_name>
+    <abbreviated_name />
+    <address>Pär Lagerkvists gata 6 Lgh 1403</address>
+    <zipcode>SE-112 15</zipcode>
+    <city>Stockholm</city>
+    <state />
+    <country>30</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4709</n_code>
+    <input_date>6/1/2017 9:51:28 AM</input_date>
+    <last_update>6/14/2017 3:27:36 PM</last_update>
+    <date_created>6/1/2017 9:51:28 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>18.012443</Longitude>
+    <Latitude>59.33714</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Skanska Sverige</name>
+    <native_name>Skanska Sverige</native_name>
+    <abbreviated_name />
+    <address>Warfinges väg 25</address>
+    <zipcode>SE-112 74</zipcode>
+    <city>Stockholm</city>
+    <state />
+    <country>30</country>
+    <email />
+    <phone>+46 (0)10 448 00 00</phone>
+    <fax />
+    <website>http:/www.skanska.se</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4710</n_code>
+    <input_date>6/1/2017 9:53:51 AM</input_date>
+    <last_update>6/14/2017 3:26:12 PM</last_update>
+    <date_created>6/1/2017 9:53:51 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>14.96406</Longitude>
+    <Latitude>60.780308</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Skog &amp; Sjö i Dalarna</name>
+    <native_name>Skog &amp; Sjö i Dalarna</native_name>
+    <abbreviated_name />
+    <address>Sunnanäng Sturbåtsvägen 6</address>
+    <zipcode>SE-793 90</zipcode>
+    <city>Leksand</city>
+    <state />
+    <country>30</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4711</n_code>
+    <input_date>6/1/2017 9:58:07 AM</input_date>
+    <last_update>6/14/2017 3:25:52 PM</last_update>
+    <date_created>6/1/2017 9:58:07 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>18.056822</Longitude>
+    <Latitude>59.331127</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Stora Enso AB</name>
+    <native_name>Stora Enso AB</native_name>
+    <abbreviated_name />
+    <address>World Trade Center, 
+Klarabergsviadukten 70, C4 
+P.O. Box 70395</address>
+    <zipcode>SE-107 24</zipcode>
+    <city>Stockholm</city>
+    <state />
+    <country>30</country>
+    <email />
+    <phone>+46 (0)10 464 6000</phone>
+    <fax>+46 8 106 020</fax>
+    <website>http://www.storaenso.com</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4712</n_code>
+    <input_date>6/1/2017 9:59:33 AM</input_date>
+    <last_update>6/14/2017 3:24:01 PM</last_update>
+    <date_created>6/1/2017 9:59:33 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>13.010312</Longitude>
+    <Latitude>55.607657</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Sundlink Contractors HB</name>
+    <native_name>Sundlink Contractors HB</native_name>
+    <abbreviated_name />
+    <address>Drottningtorget 14</address>
+    <zipcode>SE-211 25</zipcode>
+    <city>Malmö</city>
+    <state />
+    <country>30</country>
+    <email />
+    <phone>+46 (0)10 448 00 00</phone>
+    <fax />
+    <website />
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4713</n_code>
+    <input_date>6/1/2017 10:02:27 AM</input_date>
+    <last_update>6/14/2017 3:23:39 PM</last_update>
+    <date_created>6/1/2017 10:02:27 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>16.807371</Longitude>
+    <Latitude>60.711108</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>SUB - Svensk Undervattens Besiktning HB</name>
+    <native_name>SUB - Svensk Undervattens Besiktning HB</native_name>
+    <abbreviated_name>SUB HB</abbreviated_name>
+    <address>Högbovägen 403</address>
+    <zipcode>SE-811 92</zipcode>
+    <city>Sandviken</city>
+    <state />
+    <country>30</country>
+    <email>info@sub.x.se</email>
+    <phone>+46 (0)26 21 70 21</phone>
+    <fax />
+    <website>http://www.sub.x.se</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4714</n_code>
+    <input_date>6/1/2017 10:10:41 AM</input_date>
+    <last_update>6/14/2017 3:22:01 PM</last_update>
+    <date_created>6/1/2017 10:10:41 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>17.176223</Longitude>
+    <Latitude>60.667758</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Tugab Construction AB</name>
+    <native_name>Tugab Construction AB</native_name>
+    <abbreviated_name />
+    <address>Fjällbacksgatan 5</address>
+    <zipcode>SE-802 83</zipcode>
+    <city>Gävle</city>
+    <state />
+    <country>30</country>
+    <email>frank@tugab.se</email>
+    <phone>+46 (0)26 10 38 30</phone>
+    <fax>+46 (0)26 10 38 40</fax>
+    <website>http://www.tugab.se</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4715</n_code>
+    <input_date>6/1/2017 10:16:19 AM</input_date>
+    <last_update>6/14/2017 3:17:57 PM</last_update>
+    <date_created>6/1/2017 10:16:19 AM</date_created>
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Scandiakonsult</name>
+    <native_name>Scandiakonsult</native_name>
+    <abbreviated_name />
+    <address>Box 5343</address>
+    <zipcode>SE-402 27</zipcode>
+    <city>Göteborg</city>
+    <state />
+    <country>30</country>
+    <email> henrik.undeland@scc.se</email>
+    <phone>+46 556133-0506</phone>
+    <fax>+46 031400855</fax>
+    <website>http://www.scc.se/</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4716</n_code>
+    <input_date>6/1/2017 10:19:34 AM</input_date>
+    <last_update>6/14/2017 3:15:36 PM</last_update>
+    <date_created>6/1/2017 10:19:34 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>18.0138</Longitude>
+    <Latitude>59.335254</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Waxholms Ångfartygs AB</name>
+    <native_name>Waxholms Ångfartygs AB</native_name>
+    <abbreviated_name />
+    <address>Lindhagensgatan 100</address>
+    <zipcode>SE-103 91</zipcode>
+    <city />
+    <state />
+    <country>30</country>
+    <email>waxholmsbolaget@sll.se</email>
+    <phone>+46 (0)8 600 10 00</phone>
+    <fax />
+    <website>http://www.waxholmsbolaget.se</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4717</n_code>
+    <input_date>6/1/2017 10:22:19 AM</input_date>
+    <last_update>6/14/2017 3:15:27 PM</last_update>
+    <date_created>6/1/2017 10:22:19 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Yoldia Enviralmental Consulting AB</name>
+    <native_name>Yoldia Enviralmental Consulting AB</native_name>
+    <abbreviated_name />
+    <address>Tallhedsvägen 6</address>
+    <zipcode>SE-141 42</zipcode>
+    <city>Huddinge</city>
+    <state />
+    <country>30</country>
+    <email>info@yoldia.se</email>
+    <phone>+46 (0)709 390 336</phone>
+    <fax />
+    <website>http://www.yoldia.se</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4718</n_code>
+    <input_date>6/1/2017 10:27:28 AM</input_date>
+    <last_update>6/14/2017 3:14:35 PM</last_update>
+    <date_created>6/1/2017 10:27:28 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>13.000124</Longitude>
+    <Latitude>55.605526</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Svensk-Danska Broförbindelsen SVEDAB AB</name>
+    <native_name>Svensk-Danska Broförbindelsen SVEDAB AB</native_name>
+    <abbreviated_name>ÖSK</abbreviated_name>
+    <address>Stortorget 25</address>
+    <zipcode>SE-203 11</zipcode>
+    <city>Malmö</city>
+    <state />
+    <country>30</country>
+    <email>info@svedab.se</email>
+    <phone>+46 (0)40 660 98 80</phone>
+    <fax>+46 (0)40 660 98 89</fax>
+    <website>http://www.svedab.se</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
     <n_code>4719</n_code>
     <input_date>6/1/2017 11:55:35 AM</input_date>
     <last_update>6/2/2017 4:11:34 PM</last_update>
@@ -114036,5 +114427,246 @@ Strandgatan 37</address>
     <fax>+41 22 730 8520</fax>
     <website>https://www.earthobservations.org</website>
     <c_country>Switzerland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4727</n_code>
+    <input_date>6/13/2017 8:06:51 AM</input_date>
+    <last_update>6/14/2017 10:20:05 AM</last_update>
+    <date_created>6/13/2017 8:06:51 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>27.7123726</Longitude>
+    <Latitude>42.6616514</Latitude>
+    <collate_id>692</collate_id>
+    <logo />
+    <name>NGO MARINE SOUND</name>
+    <native_name>&amp;#1053;&amp;#1055;&amp;#1054; &amp;#1052;&amp;#1086;&amp;#1088;&amp;#1089;&amp;#1082;&amp;#1080; &amp;#1079;&amp;#1074;&amp;#1091;&amp;#1094;&amp;#1080;</native_name>
+    <abbreviated_name />
+    <address>Edelvajs str. 5</address>
+    <zipcode />
+    <city>Nesebar</city>
+    <state />
+    <country>3</country>
+    <email>emonafarm@abv.bg</email>
+    <phone />
+    <fax />
+    <website>http://www.morskizvuci.org</website>
+    <c_country>Bulgaria</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4733</n_code>
+    <input_date>6/29/2017 4:04:38 PM</input_date>
+    <last_update>6/30/2017 9:30:15 AM</last_update>
+    <date_created>6/29/2017 4:04:38 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>10.213376</Longitude>
+    <Latitude>54.33669</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>MariLim Aquatic Research GmbH</name>
+    <native_name>MariLim Aquatic Research GmbH</native_name>
+    <abbreviated_name>MariLim</abbreviated_name>
+    <address>Heinrich-Wöhlk-Straße 14</address>
+    <zipcode>24232</zipcode>
+    <city>Schönkirchen</city>
+    <state />
+    <country>5</country>
+    <email>tmeyer@marilim.de</email>
+    <phone>+49 (0) 4348 913 22 90</phone>
+    <fax />
+    <website>http://www.marilim.de/en/
+
+</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4734</n_code>
+    <input_date>6/30/2017 11:26:50 AM</input_date>
+    <last_update>7/3/2017 8:15:03 AM</last_update>
+    <date_created>6/30/2017 11:26:50 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>153.01458</Longitude>
+    <Latitude>-27.497238</Latitude>
+    <collate_id>2454</collate_id>
+    <logo />
+    <name>University of Queensland, School of Earth and Environmental Sciences</name>
+    <native_name>University of Queensland, School of Earth and Environmental Sciences</native_name>
+    <abbreviated_name />
+    <address>Level 2, Room 210, 
+Steele Building (3)</address>
+    <zipcode>4072</zipcode>
+    <city>St. Lucia</city>
+    <state>Queensland</state>
+    <country>54</country>
+    <email>sees@enquire.uq.edu.au</email>
+    <phone>+61 7 3365 6455 </phone>
+    <fax>+61 7 3365 6899</fax>
+    <website>https://sees.uq.edu.au/</website>
+    <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4735</n_code>
+    <input_date>6/30/2017 11:29:30 AM</input_date>
+    <last_update>7/3/2017 8:10:53 AM</last_update>
+    <date_created>6/30/2017 11:29:30 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>153.014531</Longitude>
+    <Latitude>-27.49531</Latitude>
+    <collate_id>2454</collate_id>
+    <logo />
+    <name>University of Queensland, Remote Sensing Research Centre (RSRC),  School of Earth and Environmental Sciences</name>
+    <native_name>University of Queensland, Remote Sensing Research Centre (RSRC),  School of Earth and Environmental Sciences</native_name>
+    <abbreviated_name>RSRC</abbreviated_name>
+    <address />
+    <zipcode>4072</zipcode>
+    <city>St Lucia</city>
+    <state>Queensland</state>
+    <country>54</country>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.rsrc.org.au/</website>
+    <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4736</n_code>
+    <input_date>6/30/2017 11:46:38 AM</input_date>
+    <last_update>7/3/2017 8:15:50 AM</last_update>
+    <date_created>6/30/2017 11:46:38 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>153.053445</Longitude>
+    <Latitude>-27.55695</Latitude>
+    <collate_id>2454</collate_id>
+    <logo />
+    <name>Griffith University, Environmental Futures Research Institute</name>
+    <native_name>Griffith University, Environmental Futures Research Institute</native_name>
+    <abbreviated_name>EFRI</abbreviated_name>
+    <address>Room 2.18 
+Sir Samuel Griffith Building (N78), 
+170 Kessels Road</address>
+    <zipcode>4111</zipcode>
+    <city>Nathan</city>
+    <state>Queensland</state>
+    <country>54</country>
+    <email />
+    <phone>+61 7 3735 9224</phone>
+    <fax />
+    <website>https://www.griffith.edu.au/environment-planning-architecture/environmental-futures-research-institute</website>
+    <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4737</n_code>
+    <input_date>6/30/2017 11:50:01 AM</input_date>
+    <last_update>7/3/2017 8:06:07 AM</last_update>
+    <date_created>6/30/2017 11:50:01 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>145.591103</Longitude>
+    <Latitude>-38.60895</Latitude>
+    <collate_id>2454</collate_id>
+    <logo />
+    <name>Clean Ocean Foundation</name>
+    <native_name>Clean Ocean Foundation</native_name>
+    <abbreviated_name />
+    <address />
+    <zipcode>3995</zipcode>
+    <city>Wonthaggi</city>
+    <state>Victoria</state>
+    <country>54</country>
+    <email />
+    <phone>0490799948</phone>
+    <fax />
+    <website>http://www.cleanocean.org/</website>
+    <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4738</n_code>
+    <input_date>6/30/2017 11:54:25 AM</input_date>
+    <last_update>7/3/2017 8:07:26 AM</last_update>
+    <date_created>6/30/2017 11:54:25 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>138.596399</Longitude>
+    <Latitude>-34.926229</Latitude>
+    <collate_id>2454</collate_id>
+    <logo />
+    <name>Department of Environment, Water and Natural Resources (DEWNR), South Australian Government</name>
+    <native_name>Department of Environment, Water and Natural Resources (DEWNR), South Australian Government</native_name>
+    <abbreviated_name>DEWNR</abbreviated_name>
+    <address>Ground Floor, 81-95 
+Waymouth Street</address>
+    <zipcode>5000</zipcode>
+    <city>Adelaide</city>
+    <state>South Australia</state>
+    <country>54</country>
+    <email />
+    <phone>+61 8 8204 1910</phone>
+    <fax />
+    <website>http://www.environment.sa.gov.au/Home</website>
+    <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4739</n_code>
+    <input_date>6/30/2017 11:57:18 AM</input_date>
+    <last_update>7/3/2017 8:07:54 AM</last_update>
+    <date_created>6/30/2017 11:57:18 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>130.983261</Longitude>
+    <Latitude>-12.48006</Latitude>
+    <collate_id>2454</collate_id>
+    <logo />
+    <name>Department of Environment and Natural Resources (DENR), Northern Territory Government</name>
+    <native_name>Department of Environment and Natural Resources (DENR), Northern Territory Government</native_name>
+    <abbreviated_name>DENR</abbreviated_name>
+    <address>Level 1, Goyder Centre, 
+25 Chung Wah Terrace</address>
+    <zipcode>0830</zipcode>
+    <city>Palmerston</city>
+    <state>Northern Territory</state>
+    <country>54</country>
+    <email>webadmin.denr@nt.gov.au</email>
+    <phone>+61 8 8999 5511</phone>
+    <fax>+61 8 8999 4723</fax>
+    <website>https://denr.nt.gov.au/</website>
+    <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4740</n_code>
+    <input_date>6/30/2017 12:11:57 PM</input_date>
+    <last_update>7/3/2017 8:09:15 AM</last_update>
+    <date_created>6/30/2017 12:11:57 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>153.025456</Longitude>
+    <Latitude>-27.472541</Latitude>
+    <collate_id>2454</collate_id>
+    <logo />
+    <name>Department of National Parks, Sport and Racing (NPSR), Queensland Government</name>
+    <native_name>Department of National Parks, Sport and Racing (NPSR), Queensland Government</native_name>
+    <abbreviated_name>NPSR</abbreviated_name>
+    <address />
+    <zipcode />
+    <city />
+    <state>Queensland</state>
+    <country>54</country>
+    <email>info@npsr.qld.gov.au</email>
+    <phone>13 74 68</phone>
+    <fax />
+    <website>https://www.npsr.qld.gov.au/</website>
+    <c_country>Australia</c_country>
   </Organisation>
 </Organisations>

@@ -252,6 +252,7 @@ public abstract class AbstractController {
 	 * @throws OctopusException
 	 */
 	private  List<String> processFile(File in, List<String> outputFilesList) throws OctopusException {
+		LOGGER.info("process file: " +  in.getName());
 		ConvertersManager manager;
 		try {
 			manager = new ConvertersManager(in, model.getInputFormat());
@@ -558,6 +559,7 @@ public abstract class AbstractController {
 		if (in.isDirectory()){
 			int errors=0;
 			for (File f: in.listFiles()){
+				LOGGER.info("check file: "+ f.getName());
 				try{
 					// TODO do not check dirs  -> recursive
 					if (inputFormat == null){
@@ -583,6 +585,7 @@ public abstract class AbstractController {
 			}
 		}else{
 			try{
+				LOGGER.info("check file: "+ in.getName());
 				inputFormat = checker.check (in);
 				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.formatIsValid"), inputFormat.getName()));
 			}catch(Exception e){

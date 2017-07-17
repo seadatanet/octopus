@@ -97,7 +97,7 @@ public class PreferencesController {
 		// theme order is important: same order as in fr.ifremer.octopus.utils.PreferencesManager.getThemeFileName(int)
 		themeChoiceBox.getItems().add("white");
 		themeChoiceBox.getItems().add("octopus");
-		themeChoiceBox.getItems().add("whitePixel");
+//		themeChoiceBox.getItems().add("whitePixel"); // 35086: whitePixel profile only for debug
 
 
 		int index=0;

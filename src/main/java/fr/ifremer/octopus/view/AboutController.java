@@ -25,28 +25,48 @@ public class AboutController {
 	private MainApp mainApp;
 
 	@FXML
-	private WebView roadmapweb;
+	private WebView changeLogWebView;
+	@FXML
+	private WebView presentationWebView;
 	
 	@FXML
 	private void initialize() {
 		Locale locale = PreferencesManager.getInstance().getLocale();
-		LOGGER.debug("initialize about panel with roadmap: " +getClass().getCanonicalName());
+		LOGGER.debug("initialize about panel : " +getClass().getCanonicalName());
 		try{
-			String pathString="/roadmap/roadmap_"+locale.toString()+".html";
+			String pathString="/changelog/changelog_"+locale.toString()+".html";
 			InputStream inputRoadmap = getClass().getResourceAsStream(pathString);
 			if (inputRoadmap==null){
-				 pathString="roadmap/roadmap_"+locale.toString()+".html";
+				 pathString="changelog/changelog_"+locale.toString()+".html";
 				 inputRoadmap = getClass().getResourceAsStream(pathString);
 			}
 			
 			String content = new BufferedReader(new InputStreamReader(inputRoadmap))
 			  .lines().collect(Collectors.joining("\n"));
-			roadmapweb.getEngine().loadContent(content);
+			changeLogWebView.getEngine().loadContent(content);
 			
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
-			LOGGER.error("error on roadmap read");
+			LOGGER.error("error on changeLog read");
 		} 
+		
+		try{
+			String pathString="/presentation/presentation_"+locale.toString()+".html";
+			InputStream inputRoadmap = getClass().getResourceAsStream(pathString);
+			if (inputRoadmap==null){
+				 pathString="presentation/presentation_"+locale.toString()+".html";
+				 inputRoadmap = getClass().getResourceAsStream(pathString);
+			}
+			
+			String content = new BufferedReader(new InputStreamReader(inputRoadmap))
+			  .lines().collect(Collectors.joining("\n"));
+			presentationWebView.getEngine().loadContent(content);
+			
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage());
+			LOGGER.error("error on presentation read");
+		} 
+		
 	}
 	 
 	/**

@@ -12,18 +12,18 @@
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.AboutController">
    <children>
       <Button layoutX="1078.0" layoutY="711.0" mnemonicParsing="false" onAction="#closeAbout" text="%about.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
-      <Label layoutX="34.0" layoutY="147.0" text="%about.licence" />
-      <Label layoutX="34.0" layoutY="98.0" styleClass="aboutTitle" text="%about.title" />
+      <Label layoutX="34.0" layoutY="179.0" text="%about.licence" />
+      <Label layoutX="34.0" layoutY="122.0" styleClass="aboutTitle" text="%about.title" />
       <Label layoutX="435.0" layoutY="42.0" styleClass="aboutVersion" text="%about.version" />
-      <Label layoutX="26.0" layoutY="181.0" prefHeight="340.0" prefWidth="694.0" text="%about.desc" />
       <Label layoutX="328.0" layoutY="42.0" styleClass="aboutVersion" text="Version" />
       <Label layoutX="34.0" layoutY="20.0" styleClass="aboutName" text="Octopus" />
-      <ImageView fitHeight="215.0" fitWidth="234.0" layoutX="759.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+      <WebView fx:id="changeLogWebView" layoutX="647.0" layoutY="521.0" prefHeight="687.0" prefWidth="533.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="647.0" AnchorPane.rightAnchor="20.0" />
+      <Separator layoutX="635.0" layoutY="186.0" orientation="VERTICAL" prefHeight="603.0" prefWidth="12.0" />
+      <WebView fx:id="presentationWebView" layoutX="47.0" layoutY="237.0" prefHeight="516.0" prefWidth="469.0" />
+      <ImageView fitHeight="107.0" fitWidth="126.0" layoutX="447.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../images/octopus_transp.png" />
          </image>
       </ImageView>
-      <WebView fx:id="roadmapweb" layoutX="34.0" layoutY="521.0" prefHeight="250.0" prefWidth="1160.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
-      <Separator layoutX="88.0" layoutY="523.0" prefHeight="0.0" prefWidth="954.0" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
    </children>
 </AnchorPane>

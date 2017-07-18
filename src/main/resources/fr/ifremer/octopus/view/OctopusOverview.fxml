@@ -34,7 +34,7 @@
                               <Label text="%output.label" GridPane.rowIndex="4" />
                               <TextField fx:id="outputPathTextField" prefHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                               <Button fx:id="chooseOut" mnemonicParsing="false" onAction="#openChooseOut" text="%output.chooseOut" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <children>
                                     <RadioButton fx:id="radioMono" mnemonicParsing="false" onAction="#checkedMono" text="%output.type.mono">
                                        <toggleGroup>

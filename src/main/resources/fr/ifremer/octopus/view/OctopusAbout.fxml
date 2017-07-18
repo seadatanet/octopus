@@ -14,7 +14,7 @@
       <Button layoutX="1078.0" layoutY="711.0" mnemonicParsing="false" onAction="#closeAbout" text="%about.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
       <Label layoutX="34.0" layoutY="179.0" text="%about.licence" />
       <Label layoutX="34.0" layoutY="122.0" styleClass="aboutTitle" text="%about.title" />
-      <Label layoutX="435.0" layoutY="42.0" styleClass="aboutVersion" text="%about.version" />
+      <Label fx:id="aboutVersion" layoutX="435.0" layoutY="42.0" styleClass="aboutVersion" text="%about.version" />
       <Label layoutX="328.0" layoutY="42.0" styleClass="aboutVersion" text="Version" />
       <Label layoutX="34.0" layoutY="20.0" styleClass="aboutName" text="Octopus" />
       <WebView fx:id="changeLogWebView" layoutX="647.0" layoutY="521.0" prefHeight="687.0" prefWidth="533.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="647.0" AnchorPane.rightAnchor="20.0" />

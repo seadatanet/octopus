@@ -7,12 +7,15 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.web.WebView;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import fr.ifremer.medatlas.resources.Version;
 import fr.ifremer.octopus.MainApp;
+import fr.ifremer.octopus.OctopusVersion;
 import fr.ifremer.octopus.utils.PreferencesManager;
 
 
@@ -28,6 +31,8 @@ public class AboutController {
 	private WebView changeLogWebView;
 	@FXML
 	private WebView presentationWebView;
+	@FXML
+	private Label aboutVersion;
 	
 	@FXML
 	private void initialize() {
@@ -66,7 +71,7 @@ public class AboutController {
 			LOGGER.error(e.getMessage());
 			LOGGER.error("error on presentation read");
 		} 
-		
+		aboutVersion.setText(OctopusVersion.getVersion());
 	}
 	 
 	/**

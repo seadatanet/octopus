@@ -16,7 +16,7 @@ public class OctopusVersion {
 		   // try to load from maven properties first
 	    try {
 	        Properties p = new Properties();
-	        InputStream is = OctopusVersion.class.getResourceAsStream("/META-INF/maven/fr.ifremer.octopus/pom.properties");
+	        InputStream is = OctopusVersion.class.getResourceAsStream("/META-INF/maven/fr.ifremer/octopus/pom.properties");
 	        if (is != null) {
 	            p.load(is);
 	            version = p.getProperty("version", "");

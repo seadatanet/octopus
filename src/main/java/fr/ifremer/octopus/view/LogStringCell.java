@@ -24,33 +24,35 @@ public class LogStringCell extends ListCell<String> {
         for (String token : messageTokens) {
             Text text = new Text(token);
 
-            if (text.toString().contains(" TRACE ")) {
-                text.setStyle("-fx-fill: #0000FF");
-            }
-            if (text.toString().contains(" ALL ")) {
-                text.setStyle("-fx-fill: #FF00FF");
-            }
+//            if (text.toString().contains(" TRACE ")) {
+//                text.setStyle("-fx-fill: #0000FF");
+//            }
+//            if (text.toString().contains(" ALL ")) {
+//                text.setStyle("-fx-fill: #FF00FF");
+//            }
             if (text.toString().contains(" ERROR ")) {
                 text.setStyle("-fx-fill: #FF0000");
             }
-            if (text.toString().contains(" INFO ")) {
-                text.setStyle("-fx-fill: #000000");
+            else if (text.toString().contains(" INFO ")) {
+            	 if (text.toString().contains("[OK]")) {
+                     text.setStyle("-fx-fill: #00b33c");
+                 }else{
+                	 text.setStyle("-fx-fill: #000000");
+                 }
             }
-            if (text.toString().contains(" FATAL ")) {
-                text.setStyle("-fx-fill: #FF0000");
-            }
-            if (text.toString().contains(" DEBUG ")) {
-                text.setStyle("-fx-fill: #808080");
-            }
-            if (text.toString().contains(" OFF ")) {
-                text.setStyle("-fx-fill: #8040FF");
-            }
-            if (text.toString().contains(" WARN ")) {
+//            if (text.toString().contains(" FATAL ")) {
+//                text.setStyle("-fx-fill: #FF0000");
+//            }
+//            if (text.toString().contains(" DEBUG ")) {
+//                text.setStyle("-fx-fill: #808080");
+//            }
+//            if (text.toString().contains(" OFF ")) {
+//                text.setStyle("-fx-fill: #8040FF");
+//            }
+            else if (text.toString().contains(" WARN ")) {
                 text.setStyle("-fx-fill: #FF8000");
             }
-            if (text.toString().contains("[OK]")) {
-                text.setStyle("-fx-fill: #00b33c");
-            }
+           
            
 
             flow.getChildren().add(text);

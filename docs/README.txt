@@ -35,11 +35,11 @@ post steps:
 
 execute shell=
 cd target/livrableLinux; 
-chmod +x octopus/octopus.sh;
-zip -r octopus_Linux_$JOB_NAME_$BUILD_ID.zip octopus/* -x .svn;
-cd ../../target/livrableWin32;
-zip -r octopus_win32_$JOB_NAME_$BUILD_ID.zip octopus/* -x .svn;
-cd ../../target/livrableWin64;
-zip -r octopus_win64_$JOB_NAME_$BUILD_ID.zip octopus/* -x .svn
+cp -R octopus octopus_${POM_VERSION};
+chmod +x octopus_${POM_VERSION}/octopus.sh;
+zip -r octopus_Linux_${POM_VERSION}_$BUILD_ID.zip octopus_${POM_VERSION}/* -x .svn;
+cd ../../target/livrableWin;
+cp -R octopus octopus_${POM_VERSION};
+zip -r octopus_Win_${POM_VERSION}_$BUILD_ID.zip octopus_${POM_VERSION}/* -x .svn;
 
 archive the artefacts=target/livrable*/octopus*.zip

@@ -11276,7 +11276,7 @@ BP 7</address>
   <Organisation>
     <n_code>521</n_code>
     <input_date />
-    <last_update>3/12/2015 4:12:31 PM</last_update>
+    <last_update>7/10/2017 9:21:32 AM</last_update>
     <date_created>8/23/2001 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -11284,12 +11284,12 @@ BP 7</address>
     <Longitude>-3.98</Longitude>
     <Latitude>48.725</Latitude>
     <collate_id>486</collate_id>
-    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/486/logo_roscoff.gif</logo>
-    <name>CNRS / Biological Station of  ROSCOFF/ OSU</name>
-    <native_name>CNRS / Station Biologique de ROSCOFF / OSU</native_name>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/486/logo_station_biologique_roscoff.png</logo>
+    <name>Roscoff Marine Station, Sorbonne Universités, UPMC Univ Paris 06 and CNRS</name>
+    <native_name>Station Biologique de ROSCOFF (SBR), Sorbonne Universités, UPMC Univ Paris 06 et CNRS</native_name>
     <abbreviated_name>OSU-SBR</abbreviated_name>
-    <address>Place Georges Teissier, BP 74</address>
-    <zipcode>29682</zipcode>
+    <address>Place Georges Teissier</address>
+    <zipcode>29680</zipcode>
     <city>ROSCOFF</city>
     <state />
     <country>10</country>
@@ -100588,13 +100588,13 @@ NWAFC</abbreviated_name>
   <Organisation>
     <n_code>4169</n_code>
     <input_date>5/28/2015 11:35:01 AM</input_date>
-    <last_update>5/28/2015 11:37:05 AM</last_update>
+    <last_update>7/13/2017 5:40:43 PM</last_update>
     <date_created>5/28/2015 11:35:01 AM</date_created>
     <organisation_exists>False</organisation_exists>
     <organisation_changed_into>2857</organisation_changed_into>
     <organisation_changed_year>2010</organisation_changed_year>
-    <Longitude>55.915059</Longitude>
-    <Latitude>-3.316379</Latitude>
+    <Longitude>-3.316379</Longitude>
+    <Latitude>55.915059</Latitude>
     <collate_id>43</collate_id>
     <logo />
     <name>ERT (Scotland) Ltd</name>
@@ -114455,6 +114455,137 @@ P.O. Box 70395</address>
     <c_country>Bulgaria</c_country>
   </Organisation>
   <Organisation>
+    <n_code>4728</n_code>
+    <input_date>6/13/2017 8:09:11 AM</input_date>
+    <last_update>7/17/2017 9:53:55 AM</last_update>
+    <date_created>6/13/2017 8:09:11 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>692</collate_id>
+    <logo />
+    <name>NGO for Sustainable Regional Development and Environmental Protection</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>3</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Bulgaria</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4729</n_code>
+    <input_date>6/13/2017 8:13:30 AM</input_date>
+    <last_update>7/17/2017 9:53:53 AM</last_update>
+    <date_created>6/13/2017 8:13:30 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>692</collate_id>
+    <logo />
+    <name>Black Sea–Danube Coastal Association for Research and Development</name>
+    <native_name />
+    <abbreviated_name>BDCA</abbreviated_name>
+    <address>Hi-Tech Business Incubator Building
+Asparuhovo p.o.b.87</address>
+    <zipcode>9003</zipcode>
+    <city>Varna</city>
+    <state />
+    <country>3</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.bdcabg.org/index.php</website>
+    <c_country>Bulgaria</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4730</n_code>
+    <input_date>6/13/2017 8:24:33 AM</input_date>
+    <last_update>7/17/2017 10:02:32 AM</last_update>
+    <date_created>6/13/2017 8:24:33 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>23.314595</Longitude>
+    <Latitude>42.670345</Latitude>
+    <collate_id>692</collate_id>
+    <logo />
+    <name>GeoMarine Ltd.</name>
+    <native_name>GeoMarine Ltd.</native_name>
+    <abbreviated_name />
+    <address>99, James Bourchier blvd.  floor 1</address>
+    <zipcode>1407</zipcode>
+    <city>Sofia</city>
+    <state />
+    <country>3</country>
+    <email>office@geomarine-bg.com</email>
+    <phone>+(359 2) 439 1062, +(359 2) 439 1063, +(359 2) 439 1064</phone>
+    <fax />
+    <website>http://geomarine-bg.com/</website>
+    <c_country>Bulgaria</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4731</n_code>
+    <input_date>6/13/2017 8:27:42 AM</input_date>
+    <last_update>7/17/2017 9:53:46 AM</last_update>
+    <date_created>6/13/2017 8:27:42 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>692</collate_id>
+    <logo />
+    <name>National Agency for Fisheries and Aquaculture</name>
+    <native_name />
+    <abbreviated_name>NAFA</abbreviated_name>
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>3</country>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Bulgaria</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4732</n_code>
+    <input_date>6/13/2017 8:33:23 AM</input_date>
+    <last_update>7/17/2017 9:53:50 AM</last_update>
+    <date_created>6/13/2017 8:33:23 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>692</collate_id>
+    <logo />
+    <name>Marine Antipollution Enterprise JSCO</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>3</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://pchmv-bg.com/en/home</website>
+    <c_country>Bulgaria</c_country>
+  </Organisation>
+  <Organisation>
     <n_code>4733</n_code>
     <input_date>6/29/2017 4:04:38 PM</input_date>
     <last_update>6/30/2017 9:30:15 AM</last_update>
@@ -114566,7 +114697,7 @@ Sir Samuel Griffith Building (N78),
   <Organisation>
     <n_code>4737</n_code>
     <input_date>6/30/2017 11:50:01 AM</input_date>
-    <last_update>7/3/2017 8:06:07 AM</last_update>
+    <last_update>7/6/2017 8:14:03 AM</last_update>
     <date_created>6/30/2017 11:50:01 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -114592,7 +114723,7 @@ Sir Samuel Griffith Building (N78),
   <Organisation>
     <n_code>4738</n_code>
     <input_date>6/30/2017 11:54:25 AM</input_date>
-    <last_update>7/3/2017 8:07:26 AM</last_update>
+    <last_update>7/6/2017 8:14:22 AM</last_update>
     <date_created>6/30/2017 11:54:25 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -114668,5 +114799,135 @@ Waymouth Street</address>
     <fax />
     <website>https://www.npsr.qld.gov.au/</website>
     <c_country>Australia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4741</n_code>
+    <input_date>7/6/2017 10:42:40 AM</input_date>
+    <last_update>7/6/2017 11:00:34 AM</last_update>
+    <date_created>7/6/2017 10:42:40 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-3.2089</Longitude>
+    <Latitude>55.9485</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>North Atlantic Salmon Conservation Organization</name>
+    <native_name />
+    <abbreviated_name>NASCO</abbreviated_name>
+    <address>11 Rutland Square</address>
+    <zipcode>EH1 2AS</zipcode>
+    <city>Edinburgh</city>
+    <state />
+    <country>11</country>
+    <email>hq@nasco.int</email>
+    <phone>+44 (0)131 228 2551</phone>
+    <fax>+44 (0)131 228 4384</fax>
+    <website>http://www.nasco.int/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4742</n_code>
+    <input_date>7/6/2017 10:54:03 AM</input_date>
+    <last_update>7/6/2017 11:00:32 AM</last_update>
+    <date_created>7/6/2017 10:54:03 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-0.1558</Longitude>
+    <Latitude>51.5187</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>North East Atlantic Fisheries Commission</name>
+    <native_name />
+    <abbreviated_name>NEAFC</abbreviated_name>
+    <address>44 Baker Street</address>
+    <zipcode>W1U 7AL</zipcode>
+    <city>London</city>
+    <state />
+    <country>11</country>
+    <email>info@neafc.org</email>
+    <phone>(+44) (0) 20 7631 0016</phone>
+    <fax>(+44) (0) 20 7149 9950</fax>
+    <website>https://www.neafc.org</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4743</n_code>
+    <input_date>7/17/2017 9:33:28 AM</input_date>
+    <last_update>7/17/2017 10:01:09 AM</last_update>
+    <date_created>7/17/2017 9:33:28 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>692</collate_id>
+    <logo />
+    <name>Varna Municipality</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode>9000</zipcode>
+    <city>Varna</city>
+    <state>Bulgaria</state>
+    <country>3</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://varna.bg/en/index.html</website>
+    <c_country>Bulgaria</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4744</n_code>
+    <input_date>7/17/2017 9:34:09 AM</input_date>
+    <last_update>7/17/2017 9:58:09 AM</last_update>
+    <date_created>7/17/2017 9:34:09 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>692</collate_id>
+    <logo />
+    <name>Burgas Municipality</name>
+    <native_name />
+    <abbreviated_name>BM</abbreviated_name>
+    <address />
+    <zipcode />
+    <city>Burgas</city>
+    <state>Bulgaria</state>
+    <country>3</country>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.burgas.bg/en/index/index</website>
+    <c_country>Bulgaria</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4745</n_code>
+    <input_date>7/20/2017 12:24:51 PM</input_date>
+    <last_update>7/20/2017 12:25:03 PM</last_update>
+    <date_created>7/20/2017 12:24:51 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>2.9018</Longitude>
+    <Latitude>42.6829</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Faculty Of Exact Sciences And Experimental</name>
+    <native_name>Université De Perpignan / UFR Sciences Exactes Et Expérimentales</native_name>
+    <abbreviated_name>UPVD - UFR SEE</abbreviated_name>
+    <address>52, Avenue Paul Alduy</address>
+    <zipcode>66860</zipcode>
+    <city>Perpignan</city>
+    <state />
+    <country>10</country>
+    <email />
+    <phone>+33(0)4 68 66 20 94</phone>
+    <fax />
+    <website />
+    <c_country>France</c_country>
   </Organisation>
 </Organisations>

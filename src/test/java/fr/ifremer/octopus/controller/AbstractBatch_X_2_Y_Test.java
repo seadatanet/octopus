@@ -168,7 +168,7 @@ public abstract class AbstractBatch_X_2_Y_Test {
 	protected String[] getArgs(){
 		String[] args;
 
-		if (cdiList.isEmpty()){
+		if (cdiList==null||cdiList.isEmpty()){
 			args= new String[]{"-i "+ pwd+in,
 					"-o " + getOutputPath(out),
 					"-f "+outFormat,

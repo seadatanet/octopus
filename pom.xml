@@ -7,7 +7,8 @@
 	<groupId>fr.ifremer</groupId>
 	<artifactId>octopus</artifactId>
 	<name>octopus</name>
-	<description>Octopus is a tool to convert and/or split files to SDN files </description>
+	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
+It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
 	<version>1.3.7</version>
 
@@ -536,4 +537,8 @@
 		</profile>
 
 	</profiles>
+	<url>https://www.seadatanet.org/Software/OCTOPUS</url>
+	<ciManagement>
+		<url>http://10.1.96.214:8080/view/sismer/job/octopus/</url>
+	</ciManagement>
 </project>

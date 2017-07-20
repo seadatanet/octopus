@@ -11,12 +11,12 @@
 <!-- 			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5.5level %-20.20c{1} - %-30.50msg%n" /> -->
 			<PatternLayout>
 <!-- 				<pattern>%d{HH:mm:ss}- %-5.7level - %msg%n</pattern> -->
-<pattern>%d{HH:mm:ss}- %-5.7level - %-30.30c{1} - %msg%n</pattern>
+	<pattern>%d{HH:mm:ss}- %-5.7level - %-30.30c{1} - %msg%n</pattern>
 			</PatternLayout> 
 			
 		</Console>
 		<RollingFile name="RollingFile" fileName="logs/octopus.log"
-			filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+			filePattern="logs/$${date:yyyy-MM}/octopus-%d{yyyy-MM-dd}-%i.log.zip">
 			<PatternLayout>
 				<pattern>%d{HH:mm:ss}- %-5.7level - %-30.30c{1} - %msg%n</pattern>
 			</PatternLayout>
@@ -31,8 +31,8 @@
 	<Loggers>
 <!-- 	default level is INFO -->
 		<Root level="INFO">
-			<AppenderRef ref="Console" level="DEBUG" />
-			<AppenderRef ref="RollingFile" level="DEBUG" />
+			<AppenderRef ref="Console" level="INFO" />
+			<AppenderRef ref="RollingFile" level="INFO" />
 		</Root>
 	</Loggers>
 </Configuration>

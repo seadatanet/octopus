@@ -10,7 +10,7 @@
 	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
 It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
-	<version>1.3.7</version>
+	<version>1.3.7.1_logDisabled</version>
 
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->

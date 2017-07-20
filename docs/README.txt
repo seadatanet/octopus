@@ -1,11 +1,23 @@
+========================================================
 FICHIER .EXE POUR  WINDOWS
-==========================
-CREATION EXE: LAUNCH4J (http://launch4j.sourceforge.net/)
-MODIFICATION ICONE: utiliser javaexe (http://devwizard.free.fr/html/fr/JavaExe.html)
+========================================================
 
+Le fichier octopus.exe utilisé pour le lancement sous windows est généré à l'aide de launch4j  (http://launch4j.sourceforge.net/)
+Utiliser au moins la version 3.11 pour compatibilité avec windows 10.
 
+Modification de l'icône du .exe: utiliser javaexe (http://devwizard.free.fr/html/fr/JavaExe.html)
+
+========================================================
 LIVRABLE
-==============
+========================================================
+Tâches à effectuer avant génération:
+- mettre à jour le journal des modifications
+   * anglais: /src/main/resources/fr/ifremer/octopus/view/changelog/changelog_en_GB.html
+   * francais:/src/main/resources/fr/ifremer/octopus/view/changelog/changelog_fr_FR.html
+- vérifier le no de version maven: x.y.z avec x=majeur, y=mineur, z=build  (le no de version dans le about est lu directement dans le pom.properties)
+- vérifier que les tests de non regression n'ont pas d'erreur
+- mettre à jour le manuel
+
 Méthode manuelle
 -----------------
 FERMER les projets dependances de Octopus dans le workspace eclipse (sinon ils ne sont pas inclus dans le path du build!)

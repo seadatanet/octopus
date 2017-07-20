@@ -57,73 +57,73 @@ public class LoggerConsoleController {
 
     @FXML
     void initialize() {
-        listViewLog.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-        LoggerContext loggerContext = (LoggerContext) LogManager.getContext(false);
-        Configuration loggerConfiguration = loggerContext.getConfiguration();
-        LoggerConfig loggerConfig = loggerConfiguration.getLoggerConfig(LogManager.ROOT_LOGGER_NAME);
-        /* ChoiceBox füllen */
-        for (Level level : Level.values()) {
-            choiceBoxLogLevel.getItems().add(level);
-        }
-        /* Aktuellen LogLevel in der ChoiceBox als Auswahl setzen */
-        choiceBoxLogLevel.getSelectionModel().select(loggerConfig.getLevel());
-        choiceBoxLogLevel.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Level>() {
-            @Override
-            public void changed(ObservableValue<? extends Level> arg0, Level oldLevel, Level newLevel) {
-                loggerConfig.setLevel(newLevel);
-                loggerContext.updateLoggers(); // übernehme aktuellen LogLevel
-            }
-        });
-
-        listViewLog.setCellFactory(new Callback<ListView<String>, ListCell<String>>() {
-            @Override
-            public ListCell<String> call(ListView<String> listView) {
-                return new LogStringCell();
-            }
-        });
-
-        /* den Origial System.out Stream in die ListView umleiten */
-        PipedOutputStream pOut = new PipedOutputStream();
-        System.setOut(new PrintStream(pOut));
-        PipedInputStream pIn = null;
-        try {
-            pIn = new PipedInputStream(pOut);
-        }
-        catch (IOException e) {
-            LOGGER.error(e.getMessage());
-        }
-        BufferedReader reader = new BufferedReader(new InputStreamReader(pIn));
-
-        Task<Void> task = new Task<Void>() {
-            @Override
-            protected Void call() throws Exception {
-                while (!isCancelled()) {
-                    try {
-                        String line = reader.readLine();
-                        if (line != null) {
-                            Platform.runLater(new Runnable() {
-                                @Override
-                                public void run() {
-                                    listViewLog.getItems().add(line);
-
-                                    /* Auto-Scroll + Select */
-                                    if (toggleButtonAutoScroll.selectedProperty().get()) {
-                                        listViewLog.scrollTo(listViewLog.getItems().size() - 1);
-                                        listViewLog.getSelectionModel().select(listViewLog.getItems().size() - 1);
-                                    }
-                                }
-                            });
-                        }
-                    }
-                    catch (IOException e) {
-                        LOGGER.debug("log interrupted");
-                    }
-                }
-                return null;
-            }
-        };
-        Thread thread = new Thread(task);
-        thread.setDaemon(true);
-        thread.start();
+//        listViewLog.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+//        LoggerContext loggerContext = (LoggerContext) LogManager.getContext(false);
+//        Configuration loggerConfiguration = loggerContext.getConfiguration();
+//        LoggerConfig loggerConfig = loggerConfiguration.getLoggerConfig(LogManager.ROOT_LOGGER_NAME);
+//        /* ChoiceBox füllen */
+//        for (Level level : Level.values()) {
+//            choiceBoxLogLevel.getItems().add(level);
+//        }
+//        /* Aktuellen LogLevel in der ChoiceBox als Auswahl setzen */
+//        choiceBoxLogLevel.getSelectionModel().select(loggerConfig.getLevel());
+//        choiceBoxLogLevel.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Level>() {
+//            @Override
+//            public void changed(ObservableValue<? extends Level> arg0, Level oldLevel, Level newLevel) {
+//                loggerConfig.setLevel(newLevel);
+//                loggerContext.updateLoggers(); // übernehme aktuellen LogLevel
+//            }
+//        });
+//
+//        listViewLog.setCellFactory(new Callback<ListView<String>, ListCell<String>>() {
+//            @Override
+//            public ListCell<String> call(ListView<String> listView) {
+//                return new LogStringCell();
+//            }
+//        });
+//
+//        /* den Origial System.out Stream in die ListView umleiten */
+//        PipedOutputStream pOut = new PipedOutputStream();
+//        System.setOut(new PrintStream(pOut));
+//        PipedInputStream pIn = null;
+//        try {
+//            pIn = new PipedInputStream(pOut);
+//        }
+//        catch (IOException e) {
+//            LOGGER.error(e.getMessage());
+//        }
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(pIn));
+//
+//        Task<Void> task = new Task<Void>() {
+//            @Override
+//            protected Void call() throws Exception {
+//                while (!isCancelled()) {
+//                    try {
+//                        String line = reader.readLine();
+//                        if (line != null) {
+//                            Platform.runLater(new Runnable() {
+//                                @Override
+//                                public void run() {
+//                                    listViewLog.getItems().add(line);
+//
+//                                    /* Auto-Scroll + Select */
+//                                    if (toggleButtonAutoScroll.selectedProperty().get()) {
+//                                        listViewLog.scrollTo(listViewLog.getItems().size() - 1);
+//                                        listViewLog.getSelectionModel().select(listViewLog.getItems().size() - 1);
+//                                    }
+//                                }
+//                            });
+//                        }
+//                    }
+//                    catch (IOException e) {
+//                        LOGGER.debug("log interrupted");
+//                    }
+//                }
+//                return null;
+//            }
+//        };
+//        Thread thread = new Thread(task);
+//        thread.setDaemon(true);
+//        thread.start();
     }
 }

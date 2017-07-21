@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<project name="octopus" default="do-deploy" basedir="."  xmlns:fx="javafx:com.sun.javafx.tools.ant">
+	<target name="init-fx-tasks">
+		<path id="fxant">
+			<filelist>
+				<file name="${java.home}\..\lib\ant-javafx.jar"/>
+				<file name="${java.home}\lib\jfxrt.jar"/>
+			</filelist>
+		</path>
+	
+		<taskdef resource="com/sun/javafx/tools/ant/antlib.xml"
+			uri="javafx:com.sun.javafx.tools.ant"
+			classpathref="fxant"/>
+	</target>
+	<target name="setup-staging-area">
+		
+		<echo message=" basedir ${basedir}"/>
+		<echo message=" user.dir ${user.dir}"/>
+		<echo message=" env.workspace ${env.workspace}"/>
+		<echo message=" env.build_id ${env.build_id}"/>
+		<echo message=" jenkins_home ${jenkins_home}"/>
+		<echo message=" BuildDir ${BuildDir}"/>
+		
+		
+		<delete dir="externalLibs" />
+		<delete dir="project" />
+		<delete dir="projectRefs" />
+	
+		<mkdir dir="externalLibs" />
+	
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/org/slf4j/slf4j-api/1.5.6">
+				<filename name="slf4j-api-1.5.6.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/fr/ifremer/seadatanet/cfpointLib/0.19-SNAPSHOT">
+				<filename name="cfpointLib-0.19-SNAPSHOT.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/org/hamcrest/hamcrest-core/1.3">
+				<filename name="hamcrest-core-1.3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/fr/ifremer/seadatanet/odvSDN2CFPointLib/1.0.9-SNAPSHOT">
+				<filename name="odvSDN2CFPointLib-1.0.9-SNAPSHOT.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/commons-io/commons-io/2.4">
+				<filename name="commons-io-2.4.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/joda-time/joda-time/2.6">
+				<filename name="joda-time-2.6.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/fr/ifremer/seadatanet/medatlasreader/0.6-SNAPSHOT">
+				<filename name="medatlasreader-0.6-SNAPSHOT.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/fr/ifremer/sismertools/sismertoolslib/1.1.10-SNAPSHOT">
+				<filename name="sismertoolslib-1.1.10-SNAPSHOT.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/fr/ifremer/seadatanet/sdnVocabulary/1.2">
+				<filename name="sdnVocabulary-1.2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/commons-cli/commons-cli/1.3.1">
+				<filename name="commons-cli-1.3.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/commons-lang/commons-lang/2.6">
+				<filename name="commons-lang-2.6.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/org/apache/logging/log4j/log4j-api/2.3">
+				<filename name="log4j-api-2.3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/org/apache/logging/log4j/log4j-core/2.3">
+				<filename name="log4j-core-2.3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/junit/junit/4.12">
+				<filename name="junit-4.12.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="/var/lib/jenkins/.m2/repository/edu/ucar/netcdf/4.2">
+				<filename name="netcdf-4.2.jar"/>
+			</fileset>
+		</copy>
+	
+		<mkdir dir="project" />
+		<copy todir="project">
+			<fileset dir=".">
+				<include name="src/main/java/**" />
+			</fileset>
+		</copy>
+		<copy todir="project">
+			<fileset dir=".">
+				<include name="src/test/java/**" />
+			</fileset>
+		</copy>
+		<copy todir="project">
+			<fileset dir=".">
+				<include name="src/main/resources/**" />
+			</fileset>
+		</copy>
+		<copy todir="project">
+			<fileset dir=".">
+				<include name="src/test/resources/**" />
+			</fileset>
+		</copy>
+	
+		<mkdir dir="projectRefs" />
+	</target>
+	<target name='do-compile'>
+		<delete dir="build" />
+		<mkdir dir="build/src" />
+		<mkdir dir="build/libs" />
+		<mkdir dir="build/classes" />
+	
+		<!-- Copy project-libs references -->
+		<copy todir="build/libs">
+			<fileset dir="externalLibs">
+				<include name="medatlasreader-0.6-SNAPSHOT.jar"/>
+				<include name="slf4j-api-1.5.6.jar"/>
+				<include name="cfpointLib-0.19-SNAPSHOT.jar"/>
+				<include name="sismertoolslib-1.1.10-SNAPSHOT.jar"/>
+				<include name="commons-lang-2.6.jar"/>
+				<include name="hamcrest-core-1.3.jar"/>
+				<include name="netcdf-4.2.jar"/>
+				<include name="commons-cli-1.3.1.jar"/>
+				<include name="odvSDN2CFPointLib-1.0.9-SNAPSHOT.jar"/>
+				<include name="commons-io-2.4.jar"/>
+				<include name="log4j-core-2.3.jar"/>
+				<include name="joda-time-2.6.jar"/>
+				<include name="log4j-api-2.3.jar"/>
+				<include name="sdnVocabulary-1.2.jar"/>
+				<include name="junit-4.12.jar"/>
+			</fileset>
+		</copy>
+	
+		<!-- Copy project references -->
+	
+		<!-- Copy project sources itself -->
+		<copy todir="build/src">
+			<fileset dir="../src/test/java">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+		<copy todir="build/src">
+			<fileset dir="../src/test/resources">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+		<copy todir="build/src">
+			<fileset dir="../src/main/resources">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+		<copy todir="build/src">
+			<fileset dir="../src/main/java">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+	
+		<javac includeantruntime="false" source="1.8" target="1.8" srcdir="build/src" destdir="build/classes" encoding="UTF-8">
+			<classpath>
+				<fileset dir="build/libs">
+					<include name="*"/>
+				</fileset>
+			</classpath>
+		</javac>
+	
+		<!-- Copy over none Java-Files -->
+		<copy todir="build/classes">
+		<fileset dir="../src/test/java">
+			<exclude name="**/*.java"/>
+		</fileset>
+		<fileset dir="../src/test/resources">
+			<exclude name="**/*.java"/>
+		</fileset>
+		<fileset dir="../src/main/resources">
+			<exclude name="**/*.java"/>
+		</fileset>
+		<fileset dir="../src/main/java">
+			<exclude name="**/*.java"/>
+		</fileset>
+		</copy>
+	
+	
+	</target>
+	<target name="do-deploy" depends="setup-staging-area, do-compile, init-fx-tasks">
+		 
+		
+		<delete file="dist"/>
+		<delete file="deploy" />
+	
+		<mkdir dir="dist" />
+		<mkdir dir="dist/libs" />
+	
+		<copy todir="dist/libs">
+			<fileset dir="externalLibs">
+				<include name="*" />
+			</fileset>
+		</copy>
+	
+	
+		<fx:resources id="appRes">
+			<fx:fileset dir="dist" includes="octopus.jar"/>
+			<fx:fileset dir="dist" includes="libs/*"/>
+		</fx:resources>
+	
+		<fx:application id="fxApplication"
+			name="octopus"
+			mainClass="fr.ifremer.octopus.MainApp"
+			toolkit="fx"
+		/>
+	
+		<mkdir dir="build/classes/META-INF" />
+	
+	
+	
+		<fx:jar destfile="dist/octopus.jar">
+			<fx:application refid="fxApplication"/>
+			<fileset dir="build/classes">
+			</fileset>
+			<fx:resources refid="appRes"/>
+	
+			<manifest>
+				<attribute name="Implementation-Vendor" value="ifremer.fr"/>
+				<attribute name="Implementation-Title" value="octopus"/>
+				<attribute name="Implementation-Version" value="1.0"/>
+				<attribute name="SplashScreen-Image" value="images/Octopus-50.png"/>
+				<attribute name="JavaFX-Feature-Proxy" value="None"/>
+			</manifest>
+		</fx:jar>
+	
+	
+		<mkdir dir="deploy" />
+		<!-- Need to use ${basedir} because somehow the ant task is calculating the directory differently -->
+		<fx:deploy
+			verbose="true" 
+			embedJNLP="false"
+			extension="false"
+			includeDT="false"
+			offlineAllowed="true"
+			outdir="${basedir}/deploy"
+			outfile="octopus" nativeBundles="image"
+			updatemode="background" >
+	
+			<fx:platform basedir="${java.home}"/>
+			<fx:info title="octopus" vendor="ifremer.fr"/>
+	
+			<fx:application refId="fxApplication"/>
+			<fx:resources refid="appRes"/>
+		</fx:deploy>
+	
+	
+	</target>
+</project>

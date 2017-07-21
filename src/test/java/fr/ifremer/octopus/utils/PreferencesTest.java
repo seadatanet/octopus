@@ -35,7 +35,7 @@ public class PreferencesTest {
 		Assert.assertTrue(PreferencesManager.getInstance().getCouplingPrefix().isEmpty());
 		
 		//default language is french
-		Assert.assertTrue(PreferencesManager.getInstance().getLocale() == PreferencesManager.LOCALE_FR);
+		Assert.assertTrue(PreferencesManager.getInstance().getLocale() == PreferencesManager.LOCALE_UK);
 		
 	}
 //	@Test

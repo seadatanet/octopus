@@ -111,7 +111,7 @@
                   </VBox>
 					</children>
 				</AnchorPane>
-				<fx:include source="LoggerConsole.fxml" />
+				<fx:include source="LoggerConsoleLight.fxml" />
 			</items>
 		</SplitPane>
 	</children>

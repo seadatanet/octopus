@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
 
 
+<Configuration status="WARN" strict="true" name="XMLConfigTest"  packages="fr.ifremer.octopus.view">
 
 
 	<Appenders>
 
 		<Console name="Console" target="SYSTEM_OUT" follow="true">
-<!-- 			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5level %c20.30c{1} %L - %msg%n" />for debug only (%L cost) -->
-<!-- 			<PatternLayout pattern="%d{HH:mm:ss} [octopus] %-5.5level %-20.20c{1} - %-30.50msg%n" /> -->
 			<PatternLayout>
-<!-- 				<pattern>%d{HH:mm:ss}- %-5.7level - %msg%n</pattern> -->
-	<pattern>%d{HH:mm:ss}- %-5.7level - %-30.30c{1} - %msg%n</pattern>
+		<pattern>%d{HH:mm:ss}- %-5.7level - %-30.30c{1} - %msg%n</pattern>
 			</PatternLayout> 
 			
 		</Console>
@@ -25,12 +22,18 @@
 				<SizeBasedTriggeringPolicy size="20 MB" />
 			</Policies>
 		</RollingFile>
-	</Appenders>
+		
+        <TextAreaAppender name="JavaFXLogger" >
+            <PatternLayout pattern="%d{HH:mm:ss}- %-5.7level - %-30.30c{1} - %msg%n"/>
+        </TextAreaAppender>
+    </Appenders>
+    
 
 
 	<Loggers>
 <!-- 	default level is INFO -->
 		<Root level="INFO">
+            <AppenderRef ref="JavaFXLogger"/>
 			<AppenderRef ref="Console" level="INFO" />
 			<AppenderRef ref="RollingFile" level="INFO" />
 		</Root>

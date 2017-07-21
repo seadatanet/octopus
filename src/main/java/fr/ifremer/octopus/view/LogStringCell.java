@@ -33,6 +33,9 @@ public class LogStringCell extends ListCell<String> {
             if (text.toString().contains(" ERROR ")) {
                 text.setStyle("-fx-fill: #FF0000");
             }
+            else if (text.toString().contains(" WARN ")) {
+                text.setStyle("-fx-fill: #FF8000");
+            }
             else if (text.toString().contains(" INFO ")) {
             	 if (text.toString().contains("[OK]")) {
                      text.setStyle("-fx-fill: #00b33c");
@@ -49,11 +52,7 @@ public class LogStringCell extends ListCell<String> {
 //            if (text.toString().contains(" OFF ")) {
 //                text.setStyle("-fx-fill: #8040FF");
 //            }
-            else if (text.toString().contains(" WARN ")) {
-                text.setStyle("-fx-fill: #FF8000");
-            }
-           
-           
+          
 
             flow.getChildren().add(text);
         }

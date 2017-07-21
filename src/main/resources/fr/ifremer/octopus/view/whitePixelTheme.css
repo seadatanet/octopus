@@ -123,8 +123,8 @@ RadioButton{
     -fx-background-color: #ffffff;
     -fx-table-cell-border-color: transparent;
     -fx-table-header-border-color: transparent;
-    -fx-padding: 5;
-     -fx-text-fill: red;
+    -fx-padding: 0;
+     -fx-text-fill: black;
 }
 .list-cell:selected {
     -fx-background-color: #d0d1d2;
@@ -140,7 +140,7 @@ RadioButton{
     -fx-background-color: #ffffff;
     -fx-table-cell-border-color: transparent;
     -fx-table-header-border-color: transparent;
-    -fx-padding: 5;
+    -fx-padding: 0;
 }
 
 .table-view:focused .table-row-cell:filled:selected {

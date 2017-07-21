@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-15"?>
-<root>
-<!--
-usage: add a tag for each word to tranlate from P06 sdn_uom_name (UK notation) in unit variable attribute (US notation) 
-<UK>US</UK>
-  -->
-<metre>meter</metre>
-<metres>meters</metres>
-</root>

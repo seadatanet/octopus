@@ -1,0 +1,14 @@
+//<sdn_reference xlink:href="http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?edmo=3367&identifier=lci_mod2_odv_traj_mysql_withDate_yMd" xlink:role="isDescribedBy" xlink:type="SDN:L23::CDI" sdn:scope="3367:lci_mod2_odv_traj_mysql_withDate_yMd"/>
+//
+//SDN_parameter_mapping
+//<subject>SDN:LOCAL:PRES</subject><object>SDN:P01::PRESPR01</object><units>SDN:P06::UPDB</units>
+//<subject>SDN:LOCAL:TEMP</subject><object>SDN:P01::TEMPPR01</object><units>SDN:P06::UPAA</units>
+//<subject>SDN:LOCAL:PSAL</subject><object>SDN:P01::PSLTZZ01</object><units>SDN:P06::UUUU</units>
+//
+Cruise	Station	Type	yyyy-mm-dd	Longitude [degrees_east]	Latitude [degrees_north]	LOCAL_CDI_ID	EDMO_code	Bot. Depth [m]	PRES [decibar=10000 pascals]	QV:SEADATANET	TEMP [Celsius degree]	QV:SEADATANET	PSAL [P.S.U.]	QV:SEADATANET
+CH69	1	B	1988-01-01	3.0	55.0	lci_mod2_odv_traj_mysql_withDate_yMd	3367	45.0	3.5	1	2.165	1	34.501	1
+CH69	2	B	1989-02-02	3.0001	55.0002	lci_mod2_odv_traj_mysql_withDate_yMd	3367	44.6	2.5	1	2.166	6	34.502	7
+CH69	3	B	1990-03-03	3.0002	55.0004	lci_mod2_odv_traj_mysql_withDate_yMd	3367	44.8	4	1	2.166	4	34.505	3
+CH69	4	B	1991-04-04	3.0003	55.0006	lci_mod2_odv_traj_mysql_withDate_yMd	3367	45.5	3.5	1	2.167	2	34.512	4
+CH69	5	B	1992-05-05	3.0004	55.0008	lci_mod2_odv_traj_mysql_withDate_yMd	3367	52.0	3.5	1	2.168	1	34.505	1
+CH69	6	B	1993-06-06	3.0004	55.0008	lci_mod2_odv_traj_mysql_withDate_yMd	3367	52.0	3.6	1	2.169	1	34.6	1

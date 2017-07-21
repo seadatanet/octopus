@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<style>
+body {
+	font-size: 12px;
+	 font-family: sans-serif;
+	}
+h4   {color: #6c3390;}
+h5   {color: #6c3390;}
+
+</style>
+</head>
+
+<body>
+
+<h2>Change log</h2>
+<h4>Version 1.3.9 - 2017/07/21</h4>
+
+<h5>Corrections</h5>
+	<ul>
+		<li>ODV files: Management of all ISO date formats for the primary variable of time series and not only [YYYY-MM-DDThh:mm:ss.sss] </li>
+		<li>ODV files: empty lines or lines with only tabs do not generate error.</li>
+		<li>ODV files: Management of UTF8 files with BOM (Byte Order Mark)</li>
+		<li>Allow empty SDN references using SDN_REFERENCES notation (will be ignored)</li>
+ 	</ul>
+ <h5>Evolutions</h5>
+ 	<ul>
+		<li>ODV files, date formats: check ISO format validity and consistency between dates an formats (metadata column headers and date primary variable in timeseries)</li>
+		<li>BODC terms management: detection of non existing or deprecated parameters. Automatic substitution of deprecated ones.</li>
+		<li>Improve log messages: display the name(s) of file(s) with error when converting a directory</li>
+		<li>Output file type: change 'keep/split' to 'Split to mono station files? yes/no' (no modification for batch mode)</li>
+		<li>Use a new Octopus version number notation: major.minor.build number</li>
+	</ul>
+	
+<h4>Version 1.2 - 2017/01/30</h4>
+	<h5>Corrections</h5>
+	<ul>
+		<li>Empty prefix is allowed in coupling table configuration</li>
+		<li>Batch mode: fixed output path</li>
+		<li>Fixed a bug when clearing coupling table</li>
+		<li>MGD directories to ODV conversion: fixed a bug on ODV file names; use local_cdi_id as name for output files</li>
+	</ul>
+ <h5>Evolutions</h5>
+	<ul>
+ 	 <li>Improve log messages, display success messages in green</li>
+ 	</ul>
+ 	
+ 	
+<h4>Version 1.1 - 2016/10/05</h4>
+
+<h5>Corrections</h5>
+	<ul>
+    	<li>Fixed a bug that added empty lines in ODV files when converting MedATLAS or ODV files to ODV</li>
+    	<li>Fixed a bug in the "title" global attribute in CFPoint generated files</li>
+    	<li>Fixed a bug on format names displayed in the coupling table window</li>
+    	<li>In coupling table configuration, coupling table prefix is not mandatory</li>
+    	<li>Fixed a bug when clearing coupling table</li>
+    	<li>Conversion to ODV: fixed a bug on ISO format in date metadata column</li>
+    </ul>
+    
+<h5>Evolutions</h5>
+	<ul>
+		<li>Improve log messages</li>
+		<li>Fit dimension for CFPoint to CFPoint conversions, if exported stations are smaller than the biggest one in the input file</li>
+		<li>Allow override files when converting to any format</li>
+ 	</ul>
+ 	
+
+<h4>Version 1.0 - 2016/03/21</h4>
+
+<i>First version</i>
+
+
+
+
+ 	
+
+</body>

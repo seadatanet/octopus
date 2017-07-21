@@ -2,19 +2,17 @@ package fr.ifremer.octopus.view;
 
 import java.awt.Desktop;
 import java.io.File;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import javafx.application.Application;
 import javafx.application.HostServices;
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import fr.ifremer.octopus.MainApp;
 import fr.ifremer.octopus.utils.PreferencesManager;
 

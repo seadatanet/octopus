@@ -384,13 +384,19 @@ public class OctopusOverviewController {
 	}
 	
 	private void updateOutputPathFromInput(){
+		String outputDirDefaultPath = PreferencesManager.getInstance().getOutputDefaultPath();
+		if (outputDirDefaultPath!=null && !outputDirDefaultPath.isEmpty() ){
+			
 		File input = new File(inputPathTextField.getText());
 		if (input.isFile()){
 			if (input.getName().contains(".")){
-			outputPathTextField.setText(inputPathTextField.getText().substring(0, inputPathTextField.getText().lastIndexOf(".")));
+				outputPathTextField.setText(outputDirDefaultPath+File.separator+input.getName().substring(0, input.getName().lastIndexOf(".")));
 			}else{
-				outputPathTextField.setText(inputPathTextField.getText());
+				outputPathTextField.setText(outputDirDefaultPath+File.separator+input.getName());
 			}
+		}
+		}else{
+			outputPathTextField.setText("");
 		}
 	}
 	public void initGui(){
@@ -592,13 +598,23 @@ public class OctopusOverviewController {
 	}
 	@FXML
 	public void exportToODV(){
+		addAutomaticExtension(Format.ODV_SDN);
 		export(Format.ODV_SDN);
 	}
 	@FXML
 	public void exportToCfPoint(){
+		addAutomaticExtension(Format.CFPOINT);
 		export(Format.CFPOINT);
 	}
 
+	private void addAutomaticExtension(Format format){
+		File out = new File(outputPathTextField.getText());
+		if(!out.getName().contains(".")){
+			outputPathTextField.setText(out.getParent()+File.separator+out.getName()+"."+format.getMandatoryExtension());
+		}else{
+			outputPathTextField.setText(out.getParent()+File.separator+out.getName().substring(0, out.getName().lastIndexOf("."))+"."+format.getMandatoryExtension());
+		}
+	}
 
 	private void export(Format format){
 		LOGGER.info(messages.getString("octopusOverviewController.startExport"));

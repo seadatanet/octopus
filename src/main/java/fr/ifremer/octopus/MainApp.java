@@ -2,19 +2,31 @@ package fr.ifremer.octopus;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.MessageFormat;
 import java.util.ResourceBundle;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import software.version.SoftwareState;
+import software.version.SoftwareState.STATE;
 import fr.ifremer.octopus.controller.BatchController;
 import fr.ifremer.octopus.controller.OctopusException;
 import fr.ifremer.octopus.utils.PreferencesManager;
@@ -73,7 +85,55 @@ public class MainApp extends Application {
 		showRootLayout();
 		initOverview();
 		showOverview();
-		 
+		
+		// check version
+		checkVersion(primaryStage);
+	}
+
+	private void checkVersion(Stage primaryStage) {
+		SoftwareState state = OctopusVersion.check();
+		if(state.getState() != STATE.LAST_VERSION){
+			ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
+			String[] lastDate = state.getLastVersionDay().split("-");
+			
+			String dialogMessage1=MessageFormat.format(messages.getString("rootController.OctopusVersionCurrent"), state.getVersion()  );
+			String dialogMessage2=MessageFormat.format(messages.getString("rootController.OctopusVersionUpdateAvailable"), state.getLastVersion(), lastDate[0], lastDate[1], lastDate[2]);
+			
+			
+			final Stage dialog = new Stage();
+			dialog.initModality(Modality.APPLICATION_MODAL);
+			dialog.initOwner(primaryStage);
+			dialog.setTitle("Octopus Version");
+			VBox dialogVbox = new VBox(20);
+			dialogVbox.setPadding(new Insets(50, 50, 50, 50));
+			
+			dialogVbox.getChildren().add(new Text(dialogMessage1));
+			dialogVbox.getChildren().add(new Text(dialogMessage2));
+			String linkURL="https://www.seadatanet.org/Software/OCTOPUS";
+			Hyperlink link = new Hyperlink(linkURL);
+			link.setOnAction(new EventHandler<ActionEvent>() {
+
+				@Override
+				public void handle(ActionEvent event) {
+					getHostServices().showDocument(link.getText());
+				}
+			});
+			   dialogVbox.getChildren().add(link);
+			
+			Button okButton = new Button("OK");
+			okButton.setOnAction(new EventHandler<ActionEvent>() {
+
+				@Override
+				public void handle(ActionEvent event) {
+					dialog.close();
+				}
+			});
+			dialogVbox.setAlignment(Pos.TOP_CENTER);
+			dialogVbox.getChildren().add(okButton);
+			Scene dialogScene = new Scene(dialogVbox);
+			dialog.setScene(dialogScene);
+			dialog.show();
+		}
 	}
 
 

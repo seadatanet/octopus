@@ -18,6 +18,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import sdn.vocabulary.interfaces.VocabularyException;
+import fr.ifremer.octopus.OctopusVersion;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.PreferencesManager;
@@ -74,7 +75,8 @@ public class BatchController extends AbstractController{
 		//***************************************************************
 		this.isJunitTest = isJunitTest;
 		aboutBundle = ResourceBundle.getBundle("bundles/about", PreferencesManager.getInstance().getLocale());
-		LOGGER.info(MessageFormat.format("Octopus version {0}",  aboutBundle.getString("about.version")));
+
+		OctopusVersion.check();
 		// use altran edmo code for junit tests (preferences.xml file value must be empty)
 		if (this.isJunitTest){
 			PreferencesManager.getInstance().setEdmoCode(3367);

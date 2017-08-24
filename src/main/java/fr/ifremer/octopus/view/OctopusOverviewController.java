@@ -69,8 +69,6 @@ public class OctopusOverviewController {
 	private OctopusGUIController octopusGuiController;
 
 
-
-
 	@FXML
 	private TextField inputPathTextField;
 	private boolean inputChanged;
@@ -201,7 +199,7 @@ public class OctopusOverviewController {
 				@Override
 				public void changed(ObservableValue<? extends ObservableList<Boolean>> arg0, ObservableList<Boolean> arg1,
 						ObservableList<Boolean> l) {
-					// Checking for an unselected employee in the table view.
+					// Checking for an unselected cdi in the table view.
 					boolean unSelectedFlag = false;
 					for (boolean b : l) {
 						if (!b) {
@@ -219,7 +217,7 @@ public class OctopusOverviewController {
 						getSelectAllCheckBox().setSelected(true);
 					}
 
-					// Checking for a selected employee in the table view.
+					// Checking for a selected cdi in the table view.
 					boolean selectedFlag = false;
 					for (boolean b : l) {
 						if (!b) {
@@ -228,15 +226,6 @@ public class OctopusOverviewController {
 						}
 					}
 
-					/*
-					 * If at least one employee is selected, then enabling the "Export" button, else if none of the employees are selected,
-					 * then disabling the "Export" button.
-					 */
-					//							                                      if (selectedFlag) {
-					//							                                             enableExportButton();
-					//							                                     } else {
-					//							                                             disableExportButton();
-					//							                                     }
 				}
 			});
 
@@ -372,7 +361,6 @@ public class OctopusOverviewController {
 		LOGGER.info(messages.getString("octopusOverviewController.initInput"));
 		LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.initInputMsg"), inputPathTextField.getText()));
 
-
 		initGui();
 
 		try {
@@ -384,13 +372,25 @@ public class OctopusOverviewController {
 			}
 			if (octopusGuiController.getModel() !=null){
 				LOGGER.debug("init input ok -> switch true");
+				updateOutputPathFromInput();
 				switchGui(true);
-
 			}
+			
 		} catch (OctopusException e) {
 			LOGGER.error(e.getMessage());
 		} catch (IOException e) {
 			LOGGER.error(e.getMessage());
+		}
+	}
+	
+	private void updateOutputPathFromInput(){
+		File input = new File(inputPathTextField.getText());
+		if (input.isFile()){
+			if (input.getName().contains(".")){
+			outputPathTextField.setText(inputPathTextField.getText().substring(0, inputPathTextField.getText().lastIndexOf(".")));
+			}else{
+				outputPathTextField.setText(inputPathTextField.getText());
+			}
 		}
 	}
 	public void initGui(){
@@ -428,9 +428,6 @@ public class OctopusOverviewController {
 			outCDI.setVisible(true);
 			outCDILabel.setVisible(true);
 		}
-	
-
-
 
 //		if (inputOk){
 //			File in = new File (octopusGuiController.getModel().getInputPath());
@@ -515,7 +512,8 @@ public class OctopusOverviewController {
 	}
 	@FXML
 	public void checkedMulti(){
-		outputPathTextField.setText("");
+//		outputPathTextField.setText("");
+		updateOutputPathFromInput();
 	}	
 
 	@FXML

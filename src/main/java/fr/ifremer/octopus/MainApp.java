@@ -22,8 +22,12 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.Appender;
+import org.apache.logging.log4j.core.LoggerContext;
+import org.apache.logging.log4j.core.config.Configuration;
 
 import software.version.SoftwareState;
 import software.version.SoftwareState.STATE;
@@ -61,6 +65,13 @@ public class MainApp extends Application {
 			BatchController batch = new BatchController(args);
 		}else{
 			System.out.println("launch Octopus in GUI mode");
+
+			// add GUI log appender
+			LoggerContext context = (LoggerContext) LogManager.getContext(false);
+			Configuration contextConfiguration = context.getConfiguration();
+			Appender appender = contextConfiguration.getAppender("JavaFXLogger");
+			contextConfiguration.getRootLogger().addAppender(appender, Level.INFO, null);
+			appender.start();
 			launch(args);
 		}
 	}

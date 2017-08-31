@@ -338,9 +338,7 @@ public class BatchController extends AbstractController{
 	
 	public static void main(String[] args) {
 		try {
-			LoggerContext context = (LoggerContext) LogManager.getContext(false);
-			Configuration contextConfiguration = context.getConfiguration();
-			contextConfiguration.removeLogger("JavaFXLogger");
+		
 			
 			new BatchController(args);
 		} catch (OctopusException e) {

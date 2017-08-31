@@ -16,6 +16,9 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.Appender;
+import org.apache.logging.log4j.core.LoggerContext;
+import org.apache.logging.log4j.core.config.Configuration;
 
 import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.octopus.OctopusVersion;
@@ -335,6 +338,10 @@ public class BatchController extends AbstractController{
 	
 	public static void main(String[] args) {
 		try {
+			LoggerContext context = (LoggerContext) LogManager.getContext(false);
+			Configuration contextConfiguration = context.getConfiguration();
+			contextConfiguration.removeLogger("JavaFXLogger");
+			
 			new BatchController(args);
 		} catch (OctopusException e) {
 			e.printStackTrace();

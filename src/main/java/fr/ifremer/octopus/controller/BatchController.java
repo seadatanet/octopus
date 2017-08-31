@@ -331,4 +331,15 @@ public class BatchController extends AbstractController{
 		LOGGER.info("==================== OCTOPUS BATCH START  ====================");
 		
 	}
+	
+	
+	public static void main(String[] args) {
+		try {
+			new BatchController(args);
+		} catch (OctopusException e) {
+			e.printStackTrace();
+		} catch (VocabularyException e) {
+			e.printStackTrace();
+		}
+	}
 }

@@ -138,7 +138,7 @@ public class ConvertersManager {
 		case ODV_SDN:
 			return ((OdvReader)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement, unitsTranslationFileName);
 		case CFPOINT:
-			return ((CFReader)conv).print(cdiList, outputFileAbsolutePath, titleComplement,unitsTranslationFileName);
+			return ((CFReader)conv).print(cdiList, outputFileAbsolutePath, titleComplement,unitsTranslationFileName, outputFormat);
 		case MGD_81:
 		case MGD_98:
 			return ((MGD77Manager)conv).print( outputFileAbsolutePath, outputLocalCdiId);

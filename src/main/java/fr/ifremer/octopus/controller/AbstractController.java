@@ -463,11 +463,15 @@ public abstract class AbstractController {
 				}
 				break;
 			case CFPOINT:
+				if (model.getOutputFormat().equals(Format.ODV_SDN)){
+					conversion = Conversion.CFPOINT_TO_ODV_SDN;
+				}else
 				throw new OctopusException(
 						MessageFormat.format(messages.getString("abstractcontroller.canNotConvertFromTo"),
 								model.getInputFormat().getName(), 
 								model.getOutputFormat().getName())
 				);
+				break;
 			case MGD_81:
 			case MGD_98:
 				if (model.getOutputFormat().equals(Format.ODV_SDN)){

@@ -464,20 +464,16 @@ public class OctopusOverviewController {
 		switchOutCDI(inputOk);
 		
 
-
-
 		showCdi.visibleProperty().setValue(
 				inputOk 
 				&& octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
 				&&  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98);
 
 
-
-
 		if (inputOk){
 			Format f = octopusGuiController.getModel().getInputFormat();
 			boolean disableMedatlas = f!=Format.MEDATLAS_SDN && f!=Format.MEDATLAS_NON_SDN ;
-			boolean disableOdv = (f==Format.CFPOINT);
+			boolean disableOdv = false;//(f==Format.CFPOINT);
 			boolean disableCfPoint = f==Format.MGD_81 || f==Format.MGD_98; 
 			buttonExportMedatlas.disableProperty().setValue(disableMedatlas);
 			buttonExportOdv.disableProperty().setValue(disableOdv);

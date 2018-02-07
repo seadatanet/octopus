@@ -8,8 +8,8 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import fr.ifremer.medatlas.utils.MedatlasConstants;
 import fr.ifremer.octopus.io.driver.Driver;
+import fr.ifremer.sismer_tools.resources.MedatlasConstants;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class MedatlasSDNDriverImpl extends Driver {

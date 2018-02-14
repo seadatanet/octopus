@@ -350,7 +350,7 @@ public class OctopusOverviewController {
 	}
 	@FXML
 	private void inputChangedManual() {
-			initInput();
+		initInput();
 	}
 
 	/**
@@ -375,26 +375,26 @@ public class OctopusOverviewController {
 				updateOutputPathFromInput();
 				switchGui(true);
 			}
-			
+
 		} catch (OctopusException e) {
 			LOGGER.error(e.getMessage());
 		} catch (IOException e) {
 			LOGGER.error(e.getMessage());
 		}
 	}
-	
+
 	private void updateOutputPathFromInput(){
 		String outputDirDefaultPath = PreferencesManager.getInstance().getOutputDefaultPath();
 		if (outputDirDefaultPath!=null && !outputDirDefaultPath.isEmpty() ){
-			
-		File input = new File(inputPathTextField.getText());
-		if (input.isFile()){
-			if (input.getName().contains(".")){
-				outputPathTextField.setText(outputDirDefaultPath+File.separator+input.getName().substring(0, input.getName().lastIndexOf(".")));
-			}else{
-				outputPathTextField.setText(outputDirDefaultPath+File.separator+input.getName());
+
+			File input = new File(inputPathTextField.getText());
+			if (input.isFile()){
+				if (input.getName().contains(".")){
+					outputPathTextField.setText(outputDirDefaultPath+File.separator+input.getName().substring(0, input.getName().lastIndexOf(".")));
+				}else{
+					outputPathTextField.setText(outputDirDefaultPath+File.separator+input.getName());
+				}
 			}
-		}
 		}else{
 			outputPathTextField.setText("");
 		}
@@ -409,14 +409,14 @@ public class OctopusOverviewController {
 		outputPathTextField.setText("");
 		outCDI.setText("");
 		submitInput.setVisible(false);
-	
+
 
 		switchGui(false);
 	}
 
-	
+
 	private void switchOutCDI(boolean inputOk){
-		
+
 		if (!inputOk){
 			chooseOutCdi.setVisible(false);
 			outCDI.setVisible(false);
@@ -435,34 +435,34 @@ public class OctopusOverviewController {
 			outCDILabel.setVisible(true);
 		}
 
-//		if (inputOk){
-//			File in = new File (octopusGuiController.getModel().getInputPath());
-//			// choose button only if input is a directory (mapping CDI file)
-//			chooseOutCdi.setVisible(in.isDirectory()&& (octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
-//					||  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
-//		}else{
-//			chooseOutCdi.setVisible(false);
-//			outCDI.setVisible(false);
-//		}
+		//		if (inputOk){
+		//			File in = new File (octopusGuiController.getModel().getInputPath());
+		//			// choose button only if input is a directory (mapping CDI file)
+		//			chooseOutCdi.setVisible(in.isDirectory()&& (octopusGuiController.getModel().getInputFormat()!=Format.MGD_81 
+		//					||  octopusGuiController.getModel().getInputFormat()!=Format.MGD_98));
+		//		}else{
+		//			chooseOutCdi.setVisible(false);
+		//			outCDI.setVisible(false);
+		//		}
 	}
 	private void switchGui(boolean inputOk){
 		LOGGER.debug("switch ok "+ inputOk);
 
 		submitInput.setVisible(false);
-		
+
 		radioMono.setDisable(!inputOk|| (octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
 				||  octopusGuiController.getModel().getInputFormat()==Format.MGD_98));
 		radioMulti.setDisable(!inputOk|| ( octopusGuiController.getModel().getInputFormat()==Format.MGD_81 
 				||  octopusGuiController.getModel().getInputFormat()==Format.MGD_98));
 
-		
+
 		outputPathTextField.setDisable(!inputOk);
 		chooseOut.setDisable(!inputOk);
 
 		checkButton.setDisable(!inputOk);
-		
+
 		switchOutCDI(inputOk);
-		
+
 
 		showCdi.visibleProperty().setValue(
 				inputOk 
@@ -480,7 +480,7 @@ public class OctopusOverviewController {
 			buttonExportCfpoint.disableProperty().setValue(disableCfPoint);
 			// 32965 For MGD, always use split in mono station
 			radioMono.setSelected(octopusGuiController.getModel().getInputFormat()==Format.MGD_81 ||octopusGuiController.getModel().getInputFormat()==Format.MGD_98);
-			
+
 
 			outCDI.setDisable(! (f==Format.MGD_81 || f==Format.MGD_98));
 		}else{
@@ -514,7 +514,7 @@ public class OctopusOverviewController {
 	}
 	@FXML
 	public void checkedMulti(){
-//		outputPathTextField.setText("");
+		//		outputPathTextField.setText("");
 		updateOutputPathFromInput();
 	}	
 
@@ -605,11 +605,14 @@ public class OctopusOverviewController {
 
 	private void addAutomaticExtension(Format format){
 		File out = new File(outputPathTextField.getText());
-		if(!out.getName().contains(".")){
-			outputPathTextField.setText(out.getParent()+File.separator+out.getName()+"."+format.getMandatoryExtension());
-		}else{
-			outputPathTextField.setText(out.getParent()+File.separator+out.getName().substring(0, out.getName().lastIndexOf("."))+"."+format.getMandatoryExtension());
+		if (!out.isDirectory()){
+			if(!out.getName().contains(".")){
+				outputPathTextField.setText(out.getParent()+File.separator+out.getName()+"."+format.getMandatoryExtension());
+			}else{
+				outputPathTextField.setText(out.getParent()+File.separator+out.getName().substring(0, out.getName().lastIndexOf("."))+"."+format.getMandatoryExtension());
+			}
 		}
+
 	}
 
 	private void export(Format format){

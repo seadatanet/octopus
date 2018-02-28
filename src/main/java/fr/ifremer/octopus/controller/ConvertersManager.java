@@ -143,7 +143,7 @@ public class ConvertersManager {
 			return ((CFReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion ,unitsTranslationFileName, outputFormat);
 		case MGD_81:
 		case MGD_98:
-			return ((MGD77Manager)conv).print( outputFileAbsolutePath, outputLocalCdiId);
+			return ((MGD77Manager)conv).print( outputFileAbsolutePath, outputLocalCdiId, originatorSoftwareName, originatorSoftwareVersion);
 		default:
 			throw new OctopusException(messages.getString("abstractcontroller.unrecognizedInputFormat"));
 		}

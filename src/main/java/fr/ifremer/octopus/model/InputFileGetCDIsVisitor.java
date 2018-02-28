@@ -42,7 +42,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 		case MEDATLAS_SDN:
 			MedatlasInputFileManager mgr;
 			try {
-				mgr = new MedatlasInputFileManager(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf());
+				mgr = new MedatlasInputFileManager(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
 				for (String cdi: mgr.getInputFileCdiIdList()){
 					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}
@@ -54,7 +54,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			break;
 		case ODV_SDN:
 			try{
-				OdvReader reader = new OdvReader(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf());
+				OdvReader reader = new OdvReader(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
 				for (String cdi :reader.getInputFileCdiIdList()){
 					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}
@@ -64,7 +64,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			break;
 		case CFPOINT:
 			try{
-				CFReader reader = new CFReader(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf());
+				CFReader reader = new CFReader(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
 				for (String cdi :reader.getInputFileCdiIdList()){
 					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}

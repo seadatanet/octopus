@@ -15,6 +15,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import fr.ifremer.octopus.controller.checker.CFPointFormatChecker;
 import fr.ifremer.octopus.controller.checker.FormatChecker;
 import fr.ifremer.octopus.controller.checker.MedatlasFormatChecker;
 import fr.ifremer.octopus.controller.checker.OdvFormatChecker;
@@ -617,6 +618,8 @@ public abstract class AbstractController {
 		case ODV_SDN:
 			checker= new OdvFormatChecker();
 			break;
+		case CFPOINT:
+			checker= new CFPointFormatChecker();
 		default:
 			break;
 		}

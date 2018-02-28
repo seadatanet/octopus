@@ -8,13 +8,14 @@ import org.apache.logging.log4j.Logger;
 import sdn.vocabulary.implementations.CollectionFactory;
 import sdn.vocabulary.interfaces.ICollectionFactory;
 import sdn.vocabulary.interfaces.VocabularyException;
+import fr.ifremer.sismer_tools.csr.CSRListManager;
 
 public class SDNVocabs {
 	static final Logger LOGGER = LogManager.getLogger(SDNVocabs.class.getName());
 
 	private static SDNVocabs sdnVocabs;
 	ICollectionFactory cf ;
-	
+	CSRListManager mgr;
 	private SDNVocabs() throws VocabularyException {
 		String vocabDir = "resources/vocab";
 		File vocab = new File(vocabDir);
@@ -22,6 +23,13 @@ public class SDNVocabs {
 		CollectionFactory.newInstance(vocab);
 		cf = CollectionFactory.getInstance();
 		cf.reload();
+		
+		try {
+			mgr = CSRListManager.getInstance("resources/csrlist");
+		} catch (Exception e) {
+			LOGGER.error("unable to get CSR list");
+		} 
+		
 	}
 	
 	public static SDNVocabs getInstance() throws VocabularyException{
@@ -34,7 +42,9 @@ public class SDNVocabs {
 	public ICollectionFactory getCf(){
 		return cf;
 	}
-	
+	public CSRListManager getCSRListManager(){
+		return mgr;
+	}
 	public void reload(){
 		try {
 			cf.reload();

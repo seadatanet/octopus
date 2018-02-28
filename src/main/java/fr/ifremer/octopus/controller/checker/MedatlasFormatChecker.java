@@ -18,7 +18,7 @@ public class MedatlasFormatChecker extends FormatChecker {
 	@Override
 	public Format check(File f) throws Exception {
 		try {
-			MedatlasInputFileManager mgr = new MedatlasInputFileManager(f.getAbsolutePath(), SDNVocabs.getInstance().getCf());
+			MedatlasInputFileManager mgr = new MedatlasInputFileManager(f.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
 			if (mgr.isSDNMedatlas())
 			{
 				return Format.MEDATLAS_SDN;

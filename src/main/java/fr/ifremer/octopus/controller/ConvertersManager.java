@@ -27,7 +27,9 @@ public class ConvertersManager {
 	private static final Logger LOGGER = LogManager.getLogger(ConvertersManager.class);
 	private static final ResourceBundle  aboutBundle = ResourceBundle.getBundle("bundles/about", PreferencesManager.getInstance().getLocale());
 
-	private static final String TITLE_COMPLEMENT = " from Octopus " + aboutBundle.getString("about.version");
+	private static final String originatorSoftwareName ="Octopus";
+	private static final String originatorSoftwareVersion =aboutBundle.getString("about.version");
+	
 	private static final String unitsTranslationFileName = "octopusUnitsTranslation.xml";
 	private Object conv;
 	private Format inputFormat;
@@ -45,16 +47,16 @@ public class ConvertersManager {
 				if (edmo==null || edmo.isEmpty()){
 					throw new OctopusException(messages.getString("converter.setEdmoInSettings")); 
 				}
-				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), Integer.valueOf(edmo));
+				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager(), Integer.valueOf(edmo));
 				break;
 			case MEDATLAS_SDN:
-				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf());
+				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
 				break;
 			case ODV_SDN:
-				conv = new OdvReader(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf());
+				conv = new OdvReader(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
 				break;
 			case CFPOINT:
-				conv = new CFReader(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf());
+				conv = new CFReader(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
 				break;
 			case MGD_81:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
@@ -127,18 +129,18 @@ public class ConvertersManager {
 		}
 
 
-		String titleComplement="";
-		if (outputFormat==Format.CFPOINT){
-			titleComplement = TITLE_COMPLEMENT;
-		}
+		//String titleComplement="";
+//		if (outputFormat==Format.CFPOINT){
+//			titleComplement = TITLE_COMPLEMENT;
+//		}
 		switch (inputFormat) {
 		case MEDATLAS_SDN:
 		case MEDATLAS_NON_SDN:
-			return ((MedatlasInputFileManager)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement,  unitsTranslationFileName);
+			return ((MedatlasInputFileManager)conv).print(cdiList, outputFileAbsolutePath,  originatorSoftwareName, originatorSoftwareVersion,  unitsTranslationFileName, outputFormat);
 		case ODV_SDN:
-			return ((OdvReader)conv).print(cdiList, outputFileAbsolutePath, outputFormat, titleComplement, unitsTranslationFileName);
+			return ((OdvReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion, unitsTranslationFileName, outputFormat);
 		case CFPOINT:
-			return ((CFReader)conv).print(cdiList, outputFileAbsolutePath, titleComplement,unitsTranslationFileName, outputFormat);
+			return ((CFReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion ,unitsTranslationFileName, outputFormat);
 		case MGD_81:
 		case MGD_98:
 			return ((MGD77Manager)conv).print( outputFileAbsolutePath, outputLocalCdiId);

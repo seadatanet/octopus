@@ -30,6 +30,7 @@ import fr.ifremer.sismer_tools.seadatanet.Format;
 public class BatchController extends AbstractController{
 	private static final Logger LOGGER = LogManager.getLogger(BatchController.class);
 	private boolean isJunitTest ;
+	private boolean checkOnly;
 
 	private Options options;
 	private CommandLineParser parser ;
@@ -37,13 +38,14 @@ public class BatchController extends AbstractController{
 
 	private static String OPTION_I = "i";
 	private static String OPTION_O = "o";
+	private static String OPTION_CHECKONLY = "check";
 	private static String OPTION_F = "f";
 	private static String OPTION_T = "t";
 	private static String OPTION_CDI = "c";
 	private static String OPTION_OUT_LOCAL_CDI_ID = "l";
 	private List<String> mandatory_options = new ArrayList<>();
 	private ResourceBundle aboutBundle;
-	
+
 
 
 	private static int OK_EXIT_CODE = 0;
@@ -95,22 +97,25 @@ public class BatchController extends AbstractController{
 		} catch (ParseException e1) {
 			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
 		}
-		
-		
+
+
 		try {
-			
-			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startExport"), model.getInputPath()));
-			
-			
+
+
 			/**
 			 * PROCESS
 			 */
-			List<String> outputFiles = process();
-			
-			
-			
-			
-			
+			if (checkOnly){
+				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startCheck"), model.getInputPath()));
+				checkFormat();
+			}else{
+				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startExport"), model.getInputPath()));
+				List<String> outputFiles = processConversion();
+			}
+
+
+
+
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
@@ -131,11 +136,21 @@ public class BatchController extends AbstractController{
 			// parse command arguments
 			CommandLine cmd = parser.parse( options, args);
 
+			if (cmd.hasOption(OPTION_CHECKONLY)){
+				LOGGER.debug("option CHECK ");
+				checkOnly=true;
+				mandatory_options.add(OPTION_I);
+			}else{
+				mandatory_options.add(OPTION_I);
+				mandatory_options.add(OPTION_O);
+				mandatory_options.add(OPTION_F);
+			}
+
 			// check if mandatory options are present
 			for (String option : mandatory_options){
 				if (!cmd.hasOption(option)){
 					throw new OctopusException(MessageFormat.format(messages.getString("batchcontroller.missingOption"), option));
-					
+
 				}
 			}
 
@@ -144,37 +159,50 @@ public class BatchController extends AbstractController{
 			if (inputPath.isEmpty()){
 				throw new OctopusException(messages.getString("batchcontroller.inputPathEmpty"));
 			}
-			String outputPath = cmd.getOptionValue(OPTION_O).trim();
-			if (outputPath.isEmpty()){
-				throw new OctopusException(messages.getString("batchcontroller.outputPathEmpty"));
-			}
-			Format outputFormat = getFormatFromBatchArg(cmd.getOptionValue(OPTION_F));
-			
-			
-			String typeString=cmd.getOptionValue(OPTION_T);
-			OUTPUT_TYPE type = OUTPUT_TYPE.MULTI;
-			if (typeString!=null){
-				 type = getType(typeString);
-			}
 
-			String cdiList = cmd.getOptionValue(OPTION_CDI);
-			List<String> list = getCdiList(cdiList);
-			
-			String outputLocalCdiIdString = cmd.getOptionValue(OPTION_OUT_LOCAL_CDI_ID);
-			String outputLocalCdiId = null ;
-			if (outputLocalCdiIdString!=null){
-				outputLocalCdiId = outputLocalCdiIdString.trim();
-			}
 
 			// log
 			LOGGER.info(messages.getString("batchcontroller.argumentsResumeTitle"));
 			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsInputPath"), inputPath));
-			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputPath"), outputPath));
-			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputFormat"), outputFormat));
-			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputType"), type));
-			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsCdiList"), cdiList));
-			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutCDI"), outputLocalCdiId));
 			
+			if (!checkOnly){
+				String outputPath = cmd.getOptionValue(OPTION_O).trim();
+				if (outputPath.isEmpty()){
+					throw new OctopusException(messages.getString("batchcontroller.outputPathEmpty"));
+				}
+				Format outputFormat = getFormatFromBatchArg(cmd.getOptionValue(OPTION_F));
+
+
+				String typeString=cmd.getOptionValue(OPTION_T);
+				OUTPUT_TYPE type = OUTPUT_TYPE.MULTI;
+				if (typeString!=null){
+					type = getType(typeString);
+				}
+
+				String cdiList = cmd.getOptionValue(OPTION_CDI);
+				List<String> list = getCdiList(cdiList);
+
+				String outputLocalCdiIdString = cmd.getOptionValue(OPTION_OUT_LOCAL_CDI_ID);
+				String outputLocalCdiId = null ;
+				if (outputLocalCdiIdString!=null){
+					outputLocalCdiId = outputLocalCdiIdString.trim();
+				}
+				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputPath"), outputPath));
+				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputFormat"), outputFormat));
+				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputType"), type));
+				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsCdiList"), cdiList));
+				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutCDI"), outputLocalCdiId));
+				
+				model.setOutputFormat(outputFormat);
+				model.setOutputPath(outputPath);
+				// output type may have been initialized in init method (forced for MGD)
+				if (model.getOutputType()==null){
+					model.setOutputType(type);
+				}
+				model.setCdiList(list);
+				model.setOuputLocalCdiId(outputLocalCdiId);
+			}
+
 
 			checkInput(new File(inputPath));
 
@@ -185,14 +213,7 @@ public class BatchController extends AbstractController{
 				throw e;
 			}
 
-			model.setOutputFormat(outputFormat);
-			model.setOutputPath(outputPath);
-			// output type may have been initialized in init method (forced for MGD)
-			if (model.getOutputType()==null){
-				model.setOutputType(type);
-			}
-			model.setCdiList(list);
-			model.setOuputLocalCdiId(outputLocalCdiId);
+			
 
 
 		} catch (ParseException e) {
@@ -270,18 +291,17 @@ public class BatchController extends AbstractController{
 		// create Options object
 		options = new Options();
 
-		
+
 		options.addOption(OPTION_I, true, messages.getString("batchcontroller.argumentsInputPathHelp"));
+		options.addOption(OPTION_CHECKONLY, false, messages.getString("batchcontroller.argumentsCheckOnly"));
 		options.addOption(OPTION_O, true, messages.getString("batchcontroller.argumentsOutputPathHelp"));
 		options.addOption(OPTION_F, true, messages.getString("batchcontroller.argumentsFormatHelp"));
 		options.addOption(OPTION_T, true, messages.getString("batchcontroller.argumentsTypeHelp"));
 		options.addOption(OPTION_CDI, true, messages.getString("batchcontroller.argumentsCdiListHelp"));
 		options.addOption(OPTION_OUT_LOCAL_CDI_ID, true, messages.getString("batchcontroller.argumentsOutputCdiHelp"));
 
-		mandatory_options.add(OPTION_I);
-		mandatory_options.add(OPTION_O);
-		mandatory_options.add(OPTION_F);
-//		mandatory_options.add(OPTION_T);
+
+		//		mandatory_options.add(OPTION_T);
 
 		parser = new DefaultParser();
 
@@ -332,14 +352,14 @@ public class BatchController extends AbstractController{
 	@Override
 	protected void logStart() {
 		LOGGER.info("==================== OCTOPUS BATCH START  ====================");
-		
+
 	}
-	
-	
+
+
 	public static void main(String[] args) {
 		try {
-		
-			
+
+
 			new BatchController(args);
 		} catch (OctopusException e) {
 			e.printStackTrace();

@@ -645,7 +645,7 @@ public class OctopusOverviewController {
 
 					LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.exportTo"), format.getName())); 
 					octopusGuiController.getModel().setOutputFormat(format);
-					List<String> outputFiles = octopusGuiController.process();
+					List<String> outputFiles = octopusGuiController.processConversion();
 				} catch (OctopusException e) {
 					LOGGER.error(e.getMessage());
 				} catch (SQLException e) {

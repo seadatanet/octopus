@@ -116,7 +116,7 @@ public abstract class AbstractController {
 	 * @throws OctopusException
 	 * @throws SQLException 
 	 */
-	public List<String> process() throws OctopusException, SQLException {
+	public List<String> processConversion() throws OctopusException, SQLException {
 		// used only if input is a directory, to store info on eventual errors on some files
 		nbFilesInInputDirectory=0;
 		nbErrorFilesInInputDirectory=0;
@@ -236,6 +236,7 @@ public abstract class AbstractController {
 
 
 	}
+	
 
 	private  void deleteOutputDir(){
 		try {

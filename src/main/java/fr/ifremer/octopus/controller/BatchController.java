@@ -192,7 +192,12 @@ public class BatchController extends AbstractController{
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutputType"), type));
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsCdiList"), cdiList));
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsOutCDI"), outputLocalCdiId));
-				
+				try{
+					init(inputPath);
+				} catch (IOException e) {
+					LOGGER.error(messages.getString("batchcontroller.inputPathError"));
+					throw e;
+				}
 				model.setOutputFormat(outputFormat);
 				model.setOutputPath(outputPath);
 				// output type may have been initialized in init method (forced for MGD)
@@ -206,12 +211,7 @@ public class BatchController extends AbstractController{
 
 			checkInput(new File(inputPath));
 
-			try{
-				init(inputPath);
-			} catch (IOException e) {
-				LOGGER.error(messages.getString("batchcontroller.inputPathError"));
-				throw e;
-			}
+			
 
 			
 

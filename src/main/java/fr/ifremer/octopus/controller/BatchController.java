@@ -358,13 +358,10 @@ public class BatchController extends AbstractController{
 
 	public static void main(String[] args) {
 		try {
-
-
 			new BatchController(args);
-		} catch (OctopusException e) {
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 			e.printStackTrace();
-		} catch (VocabularyException e) {
-			e.printStackTrace();
-		}
+		} 
 	}
 }

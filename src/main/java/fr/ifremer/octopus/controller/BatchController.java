@@ -206,6 +206,13 @@ public class BatchController extends AbstractController{
 				}
 				model.setCdiList(list);
 				model.setOuputLocalCdiId(outputLocalCdiId);
+			}else{
+				try{
+					init(inputPath);
+				} catch (IOException e) {
+					LOGGER.error(messages.getString("batchcontroller.inputPathError"));
+					throw e;
+				}
 			}
 
 

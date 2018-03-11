@@ -116,6 +116,7 @@ public class OctopusOverviewController {
 	private TextField outCDI;
 	@FXML
 	private Button chooseOutCdi;
+	private boolean confirmOverwriteOk=false;
 
 
 	@FXML
@@ -318,9 +319,11 @@ public class OctopusOverviewController {
 				dirChooser.setInitialDirectory(new File(def));
 			}
 			selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
+
 		}
 		if (selectedFile != null) {
 			outputPathTextField.setText(selectedFile.getAbsolutePath());
+			confirmOverwriteOk=true;
 		}
 	}
 
@@ -479,7 +482,11 @@ public class OctopusOverviewController {
 			buttonExportOdv.disableProperty().setValue(disableOdv);
 			buttonExportCfpoint.disableProperty().setValue(disableCfPoint);
 			// 32965 For MGD, always use split in mono station
-			radioMono.setSelected(octopusGuiController.getModel().getInputFormat()==Format.MGD_81 ||octopusGuiController.getModel().getInputFormat()==Format.MGD_98);
+			if(octopusGuiController.getModel().getInputFormat()==Format.MGD_81 ||octopusGuiController.getModel().getInputFormat()==Format.MGD_98){
+				radioMono.setSelected(true);
+			}else{
+				radioMulti.setSelected(true);
+			}
 
 
 			outCDI.setDisable(! (f==Format.MGD_81 || f==Format.MGD_98));
@@ -604,15 +611,21 @@ public class OctopusOverviewController {
 	}
 
 	private void addAutomaticExtension(Format format){
-		File out = new File(outputPathTextField.getText());
-		if (!out.isDirectory()){
-			if(!out.getName().contains(".")){
-				outputPathTextField.setText(out.getParent()+File.separator+out.getName()+"."+format.getMandatoryExtension());
-			}else{
-				outputPathTextField.setText(out.getParent()+File.separator+out.getName().substring(0, out.getName().lastIndexOf("."))+"."+format.getMandatoryExtension());
+		if (getOutputType()==OUTPUT_TYPE.MONO){
+			// do not add extension to a directory!	
+		}else{
+			if (!outputPathTextField.getText().isEmpty()){
+				File out = new File(outputPathTextField.getText());
+
+				if (!out.isDirectory()){
+					if(!out.getName().contains(".")){
+						outputPathTextField.setText(out.getParent()+File.separator+out.getName()+"."+format.getMandatoryExtension());
+					}else{
+						outputPathTextField.setText(out.getParent()+File.separator+out.getName().substring(0, out.getName().lastIndexOf("."))+"."+format.getMandatoryExtension());
+					}
+				}
 			}
 		}
-
 	}
 
 	private void export(Format format){
@@ -627,13 +640,14 @@ public class OctopusOverviewController {
 		if (outputPathTextField.getText().equals(inputPathTextField.getText())){
 			LOGGER.error(messages.getString("batchcontroller.outputPathCanNotBeSameAsInput"));
 			return;
-		}else if (new File (outputPathTextField.getText()).exists()){
+		}else if (!confirmOverwriteOk && new File (outputPathTextField.getText()).exists()){
 			Alert alert = new Alert(AlertType.CONFIRMATION, 
 					"Overwrite the existing file ?", ButtonType.YES, ButtonType.NO);
 			alert.showAndWait();
 
 			if (alert.getResult() != ButtonType.YES) {
-			    return;
+				confirmOverwriteOk=false;
+				return;
 			}
 		}
 		Task<Void> task = new Task<Void>(){
@@ -657,6 +671,7 @@ public class OctopusOverviewController {
 					LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.exportTo"), format.getName())); 
 					octopusGuiController.getModel().setOutputFormat(format);
 					List<String> outputFiles = octopusGuiController.processConversion();
+					confirmOverwriteOk=false;
 				} catch (OctopusException e) {
 					LOGGER.error(e.getMessage());
 				} catch (SQLException e) {

@@ -170,6 +170,9 @@ public class BatchController extends AbstractController{
 				if (outputPath.isEmpty()){
 					throw new OctopusException(messages.getString("batchcontroller.outputPathEmpty"));
 				}
+				else if (outputPath.equals(inputPath)){
+					throw new OctopusException(messages.getString("batchcontroller.outputPathCanNotBeSameAsInput"));
+				}
 				Format outputFormat = getFormatFromBatchArg(cmd.getOptionValue(OPTION_F));
 
 

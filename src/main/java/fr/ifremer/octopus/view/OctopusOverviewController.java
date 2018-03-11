@@ -624,7 +624,10 @@ public class OctopusOverviewController {
 			LOGGER.error(e1.getMessage());
 			return;
 		}
-
+		if (outputPathTextField.getText().equals(inputPathTextField.getText())){
+			LOGGER.error(messages.getString("batchcontroller.outputPathCanNotBeSameAsInput"));
+			return;
+		}
 		Task<Void> task = new Task<Void>(){
 			@Override
 			public Void call(){

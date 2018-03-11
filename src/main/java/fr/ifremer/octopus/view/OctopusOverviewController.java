@@ -7,6 +7,16 @@ import java.text.MessageFormat;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import fr.ifremer.octopus.MainApp;
+import fr.ifremer.octopus.controller.OctopusException;
+import fr.ifremer.octopus.controller.OctopusGUIController;
+import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
+import fr.ifremer.octopus.utils.PreferencesManager;
+import fr.ifremer.octopus.utils.SDNCdiIdObservable;
+import fr.ifremer.sismer_tools.seadatanet.Format;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.binding.ListBinding;
@@ -24,6 +34,7 @@ import javafx.scene.Cursor;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.CheckBoxBuilder;
 import javafx.scene.control.Label;
@@ -39,17 +50,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.util.Callback;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import fr.ifremer.octopus.MainApp;
-import fr.ifremer.octopus.controller.OctopusException;
-import fr.ifremer.octopus.controller.OctopusGUIController;
-import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
-import fr.ifremer.octopus.utils.PreferencesManager;
-import fr.ifremer.octopus.utils.SDNCdiIdObservable;
-import fr.ifremer.sismer_tools.seadatanet.Format;
 
 /**
  * Main Octopus View Controller
@@ -627,6 +627,14 @@ public class OctopusOverviewController {
 		if (outputPathTextField.getText().equals(inputPathTextField.getText())){
 			LOGGER.error(messages.getString("batchcontroller.outputPathCanNotBeSameAsInput"));
 			return;
+		}else if (new File (outputPathTextField.getText()).exists()){
+			Alert alert = new Alert(AlertType.CONFIRMATION, 
+					"Overwrite the existing file ?", ButtonType.YES, ButtonType.NO);
+			alert.showAndWait();
+
+			if (alert.getResult() != ButtonType.YES) {
+			    return;
+			}
 		}
 		Task<Void> task = new Task<Void>(){
 			@Override

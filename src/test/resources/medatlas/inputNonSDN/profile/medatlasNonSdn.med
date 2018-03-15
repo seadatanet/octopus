@@ -8,7 +8,7 @@ COMMENT
 campagne de mise a l'eau car donnees correspondantes aux dates
 *FI3519981000700001 Data Type=D09
 *DATE=21071998 TIME=0930 LAT=S18 08.55 LON=E178 27.21 DEPTH=       QC=0000
-*NB PARAMETERS=07 RECORD LINES=08651
+*NB PARAMETERS=07 RECORD LINES=00045
 *YEAR YEAR                          (yyyy                        ) def.=9999
 *MNTH MONTH                         (mm                          ) def.=99
 *DAYX DAY WITHIN MONTH              (dd                          ) def.=99
@@ -79,7 +79,7 @@ campagne de mise a l'eau car donnees correspondantes aux dates
 9999 99 99 999999 -999.9 99.999 9999.999 9999999
 *FI3519981000700002 Data Type=D09
 *DATE=21071998 TIME=1010 LAT=S18 07.15 LON=E178 25.57 DEPTH=       QC=0000
-*NB PARAMETERS=07 RECORD LINES=08245
+*NB PARAMETERS=07 RECORD LINES=00325
 *YEAR YEAR                          (yyyy                        ) def.=9999
 *MNTH MONTH                         (mm                          ) def.=99
 *DAYX DAY WITHIN MONTH              (dd                          ) def.=99

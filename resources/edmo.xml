@@ -2565,15 +2565,15 @@ NW1 Otto-Hahn-Allee 1
   <Organisation>
     <n_code>96</n_code>
     <input_date />
-    <last_update>10/11/2017 9:18:51 AM</last_update>
+    <last_update>3/13/2018 12:20:45 PM</last_update>
     <date_created>7/20/1995 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>9.968</Longitude>
-    <Latitude>53.5471</Latitude>
+    <Longitude>9.967512</Longitude>
+    <Latitude>53.546951</Latitude>
     <collate_id>96</collate_id>
-    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/96/bsh_logo.gif</logo>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/96/bsh-logo_ohne_beschnitt.jpg</logo>
     <name>German Oceanographic Datacentre (NODC)</name>
     <native_name>Deutsches Ozeanographisches Datenzentrum (DOD)</native_name>
     <abbreviated_name>DOD</abbreviated_name>
@@ -2582,7 +2582,7 @@ NW1 Otto-Hahn-Allee 1
     <city>Hamburg</city>
     <state />
     <country>5</country>
-    <email>friedrich.nast@bsh.de</email>
+    <email>dod@bsh.de</email>
     <phone>+49 40 3190 3410</phone>
     <fax>+49 40 3190 5000</fax>
     <website>http://www.bsh.de/en/Marine_data/Observations/DOD_Data_Centre/index.jsp</website>
@@ -3748,7 +3748,7 @@ P.O. Box 2214
   <Organisation>
     <n_code>145</n_code>
     <input_date />
-    <last_update>3/20/2017 8:44:51 PM</last_update>
+    <last_update>2/21/2018 4:55:12 PM</last_update>
     <date_created>4/23/2004 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -3756,7 +3756,7 @@ P.O. Box 2214
     <Longitude>11.33667</Longitude>
     <Latitude>44.52262</Latitude>
     <collate_id>120</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/120/ismar-logo.jpg</logo>
     <name>CNR, Institute of Marine Science (ISMAR) - Bologna</name>
     <native_name>Consiglio Nazionale Delle Ricerche / ISTITUTO DI SCIENZE MARINE (ISMAR) - SEZIONE DI BOLOGNA</native_name>
     <abbreviated_name />
@@ -4889,7 +4889,7 @@ Kavaklidere</address>
   <Organisation>
     <n_code>227</n_code>
     <input_date />
-    <last_update>5/28/2008 6:28:22 PM</last_update>
+    <last_update>2/21/2018 4:54:10 PM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -5125,7 +5125,7 @@ Santa Croce</address>
   <Organisation>
     <n_code>239</n_code>
     <input_date />
-    <last_update>3/19/2008 9:43:01 AM</last_update>
+    <last_update>2/22/2018 9:18:10 AM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -5133,7 +5133,7 @@ Santa Croce</address>
     <Longitude>12.437119</Longitude>
     <Latitude>41.85867</Latitude>
     <collate_id>120</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/120/conisma-logo.jpg</logo>
     <name>CONISMA, National Interuniversity Consortium for Marine Science</name>
     <native_name />
     <abbreviated_name />
@@ -5448,7 +5448,7 @@ De Pintelaan 185</address>
   <Organisation>
     <n_code>252</n_code>
     <input_date />
-    <last_update>3/20/2017 8:37:13 PM</last_update>
+    <last_update>2/21/2018 5:01:28 PM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -5456,7 +5456,7 @@ De Pintelaan 185</address>
     <Longitude>14.129899</Longitude>
     <Latitude>40.866665</Latitude>
     <collate_id>120</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/120/iamc-logo.jpg</logo>
     <name>CNR, Institute for the Marine and Coastal Environment (IAMC) - Napoli</name>
     <native_name>CNR, Istituto per l'Ambiente Marino Costiero (IAMC) (Sezione di Napoli)</native_name>
     <abbreviated_name>CNR - IAMC</abbreviated_name>
@@ -11854,7 +11854,7 @@ BP 70
   <Organisation>
     <n_code>545</n_code>
     <input_date />
-    <last_update>11/14/2012 11:16:15 AM</last_update>
+    <last_update>3/19/2018 3:49:58 PM</last_update>
     <date_created>4/23/2004 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -12854,13 +12854,13 @@ Portugal</address>
   <Organisation>
     <n_code>583</n_code>
     <input_date />
-    <last_update>10/30/2017 5:29:00 PM</last_update>
+    <last_update>3/1/2018 11:08:43 AM</last_update>
     <date_created>2/13/2001 12:00:00 AM</date_created>
     <organisation_exists>False</organisation_exists>
     <organisation_changed_into>4766</organisation_changed_into>
     <organisation_changed_year>2016</organisation_changed_year>
-    <Longitude />
-    <Latitude />
+    <Longitude>-21.93</Longitude>
+    <Latitude>64.149</Latitude>
     <collate_id>583</collate_id>
     <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/583/mri_logo.jpg</logo>
     <name>Marine Research Institute</name>
@@ -28531,7 +28531,7 @@ The University of Leeds
   <Organisation>
     <n_code>1338</n_code>
     <input_date>3/8/2007 12:10:10 PM</input_date>
-    <last_update>12/22/2011 12:09:54 PM</last_update>
+    <last_update>2/22/2018 8:50:28 AM</last_update>
     <date_created>3/8/2007 12:10:10 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -28539,7 +28539,7 @@ The University of Leeds
     <Longitude>8.921888</Longitude>
     <Latitude>44.419463</Latitude>
     <collate_id>120</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/120/iim-logo.jpg</logo>
     <name>Italian Navy Hydrographic Office</name>
     <native_name>Istituto Idrografico della Marina</native_name>
     <abbreviated_name>IIM</abbreviated_name>
@@ -34334,7 +34334,7 @@ PO Box 2653
   <Organisation>
     <n_code>1568</n_code>
     <input_date>4/14/2008 5:55:29 PM</input_date>
-    <last_update>2/26/2016 9:12:42 PM</last_update>
+    <last_update>2/22/2018 8:57:40 AM</last_update>
     <date_created>4/14/2008 5:55:29 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -34342,7 +34342,7 @@ PO Box 2653
     <Longitude>8.8515</Longitude>
     <Latitude>53.1105</Latitude>
     <collate_id>96</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/96/marum-logo.jpg</logo>
     <name>Marum - Center for Marine Environmental Sciences, University of Bremen</name>
     <native_name>Marum - Zentrum für Marine Umweltwissenschaften
 der Universität Bremen</native_name>
@@ -51466,7 +51466,7 @@ Wormley</address>
   <Organisation>
     <n_code>2243</n_code>
     <input_date>10/9/2009 12:11:16 PM</input_date>
-    <last_update>7/12/2013 6:42:41 PM</last_update>
+    <last_update>2/22/2018 8:42:52 AM</last_update>
     <date_created>10/9/2009 12:11:16 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -51474,7 +51474,7 @@ Wormley</address>
     <Longitude>2.9236</Longitude>
     <Latitude>51.2261</Latitude>
     <collate_id>1578</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1578/mdk-logo.jpg</logo>
     <name>Flemish Ministry of Mobility and Public Works; Agency for Maritime and Coastal Services; Coastal Division</name>
     <native_name>Vlaams Ministerie van Mobiliteit en Openbare Werken; Agentschap voor Maritieme Dienstverlening en Kust; Afdeling Kust
 </native_name>
@@ -52264,7 +52264,7 @@ PO Box 3065 STN CSC</address>
   <Organisation>
     <n_code>2276</n_code>
     <input_date>11/4/2009 6:04:08 PM</input_date>
-    <last_update>11/6/2015 10:51:49 AM</last_update>
+    <last_update>2/21/2018 5:08:54 PM</last_update>
     <date_created>11/4/2009 6:04:08 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -52272,7 +52272,7 @@ PO Box 3065 STN CSC</address>
     <Longitude>13.8352</Longitude>
     <Latitude>45.6449</Latitude>
     <collate_id>120</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/120/ogs_logo.jpg</logo>
     <name>OGS (Istituto Nazionale di Oceanografia e di Geofisica Sperimentale),  Infrastructures Division</name>
     <native_name>OGS (Istituto Nazionale di Oceanografia e di Geofisica Sperimentale), Sezione Infrastrutture</native_name>
     <abbreviated_name />
@@ -55387,13 +55387,13 @@ Bridge of Don,</address>
   <Organisation>
     <n_code>2410</n_code>
     <input_date>2/25/2010 4:55:29 PM</input_date>
-    <last_update>2/25/2010 5:06:20 PM</last_update>
+    <last_update>2/21/2018 4:42:55 PM</last_update>
     <date_created>2/25/2010 4:55:29 PM</date_created>
-    <organisation_exists>True</organisation_exists>
-    <organisation_changed_into />
-    <organisation_changed_year />
-    <Longitude>1.730781</Longitude>
-    <Latitude>52.591992</Latitude>
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into>4820</organisation_changed_into>
+    <organisation_changed_year>2018</organisation_changed_year>
+    <Longitude />
+    <Latitude />
     <collate_id>43</collate_id>
     <logo />
     <name>Gardline Geosurvey Limited</name>
@@ -58627,7 +58627,7 @@ Forston</address>
   <Organisation>
     <n_code>2543</n_code>
     <input_date>8/24/2010 3:33:14 PM</input_date>
-    <last_update>8/6/2015 4:36:09 PM</last_update>
+    <last_update>2/22/2018 8:38:34 AM</last_update>
     <date_created>8/24/2010 3:33:14 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -58635,7 +58635,7 @@ Forston</address>
     <Longitude>8.767</Longitude>
     <Latitude>58.4579</Latitude>
     <collate_id>612</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/612/grid-logo.jpg</logo>
     <name>GRID-Arendal</name>
     <native_name>GRID-Arendal</native_name>
     <abbreviated_name />
@@ -60251,7 +60251,7 @@ Plymstock</address>
   <Organisation>
     <n_code>2607</n_code>
     <input_date>10/12/2010 10:49:04 AM</input_date>
-    <last_update>4/7/2014 8:18:46 AM</last_update>
+    <last_update>2/22/2018 8:45:01 AM</last_update>
     <date_created>10/12/2010 10:49:04 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -60259,7 +60259,7 @@ Plymstock</address>
     <Longitude>-0.9797</Longitude>
     <Latitude>51.1457</Latitude>
     <collate_id>43</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/43/oceanwise-logo.jpg</logo>
     <name>OceanWise Limited</name>
     <native_name>OceanWise Limited</native_name>
     <abbreviated_name />
@@ -60269,7 +60269,7 @@ Plymstock</address>
     <state>Hampshire</state>
     <country>11</country>
     <email>info@oceanwise.eu</email>
-    <phone> +44(0)1420768262</phone>
+    <phone>+44(0)1420768262</phone>
     <fax />
     <website>http://www.oceanwise.eu</website>
     <c_country>United Kingdom</c_country>
@@ -68191,7 +68191,7 @@ BP 1022</address>
   <Organisation>
     <n_code>2918</n_code>
     <input_date>12/16/2011 4:45:24 PM</input_date>
-    <last_update>3/20/2017 8:13:17 PM</last_update>
+    <last_update>2/21/2018 5:04:14 PM</last_update>
     <date_created>12/16/2011 4:45:24 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -68199,7 +68199,7 @@ BP 1022</address>
     <Longitude>12.60596</Longitude>
     <Latitude>42.07799</Latitude>
     <collate_id>120</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/120/igag-logo.jpg</logo>
     <name>CNR, Institute of Environmental Geology and Geoengineering (IGAG)</name>
     <native_name>Consiglio Nazionale Delle Ricerche / ISTITUTO DI GEOLOGIA AMBIANTALE E GEOINGEGNERIA</native_name>
     <abbreviated_name>CNR-IGAG</abbreviated_name>
@@ -69798,7 +69798,7 @@ Case 129</address>
   <Organisation>
     <n_code>2979</n_code>
     <input_date>3/5/2012 12:17:28 PM</input_date>
-    <last_update>11/11/2013 4:35:34 PM</last_update>
+    <last_update>2/22/2018 9:44:59 AM</last_update>
     <date_created>3/5/2012 12:17:28 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -69806,7 +69806,7 @@ Case 129</address>
     <Longitude>-9.2945</Longitude>
     <Latitude>38.6947</Latitude>
     <collate_id>590</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/590/empc-logo.jpg</logo>
     <name>Task Group for the Extension of the Continental Shelf</name>
     <native_name>Estrutura de Missao para a Extensao da Plataforma Continental</native_name>
     <abbreviated_name>EMEPC</abbreviated_name>
@@ -70485,7 +70485,7 @@ Case 129</address>
   <Organisation>
     <n_code>3005</n_code>
     <input_date>4/10/2012 9:18:32 AM</input_date>
-    <last_update>4/25/2012 9:59:19 AM</last_update>
+    <last_update>2/22/2018 9:47:26 AM</last_update>
     <date_created>4/10/2012 9:18:32 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -70493,7 +70493,7 @@ Case 129</address>
     <Longitude />
     <Latitude />
     <collate_id>710</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/710/gsi-logo.jpg</logo>
     <name>Geological Survey of Israel</name>
     <native_name>Geological Survey of Israel</native_name>
     <abbreviated_name>GSI</abbreviated_name>
@@ -77789,13 +77789,13 @@ Croft Business Park</address>
   <Organisation>
     <n_code>3283</n_code>
     <input_date>7/3/2013 12:04:04 PM</input_date>
-    <last_update>7/3/2013 12:49:25 PM</last_update>
+    <last_update>2/21/2018 4:42:32 PM</last_update>
     <date_created>7/3/2013 12:04:04 PM</date_created>
-    <organisation_exists>True</organisation_exists>
-    <organisation_changed_into />
-    <organisation_changed_year />
-    <Longitude>1.73</Longitude>
-    <Latitude>52.59</Latitude>
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into>4820</organisation_changed_into>
+    <organisation_changed_year>2018</organisation_changed_year>
+    <Longitude />
+    <Latitude />
     <collate_id>43</collate_id>
     <logo />
     <name>Gardline Marine Sciences Ltd</name>
@@ -77815,13 +77815,13 @@ Croft Business Park</address>
   <Organisation>
     <n_code>3284</n_code>
     <input_date>7/3/2013 12:46:25 PM</input_date>
-    <last_update>7/3/2013 12:49:26 PM</last_update>
+    <last_update>2/21/2018 4:42:03 PM</last_update>
     <date_created>7/3/2013 12:46:25 PM</date_created>
-    <organisation_exists>True</organisation_exists>
-    <organisation_changed_into />
-    <organisation_changed_year />
-    <Longitude>1.73</Longitude>
-    <Latitude>52.59</Latitude>
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into>4820</organisation_changed_into>
+    <organisation_changed_year>2018</organisation_changed_year>
+    <Longitude />
+    <Latitude />
     <collate_id>43</collate_id>
     <logo />
     <name>Gardline Environmental Ltd</name>
@@ -77841,13 +77841,13 @@ Croft Business Park</address>
   <Organisation>
     <n_code>3285</n_code>
     <input_date>7/3/2013 12:49:21 PM</input_date>
-    <last_update>7/3/2013 12:49:27 PM</last_update>
+    <last_update>2/21/2018 4:41:02 PM</last_update>
     <date_created>7/3/2013 12:49:21 PM</date_created>
-    <organisation_exists>True</organisation_exists>
-    <organisation_changed_into />
-    <organisation_changed_year />
-    <Longitude>1.69</Longitude>
-    <Latitude>52.59</Latitude>
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into>4820</organisation_changed_into>
+    <organisation_changed_year>2018</organisation_changed_year>
+    <Longitude />
+    <Latitude />
     <collate_id>43</collate_id>
     <logo />
     <name>Gardline Geosciences Ltd</name>
@@ -77923,7 +77923,7 @@ Joseph Proudman Building,
   <Organisation>
     <n_code>3288</n_code>
     <input_date>7/12/2013 3:51:38 PM</input_date>
-    <last_update>4/8/2016 2:04:20 PM</last_update>
+    <last_update>2/22/2018 9:11:18 AM</last_update>
     <date_created>7/12/2013 3:51:38 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -77931,7 +77931,7 @@ Joseph Proudman Building,
     <Longitude>-9.125747</Longitude>
     <Latitude>38.775976</Latitude>
     <collate_id>590</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/590/ipma-logo.jpg</logo>
     <name>Portuguese Institute of Ocean and Atmosphere</name>
     <native_name>Instituto Português do Mar e da Atmosfera</native_name>
     <abbreviated_name>IPMA</abbreviated_name>
@@ -77950,7 +77950,7 @@ Joseph Proudman Building,
   <Organisation>
     <n_code>3289</n_code>
     <input_date>7/12/2013 4:01:19 PM</input_date>
-    <last_update>7/15/2013 9:31:49 AM</last_update>
+    <last_update>2/22/2018 9:10:25 AM</last_update>
     <date_created>7/12/2013 4:01:19 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -77958,7 +77958,7 @@ Joseph Proudman Building,
     <Longitude>-6.7683</Longitude>
     <Latitude>62.0113</Latitude>
     <collate_id>3084</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/3084/jardfeingi-logo.jpg</logo>
     <name>Jardfeingi, the Faroe Islands Earth and Energy Directorate</name>
     <native_name>Jardfeingi, the Faroe Islands Earth and Energy Directorate</native_name>
     <abbreviated_name>Jardfeingi</abbreviated_name>
@@ -79463,7 +79463,7 @@ Manor Garth</address>
   <Organisation>
     <n_code>3348</n_code>
     <input_date>11/15/2013 9:20:10 AM</input_date>
-    <last_update>11/18/2013 9:58:04 AM</last_update>
+    <last_update>3/7/2018 11:36:03 AM</last_update>
     <date_created>11/15/2013 9:20:11 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -79472,7 +79472,7 @@ Manor Garth</address>
     <Latitude />
     <collate_id>590</collate_id>
     <logo />
-    <name>Portuguese Envirnmoment Agency</name>
+    <name>Portuguese Environment Agency</name>
     <native_name>Agência Portuguesa do Ambiente</native_name>
     <abbreviated_name>APA</abbreviated_name>
     <address>Av. Almirante Gago Coutinho, nº 30</address>
@@ -82754,7 +82754,7 @@ Stationsgatan 5 Lulea</address>
   <Organisation>
     <n_code>3471</n_code>
     <input_date>4/1/2014 11:39:34 AM</input_date>
-    <last_update>4/2/2014 10:14:26 AM</last_update>
+    <last_update>2/22/2018 9:38:27 AM</last_update>
     <date_created>4/1/2014 11:39:34 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -82762,7 +82762,7 @@ Stationsgatan 5 Lulea</address>
     <Longitude>7.4269</Longitude>
     <Latitude>43.7332</Latitude>
     <collate_id>486</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/486/bshc-logo.jpg</logo>
     <name>Baltic Sea Hydrographic Commission</name>
     <native_name>Baltic Sea Hydrographic Commission (BSHC)</native_name>
     <abbreviated_name>BSHC</abbreviated_name>
@@ -97375,7 +97375,7 @@ Avenue du Fontaulé</address>
   <Organisation>
     <n_code>4036</n_code>
     <input_date>4/24/2015 12:38:34 AM</input_date>
-    <last_update>6/2/2017 9:14:22 AM</last_update>
+    <last_update>2/22/2018 9:16:07 AM</last_update>
     <date_created>4/24/2015 12:38:34 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -97383,7 +97383,7 @@ Avenue du Fontaulé</address>
     <Longitude>14.4844</Longitude>
     <Latitude>35.903</Latitude>
     <collate_id>708</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/708/uom-logo.jpg</logo>
     <name>Marine Geology and Seafloor Surveying group, Department of Geosciences, University of Malta</name>
     <native_name>Marine Geology and Seafloor Surveying group, Department of Geosciences, University of Malta</native_name>
     <abbreviated_name />
@@ -105515,13 +105515,13 @@ Avenue Louise 231 Louizalaan
   <Organisation>
     <n_code>4372</n_code>
     <input_date>8/26/2015 12:14:15 PM</input_date>
-    <last_update>10/27/2015 6:07:32 PM</last_update>
+    <last_update>2/22/2018 2:19:05 PM</last_update>
     <date_created>8/26/2015 12:14:15 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>6.05001</Longitude>
-    <Latitude>50.785427</Latitude>
+    <Longitude>6.0485</Longitude>
+    <Latitude>50.7852</Latitude>
     <collate_id>96</collate_id>
     <logo />
     <name>Fraunhofer Institute for Molecular Biology and Applied Ecology</name>
@@ -113188,7 +113188,7 @@ PO BOX 15000
   <Organisation>
     <n_code>4665</n_code>
     <input_date>3/18/2017 8:52:42 PM</input_date>
-    <last_update>3/18/2017 8:54:35 PM</last_update>
+    <last_update>2/22/2018 8:55:36 AM</last_update>
     <date_created>3/18/2017 8:52:42 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -113196,7 +113196,7 @@ PO BOX 15000
     <Longitude>24.090573</Longitude>
     <Latitude>56.944047</Latitude>
     <collate_id>698</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/698/logo_mal.jpg</logo>
     <name>Maritime Administration of Latvia</name>
     <native_name>Latvijas J&amp;#363;ras administr&amp;#257;cij&amp;#257;</native_name>
     <abbreviated_name>MAL</abbreviated_name>
@@ -113214,7 +113214,7 @@ PO BOX 15000
   <Organisation>
     <n_code>4666</n_code>
     <input_date>3/18/2017 8:59:24 PM</input_date>
-    <last_update>3/18/2017 9:00:46 PM</last_update>
+    <last_update>2/22/2018 9:04:01 AM</last_update>
     <date_created>3/18/2017 8:59:24 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -113222,7 +113222,7 @@ PO BOX 15000
     <Longitude>14.495063</Longitude>
     <Latitude>46.045591</Latitude>
     <collate_id>1229</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/1229/gis-logo.jpg</logo>
     <name>Geodetic Institute of Slovenia</name>
     <native_name>Geodetski inštitut Slovenije</native_name>
     <abbreviated_name>GIS</abbreviated_name>
@@ -113240,7 +113240,7 @@ PO BOX 15000
   <Organisation>
     <n_code>4667</n_code>
     <input_date>3/18/2017 9:06:40 PM</input_date>
-    <last_update>3/18/2017 9:07:20 PM</last_update>
+    <last_update>2/22/2018 9:06:01 AM</last_update>
     <date_created>3/18/2017 9:06:40 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -113248,7 +113248,7 @@ PO BOX 15000
     <Longitude>11.203937</Longitude>
     <Latitude>48.031192</Latitude>
     <collate_id>96</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/96/eomap-logo.jpg</logo>
     <name>EOMAP GmbH &amp; Co KG</name>
     <native_name>EOMAP GmbH &amp; Co KG</native_name>
     <abbreviated_name>EOMAP</abbreviated_name>
@@ -113292,7 +113292,7 @@ PO BOX 15000
   <Organisation>
     <n_code>4669</n_code>
     <input_date>3/18/2017 9:40:43 PM</input_date>
-    <last_update>3/18/2017 9:41:45 PM</last_update>
+    <last_update>2/27/2018 10:53:51 AM</last_update>
     <date_created>3/18/2017 9:40:43 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -113300,8 +113300,8 @@ PO BOX 15000
     <Longitude>9.898664</Longitude>
     <Latitude>57.064445</Latitude>
     <collate_id>729</collate_id>
-    <logo />
-    <name>Danish Geodata Agency – Danish Hydrographic Office</name>
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/729/danish-logo.jpg</logo>
+    <name>Danish Geodata Agency - Danish Hydrographic Office</name>
     <native_name />
     <abbreviated_name>GST</abbreviated_name>
     <address>Lindholm Brygge 31</address>
@@ -113318,7 +113318,7 @@ PO BOX 15000
   <Organisation>
     <n_code>4670</n_code>
     <input_date>3/18/2017 9:50:57 PM</input_date>
-    <last_update>3/18/2017 9:52:00 PM</last_update>
+    <last_update>2/22/2018 9:12:58 AM</last_update>
     <date_created>3/18/2017 9:50:57 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -113326,7 +113326,7 @@ PO BOX 15000
     <Longitude>2.831494</Longitude>
     <Latitude>41.962946</Latitude>
     <collate_id>353</collate_id>
-    <logo />
+    <logo>http://seadatanet.maris2.nl/pictures/sea-search/organisations/353/coronis-logo.png</logo>
     <name>Coronis Computing SL</name>
     <native_name>Coronis Computing SL</native_name>
     <abbreviated_name>Coronis</abbreviated_name>
@@ -116930,5 +116930,266 @@ Emigrantvägen 2B
     <fax />
     <website>http://www.pstsicilia.it</website>
     <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4819</n_code>
+    <input_date>2/20/2018 1:22:18 PM</input_date>
+    <last_update>2/20/2018 1:30:23 PM</last_update>
+    <date_created>2/20/2018 1:22:18 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.565952</Longitude>
+    <Latitude>51.118316</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>TeamSurv</name>
+    <native_name>TeamSurv</native_name>
+    <abbreviated_name>TeamSurv</abbreviated_name>
+    <address>Garden Cottage, Garlogs, Nether Wallop, Stockbridge</address>
+    <zipcode>SO20 8DP</zipcode>
+    <city>Nether Wallop</city>
+    <state />
+    <country>11</country>
+    <email>enquiries@teamsurv.com</email>
+    <phone>+44 (0)1865 582711</phone>
+    <fax />
+    <website>https://www.teamsurv.com/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4820</n_code>
+    <input_date>2/21/2018 4:31:10 PM</input_date>
+    <last_update>2/21/2018 4:33:54 PM</last_update>
+    <date_created>2/21/2018 4:31:10 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into>0</organisation_changed_into>
+    <organisation_changed_year />
+    <Longitude>1.7308</Longitude>
+    <Latitude>52.592</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Gardline Limited</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Endeavour House</address>
+    <zipcode>NR30 3NG</zipcode>
+    <city>Great Yarmouth</city>
+    <state>Norfolk</state>
+    <country>11</country>
+    <email />
+    <phone>+44 (0)1493 845 600</phone>
+    <fax>+44 (0)1493 852 106</fax>
+    <website>http://www.gardline.com</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4821</n_code>
+    <input_date>2/26/2018 10:37:09 AM</input_date>
+    <last_update>2/26/2018 10:43:31 AM</last_update>
+    <date_created>2/26/2018 10:37:09 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into>0</organisation_changed_into>
+    <organisation_changed_year />
+    <Longitude>-5.924</Longitude>
+    <Latitude>54.5896</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Historic Environment Division (Northern Ireland)</name>
+    <native_name />
+    <abbreviated_name />
+    <address>National Monuments and Buildings Record (NI)</address>
+    <zipcode>BT7 2JA</zipcode>
+    <city>Belfast</city>
+    <state>Belfast</state>
+    <country>11</country>
+    <email>mbr-enquiries@communities-ni.gov.uk</email>
+    <phone>(028) 90569701</phone>
+    <fax />
+    <website>https://www.communities-ni.gov.uk/topics/historic-environment</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4822</n_code>
+    <input_date>3/6/2018 9:54:04 AM</input_date>
+    <last_update>3/6/2018 11:46:13 AM</last_update>
+    <date_created>3/6/2018 9:54:04 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-114.1314</Longitude>
+    <Latitude>51.077521</Latitude>
+    <collate_id>1979</collate_id>
+    <logo />
+    <name>Arctic Institute of North America</name>
+    <native_name>Arctic Institute of North America</native_name>
+    <abbreviated_name>AINA</abbreviated_name>
+    <address>University of Calgary
+2500 University Drive NW, ES-1040</address>
+    <zipcode>T2N 1N4</zipcode>
+    <city>Calgary</city>
+    <state>Alberta</state>
+    <country>40</country>
+    <email>arctic@ucalgary.ca</email>
+    <phone>403-220-7515</phone>
+    <fax>403-282-4609</fax>
+    <website>http://arctic.ucalgary.ca</website>
+    <c_country>Canada</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4823</n_code>
+    <input_date>3/15/2018 10:22:24 AM</input_date>
+    <last_update>3/15/2018 10:26:21 AM</last_update>
+    <date_created>3/15/2018 10:22:24 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>24.9463</Longitude>
+    <Latitude>60.219</Latitude>
+    <collate_id>628</collate_id>
+    <logo />
+    <name>Finnish Consulting Group Oy</name>
+    <native_name />
+    <abbreviated_name>FCG</abbreviated_name>
+    <address>Osmontie 34</address>
+    <zipcode>FIN-00610</zipcode>
+    <city>Helsinki</city>
+    <state />
+    <country>9</country>
+    <email />
+    <phone>+358 10 4090</phone>
+    <fax />
+    <website>http://www.fcg.fi/</website>
+    <c_country>Finland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4824</n_code>
+    <input_date>3/15/2018 10:48:51 AM</input_date>
+    <last_update>3/15/2018 10:50:52 AM</last_update>
+    <date_created>3/15/2018 10:48:51 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>24.0537</Longitude>
+    <Latitude>60.2417</Latitude>
+    <collate_id>628</collate_id>
+    <logo />
+    <name>The Association for Water and Environment of Western Uusimaa</name>
+    <native_name>Länsi-Uudenmaan vesi ja ympäristö ry</native_name>
+    <abbreviated_name>LUVY</abbreviated_name>
+    <address>Länsi-Louhenkatu 31</address>
+    <zipcode>FIN-08100</zipcode>
+    <city>Lohja</city>
+    <state />
+    <country>9</country>
+    <email />
+    <phone>+358 19323623</phone>
+    <fax />
+    <website>http://www.luvy.fi/</website>
+    <c_country>Finland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4825</n_code>
+    <input_date>3/15/2018 10:55:22 AM</input_date>
+    <last_update>3/15/2018 10:56:31 AM</last_update>
+    <date_created>3/15/2018 10:55:22 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>24.9401</Longitude>
+    <Latitude>60.1998</Latitude>
+    <collate_id>628</collate_id>
+    <logo />
+    <name>Water Protection Association of the River Vantaa and Helsinki Region</name>
+    <native_name>Vantaanjoen ja Helsingin seudun vesiensuojeluyhdistys ry</native_name>
+    <abbreviated_name>VHVSY</abbreviated_name>
+    <address>Ratamestarinkatu 7 b</address>
+    <zipcode>FIN-00520</zipcode>
+    <city>Helsinki</city>
+    <state />
+    <country>9</country>
+    <email />
+    <phone>+358 9 272 7270</phone>
+    <fax />
+    <website>http://www.vhvsy.fi/</website>
+    <c_country>Finland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4826</n_code>
+    <input_date>3/15/2018 10:59:29 AM</input_date>
+    <last_update>3/15/2018 11:00:47 AM</last_update>
+    <date_created>3/15/2018 10:59:29 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>24.2324</Longitude>
+    <Latitude>60.5235</Latitude>
+    <collate_id>628</collate_id>
+    <logo />
+    <name>SYNLAB Analytics &amp; Services Finland Oy</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Lepolantie 9</address>
+    <zipcode>03600</zipcode>
+    <city>Karkkila</city>
+    <state />
+    <country>9</country>
+    <email />
+    <phone>+358 9 2252 860</phone>
+    <fax />
+    <website>http://fi.alcontrol.com/fi/synlab-finland</website>
+    <c_country>Finland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4827</n_code>
+    <input_date>3/16/2018 1:22:44 PM</input_date>
+    <last_update>3/16/2018 1:24:06 PM</last_update>
+    <date_created>3/16/2018 1:22:44 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>18.9409</Longitude>
+    <Latitude>69.6467</Latitude>
+    <collate_id>612</collate_id>
+    <logo />
+    <name>Institute of Marine Research Tromsø</name>
+    <native_name />
+    <abbreviated_name>IMR Tromsø</abbreviated_name>
+    <address>Sykehusveien 23</address>
+    <zipcode>9019</zipcode>
+    <city>Tromsø</city>
+    <state />
+    <country>25</country>
+    <email />
+    <phone>+ 47 55 23 85 00</phone>
+    <fax />
+    <website>http://www.imr.no/en/hi/about-us/kontaktinformasjon</website>
+    <c_country>Norway</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4828</n_code>
+    <input_date>3/26/2018 11:21:15 AM</input_date>
+    <last_update>3/26/2018 11:22:54 AM</last_update>
+    <date_created>3/26/2018 11:21:15 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>0.697767</Longitude>
+    <Latitude>51.834586</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Marine Conservation Research International</name>
+    <native_name />
+    <abbreviated_name>MCR</abbreviated_name>
+    <address>1 High Street</address>
+    <zipcode>CO5 9AG</zipcode>
+    <city>Kelvedon</city>
+    <state>Essex</state>
+    <country>11</country>
+    <email />
+    <phone>+44 (0)1376 573 071</phone>
+    <fax>+44 (0)1376 573 071</fax>
+    <website>http://www.marineconservationresearch.co.uk</website>
+    <c_country>United Kingdom</c_country>
   </Organisation>
 </Organisations>

@@ -385,8 +385,8 @@ public class PreferencesController {
 								bodcLog.appendText("mapping "+list+"/"+list+": ok" + LINESEP);
 								LOGGER.debug("mapping "+list+"/"+list+": ok" + LINESEP);
 							}catch(Exception e){
-								LOGGER.warn("mapping "+list+"/"+list + " does not exist. BODC tems deprecation checks will not be possible for this list.");
-								bodcLog.appendText("mapping "+list+"/"+list + " does not exist. BODC tems deprecation checks will not be possible for this list."+LINESEP);
+								LOGGER.warn("mapping "+list+"/"+list + " does not exist. BODC terms deprecation checks will not be possible for this list.");
+								bodcLog.appendText("mapping "+list+"/"+list + " does not exist. BODC terms deprecation checks will not be possible for this list."+LINESEP);
 							}
 						}
 					} catch (VocabularyException e) {

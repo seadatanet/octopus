@@ -117192,4 +117192,56 @@ Emigrantvägen 2B
     <website>http://www.marineconservationresearch.co.uk</website>
     <c_country>United Kingdom</c_country>
   </Organisation>
+  <Organisation>
+    <n_code>4829</n_code>
+    <input_date>3/27/2018 9:21:30 AM</input_date>
+    <last_update>3/27/2018 9:22:42 AM</last_update>
+    <date_created>3/27/2018 9:21:30 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>128.199102</Longitude>
+    <Latitude>-3.637836</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Centre for Deep-Sea Research, Indonesian Institute of Sciences</name>
+    <native_name />
+    <abbreviated_name />
+    <address>l. Y. Syaranamual, Teachers, Poka</address>
+    <zipcode>97233</zipcode>
+    <city>Ambon</city>
+    <state />
+    <country>38</country>
+    <email />
+    <phone>(0911) 322676</phone>
+    <fax>(0911) 322700</fax>
+    <website>http://www.deepsea.lipi.go.id/id/home/</website>
+    <c_country>Indonesia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>4830</n_code>
+    <input_date>3/27/2018 11:11:58 AM</input_date>
+    <last_update>3/27/2018 11:14:33 AM</last_update>
+    <date_created>3/27/2018 11:11:58 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>6.567</Longitude>
+    <Latitude>46.5202</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Swiss Federal Institute of Technology in Lausanne</name>
+    <native_name>École Polytechnique Fédérale de Lausanne</native_name>
+    <abbreviated_name>EPFL</abbreviated_name>
+    <address>Route Cantonale</address>
+    <zipcode>1015</zipcode>
+    <city>Lausanne</city>
+    <state />
+    <country>184</country>
+    <email />
+    <phone>+41216931111</phone>
+    <fax />
+    <website>https://www.epfl.ch/index.en.html</website>
+    <c_country>Switzerland</c_country>
+  </Organisation>
 </Organisations>

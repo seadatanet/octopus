@@ -19,19 +19,25 @@ public class SDNVocabs {
 	private SDNVocabs() throws VocabularyException {
 		String vocabDir = "resources/vocab";
 		File vocab = new File(vocabDir);
-
-		CollectionFactory.newInstance(vocab);
-		cf = CollectionFactory.getInstance();
-		cf.reload();
-		
+		try{
+			if (cf==null){
+			CollectionFactory.newInstance(vocab);
+			}
+			cf = CollectionFactory.getInstance();
+			cf.reload();
+		}catch(Exception e){
+			LOGGER.error(e.getMessage());
+			LOGGER.error("unable to initialize vocabs");
+		}
 		try {
 			mgr = CSRListManager.getInstance("resources/csrlist");
+			mgr.checkAndDownloadIfNeeded();
 		} catch (Exception e) {
 			LOGGER.error("unable to get CSR list");
 		} 
-		
+
 	}
-	
+
 	public static SDNVocabs getInstance() throws VocabularyException{
 		if (sdnVocabs == null){
 			sdnVocabs = new SDNVocabs();

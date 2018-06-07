@@ -346,6 +346,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<artifactId>medatlasreader</artifactId>
 			<version>0.17-SNAPSHOT</version>
 <!-- 			<classifier>jar-with-dependencies</classifier> -->
+<exclusions>
+						<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-api</artifactId>
+					</exclusion>
+					</exclusions>
 		</dependency>
 		
 		<dependency>
@@ -364,6 +370,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
   			<groupId>org.apache.any23</groupId>
   			<artifactId>apache-any23-encoding</artifactId>
   			<version>1.1</version>
+  			<exclusions>
+						<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-api</artifactId>
+					</exclusion>
+					</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.derby</groupId>

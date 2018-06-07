@@ -506,23 +506,34 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		</profile>
 
 
-		<!-- ALTRAN -->
+	<!-- ALTRAN -->
 		<profile>
 			<id>altran</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<activeByDefault>false</activeByDefault>
 			</activation>
 
 			<repositories>
 				<repository>
+					<id>NexusAltranSnapshot</id>
+					<url>http://10.1.96.214:8081/repository/ifremer-snapshot/
+					</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				<repository>
 					<id>NexusAltran</id>
-					<url>http://jenkins-brest.altran.com:8081/nexus/content/groups/public/
+					<url>http://10.1.96.214:8081/repository/ifremer/
 					</url>
 					<releases>
 						<enabled>true</enabled>
 					</releases>
 					<snapshots>
-						<enabled>true</enabled>
+						<enabled>false</enabled>
 					</snapshots>
 				</repository>
 				<!-- prevent from downloading snapshots from ifremer -->
@@ -530,6 +541,9 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					<id>ifremer-public-releases</id>
 					<name>ifremer-public-releases</name>
 					<url>http://www.ifremer.fr/maven/repository</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
 					<snapshots>
 						<enabled>false</enabled>
 					</snapshots>
@@ -538,6 +552,9 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					<id>ifremer-public-snapshots</id>
 					<name>ifremer-public-snapshots</name>
 					<url>http://www.ifremer.fr/maven/snapshots/</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
 					<snapshots>
 						<enabled>false</enabled>
 					</snapshots>
@@ -548,14 +565,16 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<distributionManagement>
 				<repository>
 					<id>NexusAltran</id>
-					<name>altran-public-releases</name>
-					<url>http://jenkins-brest.altran.com:8081/nexus/content/repositories/releases/</url>
+					<name>ifremer</name>
+					<url>http://10.1.96.214:8081/repository/ifremer/</url>
 				</repository>
 				<snapshotRepository>
-					<id>NexusAltran</id>
-					<name>altran-public-snapshots</name>
-					<url>http://jenkins-brest.altran.com:8081/nexus/content/repositories/snapshots/</url>
+					<id>NexusAltranSnapshot</id>
+					<name>ifremer-snapshot</name>
+					<url>http://10.1.96.214:8081/repository/ifremer-snapshot/</url>
 				</snapshotRepository>
+				
+				
 			</distributionManagement>
 		</profile>
 

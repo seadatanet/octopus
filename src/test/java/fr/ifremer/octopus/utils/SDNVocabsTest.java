@@ -18,7 +18,7 @@ public class SDNVocabsTest {
 	
 	
 	@Test
-	@Ignore
+//	@Ignore
 	public void test() {
 		int nonPresent_bodc=-1;
 

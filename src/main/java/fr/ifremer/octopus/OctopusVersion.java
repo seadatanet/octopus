@@ -78,9 +78,11 @@ public class OctopusVersion {
 
 
 		}
-		catch(MalformedURLException e)
+		catch(Exception e)
 		{
-			e.printStackTrace();
+			ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
+			LOGGER.warn(messages.getString("rootController.OctopusVersionUnreachable"));
+			return null;
 		}
 		return state;
 	}

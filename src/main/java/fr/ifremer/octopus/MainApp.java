@@ -103,6 +103,9 @@ public class MainApp extends Application {
 
 	private void checkVersion(Stage primaryStage) {
 		SoftwareState state = OctopusVersion.check();
+		if (state ==null){
+			return;
+		}
 		if(state.getState() != STATE.LAST_VERSION){
 			ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
 			String[] lastDate = state.getLastVersionDay().split("-");

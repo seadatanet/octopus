@@ -16,6 +16,21 @@ h5   {color: #6c3390;}
 
 <h2>Change log</h2>
 
+<h4>Version 1.4.1 - 2018/06/12</h4>
+
+	<h5>Corrections</h5>
+	<ul>
+		<li>Off line run of OCTOPUS authorised</li>
+		<li>Conversion of MGD77 files corrected</li>
+		<li>Correction of NetCDF to ODV conversion with empty geophysical variables</li>
+ 	</ul>
+ 	<h5>Adds-on</h5>
+ 	<ul>
+ 		<li>Be able to check and convert the ODV files generated from MGD77</li>
+		<li>Detect the BIO-ODV format (and extensions to flow cytometer and Microlitter data), the files are not checked, but not rejected neither (Warning to the user)</li> 
+	</ul>
+	
+	
 <h4>Version 1.4.0 - 2018/03/26</h4>
 <h5>Corrections</h5>
 	<ul>
@@ -24,7 +39,7 @@ h5   {color: #6c3390;}
 		<li>Fix contextual menu contrast for visibility (right click)</li>
 		<li>netCDF generation: update unit attribute if P06 unit is deprecated and replaced by another one</li>
  	</ul>
- <h5>Evolutions</h5>
+ <h5>Adds-on</h5>
  	<ul>
  		<li>New format conversion: SDN netCDF to SDN ODV</li>
 		<li>New SDN netCDF format checker</li>
@@ -47,7 +62,7 @@ h5   {color: #6c3390;}
 		<li>ODV files: Management of UTF8 files with BOM (Byte Order Mark)</li>
 		<li>Allow empty SDN references using SDN_REFERENCES notation (will be ignored)</li>
  	</ul>
- <h5>Evolutions</h5>
+ <h5>Adds-on</h5>
  	<ul>
 		<li>ODV files, date formats: check ISO format validity and consistency between dates an formats (metadata column headers and date primary variable in timeseries)</li>
 		<li>BODC terms management: detection of non existing or deprecated parameters. Automatic substitution of deprecated ones.</li>
@@ -64,7 +79,7 @@ h5   {color: #6c3390;}
 		<li>Fixed a bug when clearing coupling table</li>
 		<li>MGD directories to ODV conversion: fixed a bug on ODV file names; use local_cdi_id as name for output files</li>
 	</ul>
- <h5>Evolutions</h5>
+ <h5>Adds-on</h5>
 	<ul>
  	 <li>Improve log messages, display success messages in green</li>
  	</ul>
@@ -82,7 +97,7 @@ h5   {color: #6c3390;}
     	<li>Conversion to ODV: fixed a bug on ISO format in date metadata column</li>
     </ul>
     
-<h5>Evolutions</h5>
+<h5>Adds-on</h5>
 	<ul>
 		<li>Improve log messages</li>
 		<li>Fit dimension for CFPoint to CFPoint conversions, if exported stations are smaller than the biggest one in the input file</li>

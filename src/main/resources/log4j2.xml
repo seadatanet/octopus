@@ -26,6 +26,14 @@
         <TextAreaAppender name="JavaFXLogger" >
             <PatternLayout pattern="%d{HH:mm:ss}- %-5.7level - %-30.30c{1} - %msg%n"/>
         </TextAreaAppender>
+        
+        
+        <File name="jsonAppender" fileName="logs/log.json">
+   			<JSONLayout />
+  		</File>
+  
+  
+  
     </Appenders>
     
 
@@ -36,6 +44,10 @@
 <!--             <AppenderRef ref="JavaFXLogger"/> -->
 			<AppenderRef ref="Console" level="INFO" />
 			<AppenderRef ref="RollingFile" level="INFO" />
+			
 		</Root>
+		  <Logger name="JSON_FILE_APPENDER" level="INFO"  additivity="false">
+          <AppenderRef ref="jsonAppender" level="INFO"/>
+        </Logger>
 	</Loggers>
 </Configuration>

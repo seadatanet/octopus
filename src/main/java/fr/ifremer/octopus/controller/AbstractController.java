@@ -182,7 +182,9 @@ public abstract class AbstractController {
 			throw new OctopusException(e);
 		} finally{
 			try {
-				CouplingTableManager.getInstance().closeConnection();
+				if (PreferencesManager.getInstance().isCouplingEnabled()){
+					CouplingTableManager.getInstance().closeConnection();
+				}
 			} catch (ClassNotFoundException e) {
 				LOGGER.error("error closing coupling table connection "+ e.getMessage());
 			}
@@ -281,8 +283,10 @@ public abstract class AbstractController {
 //					createOutputSubDir(in.getName());
 					String extension = "."+model.getOutputFormat().getOutExtension();
 					out=model.getOutputPath()+File.separator+getOutputCDI(in.getName())+extension;
-					List<CouplingRecord> records = manager.print(null,out, model.getOutputFormat(),  getOutputCDI(in.getName()));
-					CouplingTableManager.getInstance().add(records);					
+					if (PreferencesManager.getInstance().isCouplingEnabled()){
+						List<CouplingRecord> records = manager.print(null,out, model.getOutputFormat(),  getOutputCDI(in.getName()));
+						CouplingTableManager.getInstance().add(records);			
+					}
 					outputFilesList.add(out);
 					
 				}else{
@@ -294,8 +298,10 @@ public abstract class AbstractController {
 						out = getOutFilePath(null, cdi);
 					}
 
-					List<CouplingRecord> records = manager.print(getOneCdiAsList(cdi),out, model.getOutputFormat(), null);
-					CouplingTableManager.getInstance().add(records);					
+					if (PreferencesManager.getInstance().isCouplingEnabled()){
+						List<CouplingRecord> records = manager.print(getOneCdiAsList(cdi),out, model.getOutputFormat(), null);
+						CouplingTableManager.getInstance().add(records);			
+					}
 					outputFilesList.add(out);
 				}
 				}
@@ -313,8 +319,10 @@ public abstract class AbstractController {
 				}
 				
 				// Process
-				List<CouplingRecord> records = manager.print(cdiToPrint, out, model.getOutputFormat(), getOutputCDI(in.getName()));
-				CouplingTableManager.getInstance().add(records);		
+				if (PreferencesManager.getInstance().isCouplingEnabled()){
+					List<CouplingRecord> records = manager.print(cdiToPrint, out, model.getOutputFormat(), getOutputCDI(in.getName()));
+					CouplingTableManager.getInstance().add(records);		
+				}
 				outputFilesList.add(out);
 			}
 
@@ -547,18 +555,18 @@ public abstract class AbstractController {
 	}
 
 	/**
-	 * @throws Exception 
 	 * 
+	 * @return true if succcess
 	 */
-	public void checkFormat()  {
-
+	public boolean checkFormat()  {
+		boolean result=true;
 		FormatChecker checker = getFormatChecker();
 		if (checker==null){
 			LOGGER.warn(
 					MessageFormat.format(messages.getString("abstractcontroller.checkerNotImmplemented"),
 							model.getInputFormat().getName() )
 					);
-			return;
+			return false;
 		}
 		File in = new File(model.getInputPath());
 		Format inputFormat = null; 
@@ -577,6 +585,7 @@ public abstract class AbstractController {
 					errors++;
 					LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),
 							 f.getAbsolutePath()));
+					result=false;
 				}
 			}
 			if (errors==0){
@@ -588,20 +597,24 @@ public abstract class AbstractController {
 						MessageFormat.format(messages.getString("abstractcontroller.XInvalidFilesOnY"),
 								errors, in.listFiles().length)
 						);
+				result=false;
 			}
 		}else{
 			try{
 				LOGGER.info("check file: "+ in.getName());
 				inputFormat = checker.check (in);
 				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.formatIsValid"), inputFormat.getName()));
+				
 			}catch(Exception e){
 				LOGGER.error(
 						MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),
 								in.getAbsolutePath())
 						);
+				result=false;
 			}
 
 		}
+		return result;
 	}
 
 	/**

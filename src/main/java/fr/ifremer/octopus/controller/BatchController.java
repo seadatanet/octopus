@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -16,9 +17,6 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.Appender;
-import org.apache.logging.log4j.core.LoggerContext;
-import org.apache.logging.log4j.core.config.Configuration;
 
 import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.octopus.OctopusVersion;
@@ -29,6 +27,7 @@ import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class BatchController extends AbstractController{
 	private static final Logger LOGGER = LogManager.getLogger(BatchController.class);
+	private static final Logger jsonLogger = LogManager.getLogger("JSON_FILE_APPENDER");
 	private boolean isJunitTest ;
 	private boolean checkOnly;
 
@@ -98,31 +97,42 @@ public class BatchController extends AbstractController{
 			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
 		}
 
-
+		boolean success = true;
+		HashMap<String, Object> jsonRes = new HashMap<>();
 		try {
-
-
 			/**
 			 * PROCESS
 			 */
+			
 			if (checkOnly){
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startCheck"), model.getInputPath()));
-				checkFormat();
+				success = checkFormat();
 			}else{
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startExport"), model.getInputPath()));
 				List<String> outputFiles = processConversion();
 			}
 
-
-
-
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
+//			jsonLogger.info("success={}, options={}, error={}", success, args, e1);
+			jsonRes.put("success", success);
+			jsonRes.put("args", String.join(" ", args));
+			jsonRes.put("error", e1);
+			jsonLogger.info(jsonRes);
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
 		} catch (SQLException e) {
 			LOGGER.error(e.getCause());
 			LOGGER.error(messages.getString("batchcontroller.guiRunning"));
 		} 
+		
+		
+//		jsonLogger.info("success={}, options={}, error={}", success, args, "");
+		jsonRes.put("success", success);
+		jsonRes.put("args", String.join(" ", args));
+		jsonRes.put("error", "");
+		jsonLogger.info(jsonRes);
+		
+		
 		exit(OK_EXIT_CODE, null);
 
 	}

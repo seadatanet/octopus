@@ -10,7 +10,7 @@
 	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
 It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
-	<version>1.4.1</version>
+	<version>1.4.2-SNAPSHOT</version>
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
 		<name>ifremer</name>
@@ -344,7 +344,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.17</version>
+			<version>0.18-SNAPSHOT</version>
 <!-- 			<classifier>jar-with-dependencies</classifier> -->
 <exclusions>
 						<exclusion>
@@ -357,7 +357,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer</groupId>
 			<artifactId>mgd</artifactId>
-			<version>1.5</version>
+			<version>1.6-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
@@ -510,13 +510,13 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<profile>
 			<id>altran</id>
 			<activation>
-				<activeByDefault>false</activeByDefault>
+				<activeByDefault>true</activeByDefault>
 			</activation>
 
 			<repositories>
 				<repository>
 					<id>NexusAltranSnapshot</id>
-					<url>http://10.1.96.214:8081/repository/ifremer-snapshot/
+					<url>http://10.1.96.245:8081/repository/maven-snapshots/
 					</url>
 					<releases>
 						<enabled>false</enabled>
@@ -527,7 +527,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</repository>
 				<repository>
 					<id>NexusAltran</id>
-					<url>http://10.1.96.214:8081/repository/ifremer/
+					<url>http://10.1.96.245:8081/repository/maven-releases/
 					</url>
 					<releases>
 						<enabled>true</enabled>
@@ -566,12 +566,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<repository>
 					<id>NexusAltran</id>
 					<name>ifremer</name>
-					<url>http://10.1.96.214:8081/repository/ifremer/</url>
+					<url>http://10.1.96.245:8081/repository/maven-releases/</url>
 				</repository>
 				<snapshotRepository>
 					<id>NexusAltranSnapshot</id>
 					<name>ifremer-snapshot</name>
-					<url>http://10.1.96.214:8081/repository/ifremer-snapshot/</url>
+						<url>http://10.1.96.245:8081/repository/maven-snapshots/</url>
 				</snapshotRepository>
 				
 				

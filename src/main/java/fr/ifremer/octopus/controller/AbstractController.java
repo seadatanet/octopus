@@ -2,12 +2,14 @@ package fr.ifremer.octopus.controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileVisitOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.ArrayList;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -547,7 +549,9 @@ public abstract class AbstractController {
 	 */
 	protected Format getFirstFileInputFormat(File inputPath) throws IOException{
 		InputFileVisitor fileProcessor = new InputFileVisitor();
-		Files.walkFileTree(Paths.get(inputPath.getAbsolutePath()), fileProcessor);
+//		Files.walkFileTree(Paths.get(inputPath.getAbsolutePath()), fileProcessor);
+		// depth = 1, because we do not read sub directories (and causes errors with svn)
+		Files.walkFileTree(Paths.get(inputPath.getAbsolutePath()),  EnumSet.noneOf(FileVisitOption.class), 1, fileProcessor);
 		String firstFile = fileProcessor.getFirstFile();
 		Format format = getFormat(firstFile);
 		return format;

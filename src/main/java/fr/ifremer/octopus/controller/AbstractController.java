@@ -283,8 +283,8 @@ public abstract class AbstractController {
 //					createOutputSubDir(in.getName());
 					String extension = "."+model.getOutputFormat().getOutExtension();
 					out=model.getOutputPath()+File.separator+getOutputCDI(in.getName())+extension;
+					List<CouplingRecord> records = manager.print(null,out, model.getOutputFormat(),  getOutputCDI(in.getName()));
 					if (PreferencesManager.getInstance().isCouplingEnabled()){
-						List<CouplingRecord> records = manager.print(null,out, model.getOutputFormat(),  getOutputCDI(in.getName()));
 						CouplingTableManager.getInstance().add(records);			
 					}
 					outputFilesList.add(out);
@@ -298,8 +298,8 @@ public abstract class AbstractController {
 						out = getOutFilePath(null, cdi);
 					}
 
+					List<CouplingRecord> records = manager.print(getOneCdiAsList(cdi),out, model.getOutputFormat(), null);
 					if (PreferencesManager.getInstance().isCouplingEnabled()){
-						List<CouplingRecord> records = manager.print(getOneCdiAsList(cdi),out, model.getOutputFormat(), null);
 						CouplingTableManager.getInstance().add(records);			
 					}
 					outputFilesList.add(out);
@@ -319,8 +319,8 @@ public abstract class AbstractController {
 				}
 				
 				// Process
-				if (PreferencesManager.getInstance().isCouplingEnabled()){
 					List<CouplingRecord> records = manager.print(cdiToPrint, out, model.getOutputFormat(), getOutputCDI(in.getName()));
+				if (PreferencesManager.getInstance().isCouplingEnabled()){
 					CouplingTableManager.getInstance().add(records);		
 				}
 				outputFilesList.add(out);

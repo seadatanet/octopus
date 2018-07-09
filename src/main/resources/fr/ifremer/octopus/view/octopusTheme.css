@@ -11,14 +11,14 @@ AnchorPane{
 
 /**menus + labels*/
 .label {
-    -fx-font-size: 11pt;
+    -fx-font-size: 1em;
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: #6c3390;
     -fx-opacity: 1;
 }
 
 .description{
-	-fx-font-size: 9pt;
+	-fx-font-size: 0.8em;
     -fx-font-family: "Segoe UI Semibold";
     -fx-font-style: italic;
     -fx-text-fill: #6c3390;
@@ -40,7 +40,7 @@ RadioButton{
 }
 
 .menu-bar .label {
-    -fx-font-size: 10pt;
+    -fx-font-size: 1em;
     -fx-font-family: "Segoe UI Light";
     -fx-opacity: 0.9;
      -fx-text-fill: #ffffff;
@@ -63,7 +63,7 @@ RadioButton{
 
 /** ================= text-field ==================== */
 .text-field {
-    -fx-font-size: 12pt;
+    -fx-font-size: 1em;
     -fx-font-family: "Segoe UI Semibold";
 }
 
@@ -141,21 +141,21 @@ RadioButton{
     -fx-background-color: #465561;
 }
 .aboutName{
-		-fx-font-size: 40pt;
+		-fx-font-size: 2em;
     -fx-font-family: "Segoe UI Semibold";
         -fx-text-fill: #465561;
 }
 .aboutVersion{
-	-fx-font-size: 20pt;
+	-fx-font-size: 2em;
     -fx-font-family: "Segoe UI Semibold";
 }
 .aboutTitle{
-	-fx-font-size: 20pt;
+	-fx-font-size: 2em;
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: #465561;
 }
 .panelH1{
-	-fx-font-size: 21pt;
+	-fx-font-size: 2em;
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: #6c3390;
 }

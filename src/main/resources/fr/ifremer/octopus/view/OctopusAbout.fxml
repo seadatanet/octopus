@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.web.*?>
 <?import javafx.scene.image.*?>
@@ -9,21 +10,53 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.AboutController">
-   <children>
-      <Button layoutX="1078.0" layoutY="711.0" mnemonicParsing="false" onAction="#closeAbout" text="%about.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
-      <Label layoutX="34.0" layoutY="179.0" text="%about.licence" />
-      <Label layoutX="34.0" layoutY="122.0" styleClass="aboutTitle" text="%about.title" />
-      <Label fx:id="aboutVersion" layoutX="435.0" layoutY="42.0" styleClass="aboutVersion" text="%about.version" />
-      <Label layoutX="328.0" layoutY="42.0" styleClass="aboutVersion" text="Version" />
-      <Label layoutX="34.0" layoutY="20.0" styleClass="aboutName" text="Octopus" />
-      <WebView fx:id="changeLogWebView" layoutX="647.0" layoutY="521.0" prefHeight="687.0" prefWidth="533.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="647.0" AnchorPane.rightAnchor="20.0" />
-      <Separator layoutX="635.0" layoutY="186.0" orientation="VERTICAL" prefHeight="603.0" prefWidth="12.0" />
-      <WebView fx:id="presentationWebView" layoutX="47.0" layoutY="237.0" prefHeight="516.0" prefWidth="469.0" />
-      <ImageView fitHeight="107.0" fitWidth="126.0" layoutX="447.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../images/octopus_transp.png" />
-         </image>
-      </ImageView>
-   </children>
-</AnchorPane>
+<BorderPane minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.AboutController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+                  <WebView fx:id="changeLogWebView" prefHeight="687.0" prefWidth="533.0" GridPane.columnIndex="1" />
+                  <WebView fx:id="presentationWebView" />
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+                  <ImageView fitHeight="107.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <image>
+                        <Image url="@../../../../images/octopus_transp.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#closeAbout" prefHeight="25.0" prefWidth="107.0" text="%about.close" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <VBox AnchorPane.leftAnchor="130.0">
+               <children>
+                        <Label styleClass="aboutName" text="Octopus">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <HBox>
+                     <children>
+                              <Label styleClass="aboutVersion" text="Version" />
+                              <Label fx:id="aboutVersion" styleClass="aboutVersion" text="%about.version" />
+                     </children>
+                  </HBox>
+                        <Label text="%about.licence" />
+                        <Label styleClass="aboutTitle" text="%about.title">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </top>
+      </BorderPane>

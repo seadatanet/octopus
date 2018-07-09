@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -7,13 +8,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="850.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.OctopusOverviewController">
+<AnchorPane minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ifremer.octopus.view.OctopusOverviewController">
 	<children>
-		<SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="550.0" prefWidth="693.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<SplitPane dividerPositions="0.5045454545454545" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 			<items>
-				<AnchorPane minHeight="-Infinity" minWidth="0.0">
+				<AnchorPane>
 					<children>
-                  <VBox AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
                      <children>
                         <GridPane alignment="CENTER" hgap="5.0" vgap="5.0">
                           <columnConstraints>
@@ -79,7 +80,7 @@
                         </GridPane>
                         <HBox prefHeight="198.0" prefWidth="1188.0">
                            <children>
-                              <VBox HBox.hgrow="ALWAYS">
+                              <VBox prefHeight="198.0" prefWidth="527.0" HBox.hgrow="ALWAYS">
                                  <children>
                             <CheckBox fx:id="showCdi" mnemonicParsing="false" onAction="#showCdiList" prefHeight="36.0" prefWidth="236.0" text="%input.checkCdi">
                                        <padding>

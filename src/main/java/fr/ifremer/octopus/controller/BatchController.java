@@ -76,6 +76,7 @@ public class BatchController extends AbstractController{
 	 */
 	public BatchController(String[] args, boolean isJunitTest) throws OctopusException   {
 		super();
+		HashMap<String, Object> jsonRes = new HashMap<>();
 		//***************************************************************
 		this.isJunitTest = isJunitTest;
 		aboutBundle = ResourceBundle.getBundle("bundles/about", PreferencesManager.getInstance().getLocale());
@@ -90,15 +91,27 @@ public class BatchController extends AbstractController{
 		try {
 			parseAndFill(args);
 		} catch (OctopusException e1) {
+			jsonRes.put("success", false);
+			jsonRes.put("args", String.join(" ", args));
+			jsonRes.put("error", e1);
+			jsonLogger.info(jsonRes);
 			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
 		} catch (IOException e1) {
+			jsonRes.put("success", false);
+			jsonRes.put("args", String.join(" ", args));
+			jsonRes.put("error", e1);
+			jsonLogger.info(jsonRes);
 			exit(INPUT_ERROR_EXIT_CODE, e1);
 		} catch (ParseException e1) {
+			jsonRes.put("success", false);
+			jsonRes.put("args", String.join(" ", args));
+			jsonRes.put("error", e1);
+			jsonLogger.info(jsonRes);
 			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
 		}
 
 		boolean success = true;
-		HashMap<String, Object> jsonRes = new HashMap<>();
+		
 		try {
 			/**
 			 * PROCESS
@@ -115,12 +128,15 @@ public class BatchController extends AbstractController{
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
 //			jsonLogger.info("success={}, options={}, error={}", success, args, e1);
-			jsonRes.put("success", success);
+			jsonRes.put("success", false);
 			jsonRes.put("args", String.join(" ", args));
 			jsonRes.put("error", e1);
 			jsonLogger.info(jsonRes);
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
 		} catch (SQLException e) {
+			jsonRes.put("success", false);
+			jsonRes.put("args", String.join(" ", args));
+			jsonRes.put("error", e);
 			LOGGER.error(e.getCause());
 			LOGGER.error(messages.getString("batchcontroller.guiRunning"));
 		} 

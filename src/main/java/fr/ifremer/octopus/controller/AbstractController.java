@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.EnumSet;
+import java.util.HashMap;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -560,9 +561,15 @@ public abstract class AbstractController {
 
 	/**
 	 * 
+	 * @param jsonlogger 
 	 * @return true if succcess
 	 */
-	public boolean checkFormat()  {
+	public boolean checkFormat(Logger jsonLogger)  {
+		String FILE_BATCH_PREFIX="[FILE BATCH] ";
+		String FILE_BATCH_SUCCESS=FILE_BATCH_PREFIX + "success";
+		String FILE_BATCH_ARGS=FILE_BATCH_PREFIX + "args";
+		String FILE_BATCH_ERROR=FILE_BATCH_PREFIX + "error";
+		HashMap<String, Object> jsonRes = new HashMap<>();
 		boolean result=true;
 		FormatChecker checker = getFormatChecker();
 		if (checker==null){
@@ -585,7 +592,19 @@ public abstract class AbstractController {
 					}else{
 						checker.check (f);
 					}
+					if (jsonLogger!=null){
+						jsonRes.put(FILE_BATCH_SUCCESS, true);
+						jsonRes.put(FILE_BATCH_ARGS,f.getName());
+						jsonRes.put(FILE_BATCH_ERROR, "");
+						jsonLogger.info(jsonRes);
+					}
 				}catch(Exception e){
+					if (jsonLogger!=null){
+						jsonRes.put(FILE_BATCH_SUCCESS, false);
+						jsonRes.put(FILE_BATCH_ARGS,f.getName());
+						jsonRes.put(FILE_BATCH_ERROR, e);
+						jsonLogger.info(jsonRes);
+					}
 					errors++;
 					LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),
 							 f.getAbsolutePath()));
@@ -608,12 +627,23 @@ public abstract class AbstractController {
 				LOGGER.info("check file: "+ in.getName());
 				inputFormat = checker.check (in);
 				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.formatIsValid"), inputFormat.getName()));
-				
+				if (jsonLogger!=null){
+					jsonRes.put(FILE_BATCH_SUCCESS, true);
+					jsonRes.put(FILE_BATCH_ARGS,in.getName());
+					jsonRes.put(FILE_BATCH_ERROR, "");
+					jsonLogger.info(jsonRes);
+				}
 			}catch(Exception e){
 				LOGGER.error(
 						MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),
 								in.getAbsolutePath())
 						);
+				if (jsonLogger!=null){
+					jsonRes.put(FILE_BATCH_SUCCESS, false);
+					jsonRes.put(FILE_BATCH_ARGS,in.getName());
+					jsonRes.put(FILE_BATCH_ERROR, e);
+					jsonLogger.info(jsonRes);
+				}
 				result=false;
 			}
 

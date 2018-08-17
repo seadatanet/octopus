@@ -693,7 +693,7 @@ public class OctopusOverviewController {
 	}
 	@FXML
 	public void validate(){
-		octopusGuiController.checkFormat();
+		octopusGuiController.checkFormat(null);
 	}
 
 }

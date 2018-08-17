@@ -88,24 +88,28 @@ public class BatchController extends AbstractController{
 		}
 		//***************************************************************
 		initOptionsParser();
+		String GLOBAL_BATCH_PREFIX="[GLOBAL BATCH] ";
+		String GLOBAL_BATCH_SUCCESS=GLOBAL_BATCH_PREFIX + "success";
+		String GLOBAL_BATCH_ARGS=GLOBAL_BATCH_PREFIX + "args";
+		String GLOBAL_BATCH_ERROR=GLOBAL_BATCH_PREFIX + "error";
 		try {
 			parseAndFill(args);
 		} catch (OctopusException e1) {
-			jsonRes.put("success", false);
-			jsonRes.put("args", String.join(" ", args));
-			jsonRes.put("error", e1);
+			jsonRes.put(GLOBAL_BATCH_SUCCESS, false);
+			jsonRes.put(GLOBAL_BATCH_ARGS, String.join(" ", args));
+			jsonRes.put(GLOBAL_BATCH_ERROR, e1);
 			jsonLogger.info(jsonRes);
 			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
 		} catch (IOException e1) {
-			jsonRes.put("success", false);
-			jsonRes.put("args", String.join(" ", args));
-			jsonRes.put("error", e1);
+			jsonRes.put(GLOBAL_BATCH_SUCCESS, false);
+			jsonRes.put(GLOBAL_BATCH_ARGS, String.join(" ", args));
+			jsonRes.put(GLOBAL_BATCH_ERROR, e1);
 			jsonLogger.info(jsonRes);
 			exit(INPUT_ERROR_EXIT_CODE, e1);
 		} catch (ParseException e1) {
-			jsonRes.put("success", false);
-			jsonRes.put("args", String.join(" ", args));
-			jsonRes.put("error", e1);
+			jsonRes.put(GLOBAL_BATCH_SUCCESS, false);
+			jsonRes.put(GLOBAL_BATCH_ARGS, String.join(" ", args));
+			jsonRes.put(GLOBAL_BATCH_ERROR, e1);
 			jsonLogger.info(jsonRes);
 			logAndExit(BAD_OPTIONS_EXIT_CODE, e1);
 		}
@@ -119,7 +123,7 @@ public class BatchController extends AbstractController{
 			
 			if (checkOnly){
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startCheck"), model.getInputPath()));
-				success = checkFormat();
+				success = checkFormat(jsonLogger);
 			}else{
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startExport"), model.getInputPath()));
 				List<String> outputFiles = processConversion();
@@ -128,24 +132,24 @@ public class BatchController extends AbstractController{
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
 //			jsonLogger.info("success={}, options={}, error={}", success, args, e1);
-			jsonRes.put("success", false);
-			jsonRes.put("args", String.join(" ", args));
-			jsonRes.put("error", e1);
+			jsonRes.put(GLOBAL_BATCH_SUCCESS, false);
+			jsonRes.put(GLOBAL_BATCH_ARGS, String.join(" ", args));
+			jsonRes.put(GLOBAL_BATCH_ERROR, e1);
 			jsonLogger.info(jsonRes);
 			exit(PROCESS_ERROR_EXIT_CODE, e1);
 		} catch (SQLException e) {
-			jsonRes.put("success", false);
-			jsonRes.put("args", String.join(" ", args));
-			jsonRes.put("error", e);
+			jsonRes.put(GLOBAL_BATCH_SUCCESS, false);
+			jsonRes.put(GLOBAL_BATCH_ARGS, String.join(" ", args));
+			jsonRes.put(GLOBAL_BATCH_ERROR, e);
 			LOGGER.error(e.getCause());
 			LOGGER.error(messages.getString("batchcontroller.guiRunning"));
 		} 
 		
 		
 //		jsonLogger.info("success={}, options={}, error={}", success, args, "");
-		jsonRes.put("success", success);
-		jsonRes.put("args", String.join(" ", args));
-		jsonRes.put("error", "");
+		jsonRes.put(GLOBAL_BATCH_SUCCESS, success);
+		jsonRes.put(GLOBAL_BATCH_ARGS, String.join(" ", args));
+		jsonRes.put(GLOBAL_BATCH_ERROR, "");
 		jsonLogger.info(jsonRes);
 		
 		

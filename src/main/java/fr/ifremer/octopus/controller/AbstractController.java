@@ -44,6 +44,15 @@ public abstract class AbstractController {
 
 
 	private static final Logger LOGGER = LogManager.getLogger(AbstractController.class);
+	protected static final String GLOBAL_BATCH_PREFIX="[GLOBAL BATCH] ";
+	protected static final String GLOBAL_BATCH_SUCCESS=GLOBAL_BATCH_PREFIX + "success";
+	protected static final String GLOBAL_BATCH_ARGS=GLOBAL_BATCH_PREFIX + "args";
+	protected static final String GLOBAL_BATCH_ERROR=GLOBAL_BATCH_PREFIX + "error";
+	private static final String FILE_BATCH_PREFIX="[FILE BATCH] ";
+	private static final String FILE_BATCH_SUCCESS=FILE_BATCH_PREFIX + "success";
+	private static final String FILE_BATCH_ARGS=FILE_BATCH_PREFIX + "args";
+	private static final String FILE_BATCH_ERROR=FILE_BATCH_PREFIX + "error";
+	
 
 	private DriverManager driverManager = new DriverManagerImpl();
 	private CdiListManager cdiListManager;
@@ -115,11 +124,13 @@ public abstract class AbstractController {
 
 	/**
 	 * Process split and/or conversion
+	 * @param jsonlogger 
 	 * @return list of output files paths
 	 * @throws OctopusException
 	 * @throws SQLException 
 	 */
-	public List<String> processConversion() throws OctopusException, SQLException {
+	public List<String> processConversion(Logger jsonLogger) throws OctopusException, SQLException {
+		
 		// used only if input is a directory, to store info on eventual errors on some files
 		nbFilesInInputDirectory=0;
 		nbErrorFilesInInputDirectory=0;
@@ -169,7 +180,7 @@ public abstract class AbstractController {
 				for (File f: model.getInputFile().listFiles()){
 					nbFilesInInputDirectory+=1;
 					try{
-						outputFilesList=processFile (f, outputFilesList);
+						outputFilesList=processFile (f, outputFilesList, jsonLogger);
 					}catch(Exception e){
 						LOGGER.error(e.getMessage());
 						LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.errorOnOneFileInADirectory"), f.getAbsolutePath()));
@@ -177,7 +188,7 @@ public abstract class AbstractController {
 					}
 				}
 			}else{
-				outputFilesList=processFile (model.getInputFile(), outputFilesList);
+				outputFilesList=processFile (model.getInputFile(), outputFilesList, jsonLogger);
 			}
 		} 
 		catch (Exception e) {
@@ -255,16 +266,25 @@ public abstract class AbstractController {
 	 * 
 	 * @param in
 	 * @param outputFilesList
+	 * @param jsonLogger 
 	 * @return list of output files paths
 	 * @throws OctopusException
 	 */
-	private  List<String> processFile(File in, List<String> outputFilesList) throws OctopusException {
+	private  List<String> processFile(File in, List<String> outputFilesList, Logger jsonLogger) throws OctopusException {
+		HashMap<String, Object> jsonRes = new HashMap<>();
 		LOGGER.info("process file: " +  in.getName());
 		ConvertersManager manager;
 		try {
 			manager = new ConvertersManager(in, model.getInputFormat());
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
+			if (jsonLogger!=null){
+				jsonRes.put(FILE_BATCH_SUCCESS, false);
+				jsonRes.put(FILE_BATCH_ARGS,in.getName());
+				jsonRes.put(FILE_BATCH_ERROR, e1);
+				jsonLogger.info(jsonRes);
+			}
+			
 			throw new OctopusException("error on input file");
 		}
 		List<String> cdiToPrint;
@@ -334,6 +354,15 @@ public abstract class AbstractController {
 		} catch (Exception e) {
 			LOGGER.error("error on file "+ in.getAbsolutePath());
 			LOGGER.error(e.getMessage());
+			
+			if (jsonLogger!=null){
+				jsonRes.put(FILE_BATCH_SUCCESS, false);
+				jsonRes.put(FILE_BATCH_ARGS,in.getName());
+				jsonRes.put(FILE_BATCH_ERROR, e);
+				jsonLogger.info(jsonRes);
+			}
+			
+			
 			throw new OctopusException("error processing file "+in.getAbsolutePath());
 		}
 
@@ -565,10 +594,7 @@ public abstract class AbstractController {
 	 * @return true if succcess
 	 */
 	public boolean checkFormat(Logger jsonLogger)  {
-		String FILE_BATCH_PREFIX="[FILE BATCH] ";
-		String FILE_BATCH_SUCCESS=FILE_BATCH_PREFIX + "success";
-		String FILE_BATCH_ARGS=FILE_BATCH_PREFIX + "args";
-		String FILE_BATCH_ERROR=FILE_BATCH_PREFIX + "error";
+		
 		HashMap<String, Object> jsonRes = new HashMap<>();
 		boolean result=true;
 		FormatChecker checker = getFormatChecker();

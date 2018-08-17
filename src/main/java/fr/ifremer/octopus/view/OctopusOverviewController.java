@@ -670,7 +670,7 @@ public class OctopusOverviewController {
 
 					LOGGER.info(MessageFormat.format(messages.getString("octopusOverviewController.exportTo"), format.getName())); 
 					octopusGuiController.getModel().setOutputFormat(format);
-					List<String> outputFiles = octopusGuiController.processConversion();
+					List<String> outputFiles = octopusGuiController.processConversion(null);
 					confirmOverwriteOk=false;
 				} catch (OctopusException e) {
 					LOGGER.error(e.getMessage());

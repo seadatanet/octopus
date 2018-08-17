@@ -88,10 +88,7 @@ public class BatchController extends AbstractController{
 		}
 		//***************************************************************
 		initOptionsParser();
-		String GLOBAL_BATCH_PREFIX="[GLOBAL BATCH] ";
-		String GLOBAL_BATCH_SUCCESS=GLOBAL_BATCH_PREFIX + "success";
-		String GLOBAL_BATCH_ARGS=GLOBAL_BATCH_PREFIX + "args";
-		String GLOBAL_BATCH_ERROR=GLOBAL_BATCH_PREFIX + "error";
+	
 		try {
 			parseAndFill(args);
 		} catch (OctopusException e1) {
@@ -126,7 +123,7 @@ public class BatchController extends AbstractController{
 				success = checkFormat(jsonLogger);
 			}else{
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startExport"), model.getInputPath()));
-				List<String> outputFiles = processConversion();
+				List<String> outputFiles = processConversion(jsonLogger);
 			}
 
 		} catch (OctopusException e1) {

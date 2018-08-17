@@ -310,6 +310,7 @@ public abstract class AbstractController {
 					if (PreferencesManager.getInstance().isCouplingEnabled()){
 						CouplingTableManager.getInstance().add(records);			
 					}
+					
 					outputFilesList.add(out);
 					
 				}else{
@@ -325,6 +326,7 @@ public abstract class AbstractController {
 					if (PreferencesManager.getInstance().isCouplingEnabled()){
 						CouplingTableManager.getInstance().add(records);			
 					}
+					
 					outputFilesList.add(out);
 				}
 				}
@@ -349,7 +351,12 @@ public abstract class AbstractController {
 				outputFilesList.add(out);
 			}
 
-
+			if (jsonLogger!=null){
+				jsonRes.put(FILE_BATCH_SUCCESS, true);
+				jsonRes.put(FILE_BATCH_ARGS,in.getName());
+				jsonRes.put(FILE_BATCH_ERROR, "");
+				jsonLogger.info(jsonRes);
+			}
 			manager.close();
 		} catch (Exception e) {
 			LOGGER.error("error on file "+ in.getAbsolutePath());

@@ -363,7 +363,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<sourceFile>build/octopus_java10.sh</sourceFile>
-							<destinationFile>target/livrableLinux/octopus/octopus_java.sh</destinationFile>
+							<destinationFile>target/livrableLinux/octopus/octopus_java10.sh</destinationFile>
 						</configuration>
 					</execution>
 				</executions>

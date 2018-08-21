@@ -289,8 +289,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>build/octopus_java10.exe</sourceFile>
-							<destinationFile>target/livrableWin/octopus/octopus_java10.exe</destinationFile>
+							<sourceFile>build/octopus_java9.exe</sourceFile>
+							<destinationFile>target/livrableWin/octopus/octopus_java9.exe</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
@@ -325,8 +325,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>build/octopus_java10.sh</sourceFile>
-							<destinationFile>target/livrableLinux/octopus/octopus_java10.sh</destinationFile>
+							<sourceFile>build/octopus_java9.sh</sourceFile>
+							<destinationFile>target/livrableLinux/octopus/octopus_java9.sh</destinationFile>
 						</configuration>
 					</execution>
 				</executions>

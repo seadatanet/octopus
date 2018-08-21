@@ -273,6 +273,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<sourceFile>build/octopus.exe</sourceFile>
 							<destinationFile>target/livrableWin/octopus/octopus.exe</destinationFile>
 						</configuration>
+						
 					</execution>
 				</executions>
 			</plugin>
@@ -282,7 +283,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<version>1.0</version>
 				<executions>
 					<execution>
-						<id>copy-exe-win</id>
+						<id>copy-exe-win-java10</id>
 						<phase>install</phase>
 						<goals>
 							<goal>copy</goal>
@@ -294,44 +295,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
-			<!-- 
-			<plugin>
-				<groupId>com.coderplus.maven.plugins</groupId>
-				<artifactId>copy-rename-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<id>copy-exe-win32</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
-						<configuration>
-							<sourceFile>build/octopus_32.exe</sourceFile>
-							<destinationFile>target/livrableWin32/octopus/octopus.exe</destinationFile>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>com.coderplus.maven.plugins</groupId>
-				<artifactId>copy-rename-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<id>copy-exe-win64</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
-						<configuration>
-							<sourceFile>build/octopus_64.exe</sourceFile>
-							<destinationFile>target/livrableWin64/octopus/octopus.exe</destinationFile>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			 -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -356,7 +319,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<version>1.0</version>
 				<executions>
 					<execution>
-						<id>copy-exe-linux</id>
+						<id>copy-exe-linux-java10</id>
 						<phase>install</phase>
 						<goals>
 							<goal>copy</goal>

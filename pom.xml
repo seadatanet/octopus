@@ -276,6 +276,24 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-exe-win</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>build/octopus_java10.exe</sourceFile>
+							<destinationFile>target/livrableWin/octopus/octopus_java10.exe</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<!-- 
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
@@ -328,6 +346,24 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						<configuration>
 							<sourceFile>build/octopus.sh</sourceFile>
 							<destinationFile>target/livrableLinux/octopus/octopus.sh</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-exe-linux</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>build/octopus_java10.sh</sourceFile>
+							<destinationFile>target/livrableLinux/octopus/octopus_java.sh</destinationFile>
 						</configuration>
 					</execution>
 				</executions>

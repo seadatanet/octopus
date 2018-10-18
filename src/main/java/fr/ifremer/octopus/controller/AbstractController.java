@@ -639,8 +639,7 @@ public abstract class AbstractController {
 						jsonLogger.info(jsonRes);
 					}
 					errors++;
-					LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),
-							 f.getAbsolutePath()));
+					LOGGER.error(MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),	 f.getAbsolutePath()));
 					result=false;
 				}
 			}
@@ -649,10 +648,7 @@ public abstract class AbstractController {
 				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.allFilesValid"), inputFormat.name()));
 				
 			}else{
-				LOGGER.error( 
-						MessageFormat.format(messages.getString("abstractcontroller.XInvalidFilesOnY"),
-								errors, in.listFiles().length)
-						);
+				LOGGER.error( MessageFormat.format(messages.getString("abstractcontroller.XInvalidFilesOnY"),errors, in.listFiles().length));
 				result=false;
 			}
 		}else{
@@ -668,9 +664,7 @@ public abstract class AbstractController {
 				}
 			}catch(Exception e){
 				LOGGER.error(
-						MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),
-								in.getAbsolutePath())
-						);
+						MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),in.getAbsolutePath()));
 				if (jsonLogger!=null){
 					jsonRes.put(FILE_BATCH_SUCCESS, false);
 					jsonRes.put(FILE_BATCH_ARGS,in.getName());
@@ -680,6 +674,11 @@ public abstract class AbstractController {
 				result=false;
 			}
 
+		}
+		
+		if (inputFormat==Format.MEDATLAS_NON_SDN) {
+			LOGGER.error("Format is Medatlas but is not SeaDataNet compliant (metadata missing). this format is invalid for Octopus.");
+			result = false;
 		}
 		return result;
 	}

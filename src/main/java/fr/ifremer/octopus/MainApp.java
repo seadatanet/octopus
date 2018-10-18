@@ -92,6 +92,7 @@ public class MainApp extends Application {
 		LOGGER.info("LANGUAGE: "+prefsMgr.getLocale());
 
 		// init and show GUI
+		this.primaryStage.setMaximized(true);
 		initRootLayout();
 		showRootLayout();
 		initOverview();

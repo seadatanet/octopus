@@ -50,8 +50,10 @@ public abstract class AbstractController {
 	protected static final String GLOBAL_BATCH_ERROR=GLOBAL_BATCH_PREFIX + "error";
 	private static final String FILE_BATCH_PREFIX="[FILE BATCH] ";
 	private static final String FILE_BATCH_SUCCESS=FILE_BATCH_PREFIX + "success";
-	private static final String FILE_BATCH_ARGS=FILE_BATCH_PREFIX + "args";
+	private static final String FILE_BATCH_NAME=FILE_BATCH_PREFIX + "fileName";
 	private static final String FILE_BATCH_ERROR=FILE_BATCH_PREFIX + "error";
+	private static final String FILE_BATCH_FORMAT = FILE_BATCH_PREFIX + "format";
+	private static final String UNKNOWN = "unknown";
 	
 
 	private DriverManager driverManager = new DriverManagerImpl();
@@ -280,7 +282,13 @@ public abstract class AbstractController {
 			LOGGER.error(e1.getMessage());
 			if (jsonLogger!=null){
 				jsonRes.put(FILE_BATCH_SUCCESS, false);
-				jsonRes.put(FILE_BATCH_ARGS,in.getName());
+				jsonRes.put(FILE_BATCH_NAME,in.getName());
+				try {
+					jsonRes.put(FILE_BATCH_FORMAT,model.getInputFormat().getName());
+				}
+				catch (Exception e2) {
+					jsonRes.put(FILE_BATCH_FORMAT,UNKNOWN);
+				}
 				jsonRes.put(FILE_BATCH_ERROR, e1);
 				jsonLogger.info(jsonRes);
 			}
@@ -353,7 +361,8 @@ public abstract class AbstractController {
 
 			if (jsonLogger!=null){
 				jsonRes.put(FILE_BATCH_SUCCESS, true);
-				jsonRes.put(FILE_BATCH_ARGS,in.getName());
+				jsonRes.put(FILE_BATCH_NAME,in.getName());
+				jsonRes.put(FILE_BATCH_FORMAT,model.getInputFormat().getName());
 				jsonRes.put(FILE_BATCH_ERROR, "");
 				jsonLogger.info(jsonRes);
 			}
@@ -364,7 +373,13 @@ public abstract class AbstractController {
 			
 			if (jsonLogger!=null){
 				jsonRes.put(FILE_BATCH_SUCCESS, false);
-				jsonRes.put(FILE_BATCH_ARGS,in.getName());
+				jsonRes.put(FILE_BATCH_NAME,in.getName());
+				try {
+					jsonRes.put(FILE_BATCH_FORMAT,model.getInputFormat().getName());
+				}
+				catch (Exception e2) {
+					jsonRes.put(FILE_BATCH_FORMAT,UNKNOWN);
+				}
 				jsonRes.put(FILE_BATCH_ERROR, e);
 				jsonLogger.info(jsonRes);
 			}
@@ -623,18 +638,20 @@ public abstract class AbstractController {
 					if (inputFormat == null){
 						inputFormat = checker.check (f);
 					}else{
-						checker.check (f);
+						inputFormat = checker.check (f);
 					}
 					if (jsonLogger!=null){
 						jsonRes.put(FILE_BATCH_SUCCESS, true);
-						jsonRes.put(FILE_BATCH_ARGS,f.getName());
+						jsonRes.put(FILE_BATCH_NAME,f.getName());
+						jsonRes.put(FILE_BATCH_FORMAT,inputFormat);
 						jsonRes.put(FILE_BATCH_ERROR, "");
 						jsonLogger.info(jsonRes);
 					}
 				}catch(Exception e){
 					if (jsonLogger!=null){
 						jsonRes.put(FILE_BATCH_SUCCESS, false);
-						jsonRes.put(FILE_BATCH_ARGS,f.getName());
+						jsonRes.put(FILE_BATCH_NAME,f.getName());
+						jsonRes.put(FILE_BATCH_FORMAT,UNKNOWN);
 						jsonRes.put(FILE_BATCH_ERROR, e);
 						jsonLogger.info(jsonRes);
 					}
@@ -643,6 +660,7 @@ public abstract class AbstractController {
 					result=false;
 				}
 			}
+			
 			if (errors==0){
 //				LOGGER.info(messages.getString("abstractcontroller.allFilesValid"));
 				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.allFilesValid"), inputFormat.name()));
@@ -658,7 +676,8 @@ public abstract class AbstractController {
 				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.formatIsValid"), inputFormat.getName()));
 				if (jsonLogger!=null){
 					jsonRes.put(FILE_BATCH_SUCCESS, true);
-					jsonRes.put(FILE_BATCH_ARGS,in.getName());
+					jsonRes.put(FILE_BATCH_NAME,in.getName());
+					jsonRes.put(FILE_BATCH_FORMAT,inputFormat);
 					jsonRes.put(FILE_BATCH_ERROR, "");
 					jsonLogger.info(jsonRes);
 				}
@@ -667,7 +686,8 @@ public abstract class AbstractController {
 						MessageFormat.format(messages.getString("abstractcontroller.invalidFile"),in.getAbsolutePath()));
 				if (jsonLogger!=null){
 					jsonRes.put(FILE_BATCH_SUCCESS, false);
-					jsonRes.put(FILE_BATCH_ARGS,in.getName());
+					jsonRes.put(FILE_BATCH_NAME,in.getName());
+					jsonRes.put(FILE_BATCH_FORMAT,UNKNOWN);
 					jsonRes.put(FILE_BATCH_ERROR, e);
 					jsonLogger.info(jsonRes);
 				}

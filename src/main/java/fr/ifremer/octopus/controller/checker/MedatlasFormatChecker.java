@@ -5,11 +5,10 @@ import java.io.File;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
-import fr.ifremer.octopus.controller.AbstractController;
 import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.sismer_tools.seadatanet.Format;
+import sdn.vocabulary.interfaces.VocabularyException;
 
 
 public class MedatlasFormatChecker extends FormatChecker {
@@ -18,7 +17,8 @@ public class MedatlasFormatChecker extends FormatChecker {
 	@Override
 	public Format check(File f) throws Exception {
 		try {
-			MedatlasInputFileManager mgr = new MedatlasInputFileManager(f.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
+			// use strict check
+			MedatlasInputFileManager mgr = new MedatlasInputFileManager(f.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager(), true);
 			if (mgr.isSDNMedatlas())
 			{
 				return Format.MEDATLAS_SDN;

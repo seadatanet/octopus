@@ -51,11 +51,23 @@ public class SDNVocabs {
 	public CSRListManager getCSRListManager(){
 		return mgr;
 	}
-	public void reload(){
-		try {
-			cf.reload();
-		} catch (VocabularyException e) {
-			LOGGER.error(e.getMessage());
+	public void reload() throws VocabularyException{
+		if(!cf.localDirectoryIsBroken())
+		{
+			try
+			{        
+				cf.reloadDirectory();                                                                               
+			}
+			catch(VocabularyException ve)
+			{
+				System.out.println("ERROR : "+ve.getMessage());
+			}
+		}else {
+			try {
+				cf.reload();
+			} catch (VocabularyException e) {
+				throw e;
+			}
 		}
 	}
 }

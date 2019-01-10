@@ -38,6 +38,7 @@ import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.octopus.view.edmo.EdmoController;
 import fr.ifremer.octopus.view.edmo.EdmoHandler;
+import fr.ifremer.sismer_tools.csr.CSRListManager;
 import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 
@@ -268,7 +269,11 @@ public class PreferencesController {
 
 	@FXML
 	public void updateLists(){
-		bodcLog.clear();
+		try {
+			bodcLog.clear();
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
 
 		Task<Void> task = new Task<Void>(){
 			@Override
@@ -277,14 +282,36 @@ public class PreferencesController {
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
 				disablePane(true);
 
+				// EDMO
 				try{
+					bodcLog.appendText("check EDMO codes"+LINESEP);
 					int before = EdmoManager.getInstance().getEdmoList().size();
 					EdmoManager.getInstance().updateEdmo();
 					int after = EdmoManager.getInstance().getEdmoList().size();
 					bodcLog.appendText(MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after) +LINESEP);
 				}catch(Exception e){
-
+					LOGGER.error(e.getMessage());
+					bodcLog.appendText(e.getMessage() +LINESEP); // TODO msg
 				}
+				// CSR
+				try {
+					bodcLog.appendText("check CSR file"+LINESEP);
+					CSRListManager csrListMgr = SDNVocabs.getInstance().getCSRListManager();
+					String csrVersionBefore = csrListMgr.getVersionNumber() + " "+csrListMgr.getVersionDate();
+					
+					csrListMgr.checkAndDownloadIfNeeded();
+					if (!csrListMgr.isFileUpToDate()) {
+						csrListMgr.update();
+						String csrVersionAfter = csrListMgr.getVersionNumber() + " "+csrListMgr.getVersionDate();
+						bodcLog.appendText("CSR file: "+csrVersionBefore +" -> "+csrVersionAfter+LINESEP);
+					}
+					
+				}catch (Exception e) {
+					LOGGER.error(e.getMessage());
+					bodcLog.appendText("ERROR: CSR check failed. Please check your internet connection."+LINESEP); // TODO msg
+				}
+				
+				// BODC
 				try{
 					String[] vocabsList = {
 							SdnVocabularyManager.LIST_C17, SdnVocabularyManager.LIST_C77,
@@ -400,12 +427,18 @@ public class PreferencesController {
 
 				}catch(Exception e){
 					LOGGER.error(e.getMessage());
-					bodcLog.appendText(e.getMessage()+LINESEP);
+					try {
+						bodcLog.appendText(e.getMessage()+LINESEP);
+					}catch (Exception e1) {
+						// TODO: handle exception
+					}
 				}finally{
 					mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 					disablePane(false);
 				}
-
+				
+				
+//				updateProgress(10 , 10);
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 				disablePane(false);
 

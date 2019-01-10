@@ -13,6 +13,7 @@ import javax.xml.parsers.SAXParserFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import fr.ifremer.octopus.controller.OctopusException;
 import fr.ifremer.octopus.view.edmo.EdmoEntity;
 import fr.ifremer.octopus.view.edmo.EdmoHandler;
 import fr.ifremer.octopus.webservices.ns_ws_edmo.Edmo_webservice;
@@ -55,7 +56,7 @@ public class EdmoManager {
 			LOGGER.error(e.getMessage());
 		}
 	}
-	public static void updateEdmo() {
+	public static void updateEdmo() throws OctopusException {
 		String edmoURL ="http://seadatanet.maris2.nl/ws/ws_edmo.asmx";
 
 		FileOutputStream stream = null;
@@ -88,11 +89,11 @@ public class EdmoManager {
 				
 				LOGGER.debug("edmo codes number: "+ before + " -> "+ after);
 			} else {
-				LOGGER.error("EDMO update failed");
+				throw new OctopusException("ERROR: EDMO update failed.");// TODO msg
 			}
 
 		} catch (Exception exG) {
-			LOGGER.error("EDMO update failed");
+			throw new OctopusException("ERROR: EDMO update failed. Please check your internet connection."); // TODO msg
 		}
 	}
 	public ObservableList<EdmoEntity> getEdmoList() {

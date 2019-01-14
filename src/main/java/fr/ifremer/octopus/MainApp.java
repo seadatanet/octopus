@@ -227,9 +227,9 @@ public class MainApp extends Application {
 		
 		loader.setLocation(getClass().getResource("view/OctopusAbout.fxml"));
 		loader.setResources(ResourceBundle.getBundle("bundles.about", prefsMgr.getLocale()));
-		AnchorPane octopusAbout;
+		BorderPane octopusAbout;
 		try {
-			octopusAbout = (AnchorPane) loader.load();
+			octopusAbout = (BorderPane) loader.load();
 			// Set octopus overview into the center of root layout.
 			rootLayout.setCenter(octopusAbout);
 			// Give the controller access to the main app.

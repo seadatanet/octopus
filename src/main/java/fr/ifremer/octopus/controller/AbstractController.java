@@ -18,6 +18,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import fr.ifremer.medatlas.input.MedatlasInputFileManager;
 import fr.ifremer.octopus.controller.checker.CFPointFormatChecker;
 import fr.ifremer.octopus.controller.checker.FormatChecker;
 import fr.ifremer.octopus.controller.checker.MedatlasFormatChecker;
@@ -36,6 +37,8 @@ import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.view.CdiListManager;
+import fr.ifremer.seadatanet.cfpoint.input.CFReader;
+import fr.ifremer.seadatanet.odv.input.OdvReader;
 import fr.ifremer.sismer_tools.coupling.CouplingRecord;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
@@ -293,8 +296,22 @@ public abstract class AbstractController {
 				jsonLogger.info(jsonRes);
 			}
 			
-			throw new OctopusException("error on input file");
+			throw new OctopusException("Error on input file. Conversion aborted");
 		}
+		
+		Object conv = manager.getConverter();
+		if (conv instanceof MedatlasInputFileManager) {
+			// if the file is invalid, the manager raises an error -> we do not come here			
+		}else if(conv instanceof OdvReader) {
+			// if the file is invalid, the manager raises an error -> we do not come here	
+		}else if(conv instanceof CFReader) {
+			if (((CFReader) conv).getValidator().hasErrors()) {
+				throw new OctopusException("Error on input file. Conversion aborted");
+			}
+		}
+	
+		
+		
 		List<String> cdiToPrint;
 		try {
 			cdiToPrint = getCdiList(manager, in.getAbsolutePath());

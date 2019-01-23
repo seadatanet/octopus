@@ -82,7 +82,9 @@ public class ConvertersManager {
 
 	}
 
-
+	public Object getConverter() {
+		return conv;
+	}
 	public List<String> getInputFileCdiIdList() {
 		switch (inputFormat) {
 		case MEDATLAS_SDN:

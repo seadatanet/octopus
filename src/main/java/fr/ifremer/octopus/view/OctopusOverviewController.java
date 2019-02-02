@@ -475,9 +475,11 @@ public class OctopusOverviewController {
 
 		if (inputOk){
 			Format f = octopusGuiController.getModel().getInputFormat();
-			boolean disableMedatlas = f!=Format.MEDATLAS_SDN && f!=Format.MEDATLAS_NON_SDN ;
-			boolean disableOdv = false;//(f==Format.CFPOINT);
-			boolean disableCfPoint = f==Format.MGD_81 || f==Format.MGD_98; 
+			boolean disableMedatlas = !Format.isConversionAllowed(f, Format.MEDATLAS_SDN);//f!=Format.MEDATLAS_SDN && f!=Format.MEDATLAS_NON_SDN ;
+			boolean disableOdv = !Format.isConversionAllowed(f, Format.ODV_SDN);//(f==Format.CFPOINT);
+			boolean disableCfPoint = !Format.isConversionAllowed(f, Format.CFPOINT);
+			
+			
 			buttonExportMedatlas.disableProperty().setValue(disableMedatlas);
 			buttonExportOdv.disableProperty().setValue(disableOdv);
 			buttonExportCfpoint.disableProperty().setValue(disableCfPoint);

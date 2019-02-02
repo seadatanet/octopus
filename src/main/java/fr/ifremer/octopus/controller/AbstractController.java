@@ -714,7 +714,7 @@ public abstract class AbstractController {
 		}
 		
 		if (inputFormat==Format.MEDATLAS_NON_SDN) {
-			LOGGER.error("Format is Medatlas but is not SeaDataNet compliant (metadata missing). this format is invalid for Octopus.");
+			LOGGER.error("Format is Medatlas but is not SeaDataNet compliant (metadata missing). This format is invalid for Octopus. Please convert the file using Octopus to update it in a SeaDataNet compliant format.");
 			result = false;
 		}
 		return result;

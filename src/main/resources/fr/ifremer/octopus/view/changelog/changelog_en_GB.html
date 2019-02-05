@@ -15,6 +15,26 @@ h5   {color: #6c3390;}
 <body>
 
 <h2>Change log</h2>
+<h4>Version 1.4.2 - 2019/02/05</h4>
+	<h5>Corrections</h5>
+	<ul>
+		<li>fix error if medatlas file has a last empty line</li>
+		<li>NetCDF SDN: update global attribute 'title' :replace SeaDataNet_1.0 CF 1.6’ with 'SeaDataNet_1.0 CF-1.6’</li>
+ 	</ul>
+ 	<h5>Adds-on</h5>
+ 	<ul>
+ 		<li>Compliance with java 9 and 10</li>
+ 		<li>Check consistency between values and quality flags</li>
+ 		<li>Check consider as valid timeseries ODV files with a P02 ASLV parameter instead of depth </li>
+ 		<li>Homogenisation of the default value for measured parameters in NetCDF SDN (-99999) </li>
+ 		<li>Allow SDN CSR references using the central catalog</li>
+ 		<li>Non SDN Medatlas files are recognized but considered as invalid (can be converted)</li>
+ 		<li>Conversion from Medatlas: the SDN CSR reference is automatically added from EDMO code and cruise reference, if possible</li>
+ 		<li>All conversions: non-mandatory variables are not kept if they are empty (with only default values)</li>
+ 		<li>Conversion to ODV: an error is raises if one of the mandatory columns has missing value(s)</li>
+ 		<li>Update SDN QC flags: add 'Q' flag</li>
+ 		<li>JSON log: format added in files logs</li>
+	</ul>
 
 <h4>Version 1.4.1 - 2018/06/12</h4>
 

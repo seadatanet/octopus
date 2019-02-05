@@ -14,7 +14,29 @@ h5   {color: #6c3390;}
 
 <body>
 <h2>Journal des modifications</h2>
+<h4>Version 1.4.2 - 2019/02/05</h4>
 
+	<h5>Corrections</h5>
+	<ul>
+		<li>correction d'une erreur dans le cas o&#249; un fichier medatlas contient une derni&#232;re ligne vide</li>
+		<li>NetCDF SDN: Mise &#224; jour de l'attribut global 'title' :replacement de SeaDataNet_1.0 CF 1.6’ par 'SeaDataNet_1.0 CF-1.6’</li>
+ 	</ul>
+ 	
+ 	<h5>Adds-on</h5>
+ 	<ul>
+ 		<li>Conformit&eacute; avec java 9 et 10</li>
+ 		<li>v&eacute;rification de la coh&eacute;rence des valeurs avec les flags qualit&eacute;</li>
+ 		<li>la validation consid&#232;re comme valide les s&eacute;ries temporelles ODV contenant un param&#232;tre P02 ASLV &#224; la place d'un AHGT</li>
+ 		<li>homog&eacute;n&eacute;isation de la valeur par d&eacute;faut pour les param&#232;tres mesur&eacute;s en NetCDF SDN (-99999) </li>
+ 		<li>Autoriser les r&eacute;f&eacute;rences CSR utilisant le catalogue central</li>
+ 		<li>Les fichiers Medatlas non SDN sont reconnus mais consid&eacute;r&eacute;s comme invalides (peuvent être convertis)</li>
+ 		<li>Conversion depuis Medatlas: la r&eacute;f&eacute;rence SDN CSR est automatiquement ajout&eacute;e &#224; partir du code EDMO et de la r&eacute;f&eacute;rence campagne, si possible</li>
+ 		<li>Toutes conversions: les variables non obligatoires sont supprim&eacute;es si elles ne contiennent aucune donn&eacute;e (valeurs par d&eacute;faut uniquement)</li>
+ 		<li>Conversion vers ODV: une erreur est lev&eacute;e si une des colonnes obligatoires contient une (des) valeur(s) vide(s)</li>
+ 		<li>Mise &#224; jour des flags qualit&eacute; SDN: ajout du flag 'Q'</li>
+ 		<li>Log JSON: ajout du format dans les logs fichier</li>
+	</ul>
+	
 <h4>Version 1.4.1 - 2018/06/12</h4>
 
 	<h5>Corrections</h5>

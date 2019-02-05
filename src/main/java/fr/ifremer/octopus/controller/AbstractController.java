@@ -690,13 +690,18 @@ public abstract class AbstractController {
 			try{
 				LOGGER.info("check file: "+ in.getName());
 				inputFormat = checker.check (in);
-				LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.formatIsValid"), inputFormat.getName()));
-				if (jsonLogger!=null){
-					jsonRes.put(FILE_BATCH_SUCCESS, true);
-					jsonRes.put(FILE_BATCH_NAME,in.getName());
-					jsonRes.put(FILE_BATCH_FORMAT,inputFormat);
-					jsonRes.put(FILE_BATCH_ERROR, "");
-					jsonLogger.info(jsonRes);
+
+				if (inputFormat==Format.MEDATLAS_NON_SDN){
+					throw new OctopusException("MEDATLAS non SDN is not SDN compliant");
+				}else{
+					LOGGER.info(MessageFormat.format(messages.getString("abstractcontroller.formatIsValid"), inputFormat.getName()));
+					if (jsonLogger!=null){
+						jsonRes.put(FILE_BATCH_SUCCESS, true);
+						jsonRes.put(FILE_BATCH_NAME,in.getName());
+						jsonRes.put(FILE_BATCH_FORMAT,inputFormat);
+						jsonRes.put(FILE_BATCH_ERROR, "");
+						jsonLogger.info(jsonRes);
+					}
 				}
 			}catch(Exception e){
 				LOGGER.error(

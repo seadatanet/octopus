@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
@@ -17,8 +18,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<url>http://wwz.ifremer.fr/</url>
 	</organization>
 
-
-
 	<developers>
 		<developer>
 			<id>BGT</id>
@@ -29,10 +28,11 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<role>developer</role>
 			</roles>
 		</developer>
-
 	</developers>
+
 	<build>
 		<plugins>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -43,9 +43,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</configuration>
 			</plugin>
 
-
 			<!-- ===================================== ASSEMBLY =========================================== -->
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
@@ -74,7 +72,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</executions>
 			</plugin>
 
-
 			<!-- ===================================== JAVADOC =========================================== -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -95,7 +92,9 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
+
 			<!-- ===================================== COPY RESOURCES =========================================== -->
+			<!-- Linux without JRE -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
@@ -117,6 +116,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
+
+			<!-- Windows without JRE -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
@@ -138,13 +139,58 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
-			<!-- 
+
+			<!-- Linux with JRE -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
 				<executions>
 					<execution>
-						<id>copy-resource-win32s</id>
+						<id>copy-resources-linux32</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrableLinux32/octopus/resources</outputDirectory>
+							<resources>
+								<resource>
+									<directory>resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-resources-linux64</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrableLinux64/octopus/resources</outputDirectory>
+							<resources>
+								<resource>
+									<directory>resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- Windows with JRE -->
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-resource-win32</id>
 						<phase>install</phase>
 						<goals>
 							<goal>copy-resources</goal>
@@ -165,7 +211,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<version>2.7</version>
 				<executions>
 					<execution>
-						<id>copy-resources-win64</id>
+						<id>copy-resource-win64</id>
 						<phase>install</phase>
 						<goals>
 							<goal>copy-resources</goal>
@@ -181,8 +227,21 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
-			 -->
-				<!-- ===================================== COPY AND RENAME JAR =========================================== -->
+
+
+			<!-- <plugin> <artifactId>maven-resources-plugin</artifactId> <version>2.7</version> 
+				<executions> <execution> <id>copy-resource-win32s</id> <phase>install</phase> 
+				<goals> <goal>copy-resources</goal> </goals> <configuration> <outputDirectory>${basedir}/target/livrableWin32/octopus/resources</outputDirectory> 
+				<resources> <resource> <directory>resources</directory> </resource> </resources> 
+				</configuration> </execution> </executions> </plugin> <plugin> <artifactId>maven-resources-plugin</artifactId> 
+				<version>2.7</version> <executions> <execution> <id>copy-resources-win64</id> 
+				<phase>install</phase> <goals> <goal>copy-resources</goal> </goals> <configuration> 
+				<outputDirectory>${basedir}/target/livrableWin64/octopus/resources</outputDirectory> 
+				<resources> <resource> <directory>resources</directory> </resource> </resources> 
+				</configuration> </execution> </executions> </plugin> -->
+
+			<!-- ===================================== COPY AND RENAME JAR =========================================== -->
+			<!-- Linux without JRE -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -201,7 +260,9 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
-				<plugin>
+
+			<!-- Windows without JRE -->
+			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
 				<version>1.0</version>
@@ -219,7 +280,46 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
-			<!-- 
+
+			<!-- Linux with JRE -->
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-jar-linux32</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<destinationFile>target/livrableLinux32/octopus/octopus.jar</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-jar-linux64</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<destinationFile>target/livrableLinux64/octopus/octopus.jar</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- Windows with JRE -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -256,9 +356,22 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
-			 -->
-	<!-- ===================================== COPY EXE =========================================== -->
-	<plugin>
+
+
+			<!-- <plugin> <groupId>com.coderplus.maven.plugins</groupId> <artifactId>copy-rename-maven-plugin</artifactId> 
+				<version>1.0</version> <executions> <execution> <id>copy-jar-win32</id> <phase>install</phase> 
+				<goals> <goal>copy</goal> </goals> <configuration> <sourceFile>target/octopus-maven.jar</sourceFile> 
+				<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile> 
+				</configuration> </execution> </executions> </plugin> <plugin> <groupId>com.coderplus.maven.plugins</groupId> 
+				<artifactId>copy-rename-maven-plugin</artifactId> <version>1.0</version> 
+				<executions> <execution> <id>copy-jar-win64</id> <phase>install</phase> <goals> 
+				<goal>copy</goal> </goals> <configuration> <sourceFile>target/octopus-maven.jar</sourceFile> 
+				<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile> 
+				</configuration> </execution> </executions> </plugin> -->
+
+			<!-- ===================================== COPY EXE OR SH =========================================== -->
+			<!-- Windows without JRE -->
+			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
 				<version>1.0</version>
@@ -273,7 +386,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<sourceFile>build/octopus.exe</sourceFile>
 							<destinationFile>target/livrableWin/octopus/octopus.exe</destinationFile>
 						</configuration>
-						
+
 					</execution>
 				</executions>
 			</plugin>
@@ -295,6 +408,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
+
+			<!-- Linux without JRE -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -331,52 +446,218 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
+
+			<!-- Windows with JRE -->
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-exe-win32</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>build/windows/octopus_win32.exe</sourceFile>
+							<destinationFile>target/livrableWin32/octopus/octopus.exe</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-exe-win64</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>build/windows/octopus_win32.exe</sourceFile>
+							<destinationFile>target/livrableWin64/octopus/octopus.exe</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- Linux with JRE -->
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-exe-linux32</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>build/octopus.sh</sourceFile>
+							<destinationFile>target/livrableLinux32/octopus/octopus.sh</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.coderplus.maven.plugins</groupId>
+				<artifactId>copy-rename-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>copy-exe-linux64</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<sourceFile>build/octopus.sh</sourceFile>
+							<destinationFile>target/livrableLinux64/octopus/octopus.sh</destinationFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- ===================================== COPY JREs =========================================== -->
+
+			<!-- Windows -->
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-jre-win32</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrableWin32/octopus/jre</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/build/JREs/windows/32bits</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-jre-win64</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrableWin64/octopus/jre</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/build/JREs/windows/64bits</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- Linux -->
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-jre-linux32</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrableLinux32/octopus/jre</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/build/JREs/linux/32bits</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-jre-linux64</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/livrableLinux64/octopus/jre</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/build/JREs/linux/64bits</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
-		
 	</build>
 
-
 	<dependencies>
+
 		<!-- ************************* IFREMER ************************* -->
-
-
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
 			<version>0.18</version>
-<!-- 			<classifier>jar-with-dependencies</classifier> -->
-<exclusions>
-						<exclusion>
-						<groupId>org.slf4j</groupId>
-						<artifactId>slf4j-api</artifactId>
-					</exclusion>
-					</exclusions>
+			<!-- <classifier>jar-with-dependencies</classifier> -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>fr.ifremer</groupId>
 			<artifactId>mgd</artifactId>
-			<version>1.6-SNAPSHOT</version>
+			<version>1.6</version>
 		</dependency>
-		
-			 <!-- http://www.ifremer.fr/isi/softwareversion/ -> to be installed in a maven repository -->
+
+		<!-- http://www.ifremer.fr/isi/softwareversion/ -> to be installed in a 
+			maven repository -->
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
-  			<artifactId>SoftwareVersionApi</artifactId>
-  			<version>1.0</version>
+			<artifactId>SoftwareVersionApi</artifactId>
+			<version>1.0</version>
 		</dependency>
 
 		<!-- ************************* ****** ************************* -->
 		<dependency>
-  			<groupId>org.apache.any23</groupId>
-  			<artifactId>apache-any23-encoding</artifactId>
-  			<version>1.1</version>
-  			<exclusions>
-						<exclusion>
-						<groupId>org.slf4j</groupId>
-						<artifactId>slf4j-api</artifactId>
-					</exclusion>
-					</exclusions>
+			<groupId>org.apache.any23</groupId>
+			<artifactId>apache-any23-encoding</artifactId>
+			<version>1.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.derby</groupId>
@@ -408,8 +689,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<artifactId>wsdl4j</artifactId>
 			<version>1.6.3</version>
 		</dependency>
-		<!-- Apache Commons -->
 
+		<!-- Apache Commons -->
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
@@ -426,9 +707,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<version>2.4</version>
 		</dependency>
 
-
 		<!-- Logging -->
-
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
@@ -440,8 +719,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<version>2.8.2</version>
 		</dependency>
 
-
-
 		<!-- junit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -450,20 +727,18 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		</dependency>
 
 
-<dependency>
-	<groupId>javax.activation</groupId>
-	<artifactId>activation</artifactId>
-	<version>1.1.1</version>
-</dependency>
-<dependency>
-	<groupId>com.sun.mail</groupId>
-	<artifactId>javax.mail</artifactId>
-	<version>1.5.5</version>
-</dependency>
-
-
-
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.5.5</version>
+		</dependency>
 	</dependencies>
+
 	<profiles>
 		<!-- IFREMER (default) -->
 		<profile>
@@ -506,12 +781,11 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</distributionManagement>
 		</profile>
 
-
-	<!-- ALTRAN -->
+		<!-- ALTRAN -->
 		<profile>
 			<id>altran</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<activeByDefault>false</activeByDefault>
 			</activation>
 
 			<repositories>
@@ -572,16 +846,14 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<snapshotRepository>
 					<id>NexusAltranSnapshot</id>
 					<name>ifremer-snapshot</name>
-						<url>http://10.1.96.245:8081/repository/maven-snapshots/</url>
+					<url>http://10.1.96.245:8081/repository/maven-snapshots/</url>
 				</snapshotRepository>
-				
-				
+
+
 			</distributionManagement>
 		</profile>
-
 	</profiles>
 	<url>https://www.seadatanet.org/Software/OCTOPUS</url>
-	<ciManagement>
-		<url>http://10.1.96.214:8080/view/sismer/job/octopus/</url>
-	</ciManagement>
+	<!-- <ciManagement> <url>http://10.1.96.214:8080/view/sismer/job/octopus/</url> 
+		</ciManagement> -->
 </project>

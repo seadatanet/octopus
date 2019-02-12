@@ -40,10 +40,10 @@
 
 	<Loggers>
 <!-- 	default level is INFO -->
-		<Root level="DEBUG">
+		<Root level="INFO">
 <!--             <AppenderRef ref="JavaFXLogger"/> -->
-			<AppenderRef ref="Console" level="DEBUG" />
-			<AppenderRef ref="RollingFile" level="DEBUG" />
+			<AppenderRef ref="Console" level="INFO" />
+			<AppenderRef ref="RollingFile" level="INFO" />
 			
 		</Root>
 		  <Logger name="JSON_FILE_APPENDER" level="INFO"  additivity="false">

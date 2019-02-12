@@ -57,7 +57,11 @@ public class LoggerConsoleControllerLight {
 	        LoggerConfig loggerConfig = loggerConfiguration.getLoggerConfig(LogManager.ROOT_LOGGER_NAME);
 	        /* ChoiceBox füllen */
 	        for (Level level : Level.values()) {
-	            choiceBoxLogLevel.getItems().add(level);
+	        	
+	        	// OFF is unnecessary
+	            if (level != Level.OFF) {
+					choiceBoxLogLevel.getItems().add(level);
+				}
 	        }
 	        /* Aktuellen LogLevel in der ChoiceBox als Auswahl setzen */
 	        choiceBoxLogLevel.getSelectionModel().select(loggerConfig.getLevel());

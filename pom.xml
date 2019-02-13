@@ -30,6 +30,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		</developer>
 	</developers>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
+	</properties>
+
 	<build>
 		<plugins>
 
@@ -540,7 +546,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<outputDirectory>${basedir}/target/livrableWin32/octopus/jre</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${basedir}/build/JREs/windows/32bits</directory>
+									<directory>${jrepath}/windows/32bits</directory>
 								</resource>
 							</resources>
 						</configuration>
@@ -562,7 +568,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<outputDirectory>${basedir}/target/livrableWin64/octopus/jre</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${basedir}/build/JREs/windows/64bits</directory>
+									<directory>${jrepath}/windows/64bits</directory>
 								</resource>
 							</resources>
 						</configuration>
@@ -585,7 +591,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<outputDirectory>${basedir}/target/livrableLinux32/octopus/jre</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${basedir}/build/JREs/linux/32bits</directory>
+									<directory>${jrepath}/linux/32bits</directory>
 								</resource>
 							</resources>
 						</configuration>
@@ -607,7 +613,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<outputDirectory>${basedir}/target/livrableLinux64/octopus/jre</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${basedir}/build/JREs/linux/64bits</directory>
+									<directory>${jrepath}/linux/64bits</directory>
 								</resource>
 							</resources>
 						</configuration>
@@ -746,6 +752,9 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<activation>
 				<activeByDefault>false</activeByDefault>
 			</activation>
+			<properties>
+				<jrepath>${basedir}/build/JREs</jrepath>
+			</properties>
 			<repositories>
 				<!-- not reachable from outside ifremer -->
 				<repository>
@@ -787,7 +796,9 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<activation>
 				<activeByDefault>false</activeByDefault>
 			</activation>
-
+			<properties>
+				<jrepath>${basedir}/build/JREs</jrepath>
+			</properties>
 			<repositories>
 				<repository>
 					<id>NexusAltranSnapshot</id>

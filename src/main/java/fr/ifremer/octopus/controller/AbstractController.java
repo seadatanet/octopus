@@ -622,8 +622,14 @@ public abstract class AbstractController {
 		// depth = 1, because we do not read sub directories (and causes errors with svn)
 		Files.walkFileTree(Paths.get(inputPath.getAbsolutePath()),  EnumSet.noneOf(FileVisitOption.class), 1, fileProcessor);
 		String firstFile = fileProcessor.getFirstFile();
-		Format format = getFormat(firstFile);
-		return format;
+		//SVO 45783 
+		if (firstFile ==null) {
+			throw new IOException("Directory empty");
+		}
+		else {
+			Format format = getFormat(firstFile);			
+			return format;
+		}
 
 	}
 

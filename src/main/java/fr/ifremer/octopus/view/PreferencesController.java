@@ -191,9 +191,16 @@ public class PreferencesController {
 		PreferencesManager.getInstance().setLocale(newValue);
 		PreferencesManager.getInstance().save();
 		try {
+			// get window size before reload all
+			double h = mainApp.getPrimaryStage().getHeight();
+			double w = mainApp.getPrimaryStage().getWidth();
 			mainApp.initRootLayout();
 			mainApp.showRootLayout();
 			mainApp.showPreferences();
+			
+			// set window size at it was before language change
+			 mainApp.getPrimaryStage().setHeight(h);
+			 mainApp.getPrimaryStage().setWidth(w);
 		} catch (IOException e) {
 			LOGGER.error(e.getMessage());
 		}

@@ -8,13 +8,39 @@ Les fichiers executables (`.sh` pour Linux et `.exe` pour Windows) sont génér�
 - manuellement pour les `.sh`
 - avec Launch4j pour les `.exe`
 
-Les nouveaux livrables sont conçus pour embarquer leur propre JRE. On génère donc un livrable par OS et par architecture (32 / 64 bits).
+Les nouveaux livrables sont conçus pour embarquer leur propre JRE 8. On génère donc un livrable par OS et par architecture (32 / 64 bits).
 
 Répertoires générés :
 - livrableWin32
 - livrableWin64
 - livrableLinux32
 - livrableLinux64
+
+Le serveur de livraison doit donc posséder toutes les versions nécessaires de la JRE :
+
+Version : Java 8 u201
+
+Architectures :
+- Windows 32 bits
+- Windows 64 bits
+- Linux 32 bits
+- Linux 64 bits
+
+Ces 4 versions distinctes doivent être dézippées et stockées sous une certaine arborescence :
+
+```tree
+[Chemin racine des JRE]
+├───linux
+│   ├───32bits
+│   │   └───[Fichiers de jre-8u201-linux-i586]
+│   └───64bits
+│       └───[Fichiers de jre-8u201-linux-x64]
+└───windows
+    ├───32bits
+    │   └───[Fichiers de jre-8u201-windows-i586]
+    └───64bits
+        └───[Fichiers de jre-8u201-windows-x64]
+```
 
 Les confs et artefacts de Launch4j sont situés dans le répertoire `/build/windows/` du projet.
 

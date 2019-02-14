@@ -27,25 +27,27 @@ public class EdmoManager {
 	private static ObservableList<EdmoEntity> edmoList;
 	private static EdmoManager instance;
 
-
-	public static EdmoManager getInstance(){
-		if (instance==null){
+	public static EdmoManager getInstance() {
+		if (instance == null) {
 			instance = new EdmoManager();
 		}
 		return instance;
 	}
+
 	private EdmoManager() {
 		initEdmo();
 		loadEdmo();
 	}
-	private static void loadEdmo(){
+
+	private static void loadEdmo() {
 
 		edmoList = FXCollections.observableArrayList();
-		for (EdmoEntity edmoEntity: EdmoHandler.getEdmoList().values()){
+		for (EdmoEntity edmoEntity : EdmoHandler.getEdmoList().values()) {
 			edmoList.add(edmoEntity);
 		}
 
 	}
+
 	private static void initEdmo() {
 		try {
 
@@ -56,13 +58,14 @@ public class EdmoManager {
 			LOGGER.error(e.getMessage());
 		}
 	}
+
 	public static void updateEdmo() throws OctopusException {
-		String edmoURL ="http://seadatanet.maris2.nl/ws/ws_edmo.asmx";
+		String edmoURL = "http://seadatanet.maris2.nl/ws/ws_edmo.asmx";
 
 		FileOutputStream stream = null;
 		String result = "";
 		int before = edmoList.size();
-		int after=-1;
+		int after = -1;
 
 		try {
 			// Appel au WebService
@@ -82,12 +85,12 @@ public class EdmoManager {
 				osw.close();
 
 				// stockage des valeurs dans l'objet
-				//				nbEdmo =
+				// nbEdmo =
 				initEdmo();
 				loadEdmo();
-				after=edmoList.size();
-				
-				LOGGER.debug("edmo codes number: "+ before + " -> "+ after);
+				after = edmoList.size();
+
+				LOGGER.debug("edmo codes number: " + before + " -> " + after);
 			} else {
 				throw new OctopusException("ERROR: EDMO update failed.");// TODO msg
 			}
@@ -96,6 +99,7 @@ public class EdmoManager {
 			throw new OctopusException("ERROR: EDMO update failed. Please check your internet connection."); // TODO msg
 		}
 	}
+
 	public ObservableList<EdmoEntity> getEdmoList() {
 		return edmoList;
 	}

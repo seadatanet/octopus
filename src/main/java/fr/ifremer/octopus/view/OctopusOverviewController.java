@@ -519,8 +519,15 @@ public class OctopusOverviewController {
 	}
 	@FXML
 	public void checkedMono(){
-		outputPathTextField.setText("");
+		//SVO 45749
+		//outputPathTextField.setText("");
+		String outputDirDefaultPath = PreferencesManager.getInstance().getOutputDefaultPath();
+		if (outputDirDefaultPath!=null && !outputDirDefaultPath.isEmpty() ){
+			outputPathTextField.setText(outputDirDefaultPath);
+		}
+
 	}
+	
 	@FXML
 	public void checkedMulti(){
 		//		outputPathTextField.setText("");

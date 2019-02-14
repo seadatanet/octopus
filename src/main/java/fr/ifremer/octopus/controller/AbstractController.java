@@ -624,7 +624,7 @@ public abstract class AbstractController {
 		String firstFile = fileProcessor.getFirstFile();
 		//SVO 45783 
 		if (firstFile ==null) {
-			throw new IOException("Directory empty");
+			throw new IOException(messages.getString("abstractcontroller.emptyinputdirectory"));
 		}
 		else {
 			Format format = getFormat(firstFile);			

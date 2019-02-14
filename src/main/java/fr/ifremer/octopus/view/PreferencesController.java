@@ -41,8 +41,6 @@ import fr.ifremer.octopus.view.edmo.EdmoHandler;
 import fr.ifremer.sismer_tools.csr.CSRListManager;
 import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
-
-
 public class PreferencesController {
 	static final Logger LOGGER = LogManager.getLogger(PreferencesController.class.getName());
 
@@ -60,7 +58,7 @@ public class PreferencesController {
 	private ChoiceBox<String> themeChoiceBox;
 	@FXML
 	private Button edmoChoiceButton;
-	@FXML 
+	@FXML
 	private Label edmoCodeValue;
 	@FXML
 	private VBox directoriesBox;
@@ -76,52 +74,44 @@ public class PreferencesController {
 	private CheckBox couplingCheck;
 	@FXML
 	private TextArea bodcLog;
-	@FXML 
+	@FXML
 	private ProgressBar progress;
 	@FXML
 	private Button closeButton;
 
+	private static int nonPresent_bodc = -1;
 
-	private static int nonPresent_bodc=-1;
 	@FXML
 	private void initialize() {
 		messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
 
 		// LANGUAGE
-		ResourceBundle bundle =
-				ResourceBundle.getBundle("bundles.preferences", 
-						PreferencesManager.getInstance().getLocale());
+		ResourceBundle bundle = ResourceBundle.getBundle("bundles.preferences", PreferencesManager.getInstance().getLocale());
 		languageChoiceBox.getItems().add("fr");
 		languageChoiceBox.getItems().add("uk");
-
 
 		// theme order is important: same order as in fr.ifremer.octopus.utils.PreferencesManager.getThemeFileName(int)
 		themeChoiceBox.getItems().add("white");
 		themeChoiceBox.getItems().add("octopus");
 //		themeChoiceBox.getItems().add("whitePixel"); // 35086: whitePixel profile only for debug
 
-
-		int index=0;
-		if (PreferencesManager.getInstance().getLocale()== PreferencesManager.LOCALE_FR){
-			index=0;
-		}else{
-			index=1;
+		int index = 0;
+		if (PreferencesManager.getInstance().getLocale() == PreferencesManager.LOCALE_FR) {
+			index = 0;
+		} else {
+			index = 1;
 		}
 		languageChoiceBox.getSelectionModel().select(index);
 
-
 		// add listener AFTER first select
-		languageChoiceBox.valueProperty().addListener((observable, oldValue, newValue) ->
-		updateLanguage(newValue));
+		languageChoiceBox.valueProperty().addListener((observable, oldValue, newValue) -> updateLanguage(newValue));
 
-		//theme
+		// theme
 		themeChoiceBox.getSelectionModel().select(PreferencesManager.getInstance().getTheme());
 		// add listener AFTER first select
-		themeChoiceBox.valueProperty().addListener((observable, oldValue, newValue) ->
-		updateTheme(themeChoiceBox.getSelectionModel().getSelectedIndex()));
+		themeChoiceBox.valueProperty().addListener((observable, oldValue, newValue) -> updateTheme(themeChoiceBox.getSelectionModel().getSelectedIndex()));
 
-
-		// 	edmo
+		// edmo
 		// call manager to create instance and init EDMO list
 		EdmoManager.getInstance();
 		updateEdmoText();
@@ -133,20 +123,22 @@ public class PreferencesController {
 		couplingCheck.setSelected(PreferencesManager.getInstance().isCouplingEnabled());
 		couplingPrefix.setText(PreferencesManager.getInstance().getCouplingPrefix());
 
-
 	}
-	public void updateEdmoText(){
-		String edmo=PreferencesManager.getInstance().getEdmoCode();
-		if (!edmo.isEmpty()){
+
+	public void updateEdmoText() {
+		String edmo = PreferencesManager.getInstance().getEdmoCode();
+		if (!edmo.isEmpty()) {
 			int edmo_code = Integer.valueOf(PreferencesManager.getInstance().getEdmoCode());
 			String edmo_name = EdmoHandler.getEdmoName(edmo_code);
-			edmoCodeValue.setText(edmo_code + " - "+edmo_name);
+			edmoCodeValue.setText(edmo_code + " - " + edmo_name);
 		}
 
 	}
-	public void updateEdmoText(Integer edmo_code, String edmo_name){
-		edmoCodeValue.setText(edmo_code + " - "+edmo_name);
+
+	public void updateEdmoText(Integer edmo_code, String edmo_name) {
+		edmoCodeValue.setText(edmo_code + " - " + edmo_name);
 	}
+
 	/**
 	 * Is called by the main application to give a reference back to itself.
 	 * 
@@ -155,7 +147,6 @@ public class PreferencesController {
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
 	}
-
 
 	@FXML
 	public void showEdmo() {
@@ -178,16 +169,17 @@ public class PreferencesController {
 
 	}
 
-	public void setEdmoLabelValue(String value){
+	public void setEdmoLabelValue(String value) {
 
 		edmoCodeValue.setText(value);
 	}
 
 	/**
 	 * called when user changes language in the languageChoiceBox
+	 * 
 	 * @param newValue
 	 */
-	private void updateLanguage(String newValue){
+	private void updateLanguage(String newValue) {
 		PreferencesManager.getInstance().setLocale(newValue);
 		PreferencesManager.getInstance().save();
 		try {
@@ -197,22 +189,20 @@ public class PreferencesController {
 			mainApp.initRootLayout();
 			mainApp.showRootLayout();
 			mainApp.showPreferences();
-			
+
 			// set window size at it was before language change
-			 mainApp.getPrimaryStage().setHeight(h);
-			 mainApp.getPrimaryStage().setWidth(w);
+			mainApp.getPrimaryStage().setHeight(h);
+			mainApp.getPrimaryStage().setWidth(w);
 		} catch (IOException e) {
 			LOGGER.error(e.getMessage());
 		}
 		mainApp.initOverview();
 	}
-	private void updateTheme (int newValue){
-		PreferencesManager.getInstance().setTheme(newValue);
-		LOGGER.debug("theme "+newValue+":"+ PreferencesManager.getInstance().getThemeFileName(newValue));
-		mainApp.getPrimaryStage().getScene().getStylesheets()
-		.add(getClass().getResource(PreferencesManager.getInstance().getThemeFileName(newValue))
-				.toExternalForm());
 
+	private void updateTheme(int newValue) {
+		PreferencesManager.getInstance().setTheme(newValue);
+		LOGGER.debug("theme " + newValue + ":" + PreferencesManager.getInstance().getThemeFileName(newValue));
+		mainApp.getPrimaryStage().getScene().getStylesheets().add(getClass().getResource(PreferencesManager.getInstance().getThemeFileName(newValue)).toExternalForm());
 
 		PreferencesManager.getInstance().save();
 		try {
@@ -227,13 +217,14 @@ public class PreferencesController {
 	}
 
 	@FXML
-	private void closePreferences(){
+	private void closePreferences() {
 		mainApp.setCenterOverview();
 	}
+
 	@FXML
-	public void browseIn(){
+	public void browseIn() {
 		DirectoryChooser dirChooser = new DirectoryChooser();
-		dirChooser.setTitle(messages.getString("preferences.chooseDirectory")); 
+		dirChooser.setTitle(messages.getString("preferences.chooseDirectory"));
 		File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
 		if (selectedFile != null) {
 			inputDefault.setText(selectedFile.getAbsolutePath());
@@ -241,10 +232,11 @@ public class PreferencesController {
 			PreferencesManager.getInstance().save();
 		}
 	}
+
 	@FXML
-	public void browseOut(){
+	public void browseOut() {
 		DirectoryChooser dirChooser = new DirectoryChooser();
-		dirChooser.setTitle(messages.getString("preferences.chooseDirectory")); 
+		dirChooser.setTitle(messages.getString("preferences.chooseDirectory"));
 		File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
 		if (selectedFile != null) {
 			outputDefault.setText(selectedFile.getAbsolutePath());
@@ -254,9 +246,9 @@ public class PreferencesController {
 	}
 
 	@FXML
-	public void browseCouplingPrefix(){
+	public void browseCouplingPrefix() {
 		DirectoryChooser dirChooser = new DirectoryChooser();
-		dirChooser.setTitle(messages.getString("preferences.chooseDirectory")); 
+		dirChooser.setTitle(messages.getString("preferences.chooseDirectory"));
 		File selectedFile = dirChooser.showDialog(mainApp.getPrimaryStage());
 		if (selectedFile != null) {
 			couplingPrefix.setText(selectedFile.getAbsolutePath());
@@ -264,7 +256,8 @@ public class PreferencesController {
 			PreferencesManager.getInstance().save();
 		}
 	}
-	private void disablePane(boolean disable){
+
+	private void disablePane(boolean disable) {
 		languageBox.setDisable(disable);
 		languageChoiceBox.setDisable(disable);
 		themeChoiceBox.setDisable(disable);
@@ -275,211 +268,199 @@ public class PreferencesController {
 	}
 
 	@FXML
-	public void updateLists(){
+	public void updateLists() {
 		try {
 			bodcLog.clear();
-		}catch (Exception e) {
+		} catch (Exception e) {
 			// TODO: handle exception
 		}
 
-		Task<Void> task = new Task<Void>(){
+		Task<Void> task = new Task<Void>() {
 			@Override
-			public Void call(){
-				String LINESEP=System.getProperty("line.separator");
+			public Void call() {
+				String LINESEP = System.getProperty("line.separator");
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
 				disablePane(true);
 
 				// EDMO
-				try{
-					bodcLog.appendText("check EDMO codes"+LINESEP);
+				try {
+					bodcLog.appendText("check EDMO codes" + LINESEP);
 					int before = EdmoManager.getInstance().getEdmoList().size();
 					EdmoManager.getInstance().updateEdmo();
 					int after = EdmoManager.getInstance().getEdmoList().size();
-					bodcLog.appendText(MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after) +LINESEP);
-				}catch(Exception e){
+					bodcLog.appendText(MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after) + LINESEP);
+				} catch (Exception e) {
 					LOGGER.error(e.getMessage());
-					bodcLog.appendText(e.getMessage() +LINESEP); // TODO msg
+					bodcLog.appendText(e.getMessage() + LINESEP); // TODO msg
 				}
 				// CSR
 				try {
-					bodcLog.appendText("check CSR file"+LINESEP);
+					bodcLog.appendText("check CSR file" + LINESEP);
 					CSRListManager csrListMgr = SDNVocabs.getInstance().getCSRListManager();
-					String csrVersionBefore = csrListMgr.getVersionNumber() + " "+csrListMgr.getVersionDate();
-					
+					String csrVersionBefore = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
+
 					csrListMgr.checkAndDownloadIfNeeded();
 					if (!csrListMgr.isFileUpToDate()) {
 						csrListMgr.update();
-						String csrVersionAfter = csrListMgr.getVersionNumber() + " "+csrListMgr.getVersionDate();
-						bodcLog.appendText("CSR file: "+csrVersionBefore +" -> "+csrVersionAfter+LINESEP);
+						String csrVersionAfter = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
+						bodcLog.appendText("CSR file: " + csrVersionBefore + " -> " + csrVersionAfter + LINESEP);
 					}
-					
-				}catch (Exception e) {
+
+				} catch (Exception e) {
 					LOGGER.error(e.getMessage());
-					bodcLog.appendText("ERROR: CSR check failed. Please check your internet connection."+LINESEP); // TODO msg
+					bodcLog.appendText("ERROR: CSR check failed. Please check your internet connection." + LINESEP); // TODO msg
 				}
-				
+
 				// BODC
-				try{
-					String[] vocabsList = {
-							SdnVocabularyManager.LIST_C17, SdnVocabularyManager.LIST_C77,
-							SdnVocabularyManager.LIST_L05,
-							SdnVocabularyManager.LIST_L22, SdnVocabularyManager.LIST_L23, SdnVocabularyManager.LIST_L33,
-							SdnVocabularyManager.LIST_P01, SdnVocabularyManager.LIST_P02, SdnVocabularyManager.LIST_P06, SdnVocabularyManager.LIST_P09
-							};
-					
+				try {
+					String[] vocabsList = { SdnVocabularyManager.LIST_C17, SdnVocabularyManager.LIST_C77, SdnVocabularyManager.LIST_L05, SdnVocabularyManager.LIST_L22, SdnVocabularyManager.LIST_L23, SdnVocabularyManager.LIST_L33, SdnVocabularyManager.LIST_P01, SdnVocabularyManager.LIST_P02, SdnVocabularyManager.LIST_P06, SdnVocabularyManager.LIST_P09 };
+
 					int version;
 					HashMap<String, Integer> oldVersions = new HashMap<>();
 					HashMap<String, Integer> newVersions = new HashMap<>();
 					LOGGER.info("check current vocabulary files");
-					bodcLog.appendText("check current vocabulary files"+LINESEP);
-					for (String list: vocabsList){
+					bodcLog.appendText("check current vocabulary files" + LINESEP);
+					for (String list : vocabsList) {
 						try {
 							version = SDNVocabs.getInstance().getCf().getCollection(false, list).getDescription().getVersion();
-							oldVersions.put(list, version );
+							oldVersions.put(list, version);
 						} catch (VocabularyException e) {
 							LOGGER.info(e.getMessage());
-							bodcLog.appendText(e.getMessage()+LINESEP);
+							bodcLog.appendText(e.getMessage() + LINESEP);
 							// if getCollection offLine raises an exception, that means that the list in not in the local directory -> set old version to 0
-							oldVersions.put(list, nonPresent_bodc );
+							oldVersions.put(list, nonPresent_bodc);
 						}
 
 					}
 
 					// reload
 					LOGGER.info("download or update vocabulary files");
-					bodcLog.appendText("download or update vocabulary files"+LINESEP);
-					try{
+					bodcLog.appendText("download or update vocabulary files" + LINESEP);
+					try {
 						SDNVocabs.getInstance().reload();
-					}catch(Exception e){
-						bodcLog.appendText(e.getMessage()+LINESEP);
+					} catch (Exception e) {
+						bodcLog.appendText(e.getMessage() + LINESEP);
 					}
-					updateProgress(8 , 10);
+					updateProgress(8, 10);
 
 					// get collections online
-					for (String list: vocabsList){
+					for (String list : vocabsList) {
 						try {
 							version = SDNVocabs.getInstance().getCf().getCollection(true, list).getDescription().getVersion();
-							newVersions.put(list, version );
+							newVersions.put(list, version);
 						} catch (VocabularyException e) {
-							bodcLog.appendText(e.getMessage()+LINESEP);
+							bodcLog.appendText(e.getMessage() + LINESEP);
 						}
 
 					}
-					updateProgress(10 , 10);
+					updateProgress(10, 10);
 
+					try {
+						for (String list : vocabsList) {
 
-					try{
-						for (String list: vocabsList){
-
-							if (oldVersions.get(list).equals(newVersions.get(list))){
-								bodcLog.appendText(MessageFormat.format(messages.getString("preferences.listAlreadyUpToDate"), list, newVersions.get(list)) +LINESEP);
-							}else{
-								int old=oldVersions.get(list) ;
+							if (oldVersions.get(list).equals(newVersions.get(list))) {
+								bodcLog.appendText(MessageFormat.format(messages.getString("preferences.listAlreadyUpToDate"), list, newVersions.get(list)) + LINESEP);
+							} else {
+								int old = oldVersions.get(list);
 								String oldString;
-								if (old==nonPresent_bodc){
+								if (old == nonPresent_bodc) {
 									oldString = "not present";// TODO
-								}else{
-									oldString=String.valueOf(old);
+								} else {
+									oldString = String.valueOf(old);
 								}
-								bodcLog.appendText(list + ": " +oldString+ " -> " + newVersions.get(list)+LINESEP );
+								bodcLog.appendText(list + ": " + oldString + " -> " + newVersions.get(list) + LINESEP);
 							}
 						}
-					}catch(Exception e){
+					} catch (Exception e) {
 						LOGGER.error(e.getMessage());
-						bodcLog.appendText(e.getMessage()+LINESEP);
+						bodcLog.appendText(e.getMessage() + LINESEP);
 					}
 
-					//mappings
+					// mappings
 					LOGGER.info("update mapping files");
-					bodcLog.appendText("update mapping files"+LINESEP);
-					
+					bodcLog.appendText("update mapping files" + LINESEP);
+
 					ICollection p01 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P01);
 					ICollection p02 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P02);
 					ICollection p06 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P06);
 					ICollection p09 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P09);
-					
+
 					try {
 						LOGGER.debug("mapping P06/P09");
 						ICollectionMapping p06_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p06, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
-						bodcLog.appendText("mapping P06/P09 : ok"+LINESEP);
-					
+						bodcLog.appendText("mapping P06/P09 : ok" + LINESEP);
+
 						LOGGER.debug("mapping P01/P09");
 						ICollectionMapping p01_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
-						bodcLog.appendText("mapping P01/P09 : ok"+LINESEP);
-						
+						bodcLog.appendText("mapping P01/P09 : ok" + LINESEP);
+
 						LOGGER.debug("mapping P01/P02");
 						ICollectionMapping p01_from_P02 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p02.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P02));
-						bodcLog.appendText("mapping P01/P02 : ok"+LINESEP);
-						/*mapping on list itself (xxx from xxx) is needed to detect deprecated xxx */
-						for (String list: vocabsList){
+						bodcLog.appendText("mapping P01/P02 : ok" + LINESEP);
+						/* mapping on list itself (xxx from xxx) is needed to detect deprecated xxx */
+						for (String list : vocabsList) {
 							ICollection collec = SDNVocabs.getInstance().getCf().getCollection(true, list);
-							LOGGER.debug("mapping "+list+"/"+list);
-							try{
+							LOGGER.debug("mapping " + list + "/" + list);
+							try {
 								ICollectionMapping automapping = SDNVocabs.getInstance().getCf().getMapping(true, collec, collec.getMappedDescriptionFromKey(list));
-								bodcLog.appendText("mapping "+list+"/"+list+": ok" + LINESEP);
-								LOGGER.debug("mapping "+list+"/"+list+": ok" + LINESEP);
-							}catch(Exception e){
-								LOGGER.warn("mapping "+list+"/"+list + " does not exist. BODC terms deprecation checks will not be possible for this list.");
-								bodcLog.appendText("mapping "+list+"/"+list + " does not exist. BODC terms deprecation checks will not be possible for this list."+LINESEP);
+								bodcLog.appendText("mapping " + list + "/" + list + ": ok" + LINESEP);
+								LOGGER.debug("mapping " + list + "/" + list + ": ok" + LINESEP);
+							} catch (Exception e) {
+								LOGGER.warn("mapping " + list + "/" + list + " does not exist. BODC terms deprecation checks will not be possible for this list.");
+								bodcLog.appendText("mapping " + list + "/" + list + " does not exist. BODC terms deprecation checks will not be possible for this list." + LINESEP);
 							}
 						}
 					} catch (VocabularyException e) {
-						bodcLog.appendText(e.getMessage()+LINESEP);
-						LOGGER.info(e.getMessage()+LINESEP);
-					}finally{
+						bodcLog.appendText(e.getMessage() + LINESEP);
+						LOGGER.info(e.getMessage() + LINESEP);
+					} finally {
 						mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 						disablePane(false);
 					}
 
-
-				}catch(Exception e){
+				} catch (Exception e) {
 					LOGGER.error(e.getMessage());
 					try {
-						bodcLog.appendText(e.getMessage()+LINESEP);
-					}catch (Exception e1) {
+						bodcLog.appendText(e.getMessage() + LINESEP);
+					} catch (Exception e1) {
 						// TODO: handle exception
 					}
-				}finally{
+				} finally {
 					mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 					disablePane(false);
 				}
-				
-				
+
 //				updateProgress(10 , 10);
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 				disablePane(false);
 
-				return null;                
+				return null;
 			}
 		};
-
-
 
 		Alert alert = new Alert(AlertType.CONFIRMATION);
 		alert.initOwner(mainApp.getPrimaryStage());
 		alert.setTitle(messages.getString("preferences.listsUpdateTitle"));
 		alert.setHeaderText(messages.getString("preferences.listsUpdateHeader"));
-		alert.setContentText(messages.getString("preferences.listsUpdateContent")); 
+		alert.setContentText(messages.getString("preferences.listsUpdateContent"));
 		Optional<ButtonType> result = alert.showAndWait();
 
-		if (result.get() == ButtonType.OK){
+		if (result.get() == ButtonType.OK) {
 			progress.progressProperty().bind(task.progressProperty());
 
 			Thread th = new Thread(task);
 			th.setDaemon(true);
 			th.start();
 
-		}else{
+		} else {
 			bodcLog.appendText(messages.getString("preferences.listsUpdateCancel"));
 		}
 
 	}
 
-	public void switchCouplingEnabled(){
+	public void switchCouplingEnabled() {
 		PreferencesManager.getInstance().setCouplingIsEnabled(couplingCheck.isSelected());
 		PreferencesManager.getInstance().save();
 	}
-
-
 
 }

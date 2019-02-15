@@ -7,6 +7,18 @@ import java.util.HashMap;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import fr.ifremer.octopus.MainApp;
+import fr.ifremer.octopus.utils.EdmoManager;
+import fr.ifremer.octopus.utils.NetworkUtils;
+import fr.ifremer.octopus.utils.PreferencesManager;
+import fr.ifremer.octopus.utils.SDNVocabs;
+import fr.ifremer.octopus.view.edmo.EdmoController;
+import fr.ifremer.octopus.view.edmo.EdmoHandler;
+import fr.ifremer.sismer_tools.csr.CSRListManager;
+import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -25,21 +37,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import sdn.vocabulary.interfaces.ICollection;
 import sdn.vocabulary.interfaces.ICollectionMapping;
 import sdn.vocabulary.interfaces.VocabularyException;
-import fr.ifremer.octopus.MainApp;
-import fr.ifremer.octopus.utils.EdmoManager;
-import fr.ifremer.octopus.utils.PreferencesManager;
-import fr.ifremer.octopus.utils.SDNVocabs;
-import fr.ifremer.octopus.view.edmo.EdmoController;
-import fr.ifremer.octopus.view.edmo.EdmoHandler;
-import fr.ifremer.sismer_tools.csr.CSRListManager;
-import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 public class PreferencesController {
 	static final Logger LOGGER = LogManager.getLogger(PreferencesController.class.getName());
@@ -278,21 +278,32 @@ public class PreferencesController {
 		Task<Void> task = new Task<Void>() {
 			@Override
 			public Void call() {
+
 				String LINESEP = System.getProperty("line.separator");
+
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
 				disablePane(true);
 
+				// Launch webservice requests.
+
 				// EDMO
 				try {
+
 					bodcLog.appendText("check EDMO codes" + LINESEP);
+
 					int before = EdmoManager.getInstance().getEdmoList().size();
 					EdmoManager.getInstance().updateEdmo();
 					int after = EdmoManager.getInstance().getEdmoList().size();
+
 					bodcLog.appendText(MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after) + LINESEP);
 				} catch (Exception e) {
-					LOGGER.error(e.getMessage());
-					bodcLog.appendText(e.getMessage() + LINESEP); // TODO msg
+
+					String message = e.getMessage();
+
+					LOGGER.error(message);
+					bodcLog.appendText(message + LINESEP); // TODO msg
 				}
+
 				// CSR
 				try {
 					bodcLog.appendText("check CSR file" + LINESEP);
@@ -437,23 +448,42 @@ public class PreferencesController {
 				return null;
 			}
 		};
+		
+		// Testing network availability
+		if (NetworkUtils.isInternetUp()) {
+			
+			Alert alert = new Alert(AlertType.CONFIRMATION);
+			alert.initOwner(mainApp.getPrimaryStage());
+			alert.setTitle(messages.getString("preferences.listsUpdateTitle"));
+			alert.setHeaderText(messages.getString("preferences.listsUpdateHeader"));
+			alert.setContentText(messages.getString("preferences.listsUpdateContent"));
+			Optional<ButtonType> result = alert.showAndWait();
 
-		Alert alert = new Alert(AlertType.CONFIRMATION);
-		alert.initOwner(mainApp.getPrimaryStage());
-		alert.setTitle(messages.getString("preferences.listsUpdateTitle"));
-		alert.setHeaderText(messages.getString("preferences.listsUpdateHeader"));
-		alert.setContentText(messages.getString("preferences.listsUpdateContent"));
-		Optional<ButtonType> result = alert.showAndWait();
+			if (result.get() == ButtonType.OK) {
+				progress.progressProperty().bind(task.progressProperty());
 
-		if (result.get() == ButtonType.OK) {
-			progress.progressProperty().bind(task.progressProperty());
+				Thread th = new Thread(task);
+				th.setDaemon(true);
+				th.start();
 
-			Thread th = new Thread(task);
-			th.setDaemon(true);
-			th.start();
-
+			} else {
+				bodcLog.appendText(messages.getString("preferences.listsUpdateCancel"));
+			}
 		} else {
-			bodcLog.appendText(messages.getString("preferences.listsUpdateCancel"));
+			String message = messages.getString("network.noInternetConnection");
+			
+			Alert alert = new Alert(AlertType.ERROR);
+			alert.initOwner(mainApp.getPrimaryStage());
+			alert.setTitle(messages.getString("preferences.listsUpdateTitle"));
+			alert.setHeaderText(null);
+			alert.setContentText(messages.getString("network.noInternetConnection"));
+		    alert.getButtonTypes().clear();
+		    ButtonType boutonOk = new ButtonType("Ok");
+		    alert.getButtonTypes().add(boutonOk);
+		    alert.showAndWait();
+		    
+			LOGGER.error(message);
+			bodcLog.appendText(message);
 		}
 
 	}

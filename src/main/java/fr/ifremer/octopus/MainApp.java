@@ -93,6 +93,8 @@ public class MainApp extends Application {
 
 		// init and show GUI
 		this.primaryStage.setMaximized(true);
+		this.primaryStage.setMinWidth(850);
+		this.primaryStage.setMinHeight(650);
 		initRootLayout();
 		showRootLayout();
 		initOverview();
@@ -167,7 +169,8 @@ public class MainApp extends Application {
 		loader.setResources(ResourceBundle.getBundle("bundles.root", prefsMgr.getLocale()));
 		loader.setLocation(location);
 		rootLayout = (BorderPane) loader.load();
-
+		rootLayout.setPrefWidth(this.getPrimaryStage().getWidth());
+		rootLayout.setPrefHeight(this.getPrimaryStage().getHeight());
 		// Give the controller access to the main app.
 		RootController controller = loader.getController();
 		controller.setMainApp(this);

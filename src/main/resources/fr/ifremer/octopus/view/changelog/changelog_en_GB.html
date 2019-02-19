@@ -19,7 +19,12 @@ h5   {color: #6c3390;}
 	<h5>Corrections</h5>
 	<ul>
 		<li>fix error if medatlas file has a last empty line</li>
-		<li>NetCDF SDN: update global attribute 'title' :replace SeaDataNet_1.0 CF 1.6’ with 'SeaDataNet_1.0 CF-1.6’</li>
+		<li>NetCDF SDN: update global attribute 'title' : replace SeaDataNet_1.0 CF 1.6’ with 'SeaDataNet_1.0 CF-1.6’</li>
+		<li>Manage errors if the user is not connected and tries to update the external resources (BODC vocabs...) </li>
+		<li>NetCDF SDN: fix expected variable type during check for DEPTH (any type is authorised)</li> 
+		<li>Manage error if input directory is empty</li>
+		<li>Keep current window size when changing language in settings</li>
+		<li>Set default log level to INFO</li>
  	</ul>
  	<h5>Adds-on</h5>
  	<ul>
@@ -34,6 +39,7 @@ h5   {color: #6c3390;}
  		<li>Conversion to ODV: an error is raises if one of the mandatory columns has missing value(s)</li>
  		<li>Update SDN QC flags: add 'Q' flag</li>
  		<li>JSON log: format added in files logs</li>
+ 		<li>Choose automatically the default output directory for conversion to mono-station files</li>
 	</ul>
 
 <h4>Version 1.4.1 - 2018/06/12</h4>

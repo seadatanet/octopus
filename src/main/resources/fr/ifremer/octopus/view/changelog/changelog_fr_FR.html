@@ -18,16 +18,21 @@ h5   {color: #6c3390;}
 
 	<h5>Corrections</h5>
 	<ul>
-		<li>correction d'une erreur dans le cas o&#249; un fichier medatlas contient une derni&#232;re ligne vide</li>
-		<li>NetCDF SDN: Mise &#224; jour de l'attribut global 'title' :replacement de SeaDataNet_1.0 CF 1.6’ par 'SeaDataNet_1.0 CF-1.6’</li>
+		<li>Correction d'une erreur dans le cas o&#249; un fichier medatlas contient une derni&#232;re ligne vide</li>
+		<li>NetCDF SDN: Mise &#224; jour de l'attribut global 'title' : remplacement de SeaDataNet_1.0 CF 1.6’ par 'SeaDataNet_1.0 CF-1.6’</li>
+		<li>Gestion des erreurs si l'utilisateur non connect&eacute; tente de mettre &#224; jour les ressources externes (vocabulaires BODC...) </li>
+		<li>NetCDF SDN: correction du type de variable attendu au check pour DEPTH (tout type autoris&eacute;)</li>
+		<li>Gestion de l'erreur si le r&eacute;pertoire d'entr&eacute;e est vide</li> 
+		<li>Conservation de la taille courante de la fen&ecirc;tre en cas de changement de langage dans les pr&eacute;f&eacute;rences</li>
+		<li>Niveau de log par d&eacute;faut fix&eacute; à INFO</li>
  	</ul>
  	
  	<h5>Adds-on</h5>
  	<ul>
  		<li>Conformit&eacute; avec java 9 et 10</li>
- 		<li>v&eacute;rification de la coh&eacute;rence des valeurs avec les flags qualit&eacute;</li>
- 		<li>la validation consid&#232;re comme valide les s&eacute;ries temporelles ODV contenant un param&#232;tre P02 ASLV &#224; la place d'un AHGT</li>
- 		<li>homog&eacute;n&eacute;isation de la valeur par d&eacute;faut pour les param&#232;tres mesur&eacute;s en NetCDF SDN (-99999) </li>
+ 		<li>V&eacute;rification de la coh&eacute;rence des valeurs avec les flags qualit&eacute;</li>
+ 		<li>La validation consid&#232;re comme valide les s&eacute;ries temporelles ODV contenant un param&#232;tre P02 ASLV &#224; la place d'un AHGT</li>
+ 		<li>Homog&eacute;n&eacute;isation de la valeur par d&eacute;faut pour les param&#232;tres mesur&eacute;s en NetCDF SDN (-99999) </li>
  		<li>Autoriser les r&eacute;f&eacute;rences CSR utilisant le catalogue central</li>
  		<li>Les fichiers Medatlas non SDN sont reconnus mais consid&eacute;r&eacute;s comme invalides (peuvent être convertis)</li>
  		<li>Conversion depuis Medatlas: la r&eacute;f&eacute;rence SDN CSR est automatiquement ajout&eacute;e &#224; partir du code EDMO et de la r&eacute;f&eacute;rence campagne, si possible</li>
@@ -35,6 +40,7 @@ h5   {color: #6c3390;}
  		<li>Conversion vers ODV: une erreur est lev&eacute;e si une des colonnes obligatoires contient une (des) valeur(s) vide(s)</li>
  		<li>Mise &#224; jour des flags qualit&eacute; SDN: ajout du flag 'Q'</li>
  		<li>Log JSON: ajout du format dans les logs fichier</li>
+ 		<li>Choix automatique du r&eacute;pertoire de sortie par d&eacute;faut pour une conversion en fichiers mono-station</li>
 	</ul>
 	
 <h4>Version 1.4.1 - 2018/06/12</h4>

@@ -26,7 +26,7 @@ Architectures :
 - Linux 32 bits
 - Linux 64 bits
 
-Ces 4 versions distinctes doivent être dézippées et stockées sous une certaine arborescence :
+Ces 4 versions distinctes doivent être dézippées et stockées sous l'arborescence suivante :
 
 ```tree
 [Chemin racine des JRE]

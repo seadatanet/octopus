@@ -504,7 +504,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>build/octopus.sh</sourceFile>
+							<sourceFile>build/linux/octopus.sh</sourceFile>
 							<destinationFile>target/livrableLinux32/octopus/octopus.sh</destinationFile>
 						</configuration>
 					</execution>
@@ -522,7 +522,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>build/octopus.sh</sourceFile>
+							<sourceFile>build/linux/octopus.sh</sourceFile>
 							<destinationFile>target/livrableLinux64/octopus/octopus.sh</destinationFile>
 						</configuration>
 					</execution>

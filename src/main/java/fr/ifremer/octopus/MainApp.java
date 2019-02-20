@@ -169,8 +169,10 @@ public class MainApp extends Application {
 		loader.setResources(ResourceBundle.getBundle("bundles.root", prefsMgr.getLocale()));
 		loader.setLocation(location);
 		rootLayout = (BorderPane) loader.load();
-		rootLayout.setPrefWidth(this.getPrimaryStage().getWidth());
-		rootLayout.setPrefHeight(this.getPrimaryStage().getHeight());
+		
+		// FIXME we added the experimental -15 because the buttons are out of the screen (too much to the right) on windows when changing language in maximized window.
+		rootLayout.setPrefWidth(this.getPrimaryStage().getWidth()-15);
+		rootLayout.setPrefHeight(this.getPrimaryStage().getHeight()-15);
 		// Give the controller access to the main app.
 		RootController controller = loader.getController();
 		controller.setMainApp(this);

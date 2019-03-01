@@ -3,7 +3,7 @@ package fr.ifremer.octopus.view;
 import java.io.File;
 import java.io.IOException;
 import java.text.MessageFormat;
-import java.util.HashMap;
+import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -18,7 +18,6 @@ import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.octopus.view.edmo.EdmoController;
 import fr.ifremer.octopus.view.edmo.EdmoHandler;
 import fr.ifremer.sismer_tools.csr.CSRListManager;
-import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -37,8 +36,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
-import sdn.vocabulary.interfaces.ICollection;
-import sdn.vocabulary.interfaces.ICollectionMapping;
 import sdn.vocabulary.interfaces.VocabularyException;
 
 public class PreferencesController {
@@ -79,7 +76,7 @@ public class PreferencesController {
 	@FXML
 	private Button closeButton;
 
-	private static int nonPresent_bodc = -1;
+
 
 	@FXML
 	private void initialize() {
@@ -93,7 +90,7 @@ public class PreferencesController {
 		// theme order is important: same order as in fr.ifremer.octopus.utils.PreferencesManager.getThemeFileName(int)
 		themeChoiceBox.getItems().add("white");
 		themeChoiceBox.getItems().add("octopus");
-//		themeChoiceBox.getItems().add("whitePixel"); // 35086: whitePixel profile only for debug
+		//		themeChoiceBox.getItems().add("whitePixel"); // 35086: whitePixel profile only for debug
 
 		int index = 0;
 		if (PreferencesManager.getInstance().getLocale() == PreferencesManager.LOCALE_FR) {
@@ -303,12 +300,13 @@ public class PreferencesController {
 					bodcLog.appendText("check CSR file" + LINESEP);
 					CSRListManager csrListMgr = SDNVocabs.getInstance().getCSRListManager();
 					String csrVersionBefore = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
-
 					csrListMgr.checkAndDownloadIfNeeded();
 					if (!csrListMgr.isFileUpToDate()) {
 						csrListMgr.update();
 						String csrVersionAfter = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
-						bodcLog.appendText("CSR file: " + csrVersionBefore + " -> " + csrVersionAfter + LINESEP);
+						bodcLog.appendText("CSR file updated : " + csrVersionBefore + " -> " + csrVersionAfter + LINESEP);
+					}else {
+						bodcLog.appendText("CSR file is up to date : " + csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate() + LINESEP);
 					}
 
 				} catch (Exception e) {
@@ -318,24 +316,13 @@ public class PreferencesController {
 
 				// BODC
 				try {
-					String[] vocabsList = { SdnVocabularyManager.LIST_C17, SdnVocabularyManager.LIST_C77, SdnVocabularyManager.LIST_L05, SdnVocabularyManager.LIST_L22, SdnVocabularyManager.LIST_L23, SdnVocabularyManager.LIST_L33, SdnVocabularyManager.LIST_P01, SdnVocabularyManager.LIST_P02, SdnVocabularyManager.LIST_P06, SdnVocabularyManager.LIST_P09 };
 
-					int version;
-					HashMap<String, Integer> oldVersions = new HashMap<>();
-					HashMap<String, Integer> newVersions = new HashMap<>();
-					LOGGER.info("check current vocabulary files");
+					// check current versions
 					bodcLog.appendText("check current vocabulary files" + LINESEP);
-					for (String list : vocabsList) {
-						try {
-							version = SDNVocabs.getInstance().getCf().getCollection(false, list).getDescription().getVersion();
-							oldVersions.put(list, version);
-						} catch (VocabularyException e) {
-							LOGGER.info(e.getMessage());
-							bodcLog.appendText(e.getMessage() + LINESEP);
-							// if getCollection offLine raises an exception, that means that the list in not in the local directory -> set old version to 0
-							oldVersions.put(list, nonPresent_bodc);
-						}
-
+					try {
+						SDNVocabs.getInstance().checkCurrent();
+					}catch (Exception e) {
+						bodcLog.appendText(e.getMessage() + LINESEP);
 					}
 
 					// reload
@@ -346,75 +333,40 @@ public class PreferencesController {
 					} catch (Exception e) {
 						bodcLog.appendText(e.getMessage() + LINESEP);
 					}
+
+					// progress bar
 					updateProgress(8, 10);
 
 					// get collections online
-					for (String list : vocabsList) {
-						try {
-							version = SDNVocabs.getInstance().getCf().getCollection(true, list).getDescription().getVersion();
-							newVersions.put(list, version);
-						} catch (VocabularyException e) {
-							bodcLog.appendText(e.getMessage() + LINESEP);
-						}
-
-					}
-					updateProgress(10, 10);
-
 					try {
-						for (String list : vocabsList) {
-
-							if (oldVersions.get(list).equals(newVersions.get(list))) {
-								bodcLog.appendText(MessageFormat.format(messages.getString("preferences.listAlreadyUpToDate"), list, newVersions.get(list)) + LINESEP);
-							} else {
-								int old = oldVersions.get(list);
-								String oldString;
-								if (old == nonPresent_bodc) {
-									oldString = "not present";// TODO
-								} else {
-									oldString = String.valueOf(old);
-								}
-								bodcLog.appendText(list + ": " + oldString + " -> " + newVersions.get(list) + LINESEP);
-							}
-						}
-					} catch (Exception e) {
-						LOGGER.error(e.getMessage());
+						SDNVocabs.getInstance().readOnlineVersions();
+					}catch (Exception e) {
 						bodcLog.appendText(e.getMessage() + LINESEP);
 					}
 
-					// mappings
+					// progress bar
+					updateProgress(10, 10);
+
+					// read diff in versions
+					try {
+						List<String> logMessages = SDNVocabs.getInstance().getDiff();
+						for (String message : logMessages) {
+							bodcLog.appendText(message+ LINESEP);
+						}
+					}catch (Exception e) {
+						bodcLog.appendText(e.getMessage()+ LINESEP);
+					}
+
+					// update mappings
 					LOGGER.info("update mapping files");
 					bodcLog.appendText("update mapping files" + LINESEP);
 
-					ICollection p01 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P01);
-					ICollection p02 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P02);
-					ICollection p06 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P06);
-					ICollection p09 = SDNVocabs.getInstance().getCf().getCollection(true, SdnVocabularyManager.LIST_P09);
-
 					try {
-						LOGGER.debug("mapping P06/P09");
-						ICollectionMapping p06_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p06, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
-						bodcLog.appendText("mapping P06/P09 : ok" + LINESEP);
-
-						LOGGER.debug("mapping P01/P09");
-						ICollectionMapping p01_from_P09 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p09.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P09));
-						bodcLog.appendText("mapping P01/P09 : ok" + LINESEP);
-
-						LOGGER.debug("mapping P01/P02");
-						ICollectionMapping p01_from_P02 = SDNVocabs.getInstance().getCf().getMapping(true, p01, p02.getMappedDescriptionFromKey(SdnVocabularyManager.LIST_P02));
-						bodcLog.appendText("mapping P01/P02 : ok" + LINESEP);
-						/* mapping on list itself (xxx from xxx) is needed to detect deprecated xxx */
-						for (String list : vocabsList) {
-							ICollection collec = SDNVocabs.getInstance().getCf().getCollection(true, list);
-							LOGGER.debug("mapping " + list + "/" + list);
-							try {
-								ICollectionMapping automapping = SDNVocabs.getInstance().getCf().getMapping(true, collec, collec.getMappedDescriptionFromKey(list));
-								bodcLog.appendText("mapping " + list + "/" + list + ": ok" + LINESEP);
-								LOGGER.debug("mapping " + list + "/" + list + ": ok" + LINESEP);
-							} catch (Exception e) {
-								LOGGER.warn("mapping " + list + "/" + list + " does not exist. BODC terms deprecation checks will not be possible for this list.");
-								bodcLog.appendText("mapping " + list + "/" + list + " does not exist. BODC terms deprecation checks will not be possible for this list." + LINESEP);
-							}
+						List<String>  logMessages=SDNVocabs.getInstance().updateMappings();
+						for (String message : logMessages) {
+							bodcLog.appendText(message+ LINESEP);
 						}
+						
 					} catch (VocabularyException e) {
 						bodcLog.appendText(e.getMessage() + LINESEP);
 						LOGGER.info(e.getMessage() + LINESEP);
@@ -435,17 +387,17 @@ public class PreferencesController {
 					disablePane(false);
 				}
 
-//				updateProgress(10 , 10);
+				//				updateProgress(10 , 10);
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 				disablePane(false);
 
 				return null;
 			}
 		};
-		
+
 		// Testing network availability
 		if (NetworkUtils.isInternetUp()) {
-			
+
 			Alert alert = new Alert(AlertType.CONFIRMATION);
 			alert.initOwner(mainApp.getPrimaryStage());
 			alert.setTitle(messages.getString("preferences.listsUpdateTitle"));
@@ -465,17 +417,17 @@ public class PreferencesController {
 			}
 		} else {
 			String message = messages.getString("network.noInternetConnection");
-			
+
 			Alert alert = new Alert(AlertType.ERROR);
 			alert.initOwner(mainApp.getPrimaryStage());
 			alert.setTitle(messages.getString("preferences.listsUpdateTitle"));
 			alert.setHeaderText(null);
 			alert.setContentText(messages.getString("network.noInternetConnection"));
-		    alert.getButtonTypes().clear();
-		    ButtonType boutonOk = new ButtonType("Ok");
-		    alert.getButtonTypes().add(boutonOk);
-		    alert.showAndWait();
-		    
+			alert.getButtonTypes().clear();
+			ButtonType boutonOk = new ButtonType("Ok");
+			alert.getButtonTypes().add(boutonOk);
+			alert.showAndWait();
+
 			LOGGER.error(message);
 			bodcLog.appendText(message);
 		}

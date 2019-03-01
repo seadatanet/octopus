@@ -18,18 +18,22 @@ import org.apache.commons.cli.ParseException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.octopus.OctopusVersion;
 import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
+import fr.ifremer.octopus.utils.EdmoManager;
 import fr.ifremer.octopus.utils.PreferencesManager;
+import fr.ifremer.octopus.utils.SDNVocabs;
+import fr.ifremer.sismer_tools.csr.CSRListManager;
 import fr.ifremer.sismer_tools.seadatanet.Format;
+import sdn.vocabulary.interfaces.VocabularyException;
 
 public class BatchController extends AbstractController{
 	private static final Logger LOGGER = LogManager.getLogger(BatchController.class);
 	private static final Logger jsonLogger = LogManager.getLogger("JSON_FILE_APPENDER");
 	private boolean isJunitTest ;
 	private boolean checkOnly;
+	private boolean update;
 
 	private Options options;
 	private CommandLineParser parser ;
@@ -42,6 +46,7 @@ public class BatchController extends AbstractController{
 	private static String OPTION_T = "t";
 	private static String OPTION_CDI = "c";
 	private static String OPTION_OUT_LOCAL_CDI_ID = "l";
+	private static String OPTION_UPDATE = "update";
 	private List<String> mandatory_options = new ArrayList<>();
 	private ResourceBundle aboutBundle;
 
@@ -88,7 +93,7 @@ public class BatchController extends AbstractController{
 		}
 		//***************************************************************
 		initOptionsParser();
-	
+
 		try {
 			parseAndFill(args);
 		} catch (OctopusException e1) {
@@ -112,15 +117,17 @@ public class BatchController extends AbstractController{
 		}
 
 		boolean success = true;
-		
+
 		try {
 			/**
 			 * PROCESS
 			 */
-			
+
 			if (checkOnly){
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startCheck"), model.getInputPath()));
 				success = checkFormat(jsonLogger);
+			}else if(update) {
+				update();
 			}else{
 				LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.startExport"), model.getInputPath()));
 				List<String> outputFiles = processConversion(jsonLogger);
@@ -128,7 +135,7 @@ public class BatchController extends AbstractController{
 
 		} catch (OctopusException e1) {
 			LOGGER.error(e1.getMessage());
-//			jsonLogger.info("success={}, options={}, error={}", success, args, e1);
+			//			jsonLogger.info("success={}, options={}, error={}", success, args, e1);
 			jsonRes.put(GLOBAL_BATCH_SUCCESS, false);
 			jsonRes.put(GLOBAL_BATCH_ARGS, String.join(" ", args));
 			jsonRes.put(GLOBAL_BATCH_ERROR, e1);
@@ -141,21 +148,113 @@ public class BatchController extends AbstractController{
 			LOGGER.error(e.getCause());
 			LOGGER.error(messages.getString("batchcontroller.guiRunning"));
 		} 
-		
-		
-//		jsonLogger.info("success={}, options={}, error={}", success, args, "");
+
+
+		//		jsonLogger.info("success={}, options={}, error={}", success, args, "");
 		jsonRes.put(GLOBAL_BATCH_SUCCESS, success);
 		jsonRes.put(GLOBAL_BATCH_ARGS, String.join(" ", args));
 		jsonRes.put(GLOBAL_BATCH_ERROR, "");
 		jsonLogger.info(jsonRes);
-		
-		
+
+
 		exit(OK_EXIT_CODE, null);
 
 	}
 
 
 
+
+	private void update() {
+		LOGGER.info(" *** Update external resources *** ");
+		// EDMO
+		try {
+			LOGGER.info("Update EDMO codes");
+
+			int before = EdmoManager.getInstance().getEdmoList().size();
+			EdmoManager.getInstance().updateEdmo();
+			int after = EdmoManager.getInstance().getEdmoList().size();
+
+			LOGGER.info(MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after));
+		} catch (Exception e) {
+
+			String message = e.getMessage();
+
+			LOGGER.error(message);
+		}
+
+		// CSR
+		try {
+			LOGGER.info("check CSR file" );
+			CSRListManager csrListMgr = SDNVocabs.getInstance().getCSRListManager();
+			String csrVersionBefore = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
+
+			csrListMgr.checkAndDownloadIfNeeded();
+			if (!csrListMgr.isFileUpToDate()) {
+				csrListMgr.update();
+				String csrVersionAfter = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
+				LOGGER.info("CSR file updated: " + csrVersionBefore + " -> " + csrVersionAfter );
+			}else {
+				LOGGER.info("CSR file up to date : " + csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate());
+			}
+
+		} catch (Exception e) {
+			LOGGER.info("ERROR: CSR check failed. Please check your internet connection."); // TODO msg
+		}
+
+		// BODC
+		try {
+			// check current versions
+			LOGGER.info("check current vocabulary files" );
+			try {
+				SDNVocabs.getInstance().checkCurrent();
+			}catch (Exception e) {
+				LOGGER.error(e.getMessage() );
+			}
+
+			// reload
+			LOGGER.info("download or update vocabulary files");
+			try {
+				SDNVocabs.getInstance().reload();
+			} catch (Exception e) {
+				LOGGER.error(e.getMessage() );
+			}
+
+
+			// get collections online
+			try {
+				SDNVocabs.getInstance().readOnlineVersions();
+			}catch (Exception e) {
+				LOGGER.error(e.getMessage() );
+			}
+
+
+			// read diff in versions
+			try {
+				List<String> logMessages = SDNVocabs.getInstance().getDiff();
+				for (String message : logMessages) {
+					LOGGER.info(message);
+				}
+			}catch (Exception e) {
+				LOGGER.error(e.getMessage());
+			}
+
+			// update mappings
+			LOGGER.info("update mapping files");
+
+			try {
+				List<String>  logMessages=SDNVocabs.getInstance().updateMappings();
+				for (String message : logMessages) {
+					LOGGER.error(message);
+				}
+				
+			} catch (VocabularyException e) {
+				LOGGER.info(e.getMessage());
+			} 
+		} catch (Exception e) {
+			LOGGER.error(e.getMessage());
+		}
+		
+	}
 
 	private void parseAndFill(String[] args) throws OctopusException, IOException, ParseException {
 		try {
@@ -164,10 +263,15 @@ public class BatchController extends AbstractController{
 			CommandLine cmd = parser.parse( options, args);
 
 			if (cmd.hasOption(OPTION_CHECKONLY)){
-				LOGGER.debug("option CHECK ");
+				LOGGER.debug("option CHECK");
 				checkOnly=true;
 				mandatory_options.add(OPTION_I);
-			}else{
+			}else if (cmd.hasOption(OPTION_UPDATE)){
+				LOGGER.debug("option UPDATE");
+				// no other arg required
+				update = true;
+				return;
+			}else {
 				mandatory_options.add(OPTION_I);
 				mandatory_options.add(OPTION_O);
 				mandatory_options.add(OPTION_F);
@@ -191,7 +295,7 @@ public class BatchController extends AbstractController{
 			// log
 			LOGGER.info(messages.getString("batchcontroller.argumentsResumeTitle"));
 			LOGGER.info(MessageFormat.format(messages.getString("batchcontroller.argumentsInputPath"), inputPath));
-			
+
 			if (!checkOnly){
 				String outputPath = cmd.getOptionValue(OPTION_O).trim();
 				if (outputPath.isEmpty()){
@@ -248,9 +352,9 @@ public class BatchController extends AbstractController{
 
 			checkInput(new File(inputPath));
 
-			
 
-			
+
+
 
 
 		} catch (ParseException e) {
@@ -336,7 +440,7 @@ public class BatchController extends AbstractController{
 		options.addOption(OPTION_T, true, messages.getString("batchcontroller.argumentsTypeHelp"));
 		options.addOption(OPTION_CDI, true, messages.getString("batchcontroller.argumentsCdiListHelp"));
 		options.addOption(OPTION_OUT_LOCAL_CDI_ID, true, messages.getString("batchcontroller.argumentsOutputCdiHelp"));
-
+		options.addOption(OPTION_UPDATE, false, messages.getString("batchcontroller.argumentsUpdate"));
 
 		//		mandatory_options.add(OPTION_T);
 

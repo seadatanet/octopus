@@ -244,7 +244,7 @@ public class BatchController extends AbstractController{
 			try {
 				List<String>  logMessages=SDNVocabs.getInstance().updateMappings();
 				for (String message : logMessages) {
-					LOGGER.error(message);
+					LOGGER.info(message);
 				}
 				
 			} catch (VocabularyException e) {

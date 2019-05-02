@@ -802,7 +802,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<repositories>
 				<repository>
 					<id>NexusAltranSnapshot</id>
-					<url>http://10.1.96.245:8081/repository/maven-snapshots/
+					<url>http://10.1.96.233:8081/repository/maven-snapshots/
 					</url>
 					<releases>
 						<enabled>false</enabled>
@@ -813,7 +813,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</repository>
 				<repository>
 					<id>NexusAltran</id>
-					<url>http://10.1.96.245:8081/repository/maven-releases/
+					<url>http://10.1.96.233:8081/repository/maven-releases/
 					</url>
 					<releases>
 						<enabled>true</enabled>
@@ -852,12 +852,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<repository>
 					<id>NexusAltran</id>
 					<name>ifremer</name>
-					<url>http://10.1.96.245:8081/repository/maven-releases/</url>
+					<url>http://10.1.96.233:8081/repository/maven-releases/</url>
 				</repository>
 				<snapshotRepository>
 					<id>NexusAltranSnapshot</id>
 					<name>ifremer-snapshot</name>
-					<url>http://10.1.96.245:8081/repository/maven-snapshots/</url>
+					<url>http://10.1.96.233:8081/repository/maven-snapshots/</url>
 				</snapshotRepository>
 
 

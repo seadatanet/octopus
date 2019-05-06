@@ -147,27 +147,27 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Linux with JRE -->
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
-				<executions>
-					<execution>
-						<id>copy-resources-linux32</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${basedir}/target/livrableLinux32/octopus/resources</outputDirectory>
-							<resources>
-								<resource>
-									<directory>resources</directory>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<artifactId>maven-resources-plugin</artifactId> -->
+<!-- 				<version>2.7</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>copy-resources-linux32</id> -->
+<!-- 						<phase>install</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>copy-resources</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<outputDirectory>${basedir}/target/livrableLinux32/octopus/resources</outputDirectory> -->
+<!-- 							<resources> -->
+<!-- 								<resource> -->
+<!-- 									<directory>resources</directory> -->
+<!-- 								</resource> -->
+<!-- 							</resources> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
@@ -191,27 +191,27 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Windows with JRE -->
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
-				<executions>
-					<execution>
-						<id>copy-resource-win32</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${basedir}/target/livrableWin32/octopus/resources</outputDirectory>
-							<resources>
-								<resource>
-									<directory>resources</directory>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<artifactId>maven-resources-plugin</artifactId> -->
+<!-- 				<version>2.7</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>copy-resource-win32</id> -->
+<!-- 						<phase>install</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>copy-resources</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<outputDirectory>${basedir}/target/livrableWin32/octopus/resources</outputDirectory> -->
+<!-- 							<resources> -->
+<!-- 								<resource> -->
+<!-- 									<directory>resources</directory> -->
+<!-- 								</resource> -->
+<!-- 							</resources> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
@@ -288,24 +288,24 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Linux with JRE -->
-			<plugin>
-				<groupId>com.coderplus.maven.plugins</groupId>
-				<artifactId>copy-rename-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<id>copy-jar-linux32</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
-						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
-							<destinationFile>target/livrableLinux32/octopus/octopus.jar</destinationFile>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<groupId>com.coderplus.maven.plugins</groupId> -->
+<!-- 				<artifactId>copy-rename-maven-plugin</artifactId> -->
+<!-- 				<version>1.0</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>copy-jar-linux32</id> -->
+<!-- 						<phase>install</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>copy</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<sourceFile>target/octopus-maven.jar</sourceFile> -->
+<!-- 							<destinationFile>target/livrableLinux32/octopus/octopus.jar</destinationFile> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -326,24 +326,24 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Windows with JRE -->
-			<plugin>
-				<groupId>com.coderplus.maven.plugins</groupId>
-				<artifactId>copy-rename-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<id>copy-jar-win32</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
-						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
-							<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<groupId>com.coderplus.maven.plugins</groupId> -->
+<!-- 				<artifactId>copy-rename-maven-plugin</artifactId> -->
+<!-- 				<version>1.0</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>copy-jar-win32</id> -->
+<!-- 						<phase>install</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>copy</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<sourceFile>target/octopus-maven.jar</sourceFile> -->
+<!-- 							<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -454,24 +454,24 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Windows with JRE -->
-			<plugin>
-				<groupId>com.coderplus.maven.plugins</groupId>
-				<artifactId>copy-rename-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<id>copy-exe-win32</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
-						<configuration>
-							<sourceFile>build/windows/octopus_win32.exe</sourceFile>
-							<destinationFile>target/livrableWin32/octopus/octopus.exe</destinationFile>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<groupId>com.coderplus.maven.plugins</groupId> -->
+<!-- 				<artifactId>copy-rename-maven-plugin</artifactId> -->
+<!-- 				<version>1.0</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>copy-exe-win32</id> -->
+<!-- 						<phase>install</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>copy</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<sourceFile>build/windows/octopus_win32.exe</sourceFile> -->
+<!-- 							<destinationFile>target/livrableWin32/octopus/octopus.exe</destinationFile> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -492,24 +492,24 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Linux with JRE -->
-			<plugin>
-				<groupId>com.coderplus.maven.plugins</groupId>
-				<artifactId>copy-rename-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<id>copy-exe-linux32</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
-						<configuration>
-							<sourceFile>build/linux/octopus.sh</sourceFile>
-							<destinationFile>target/livrableLinux32/octopus/octopus.sh</destinationFile>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<groupId>com.coderplus.maven.plugins</groupId> -->
+<!-- 				<artifactId>copy-rename-maven-plugin</artifactId> -->
+<!-- 				<version>1.0</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>copy-exe-linux32</id> -->
+<!-- 						<phase>install</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>copy</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<sourceFile>build/linux/octopus.sh</sourceFile> -->
+<!-- 							<destinationFile>target/livrableLinux32/octopus/octopus.sh</destinationFile> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -532,27 +532,27 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<!-- ===================================== COPY JREs =========================================== -->
 
 			<!-- Windows -->
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
-				<executions>
-					<execution>
-						<id>copy-jre-win32</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${basedir}/target/livrableWin32/octopus/jre</outputDirectory>
-							<resources>
-								<resource>
-									<directory>${jrepath}/windows/32bits</directory>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<artifactId>maven-resources-plugin</artifactId> -->
+<!-- 				<version>2.7</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>copy-jre-win32</id> -->
+<!-- 						<phase>install</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>copy-resources</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<outputDirectory>${basedir}/target/livrableWin32/octopus/jre</outputDirectory> -->
+<!-- 							<resources> -->
+<!-- 								<resource> -->
+<!-- 									<directory>${jrepath}/windows/32bits</directory> -->
+<!-- 								</resource> -->
+<!-- 							</resources> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -577,27 +577,27 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Linux -->
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
-				<executions>
-					<execution>
-						<id>copy-jre-linux32</id>
-						<phase>install</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${basedir}/target/livrableLinux32/octopus/jre</outputDirectory>
-							<resources>
-								<resource>
-									<directory>${jrepath}/linux/32bits</directory>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<artifactId>maven-resources-plugin</artifactId> -->
+<!-- 				<version>2.7</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>copy-jre-linux32</id> -->
+<!-- 						<phase>install</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>copy-resources</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<outputDirectory>${basedir}/target/livrableLinux32/octopus/jre</outputDirectory> -->
+<!-- 							<resources> -->
+<!-- 								<resource> -->
+<!-- 									<directory>${jrepath}/linux/32bits</directory> -->
+<!-- 								</resource> -->
+<!-- 							</resources> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>

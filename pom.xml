@@ -484,7 +484,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>build/windows/octopus_win32.exe</sourceFile>
+							<sourceFile>build/windows/octopus_win64.exe</sourceFile>
 							<destinationFile>target/livrableWin64/octopus/octopus.exe</destinationFile>
 						</configuration>
 					</execution>

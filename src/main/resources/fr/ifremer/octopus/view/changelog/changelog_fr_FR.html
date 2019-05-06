@@ -14,11 +14,19 @@ h5   {color: #6c3390;}
 
 <body>
 <h2>Journal des modifications</h2>
+<h4>Version 1.4.3 - 2019/05/06</h4>
+<h5>Corrections</h5>
+	<ul>
+		<li>Format NetCDF SDN: tous les types num&eacute;riques sont autoris&eacute;s (pas uniquement les doubles)</li>
+		<li>Conversion MedAtlas vers ODV: utilisation de la valeur par d&eacute;faut d&eacute;clar&eacute;e dans la station courante</li>
+		<li>Format ODV: Depth n'est plus obligatoire pour les timeseries contenant un parametre appartenant au P02 ASLV</li>
+	</ul>
+
 <h4>Version 1.4.2 - 2019/03/04</h4>
 
 	<h5>Corrections</h5>
 	<ul>
-		<li>Correction d'une erreur dans le cas o&#249; un fichier medatlas contient une derni&#232;re ligne vide</li>
+		<li>Correction d'une erreur dans le cas o&#249; un fichier MedAtlas contient une derni&#232;re ligne vide</li>
 		<li>NetCDF SDN: Mise &#224; jour de l'attribut global 'title' : remplacement de 'SeaDataNet_1.0 CF 1.6' par 'SeaDataNet_1.0 CF-1.6'</li>
 		<li>Gestion des erreurs si l'utilisateur non connect&eacute; tente de mettre &#224; jour les ressources externes (CSR, BODC, EDMO) </li>
 		<li>NetCDF SDN: correction du type de variable attendu au check pour DEPTH (tout type autoris&eacute;)</li>
@@ -34,8 +42,8 @@ h5   {color: #6c3390;}
  		<li>La validation consid&#232;re comme valide les s&eacute;ries temporelles ODV contenant un param&#232;tre P02 ASLV &#224; la place d'un AHGT</li>
  		<li>Homog&eacute;n&eacute;isation de la valeur par d&eacute;faut pour les param&#232;tres mesur&eacute;s en NetCDF SDN (-99999) </li>
  		<li>Autoriser les r&eacute;f&eacute;rences CSR utilisant le catalogue central</li>
- 		<li>Les fichiers Medatlas non SDN sont reconnus mais consid&eacute;r&eacute;s comme invalides (peuvent &ecirc;tre convertis)</li>
- 		<li>Conversion depuis Medatlas: la r&eacute;f&eacute;rence SDN CSR est automatiquement ajout&eacute;e &#224; partir du code EDMO et de la r&eacute;f&eacute;rence campagne, si possible</li>
+ 		<li>Les fichiers MedAtlas non SDN sont reconnus mais consid&eacute;r&eacute;s comme invalides (peuvent &ecirc;tre convertis)</li>
+ 		<li>Conversion depuis MedAtlas: la r&eacute;f&eacute;rence SDN CSR est automatiquement ajout&eacute;e &#224; partir du code EDMO et de la r&eacute;f&eacute;rence campagne, si possible</li>
  		<li>Toutes conversions: les variables non obligatoires sont supprim&eacute;es si elles ne contiennent aucune donn&eacute;e (valeurs par d&eacute;faut uniquement)</li>
  		<li>Conversion vers ODV: une erreur est lev&eacute;e si une des colonnes obligatoires contient une (des) valeur(s) vide(s)</li>
  		<li>Mise &#224; jour des flags qualit&eacute; SDN: ajout du flag 'Q'</li>
@@ -118,7 +126,7 @@ h5   {color: #6c3390;}
 
 <h5>Corrections</h5>
 	<ul>
-    	<li>Ne plus ajouter une ligne de commentaire vide lors de la conversion MedATLAS ou ODV vers ODV</li>
+    	<li>Ne plus ajouter une ligne de commentaire vide lors de la conversion MedAtlas ou ODV vers ODV</li>
     	<li>Correction de l'attribut global "title" dans les fichiers CFPoint g&eacute;n&eacute;r&eacute;s</li>
     	<li>Correction des noms de format apparaissant dans la fen&ecirc;tre coupling table</li>
     	<li>Le pr&eacute;fixe pour la coupling table ne doit pas &ecirc;tre obligatoire</li>

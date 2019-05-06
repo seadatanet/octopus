@@ -15,10 +15,18 @@ h5   {color: #6c3390;}
 <body>
 
 <h2>Change log</h2>
+<h4>Version 1.4.3 - 2019/05/06</h4>
+	<ul>
+		<li>NetCDF SDN Format: all numeric types are allowed (not only doubles)</li>
+		<li>Conversion MedAtlas to ODV: use of default value defined in the current station header</li>
+		<li>ODV format: Depth is no more mandatory in timeseries that contains a parameter belonging to the P02 ASLV</li>
+	</ul>
+
+
 <h4>Version 1.4.2 - 2019/03/04</h4>
 	<h5>Corrections</h5>
 	<ul>
-		<li>fix error if medatlas file has a last empty line</li>
+		<li>fix error if MedAtlas file has a last empty line</li>
 		<li>NetCDF SDN: update global attribute 'title' : replace 'SeaDataNet_1.0 CF 1.6' with 'SeaDataNet_1.0 CF-1.6'</li>
 		<li>Manage errors if the user is not connected and tries to update the external resources (CSR, BODC, EDMO) </li>
 		<li>NetCDF SDN: fix expected variable type during check for DEPTH (any type is authorised)</li> 
@@ -33,8 +41,8 @@ h5   {color: #6c3390;}
  		<li>Check consider as valid timeseries ODV files with a P02 ASLV parameter instead of depth </li>
  		<li>Homogenisation of the default value for measured parameters in NetCDF SDN (-99999) </li>
  		<li>Allow SDN CSR references using the central catalog</li>
- 		<li>Non SDN Medatlas files are recognized but considered as invalid (can be converted)</li>
- 		<li>Conversion from Medatlas: the SDN CSR reference is automatically added from EDMO code and cruise reference, if possible</li>
+ 		<li>Non SDN MedAtlas files are recognized but considered as invalid (can be converted)</li>
+ 		<li>Conversion from MedAtlas: the SDN CSR reference is automatically added from EDMO code and cruise reference, if possible</li>
  		<li>All conversions: non-mandatory variables are not kept if they are empty (with only default values)</li>
  		<li>Conversion to ODV: an error is raises if one of the mandatory columns has missing value(s)</li>
  		<li>Update SDN QC flags: add 'Q' flag</li>
@@ -116,7 +124,7 @@ h5   {color: #6c3390;}
 
 <h5>Corrections</h5>
 	<ul>
-    	<li>Fixed a bug that added empty lines in ODV files when converting MedATLAS or ODV files to ODV</li>
+    	<li>Fixed a bug that added empty lines in ODV files when converting MedAtlas or ODV files to ODV</li>
     	<li>Fixed a bug in the "title" global attribute in CFPoint generated files</li>
     	<li>Fixed a bug on format names displayed in the coupling table window</li>
     	<li>In coupling table configuration, coupling table prefix is not mandatory</li>

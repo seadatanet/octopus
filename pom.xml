@@ -796,9 +796,9 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<activation>
 				<activeByDefault>false</activeByDefault>
 			</activation>
-			<properties>
-				<jrepath>${basedir}/build/JREs</jrepath>
-			</properties>
+<!-- 			<properties> -->
+<!-- 				<jrepath>${basedir}/build/JREs</jrepath> -->
+<!-- 			</properties> -->
 			<repositories>
 				<repository>
 					<id>NexusAltranSnapshot</id>

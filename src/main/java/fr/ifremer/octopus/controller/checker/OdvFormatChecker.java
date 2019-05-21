@@ -17,7 +17,7 @@ public class OdvFormatChecker extends FormatChecker {
 		
 		try {
 			OdvReader mgr = new OdvReader(f.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
-			return Format.ODV_SDN;
+			return mgr.getFormat();
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
 			throw e;

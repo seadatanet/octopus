@@ -300,16 +300,18 @@ public abstract class AbstractController {
 		}
 		
 		Object conv = manager.getConverter();
+		
 		if (conv instanceof MedatlasInputFileManager) {
-			// if the file is invalid, the manager raises an error -> we do not come here			
-		}else if(conv instanceof OdvReader) {
-			// if the file is invalid, the manager raises an error -> we do not come here	
-		}else if(conv instanceof CFReader) {
+			// if the file is invalid, the manager raises an error -> we do not come here
+		} else if (conv instanceof OdvReader) {
+			if (((OdvReader) conv).getValidator().hasErrors()) {
+				throw new OctopusException("Error on input file. Conversion aborted");
+			}
+		} else if (conv instanceof CFReader) {
 			if (((CFReader) conv).getValidator().hasErrors()) {
 				throw new OctopusException("Error on input file. Conversion aborted");
 			}
 		}
-	
 		
 		
 		List<String> cdiToPrint;

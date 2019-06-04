@@ -63,7 +63,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<!-- final name do not contains version -->
-							<finalName>${project.artifactId}-maven</finalName>
+							<finalName>${project.artifactId}-${version}</finalName>
 							<appendAssemblyId>false</appendAssemblyId>
 							<descriptorRefs>
 								<descriptorRef>jar-with-dependencies</descriptorRef>
@@ -260,7 +260,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<sourceFile>target/octopus-${version}.jar</sourceFile>
 							<destinationFile>target/livrableLinux/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -280,7 +280,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<sourceFile>target/octopus-${version}.jar</sourceFile>
 							<destinationFile>target/livrableWin/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -318,7 +318,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<sourceFile>target/octopus-${version}.jar</sourceFile>
 							<destinationFile>target/livrableLinux64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -356,7 +356,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<sourceFile>target/octopus-${version}.jar</sourceFile>
 							<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>

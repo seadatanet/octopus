@@ -78,33 +78,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
-			
-			
-			<!-- ===================================== ASSEMBLY FOR OCTOPUS AS DEPENDENCY =========================================== -->
 
-			<!-- Builds the artifact with its dependencies :-->
-			<!--  Run shade goal on package phase , add Main-Class to manifest file -->
-			<!-- <plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-shade-plugin</artifactId>
-			<version>2.3</version>
-			<executions>
-				<execution>
-				<phase>package</phase>
-				<goals>
-					<goal>shade</goal>
-				</goals>
-				<configuration>
-				<transformers>
-					<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-						<mainClass>fr.ifremer.octopus.MainApp</mainClass>
-					</transformer>
-				</transformers>
-				</configuration>
-				</execution>
-			</executions>
-			</plugin>
- 		-->
+			
 			<!-- ===================================== JAVADOC =========================================== -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -287,7 +262,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-${version}.jar</sourceFile>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
 							<destinationFile>target/livrableLinux/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -307,7 +282,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-${version}.jar</sourceFile>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
 							<destinationFile>target/livrableWin/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -345,7 +320,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-${version}.jar</sourceFile>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
 							<destinationFile>target/livrableLinux64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -383,7 +358,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-${version}.jar</sourceFile>
+							<sourceFile>target/octopus-maven.jar</sourceFile>
 							<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>

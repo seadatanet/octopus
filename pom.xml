@@ -50,32 +50,29 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- ===================================== ASSEMBLY =========================================== -->
+
+			<!-- Builds the artifact with its dependencies -->
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4</version>
-				<executions>
-					<execution>
-						<id>package-jar-with-dependencies</id>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<!-- final name do not contains version -->
-							<finalName>${project.artifactId}-${version}</finalName>
-							<appendAssemblyId>false</appendAssemblyId>
-							<descriptorRefs>
-								<descriptorRef>jar-with-dependencies</descriptorRef>
-							</descriptorRefs>
-							<archive>
-								<manifest>
-									<mainClass>fr.ifremer.octopus.MainApp</mainClass>
-								</manifest>
-							</archive>
-						</configuration>
-					</execution>
-				</executions>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-shade-plugin</artifactId>
+			<version>2.3</version>
+			<executions>
+				<!-- Run shade goal on package phase -->
+				<execution>
+				<phase>package</phase>
+				<goals>
+					<goal>shade</goal>
+				</goals>
+				<configuration>
+				<transformers>
+					<!-- add Main-Class to manifest file -->
+					<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+						<mainClass>fr.ifremer.octopus.MainApp</mainClass>
+					</transformer>
+				</transformers>
+				</configuration>
+				</execution>
+			</executions>
 			</plugin>
 
 			<!-- ===================================== JAVADOC =========================================== -->

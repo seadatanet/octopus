@@ -49,15 +49,46 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</configuration>
 			</plugin>
 
-			<!-- ===================================== ASSEMBLY =========================================== -->
 
-			<!-- Builds the artifact with its dependencies -->
-			<plugin>
+<!-- ===================================== ASSEMBLY FOR OCTOPUS SOFTWARE=========================================== -->
+<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<id>package-jar-with-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<!-- final name do not contains version -->
+							<finalName>${project.artifactId}-maven</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<archive>
+								<manifest>
+									<mainClass>fr.ifremer.octopus.MainApp</mainClass>
+								</manifest>
+							</archive>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			
+			<!-- ===================================== ASSEMBLY FOR OCTOPUS AS DEPENDENCY =========================================== -->
+
+			<!-- Builds the artifact with its dependencies :-->
+			<!--  Run shade goal on package phase , add Main-Class to manifest file -->
+			<!-- <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-shade-plugin</artifactId>
 			<version>2.3</version>
 			<executions>
-				<!-- Run shade goal on package phase -->
 				<execution>
 				<phase>package</phase>
 				<goals>
@@ -65,7 +96,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</goals>
 				<configuration>
 				<transformers>
-					<!-- add Main-Class to manifest file -->
 					<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 						<mainClass>fr.ifremer.octopus.MainApp</mainClass>
 					</transformer>
@@ -74,7 +104,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</execution>
 			</executions>
 			</plugin>
-
+ 		-->
 			<!-- ===================================== JAVADOC =========================================== -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

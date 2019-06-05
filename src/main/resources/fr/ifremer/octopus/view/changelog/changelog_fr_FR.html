@@ -14,13 +14,26 @@ h5   {color: #6c3390;}
 
 <body>
 <h2>Journal des modifications</h2>
-<h4>Version 1.4.3 - 2019/05/06</h4>
+
+
+<h4>Version 1.5.0 - 2019/06/05</h4>
 <h5>Corrections</h5>
 	<ul>
-		<li>Format NetCDF SDN: tous les types num&eacute;riques sont autoris&eacute;s (pas uniquement les doubles)</li>
+		<li>Format NetCDF SDN: tous les types num&eacute;riques pour les variables de param&#232;tres mesur&eacute;s sont autoris&eacute;s (pas uniquement les doubles)</li>
 		<li>Conversion MedAtlas vers ODV: utilisation de la valeur par d&eacute;faut d&eacute;clar&eacute;e dans la station courante</li>
-		<li>Format ODV: Depth n'est plus obligatoire pour les timeseries contenant un parametre appartenant au P02 ASLV</li>
+		<li>Format ODV: Depth n'est plus obligatoire pour les timeseries contenant un param&#232;tre appartenant au P02 ASLV</li>
+		<li>Conversion NetCDF vers ODV : suppression des tabulations en trop &#224; la fin des lignes</li>
+ 		<li>COREDIST en tant que variable primaire est autoris&eacute; param&#232;tregalement en cm (ULCM) </li>
+ 		<li>Check MedAtlas: d&eacute;tection d'une erreur si valeur = d&eacute;faut  et flag != 9 </li>
 	</ul>
+
+<h5>Adds-on</h5>
+ 	<ul>
+ 		<li>Prise en compte des variantes ODV pour la biologie, la cytom&eacute;trie en flux et les microplastiques: check et conversion ODV vers ODV</li>
+ 		<li>ODV check: la variable primaire doit contenir au moins une valeur non nulle</li>
+ 	</ul>
+
+
 
 <h4>Version 1.4.2 - 2019/03/04</h4>
 

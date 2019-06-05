@@ -15,14 +15,22 @@ h5   {color: #6c3390;}
 <body>
 
 <h2>Change log</h2>
-<h4>Version 1.4.3 - 2019/05/06</h4>
+<h4>Version 1.5.0 - 2019/06/05</h4>
 <h5>Corrections</h5>
 	<ul>
 		<li>NetCDF SDN Format: all numeric types are allowed (not only doubles)</li>
 		<li>Conversion MedAtlas to ODV: use of default value defined in the current station header</li>
-		<li>ODV format: Depth is no more mandatory in timeseries that contains a parameter belonging to the P02 ASLV</li>
+		<li>ODV format: Depth is no more mandatory in timeseries that contain a parameter belonging to P02 ASLV</li>
+		<li>Conversion NetCDF to ODV : remove extra tabulation at the end of lines</li>
+ 		<li>Allow COREDIST also in cm (ULCM) as primary variable</li>
+ 		<li>MedAtlas check: detect an error if a value = default and the flag != 9</li>
 	</ul>
 
+<h5>Adds-on</h5>
+ 	<ul>
+ 		<li>Take into account ODV variants for biology, flowcytometry and microlitters for checks and conversions ODV to ODV</li>
+ 		<li>ODV check: the primary variable must have at least one non null value</li>
+ 	</ul>
 
 <h4>Version 1.4.2 - 2019/03/04</h4>
 	<h5>Corrections</h5>
@@ -45,7 +53,7 @@ h5   {color: #6c3390;}
  		<li>Non SDN MedAtlas files are recognized but considered as invalid (can be converted)</li>
  		<li>Conversion from MedAtlas: the SDN CSR reference is automatically added from EDMO code and cruise reference, if possible</li>
  		<li>All conversions: non-mandatory variables are not kept if they are empty (with only default values)</li>
- 		<li>Conversion to ODV: an error is raises if one of the mandatory columns has missing value(s)</li>
+ 		<li>Conversion to ODV: an error is raised if one of the mandatory columns has missing value(s)</li>
  		<li>Update SDN QC flags: add 'Q' flag</li>
  		<li>JSON log: format added in files logs</li>
  		<li>Choose automatically the default output directory for conversion to mono-station files</li>

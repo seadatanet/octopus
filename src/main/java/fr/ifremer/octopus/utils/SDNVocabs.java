@@ -20,7 +20,11 @@ import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 public class SDNVocabs {
 	static final Logger LOGGER = LogManager.getLogger(SDNVocabs.class.getName());
-	public static final String[] vocabsList = { SdnVocabularyManager.LIST_C17, SdnVocabularyManager.LIST_C77, SdnVocabularyManager.LIST_L05, SdnVocabularyManager.LIST_L22, SdnVocabularyManager.LIST_L23, SdnVocabularyManager.LIST_L33, SdnVocabularyManager.LIST_P01, SdnVocabularyManager.LIST_P02, SdnVocabularyManager.LIST_P06, SdnVocabularyManager.LIST_P09 };
+	public static final String[] vocabsList = { 
+			SdnVocabularyManager.LIST_C17, SdnVocabularyManager.LIST_C77, 
+			SdnVocabularyManager.LIST_L05, SdnVocabularyManager.LIST_L22, SdnVocabularyManager.LIST_L23, 
+			SdnVocabularyManager.LIST_L33, SdnVocabularyManager.LIST_P01, SdnVocabularyManager.LIST_P02, 
+			SdnVocabularyManager.LIST_P06, SdnVocabularyManager.LIST_P09 };
 
 	private static int nonPresent_bodc = -1;
 	private static SDNVocabs sdnVocabs;

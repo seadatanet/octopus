@@ -1,7 +1,9 @@
 package fr.ifremer.octopus.utils;
 
+import java.io.File;
 import java.util.HashMap;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Ignore;
@@ -10,6 +12,7 @@ import org.junit.Test;
 import sdn.vocabulary.interfaces.ICollection;
 import sdn.vocabulary.interfaces.ICollectionMapping;
 import sdn.vocabulary.interfaces.VocabularyException;
+import fr.ifremer.sismer_tools.csr.CSRListManager;
 import fr.ifremer.sismer_tools.seadatanet.SdnVocabularyManager;
 
 public class SDNVocabsTest {
@@ -17,8 +20,37 @@ public class SDNVocabsTest {
 	
 	
 	
+	
 	@Test
-//	@Ignore
+	
+	public void reloadBODCVocabs() {
+		LOGGER.info("REMOVE AND DOWNLOAD BODC VOCABS");
+		File bodcDir;
+		try {
+			bodcDir = SDNVocabs.getInstance().getCf().getLocalDirectory();
+			FileUtils.deleteDirectory(bodcDir);
+			FileUtils.forceMkdir(bodcDir);
+			for (String list : SDNVocabs.vocabsList)
+			{			 
+				LOGGER.info("download "+ list);
+				SDNVocabs.getInstance().getCf().loadCollections(true, list);
+			}
+			
+			SDNVocabs.getInstance().updateMappings();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			CSRListManager mgr = CSRListManager.getInstance("resources/csrlist");
+			mgr.checkAndDownloadIfNeeded();
+		} catch (Exception e) {
+			LOGGER.error("unable to get CSR list");
+		} 
+		
+		
+	}
+	@Test
+	@Ignore
 	public void test() {
 		int nonPresent_bodc=-1;
 

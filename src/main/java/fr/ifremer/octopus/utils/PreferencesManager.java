@@ -64,9 +64,15 @@ public class PreferencesManager {
 	}
 
 
-	public Locale getLocale(){
+	public Locale getLocale( ){
 		Locale locale;
-		switch (preferences.getLanguage()) {
+		String language = "uk";
+		try {
+			language = preferences.getLanguage();
+		}catch (Exception e) {
+			language = "uk";
+		}
+		switch (language) {
 		case "fr":
 			locale =LOCALE_FR;
 			break;

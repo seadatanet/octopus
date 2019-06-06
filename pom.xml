@@ -11,7 +11,7 @@
 	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
 It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
-	<version>1.5.0.2</version> <!-- 4th number is for ifremer/altran use only -->
+	<version>${my.version}</version>
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
 		<name>ifremer</name>
@@ -32,8 +32,9 @@ It is a unique and ergonomic tool for many format conversions.</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		
+		<start-class>fr.ifremer.octopus.MainApp</start-class>
 		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
+		<my.version>1.5.0.3-SNAPSHOT</my.version> <!-- 4th number is for ifremer/altran use only -->
 	</properties>
 
 	<build>
@@ -49,37 +50,55 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</configuration>
 			</plugin>
 
+			<!-- ===================================== ASSEMBLY =========================================== -->
 
-<!-- ===================================== ASSEMBLY FOR OCTOPUS SOFTWARE=========================================== -->
-<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4</version>
-				<executions>
-					<execution>
-						<id>package-jar-with-dependencies</id>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<!-- final name do not contains version -->
-							<finalName>${project.artifactId}-maven</finalName>
-							<appendAssemblyId>false</appendAssemblyId>
-							<descriptorRefs>
-								<descriptorRef>jar-with-dependencies</descriptorRef>
-							</descriptorRefs>
-							<archive>
-								<manifest>
-									<mainClass>fr.ifremer.octopus.MainApp</mainClass>
-								</manifest>
-							</archive>
-						</configuration>
-					</execution>
-				</executions>
+			<!-- Builds the artifact with its dependencies -->
+			<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-shade-plugin</artifactId>
+			<version>3.2.1</version>
+			<executions>
+				<!-- Run shade goal on package phase -->
+				<execution>
+				<phase>package</phase>
+				<goals>
+					<goal>shade</goal>
+				</goals>
+				<configuration>
+				<!-- Rename the artifact -->
+				<finalName>${project.artifactId}-${my.version}</finalName>
+				<filters>
+					<filter>
+						<artifact>*:*</artifact>
+						<excludes>
+							<exclude>META-INF/*.SF</exclude>
+							<exclude>META-INF/*.DSA</exclude>
+							<exclude>META-INF/*.RSA</exclude>
+						</excludes>
+					</filter>
+				</filters>
+				<transformers>
+					<!-- add Main-Class to manifest file -->
+					<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+						<manifestEntries>
+						  <Main-Class>fr.ifremer.octopus.MainApp</Main-Class>
+						</manifestEntries>
+					</transformer>
+					<!-- Workaround for shade + log4j2 + standalone application JAR -->
+					<transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer" />                
+				</transformers>
+				</configuration>
+				</execution>
+			</executions>
+			<dependencies>
+				<dependency>
+					<groupId>com.github.edwgiz</groupId>
+					<artifactId>maven-shade-plugin.log4j2-cachefile-transformer</artifactId>
+					<version>2.1</version>
+				</dependency>
+			</dependencies>
 			</plugin>
 
-			
 			<!-- ===================================== JAVADOC =========================================== -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -262,7 +281,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
 							<destinationFile>target/livrableLinux/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -282,7 +301,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
 							<destinationFile>target/livrableWin/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -302,7 +321,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 <!-- 							<goal>copy</goal> -->
 <!-- 						</goals> -->
 <!-- 						<configuration> -->
-<!-- 							<sourceFile>target/octopus-maven.jar</sourceFile> -->
+<!-- 							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> -->
 <!-- 							<destinationFile>target/livrableLinux32/octopus/octopus.jar</destinationFile> -->
 <!-- 						</configuration> -->
 <!-- 					</execution> -->
@@ -320,7 +339,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
 							<destinationFile>target/livrableLinux64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -340,7 +359,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 <!-- 							<goal>copy</goal> -->
 <!-- 						</goals> -->
 <!-- 						<configuration> -->
-<!-- 							<sourceFile>target/octopus-maven.jar</sourceFile> -->
+<!-- 							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> -->
 <!-- 							<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile> -->
 <!-- 						</configuration> -->
 <!-- 					</execution> -->
@@ -358,7 +377,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/octopus-maven.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
 							<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -368,12 +387,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 
 			<!-- <plugin> <groupId>com.coderplus.maven.plugins</groupId> <artifactId>copy-rename-maven-plugin</artifactId> 
 				<version>1.0</version> <executions> <execution> <id>copy-jar-win32</id> <phase>install</phase> 
-				<goals> <goal>copy</goal> </goals> <configuration> <sourceFile>target/octopus-maven.jar</sourceFile> 
+				<goals> <goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> 
 				<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile> 
 				</configuration> </execution> </executions> </plugin> <plugin> <groupId>com.coderplus.maven.plugins</groupId> 
 				<artifactId>copy-rename-maven-plugin</artifactId> <version>1.0</version> 
 				<executions> <execution> <id>copy-jar-win64</id> <phase>install</phase> <goals> 
-				<goal>copy</goal> </goals> <configuration> <sourceFile>target/octopus-maven.jar</sourceFile> 
+				<goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> 
 				<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile> 
 				</configuration> </execution> </executions> </plugin> -->
 
@@ -624,6 +643,13 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 		</plugins>
 	</build>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>oss.sonatype.org</id>
+			<name>OSS Sonatype Staging</name>
+			<url>https://oss.sonatype.org/content/groups/staging</url>
+		</pluginRepository>
+	</pluginRepositories>      
 
 	<dependencies>
 

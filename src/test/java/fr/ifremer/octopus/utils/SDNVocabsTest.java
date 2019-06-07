@@ -22,7 +22,7 @@ public class SDNVocabsTest {
 	
 	
 	@Test
-	
+//	@Ignore
 	public void reloadBODCVocabs() {
 		LOGGER.info("REMOVE AND DOWNLOAD BODC VOCABS");
 		File bodcDir;

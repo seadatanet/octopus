@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+   <vocabulary list="SDN:L05:67:"  version="67"  date="2018-10-25T01:00:03.000"  title="SeaDataNet device categories"   />
+   <mapped>
+      <vocabulary list="SDN:C77:3:"  version="3"  date="2011-12-09T02:00:14.000"  title="SeaDataNet Cruise Summary Report data categories"   />
+   </mapped>
+   <match>
+      <element  key="SDN:C77:3:H13"  label="Bathythermograph"    />
+      <exact>
+         <element  key="SDN:L05:3:132"  label="bathythermographs"    />
+      </exact>
+      <broad>
+         <element  key="SDN:L05:3:134"  label="water temperature sensor"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G08"  label="Bottom photography"    />
+      <broad>
+         <element  key="SDN:L05:3:180"  label="underwater cameras"    />
+      </broad>
+      <narrow>
+         <element  key="SDN:L05:3:378"  label="sediment profile imagers"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:H10"  label="CTD stations"    />
+      <exact>
+         <element  key="SDN:L05:3:130"  label="CTD"    />
+      </exact>
+      <broad>
+         <element  key="SDN:L05:3:350"  label="salinity sensor"    />
+      </broad>
+      <narrow>
+         <element  key="SDN:L05:3:354"  label="expendable CTDs"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G03"  label="Core - rock"    />
+      <exact>
+         <element  key="SDN:L05:3:53"  label="rock corers"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G04"  label="Core - soft bottom"    />
+      <exact>
+         <element  key="SDN:L05:3:51"  label="unconsolidated sediment corers"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:D01"  label="Current meters"    />
+      <exact>
+         <element  key="SDN:L05:3:114"  label="current meters"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:D71"  label="Current profiler (eg ADCP)"    />
+      <exact>
+         <element  key="SDN:L05:3:115"  label="current profilers"    />
+      </exact>
+      <narrow>
+         <element  key="SDN:L05:3:116"  label="lowered current profilers"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:B19"  label="Demersal fish"    />
+      <broad>
+         <element  key="SDN:L05:3:24"  label="benthos samplers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G01"  label="Dredge"    />
+      <narrow>
+         <element  key="SDN:L05:3:54"  label="rock dredges"    />
+         <element  key="SDN:L05:3:60"  label="sediment dredges"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G02"  label="Grab"    />
+      <exact>
+         <element  key="SDN:L05:3:50"  label="sediment grabs"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G27"  label="Gravity measurements"    />
+      <exact>
+         <element  key="SDN:L05:3:158"  label="gravimeters"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:M02"  label="Incident radiation"    />
+      <broad>
+         <element  key="SDN:L05:3:122"  label="radiometers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:D72"  label="Instrumented wave measurements"    />
+      <exact>
+         <element  key="SDN:L05:3:110"  label="wave recorders"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G24"  label="Long/short range side scan sonar"    />
+      <exact>
+         <element  key="SDN:L05:3:152"  label="sidescan sonars"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G28"  label="Magnetic measurements"    />
+      <exact>
+         <element  key="SDN:L05:3:159"  label="magnetometers"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G74"  label="Multi-beam echosounding"    />
+      <exact>
+         <element  key="SDN:L05:3:157"  label="multi-beam echosounders"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G76"  label="Multichannel seismic reflection"    />
+      <exact>
+         <element  key="SDN:L05:3:154"  label="multi-channel seismic reflection systems"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:D06"  label="Neutrally buoyant floats"    />
+      <related>
+         <element  key="SDN:L05:3:182"  label="inapplicable"    />
+         <element  key="SDN:L05:3:357"  label="acoustic tracking systems"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:M90"  label="Other meteorological measurements"    />
+      <related>
+         <element  key="SDN:L05:3:182"  label="inapplicable"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:B14"  label="Pelagic fish"    />
+      <exact>
+         <element  key="SDN:L05:3:23"  label="pelagic trawl nets"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:B17"  label="Phytobenthos"    />
+      <broad>
+         <element  key="SDN:L05:3:24"  label="benthos samplers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:D09"  label="Sea level (inc. bot. press., inverted echosounder)"    />
+      <narrow>
+         <element  key="SDN:L05:3:112"  label="inverted echosounders"    />
+         <element  key="SDN:L05:3:111"  label="sea level recorders"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:B73"  label="Sediment traps"    />
+      <exact>
+         <element  key="SDN:L05:3:33"  label="sediment traps"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G26"  label="Seismic refraction"    />
+      <exact>
+         <element  key="SDN:L05:3:155"  label="seismic refraction systems"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G75"  label="Single channel seismic reflection"    />
+      <exact>
+         <element  key="SDN:L05:3:153"  label="single-channel seismic reflection systems"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:G73"  label="Single-beam echosounding"    />
+      <exact>
+         <element  key="SDN:L05:3:156"  label="single-beam echosounders"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:H11"  label="Subsurface temperature and salinity measurements"    />
+      <broad>
+         <element  key="SDN:L05:3:350"  label="salinity sensor"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:H72"  label="Subsurface temperature measurements"    />
+      <exact>
+         <element  key="SDN:L05:3:135"  label="thermistor chains"    />
+      </exact>
+      <broad>
+         <element  key="SDN:L05:3:134"  label="water temperature sensor"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:D05"  label="Surface drifters/drifting buoys"    />
+      <related>
+         <element  key="SDN:L05:3:182"  label="inapplicable"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:H71"  label="Surface measurements underway (T,S)"    />
+      <broad>
+         <element  key="SDN:L05:3:350"  label="salinity sensor"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:M01"  label="Upper air observations"    />
+      <narrow>
+         <element  key="SDN:L05:3:103"  label="radiosondes"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:H09"  label="Water bottle stations"    />
+      <broad>
+         <element  key="SDN:L05:3:30"  label="discrete water samplers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:C77:3:B18"  label="Zoobenthos"    />
+      <broad>
+         <element  key="SDN:L05:3:24"  label="benthos samplers"    />
+      </broad>
+   </match>
+</mapping>

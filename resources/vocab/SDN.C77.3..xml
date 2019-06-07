@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary list="SDN:C77:3:"  version="3"  date="2011-12-09T02:00:14.000"  title="SeaDataNet Cruise Summary Report data categories"  >
+   <element  key="SDN:C77::B64"  label="Gear research"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::B20"  label="Molluscs"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::B21"  label="Crustaceans"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::B65"  label="Exploratory fishing"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::B25"  label="Birds"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::B26"  label="Mammals and reptiles"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::H21"  label="Oxygen"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::B28"  label="Acoustic reflection on marine organisms."   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::G02"  label="Grab"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::H23"  label="Total - P"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::G01"  label="Dredge"   date="2011-12-08T10:58:07.000"  />
+   <element  key="SDN:C77::H22"  label="Phosphate"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::G04"  label="Core - soft bottom"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::H25"  label="Nitrite"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::G03"  label="Core - rock"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::H24"  label="Nitrate"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::H27"  label="Alkalinity"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::H26"  label="Silicate"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::G08"  label="Bottom photography"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::M02"  label="Incident radiation"   date="2011-12-08T10:58:14.000"  />
+   <element  key="SDN:C77::M01"  label="Upper air observations"   date="2011-12-08T10:58:14.000"  />
+   <element  key="SDN:C77::H28"  label="pH"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::M04"  label="Ice observations"   date="2011-12-08T10:58:14.000"  />
+   <element  key="SDN:C77::M06"  label="Routine standard measurements"   date="2011-12-08T10:58:14.000"  />
+   <element  key="SDN:C77::M05"  label="Occasional standard measurements"   date="2011-12-08T10:58:14.000"  />
+   <element  key="SDN:C77::B71"  label="Particulate organic matter (inc POC, PON)"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::B72"  label="Biochemical measurements (eg lipids, amino acids)"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::D72"  label="Instrumented wave measurements"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::B73"  label="Sediment traps"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::D71"  label="Current profiler (eg ADCP)"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::G90"  label="Other geological/geophysical measurements"   date="2011-12-08T10:58:09.000"  />
+   <element  key="SDN:C77::H72"  label="Subsurface temperature measurements"   date="2009-09-16T14:18:20.000"  />
+   <element  key="SDN:C77::H71"  label="Surface measurements underway (T,S)"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::H74"  label="Carbon dioxide"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::H30"  label="Trace elements"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::H73"  label="Geochemical tracers (eg freons)"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::M90"  label="Other meteorological measurements"   date="2011-12-08T10:58:14.000"  />
+   <element  key="SDN:C77::H76"  label="Ammonia"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::H32"  label="Isotopes"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::B37"  label="Taggings"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::H31"  label="Radioactivity"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::H75"  label="Total - N"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::H33"  label="Other dissolved gases"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::B01"  label="Primary productivity"   date="2011-12-08T10:58:19.000"  />
+   <element  key="SDN:C77::D01"  label="Current meters"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::B02"  label="Phytoplankton pigs (eg chlorophyll, fluorescence)"   date="2011-12-08T10:58:19.000"  />
+   <element  key="SDN:C77::B03"  label="Seston"   date="2011-12-08T10:58:19.000"  />
+   <element  key="SDN:C77::D03"  label="Currents measured from ship drift"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::B06"  label="Dissolved organic matter (inc DOC)"   date="2011-12-08T10:58:19.000"  />
+   <element  key="SDN:C77::G24"  label="Long/short range side scan sonar"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::D05"  label="Surface drifters/drifting buoys"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::D04"  label="GEK"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::B07"  label="Pelagic bacteria/micro-organisms"   date="2011-12-08T10:58:19.000"  />
+   <element  key="SDN:C77::B08"  label="Phytoplankton"   date="2011-12-08T10:58:19.000"  />
+   <element  key="SDN:C77::G26"  label="Seismic refraction"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::D06"  label="Neutrally buoyant floats"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::B09"  label="Zooplankton"   date="2011-12-08T10:58:19.000"  />
+   <element  key="SDN:C77::G28"  label="Magnetic measurements"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::D09"  label="Sea level (inc. bot. press., inverted echosounder)"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::G27"  label="Gravity measurements"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::P01"  label="Suspended matter"   date="2011-12-08T10:58:25.000"  />
+   <element  key="SDN:C77::H09"  label="Water bottle stations"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::P03"  label="Petroleum residues"   date="2011-12-08T10:58:25.000"  />
+   <element  key="SDN:C77::P02"  label="Trace metals"   date="2011-12-08T10:58:25.000"  />
+   <element  key="SDN:C77::P05"  label="Other dissolved substances"   date="2011-12-08T10:58:25.000"  />
+   <element  key="SDN:C77::P04"  label="Chlorinated hydrocarbons"   date="2011-12-08T10:58:25.000"  />
+   <element  key="SDN:C77::B90"  label="Other biological/fisheries measurements"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::D90"  label="Other physical oceanographic measurements"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::H90"  label="Other chemical oceanographic measurements"   date="2011-12-08T10:58:31.000"  />
+   <element  key="SDN:C77::G71"  label="In-situ seafloor measurement/sampling"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::B10"  label="Neuston"   date="2011-12-08T10:58:19.000"  />
+   <element  key="SDN:C77::B11"  label="Nekton"   date="2011-12-08T10:58:19.000"  />
+   <element  key="SDN:C77::G73"  label="Single-beam echosounding"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::G72"  label="Geophysical measurements made at depth"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::B13"  label="Eggs and larvae"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::G75"  label="Single channel seismic reflection"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::G74"  label="Multi-beam echosounding"   date="2011-12-08T10:58:08.000"  />
+   <element  key="SDN:C77::B14"  label="Pelagic fish"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::M71"  label="Atmospheric chemistry"   date="2011-12-08T10:58:14.000"  />
+   <element  key="SDN:C77::H10"  label="CTD stations"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::P90"  label="Other contaminant measurements"   date="2011-12-08T10:58:25.000"  />
+   <element  key="SDN:C77::B16"  label="Benthic bacteria/micro-organisms"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::G76"  label="Multichannel seismic reflection"   date="2011-12-08T10:58:09.000"  />
+   <element  key="SDN:C77::B17"  label="Phytobenthos"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::H11"  label="Subsurface temperature and salinity measurements"   date="2009-09-16T14:12:08.000"  />
+   <element  key="SDN:C77::B18"  label="Zoobenthos"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::B19"  label="Demersal fish"   date="2011-12-08T10:58:20.000"  />
+   <element  key="SDN:C77::H13"  label="Bathythermograph"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::H16"  label="Transparency (eg transmissometer)"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::H17"  label="Optics (eg underwater light levels)"   date="1992-06-30T23:00:00.000"  />
+   <element  key="SDN:C77::P12"  label="Bottom deposits"   date="2011-12-08T10:58:25.000"  />
+   <element  key="SDN:C77::P13"  label="Contaminants in organisms"   date="2011-12-08T10:58:25.000"  />
+</vocabulary>

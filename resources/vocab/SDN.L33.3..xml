@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary list="SDN:L33:3:"  version="3"  date="2017-08-11T01:00:03.000"  title="WMO C3 vocabulary of XBT data types"  >
+   <element  key="SDN:L33::907"  label="Valeport CTD"  shortLabel="WMO:C-3:907"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::908"  label="Ocean science MVP"  shortLabel="WMO:C-3:908"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::909"  label="Idronaut CTD"  shortLabel="WMO:C-3:909"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::471"  label="Sparton XBT-7DB"  shortLabel="WMO:C-3:471"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::231"  label="TSK T-5"  shortLabel="WMO:C-3:231"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::910"  label="Seabird SBE38"  shortLabel="WMO:C-3:910"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::911"  label="Reserved"  shortLabel="WMO:C-3:911"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::912"  label="Reserved"  shortLabel="WMO:C-3:912"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::913"  label="Reserved"  shortLabel="WMO:C-3:913"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::914"  label="Reserved"  shortLabel="WMO:C-3:914"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::915"  label="Reserved"  shortLabel="WMO:C-3:915"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::916"  label="Reserved"  shortLabel="WMO:C-3:916"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::917"  label="Reserved"  shortLabel="WMO:C-3:917"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::918"  label="Reserved"  shortLabel="WMO:C-3:918"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::919"  label="Reserved"  shortLabel="WMO:C-3:919"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::481"  label="Sparton XBT-10"  shortLabel="WMO:C-3:481"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::241"  label="TSK T-10"  shortLabel="WMO:C-3:241"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::001"  label="Sippican T-4"  shortLabel="WMO:C-3:1"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::002"  label="Sippican T-4"  shortLabel="WMO:C-3:2"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::920"  label="Reserved"  shortLabel="WMO:C-3:920"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::800"  label="Mechanical BT"  shortLabel="WMO:C-3:800"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::921"  label="Reserved"  shortLabel="WMO:C-3:921"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::922"  label="Reserved"  shortLabel="WMO:C-3:922"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::923"  label="Reserved"  shortLabel="WMO:C-3:923"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::924"  label="Reserved"  shortLabel="WMO:C-3:924"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::925"  label="Reserved"  shortLabel="WMO:C-3:925"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::926"  label="Reserved"  shortLabel="WMO:C-3:926"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::927"  label="Reserved"  shortLabel="WMO:C-3:927"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::928"  label="Reserved"  shortLabel="WMO:C-3:928"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::929"  label="Reserved"  shortLabel="WMO:C-3:929"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1000"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1000"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::491"  label="Sparton XBT-20"  shortLabel="WMO:C-3:491"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::251"  label="TSK Deep Blue"  shortLabel="WMO:C-3:251"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::252"  label="TSK Deep Blue"  shortLabel="WMO:C-3:252"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::011"  label="Sippican T-5"  shortLabel="WMO:C-3:11"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::930"  label="Reserved"  shortLabel="WMO:C-3:930"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::810"  label="Hydrocast"  shortLabel="WMO:C-3:810"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::931"  label="Reserved"  shortLabel="WMO:C-3:931"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::932"  label="Reserved"  shortLabel="WMO:C-3:932"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::933"  label="Reserved"  shortLabel="WMO:C-3:933"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::934"  label="Reserved"  shortLabel="WMO:C-3:934"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::935"  label="Reserved"  shortLabel="WMO:C-3:935"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::936"  label="Reserved"  shortLabel="WMO:C-3:936"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::937"  label="Reserved"  shortLabel="WMO:C-3:937"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::938"  label="Reserved"  shortLabel="WMO:C-3:938"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::939"  label="Reserved"  shortLabel="WMO:C-3:939"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1011"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1011"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1010"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1010"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::261"  label="TSK AXBT"  shortLabel="WMO:C-3:261"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::021"  label="Sippican Fast Deep"  shortLabel="WMO:C-3:21"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1008"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1008"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1007"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1007"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1006"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1006"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1005"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1005"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1004"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1004"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::940"  label="Reserved"  shortLabel="WMO:C-3:940"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1003"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1003"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::941"  label="Reserved"  shortLabel="WMO:C-3:941"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1002"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1002"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::820"  label="Thermistor chain"  shortLabel="WMO:C-3:820"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::942"  label="Reserved"  shortLabel="WMO:C-3:942"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1001"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1001"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::700"  label="Sippican XCTD Standard"  shortLabel="WMO:C-3:700"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::943"  label="Reserved"  shortLabel="WMO:C-3:943"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::944"  label="Reserved"  shortLabel="WMO:C-3:944"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::945"  label="Reserved"  shortLabel="WMO:C-3:945"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::946"  label="Reserved"  shortLabel="WMO:C-3:946"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::825"  label="Temperature (sonic) and pressure probes"  shortLabel="WMO:C-3:825"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::947"  label="Reserved"  shortLabel="WMO:C-3:947"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::948"  label="Reserved"  shortLabel="WMO:C-3:948"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::949"  label="Reserved"  shortLabel="WMO:C-3:949"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1009"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1009"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1022"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1022"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1021"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1021"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1020"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1020"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::031"  label="Sippican T-6"  shortLabel="WMO:C-3:31"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::032"  label="Sippican T-6"  shortLabel="WMO:C-3:32"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1019"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1019"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1018"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1018"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1017"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1017"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1016"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1016"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::950"  label="Reserved"  shortLabel="WMO:C-3:950"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1015"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1015"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::830"  label="CTD"  shortLabel="WMO:C-3:830"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::951"  label="Reserved"  shortLabel="WMO:C-3:951"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1014"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1014"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::831"  label="CTD-P-ALACE float"  shortLabel="WMO:C-3:831"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::952"  label="Reserved"  shortLabel="WMO:C-3:952"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1013"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1013"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::710"  label="Sippican XCTD Deep"  shortLabel="WMO:C-3:710"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::953"  label="Reserved"  shortLabel="WMO:C-3:953"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1012"  label="Reserved, only for use in BUFR"  shortLabel="WMO:C-3:1012"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::954"  label="Reserved"  shortLabel="WMO:C-3:954"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::955"  label="Reserved"  shortLabel="WMO:C-3:955"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::956"  label="Reserved"  shortLabel="WMO:C-3:956"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::957"  label="Reserved"  shortLabel="WMO:C-3:957"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::837"  label="ARVOR_C, SBE conductivity sensor"  shortLabel="WMO:C-3:837"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::958"  label="Reserved"  shortLabel="WMO:C-3:958"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::838"  label="ARVOR_D, SBE conductivity sensor"  shortLabel="WMO:C-3:838"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::959"  label="Reserved"  shortLabel="WMO:C-3:959"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::839"  label="PROVOR-II, SBE conductivity sensor"  shortLabel="WMO:C-3:839"  date="2017-08-09T23:19:08.000"  />
+   <element  key="SDN:L33::041"  label="Sippican T-7"  shortLabel="WMO:C-3:41"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::042"  label="Sippican T-7"  shortLabel="WMO:C-3:42"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::960"  label="Reserved"  shortLabel="WMO:C-3:960"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::840"  label="PROVOR, no conductivity sensor"  shortLabel="WMO:C-3:840"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::961"  label="Reserved"  shortLabel="WMO:C-3:961"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::841"  label="PROVOR, Sea-Bird conductivity sensor"  shortLabel="WMO:C-3:841"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::962"  label="Reserved"  shortLabel="WMO:C-3:962"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::720"  label="Sippican AXCTD"  shortLabel="WMO:C-3:720"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::842"  label="PROVOR, FSI conductivity sensor"  shortLabel="WMO:C-3:842"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::963"  label="Reserved"  shortLabel="WMO:C-3:963"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::1023"  label="Missing value, only for use in BUFR"  shortLabel="WMO:C-3:1023"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::843"  label="Polar Ocean Profiling System (POPS), PROVOR, SBE CTD"  shortLabel="WMO:C-3:843"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::964"  label="Reserved"  shortLabel="WMO:C-3:964"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::844"  label="Profiling float, ARVOR, Sea-Bird conductivity sensor"  shortLabel="WMO:C-3:844"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::965"  label="Reserved"  shortLabel="WMO:C-3:965"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::966"  label="Reserved"  shortLabel="WMO:C-3:966"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::845"  label="Webb Research, no conductivity sensor"  shortLabel="WMO:C-3:845"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::967"  label="Reserved"  shortLabel="WMO:C-3:967"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::846"  label="Webb Research, Sea-Bird conductivity sensor"  shortLabel="WMO:C-3:846"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::968"  label="Reserved"  shortLabel="WMO:C-3:968"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::847"  label="Webb Research, FSI conductivity sensor"  shortLabel="WMO:C-3:847"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::848"  label="APEX-EM, SBE conductivity sensor"  shortLabel="WMO:C-3:848"  date="2017-08-09T23:19:08.000"  />
+   <element  key="SDN:L33::969"  label="Reserved"  shortLabel="WMO:C-3:969"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::849"  label="APEX_D, SBE conductivity sensor"  shortLabel="WMO:C-3:849"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::051"  label="Sippican Deep Blue"  shortLabel="WMO:C-3:51"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::052"  label="Sippican Deep Blue"  shortLabel="WMO:C-3:52"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::970"  label="Reserved"  shortLabel="WMO:C-3:970"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::971"  label="Reserved"  shortLabel="WMO:C-3:971"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::850"  label="SOLO, no conductivity sensor"  shortLabel="WMO:C-3:850"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::972"  label="Reserved"  shortLabel="WMO:C-3:972"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::851"  label="SOLO, Sea-Bird conductivity sensor"  shortLabel="WMO:C-3:851"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::730"  label="Sippican SXCTD"  shortLabel="WMO:C-3:730"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::973"  label="Reserved"  shortLabel="WMO:C-3:973"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::852"  label="SOLO, FSI conductivity sensor"  shortLabel="WMO:C-3:852"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::853"  label="Profiling float, SOLO2 (SCRIPPS), Sea-Bird conductivity sensor"  shortLabel="WMO:C-3:853"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::974"  label="Reserved"  shortLabel="WMO:C-3:974"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::975"  label="Reserved"  shortLabel="WMO:C-3:975"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::854"  label="S2A, SBE conductivity sensor"  shortLabel="WMO:C-3:854"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::855"  label="Profiling float, NINJA, no conductivity sensor"  shortLabel="WMO:C-3:855"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::976"  label="Reserved"  shortLabel="WMO:C-3:976"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::856"  label="Profiling float, NINJA, SBE conductivity sensor"  shortLabel="WMO:C-3:856"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::977"  label="Reserved"  shortLabel="WMO:C-3:977"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::857"  label="Profiling float, NINJA, FSI conductivity sensor"  shortLabel="WMO:C-3:857"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::978"  label="Reserved"  shortLabel="WMO:C-3:978"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::858"  label="Profiling float, NINJA, TSK conductivity sensor"  shortLabel="WMO:C-3:858"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::979"  label="Reserved"  shortLabel="WMO:C-3:979"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::859"  label="Profiling float, NEMO, no conductivity sensor"  shortLabel="WMO:C-3:859"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::061"  label="Sippican T-10"  shortLabel="WMO:C-3:61"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::980"  label="Reserved"  shortLabel="WMO:C-3:980"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::860"  label="Profiling float, NEMO, SBE conductivity sensor"  shortLabel="WMO:C-3:860"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::981"  label="Reserved"  shortLabel="WMO:C-3:981"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::861"  label="Profiling float, NEMO, FSI conductivity sensor"  shortLabel="WMO:C-3:861"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::982"  label="Reserved"  shortLabel="WMO:C-3:982"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::983"  label="Reserved"  shortLabel="WMO:C-3:983"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::862"  label="SOLO_D, SBE conductivity sensor"  shortLabel="WMO:C-3:862"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::741"  label="TSK XCTD/XCTD-1"  shortLabel="WMO:C-3:741"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::863"  label="NAVIS-A, SBE conductivity sensor"  shortLabel="WMO:C-3:863"  date="2017-08-09T23:19:08.000"  />
+   <element  key="SDN:L33::984"  label="Reserved"  shortLabel="WMO:C-3:984"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::742"  label="TSK XCTD-2"  shortLabel="WMO:C-3:742"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::864"  label="NINJA_D, SBE conductivity sensor"  shortLabel="WMO:C-3:864"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::985"  label="Reserved"  shortLabel="WMO:C-3:985"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::501"  label="Sparton XBT-20DB"  shortLabel="WMO:C-3:501"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::743"  label="TSK XCTD-2F"  shortLabel="WMO:C-3:743"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::865"  label="NOVA, SBE conductivity sensor"  shortLabel="WMO:C-3:865"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::986"  label="Reserved"  shortLabel="WMO:C-3:986"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::744"  label="TSK XCTD-3"  shortLabel="WMO:C-3:744"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::866"  label="Reserved"  shortLabel="WMO:C-3:866"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::987"  label="Reserved"  shortLabel="WMO:C-3:987"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::745"  label="TSK XCTD-4"  shortLabel="WMO:C-3:745"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::867"  label="Reserved"  shortLabel="WMO:C-3:867"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::988"  label="Reserved"  shortLabel="WMO:C-3:988"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::868"  label="Reserved"  shortLabel="WMO:C-3:868"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::989"  label="Reserved"  shortLabel="WMO:C-3:989"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::869"  label="Reserved"  shortLabel="WMO:C-3:869"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::071"  label="Sippican T-11"  shortLabel="WMO:C-3:71"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::990"  label="Reserved"  shortLabel="WMO:C-3:990"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::870"  label="Reserved"  shortLabel="WMO:C-3:870"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::991"  label="Reserved"  shortLabel="WMO:C-3:991"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::871"  label="Reserved"  shortLabel="WMO:C-3:871"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::992"  label="Reserved"  shortLabel="WMO:C-3:992"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::872"  label="Reserved"  shortLabel="WMO:C-3:872"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::993"  label="Reserved"  shortLabel="WMO:C-3:993"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::751"  label="TSK AXCTD"  shortLabel="WMO:C-3:751"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::873"  label="Reserved"  shortLabel="WMO:C-3:873"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::994"  label="Reserved"  shortLabel="WMO:C-3:994"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::510"  label="Sparton 536 AXBT"  shortLabel="WMO:C-3:510"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::995"  label="Instrument attached to marine mammals"  shortLabel="WMO:C-3:995"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::874"  label="Reserved"  shortLabel="WMO:C-3:874"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::996"  label="Instrument attached to animals other than marine mammals"  shortLabel="WMO:C-3:996"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::875"  label="Reserved"  shortLabel="WMO:C-3:875"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::876"  label="Reserved"  shortLabel="WMO:C-3:876"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::997"  label="Reserved"  shortLabel="WMO:C-3:997"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::877"  label="Reserved"  shortLabel="WMO:C-3:877"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::998"  label="Reserved"  shortLabel="WMO:C-3:998"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::878"  label="Reserved"  shortLabel="WMO:C-3:878"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::999"  label="Reserved"  shortLabel="WMO:C-3:999"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::879"  label="Reserved"  shortLabel="WMO:C-3:879"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::081"  label="Sippican AXBT (300 m probes)"  shortLabel="WMO:C-3:81"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::880"  label="Reserved"  shortLabel="WMO:C-3:880"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::881"  label="Reserved"  shortLabel="WMO:C-3:881"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::882"  label="Reserved"  shortLabel="WMO:C-3:882"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::883"  label="Reserved"  shortLabel="WMO:C-3:883"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::884"  label="Reserved"  shortLabel="WMO:C-3:884"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::885"  label="Reserved"  shortLabel="WMO:C-3:885"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::401"  label="Sparton XBT-1"  shortLabel="WMO:C-3:401"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::886"  label="Reserved"  shortLabel="WMO:C-3:886"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::887"  label="Reserved"  shortLabel="WMO:C-3:887"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::888"  label="Reserved"  shortLabel="WMO:C-3:888"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::889"  label="Reserved"  shortLabel="WMO:C-3:889"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::890"  label="Reserved"  shortLabel="WMO:C-3:890"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::891"  label="Reserved"  shortLabel="WMO:C-3:891"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::892"  label="Reserved"  shortLabel="WMO:C-3:892"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::893"  label="Reserved"  shortLabel="WMO:C-3:893"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::894"  label="Reserved"  shortLabel="WMO:C-3:894"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::895"  label="Reserved"  shortLabel="WMO:C-3:895"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::411"  label="Sparton XBT-3"  shortLabel="WMO:C-3:411"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::896"  label="Reserved"  shortLabel="WMO:C-3:896"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::897"  label="Reserved"  shortLabel="WMO:C-3:897"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::898"  label="Reserved"  shortLabel="WMO:C-3:898"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::899"  label="Reserved"  shortLabel="WMO:C-3:899"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::780"  label="Sea-Bird SBE21 SEACAT Thermosalinograph"  shortLabel="WMO:C-3:780"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::781"  label="Sea-Bird SBE45 MicroTSG Thermosalinograph"  shortLabel="WMO:C-3:781"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::421"  label="Sparton XBT-4"  shortLabel="WMO:C-3:421"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::431"  label="Sparton XBT-5"  shortLabel="WMO:C-3:431"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::441"  label="Sparton XBT-5DB"  shortLabel="WMO:C-3:441"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::201"  label="TSK T-4"  shortLabel="WMO:C-3:201"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::202"  label="TSK T-4"  shortLabel="WMO:C-3:202"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::451"  label="Sparton XBT-6"  shortLabel="WMO:C-3:451"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::211"  label="TSK T-6"  shortLabel="WMO:C-3:211"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::212"  label="TSK T-6"  shortLabel="WMO:C-3:212"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::461"  label="Sparton XBT-7"  shortLabel="WMO:C-3:461"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::462"  label="Sparton XBT-7"  shortLabel="WMO:C-3:462"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::221"  label="TSK T-7"  shortLabel="WMO:C-3:221"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::222"  label="TSK T-7"  shortLabel="WMO:C-3:222"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::900"  label="Sippican LMP-5 XBT"  shortLabel="WMO:C-3:900"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::901"  label="Ice-tethered Profiler (ITP), SBE CTD"  shortLabel="WMO:C-3:901"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::902"  label="Brooke ocean moving vessel profiler (MVP)"  shortLabel="WMO:C-3:902"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::903"  label="Seabird CTD"  shortLabel="WMO:C-3:903"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::904"  label="AML oceanographic CTD"  shortLabel="WMO:C-3:904"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::905"  label="Falmouth scientific CTD"  shortLabel="WMO:C-3:905"  date="2014-06-19T10:05:19.000"  />
+   <element  key="SDN:L33::906"  label="Ocean sensors CTD"  shortLabel="WMO:C-3:906"  date="2014-06-19T10:05:19.000"  />
+</vocabulary>

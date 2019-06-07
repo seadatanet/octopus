@@ -5,6 +5,7 @@ import java.io.File;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import fr.ifremer.octopus.controller.OctopusException;
 import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.seadatanet.odv.input.OdvReader;
 import fr.ifremer.sismer_tools.seadatanet.Format;
@@ -17,6 +18,9 @@ public class OdvFormatChecker extends FormatChecker {
 		
 		try {
 			OdvReader mgr = new OdvReader(f.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
+			if (mgr.getValidator().hasErrors()) {
+				throw new OctopusException("File " + f.getName() + " has some errors");
+			}
 			return mgr.getFormat();
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());

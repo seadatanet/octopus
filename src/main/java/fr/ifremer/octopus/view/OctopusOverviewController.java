@@ -550,7 +550,6 @@ public class OctopusOverviewController {
 				cdiContainer.setVisible(showCdi.isSelected());
 				if (showCdi.isSelected()){
 					try {
-						cdiTable=null; // FIXME: cdis are read from input each time we select!!!
 						cdiContainer.getChildren().clear();
 						cdiContainer.getChildren().addAll(getCDITable());
 
@@ -671,9 +670,11 @@ public class OctopusOverviewController {
 					if (!outCDI.getText().isEmpty()){
 						octopusGuiController.getModel().setOuputLocalCdiId(outCDI.getText());
 					}
-					for (SDNCdiIdObservable p : getCDITable().getItems()) {
-						if (p.getSelected()){
-							octopusGuiController.getModel().getCdiList().add(p.cdiProperty().getValue());
+					if (cdiTable!=null) { //47762
+						for (SDNCdiIdObservable p : getCDITable().getItems()) {
+							if (p.getSelected()){
+								octopusGuiController.getModel().getCdiList().add(p.cdiProperty().getValue());
+							}
 						}
 					}
 

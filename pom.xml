@@ -820,7 +820,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 
 		<!-- ALTRAN -->
 		<profile>
-			<id>altranlocal</id>
+			<id>altran</id>
 			<activation>
 				<activeByDefault>false</activeByDefault>
 			</activation>

@@ -34,7 +34,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>fr.ifremer.octopus.MainApp</start-class>
 		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
-		<my.version>1.5.0.8</my.version> <!-- 4th number is for ifremer/altran use only -->
+		<my.version>1.5.1.0-SNAPSHOT</my.version> <!-- 4th number is for ifremer/altran use only -->
 	</properties>
 
 	<build>
@@ -657,7 +657,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.25</version>
+			<version>0.26-SNAPSHOT</version>
 			<!-- <classifier>jar-with-dependencies</classifier> -->
 			<exclusions>
 				<exclusion>

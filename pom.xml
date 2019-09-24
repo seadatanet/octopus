@@ -657,7 +657,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.27</version>
+			<version>0.29</version>
 			<!-- <classifier>jar-with-dependencies</classifier> -->
 			<exclusions>
 				<exclusion>
@@ -822,7 +822,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<profile>
 			<id>altran</id>
 			<activation>
-				<activeByDefault>false</activeByDefault>
+				<activeByDefault>true</activeByDefault>
 			</activation>
 <!-- 			<properties> -->
 <!-- 				<jrepath>${basedir}/build/JREs</jrepath> -->

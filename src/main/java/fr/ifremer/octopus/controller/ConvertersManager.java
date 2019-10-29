@@ -67,7 +67,7 @@ public class ConvertersManager {
 				break;
 			case MGD_98:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
-				if (edmo==null){
+				if (edmo==null|| edmo.isEmpty()){
 					throw new OctopusException(messages.getString("converter.setEdmoInSettings")); 
 				}
 				conv = new MGD77V98Manager(inputFile.getAbsolutePath(), Integer.valueOf(edmo));

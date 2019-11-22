@@ -42,7 +42,11 @@ public class SDNVocabsTest {
 		}
 		try {
 			CSRListManager mgr = CSRListManager.getInstance("resources/csrlist");
-			mgr.checkAndDownloadIfNeeded();
+			LOGGER.info("csr list is update "+ mgr.isFileUpToDate());
+			if (!mgr.isFileUpToDate()) {
+				LOGGER.info("update csr list ");
+				mgr.update();
+			}
 		} catch (Exception e) {
 			LOGGER.error("unable to get CSR list");
 		} 

@@ -698,6 +698,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<artifactId>derby</artifactId>
 			<version>10.12.1.1</version>
 		</dependency>
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.28</version>
+</dependency>
 
 		<!-- edmo web service -->
 

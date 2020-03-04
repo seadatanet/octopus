@@ -3,6 +3,7 @@ package fr.ifremer.octopus.view;
 import java.io.File;
 import java.io.IOException;
 import java.text.MessageFormat;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -14,10 +15,9 @@ import fr.ifremer.octopus.MainApp;
 import fr.ifremer.octopus.utils.EdmoManager;
 import fr.ifremer.octopus.utils.NetworkUtils;
 import fr.ifremer.octopus.utils.PreferencesManager;
-import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.octopus.view.edmo.EdmoController;
 import fr.ifremer.octopus.view.edmo.EdmoHandler;
-import fr.ifremer.sismer_tools.csr.CSRListManager;
+import fr.ifremer.sismer_tools.externalresources.ExternalResourcesManager;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -36,7 +36,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
-import sdn.vocabulary.interfaces.VocabularyException;
 
 public class PreferencesController {
 	static final Logger LOGGER = LogManager.getLogger(PreferencesController.class.getName());
@@ -297,30 +296,21 @@ public class PreferencesController {
 
 				// CSR
 				try {
-					bodcLog.appendText("check CSR file" + LINESEP);
-					CSRListManager csrListMgr = SDNVocabs.getInstance().getCSRListManager();
-					String csrVersionBefore = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
-					csrListMgr.checkAndDownloadIfNeeded();
-					if (!csrListMgr.isFileUpToDate()) {
-						csrListMgr.update();
-						String csrVersionAfter = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
-						bodcLog.appendText("CSR file updated : " + csrVersionBefore + " -> " + csrVersionAfter + LINESEP);
-					}else {
-						bodcLog.appendText("CSR file is up to date : " + csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate() + LINESEP);
-					}
-
-				} catch (Exception e) {
-					LOGGER.error(e.getMessage());
+					String res=ExternalResourcesManager.getInstance().getCsrListManager().reload();
+					bodcLog.appendText(res + LINESEP);
+				} catch (Exception e1) {
+					LOGGER.error(e1.getMessage() );
 					bodcLog.appendText("ERROR: CSR check failed. Please check your internet connection." + LINESEP); // TODO msg
 				}
 
 				// BODC
 				try {
-
+					HashMap<String, Integer> current = null;
+					HashMap<String, Integer> newVersions = null;
 					// check current versions
 					bodcLog.appendText("check current vocabulary files" + LINESEP);
 					try {
-						SDNVocabs.getInstance().checkCurrent();
+						current=ExternalResourcesManager.getInstance().getSdnVocabularyManager().checkCurrent();
 					}catch (Exception e) {
 						bodcLog.appendText(e.getMessage() + LINESEP);
 					}
@@ -329,7 +319,7 @@ public class PreferencesController {
 					LOGGER.info("download or update vocabulary files");
 					bodcLog.appendText("download or update vocabulary files" + LINESEP);
 					try {
-						SDNVocabs.getInstance().reload();
+						ExternalResourcesManager.getInstance().getSdnVocabularyManager().reload();
 					} catch (Exception e) {
 						bodcLog.appendText(e.getMessage() + LINESEP);
 					}
@@ -339,7 +329,7 @@ public class PreferencesController {
 
 					// get collections online
 					try {
-						SDNVocabs.getInstance().readOnlineVersions();
+						newVersions=ExternalResourcesManager.getInstance().getSdnVocabularyManager().readOnlineVersions();
 					}catch (Exception e) {
 						bodcLog.appendText(e.getMessage() + LINESEP);
 					}
@@ -349,7 +339,7 @@ public class PreferencesController {
 
 					// read diff in versions
 					try {
-						List<String> logMessages = SDNVocabs.getInstance().getDiff();
+						List<String> logMessages = ExternalResourcesManager.getInstance().getSdnVocabularyManager().getDiff(current, newVersions);
 						for (String message : logMessages) {
 							bodcLog.appendText(message+ LINESEP);
 						}
@@ -362,14 +352,10 @@ public class PreferencesController {
 					bodcLog.appendText("update mapping files" + LINESEP);
 
 					try {
-						List<String>  logMessages=SDNVocabs.getInstance().updateMappings();
+						List<String>  logMessages=ExternalResourcesManager.getInstance().getSdnVocabularyManager().updateVocabMappings();
 						for (String message : logMessages) {
 							bodcLog.appendText(message+ LINESEP);
 						}
-						
-					} catch (VocabularyException e) {
-						bodcLog.appendText(e.getMessage() + LINESEP);
-						LOGGER.info(e.getMessage() + LINESEP);
 					} finally {
 						mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 						disablePane(false);

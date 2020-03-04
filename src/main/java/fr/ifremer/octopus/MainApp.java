@@ -1,5 +1,7 @@
 package fr.ifremer.octopus;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.text.MessageFormat;
@@ -39,6 +41,7 @@ import fr.ifremer.octopus.view.CouplingController;
 import fr.ifremer.octopus.view.OctopusOverviewController;
 import fr.ifremer.octopus.view.PreferencesController;
 import fr.ifremer.octopus.view.RootController;
+import fr.ifremer.sismer_tools.externalresources.ExternalResourcesManager;
 
 public class MainApp extends Application {
 
@@ -60,6 +63,12 @@ public class MainApp extends Application {
 	 */
 	public static void main(String[] args) throws Exception {
 		System.out.println("arguments : "+ args);
+		try {
+			FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
+			ExternalResourcesManager.getInstance(extResourcesConf, "externalResources");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		if (args.length>0){
 			System.out.println("launch Octopus in batch mode");
 			BatchController batch = new BatchController(args);

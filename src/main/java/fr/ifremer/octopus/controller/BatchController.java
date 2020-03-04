@@ -23,8 +23,7 @@ import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.EdmoManager;
 import fr.ifremer.octopus.utils.PreferencesManager;
-import fr.ifremer.octopus.utils.SDNVocabs;
-import fr.ifremer.sismer_tools.csr.CSRListManager;
+import fr.ifremer.sismer_tools.externalresources.ExternalResourcesManager;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 import sdn.vocabulary.interfaces.VocabularyException;
 
@@ -184,29 +183,20 @@ public class BatchController extends AbstractController{
 
 		// CSR
 		try {
-			LOGGER.info("check CSR file" );
-			CSRListManager csrListMgr = SDNVocabs.getInstance().getCSRListManager();
-			String csrVersionBefore = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
-
-			csrListMgr.checkAndDownloadIfNeeded();
-			if (!csrListMgr.isFileUpToDate()) {
-				csrListMgr.update();
-				String csrVersionAfter = csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate();
-				LOGGER.info("CSR file updated: " + csrVersionBefore + " -> " + csrVersionAfter );
-			}else {
-				LOGGER.info("CSR file up to date : " + csrListMgr.getVersionNumber() + " " + csrListMgr.getVersionDate());
-			}
-
-		} catch (Exception e) {
-			LOGGER.info("ERROR: CSR check failed. Please check your internet connection."); // TODO msg
+			String res=ExternalResourcesManager.getInstance().getCsrListManager().reload();
+			LOGGER.info(res);
+		} catch (Exception e1) {
+			LOGGER.error(e1.getMessage() );
 		}
 
 		// BODC
 		try {
 			// check current versions
 			LOGGER.info("check current vocabulary files" );
+			HashMap<String, Integer> current = null;
+			HashMap<String, Integer> newVersions = null;
 			try {
-				SDNVocabs.getInstance().checkCurrent();
+				current = ExternalResourcesManager.getInstance().getSdnVocabularyManager().checkCurrent();
 			}catch (Exception e) {
 				LOGGER.error(e.getMessage() );
 			}
@@ -214,7 +204,7 @@ public class BatchController extends AbstractController{
 			// reload
 			LOGGER.info("download or update vocabulary files");
 			try {
-				SDNVocabs.getInstance().reload();
+				ExternalResourcesManager.getInstance().getSdnVocabularyManager().reload();
 			} catch (Exception e) {
 				LOGGER.error(e.getMessage() );
 			}
@@ -222,7 +212,7 @@ public class BatchController extends AbstractController{
 
 			// get collections online
 			try {
-				SDNVocabs.getInstance().readOnlineVersions();
+				newVersions = ExternalResourcesManager.getInstance().getSdnVocabularyManager().readOnlineVersions();
 			}catch (Exception e) {
 				LOGGER.error(e.getMessage() );
 			}
@@ -230,7 +220,7 @@ public class BatchController extends AbstractController{
 
 			// read diff in versions
 			try {
-				List<String> logMessages = SDNVocabs.getInstance().getDiff();
+				List<String> logMessages = ExternalResourcesManager.getInstance().getSdnVocabularyManager().getDiff(current, newVersions);
 				for (String message : logMessages) {
 					LOGGER.info(message);
 				}
@@ -241,15 +231,11 @@ public class BatchController extends AbstractController{
 			// update mappings
 			LOGGER.info("update mapping files");
 
-			try {
-				List<String>  logMessages=SDNVocabs.getInstance().updateMappings();
-				for (String message : logMessages) {
-					LOGGER.info(message);
-				}
+			List<String>  logMessages=ExternalResourcesManager.getInstance().getSdnVocabularyManager().updateVocabMappings();
+			for (String message : logMessages) {
+				LOGGER.info(message);
+			}
 				
-			} catch (VocabularyException e) {
-				LOGGER.info(e.getMessage());
-			} 
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
 		}

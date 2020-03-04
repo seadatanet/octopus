@@ -6,19 +6,16 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import sdn.vocabulary.interfaces.VocabularyException;
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
 import fr.ifremer.octopus.utils.SDNCdiIdObservable;
-import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
 import fr.ifremer.seadatanet.odv.input.OdvReader;
 import fr.ifremer.sismer_tools.seadatanet.Format;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 
@@ -42,19 +39,17 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 		case MEDATLAS_SDN:
 			MedatlasInputFileManager mgr;
 			try {
-				mgr = new MedatlasInputFileManager(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
+				mgr = new MedatlasInputFileManager(aFile.toAbsolutePath().toString());
 				for (String cdi: mgr.getInputFileCdiIdList()){
 					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}
-			} catch (VocabularyException e1) {
-				throw new IOException(e1.getMessage());
 			} catch (Exception e1) {
 				throw new IOException(e1.getMessage());
 			}
 			break;
 		case ODV_SDN:
 			try{
-				OdvReader reader = new OdvReader(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
+				OdvReader reader = new OdvReader(aFile.toAbsolutePath().toString());
 				for (String cdi :reader.getInputFileCdiIdList()){
 					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}
@@ -64,7 +59,7 @@ public class InputFileGetCDIsVisitor extends SimpleFileVisitor<Path> {
 			break;
 		case CFPOINT:
 			try{
-				CFReader reader = new CFReader(aFile.toAbsolutePath().toString(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
+				CFReader reader = new CFReader(aFile.toAbsolutePath().toString());
 				for (String cdi :reader.getInputFileCdiIdList()){
 					cdiList.add(new SDNCdiIdObservable(cdi, true));
 				}

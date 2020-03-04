@@ -6,7 +6,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.controller.OctopusException;
-import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
@@ -17,7 +16,7 @@ public class CFPointFormatChecker extends FormatChecker {
 	public Format check(File f) throws Exception {
 		
 		try {
-			CFReader reader = new CFReader(f.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
+			CFReader reader = new CFReader(f.getAbsolutePath());
 			if (reader.getValidator().hasErrors()){
 				throw new OctopusException("File " + f.getName() + " has some errors");
 			}else{

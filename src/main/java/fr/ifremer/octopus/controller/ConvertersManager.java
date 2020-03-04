@@ -14,7 +14,6 @@ import fr.ifremer.mgd.MGD77V81Manager;
 import fr.ifremer.mgd.MGD77V98Manager;
 import fr.ifremer.mgd.MGDException;
 import fr.ifremer.octopus.utils.PreferencesManager;
-import fr.ifremer.octopus.utils.SDNVocabs;
 import fr.ifremer.seadatanet.cfpoint.exceptions.CFPointException;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
 import fr.ifremer.seadatanet.odv.input.OdvReader;
@@ -47,16 +46,16 @@ public class ConvertersManager {
 				if (edmo==null || edmo.isEmpty()){
 					throw new OctopusException(messages.getString("converter.setEdmoInSettings")); 
 				}
-				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager(), Integer.valueOf(edmo));
+				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), Integer.valueOf(edmo));
 				break;
 			case MEDATLAS_SDN:
-				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
+				conv = new MedatlasInputFileManager(inputFile.getAbsolutePath() );
 				break;
 			case ODV_SDN:
-				conv = new OdvReader(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
+				conv = new OdvReader(inputFile.getAbsolutePath());
 				break;
 			case CFPOINT:
-				conv = new CFReader(inputFile.getAbsolutePath(), SDNVocabs.getInstance().getCf(), SDNVocabs.getInstance().getCSRListManager());
+				conv = new CFReader(inputFile.getAbsolutePath());
 				break;
 			case MGD_81:
 				edmo = PreferencesManager.getInstance().getEdmoCode();

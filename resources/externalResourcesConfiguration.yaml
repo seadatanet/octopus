@@ -1,0 +1,19 @@
+##############################################
+# Replication Manager - Internal configuration
+##############################################
+
+version: 1
+
+bodcLists:
+  [
+    C17, C77, L05, L22, L23, L33, P01, P02, P06, P09, C16, C18, C19, L06, L07, L08, L20, L30, P07
+  ]
+  
+bodcMappings:
+  [
+    P09_P06, P09_P01, P01_P02, L05_L05, L22_L22, P01_P01, P02_P02, P06_P06, P09_P09
+  ]
+
+l08UrlPatterns:
+  - ^http://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)$
+  - ^https://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)$

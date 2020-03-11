@@ -1,19 +1,34 @@
-##############################################
-# Replication Manager - Internal configuration
-##############################################
+###################################################
+# sismerToolsLib - External resources configuration
+###################################################
 
 version: 1
 
 bodcLists:
-  [
-    C17, C77, L05, L22, L23, L33, P01, P02, P06, P09, C16, C18, C19, L06, L07, L08, L20, L30, P07
-  ]
-  
+    [
+        C17, C77, L05, L22, L23, L33, P01, P02, P06, P09, C16, C18, C19, L06, L07, L08, L20, L30, P07
+    ]
+
 bodcMappings:
-  [
-    P09_P06, P09_P01, P01_P02, L05_L05, L22_L22, P01_P01, P02_P02, P06_P06, P09_P09
-  ]
+    [
+        P09_P06, P09_P01, P01_P02, L05_L05, L22_L22, P01_P01, P02_P02, P06_P06, P09_P09
+    ]
 
 l08UrlPatterns:
-  - ^http://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)$
-  - ^https://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)$
+    - ^http://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)/?$
+    - ^https://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)/?$
+
+c17UrlPatterns:
+    - ^http://vocab.nerc.ac.uk/collection/C17/current/([a-zA-Z0-9]+)/?$
+    - ^http://vocab.ndg.nerc.ac.uk/collection/C17/current/([a-zA-Z0-9]+)/?$
+    - ^http://www.seadatanet.org/urnurl/SDN:C17::([a-zA-Z0-9]+)/?$
+    - ^https://www.seadatanet.org/urnurl/SDN:C17::([a-zA-Z0-9]+)/?$
+
+writeC17Reference: https://www.seadatanet.org/urnurl/SDN:C17::{0}
+
+cdiUrlPatterns:
+    - ^https://cdi\.seadatanet\.org/report/edmo/([0-9]+)/([^/\?\s]+)/xml/?$
+    - ^http://seadatanet\.maris2\.nl/v_cdi_v3/print_xml\.asp\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
+
+# {0} is EDMO_CODE, {1} is LOCAL_CDI_ID.
+writeCdiReference: https://cdi.seadatanet.org/report/edmo/{0}/{1}/xml

@@ -2,33 +2,75 @@
 # sismerToolsLib - External resources configuration
 ###################################################
 
+# Configuration version.
 version: 1
 
+# List of handled BODC lists.
 bodcLists:
     [
         C17, C77, L05, L22, L23, L33, P01, P02, P06, P09, C16, C18, C19, L06, L07, L08, L20, L30, P07
     ]
 
+# Lists of handled BODC mappings.
 bodcMappings:
     [
         P09_P06, P09_P01, P01_P02, L05_L05, L22_L22, P01_P01, P02_P02, P06_P06, P09_P09
     ]
 
+# Accepted URL patterns for L08.
 l08UrlPatterns:
-    - ^http://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)/?$
-    - ^https://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)/?$
+    - (?i)^http://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)/?$
+    - (?i)^https://www.seadatanet.org/urnurl/SDN:L08::([a-zA-Z0-9]+)/?$
 
+# Accepted URL patterns for C17.
 c17UrlPatterns:
-    - ^http://vocab.nerc.ac.uk/collection/C17/current/([a-zA-Z0-9]+)/?$
-    - ^http://vocab.ndg.nerc.ac.uk/collection/C17/current/([a-zA-Z0-9]+)/?$
-    - ^http://www.seadatanet.org/urnurl/SDN:C17::([a-zA-Z0-9]+)/?$
-    - ^https://www.seadatanet.org/urnurl/SDN:C17::([a-zA-Z0-9]+)/?$
+    - (?i)^http://vocab.nerc.ac.uk/collection/C17/current/([a-zA-Z0-9]+)/?$
+    - (?i)^http://vocab.ndg.nerc.ac.uk/collection/C17/current/([a-zA-Z0-9]+)/?$
+    - (?i)^http://www.seadatanet.org/urnurl/SDN:C17::([a-zA-Z0-9]+)/?$
+    - (?i)^https://www.seadatanet.org/urnurl/SDN:C17::([a-zA-Z0-9]+)/?$
 
+# URL pattern to write a C17 URL.
+# {0} is ship code.
 writeC17Reference: https://www.seadatanet.org/urnurl/SDN:C17::{0}
 
-cdiUrlPatterns:
-    - ^https://cdi\.seadatanet\.org/report/edmo/([0-9]+)/([^/\?\s]+)/xml/?$
-    - ^http://seadatanet\.maris2\.nl/v_cdi_v3/print_xml\.asp\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
+# Accepted URL patterns for BODC.
+bodcUrlPatterns:
+    - (?i)^http://vocab.nerc.ac.uk/collection/([a-zA-Z0-9]+)/current/([a-zA-Z0-9]+)/?$
+    - (?i)^http://vocab.ndg.nerc.ac.uk/collection/([a-zA-Z0-9]+)/current/([a-zA-Z0-9]+)/?$
+    - (?i)^http://www.seadatanet.org/urnurl/SDN:([a-zA-Z0-9]+)::([a-zA-Z0-9]+)/?$
+    - (?i)^https://www.seadatanet.org/urnurl/SDN:([a-zA-Z0-9]+)::([a-zA-Z0-9]+)/?$
 
+# URL pattern to write a BODC URL.
+# {0} is the BODC, {1} is the BODC code.
+writeBodcReference: https://www.seadatanet.org/urnurl/SDN:{0}::{1}
+
+# Accepted URL patterns for CDI.
+cdiUrlPatterns:
+    - (?i)^https://cdi\.seadatanet\.org/report/edmo/([0-9]+)/([^/\?\s]+)/xml/?$
+    - (?i)^http://seadatanet\.maris2\.nl/v_cdi_v3/print_xml\.asp\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
+
+# URL pattern to write a CDI URL.
 # {0} is EDMO_CODE, {1} is LOCAL_CDI_ID.
 writeCdiReference: https://cdi.seadatanet.org/report/edmo/{0}/{1}/xml
+
+# Accepted URL patterns for CSR.
+csrUrlPatterns:
+    - (?i)^http://seadata\.bsh\.de/cgi-csr/retrieve_sdn2/xmlDownload_V2\.pl\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
+    - (?i)^https://seadata\.bsh\.de/cgi-csr/retrieve_sdn2/xmlDownload_V2\.pl\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
+    - (?i)^http://seadata\.bsh\.de/cgi-csr/retrieve_sdn2/xmlDownload_V2\.pl\?csrref=([^/\?\s]+)$
+    - (?i)^https://seadata\.bsh\.de/cgi-csr/retrieve_sdn2/xmlDownload_V2\.pl\?csrref=([^/\?\s]+)$
+    - (?i)^http://seadata\.bsh\.de/cgi-csr/XML/xmlDownload_V2\.pl\?csrref=([^/\?\s]+)$
+    - (?i)^https://seadata\.bsh\.de/cgi-csr/XML/xmlDownload_V2\.pl\?csrref=([^/\?\s]+)$
+    - (?i)^http://seadata\.bsh\.de/cgi-csr/XML/xmlDownload_V2\.pl\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
+    - (?i)^https://seadata\.bsh\.de/cgi-csr/XML/xmlDownload_V2\.pl\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
+
+# URL pattern to write a CSR URL. EDMO / id version.
+# {0} is EDMO_CODE, {1} is the CSR identifier.
+writeCsrReference: https://seadata.bsh.de/cgi-csr/XML/xmlDownload_V2.pl?edmo={0}&identifier={1}
+
+# URL pattern to write a CSR URL. BSH ref version
+# {0} is the BSF reference.
+writeCsrReferenceBshRef: https://seadata.bsh.de/cgi-csr/XML/xmlDownload_V2.pl?csrref={0}
+
+# Web service URL to retrieve the CSR.
+csrListWebServiceUrl: https://seadata.bsh.de/isoCodelists/sdnCodelists/csrCodeList.xml

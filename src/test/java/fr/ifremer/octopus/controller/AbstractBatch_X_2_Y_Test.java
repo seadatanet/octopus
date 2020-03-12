@@ -1,6 +1,7 @@
 package fr.ifremer.octopus.controller;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -10,6 +11,8 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+
+import fr.ifremer.sismer_tools.externalresources.ExternalResourcesManager;
 
 public abstract class AbstractBatch_X_2_Y_Test {
 	protected static  String pwd ;
@@ -36,6 +39,12 @@ public abstract class AbstractBatch_X_2_Y_Test {
 	public void before(){
 		pwd = new File("##").getAbsolutePath().replace("#", "") + "src/test/resources/";
 		deleteDir(getInputDir(), getTmpDir());
+		try {
+			FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
+			ExternalResourcesManager.getInstance(extResourcesConf, "externalResources");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		cdiList="";
 		success = false;
 		expectOutputExist= true;

@@ -1,7 +1,11 @@
 package fr.ifremer.octopus.utils;
 
+import java.io.File;
+import java.io.FileInputStream;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Before;
 import org.junit.Test;
 
 import fr.ifremer.sismer_tools.externalresources.ExternalResourcesManager;
@@ -11,7 +15,15 @@ public class SDNVocabsTest {
 	
 	
 	
-	
+	@Before
+	public void before(){
+		try {
+			FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
+			ExternalResourcesManager.getInstance(extResourcesConf, "externalResources");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	@Test
 //	@Ignore
 	public void reloadBODCVocabs() {

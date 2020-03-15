@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary list="SDN:L30:5:"  version="5"  date="2017-08-11T01:00:03.000"  title="MEDATLAS Data Centres"  >
+   <element  key="SDN:L30::DI"  label="International Council for the Exploration of the Sea (ICES)"  shortLabel="EDMO730"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::DM"  label="Danish Meteorological Institute, Oceanographic Section"  shortLabel="EDMO469"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::DN"  label="National Environmental Research Institute, University of Aarhus, Department of Marine Ecology"  shortLabel="EDMO729"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::UB"  label="British Oceanographic Data Center (BODC)"  shortLabel="EDMO43"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::UH"  label="United Kingdom Hydrographic Office"  shortLabel="EDMO26"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::UM"  label="Marine Hydrophysical Institute"  shortLabel="EDMO727"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::IC"  label="Marine Research Institute (MRI)"  shortLabel="EDMO583"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::IE"  label="Centro Ricerche Ambiente Marino (ENEA)"  shortLabel="EDMO136"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::MI"  label="National Institute of Fisheries Research (INRH)"  shortLabel="EDMO691"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::IF"  label="Institute of Oceanography and Fisheries"  shortLabel="EDMO700"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::ML"  label="International Ocean Institute - Malta Operational Centre (University Of Malta) / Physical Oceanography Unit"  shortLabel="EDMO708"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::II"  label="CNR, Istituto di Scienze Marine (Sezione di Ancona)"  shortLabel="EDMO144"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::AD"  label="German Oceanographic Datacentre (NODC)"  shortLabel="EDMO96"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::IL"  label="Israel Marine Data Center (ISRAMAR)"  shortLabel="EDMO710"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::IM"  label="Institute of Marine Sciences, Middle East Technical University (IMS-METU)"  shortLabel="EDMO696"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::IN"  label="Istituto Nazionale di Geofisica e Vulcanologia - INGV"  shortLabel="EDMO251"  date="2017-08-09T23:19:08.000"  />
+   <element  key="SDN:L30::IO"  label="Istituto Nazionale di Oceanografia e di Geofisica Sperimentale - OGS, Dipartimento di Oceanografia"  shortLabel="EDMO120"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::EM"  label="Marine Systems Institute"  shortLabel="EDMO713"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::IR"  label="Marine Institute"  shortLabel="EDMO396"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::EN"  label="National Institute Oceanography Fisheries, ENODC"   date="2008-11-25T15:43:53.000"  />
+   <element  key="SDN:L30::IS"  label="CNR, Institute of Atmospheric Sciences and Climate (ISAC) - Sezione ROMA 2"  shortLabel="EDMO149"  date="2012-06-19T14:59:02.000"  />
+   <element  key="SDN:L30::AL"  label="National Institute of Marine Sciences and Coastal Management (ISMAL)"  shortLabel="EDMO1231"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::AP"  label="Polytechnic University of Tirana - PUT"  shortLabel="EDMO1228"  date="2017-08-09T23:19:08.000"  />
+   <element  key="SDN:L30::RI"  label="National Oceanographic Data Commission (NODC - RIKZ)"  shortLabel="EDMO575"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::NI"  label="Institute of Marine Research - Norwegian Marine Data Centre (NMD)"  shortLabel="EDMO612"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::FA"  label="Mediterranean Institute of Oceanography"  shortLabel="EDMO3078"  date="2017-07-05T13:35:21.000"  />
+   <element  key="SDN:L30::FB"  label="Aquitaine Observatory of Sciences of the Universe (Bordeaux I University) / OSU (OASU)"  shortLabel="EDMO1002"  date="2017-07-05T13:33:31.000"  />
+   <element  key="SDN:L30::RN"  label="National Institute for Marine Research and Development Grigore Antipa"  shortLabel="EDMO697"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::FC"  label="Collecte Localisation Satellites SA - CLS"  shortLabel="EDMO1233"  date="2017-08-09T23:19:08.000"  />
+   <element  key="SDN:L30::NO"  label="Iv.Javakhishvili Tbilisi State University"  shortLabel="EDMO693"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::RS"  label="P.P.Shirshov Institute of Oceanology, RAS"  shortLabel="EDMO685"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::FI"  label="IFREMER / IDM/SISMER"  shortLabel="EDMO486"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::BG"  label="Universite de Liege, GHER"  shortLabel="EDMO1579"  date="2012-06-19T14:56:27.000"  />
+   <element  key="SDN:L30::FM"  label="Finnish Institute of Marine Research (FIMR)"  shortLabel="EDMO628"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::WA"  label="NOAA - WDCA"  shortLabel="EDMO1977"  date="2012-06-19T14:56:39.000"  />
+   <element  key="SDN:L30::BM"  label="National Institute of Meteorology and Hydrometeorology Data Centre (NIMH)"  shortLabel="EDMO961"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::WB"  label="Russia Research Institute of Hydrometeorological Information (RIHMI-WDCB)"  shortLabel="EDMO681"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::FR"  label="Biological Station of ROSCOFF"  shortLabel="EDMO521"  date="2017-07-05T13:34:23.000"  />
+   <element  key="SDN:L30::BO"  label="Bulgarian National Oceanographic Data Centre(BGODC), Institute of Oceanology"  shortLabel="EDMO692"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::FS"  label="SHOM / EPSHOM (SERVICE HYDROGRAPHIQUE MARINE)"  shortLabel="EDMO540"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::SB"  label="Balearic Islands University, UIB"  shortLabel="EDMO2146"  date="2012-06-19T14:57:07.000"  />
+   <element  key="SDN:L30::SD"  label="Centre de recherches oceanographiques de Dakar"   date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::BU"  label="Management Unit of North Sea and Scheldt Estuary Mathematical Models, data acquisition centre - (MUMM)"  shortLabel="EDMO429"  date="2008-11-25T15:43:53.000"  />
+   <element  key="SDN:L30::BV"  label="Flanders Marine Institute (VLIZ)"  shortLabel="EDMO422"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::SI"  label="Instituto Espanol de Oceanografia - IEO"  shortLabel="EDMO353"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::SM"  label="Swedish Meteorogical and Hydrological Institute (SMHI)"  shortLabel="EDMO545"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::SN"  label="National Institute of Biology - NIB"  shortLabel="EDMO1229"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::GN"  label="Hellenic Centre for Marine Research, Hellenic National Oceanographic Data Centre (HNODC/HCMR)"  shortLabel="EDMO269"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::CM"  label="Department of Fisheries and Oceans - Ministère des pêches et Océans (DFO-MPO)"  shortLabel="EDMO1979"  date="2012-06-19T14:56:54.000"  />
+   <element  key="SDN:L30::CN"  label="Cyprus Oceanographic Data Center, Oceanography Center"  shortLabel="EDMO711"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::TI"  label="Institut National des Sciences et Technologies de la Mer - INSTM"  shortLabel="EDMO1232"  date="2017-08-09T23:19:08.000"  />
+   <element  key="SDN:L30::LB"  label="National Center for Marines Sciences - NCMS"  shortLabel="EDMO1230"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::LC"  label="Center of Marine Research"  shortLabel="EDMO680"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::PI"  label="IHPT, Hydrographic Institute"  shortLabel="EDMO590"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::TN"  label="Department of Navigation and Hydrography and Oceanography, Turkish Navy"  shortLabel="EDMO731"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::PM"  label="Institute of Meteorology and Water Management, Maritime Branch in Gdynia (IMWM MB)"  shortLabel="EDMO193"  date="2008-05-23T13:00:55.000"  />
+   <element  key="SDN:L30::LI"  label="Latvian Institute of Aquatic Ecology"  shortLabel="EDMO698"  date="2008-05-23T13:00:55.000"  />
+</vocabulary>

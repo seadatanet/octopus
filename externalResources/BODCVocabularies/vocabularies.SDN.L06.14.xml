@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabularies>
+   <vocabulary list="SDN:C77:3:"  version="3"  date="2011-12-09T02:00:14.000"  title="SeaDataNet Cruise Summary Report data categories"   />
+   <vocabulary list="SDN:L06:14:"  version="14"  date="2018-03-14T02:00:03.000"  title="SeaVoX Platform Categories"   />
+   <vocabulary list="SDN:L19:3:"  version="3"  date="2015-03-13T02:00:02.000"  title="SeaDataNet keyword types"   />
+   <vocabulary list="SDN:W06:1:"  version="1"  date="2016-07-21T01:00:02.000"  title="SensorML Classification Section Terms"   />
+   <vocabulary list="SDN:B76:10:"  version="10"  date="2019-09-07T01:00:07.000"  title="BODC Platform Models"   />
+   <vocabulary list="SDN:C17:927:"  version="927"  date="2020-03-10T14:00:00.000"  title="ICES Platform Codes"   />
+   <vocabulary list="SDN:P19:1:"  version="1"  date="2008-02-05T11:24:56.000"  title="Global Change Master Directory platforms"   />
+   <vocabulary list="SDN:P25:5:"  version="5"  date="2012-07-26T01:00:03.000"  title="NETMAR aggregation parameters"   />
+</vocabularies>

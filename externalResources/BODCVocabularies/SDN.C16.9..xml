@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary list="SDN:C16:9:"  version="9"  date="2012-11-07T02:00:06.000"  title="SeaDataNet sea areas"  >
+   <element  key="SDN:C16::FRM"  label="Fram Strait"   date="2012-11-06T09:10:22.000"  />
+   <element  key="SDN:C16::45a"  label="Mozambique Channel (Indian Ocean)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::57b"  label="North West Pacific Ocean (limit 180W)"   date="1982-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::01"  label="Baltic Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::21a"  label="Celtic Sea"   date="2009-08-07T09:08:25.000"  />
+   <element  key="SDN:C16::02"  label="Kattegat, Sound and Belts"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::03"  label="Skagerrak"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::04"  label="North Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::05"  label="Greenland Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::06"  label="Norwegian Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::61a"  label="South East Pacific Ocean (limit 140W)"   date="1982-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::07"  label="Barents Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::61b"  label="South West Pacific Ocean (limit 140W)"   date="1982-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::08"  label="White Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::09"  label="Kara Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::GLO"  label="Worldwide"   date="2008-07-01T08:21:05.000"  />
+   <element  key="SDN:C16::28Ab"  label="Alboran Sea (Mediterranean Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::28Aa"  label="Strait of Gibraltar (Mediterranean Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::28Ae"  label="Tyrrhenian Sea (Mediterranean Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::28Ad"  label="Ligurian Sea (Mediterranean Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::28Ac"  label="Balearic (Iberian) Sea (Mediterranean Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::10"  label="Laptev Sea (or Nordenskjold Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::46a"  label="Malacca Strait"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::11"  label="East Siberian Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::46b"  label="Singapore Strait"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::12"  label="Chukchi Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::13"  label="Beaufort Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::14"  label="The Northwestern Passages"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::15"  label="Davis Strait"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::62a"  label="Bass Strait (Great Australian Bight)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::16"  label="Hudson Bay"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::17"  label="Arctic Ocean"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::18"  label="Inner Seas off the West Coast of Scotland"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::19"  label="Irish Sea and St. George&apos;s Channel"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::ARA"  label="Aral Sea"   date="2008-12-08T08:00:07.000"  />
+   <element  key="SDN:C16::28Bh"  label="Aegean Sea (The Archipelago) (Mediterranean Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::28Bg"  label="Adriatic Sea (Mediterranean Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::28Bf"  label="Ionian Sea (Mediterranean Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::20"  label="Bristol Channel"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::21"  label="English Channel"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::22"  label="Bay of Biscay"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::23a"  label="North East Atlantic Ocean (limit 40W)"   date="1982-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::ZZ"  label="Unknown"   date="2008-06-22T23:39:51.000"  />
+   <element  key="SDN:C16::23"  label="North Atlantic Ocean"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::23b"  label="North West Atlantic Ocean (limit 40W)"   date="1982-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::24"  label="Gulf of St. Lawrence"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::25"  label="Bay of Fundy"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::26"  label="Gulf of Mexico"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::27"  label="Caribbean Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::IRM"  label="Irminger Sea"   date="2010-03-12T09:48:28.000"  />
+   <element  key="SDN:C16::28"  label="Mediterranean Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::29"  label="Sea of Marmara"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::IJM"  label="IJsselmeer"   date="2010-10-04T07:51:35.000"  />
+   <element  key="SDN:C16::ESC"  label="Eastern Scheldt"   date="2010-05-24T15:26:39.000"  />
+   <element  key="SDN:C16::30"  label="Black Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48a"  label="Sulu Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48b"  label="Celebes Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::31"  label="Sea of Azov"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48c"  label="Molukka Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::32"  label="South Atlantic Ocean"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48d"  label="Gulf of Tomini (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::33"  label="Rio de La Plata"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::34"  label="Gulf of Guinea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48e"  label="Halmahera Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48f"  label="Ceram Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::35"  label="Gulf of Suez"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48g"  label="Banda Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::36"  label="Gulf of Aqaba"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48h"  label="Arafura Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::37"  label="Red Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::38"  label="Gulf of Aden"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48i"  label="Timor Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::39"  label="Arabian Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48j"  label="Flores Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::SOC"  label="Southern Ocean"   date="2008-07-01T08:20:07.000"  />
+   <element  key="SDN:C16::48k"  label="Gulf of Boni (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48l"  label="Bali Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48m"  label="Makassar Strait (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48n"  label="Java Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48o"  label="Savu Sea (East Indian Archipelago)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::MKM"  label="Markermeer"   date="2010-10-04T07:52:39.000"  />
+   <element  key="SDN:C16::ICS"  label="Iceland Sea"   date="2010-03-12T09:58:25.000"  />
+   <element  key="SDN:C16::40"  label="Gulf of Oman"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::41"  label="Gulf of Iran (Persian Gulf)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::42"  label="Laccadive Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::43"  label="Bay of Bengal"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::44"  label="Andaman or Burma Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::01a"  label="Gulf of Bothnia (Baltic Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::01b"  label="Gulf of Finland (Baltic Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::45"  label="Indian Ocean"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::01c"  label="Gulf of Riga (Baltic Sea)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::46"  label="Malacca and Singapore Straits"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::47"  label="Gulf of Thailand (Siam)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::48"  label="East Indian Archipelago (Indonesia)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::49"  label="South China Sea (Nan Hai)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::50"  label="Eastern China Sea (Tung Hai)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::51"  label="Yellow Sea (Hwang Hai)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::52"  label="Japan Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::53"  label="Seto Naikai or Inland Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::14a"  label="The Northwestern Passages - Baffin Bay"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::54"  label="Sea of Okhotsk"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::55"  label="Bering Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::56"  label="Philippine Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::57"  label="North Pacific Ocean"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::58"  label="Gulf of Alaska"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::59"  label="Coastal Waters of SE Alaska and British Columbia"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::200"  label="Atlantic Ocean"   date="2009-01-08T15:35:09.000"  />
+   <element  key="SDN:C16::CAS"  label="Caspian Sea"   date="2008-12-08T07:55:28.000"  />
+   <element  key="SDN:C16::60"  label="Gulf of California"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::28A"  label="Mediterranean Sea - Western basin"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::61"  label="South Pacific Ocean"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::62"  label="Great Australian Bight"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::28B"  label="Mediterranean Sea - Eastern basin"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::15a"  label="Labrador Sea (Davis Strait)"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::28C"  label="Strait of Sicily"   date="2009-01-08T15:40:22.000"  />
+   <element  key="SDN:C16::63"  label="Tasman Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::64"  label="Coral Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::65"  label="Solomon Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::66"  label="Bismarck Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::WAS"  label="Wadden Sea"   date="2010-03-12T10:02:28.000"  />
+   <element  key="SDN:C16::16a"  label="Hudson Strait"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::32a"  label="South East Atlantic Ocean (limit 20W)"   date="1982-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::32b"  label="South West Atlantic Ocean (limit 20W)"   date="1982-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::WSC"  label="Western Scheldt"   date="2010-05-24T15:27:34.000"  />
+   <element  key="SDN:C16::500"  label="Pacific Ocean"   date="2009-01-08T15:36:19.000"  />
+   <element  key="SDN:C16::17a"  label="Arctic Ocean - Lincoln Sea"   date="1954-01-01T00:00:00.000"  />
+   <element  key="SDN:C16::57a"  label="North East Pacific Ocean (limit 180W)"   date="1982-01-01T00:00:00.000"  />
+</vocabulary>

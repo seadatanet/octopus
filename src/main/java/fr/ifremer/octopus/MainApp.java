@@ -65,7 +65,7 @@ public class MainApp extends Application {
 		System.out.println("arguments : "+ args);
 		try {
 			FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
-			ExternalResourcesManager.getInstance(extResourcesConf, "externalResources");
+			ExternalResourcesManager.getInstance(extResourcesConf, "resources/externalResources");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

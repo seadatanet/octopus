@@ -19,7 +19,7 @@ public class SDNVocabsTest {
 	public void before(){
 		try {
 			FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
-			ExternalResourcesManager.getInstance(extResourcesConf, "externalResources");
+			ExternalResourcesManager.getInstance(extResourcesConf, "resources/externalResources");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

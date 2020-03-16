@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<vocabulary list="SDN:L22:416:"  version="416"  date="2020-03-10T09:04:29.000"  title="SeaVoX Device Catalogue"  >
+<vocabulary list="SDN:L22:417:"  version="417"  date="2020-03-16T14:00:01.000"  title="SeaVoX Device Catalogue"  >
    <element  key="SDN:L22::TOOL0715"  label="Lockheed Martin Sippican Deep Blue XBT probe"  shortLabel="Deep Blue XBT"  date="2015-06-11T07:41:00.000"  />
    <element  key="SDN:L22::TOOL0957"  label="RPS MetOcean CM 04 current meter"  shortLabel="RPS MetOcean CM 04"  date="2015-12-14T10:01:01.000"  />
    <element  key="SDN:L22::TOOL0956"  label="Barringer M123 Marine Proton Magnetometer"  shortLabel="Barringer M123"  date="2015-12-01T14:39:08.000"  />
@@ -215,6 +215,7 @@
    <element  key="SDN:L22::TOOL1401"  label="WHOI and Star Engineering ASIMet {LOGR53 buoy} data logging system"  shortLabel="ASIMet LOGR53"  date="2020-02-12T16:42:36.000"  />
    <element  key="SDN:L22::TOOL0319"  label="Kongsberg (Simrad) EA600 Echosounder"  shortLabel="EA600 echosounder"  date="2010-09-05T23:45:22.000"  />
    <element  key="SDN:L22::TOOL0318"  label="Sea-Bird SBE 35 thermometer"  shortLabel="SBE 35"  date="2014-07-17T09:50:30.000"  />
+   <element  key="SDN:L22::TOOL1407"  label="Zeiss Axioplan II (motorised) fluorescence microscope"  shortLabel="Zeiss Axioplan II"  date="2020-03-16T11:11:31.000"  />
    <element  key="SDN:L22::TOOL0559"  label="GV Instruments Trace Gas Preconcentrator"  shortLabel="GV Gas Preconcentrator"  date="2012-10-03T23:03:09.000"  />
    <element  key="SDN:L22::TOOL1406"  label="Teledyne RDI Workhorse Monitor 1200 kHz (direct-reading) ADCP"  shortLabel="RDI Workhorse-1200 DR-ADCP"  date="2020-03-06T00:11:53.000"  />
    <element  key="SDN:L22::TOOL0558"  label="Hewlett Packard 5890 Series II Gas Chromatograph"  shortLabel="HP5890 II GC"  date="2012-10-03T23:03:09.000"  />

@@ -24,7 +24,7 @@
    <vocabulary list="SDN:H03:4:"  version="4"  date="2019-01-15T02:00:05.000"  title="EMODnet micro-litter size classes"   />
    <vocabulary list="SDN:H04:3:"  version="3"  date="2018-05-24T01:00:04.000"  title="EMODnet micro-litter colour classes"   />
    <vocabulary list="SDN:H05:2:"  version="2"  date="2018-02-14T02:00:03.000"  title="EMODnet micro-litter polymer type"   />
-   <vocabulary list="SDN:L22:416:"  version="416"  date="2020-03-10T09:04:29.000"  title="SeaVoX Device Catalogue"   />
+   <vocabulary list="SDN:L22:417:"  version="417"  date="2020-03-16T14:00:01.000"  title="SeaVoX Device Catalogue"   />
    <vocabulary list="SDN:P06:114:"  version="114"  date="2020-01-21T02:00:04.000"  title="BODC-approved data storage units"   />
    <vocabulary list="SDN:P19:1:"  version="1"  date="2008-02-05T11:24:56.000"  title="Global Change Master Directory platforms"   />
    <vocabulary list="SDN:S02:17:"  version="17"  date="2019-03-14T02:00:04.000"  title="BODC parameter semantic model relationships between what theme and where theme"   />

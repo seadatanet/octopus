@@ -209,12 +209,12 @@
    <match>
       <element  key="SDN:L05:72:LAB16"  label="mass spectrometers"    />
       <narrow>
-         <element  key="SDN:L05:72:LAB48"  label="isotope ratio mass spectrometers"    />
-         <element  key="SDN:L05:72:LAB47"  label="thermal ionisation mass spectrometers"    />
-         <element  key="SDN:L05:72:LAB46"  label="proton transfer reaction mass spectrometers"    />
-         <element  key="SDN:L05:72:LAB19"  label="gas chromatograph mass spectrometers"    />
-         <element  key="SDN:L05:72:LAB17"  label="accelerator mass spectrometers"    />
          <element  key="SDN:L05:72:LAB15"  label="inductively-coupled plasma mass spectrometers"    />
+         <element  key="SDN:L05:72:LAB17"  label="accelerator mass spectrometers"    />
+         <element  key="SDN:L05:72:LAB19"  label="gas chromatograph mass spectrometers"    />
+         <element  key="SDN:L05:72:LAB46"  label="proton transfer reaction mass spectrometers"    />
+         <element  key="SDN:L05:72:LAB47"  label="thermal ionisation mass spectrometers"    />
+         <element  key="SDN:L05:72:LAB48"  label="isotope ratio mass spectrometers"    />
       </narrow>
    </match>
    <match>
@@ -236,8 +236,8 @@
    <match>
       <element  key="SDN:L05:72:63"  label="passive fishing gear"    />
       <narrow>
-         <element  key="SDN:L05:72:65"  label="gill nets"    />
          <element  key="SDN:L05:72:70"  label="fish aggregating devices"    />
+         <element  key="SDN:L05:72:65"  label="gill nets"    />
       </narrow>
    </match>
    <match>

@@ -14,7 +14,7 @@ bodcLists:
 # Lists of handled BODC mappings.
 bodcMappings:
     [
-        P09_P06, P09_P01, P01_P02, L05_L05, L22_L22, P01_P01, P02_P02, P06_P06, P09_P09
+        P09_P06, P09_P01, P02_P01, L05_L05, L22_L22, P01_P01, P02_P02, P06_P06, P09_P09
     ]
 
 # Accepted URL patterns for L08.

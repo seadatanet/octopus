@@ -2,6 +2,11 @@ package fr.ifremer.octopus.controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -98,5 +103,17 @@ public class DriverTest {
 			e.printStackTrace();
 		}
 	}
-
+	
+	  @Test
+	    public void dateFormatWithZTest() {
+	        DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+	        // FAE 17792
+//	        df.setTimeZone(TimeZone.getTimeZone("GMT0"));
+	        try {
+	            Date theDate =  df.parse("2013-04-05T15:04:00Z");
+	        } catch (ParseException e) {
+	            // TODO Auto-generated catch block
+	            e.printStackTrace();
+	        }  
+	    }
 }

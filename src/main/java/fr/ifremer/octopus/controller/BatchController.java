@@ -1,6 +1,7 @@
 package fr.ifremer.octopus.controller;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.text.MessageFormat;
@@ -67,7 +68,8 @@ public class BatchController extends AbstractController{
 	 * @throws VocabularyException
 	 * @throws SQLException 
 	 */
-	public BatchController(String[] args) throws OctopusException, VocabularyException  {
+	public BatchController(String[] args) throws OctopusException, VocabularyException {
+		
 		this(args, false);
 	}
 
@@ -81,6 +83,20 @@ public class BatchController extends AbstractController{
 	public BatchController(String[] args, boolean isJunitTest) throws OctopusException   {
 		super();
 		HashMap<String, Object> jsonRes = new HashMap<>();
+
+		// The BatchController can be called directly instead of by the main class. We must have a ExternalResourcesManager instance.
+		if (!ExternalResourcesManager.isInsantiated()) {
+			
+			LOGGER.info(messages.getString("batchcontroller.loadExternalResources"));
+			
+			try {
+				FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
+				ExternalResourcesManager.getInstance(extResourcesConf, "resources/externalResources");
+			} catch (Exception e) {
+				LOGGER.error(e.getMessage());
+			}
+		}
+		
 		//***************************************************************
 		this.isJunitTest = isJunitTest;
 		aboutBundle = ResourceBundle.getBundle("bundles/about", PreferencesManager.getInstance().getLocale());

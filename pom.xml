@@ -28,13 +28,22 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<role>developer</role>
 			</roles>
 		</developer>
+		<developer>
+			<id>CZE</id>
+			<name>Sebastien Crouzille</name>
+			<email>sebastien.crouzille@altran.com</email>
+			<organization>Altran</organization>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
 	</developers>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>fr.ifremer.octopus.MainApp</start-class>
 		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
-		<my.version>1.6.0-SNAPSHOT</my.version>
+		<my.version>1.5.4</my.version>
 	</properties>
 
 	<build>
@@ -657,7 +666,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.33-SNAPSHOT</version>
+			<version>0.33</version>
 			<!-- <classifier>jar-with-dependencies</classifier> -->
 			<exclusions>
 				<exclusion>
@@ -670,7 +679,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer</groupId>
 			<artifactId>mgd</artifactId>
-			<version>1.15-SNAPSHOT</version>
+			<version>1.15</version>
 		</dependency>
 
 		<!-- http://www.ifremer.fr/isi/softwareversion/ -> to be installed in a 

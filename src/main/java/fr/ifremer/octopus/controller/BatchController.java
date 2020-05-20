@@ -3,6 +3,7 @@ package fr.ifremer.octopus.controller;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.EdmoManager;
 import fr.ifremer.octopus.utils.PreferencesManager;
+import fr.ifremer.seadatanet.cfpoint.util.UnitConversionManager;
 import fr.ifremer.sismer_tools.externalresources.ExternalResourcesManager;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 import sdn.vocabulary.interfaces.VocabularyException;
@@ -90,7 +92,8 @@ public class BatchController extends AbstractController{
 			LOGGER.info(messages.getString("batchcontroller.loadExternalResources"));
 			
 			try {
-				FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
+				InputStream extResourcesConf = BatchController.class.getResourceAsStream("/externalResourcesConfiguration.yaml");
+//				FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
 				ExternalResourcesManager.getInstance(extResourcesConf, "resources/externalResources");
 			} catch (Exception e) {
 				LOGGER.error(e.getMessage());

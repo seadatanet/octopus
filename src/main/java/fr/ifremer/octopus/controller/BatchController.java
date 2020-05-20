@@ -92,7 +92,7 @@ public class BatchController extends AbstractController{
 			LOGGER.info(messages.getString("batchcontroller.loadExternalResources"));
 			
 			try {
-				InputStream extResourcesConf = BatchController.class.getResourceAsStream("/resources/externalResourcesConfiguration.yaml");
+				InputStream extResourcesConf = BatchController.class.getResourceAsStream("/externalResourcesConfiguration.yaml");
 //				FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
 				ExternalResourcesManager.getInstance(extResourcesConf, "resources/externalResources");
 			} catch (Exception e) {

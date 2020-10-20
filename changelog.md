@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.6.0
+### Evolutions
+* Ajout d'un checker pour les fichiers HFRadar (de type NetCDF).
+
+### Corrections
+* Fix d'un bug sur l'ExternalResourcesManager empêchant le fonctionnement du mode batch.
+* Conversion Medatlas -> CFPoint : mise à jour des labels C17 depuis les vocabs BODC.
+* Utilisation de la librairie Java 8 Time pour améliorer certains traitements de dates.
+* Correctifs sur la gestion des dates MGD77.
+* Prise en compte d'une nouvelle valeur L20.
+* Détection de variations de paramètres dans un fichier Medatlas multistations (à splitter avant conversion).
+* Corrections de labels, messages, typos, ...
+
+
 ## 1.5.3
 ### Corrections
 * ODV, correction de la valeur par défaut pour bottom depth (valeur vide et non 0)

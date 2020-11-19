@@ -47,6 +47,13 @@ It is a unique and ergonomic tool for many format conversions.</description>
 	</properties>
 
 	<build>
+	<!-- Allows to inject POM parameters in resources at build (ex: version) -->
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 		<plugins>
 
 			<plugin>

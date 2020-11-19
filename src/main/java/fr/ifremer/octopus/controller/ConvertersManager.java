@@ -13,6 +13,7 @@ import fr.ifremer.mgd.MGD77Manager;
 import fr.ifremer.mgd.MGD77V81Manager;
 import fr.ifremer.mgd.MGD77V98Manager;
 import fr.ifremer.mgd.MGDException;
+import fr.ifremer.octopus.OctopusVersion;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.seadatanet.cfpoint.exceptions.CFPointException;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
@@ -24,11 +25,11 @@ import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class ConvertersManager {
 	private static final Logger LOGGER = LogManager.getLogger(ConvertersManager.class);
-	private static final ResourceBundle  aboutBundle = ResourceBundle.getBundle("bundles/about", PreferencesManager.getInstance().getLocale());
 
 	private static final String originatorSoftwareName ="Octopus";
-	private static final String originatorSoftwareVersion =aboutBundle.getString("about.version");
 	
+	private static final String originatorSoftwareVersion = OctopusVersion.getVersion();
+
 	private static final String unitsTranslationFileName = "octopusUnitsTranslation.xml";
 	private Object conv;
 	private Format inputFormat;

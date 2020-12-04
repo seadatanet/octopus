@@ -749,6 +749,7 @@ public abstract class AbstractController {
 			checker= new OdvFormatChecker();
 			break;
 		case CFPOINT:
+		case CFPOINT_HFRADAR:
 			checker= new CFPointFormatChecker();
 		default:
 			break;

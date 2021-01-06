@@ -43,7 +43,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>fr.ifremer.octopus.MainApp</start-class>
 		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
-		<my.version>1.6.0-SNAPSHOT</my.version>
+		<my.version>1.6.0</my.version>
 	</properties>
 
 	<build>
@@ -673,7 +673,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.34-SNAPSHOT</version>
+			<version>0.34</version>
 			<!-- <classifier>jar-with-dependencies</classifier> -->
 			<exclusions>
 				<exclusion>
@@ -686,7 +686,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer</groupId>
 			<artifactId>mgd</artifactId>
-			<version>1.16-SNAPSHOT</version>
+			<version>1.16</version>
 		</dependency>
 
 		<!-- http://www.ifremer.fr/isi/softwareversion/ -> to be installed in a 

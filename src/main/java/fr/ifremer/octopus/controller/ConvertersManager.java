@@ -13,9 +13,11 @@ import fr.ifremer.mgd.MGD77Manager;
 import fr.ifremer.mgd.MGD77V81Manager;
 import fr.ifremer.mgd.MGD77V98Manager;
 import fr.ifremer.mgd.MGDException;
+import fr.ifremer.octopus.OctopusVersion;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.seadatanet.cfpoint.exceptions.CFPointException;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
+import fr.ifremer.seadatanet.cfpoint.input.EGOGliderSimpleReader;
 import fr.ifremer.seadatanet.odv.input.OdvReader;
 import fr.ifremer.seadatanet.odv.output.OdvException;
 import fr.ifremer.seadatanet.odvsdn2cfpoint.exceptions.ConverterException;
@@ -24,11 +26,11 @@ import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class ConvertersManager {
 	private static final Logger LOGGER = LogManager.getLogger(ConvertersManager.class);
-	private static final ResourceBundle  aboutBundle = ResourceBundle.getBundle("bundles/about", PreferencesManager.getInstance().getLocale());
 
 	private static final String originatorSoftwareName ="Octopus";
-	private static final String originatorSoftwareVersion =aboutBundle.getString("about.version");
 	
+	private static final String originatorSoftwareVersion = OctopusVersion.getVersion();
+
 	private static final String unitsTranslationFileName = "octopusUnitsTranslation.xml";
 	private Object conv;
 	private Format inputFormat;
@@ -56,6 +58,10 @@ public class ConvertersManager {
 				break;
 			case CFPOINT:
 				conv = new CFReader(inputFile.getAbsolutePath());
+				break;
+			case CFPOINT_EGOGLIDER:
+				edmo = PreferencesManager.getInstance().getEdmoCode();
+				conv = new EGOGliderSimpleReader(inputFile.getAbsolutePath(), Integer.valueOf(edmo));
 				break;
 			case MGD_81:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
@@ -142,6 +148,8 @@ public class ConvertersManager {
 			return ((OdvReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion, unitsTranslationFileName, outputFormat);
 		case CFPOINT:
 			return ((CFReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion ,unitsTranslationFileName, outputFormat);
+		case CFPOINT_EGOGLIDER:
+			return ((EGOGliderSimpleReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion ,unitsTranslationFileName, outputFormat);
 		case MGD_81:
 		case MGD_98:
 			return ((MGD77Manager)conv).print( outputFileAbsolutePath, outputLocalCdiId, originatorSoftwareName, originatorSoftwareVersion);

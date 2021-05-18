@@ -8,7 +8,7 @@
 
 		<Console name="Console" target="SYSTEM_OUT" follow="true">
 			<PatternLayout>
-		<pattern>%d{HH:mm:ss}- %-5.7level - %-30.30c{1} - %msg%n</pattern>
+		<pattern>%d{HH:mm:ss}- %-5.7level - (%F:%L) %-30.30c{1} - %msg%n</pattern>
 			</PatternLayout> 
 			
 		</Console>

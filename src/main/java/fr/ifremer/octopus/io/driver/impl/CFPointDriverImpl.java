@@ -6,6 +6,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.io.driver.Driver;
+import fr.ifremer.seadatanet.cfpoint.exceptions.CFPointException;
+import fr.ifremer.seadatanet.cfpoint.input.CFModel.NETCDF_FORMAT;
+import fr.ifremer.seadatanet.cfpoint.input.CFReader;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 import ucar.nc2.NetcdfFile;
 
@@ -21,8 +24,20 @@ public class CFPointDriverImpl extends Driver {
 			format = Format.CFPOINT;
 			canOpen = true;
 
+			CFReader reader = new CFReader(file, false);
+			
+			NETCDF_FORMAT netCdfFormat = reader.detectInputFormat();
+			if (netCdfFormat == NETCDF_FORMAT.HFRadar) {
+				format = Format.CFPOINT_HFRADAR;
+			}
+			else if (netCdfFormat == NETCDF_FORMAT.EGOGlider) {
+				format = Format.CFPOINT_EGOGLIDER;
+			}
+			
 			inputFile.close();
 		} catch (IOException e) {
+			LOGGER.debug(e.getMessage());
+		} catch (CFPointException e) {
 			LOGGER.debug(e.getMessage());
 		}
 		return canOpen;

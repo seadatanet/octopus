@@ -17,6 +17,7 @@ import fr.ifremer.octopus.OctopusVersion;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.seadatanet.cfpoint.exceptions.CFPointException;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
+import fr.ifremer.seadatanet.cfpoint.input.EGOGliderSimpleReader;
 import fr.ifremer.seadatanet.odv.input.OdvReader;
 import fr.ifremer.seadatanet.odv.output.OdvException;
 import fr.ifremer.seadatanet.odvsdn2cfpoint.exceptions.ConverterException;
@@ -57,6 +58,13 @@ public class ConvertersManager {
 				break;
 			case CFPOINT:
 				conv = new CFReader(inputFile.getAbsolutePath());
+				break;
+			case CFPOINT_EGOGLIDER:
+				edmo = PreferencesManager.getInstance().getEdmoCode();
+				if (edmo==null|| edmo.isEmpty()){
+					throw new OctopusException(messages.getString("converter.setEdmoInSettings"));
+				}
+				conv = new EGOGliderSimpleReader(inputFile.getAbsolutePath(), Integer.valueOf(edmo));
 				break;
 			case MGD_81:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
@@ -143,6 +151,8 @@ public class ConvertersManager {
 			return ((OdvReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion, unitsTranslationFileName, outputFormat);
 		case CFPOINT:
 			return ((CFReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion ,unitsTranslationFileName, outputFormat);
+		case CFPOINT_EGOGLIDER:
+			return ((EGOGliderSimpleReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion ,unitsTranslationFileName, outputFormat);
 		case MGD_81:
 		case MGD_98:
 			return ((MGD77Manager)conv).print( outputFileAbsolutePath, outputLocalCdiId, originatorSoftwareName, originatorSoftwareVersion);
@@ -162,6 +172,9 @@ public class ConvertersManager {
 				break;
 			case CFPOINT:
 				((CFReader)conv).close();
+				break;
+			case CFPOINT_EGOGLIDER:
+				((EGOGliderSimpleReader)conv).close();
 				break;
 			case MGD_81:
 			case MGD_98:

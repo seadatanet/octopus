@@ -20,6 +20,7 @@ import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
 import fr.ifremer.octopus.controller.checker.CFPointFormatChecker;
+import fr.ifremer.octopus.controller.checker.EGOGliderFormatChecker;
 import fr.ifremer.octopus.controller.checker.FormatChecker;
 import fr.ifremer.octopus.controller.checker.MedatlasFormatChecker;
 import fr.ifremer.octopus.controller.checker.OdvFormatChecker;
@@ -567,6 +568,16 @@ public abstract class AbstractController {
 					);
 				}
 				break;
+			case CFPOINT_EGOGLIDER:
+				if (model.getOutputFormat().equals(Format.CFPOINT)) {
+					conversion = Conversion.EGO_TO_CFPOINT;
+				} else {
+					throw new OctopusException(
+							MessageFormat.format(messages.getString("abstractcontroller.canNotConvertFromTo"),
+									model.getInputFormat().getName(),
+									model.getOutputFormat().getName()));
+				}
+				break;
 			default:
 				throw new OctopusException(
 						MessageFormat.format(messages.getString("abstractcontroller.conversionNotImplemented"),
@@ -751,6 +762,10 @@ public abstract class AbstractController {
 		case CFPOINT:
 		case CFPOINT_HFRADAR:
 			checker= new CFPointFormatChecker();
+			break;
+		case CFPOINT_EGOGLIDER:
+			checker= new EGOGliderFormatChecker();
+			break;
 		default:
 			break;
 		}

@@ -2,6 +2,15 @@
 
 ## 1.6.0
 ### Evolutions
+* Conversion des fichiers EGO vers CFPoint.
+
+### Corrections
+* Erreur sur P06 différent de TISO avec P01 = ENDX8601.
+* Conservation des commentaires de station lors d'une conversion MEDATLAS -> ODV.
+* Typos.
+
+## 1.6.0
+### Evolutions
 * Ajout d'un checker pour les fichiers HFRadar (de type NetCDF).
 
 ### Corrections
@@ -12,7 +21,6 @@
 * Prise en compte d'une nouvelle valeur L20.
 * Détection de variations de paramètres dans un fichier Medatlas multistations (à splitter avant conversion).
 * Corrections de labels, messages, typos, ...
-
 
 ## 1.5.3
 ### Corrections

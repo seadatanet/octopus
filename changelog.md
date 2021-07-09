@@ -3,10 +3,12 @@
 ## 1.6.0
 ### Evolutions
 * Conversion des fichiers EGO vers CFPoint.
+* Utilisation des formats "BODV" et "MODV" dans la coupling table.
 
 ### Corrections
 * Erreur sur P06 différent de TISO avec P01 = ENDX8601.
 * Conservation des commentaires de station lors d'une conversion MEDATLAS -> ODV.
+* Fix de la déclaration de format dans la coupling table lors d'une conversion CFPoint -> ODV.
 * Typos.
 
 ## 1.6.0

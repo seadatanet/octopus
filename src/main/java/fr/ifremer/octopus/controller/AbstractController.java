@@ -38,6 +38,7 @@ import fr.ifremer.octopus.model.OctopusModel;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.view.CdiListManager;
+import fr.ifremer.seadatanet.cfpoint.input.CFModel.NETCDF_FORMAT;
 import fr.ifremer.seadatanet.cfpoint.input.CFReader;
 import fr.ifremer.seadatanet.odv.input.OdvReader;
 import fr.ifremer.sismer_tools.coupling.CouplingRecord;
@@ -109,6 +110,10 @@ public abstract class AbstractController {
 		//32965
 		if (inputFormat.equals(Format.MGD_81) || inputFormat.equals(Format.MGD_98) ){
 			model.setOutputType(OUTPUT_TYPE.MONO);
+		}
+		
+		if (inputFormat.equals(Format.CFPOINT)) {
+			model.setInputNetCdfFormat(getFirstFileInputNetCdfFormat(new File(inputPath)));
 		}
 
 		createCdiManager();
@@ -619,10 +624,26 @@ public abstract class AbstractController {
 			throw new IOException(messages.getString("abstractcontroller.unrecognizedInputFormat"));
 		}
 	}
+	
 	private Driver getDriver(String file) throws IOException {
 		return driverManager.findDriverForFile(file);
 	}
-
+	
+	private NETCDF_FORMAT getNetCdfFormat(String file) throws IOException {
+		Driver d = getDriver(file);
+		if (d!=null){
+			
+			if (d instanceof CFPointDriverImpl) {
+				return ((CFPointDriverImpl)d).getNetCdfFormat();
+			}
+			else {
+				return null;
+			}
+		}else{
+			throw new IOException(messages.getString("abstractcontroller.unrecognizedInputFormat"));
+		}
+	}
+	
 	/**
 	 * 
 	 * @param inputPath
@@ -630,8 +651,25 @@ public abstract class AbstractController {
 	 * @throws IOException
 	 */
 	protected Format getFirstFileInputFormat(File inputPath) throws IOException{
+		String firstFile = getFirstFileName(inputPath);
+		//SVO 45783 
+		return getFormat(firstFile);
+	}
+	
+	protected NETCDF_FORMAT getFirstFileInputNetCdfFormat(File inputPath) throws IOException{
+		String firstFile = getFirstFileName(inputPath);
+		return getNetCdfFormat(firstFile);
+	}
+
+	
+	/**
+	 * Get the name of the first file found in the input path.
+	 * @param inputPath
+	 * @return
+	 * @throws IOException
+	 */
+	private  String getFirstFileName(File inputPath) throws IOException{
 		InputFileVisitor fileProcessor = new InputFileVisitor();
-//		Files.walkFileTree(Paths.get(inputPath.getAbsolutePath()), fileProcessor);
 		// depth = 1, because we do not read sub directories (and causes errors with svn)
 		Files.walkFileTree(Paths.get(inputPath.getAbsolutePath()),  EnumSet.noneOf(FileVisitOption.class), 1, fileProcessor);
 		String firstFile = fileProcessor.getFirstFile();
@@ -640,10 +678,8 @@ public abstract class AbstractController {
 			throw new IOException(messages.getString("abstractcontroller.emptyinputdirectory"));
 		}
 		else {
-			Format format = getFormat(firstFile);			
-			return format;
+			return firstFile;
 		}
-
 	}
 
 	/**

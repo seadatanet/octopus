@@ -16,6 +16,7 @@ import fr.ifremer.octopus.controller.OctopusGUIController;
 import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.utils.SDNCdiIdObservable;
+import fr.ifremer.seadatanet.cfpoint.input.CFModel.NETCDF_FORMAT;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
@@ -474,12 +475,16 @@ public class OctopusOverviewController {
 
 
 		if (inputOk){
+			
 			Format f = octopusGuiController.getModel().getInputFormat();
 			boolean disableMedatlas = !Format.isConversionAllowed(f, Format.MEDATLAS_SDN);//f!=Format.MEDATLAS_SDN && f!=Format.MEDATLAS_NON_SDN ;
 			boolean disableOdv = !Format.isConversionAllowed(f, Format.ODV_SDN);//(f==Format.CFPOINT);
 			boolean disableCfPoint = !Format.isConversionAllowed(f, Format.CFPOINT);
 			
-			
+			if (octopusGuiController.getModel().getInputFormat() == Format.CFPOINT && octopusGuiController.getModel().getInputNetCdfFormat() == NETCDF_FORMAT.CFPointFromEGOGlider) {
+				disableOdv = true;
+			}
+
 			buttonExportMedatlas.disableProperty().setValue(disableMedatlas);
 			buttonExportOdv.disableProperty().setValue(disableOdv);
 			buttonExportCfpoint.disableProperty().setValue(disableCfPoint);

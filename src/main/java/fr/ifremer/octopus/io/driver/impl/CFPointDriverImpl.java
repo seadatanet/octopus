@@ -14,6 +14,8 @@ import ucar.nc2.NetcdfFile;
 
 public class CFPointDriverImpl extends Driver {
 	private static final Logger LOGGER = LogManager.getLogger(CFPointDriverImpl.class);
+	
+	NETCDF_FORMAT netCdfFormat;
 
 	@Override
 	public boolean canOpen(String file) throws IOException {
@@ -26,7 +28,7 @@ public class CFPointDriverImpl extends Driver {
 
 			CFReader reader = new CFReader(file, false);
 			
-			NETCDF_FORMAT netCdfFormat = reader.detectInputFormat();
+			netCdfFormat = reader.detectInputFormat(true);
 			if (netCdfFormat == NETCDF_FORMAT.HFRadar) {
 				format = Format.CFPOINT_HFRADAR;
 			}
@@ -41,5 +43,9 @@ public class CFPointDriverImpl extends Driver {
 			LOGGER.debug(e.getMessage());
 		}
 		return canOpen;
+	}
+	
+	public NETCDF_FORMAT getNetCdfFormat() {
+		return netCdfFormat;
 	}
 }

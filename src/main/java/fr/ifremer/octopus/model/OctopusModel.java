@@ -14,6 +14,7 @@ import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.octopus.controller.OctopusException;
 import fr.ifremer.octopus.utils.PreferencesManager;
+import fr.ifremer.seadatanet.cfpoint.input.CFModel.NETCDF_FORMAT;
 import fr.ifremer.sismer_tools.seadatanet.Format;
 
 public class OctopusModel {
@@ -23,6 +24,7 @@ public class OctopusModel {
 
 	private String inputPath;
 	private Format inputFormat;
+	private NETCDF_FORMAT inputNetCdfFormat;
 	private String outputPath;
 	private Format outputFormat;
 	private OUTPUT_TYPE outputType;
@@ -158,6 +160,12 @@ public class OctopusModel {
 		}else{
 			throw new OctopusException(messages.getString("model.mappingMgdCdiUnreadable"));
 		}
+	}
+	public NETCDF_FORMAT getInputNetCdfFormat() {
+		return inputNetCdfFormat;
+	}
+	public void setInputNetCdfFormat(NETCDF_FORMAT inputNetCdfFormat) {
+		this.inputNetCdfFormat = inputNetCdfFormat;
 	}
 
 }

@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -39,6 +40,8 @@ import javafx.stage.DirectoryChooser;
 
 public class PreferencesController {
 	static final Logger LOGGER = LogManager.getLogger(PreferencesController.class.getName());
+	
+	static final String LINESEP = System.getProperty("line.separator");
 
 	private ResourceBundle messages;
 	/**
@@ -269,38 +272,35 @@ public class PreferencesController {
 			@Override
 			public Void call() {
 
-				String LINESEP = System.getProperty("line.separator");
-
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.WAIT);
 				disablePane(true);
 
 				// Launch webservice requests.
+				appendTextToBodcLog(Level.INFO, "Update started.");
 
 				// EDMO
 				try {
 
-					bodcLog.appendText("check EDMO codes" + LINESEP);
-
+					appendTextToBodcLog(Level.INFO, "Check EDMO codes");
+					
 					int before = EdmoManager.getInstance().getEdmoList().size();
 					EdmoManager.getInstance().updateEdmo();
 					int after = EdmoManager.getInstance().getEdmoList().size();
 
-					bodcLog.appendText(MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after) + LINESEP);
+					appendTextToBodcLog(Level.INFO, MessageFormat.format(messages.getString("preferences.edmoCodeNumber"), before, after));
 				} catch (Exception e) {
 
-					String message = e.getMessage();
 
-					LOGGER.error(message);
-					bodcLog.appendText(message + LINESEP); // TODO msg
+					appendTextToBodcLog(Level.ERROR, e.getMessage());
 				}
 
 				// CSR
 				try {
 					String res=ExternalResourcesManager.getInstance().getCsrListManager().reload();
-					bodcLog.appendText(res + LINESEP);
+					appendTextToBodcLog(Level.INFO, res);
 				} catch (Exception e1) {
 					LOGGER.error(e1.getMessage() );
-					bodcLog.appendText("ERROR: CSR check failed. Please check your internet connection." + LINESEP); // TODO msg
+					appendTextToBodcLog(Level.ERROR, "ERROR: CSR check failed. Please check your internet connection.");
 				}
 
 				// BODC
@@ -308,20 +308,19 @@ public class PreferencesController {
 					HashMap<String, Integer> current = null;
 					HashMap<String, Integer> newVersions = null;
 					// check current versions
-					bodcLog.appendText("check current vocabulary files" + LINESEP);
+					appendTextToBodcLog(Level.INFO, "Check current vocabulary files");
 					try {
 						current=ExternalResourcesManager.getInstance().getSdnVocabularyManager().checkCurrent();
 					}catch (Exception e) {
-						bodcLog.appendText(e.getMessage() + LINESEP);
+						appendTextToBodcLog(Level.ERROR, e.getMessage());
 					}
 
 					// reload
-					LOGGER.info("download or update vocabulary files");
-					bodcLog.appendText("download or update vocabulary files" + LINESEP);
+					appendTextToBodcLog(Level.INFO, "Download or update vocabulary files");
 					try {
 						ExternalResourcesManager.getInstance().getSdnVocabularyManager().reload();
 					} catch (Exception e) {
-						bodcLog.appendText(e.getMessage() + LINESEP);
+						appendTextToBodcLog(Level.ERROR, e.getMessage());
 					}
 
 					// progress bar
@@ -331,7 +330,7 @@ public class PreferencesController {
 					try {
 						newVersions=ExternalResourcesManager.getInstance().getSdnVocabularyManager().readOnlineVersions();
 					}catch (Exception e) {
-						bodcLog.appendText(e.getMessage() + LINESEP);
+						appendTextToBodcLog(Level.ERROR, e.getMessage());
 					}
 
 					// progress bar
@@ -341,20 +340,19 @@ public class PreferencesController {
 					try {
 						List<String> logMessages = ExternalResourcesManager.getInstance().getSdnVocabularyManager().getDiff(current, newVersions);
 						for (String message : logMessages) {
-							bodcLog.appendText(message+ LINESEP);
+							appendTextToBodcLog(Level.INFO, message);
 						}
 					}catch (Exception e) {
-						bodcLog.appendText(e.getMessage()+ LINESEP);
+						appendTextToBodcLog(Level.ERROR, e.getMessage());
 					}
 
 					// update mappings
-					LOGGER.info("update mapping files");
-					bodcLog.appendText("update mapping files" + LINESEP);
+					appendTextToBodcLog(Level.INFO, "Update mapping files");
 
 					try {
 						List<String>  logMessages=ExternalResourcesManager.getInstance().getSdnVocabularyManager().updateVocabMappings();
 						for (String message : logMessages) {
-							bodcLog.appendText(message+ LINESEP);
+							appendTextToBodcLog(Level.INFO, message);
 						}
 					} finally {
 						mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
@@ -364,7 +362,7 @@ public class PreferencesController {
 				} catch (Exception e) {
 					LOGGER.error(e.getMessage());
 					try {
-						bodcLog.appendText(e.getMessage() + LINESEP);
+						appendTextToBodcLog(Level.ERROR, e.getMessage());
 					} catch (Exception e1) {
 						// TODO: handle exception
 					}
@@ -374,6 +372,8 @@ public class PreferencesController {
 				}
 
 				//				updateProgress(10 , 10);
+				
+				appendTextToBodcLog(Level.INFO, "Update finished.");
 				mainApp.getPrimaryStage().getScene().setCursor(Cursor.DEFAULT);
 				disablePane(false);
 
@@ -399,7 +399,7 @@ public class PreferencesController {
 				th.start();
 
 			} else {
-				bodcLog.appendText(messages.getString("preferences.listsUpdateCancel"));
+				appendTextToBodcLog(Level.INFO, messages.getString("preferences.listsUpdateCancel"));
 			}
 		} else {
 			String message = messages.getString("network.noInternetConnection");
@@ -415,7 +415,7 @@ public class PreferencesController {
 			alert.showAndWait();
 
 			LOGGER.error(message);
-			bodcLog.appendText(message);
+			appendTextToBodcLog(Level.ERROR, message);
 		}
 
 	}
@@ -425,4 +425,13 @@ public class PreferencesController {
 		PreferencesManager.getInstance().save();
 	}
 
+	/**
+	 * Append text to the BODC log (JavaFX text area).
+	 * @param text The text to append.
+	 */
+	private void appendTextToBodcLog(Level level, String text) {
+
+		LOGGER.log(level, text);
+		javafx.application.Platform.runLater( () -> bodcLog.appendText(text + LINESEP) );
+	}
 }

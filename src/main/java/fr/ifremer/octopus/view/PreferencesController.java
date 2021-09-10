@@ -307,10 +307,28 @@ public class PreferencesController {
 				try {
 					HashMap<String, Integer> current = null;
 					HashMap<String, Integer> newVersions = null;
+					
 					// check current versions
 					appendTextToBodcLog(Level.INFO, "Check current vocabulary files");
 					try {
 						current=ExternalResourcesManager.getInstance().getSdnVocabularyManager().checkCurrent();
+					}catch (Exception e) {
+						appendTextToBodcLog(Level.ERROR, e.getMessage());
+					}
+					
+					// get collections online
+					try {
+						newVersions=ExternalResourcesManager.getInstance().getSdnVocabularyManager().readOnlineVersions();
+					}catch (Exception e) {
+						appendTextToBodcLog(Level.ERROR, e.getMessage());
+					}
+
+					// read diff in versions
+					try {
+						List<String> logMessages = ExternalResourcesManager.getInstance().getSdnVocabularyManager().getDiff(current, newVersions);
+						for (String message : logMessages) {
+							appendTextToBodcLog(Level.INFO, message);
+						}
 					}catch (Exception e) {
 						appendTextToBodcLog(Level.ERROR, e.getMessage());
 					}
@@ -326,25 +344,8 @@ public class PreferencesController {
 					// progress bar
 					updateProgress(8, 10);
 
-					// get collections online
-					try {
-						newVersions=ExternalResourcesManager.getInstance().getSdnVocabularyManager().readOnlineVersions();
-					}catch (Exception e) {
-						appendTextToBodcLog(Level.ERROR, e.getMessage());
-					}
-
 					// progress bar
 					updateProgress(10, 10);
-
-					// read diff in versions
-					try {
-						List<String> logMessages = ExternalResourcesManager.getInstance().getSdnVocabularyManager().getDiff(current, newVersions);
-						for (String message : logMessages) {
-							appendTextToBodcLog(Level.INFO, message);
-						}
-					}catch (Exception e) {
-						appendTextToBodcLog(Level.ERROR, e.getMessage());
-					}
 
 					// update mappings
 					appendTextToBodcLog(Level.INFO, "Update mapping files");

@@ -60,6 +60,7 @@ public class EdmoManager {
 			
 		} catch (Exception exG) {
 			
+			exG.printStackTrace();
 			LOGGER.error(exG.getMessage());
 			throw new OctopusException("ERROR: EDMO update failed. Please check your internet connection."); // TODO msg
 		}

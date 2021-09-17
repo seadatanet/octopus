@@ -1,15 +1,17 @@
 # Changelog
 
-## 1.6.0
+## 1.7.0
 ### Evolutions
-* Conversion des fichiers EGO vers CFPoint.
+* Conversion des fichiers glider au format EGO1.2, 1.3 et 1.4 vers le format netCDF SeaDataNet (CFPoint).
 * Utilisation des formats "BODV" et "MODV" dans la coupling table.
 
 ### Corrections
-* Erreur sur P06 différent de TISO avec P01 = ENDX8601.
-* Conservation des commentaires de station lors d'une conversion MEDATLAS -> ODV.
-* Fix de la déclaration de format dans la coupling table lors d'une conversion CFPoint -> ODV.
-* Typos.
+* Plus d'information dans le log lors de la mise à jour des vocabulaires.
+* Message dans le log sur erreur externe à OCTOPUS (si un time-out lors de la mise à jour des vocabulaires, par exemple).
+* Bouton "Mise à jour des listes" renommé en "Mise à jour des vocabulaires".
+* Contrôle du code P06::TISO pour le paramètre ENDX8601.
+* Conversion MedAtlas vers ODV : conservation des commentaires stations.
+* Corrections de labels, messages, typos, ...
 
 ## 1.6.0
 ### Evolutions

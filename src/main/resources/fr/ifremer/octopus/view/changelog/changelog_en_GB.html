@@ -16,20 +16,22 @@ h5   {color: #6c3390;}
 
 <h2>Change log</h2>
 <h4>Version 1.7.0 - 2021/07/08</h4>
+
+
 <h5>Adds-on</h5>
 	<ul>
-		<li>Converting EGO files to CFPoint.</li>
-		<li>Use "BODV" and "MODV" formats in the coupling table.</li>
+		<li>Conversion des fichiers glider au format EGO1.2, 1.3 et 1.4 vers le format netCDF SeaDataNet (CFPoint).</li>
+		<li>Utilisation des formats "BODV" et "MODV" dans la coupling table.</li>
 	</ul>
 <h5>Corrections</h5>
 	<ul>
-		<li>Error when P06 is not TISO for P01 = ENDX8601.</li>
-		<li>Keep station comments during MEDATLAS -> ODV conversion.</li>
-		<li>Fix format declaration in the coupling table during CFPoint -> ODV conversion.</li>
-		<li>Fixes on labels, messages, typos, ...</li>
+		<li>More information in the log when updating vocabularies.</li>
+		<li>Message in the log on external error (e.g. if a time-out occurs during the vocabulary update).</li>
+		<li>"Update lists" button changed to "Update vocabularies" in the "Settings" window.</li>
+		<li>Check that unit P06::TISO is used for P01::ENDX8601.</li>
+		<li>Conversion from MedAtlas to ODV: the station comments are kept.</li>
+		<li>Corrections de labels, messages, typos, ...</li>
 	</ul>
-	
-	
 	
 <h4>Version 1.6.0 - 2021/01/07</h4>
 <h5>Adds-on</h5>

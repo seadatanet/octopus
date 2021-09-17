@@ -75,5 +75,5 @@ writeCsrReferenceBshRef: https://seadata.bsh.de/cgi-csr/XML/xmlDownload_V2.pl?cs
 # Web service URL to retrieve the CSR.
 csrListWebServiceUrl: https://seadata.bsh.de/isoCodelists/sdnCodelists/csrCodeList.xml
 
-# Web service URL to for EDMO data.
+# Web service URL for EDMO data.
 edmoWebServiceUrl: https://edmo.seadatanet.org/ws/ws_edmo.asmx

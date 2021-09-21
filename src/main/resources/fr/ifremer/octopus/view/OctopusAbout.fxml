@@ -44,7 +44,7 @@
                   </Label>
                   <HBox>
                      <children>
-                              <Label styleClass="aboutVersion" text="Version" />
+                              <Label styleClass="aboutVersion" text="Version " />
                               <Label fx:id="aboutVersion" styleClass="aboutVersion" text="%about.version" />
                      </children>
                   </HBox>

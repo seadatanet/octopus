@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.1
+### Corrections
+* Correction concernant la gestion des conversions BODV et MODV.
+* Passage à log4j 2.17.0.
+
 ## 1.7.0
 ### Evolutions
 * Conversion des fichiers glider au format EGO1.2, 1.3 et 1.4 vers le format netCDF SeaDataNet (CFPoint).

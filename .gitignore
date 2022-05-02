@@ -1,0 +1,23 @@
+# Dossiers de builds
+target/
+builds/
+
+# Fichiers et dossiers generes a la compilation
+*.log
+dependency-reduced-pom.xml
+.factorypath
+.classpath
+.settings/
+logs/
+externalResources/
+src/test/resources/MGD81/out/
+src/test/resources/cfpoint/out/
+src/test/resources/medatlas/out/
+src/test/resources/odv/out/
+
+# Fichiers et dossiers des editeurs de code
+.vscode/
+
+# Fichiers de backup 
+*.back
+

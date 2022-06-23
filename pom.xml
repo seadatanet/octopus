@@ -142,7 +142,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-resources-linux</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -165,7 +165,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-resource-win</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -209,7 +209,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-resources-linux64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -253,7 +253,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-resource-win64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -290,7 +290,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jar-linux</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -310,7 +310,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jar-win</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -348,7 +348,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jar-linux64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -386,7 +386,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jar-win64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -419,7 +419,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-win</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -438,7 +438,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-win-java10</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -458,7 +458,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-linux</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -476,7 +476,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-linux-java10</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -514,7 +514,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-win64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -552,7 +552,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-linux64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -595,7 +595,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jre-win64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -640,7 +640,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jre-linux64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -651,6 +651,73 @@ It is a unique and ergonomic tool for many format conversions.</description>
 									<directory>${jrepath}/linux/64bits</directory>
 								</resource>
 							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>make-Linux</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/zipbin.xml</descriptor>
+							</descriptors>
+							<properties>
+								<os>Linux</os>
+							</properties>
+						</configuration>
+					</execution>
+					<execution>
+						<id>make-Linux64</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/zipbin.xml</descriptor>
+							</descriptors>
+							<properties>
+								<os>Linux64</os>
+							</properties>
+						</configuration>
+					</execution>
+					<execution>
+						<id>make-Win</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/zipbin.xml</descriptor>
+							</descriptors>
+							<properties>
+								<os>Win</os>
+							</properties>
+						</configuration>
+					</execution>
+					<execution>
+						<id>make-Win64</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/zipbin.xml</descriptor>
+							</descriptors>
+							<properties>
+								<os>Win64</os>
+							</properties>
 						</configuration>
 					</execution>
 				</executions>

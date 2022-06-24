@@ -132,7 +132,7 @@ build_verify:
   tags:
     - seadatanet-runner
   script:
-    - mvn $MAVEN_CLI_OPTS verify
+    - mvn $MAVEN_CLI_OPTS install
   except:
     - develop 
 

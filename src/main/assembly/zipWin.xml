@@ -1,19 +1,13 @@
 <assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
-  <id>bin-${os}</id>
+  <id>Win</id>
   <baseDirectory>${project.basedir}</baseDirectory>
   <formats>
     <format>zip</format>
   </formats>
   <fileSets>
     <fileSet>
-      <directory>${project.basedir}/target/livrable${os}/octopus</directory>
-      <outputDirectory>octopus-${my.version}</outputDirectory>
-      <includes>
-        <include>octopus.sh</include>
-        <include>octopus_java9.sh</include>
-        <include>java</include>
-      </includes>
-      <fileMode>0775</fileMode>
+      <directory>${project.basedir}/target/livrableWin/octopus</directory>
+      <outputDirectory>octopus-${project.version}</outputDirectory>
     </fileSet>
   </fileSets>
 </assembly>

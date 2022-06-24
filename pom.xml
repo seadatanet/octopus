@@ -9,7 +9,7 @@
 	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
 It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
-	<version>${my.version}</version>
+	<version>1.7.3</version>
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
 		<name>ifremer</name>
@@ -41,7 +41,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>fr.ifremer.octopus.MainApp</start-class>
 		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
-		<my.version>1.7.2</my.version>
 	</properties>
 
 	<build>
@@ -80,7 +79,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<!-- Rename the artifact -->
-							<finalName>${project.artifactId}-${my.version}</finalName>
+							<finalName>${project.artifactId}-${version}</finalName>
 							<filters>
 								<filter>
 									<artifact>*:*</artifact>
@@ -295,7 +294,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
 							<destinationFile>target/livrableLinux/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -315,7 +314,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
 							<destinationFile>target/livrableWin/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -335,7 +334,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<!-- 							<goal>copy</goal> -->
 			<!-- 						</goals> -->
 			<!-- 						<configuration> -->
-			<!-- 							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> -->
+			<!-- 							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> -->
 			<!-- 							<destinationFile>target/livrableLinux32/octopus/octopus.jar</destinationFile> -->
 			<!-- 						</configuration> -->
 			<!-- 					</execution> -->
@@ -353,7 +352,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
 							<destinationFile>target/livrableLinux64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -373,7 +372,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<!-- 							<goal>copy</goal> -->
 			<!-- 						</goals> -->
 			<!-- 						<configuration> -->
-			<!-- 							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> -->
+			<!-- 							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> -->
 			<!-- 							<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile> -->
 			<!-- 						</configuration> -->
 			<!-- 					</execution> -->
@@ -391,7 +390,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
 							<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -401,12 +400,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 
 			<!-- <plugin> <groupId>com.coderplus.maven.plugins</groupId> <artifactId>copy-rename-maven-plugin</artifactId> 
 				<version>1.0</version> <executions> <execution> <id>copy-jar-win32</id> <phase>install</phase> 
-				<goals> <goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> 
+				<goals> <goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> 
 				<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile> 
 				</configuration> </execution> </executions> </plugin> <plugin> <groupId>com.coderplus.maven.plugins</groupId> 
 				<artifactId>copy-rename-maven-plugin</artifactId> <version>1.0</version> 
 				<executions> <execution> <id>copy-jar-win64</id> <phase>install</phase> <goals> 
-				<goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> 
+				<goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> 
 				<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile> 
 				</configuration> </execution> </executions> </plugin> -->
 
@@ -659,6 +658,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
+				<inherited>true</inherited>
 				<executions>
 					<execution>
 						<id>make-Linux</id>
@@ -668,11 +668,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<descriptors>
-								<descriptor>src/main/assembly/zipbin.xml</descriptor>
+								<descriptor>src/main/assembly/zipLinux.xml</descriptor>
 							</descriptors>
-							<properties>
-								<os>Linux</os>
-							</properties>
 						</configuration>
 					</execution>
 					<execution>
@@ -683,11 +680,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<descriptors>
-								<descriptor>src/main/assembly/zipbin.xml</descriptor>
+								<descriptor>src/main/assembly/zipLinux64.xml</descriptor>
 							</descriptors>
-							<properties>
-								<os>Linux64</os>
-							</properties>
 						</configuration>
 					</execution>
 					<execution>
@@ -698,11 +692,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<descriptors>
-								<descriptor>src/main/assembly/zipbin.xml</descriptor>
+								<descriptor>src/main/assembly/zipWin.xml</descriptor>
 							</descriptors>
-							<properties>
-								<os>Win</os>
-							</properties>
 						</configuration>
 					</execution>
 					<execution>
@@ -713,14 +704,11 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<descriptors>
-								<descriptor>src/main/assembly/zipbin.xml</descriptor>
+								<descriptor>src/main/assembly/zipWin64.xml</descriptor>
 							</descriptors>
-							<properties>
-								<os>Win64</os>
-							</properties>
 						</configuration>
 					</execution>
-				</executions>
+				</executions> 
 			</plugin>
 		</plugins>
 	</build>

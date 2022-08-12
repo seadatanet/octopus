@@ -1,4 +1,7 @@
 # Projet Octopus
+
+![Schema dependances](/docs/dependances.png "Schéma des dépendances Octopus")
+
 ## Build du projet
 
 ### Build en local
@@ -20,7 +23,7 @@ mvn -U clean install -DskipTests
 
 ### Build en distant (gitlab-ci)
 
-#### Configuration de gitlab-ci 
+#### Configuration de gitlab-ci
 
 Le fichier `.gitlab-ci.yml` fait foi.  
 

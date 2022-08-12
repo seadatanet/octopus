@@ -9,7 +9,7 @@
 	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
 It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
-	<version>1.7.3</version>
+	<version>1.8.0</version>
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
 		<name>ifremer</name>
@@ -62,7 +62,21 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-
+			
+			<!-- To access Maven artifact version at runtime -->
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-jar-plugin</artifactId>
+			    <configuration>
+			        <archive>                   
+			            <manifest>
+			                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+			                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+			            </manifest>
+			        </archive>
+			    </configuration>
+			</plugin>
+						
 			<!-- ===================================== ASSEMBLY =========================================== -->
 
 			<!-- Builds the artifact with its dependencies -->

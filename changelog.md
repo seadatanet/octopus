@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.8.0
+
+### Evolutions
+* Ajout d'un checker et d'un convertisseur pour les fichiers "Microlitters in Sediments" (SODV).
+* Mise à jour de la librairie SdnVocabulary pour la détection des gliders.
+* Mise à jour de l'URL de service de csrCodeList.
+* Mise à jour de l'URL de service SoftwareVersionSoap.
+
+### Corrections
+* Correctif pour éviter la génération multiple de métadonnées pour un même CDI.
+* Correctif d'un message d'erreur (numéro de ligne incorrect) en cas d'erreur de détection de station.
+
 ## 1.7.1
 ### Corrections
 * Correction concernant la gestion des conversions BODV et MODV.

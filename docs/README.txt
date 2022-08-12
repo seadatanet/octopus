@@ -2,9 +2,31 @@
 ENVIRONNEMENT DE DEV
 ========================================================
 
-Eclipse photon avec plugins
-- subclipse
+Eclipse IDE for Java Developers avec plugins
+- subclipse / subersive
 - e(fx)clipse
+- maven
+
+Repo svn projets :
+sismertoolslib : https://scmforge.ifremer.fr/authscm/****/svn/sismermco/sismerTools/sismerToolsLib
+mgd : https://scmforge.ifremer.fr/authscm/****/svn/sismermco/sismerTools/mgd
+cfpointLib : https://scmforge.ifremer.fr/authscm/****/svn/sismermco/sismerTools/cfpointLib
+OdvSDN2CFPointLib : https://scmforge.ifremer.fr/authscm/****/svn/sismermco/sismerTools/OdvSDN2CFPointLib
+medatlasreader : https://scmforge.ifremer.fr/authscm/****/svn/sismermco/sismerTools/medatlasreader
+octopus : https://scmforge.ifremer.fr/authscm/****/svn/sismermco/sismerTools/octopus/trunk
+
+Repo svn data test: 
+MedSDN2CFPOINT_datatest : https://scmforge.ifremer.fr/authscm/****/svn/sismermco/MedSDN2CFPOINT/MedSDN2CFPOINT_datatest
+OdvSDN2CFPoint_datatest : https://scmforge.ifremer.fr/authscm/****/svn/sismermco/OdvSDN2CFPoint/OdvSDN2CFPoint_datatest
+
+
+Build maven avec "clean install" sur les projets dans cet ordre :
+1 sismertoolslib
+2 mgd
+3 cfpointLib
+4 OdvSDN2CFPointLib
+5 medatlasreader
+6 octopus
 
 ========================================================
 FICHIER .EXE POUR  WINDOWS

@@ -726,16 +726,26 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<id>gitlab-maven-internal</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/1226/packages/maven</url>
 		</repository>
+
+		<repository>
+			<id>gitlab-maven-octopus</id>
+			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
+		</repository>
 	</repositories>
 
 	<distributionManagement>
-		<repository>
+		<!-- <repository>
 			<id>gitlab-maven-internal</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/1226/packages/maven</url>
+		</repository>-->
+
+		<repository>
+			<id>gitlab-maven-octopus</id>
+			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>gitlab-maven-project</id>
+			<id>gitlab-maven-octopus</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
 		</snapshotRepository>
 	</distributionManagement>

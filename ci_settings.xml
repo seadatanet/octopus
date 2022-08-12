@@ -43,7 +43,19 @@ under the License.
         <httpHeaders>
           <property>
             <name>Deploy-Token</name>
-            <value>${env.DEPLOY_TOKEN_PROJECT}</value>
+            <value>${env.DEPLOY_TOKEN_OCTOPUS}</value>
+          </property>
+        </httpHeaders>
+      </configuration>
+    </server>
+
+    <server>
+      <id>gitlab-maven-octopus</id>
+      <configuration>
+        <httpHeaders>
+          <property>
+            <name>Deploy-Token</name>
+            <value>${env.DEPLOY_TOKEN_OCTOPUS}</value>
           </property>
         </httpHeaders>
       </configuration>

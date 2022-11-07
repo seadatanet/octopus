@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.8.1
+
+### Evolutions
+* Mise à jour de la librairie SdnVocabulary 2.2.
+
 ## 1.8.0
 
 ### Evolutions

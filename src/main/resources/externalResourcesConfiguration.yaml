@@ -80,3 +80,7 @@ csrListWebServiceUrl: https://csr.seadatanet.org/isoCodelists/csrCodeList.xml
 
 # Web service URL for EDMO data.
 edmoWebServiceUrl: https://edmo.seadatanet.org/ws/ws_edmo.asmx
+
+# URL pattern to write a EDMERP URL.
+# {0} is EDMERP code.
+writeEdmerpReference: https://edmerp.seadatanet.org/report/{0}

@@ -2,9 +2,9 @@
 <preferences>
     <couplingEnabled>false</couplingEnabled>
     <couplingPrefix></couplingPrefix>
-    <edmocode></edmocode>
-    <inputDefaultPath></inputDefaultPath>
+    <edmocode>486</edmocode>
+    <inputDefaultPath>C:\Users\scrouzil\OneDrive - Capgemini\Documents\mcosismer\SEADATANET\Octopus\Mantis\51060</inputDefaultPath>
     <language>uk</language>
-    <outputDefaultPath></outputDefaultPath>
+    <outputDefaultPath>C:\Users\scrouzil\OneDrive - Capgemini\Documents\mcosismer\SEADATANET\Octopus\Mantis\51060\out</outputDefaultPath>
     <theme>1</theme>
 </preferences>

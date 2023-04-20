@@ -9,7 +9,7 @@
 	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
 It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
-	<version>1.8.2-SNAPSHOT</version>
+	<version>1.8.2</version>
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
 		<name>ifremer</name>
@@ -771,7 +771,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.39-SNAPSHOT</version>
+			<version>0.39</version>
 			<!-- <classifier>jar-with-dependencies</classifier> -->
 			<exclusions>
 				<exclusion>
@@ -784,7 +784,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer</groupId>
 			<artifactId>mgd</artifactId>
-			<version>1.21-SNAPSHOT</version>
+			<version>1.21</version>
 		</dependency>
 
 		<!-- http://www.ifremer.fr/isi/softwareversion/ -> to be installed in a 

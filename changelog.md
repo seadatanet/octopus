@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.8.2
+
+### Evolutions
+* Amélioration de la gestion de csrCodeList.xml.
+* Génération de SDN REFERENCE pour EDMERP.
+
 ## 1.8.1
 
 ### Evolutions

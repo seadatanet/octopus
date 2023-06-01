@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.9.0
+
+### Evolutions
+* Conversion de données marégraphie sans référence verticale en CFPoint.
+
 ## 1.8.2
 
 ### Evolutions

@@ -61,6 +61,7 @@ before_script:
   - rm -r resources/externalResources/
   - mkdir resources/externalResources/
   - mv tmp/* resources/externalResources/
+  - ls resources/externalResources/BODCVocabularies/
 
   # Creating test output folders
   - 'mkdir -p src/test/resources/cfpoint/input/profile

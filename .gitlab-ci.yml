@@ -57,7 +57,10 @@ before_script:
   - tar xf externalResources.tar.gz -C tmp
   - echo "Resources found in resources:"
   - ls resources/
-  - mv tmp/* resources/externalResources
+  - ls resources/externalResources/
+  - rm -r resources/externalResources/
+  - mkdir resources/externalResources/
+  - mv tmp/* resources/externalResources/
 
   # Creating test output folders
   - 'mkdir -p src/test/resources/cfpoint/input/profile

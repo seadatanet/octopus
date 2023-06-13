@@ -487,7 +487,7 @@ public abstract class AbstractController {
 		boolean ok=true;
 		File out = new File(model.getOutputPath());
 		if (!out.exists()){
-			ok = out.mkdir();
+			ok = out.mkdirs();
 		}
 		if (!ok){
 			Path p = Paths.get(model.getOutputPath());
@@ -510,7 +510,7 @@ public abstract class AbstractController {
 	private void createOutputSubDir(String in){
 		File out ;
 		out = new File(model.getOutputPath()+File.separator+getInpufNameWithoutExtension(in));
-		out.mkdir();
+		out.mkdirs();
 	}
 
 

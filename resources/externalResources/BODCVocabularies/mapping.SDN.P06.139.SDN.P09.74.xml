@@ -1,0 +1,3829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+   <vocabulary list="SDN:P06:139:"  version="139"  date="2023-04-27T02:00:04.000"  title="BODC-approved data storage units"   />
+   <mapped>
+      <vocabulary list="SDN:P09:74:"  version="74"  date="2023-04-20T02:00:03.000"  title="MEDATLAS Parameter Usage Vocabulary"   />
+   </mapped>
+   <match>
+      <element  key="SDN:P09:74:DMTW"  label="1,3-1,4dimethylbenzene water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CUPH"  label="14C PRODUCTION FILTER UNSPECIF"    />
+      <related>
+         <element  key="SDN:P06:74:UGLH"  label="Milligrams per cubic metre per hour"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CUPW"  label="14C PRODUCTION FILTER UNSPECIF"    />
+      <related>
+         <element  key="SDN:P06:74:UGDC"  label="Milligrams per cubic metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C4UW"  label="14C PRODUCTION/10 MICRON FILT."    />
+      <related>
+         <element  key="SDN:P06:74:UGDC"  label="Milligrams per cubic metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C2UW"  label="14C PRODUCTION/2 MICRON FILT."    />
+      <related>
+         <element  key="SDN:P06:74:UGDC"  label="Milligrams per cubic metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C1UW"  label="14C UPTAKE 0.2-1 MICRON"    />
+      <related>
+         <element  key="SDN:P06:74:UGDC"  label="Milligrams per cubic metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BFUP"  label="19&apos;BUTANOYLOXYFUCOXANTHINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HFUP"  label="19&apos;HEXANOYLOXYFUCOXANTHINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NOPW"  label="4-nonylphenol in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ASDW"  label="ABSORPTION STANDARD DEVIATION"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABB3"  label="ABUNDANCE BIO PER VOL IN SED"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABB2"  label="ABUNDANCE OF BIO PER AREA"    />
+      <related>
+         <element  key="SDN:P06:74:UPMS"  label="Number per square metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABB1"  label="ABUNDANCE OF BIO PER VOLUME"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MALF"  label="AL FLUX IN SETTLING PARTICLES"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ALKW"  label="ALKALINITY"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ALKY"  label="ALKALINITY"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AXAP"  label="ALLOXANTHINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABCP"  label="ALPHA BETA CAROTENES"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AACP"  label="ALPHA-CAROTENE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMON"  label="AMMONIUM (NH4-N) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMOW"  label="AMMONIUM (NH4-N) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NHRW"  label="AMMONIUM REGENERATION"    />
+      <related>
+         <element  key="SDN:P06:74:UNMD"  label="Nanomoles per litre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NHUW"  label="AMMONIUM UPTAKE"    />
+      <related>
+         <element  key="SDN:P06:74:UNMD"  label="Nanomoles per litre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMOP"  label="AMONIUM IN SEDIMENT PORE WATER"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ANXW"  label="ANTHERAXANTHIN"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ATMP"  label="ATMOSPHERIC PRESSURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPBB"  label="Millibars"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ATMS"  label="ATMOSPHERIC PRESSURE - SEA LEV"    />
+      <related>
+         <element  key="SDN:P06:74:UPBB"  label="Millibars"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ATPT"  label="ATMOSPHERIC PRESSURE TENDENCY"    />
+      <related>
+         <element  key="SDN:P06:74:HPAH"  label="Hectopascals per hour"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NFAW"  label="AUTOTROPHIC NANOFLAGELLATES"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VHZA"  label="AVER ZERO CROSSING WAVE HEIGHT"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTZA"  label="AVER ZERO CROSSING WAVE PERIOD"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VAVH"  label="AVER. HEIGHT HIGHEST 1/3 WAVE"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VAVT"  label="AVER. PERIOD HIGHEST 1/3 WAVE"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NAVG"  label="AVERAGED DATA CYCLE NUMBER"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ACES"  label="Acenaphthylene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ACEW"  label="Acenaphthylene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AGSX"  label="Ag IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AG63"  label="Ag&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MALP"  label="Al IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MALS"  label="Al IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AL63"  label="Al&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ALUW"  label="Aluminium in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMSE"  label="Ammonium in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MMCM"  label="Millimoles per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ANTB"  label="Anthracene in biota"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ANTS"  label="Anthracene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ANTW"  label="Anthracene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ARSW"  label="Arsenic in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ASSX"  label="As IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:UPTS"  label="BACT. PROD. STANDARD DEVIATION"    />
+      <related>
+         <element  key="SDN:P06:74:UPMH"  label="Picomoles per litre per hour"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BCMW"  label="BACTERIAL BIOMASS IN SEA WATER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:UPTH"  label="BACTERIAL PRODUCTION(THYM. UP)"    />
+      <related>
+         <element  key="SDN:P06:74:UPMH"  label="Picomoles per litre per hour"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BCHA"  label="BACTERIOCHLOROPHYLL-A"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BATH"  label="BATHYMETRIC DEPTH"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BEAR"  label="BEARING AWAY FROM INSTRUMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UABB"  label="Degrees True"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WBFO"  label="BEAUFORT WIND FORCE"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BBCP"  label="BETA-CAROTENE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TB25"  label="BLUE LIGHT TRANSMISSION 25CM"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MBAP"  label="Ba IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MBAS"  label="Ba IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BAAS"  label="Benz(a)anthracene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BAAW"  label="Benz(a)anthracene in water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BENW"  label="Benzene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BAPS"  label="Benzo(a)pyrene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BAPW"  label="Benzo(a)pyrene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BBFW"  label="Benzo(b)fluoranthene in water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BBFS"  label="Benzo(b)fluoranthene sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BGHW"  label="Benzo(g,h,i)perylene in water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BGHS"  label="Benzo(g,h,i)perylene sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BKFW"  label="Benzo(k)fluoranthene in water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BKFS"  label="Benzo(k)fluoranthene sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BISX"  label="Bi IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BI63"  label="Bi&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETYW"  label="Bis(ethylhexyl)phthalate water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MBRS"  label="Br IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBDF"  label="C BIOMASS OF DINOFLAGELLATES"    />
+      <related>
+         <element  key="SDN:P06:74:MCUG"  label="Micrograms per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBNC"  label="C BIOMASS OF NAKED CILIATES"    />
+      <related>
+         <element  key="SDN:P06:74:MCUG"  label="Micrograms per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GLUC"  label="CARBOHYDRATE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBIO"  label="CARBON BIOMASS OF BIO ENTITY"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBCI"  label="CARBON BIOMASS OF CILIATEA"    />
+      <related>
+         <element  key="SDN:P06:74:MCUG"  label="Micrograms per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBTN"  label="CARBON BIOMASS OF TINTINNINA"    />
+      <related>
+         <element  key="SDN:P06:74:MCUG"  label="Micrograms per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO3P"  label="CARBONATES CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CODW"  label="CHEMICAL OXYGEN DEMAND"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CH1P"  label="CHL-A(LESS DIVINYLCHL-A)"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CH2P"  label="CHL-B(LESS DIVINYLCHL-B)"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CH1T"  label="CHLOROPHYLL TOTAL"    />
+      <related>
+         <element  key="SDN:P06:74:UUKG"  label="Micrograms per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH6"  label="CHLOROPHYLL-A &lt;3 MICRON"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH7"  label="CHLOROPHYLL-A &gt;3 &lt;10 MICRON"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH5"  label="CHLOROPHYLL-A &gt;3 &lt;20 MICRON"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH1"  label="CHLOROPHYLL-A TOTAL"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPHL"  label="CHLOROPHYLL-A TOTAL"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHAF"  label="CHLOROPHYLL-A VERTICAL FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH4"  label="CHLOROPHYLL-A/10 MICRON FILTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH2"  label="CHLOROPHYLL-A/2 MICRON FILTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH3"  label="CHLOROPHYLL-A/20 MICRON FILTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHLB"  label="CHLOROPHYLL-B TOTAL"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHLC"  label="CHLOROPHYLL-C TOTAL"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHCZ"  label="CHLOROPHYLL-C1+C2"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHC3"  label="CHLOROPHYLL-C3"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHLT"  label="CHLOROPHYLL-TOTAL"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CIDA"  label="CHLOROPHYLLIDE A"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CLAY"  label="CLAY IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FCO2"  label="CO2 FUGACITY"    />
+      <related>
+         <element  key="SDN:P06:74:UATM"  label="Microatmospheres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:XCO2"  label="CO2 MOLE FRACTION IN DRY GAS"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCO2"  label="CO2 PART. PRES IN DRY/WET GAS"    />
+      <related>
+         <element  key="SDN:P06:74:UATM"  label="Microatmospheres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C363"  label="CO3&lt;63um IN DRY WGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COPF"  label="COCCOLITHOPHORIDAE PPC FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CDO2"  label="COLORED DISS. ORGANIC MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CDOM"  label="COLORED DISS. ORGANIC MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UPPB"  label="Parts per billion"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OCNT"  label="COUNT OF BIOLOGICAL ENTITY"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CXAP"  label="CROCOXANTHIN"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCUF"  label="CU FLUX IN SETTLING PARTICLES"    />
+      <related>
+         <element  key="SDN:P06:74:UUDX"  label="Micrograms per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EWCS"  label="CURRENT EAST  STD. DEVIATION"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EWCT"  label="CURRENT EAST COMPONENT"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NSCT"  label="CURRENT NORTH COMPONENT"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NSCS"  label="CURRENT NORTH STD. DEVIATION"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HCSS"  label="CURRENT SPEED STD DEV"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCAP"  label="Ca IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCAS"  label="Ca IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CA63"  label="Ca&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CADB"  label="Cadmium in biota"    />
+      <related>
+         <element  key="SDN:P06:74:UUKG"  label="Micrograms per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CADS"  label="Cadmium in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CADW"  label="Cadmium in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCOW"  label="Carbon dioxide in water"    />
+      <related>
+         <element  key="SDN:P06:74:UATM"  label="Microatmospheres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CDSX"  label="Cd IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CD45"  label="Cd&lt;0.4/0.45um IN WATER BODY"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CD63"  label="Cd&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CD40"  label="Cd&gt;0.4/0.45um IN WATER BODY"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCES"  label="Ce IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CE63"  label="Ce&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHLS"  label="Chlorine IN DRY WGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHAS"  label="Chlorophyll-a in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CROW"  label="Chromium in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHRS"  label="Chrysene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CRYW"  label="Chrysene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCLP"  label="Cl IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COSX"  label="Co IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO63"  label="Co&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IRON"  label="Concentration of total iron per unit volume of the water body"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COPS"  label="Copper in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCRS"  label="Cr IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CR63"  label="Cr&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CSSX"  label="Cs  IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CS63"  label="Cs&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCUS"  label="Cu IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CU63"  label="Cu&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DCAW"  label="DARK CARBON ABSORPTION"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CDFW"  label="DARK FIXATION"    />
+      <related>
+         <element  key="SDN:P06:74:UGDC"  label="Milligrams per cubic metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DATE"  label="DATE"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DAYX"  label="DAY WITHIN MONTH"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DAYS"  label="DAY WITHIN YEAR"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:D13C"  label="DELTA 13 C SIGNATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C13D"  label="DELTA 13C (13C/12C)"    />
+      <related>
+         <element  key="SDN:P06:74:UPPT"  label="Parts per thousand"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:N15D"  label="DELTA 15N (15N/14N)"    />
+      <related>
+         <element  key="SDN:P06:74:UPPT"  label="Parts per thousand"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HELD"  label="DELTA HELIUM 3"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SIGT"  label="DENSITY (Sigma-t)"    />
+      <related>
+         <element  key="SDN:P06:74:UKMC"  label="Kilograms per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DENS"  label="DENSITY (Sigma-theta)"    />
+      <related>
+         <element  key="SDN:P06:74:UKMC"  label="Kilograms per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DPS1"  label="DEPTH BELOW BOTTOM-LOWER LIMIT"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DPSF"  label="DEPTH BELOW SEA FLOOR"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DEPH"  label="DEPTH BELOW SEA SURFACE"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VMNL"  label="DEPTH OF THE DEEPEST TROUGH"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DEEX"  label="DEUTERIUM EXCESS"    />
+      <related>
+         <element  key="SDN:P06:74:UPPT"  label="Parts per thousand"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DEWT"  label="DEW POINT TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DXAP"  label="DIADINOXANTHINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DIPF"  label="DIATOMS PPC FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TXAP"  label="DIATOXANTHINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IC13"  label="DIC DELTA-13C"    />
+      <related>
+         <element  key="SDN:P06:74:UPPT"  label="Parts per thousand"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DICP"  label="DIC IN SEDIMENT PORE WATER"    />
+      <related>
+         <element  key="SDN:P06:74:UMGL"  label="Milligrams per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DFPF"  label="DINOFLAGELLATES PPC FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VPSP"  label="DIR. SPREADING AT WAVE PEAK"    />
+      <related>
+         <element  key="SDN:P06:74:UAAA"  label="Degrees"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DRVA"  label="DIRECTION OF RADIAL VECTOR"    />
+      <related>
+         <element  key="SDN:P06:74:UABB"  label="Degrees True"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HCDT"  label="DIRECTION REL. TRUE NORTH"    />
+      <related>
+         <element  key="SDN:P06:74:UABB"  label="Degrees True"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TPAW"  label="DISS. TRIPHOSPHATE ADENOSINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETHW"  label="DISSOLVED 234 TH ACT. ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:UMBQ"  label="Millibecquerels per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TH4W"  label="DISSOLVED 234TH"    />
+      <related>
+         <element  key="SDN:P06:74:UMBQ"  label="Millibecquerels per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CL4W"  label="DISSOLVED C-TETRACHLORIDE"    />
+      <related>
+         <element  key="SDN:P06:74:KGPM"  label="Picomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCDW"  label="DISSOLVED CADMIUM (Cd)"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO2W"  label="DISSOLVED CARBON DIOXYD (CO2)"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CF1W"  label="DISSOLVED CFC11"    />
+      <related>
+         <element  key="SDN:P06:74:KGPM"  label="Picomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CE1W"  label="DISSOLVED CFC11 ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:KGPM"  label="Picomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EF1W"  label="DISSOLVED CFC11 ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CF3W"  label="DISSOLVED CFC113"    />
+      <related>
+         <element  key="SDN:P06:74:KGPM"  label="Picomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CE3W"  label="DISSOLVED CFC113 ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:KGPM"  label="Picomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EF3W"  label="DISSOLVED CFC113 ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CF2W"  label="DISSOLVED CFC12"    />
+      <related>
+         <element  key="SDN:P06:74:KGPM"  label="Picomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CE2W"  label="DISSOLVED CFC12 ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:KGPM"  label="Picomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EF2W"  label="DISSOLVED CFC12 ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCOW"  label="DISSOLVED COBALT (Co)"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCU2"  label="DISSOLVED COPPER (Cu)"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCUW"  label="DISSOLVED COPPER (Cu)"    />
+      <related>
+         <element  key="SDN:P06:74:UPNM"  label="Nanomoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HELW"  label="DISSOLVED HELIUM"    />
+      <related>
+         <element  key="SDN:P06:74:KGNM"  label="Nanomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HEEW"  label="DISSOLVED HELIUM ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:KGNM"  label="Nanomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TINW"  label="DISSOLVED INORGANIC NITROGEN"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPBW"  label="DISSOLVED LEAD (Pb)"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NEOW"  label="DISSOLVED NEON"    />
+      <related>
+         <element  key="SDN:P06:74:KGNM"  label="Nanomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NEEW"  label="DISSOLVED NEON ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:KGNM"  label="Nanomoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNI2"  label="DISSOLVED NICKEL (Ni)"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNIW"  label="DISSOLVED NICKEL (Ni)"    />
+      <related>
+         <element  key="SDN:P06:74:UPNM"  label="Nanomoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CORG"  label="DISSOLVED ORGANIC CARBON"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NODW"  label="DISSOLVED ORGANIC NITROGEN"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NORG"  label="DISSOLVED ORGANIC NITROGEN"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOPW"  label="DISSOLVED ORGANIC PHOSPHORUS"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PODW"  label="DISSOLVED ORGANIC PHOSPHORUS"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOX1"  label="DISSOLVED OXYGEN"    />
+      <related>
+         <element  key="SDN:P06:74:UMLL"  label="Millilitres per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOX2"  label="DISSOLVED OXYGEN"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOXY"  label="DISSOLVED OXYGEN"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MAGW"  label="DISSOLVED SILVER (Ag)"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TRIW"  label="DISSOLVED TRITIUM"    />
+      <related>
+         <element  key="SDN:P06:74:UUTU"  label="Tritium units (10**18H/Tr)"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TREW"  label="DISSOLVED TRITIUM ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:UUTU"  label="Tritium units (10**18H/Tr)"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MZNW"  label="DISSOLVED ZINC (Zn)"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHAD"  label="DIVINYL CHLOROPHYLL-A"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHBD"  label="DIVINYL-CHLOROPHYLL-B"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOCP"  label="DOC IN SEDIMENT PORE WATER"    />
+      <related>
+         <element  key="SDN:P06:74:UMGL"  label="Milligrams per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DRYT"  label="DRY BULB TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DBIO"  label="DRY WEIGHT BIOMASS OF ENTITY"    />
+      <related>
+         <element  key="SDN:P06:74:UGMS"  label="Grams per square metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DRDD"  label="DURATION (DAYS)"    />
+      <related>
+         <element  key="SDN:P06:74:UTAA"  label="Days"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DBAW"  label="Dibenzo(ah)anthracene in water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DBAS"  label="Dibenzo(ah)anthracene sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DYSX"  label="Dy IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DY63"  label="Dy&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CNDC"  label="ELECTRICAL CONDUCTIVITY"    />
+      <related>
+         <element  key="SDN:P06:74:UECA"  label="Siemens per metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CN02"  label="ELECTRICAL CONDUCTIVITY 2"    />
+      <related>
+         <element  key="SDN:P06:74:UECA"  label="Siemens per metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETDD"  label="ELLAPSED TIME"    />
+      <related>
+         <element  key="SDN:P06:74:UTAA"  label="Days"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHAE"  label="EPIMERE CHLOROPHYLL-A"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VEMH"  label="ESTIMATED MAXIMUM WAVE HEIGHT"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ERSX"  label="Er IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ER63"  label="Er&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETBW"  label="Ethylbenzene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EUSX"  label="Eu IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EU63"  label="Eu&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MFEF"  label="FE FLUX IN SETTLING PARTICLES"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLPF"  label="FLAGELLATES PPC FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLU1"  label="FLUORESCENCE"    />
+      <related>
+         <element  key="SDN:P06:74:UVLT"  label="Volts"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLU2"  label="FLUORESCENCE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLU3"  label="FLUORESCENCE"    />
+      <related>
+         <element  key="SDN:P06:74:UFFU"  label="Fluorescein Fluorescence Units"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLUO"  label="FLUORESCENCE"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FUCP"  label="FUCOXANTHINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FESP"  label="Fe IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:MMKG"  label="Millimoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MFEP"  label="Fe IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MFES"  label="Fe IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FE63"  label="Fe&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLRS"  label="Fluoranthene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLRW"  label="Fluoranthene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLUS"  label="Fluorene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLUW"  label="Fluorene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VGTA"  label="GENERIC AVERAGE WAVE PERIOD"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VGHS"  label="GENERIC SIGNIF. WAVE HEIGHT"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GDIR"  label="GUST WIND DIRECTION"    />
+      <related>
+         <element  key="SDN:P06:74:UABB"  label="Degrees True"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GSPD"  label="GUST WIND SPEED"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GASX"  label="Ga IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GA63"  label="Ga&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GDSX"  label="Gd IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GD63"  label="Gd&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ALTS"  label="HEIGHT ABOVE MEAN SEA LEVEL"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HEDW"  label="HELIUM DEV. OF ISOTOPIC RATIO"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HEDE"  label="HELIUM ISOTOPIC RATIO ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NFHW"  label="HETEROTROPHIC NANOFLAGELLATES"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HNAC"  label="HIGH NUCLEIC ACID CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HCSP"  label="HORIZONTAL CURRENT SPEED"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSPD"  label="HORIZONTAL WIND SPEED"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HSUL"  label="HYDROGEN SULPHIDE (H2S)"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HXC1"  label="Hexachlorobiphenyl128 sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HXC2"  label="Hexachlorobiphenyl138 sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HXC3"  label="Hexachlorobiphenyl153 sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HXC4"  label="Hexachlorobiphenyl156 sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HFSX"  label="Hf IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HF63"  label="Hf&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HGSX"  label="Hg IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HOSX"  label="Ho IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HO63"  label="Ho&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MIIS"  label="I IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGH5"  label="IMMERGED/SURF IRRADIANCE RATIO"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SPDI"  label="INDICATED PLATFORM SPEED-SHIP"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ISMP"  label="INORGANIC SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMGL"  label="Milligrams per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IODI"  label="IODINE"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OXIR"  label="ISOTOPIC RATIO O18/O16"    />
+      <related>
+         <element  key="SDN:P06:74:UPPT"  label="Parts per thousand"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IDPW"  label="Indeno(1,2,3cd)pyrene in water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:INDE"  label="Indeno(1,2,3cd)pyrene sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:INCS"  label="Inorganic carbon in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MGPG"  label="Milligrams per gram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CJDY"  label="JULIAN DATE (CHRONOLOGICAL)"    />
+      <related>
+         <element  key="SDN:P06:74:UTAA"  label="Days"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MKKP"  label="K IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MKKS"  label="K IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LATX"  label="LATITUDE"    />
+      <related>
+         <element  key="SDN:P06:74:UAAA"  label="Degrees"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LATD"  label="LATITUDE DEGREES"    />
+      <related>
+         <element  key="SDN:P06:74:UAAA"  label="Degrees"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LATM"  label="LATITUDE MINUTES"    />
+      <related>
+         <element  key="SDN:P06:74:UAMN"  label="Arc minutes"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LTUW"  label="LEUCINE UPTAKE RATE"    />
+      <related>
+         <element  key="SDN:P06:74:UGM3"  label="Micrograms per cubic metre per hour"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR2"  label="LIGHT ATTENUATION COEFFICIENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPRM"  label="per metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LCAW"  label="LIGHT CARBON ABSORPTION"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR1"  label="LIGHT DIFFUSION COEFFICIENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPRM"  label="per metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGH3"  label="LIGHT IRRADIANCE CORRECTED PAR"    />
+      <related>
+         <element  key="SDN:P06:74:UMES"  label="MicroEinsteins per square metre per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGHT"  label="LIGHT IRRADIANCE IMMERGED PAR"    />
+      <related>
+         <element  key="SDN:P06:74:UMES"  label="MicroEinsteins per square metre per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGH4"  label="LIGHT IRRADIANCE SURFACE PAR"    />
+      <related>
+         <element  key="SDN:P06:74:UMES"  label="MicroEinsteins per square metre per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LSCT"  label="LIGHT SCATTERING"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR3"  label="LIGHT TRANSMISSION"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR0"  label="LIGHT TRANSMISSION -  NOT USED"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LIPI"  label="LIPIDS IN THE WATER COLUMN"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LSIC"  label="LITHOGENIC CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LTHF"  label="LITHOGENIC FRACTION FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LINC"  label="LONG-WAVE INCOMING RADIATION"    />
+      <related>
+         <element  key="SDN:P06:74:UFAA"  label="Watts per square metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LONX"  label="LONGITUDE"    />
+      <related>
+         <element  key="SDN:P06:74:UAAA"  label="Degrees"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LOND"  label="LONGITUDE DEGREES"    />
+      <related>
+         <element  key="SDN:P06:74:UAAA"  label="Degrees"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LONM"  label="LONGITUDE MINUTES"    />
+      <related>
+         <element  key="SDN:P06:74:UAMN"  label="Arc minutes"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LUTW"  label="LUTEIN"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MLAS"  label="La IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LA63"  label="La&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LEAB"  label="Lead in biota"    />
+      <related>
+         <element  key="SDN:P06:74:UUKG"  label="Micrograms per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LEAS"  label="Lead in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LEAW"  label="Lead in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LISX"  label="Li IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LI63"  label="Li&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LUSX"  label="Lu IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LU63"  label="Lu&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MAXD"  label="MAX. DEPTH BELOW SEA SURFACE"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VZMX"  label="MAXI ZERO CROSSING WAVE HEIGHT"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VCMX"  label="MAXIMUM CREST TO TROUGH WAVE HEIGHT"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VMXL"  label="MAXIMUM WAVE LEVEL"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTMX"  label="MAXIMUM WAVE PERIOD"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VST1"  label="MAXIMUM WAVE STEEPNESS"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSMP"  label="MEAN SPHERIC DIAM. MEDIAN"    />
+      <related>
+         <element  key="SDN:P06:74:UXMM"  label="Millimetres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSDP"  label="MEAN SPHERIC DIAM. OF PARTICLE"    />
+      <related>
+         <element  key="SDN:P06:74:UXMM"  label="Millimetres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSZW"  label="MESOZOOPLANCTON DRY WEIGHT"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSBO"  label="MESOZOOPLANKTON ASH-FREE DRY W"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MEHG"  label="METHYLMERCURY CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:MCUG"  label="Micrograms per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MIND"  label="MIN. DEPTH BELOW SEA SURFACE"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMNF"  label="MN FLUX IN SETTLING PARTICLES"    />
+      <related>
+         <element  key="SDN:P06:74:UUDX"  label="Micrograms per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MOLW"  label="MOLYBDENUM IN WATER BODY"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNTH"  label="MONTH"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VMDR"  label="Mean direction in spectrum of waves from which waves are coming relative to True North"    />
+      <related>
+         <element  key="SDN:P06:74:UAAA"  label="Degrees"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:METW"  label="Methylbenzene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMGP"  label="Mg IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMGS"  label="Mg IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MG63"  label="Mg&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMNP"  label="Mn IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNSP"  label="Mn IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:MMKG"  label="Millimoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMNS"  label="Mn IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MN63"  label="Mn&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMOS"  label="Mo IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MO63"  label="Mo&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:N63X"  label="N&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HBAW"  label="NB OF HETEROTROPHIC BACTERIA"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NEXW"  label="NEOXANTHIN"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NETR"  label="NET RADIATION"    />
+      <related>
+         <element  key="SDN:P06:74:UFAA"  label="Watts per square metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NRAD"  label="NET TOTAL INCOMING RADIATION"    />
+      <related>
+         <element  key="SDN:P06:74:UFAA"  label="Watts per square metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTAW"  label="NITRATE (NO3-N) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTRA"  label="NITRATE (NO3-N) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTRZ"  label="NITRATE + NITRITE CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTZW"  label="NITRATE + NITRITE CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTAP"  label="NITRATE IN SEDIMENT PORE WATER"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NOUW"  label="NITRATE UPTAKE"    />
+      <related>
+         <element  key="SDN:P06:74:UNMD"  label="Nanomoles per litre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NORW"  label="NITRIFICATION"    />
+      <related>
+         <element  key="SDN:P06:74:UNMD"  label="Nanomoles per litre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTIW"  label="NITRITE (NO2-N) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTRI"  label="NITRITE (NO2-N) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTIP"  label="NITRITE IN SEDIMENT PORE WATER"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NIUW"  label="NITROGEN UPTAKE (FIXATION)"    />
+      <related>
+         <element  key="SDN:P06:74:UNMD"  label="Nanomoles per litre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BCCS"  label="NUMBER OF BACTERIA IN SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UCNL"  label="Number per nanolitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COPP"  label="NUMBER OF COPEPODS"    />
+      <related>
+         <element  key="SDN:P06:74:UPMM"  label="Number per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CYAF"  label="NUMBER OF CYANOBACTERIA"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NNEF"  label="NUMBER OF NANOEUKARYOTES"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NPKF"  label="NUMBER OF NANOPROKARYOTES"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NUMP"  label="NUMBER OF PARTICLES 3-80UM"    />
+      <related>
+         <element  key="SDN:P06:74:UPMM"  label="Number per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NUMN"  label="NUMBER OF PARTICLES &gt;0.7UM"    />
+      <related>
+         <element  key="SDN:P06:74:UPMM"  label="Number per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NUNM"  label="NUMBER OF PARTICLES &gt;=480UM"    />
+      <related>
+         <element  key="SDN:P06:74:UPMM"  label="Number per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCEF"  label="NUMBER OF PICOEUKARYOTES"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PPKF"  label="NUMBER OF PICOPROKARYOTES"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRCF"  label="NUMBER OF PROCHLOROCOCCUS"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BCCW"  label="NUMBER OF SW BACTERIA"    />
+      <related>
+         <element  key="SDN:P06:74:UCUL"  label="Number per microlitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CICW"  label="NUMBER OF SW CILIATES"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COCW"  label="NUMBER OF SW COCCOLITHOPHORIDS"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CRSW"  label="NUMBER OF SW CRYPTOPHYCEAE"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DTCW"  label="NUMBER OF SW DIATOMS"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DFCW"  label="NUMBER OF SW DINOFLAGELLATES"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DINW"  label="NUMBER OF SW DYNOPHYSIS"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GYRW"  label="NUMBER OF SW GYRODINIUM"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NCSW"  label="NUMBER OF SW NAKED CILIATES"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NFCW"  label="NUMBER OF SW NANOFLAGELLATES"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCEW"  label="NUMBER OF SW PICOEUCARYOTES"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRCW"  label="NUMBER OF SW PROCHLOROCOCCUS"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SNCW"  label="NUMBER OF SW SYNECHOCOCCUS"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TISW"  label="NUMBER OF SW TINTINNINA"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SNCF"  label="NUMBER OF SYNECHOCOCCUS"    />
+      <related>
+         <element  key="SDN:P06:74:UCML"  label="Number per millilitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNAS"  label="Na IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NAPS"  label="Naphthalene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NAPW"  label="Naphthalene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNBS"  label="Nb IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNDS"  label="Nd IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ND63"  label="Nd&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NISX"  label="Ni IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNIS"  label="Ni IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NIKS"  label="Nickel in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NIKW"  label="Nickel in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTR1"  label="Nitrate in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MMCM"  label="Millimoles per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTRS"  label="Nitrite in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MMCM"  label="Millimoles per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NITS"  label="Nitrogen in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MGPG"  label="Milligrams per gram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:O18E"  label="O18 ENRICHMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPT"  label="Parts per thousand"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLEV"  label="OBSERVED SEA LEVEL"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OPAP"  label="OPAL CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TOMP"  label="ORGANIC MATTER CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OSMP"  label="ORGANIC SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMGL"  label="Milligrams per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OSAT"  label="OXYGEN SATURATION"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOCS"  label="Organic carbon DOC in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMGL"  label="Milligrams per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OCCN"  label="Organic carbon in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MGPG"  label="Milligrams per gram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ONIS"  label="Organic nitrogen in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MGPG"  label="Milligrams per gram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPPP"  label="P IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPPS"  label="P IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGH2"  label="PAR ATTENUATION COEFFICIENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPRM"  label="per metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SIOF"  label="PART. BIOGENIC Si FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO3F"  label="PART. CaCO3 FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:POCF"  label="PART. ORGANIC CARBON FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OMMF"  label="PART. ORGANIC MATTER FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PP1P"  label="PART. ORGANIC PHOSPHORUS (P)"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHTF"  label="PART. TOTAL CARBOHYDRATES FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TCCF"  label="PART. TOTAL CARBON FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TNNF"  label="PART. TOTAL NITROGEN FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETHP"  label="PARTICULATE 234 TH ACT. ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:UMBQ"  label="Millibecquerels per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TH4P"  label="PARTICULATE 234TH ACTIVTY"    />
+      <related>
+         <element  key="SDN:P06:74:UMBQ"  label="Millibecquerels per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PICP"  label="PARTICULATE INORGANIC CARBON"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PC1P"  label="PARTICULATE ORGANIC CARBON/POC"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:POCP"  label="PARTICULATE ORGANIC CARBON/POC"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PN1P"  label="PARTICULATE ORGANIC NITROGEN"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PONP"  label="PARTICULATE ORGANIC NITROGEN"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLCP"  label="PARTICULATE ORGANIC SILICA(SI)"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPBF"  label="PB FLUX IN SETTLING PARTICLES"    />
+      <related>
+         <element  key="SDN:P06:74:UUDX"  label="Micrograms per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PERP"  label="PERIDININE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTZM"  label="PERIOD OF THE HIGHEST WAVE"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHPH"  label="PH"    />
+      <related>
+         <element  key="SDN:P06:74:UUPH"  label="pH units"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE6"  label="PHAEOPHYTIN &lt;3 MICRON"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE3"  label="PHAEOPHYTIN &gt;20 MICRON"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE5"  label="PHAEOPHYTIN &gt;3 &lt;20 MICRON"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHTF"  label="PHAEOPIGMENTS VERTICAL FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEP"  label="PHEOPHORBIDE A"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEA"  label="PHEOPHYTIN-A"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEB"  label="PHEOPHYTIN-B"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEC"  label="PHEOPHYTIN-C"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE4"  label="PHEOPHYTINE / 10 MICRON FILTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE2"  label="PHEOPHYTINE / 2 MICRON FILTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHOS"  label="PHOSPHATE (PO4-P) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHOW"  label="PHOSPHATE (PO4-P) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHOP"  label="PHOSPHATE IN SEDIMT PORE WATER"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHSP"  label="PHOSPHORUS IN SUSP. MATT."    />
+      <related>
+         <element  key="SDN:P06:74:MMKG"  label="Millimoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHCW"  label="PHYTOPLANKTON ABUNDANCE"    />
+      <related>
+         <element  key="SDN:P06:74:UCPL"  label="Number per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HEAD"  label="PLAT. HEADING REL. TRUE NORTH"    />
+      <related>
+         <element  key="SDN:P06:74:UABB"  label="Degrees True"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SO4O"  label="PORE WATER SULFATE"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PO63"  label="PORG&lt;63um in DRY W. SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PETD"  label="POTENTIAL EVAPOTRANSPIRATION"    />
+      <related>
+         <element  key="SDN:P06:74:MMPD"  label="Millimetres per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PSAL"  label="PRACTICAL SALINITY"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PS02"  label="PRACTICAL SALINITY 2"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PXAP"  label="PRASINOXANTHINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRRD"  label="PRECIPITATION RATE"    />
+      <related>
+         <element  key="SDN:P06:74:MMPD"  label="Millimetres per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRRT"  label="PRECIPITATION RATE"    />
+      <related>
+         <element  key="SDN:P06:74:MMPH"  label="Millimetres per hour"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRAB"  label="PRESENCE OR ABSENCE OF ENTITY"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PROT"  label="PROTEIN"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTZF"  label="PROTOZOA PPC FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PT63"  label="PTOT&lt;63um in DRY W. SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPBS"  label="Pb IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PB45"  label="Pb&lt;0.4/0.45um IN WATER BODY"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PB63"  label="Pb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PB40"  label="Pb&gt;0.4/0.45um IN WATER BODY"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PENW"  label="Pentachlorobiphenyl in water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTC1"  label="Pentachlorobiphenyl101 in sed."    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTC2"  label="Pentachlorobiphenyl118 in sed."    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCPW"  label="Pentachlorophenol in water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VM01"  label="Period (at first spectral moment) of waves on the water body"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHAS"  label="Phaeopigments in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHES"  label="Phenanthrene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEW"  label="Phenanthrene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHSS"  label="Phosphate in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MMCM"  label="Millimoles per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRSX"  label="Pr IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PR63"  label="Pr&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PYRS"  label="Pyrene in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PYRW"  label="Pyrene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RDVA"  label="RADIAL SEAWATER VELOCITY"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RNGE"  label="RANGE AWAY FROM INSTRUMENT"    />
+      <related>
+         <element  key="SDN:P06:74:ULKM"  label="Kilometres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TR10"  label="RED LIGHT TRANSMISSION 10CM"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TR25"  label="RED LIGHT TRANSMISSION 25CM"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:REDS"  label="REDOX POTENTIAL"    />
+      <related>
+         <element  key="SDN:P06:74:UUMV"  label="Millivolts"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RELH"  label="RELATIVE HUMIDITY"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLVR"  label="RESIDUAL (OBS-PRED SEA LEVEL)"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RVFL"  label="RIVER FLOW RATE"    />
+      <related>
+         <element  key="SDN:P06:74:CMPS"  label="Cubic metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MRBS"  label="Rb IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RB63"  label="Rb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SSXX"  label="S IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSSP"  label="S IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SSAL"  label="SALINITY (PRE-1978 DEFN)"    />
+      <related>
+         <element  key="SDN:P06:74:UPPT"  label="Parts per thousand"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SACC"  label="SALINITY ACCURACY"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VOLF"  label="SAMPLE VOLUME BY FLOW METER"    />
+      <related>
+         <element  key="SDN:P06:74:MCUB"  label="Cubic metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SAND"  label="SAND IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRES"  label="SEA PRESSURE sea surface=0"    />
+      <related>
+         <element  key="SDN:P06:74:UPDB"  label="Decibars"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SCDT"  label="SEA SURF CURRENT DIR. REL T. N"    />
+      <related>
+         <element  key="SDN:P06:74:UAAA"  label="Degrees"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SCSP"  label="SEA SURFACE CURRENT SPEED"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SSPS"  label="SEA SURFACE PRACTICAL SALINITY"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SSTP"  label="SEA SURFACE TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE01"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE02"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE03"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE04"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE05"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE06"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE07"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE08"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE09"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE10"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE11"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE12"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TEMP"  label="SEA TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SECC"  label="SECCHI DISK DEPTH"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SECS"  label="SECONDS WITHIN MINUTE"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMIS"  label="SEDIMENT AMINO-ACIDS"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SIOS"  label="SEDIMENT BIOGENIC SiO2"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHTS"  label="SEDIMENT CARBOHYDRATES"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO3S"  label="SEDIMENT CARBONATES"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LIPS"  label="SEDIMENT LIPIDS"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHNS"  label="SEDIMENT PHENOLS"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TCCS"  label="SEDIMENT TOTAL CARBON"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TNNS"  label="SEDIMENT TOTAL NITROGEN"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TOCS"  label="SEDIMENT TOTAL ORGANIC CARBON"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SINC"  label="SHORT-WAVE INCOMING RADIATION"    />
+      <related>
+         <element  key="SDN:P06:74:UFAA"  label="Watts per square metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SAMA"  label="SIGNAL RETURN AMPLITUDE"    />
+      <related>
+         <element  key="SDN:P06:74:UDBL"  label="Decibels"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTDH"  label="SIGNIFICANT WAVE HEIGHT"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLCA"  label="SILICATE (SIO4-SI) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLCW"  label="SILICATE (SIO4-SI) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SILT"  label="SILT IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SVEL"  label="SOUND VELOCITY"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VSMC"  label="SPECT. MOMENT(0,2) WAVE PERIOD"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VHM0"  label="SPECTRAL SIGNIFICANT WAVE HEIGHT HM0"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHSD"  label="STD deviation chlorophyll-a"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OCSD"  label="STD deviation organic carbon"    />
+      <related>
+         <element  key="SDN:P06:74:MGPG"  label="Milligrams per gram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ONSD"  label="STD deviation organic nitrogen"    />
+      <related>
+         <element  key="SDN:P06:74:MGPG"  label="Milligrams per gram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TCSD"  label="STD deviation total carbon"    />
+      <related>
+         <element  key="SDN:P06:74:MGPG"  label="Milligrams per gram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABED"  label="SURFACE SAMPLED OR OBSERVED"    />
+      <related>
+         <element  key="SDN:P06:74:UMSQ"  label="Square metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SWDR"  label="SWELL DIRECTION  REL TRUE N."    />
+      <related>
+         <element  key="SDN:P06:74:UABB"  label="Degrees True"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SWHT"  label="SWELL HEIGHT"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SWPR"  label="SWELL PERIOD"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SBSX"  label="Sb IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SB63"  label="Sb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSCS"  label="Sc IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SC63"  label="Sc&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSIP"  label="Si IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSIS"  label="Si IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SI63"  label="Si&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLC1"  label="Silicate in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MMCM"  label="Millimoles per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SMSX"  label="Sm IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SM63"  label="Sm&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SNSX"  label="Sn IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SN63"  label="Sn&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSRS"  label="Sr IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SR63"  label="Sr&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:STYW"  label="Styrene in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHTX"  label="TEMPERATURE OF PH MEASUREMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZNTH"  label="TILT OF MEASUREMENT PLATFORM"    />
+      <related>
+         <element  key="SDN:P06:74:UAAA"  label="Degrees"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TIME"  label="TIME WITHIN DAY"    />
+      <related>
+         <element  key="SDN:P06:74:UHMS"  label="Hours Minutes Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TCO2"  label="TOTAL CARBON DIOXYD (CO2)"    />
+      <related>
+         <element  key="SDN:P06:74:MMPL"  label="Millimoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TDPW"  label="TOTAL DISSOLVED PHOSPHORUS"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TDSW"  label="TOTAL DISSOLVED SOLID"    />
+      <related>
+         <element  key="SDN:P06:74:UKMC"  label="Kilograms per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RDIN"  label="TOTAL INCIDENT RADIATION"    />
+      <related>
+         <element  key="SDN:P06:74:UFAA"  label="Watts per square metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TICW"  label="TOTAL INORGANIC CARBON"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TSMF"  label="TOTAL MASS FLUX"    />
+      <related>
+         <element  key="SDN:P06:74:UGDX"  label="Milligrams per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTOT"  label="TOTAL NITROGEN (N) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TOCW"  label="TOTAL ORGANIC CARBON"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TPCW"  label="TOTAL PARTICULATE CARBON"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NT1P"  label="TOTAL PARTICULATE NITROGEN"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTNP"  label="TOTAL PARTICULATE NITROGEN"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PT1P"  label="TOTAL PARTICULATE PHOSPHORUS"    />
+      <related>
+         <element  key="SDN:P06:74:KGUM"  label="Micromoles per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTPP"  label="TOTAL PARTICULATE PHOSPHORUS"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MAGP"  label="TOTAL PARTICULATE SILVER"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TPHP"  label="TOTAL PHAEOPIGMENTS"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHTP"  label="TOTAL PHEOPHYTINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TPHS"  label="TOTAL PHOSPHORUS (P) CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EPMP"  label="TOTAL SUSP. PART. MATTER/ESTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMGL"  label="Milligrams per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GPMP"  label="TOTAL SUSP. PART. MATTER/GLASS"    />
+      <related>
+         <element  key="SDN:P06:74:UMGL"  label="Milligrams per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TSMP"  label="TOTAL SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMGL"  label="Milligrams per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR4"  label="TURBIDITY"    />
+      <related>
+         <element  key="SDN:P06:74:USTU"  label="Nephelometric Turbidity Units"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR5"  label="TURBIDITY"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR6"  label="TURBIDITY"    />
+      <related>
+         <element  key="SDN:P06:74:UFNU"  label="Formazin Nephelometric Units"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TBSX"  label="Tb IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TB63"  label="Tb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TETW"  label="Tetrachlorobiphenyl in water"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TETS"  label="Tetrachlorobiphenyl sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MTHS"  label="Th IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OXDE"  label="The isotopic enrichment of 2H in the hydrogen of water molecules"    />
+      <related>
+         <element  key="SDN:P06:74:UPPT"  label="Parts per thousand"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MTIP"  label="Ti IN SUSPENDED MATTER"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MTIS"  label="Ti IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TLSX"  label="Tl IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TL63"  label="Tl&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TMSX"  label="Tm IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TM63"  label="Tm&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TOTS"  label="Total carbon in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MGPG"  label="Milligrams per gram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TICS"  label="Total inorganic carbon sedimen"    />
+      <related>
+         <element  key="SDN:P06:74:UMGL"  label="Milligrams per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IROS"  label="Total iron in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IROW"  label="Total iron in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MANW"  label="Total manganese in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MERB"  label="Total mercury in biota"    />
+      <related>
+         <element  key="SDN:P06:74:UUKG"  label="Micrograms per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MERW"  label="Total mercury in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TNIS"  label="Total nitrogen in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:MMCM"  label="Millimoles per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PETW"  label="Total petroleum in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TRBB"  label="Tributyltin cation in biota"    />
+      <related>
+         <element  key="SDN:P06:74:UUKG"  label="Micrograms per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TRCS"  label="Trichlorobiphenyl in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MUUS"  label="U IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:U63X"  label="U&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:UVCT"  label="UPWARD CURRENT VELOCITY"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:URAW"  label="URANIUM IN WATER BODY"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:UREA"  label="UREA"    />
+      <related>
+         <element  key="SDN:P06:74:UPOX"  label="Micromoles per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MVVS"  label="V IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:V63X"  label="V&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VERR"  label="VELOCITY ERROR"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VCSP"  label="VERTICAL CURRENT SPEED"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VERT"  label="VERTICAL DISPLACEMENT"    />
+      <related>
+         <element  key="SDN:P06:74:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VIOW"  label="VIOLAXANTHIN"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VIAW"  label="VIRUS ABUNDANCE IN SEA WATER"    />
+      <related>
+         <element  key="SDN:P06:74:UCNL"  label="Number per nanolitre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VOCP"  label="VOLUME CONC. OF PARTICLES"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VSAM"  label="VOLUME SAMPLED OF WATER BODY"    />
+      <related>
+         <element  key="SDN:P06:74:MCUB"  label="Cubic metres"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VANW"  label="Vanadium in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WO63"  label="W&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:H2OS"  label="WATER CONTENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPCT"  label="Percent"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VDIR"  label="WAVE DIRECTION REL. TRUE NORTH"    />
+      <related>
+         <element  key="SDN:P06:74:UABB"  label="Degrees True"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTPK"  label="WAVE PEAK PERIOD"    />
+      <related>
+         <element  key="SDN:P06:74:UTBB"  label="Seconds"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VEPK"  label="WAVE SPECTRUM PEAK ENERGY"    />
+      <related>
+         <element  key="SDN:P06:74:UMHZ"  label="Square metres per Hertz"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VPED"  label="WAVE SPECTRUM PEAK ENERGY DIR."    />
+      <related>
+         <element  key="SDN:P06:74:UABB"  label="Degrees True"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WETT"  label="WET BULB TEMPERATURE"    />
+      <related>
+         <element  key="SDN:P06:74:UPAA"  label="Degrees Celsius"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WDIR"  label="WIND DIRECTION REL. TRUE NORTH"    />
+      <related>
+         <element  key="SDN:P06:74:UABB"  label="Degrees True"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WMSP"  label="WIND SPEED - MAX AVER PER 2 MN"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSPE"  label="WIND SPEED EASTWARD COMPONENT"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSPN"  label="WIND SPEED NORTHWARD COMPONENT"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSPU"  label="WIND SPEED UPWARD COMPONENT"    />
+      <related>
+         <element  key="SDN:P06:74:UVAA"  label="Metres per second"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSTE"  label="WIND STRESS EAST COMPONENT"    />
+      <related>
+         <element  key="SDN:P06:74:UNSM"  label="Newtons per square metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSTN"  label="WIND STRESS NORTH COMPONENT"    />
+      <related>
+         <element  key="SDN:P06:74:UNSM"  label="Newtons per square metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MYYS"  label="Y IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:Y63X"  label="Y&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:YEAR"  label="YEAR"    />
+      <related>
+         <element  key="SDN:P06:74:UUUU"  label="Dimensionless"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:YBSX"  label="Yb IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:YB63"  label="Yb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZXAP"  label="ZEAXANTHINE"    />
+      <related>
+         <element  key="SDN:P06:74:UMMC"  label="Milligrams per cubic metre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MZNF"  label="ZN FLUX IN SETTLING PARTICLES"    />
+      <related>
+         <element  key="SDN:P06:74:UUDX"  label="Micrograms per square metre per day"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZINS"  label="Zinc in sediment"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZINW"  label="Zinc in water body"    />
+      <related>
+         <element  key="SDN:P06:74:UGPL"  label="Micrograms per litre"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MZNS"  label="Zn IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZN63"  label="Zn&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MZRS"  label="Zr IN THE SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UPPM"  label="Parts per million"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZR63"  label="Zr&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <related>
+         <element  key="SDN:P06:74:UMKG"  label="Milligrams per kilogram"    />
+      </related>
+   </match>
+</mapping>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<vocabularies>
-   <vocabulary list="SDN:L05:72:"  version="72"  date="2019-12-20T02:00:06.000"  title="SeaDataNet device categories"   />
-   <vocabulary list="SDN:L06:14:"  version="14"  date="2018-03-14T02:00:03.000"  title="SeaVoX Platform Categories"   />
-   <vocabulary list="SDN:P08:5:"  version="5"  date="2017-02-03T02:00:03.000"  title="SeaDataNet Parameter Disciplines"   />
-</vocabularies>

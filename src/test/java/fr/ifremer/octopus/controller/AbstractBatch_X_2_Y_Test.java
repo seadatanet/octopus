@@ -41,7 +41,7 @@ public abstract class AbstractBatch_X_2_Y_Test {
 		deleteDir(getInputDir(), getTmpDir());
 		try {
 			FileInputStream extResourcesConf = new FileInputStream(new File("resources/externalResourcesConfiguration.yaml"));
-			ExternalResourcesManager.getInstance(extResourcesConf, "externalResources");
+			ExternalResourcesManager.getInstance(extResourcesConf, "resources/externalResources");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

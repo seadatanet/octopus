@@ -9,7 +9,7 @@ dependency-reduced-pom.xml
 .classpath
 .settings/
 logs/
-externalResources/
+# externalResources/
 src/test/resources/MGD81/out/
 src/test/resources/cfpoint/out/
 src/test/resources/medatlas/out/

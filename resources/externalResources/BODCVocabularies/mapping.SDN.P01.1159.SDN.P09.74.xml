@@ -1,0 +1,3697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+   <vocabulary list="SDN:P01:1159:"  version="1159"  date="2023-08-05T02:00:05.000"  title="BODC Parameter Usage Vocabulary"   />
+   <mapped>
+      <vocabulary list="SDN:P09:74:"  version="74"  date="2023-04-20T02:00:03.000"  title="MEDATLAS Parameter Usage Vocabulary"   />
+   </mapped>
+   <match>
+      <element  key="SDN:P09:74:DMTW"  label="1,3-1,4dimethylbenzene water"    />
+      <exact>
+         <element  key="SDN:P01:74:XYLMPBF1"  label="Concentration of 1,3-dimethylbenzene+1,4-dimethylbenzene {1,3+1,4-xylene m+p-xylene CAS108-38-3+106-42-3} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CUPH"  label="14C PRODUCTION FILTER UNSPECIF"    />
+      <exact>
+         <element  key="SDN:P01:74:TCUPHZZZ"  label="Uptake rate of carbon {C} {primary production} per hour per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CUPW"  label="14C PRODUCTION FILTER UNSPECIF"    />
+      <exact>
+         <element  key="SDN:P01:74:TCUPDZZZ"  label="Uptake rate of carbon {C} {primary production} per day per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C4UW"  label="14C PRODUCTION/10 MICRON FILT."    />
+      <exact>
+         <element  key="SDN:P01:74:SCUPII10"  label="Uptake rate of carbon {C} {primary production} per day per unit volume of the water body [particulate &gt;10um phase] by isotope-labelled tracer addition, incubation at unspecified light level, filtration and counting residue"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C2UW"  label="14C PRODUCTION/2 MICRON FILT."    />
+      <exact>
+         <element  key="SDN:P01:74:SCUPIIPB"  label="Uptake rate of carbon {C} {primary production} per day per unit volume of the water body [particulate &gt;2um phase] by isotope-labelled tracer addition, incubation at unspecified light level, filtration and counting residue"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C1UW"  label="14C UPTAKE 0.2-1 MICRON"    />
+      <exact>
+         <element  key="SDN:P01:74:SCUPIIPE"  label="Uptake rate of carbon {C} {primary production} per day per unit volume of the water body [particulate 0.2-1um phase] by isotope-labelled tracer addition, incubation at unspecified light level, cascade filtration and counting residue"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BFUP"  label="19&apos;BUTANOYLOXYFUCOXANTHINE"    />
+      <exact>
+         <element  key="SDN:P01:74:BUTAXXXX"  label="Concentration of 19&apos;-butanoyloxyfucoxanthin per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HFUP"  label="19&apos;HEXANOYLOXYFUCOXANTHINE"    />
+      <exact>
+         <element  key="SDN:P01:74:HEXAXXXX"  label="Concentration of 19&apos;-hexanoyloxyfucoxanthin {CAS 60147-85-5} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NOPW"  label="4-nonylphenol in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00136"  label="Concentration of 4-nonylphenol (branched isomers) {CAS 84852-15-3} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABB3"  label="ABUNDANCE BIO PER VOL IN SED"    />
+      <exact>
+         <element  key="SDN:P01:74:USPBIOSV"  label="Abundance of biological entity specified elsewhere per unit volume of the sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABB2"  label="ABUNDANCE OF BIO PER AREA"    />
+      <exact>
+         <element  key="SDN:P01:74:SDBIOL02"  label="Abundance of biological entity specified elsewhere per unit area of the bed"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABB1"  label="ABUNDANCE OF BIO PER VOLUME"    />
+      <exact>
+         <element  key="SDN:P01:74:SDBIOL01"  label="Abundance of biological entity specified elsewhere per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MALF"  label="AL FLUX IN SETTLING PARTICLES"    />
+      <exact>
+         <element  key="SDN:P01:74:SFXALZZZ"  label="Particle-bound sedimentation flux of aluminium {Al CAS 7429-90-5} per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ALKW"  label="ALKALINITY"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP014"  label="Total alkalinity per unit mass of the water body"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ALKY"  label="ALKALINITY"    />
+      <broad>
+         <element  key="SDN:P01:74:ALKYZZXX"  label="Total alkalinity per unit volume of the water body"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AXAP"  label="ALLOXANTHINE"    />
+      <exact>
+         <element  key="SDN:P01:74:ALLOXXPX"  label="Concentration of alloxanthin {CAS 28380-31-6} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABCP"  label="ALPHA BETA CAROTENES"    />
+      <exact>
+         <element  key="SDN:P01:74:CAROXXXX"  label="Concentration of carotene per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AACP"  label="ALPHA-CAROTENE"    />
+      <exact>
+         <element  key="SDN:P01:74:BECAXXP1"  label="Concentration of beta,epsilon-carotene {alpha-carotene CAS 432-70-2} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMON"  label="AMMONIUM (NH4-N) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:AMONZZXX"  label="Concentration of ammonium {NH4+ CAS 14798-03-9} per unit volume of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMOW"  label="AMMONIUM (NH4-N) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP004"  label="Concentration of ammonium {NH4+ CAS 14798-03-9} per unit mass of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NHRW"  label="AMMONIUM REGENERATION"    />
+      <broad>
+         <element  key="SDN:P01:74:NAREZZZZ"  label="Regeneration rate (daily) of ammonium {NH4+ CAS 14798-03-9} per unit time per unit volume of the water body"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NHUW"  label="AMMONIUM UPTAKE"    />
+      <exact>
+         <element  key="SDN:P01:74:NOUWXXXX"  label="Uptake rate of nitrate {NO3- CAS 14797-55-8} per day per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMOP"  label="AMONIUM IN SEDIMENT PORE WATER"    />
+      <narrow>
+         <element  key="SDN:P01:74:AMONAADC"  label="Concentration of ammonium {NH4+ CAS 14798-03-9} per unit volume of the sediment pore water [dissolved plus reactive particulate phase] by centrifugal extraction and colorimetric autoanalysis"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ANXW"  label="ANTHERAXANTHIN"    />
+      <exact>
+         <element  key="SDN:P01:74:ANTHHPP1"  label="Concentration of antheraxanthin {CAS 640-03-9} per unit volume of the water body [particulate &gt;GF/F phase] by filtration, acetone extraction and high performance liquid chromatography (HPLC)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ATMP"  label="ATMOSPHERIC PRESSURE"    />
+      <exact>
+         <element  key="SDN:P01:74:CAPHZZ01"  label="Pressure (measured variable) exerted by the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ATMS"  label="ATMOSPHERIC PRESSURE - SEA LEV"    />
+      <exact>
+         <element  key="SDN:P01:74:CAPAZZ01"  label="Pressure (measured variable) exerted by the atmosphere by unknown instrument and correction to sea level"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ATPT"  label="ATMOSPHERIC PRESSURE TENDENCY"    />
+      <exact>
+         <element  key="SDN:P01:74:APRESSTN"  label="Pressure tendency (rate of measured variable increase) exerted by the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NFAW"  label="AUTOTROPHIC NANOFLAGELLATES"    />
+      <exact>
+         <element  key="SDN:P01:74:NANFAUTO"  label="Abundance of flagellates [Size: 2-20um Subgroup: autotrophic] per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VHZA"  label="AVER ZERO CROSSING WAVE HEIGHT"    />
+      <exact>
+         <element  key="SDN:P01:74:HZAVZZ01"  label="Zero-crossing wave height mean of waves {mean Hz} on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTZA"  label="AVER ZERO CROSSING WAVE PERIOD"    />
+      <exact>
+         <element  key="SDN:P01:74:GTZAZZ01"  label="Zero-crossing period of waves {Tz} on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VAVH"  label="AVER. HEIGHT HIGHEST 1/3 WAVE"    />
+      <exact>
+         <element  key="SDN:P01:74:GAVHZZ01"  label="Wave height mean of waves (highest one third) on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VAVT"  label="AVER. PERIOD HIGHEST 1/3 WAVE"    />
+      <exact>
+         <element  key="SDN:P01:74:GTZHZZ01"  label="Zero-crossing period of waves (highest one third) {significant wave period Ts} on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NAVG"  label="AVERAGED DATA CYCLE NUMBER"    />
+      <exact>
+         <element  key="SDN:P01:74:NUMVALES"  label="Number of values"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ACES"  label="Acenaphthylene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:ACNLESXD"  label="Concentration of acenaphthylene {CAS 208-96-8} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ACEW"  label="Acenaphthylene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC04"  label="Concentration of acenaphthylene {CAS 208-96-8} per unit volume of the water body [dissolved plus reactive particulate phase] by gas chromatography-mass spectrometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AGSX"  label="Ag IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:SEDSAGXX"  label="Concentration of silver {Ag CAS 7440-22-4} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AG63"  label="Ag&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED03"  label="Concentration of silver {Ag CAS 7440-22-4} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MALP"  label="Al IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MALPP012"  label="Concentration of aluminium {Al CAS 7429-90-5} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MALS"  label="Al IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MALSP012"  label="Concentration of aluminium {Al CAS 7429-90-5} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AL63"  label="Al&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED34"  label="Concentration of aluminium {Al CAS 7429-90-5} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ALUW"  label="Aluminium in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:ALVOLLGF"  label="Concentration of aluminium (total dissolvable) {Al CAS 7429-90-5} per unit volume of the water body [dissolved plus reactive particulate phase] by acidification and lumogallion fluorescence"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMSE"  label="Ammonium in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:AMONPWD1"  label="Concentration of ammonium {NH4+ CAS 14798-03-9} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;GF/F phase] by extraction, filtration and colorimetric autoanalysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ANTB"  label="Anthracene in biota"    />
+      <exact>
+         <element  key="SDN:P01:74:MMUSANTH"  label="Concentration of anthracene {CAS 120-12-7} per unit dry weight of biota {Mytilus galloprovincialis (ITIS: 79456: WoRMS 140481) [Subcomponent: flesh]}"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ANTS"  label="Anthracene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:ANTDWT01"  label="Concentration of anthracene {CAS 120-12-7} per unit dry weight of sediment &lt;2000um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ANTW"  label="Anthracene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:ANAFWC01"  label="Concentration of anthracene {CAS 120-12-7} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ARSW"  label="Arsenic in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00141"  label="Concentration of arsenic {As CAS 7440-38-2} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ASSX"  label="As IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MASSP012"  label="Concentration of arsenic {As CAS 7440-38-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:UPTS"  label="BACT. PROD. STANDARD DEVIATION"    />
+      <exact>
+         <element  key="SDN:P01:74:SDUPTHXX"  label="Update rate standard deviation (hourly) of thymidine {CAS 50-89-5} {bacterial production} per unit time per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BCMW"  label="BACTERIAL BIOMASS IN SEA WATER"    />
+      <exact>
+         <element  key="SDN:P01:74:TBBMXXXX"  label="Biomass as carbon of bacteria (ITIS: 202421: WoRMS 6) per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:UPTH"  label="BACTERIAL PRODUCTION(THYM. UP)"    />
+      <exact>
+         <element  key="SDN:P01:74:UPTHXXXX"  label="Uptake rate of thymidine {CAS 50-89-5} {bacterial production} per hour per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BCHA"  label="BACTERIOCHLOROPHYLL-A"    />
+      <exact>
+         <element  key="SDN:P01:74:BCHLMHP1"  label="Concentration of bacteriochlorophyll-a {bchl-a CAS 17499-98-8} per unit volume of the water body [particulate &gt;GF/F phase] by filtration, methanol extraction and high performance liquid chromatography (HPLC)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BATH"  label="BATHYMETRIC DEPTH"    />
+      <narrow>
+         <element  key="SDN:P01:74:MBANZZZZ"  label="Sea-floor depth (below instantaneous sea level) {bathymetric depth} in the water body"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BEAR"  label="BEARING AWAY FROM INSTRUMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:BEARRFTR"  label="Bearing (from fixed reference point) by Trimble GPS"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WBFO"  label="BEAUFORT WIND FORCE"    />
+      <exact>
+         <element  key="SDN:P01:74:WMOCWFBF"  label="Speed of wind {wind speed} in the atmosphere by visual estimation and conversion to Beaufort scale"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BBCP"  label="BETA-CAROTENE"    />
+      <exact>
+         <element  key="SDN:P01:74:BBCAXXP1"  label="Concentration of beta,beta-carotene {beta-carotene CAS 7235-40-7} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TB25"  label="BLUE LIGHT TRANSMISSION 25CM"    />
+      <exact>
+         <element  key="SDN:P01:74:POPTDB01"  label="Transmittance (blue light wavelength) per 25cm of the water body by 25cm path length blue light transmissometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MBAP"  label="Ba IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MBAPP012"  label="Concentration of barium {Ba CAS 7440-39-3} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MBAS"  label="Ba IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MBASP012"  label="Concentration of barium {Ba CAS 7440-39-3} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BAAS"  label="Benz(a)anthracene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:BAASEDBD"  label="Concentration of benzo(a)anthracene {CAS 56-55-3} per unit dry weight of sediment &lt;2000um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BAAW"  label="Benz(a)anthracene in water"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC06"  label="Concentration of benzo(a)anthracene {CAS 56-55-3} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BENW"  label="Benzene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSX0003"  label="Concentration of benzene {CAS 71-43-2} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BAPS"  label="Benzo(a)pyrene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:BAPSEDBD"  label="Concentration of benzo(a)pyrene {CAS 50-32-8} per unit dry weight of sediment &lt;2000um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BAPW"  label="Benzo(a)pyrene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC07"  label="Concentration of benzo(a)pyrene {CAS 50-32-8} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BBFW"  label="Benzo(b)fluoranthene in water"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC08"  label="Concentration of benzo(b)fluoranthene {CAS 205-99-2} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BBFS"  label="Benzo(b)fluoranthene sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:BBFSEDBD"  label="Concentration of benzo(b)fluoranthene {CAS 205-99-2} per unit dry weight of sediment &lt;2000um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BGHW"  label="Benzo(g,h,i)perylene in water"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC09"  label="Concentration of benzo(g,h,i)perylene {CAS 191-24-2} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BGHS"  label="Benzo(g,h,i)perylene sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:BGHIPSBD"  label="Concentration of benzo(g,h,i)perylene {CAS 191-24-2} per unit dry weight of sediment &lt;2000um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BKFW"  label="Benzo(k)fluoranthene in water"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC10"  label="Concentration of benzo(k)fluoranthene {CAS 207-08-9} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BKFS"  label="Benzo(k)fluoranthene sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHSD10"  label="Concentration of benzo(k)fluoranthene {CAS 207-08-9} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BISX"  label="Bi IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:SEDSBIXX"  label="Concentration of bismuth {Bi CAS 7440-69-9} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BI63"  label="Bi&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0001"  label="Concentration of bismuth {Bi CAS 7440-69-9} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETYW"  label="Bis(ethylhexyl)phthalate water"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00071"  label="Concentration of bis(2-ethylhexyl)phthalate {DEHP CAS 117-81-7} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MBRS"  label="Br IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MBRSP012"  label="Concentration of bromine {Br CAS 7726-95-6} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBDF"  label="C BIOMASS OF DINOFLAGELLATES"    />
+      <exact>
+         <element  key="SDN:P01:74:C200M00Z"  label="Biomass as carbon of Dinoflagellates (ITIS: 9873: WoRMS 19542) per unit volume of the water body by optical microscopy and computation of carbon biomass from abundance"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBNC"  label="C BIOMASS OF NAKED CILIATES"    />
+      <exact>
+         <element  key="SDN:P01:74:AA157842"  label="Biomass as carbon of aloricate ciliates per unit volume of the water body by optical microscopy and computation of carbon biomass from abundance"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GLUC"  label="CARBOHYDRATE"    />
+      <broad>
+         <element  key="SDN:P01:74:TOCHWCZZ"  label="Concentration of carbohydrates (total) per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBIO"  label="CARBON BIOMASS OF BIO ENTITY"    />
+      <exact>
+         <element  key="SDN:P01:74:SDBIOL12"  label="Biomass as carbon of biological entity specified elsewhere per unit volume of the water body by computation"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBCI"  label="CARBON BIOMASS OF CILIATEA"    />
+      <exact>
+         <element  key="SDN:P01:74:C500M17Z"  label="Biomass as carbon of Ciliophora (ITIS: 46211: WoRMS 11) per unit volume of the water body by optical microscopy and computation of carbon biomass from abundance"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CBTN"  label="CARBON BIOMASS OF TINTINNINA"    />
+      <exact>
+         <element  key="SDN:P01:74:C520M04Z"  label="Biomass as carbon of Tintinnina (ITIS: 46620: WoRMS 732976) per unit volume of the water body by optical microscopy and computation of carbon biomass from abundance"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO3P"  label="CARBONATES CONTENT"    />
+      <exact>
+         <element  key="SDN:P01:74:CO3SPMZZ"  label="Concentration of carbonate {CO32- CAS 3812-32-6} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CODW"  label="CHEMICAL OXYGEN DEMAND"    />
+      <exact>
+         <element  key="SDN:P01:74:CODZZZZZ"  label="Chemical oxygen demand {COD} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CH1P"  label="CHL-A(LESS DIVINYLCHL-A)"    />
+      <exact>
+         <element  key="SDN:P01:74:NODVCHLA"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate &gt;unknown phase] by correction for divinyl chlorophyll forms"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CH2P"  label="CHL-B(LESS DIVINYLCHL-B)"    />
+      <exact>
+         <element  key="SDN:P01:74:NODVCHLB"  label="Concentration of chlorophyll-b {chl-b CAS 519-62-0} per unit volume of the water body by correction for divinyl chlorophyll forms"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CH1T"  label="CHLOROPHYLL TOTAL"    />
+      <exact>
+         <element  key="SDN:P01:74:CHLTMASS"  label="Concentration of chlorophyll {Chl CAS 1406-65-1} per unit mass of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH6"  label="CHLOROPHYLL-A &lt;3 MICRON"    />
+      <exact>
+         <element  key="SDN:P01:74:CPHLHPPB"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate GF/F-3um phase] by filtration, acetone extraction and high performance liquid chromatography (HPLC)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH7"  label="CHLOROPHYLL-A &gt;3 &lt;10 MICRON"    />
+      <exact>
+         <element  key="SDN:P01:74:SCHLXX01"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate 3-10um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH5"  label="CHLOROPHYLL-A &gt;3 &lt;20 MICRON"    />
+      <exact>
+         <element  key="SDN:P01:74:CPHLHPPC"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate 3-20um phase] by filtration, acetone extraction and high performance liquid chromatography (HPLC)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH1"  label="CHLOROPHYLL-A TOTAL"    />
+      <exact>
+         <element  key="SDN:P01:74:CPHLZZXX"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPHL"  label="CHLOROPHYLL-A TOTAL"    />
+      <exact>
+         <element  key="SDN:P01:74:CPHLZZXX"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHAF"  label="CHLOROPHYLL-A VERTICAL FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:PBFXCHLA"  label="Particle-bound sedimentation flux of chlorophyll-a {chl-a CAS 479-61-8} per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH4"  label="CHLOROPHYLL-A/10 MICRON FILTER"    />
+      <exact>
+         <element  key="SDN:P01:74:SCHLZZPO"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate &gt;10um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH2"  label="CHLOROPHYLL-A/2 MICRON FILTER"    />
+      <exact>
+         <element  key="SDN:P01:74:SCHL2UXX"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate &gt;2um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CPH3"  label="CHLOROPHYLL-A/20 MICRON FILTER"    />
+      <exact>
+         <element  key="SDN:P01:74:SCHLZZPQ"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate &gt;20um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHLB"  label="CHLOROPHYLL-B TOTAL"    />
+      <exact>
+         <element  key="SDN:P01:74:CHLBXXPX"  label="Concentration of chlorophyll-b {chl-b CAS 519-62-0} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHLC"  label="CHLOROPHYLL-C TOTAL"    />
+      <exact>
+         <element  key="SDN:P01:74:CHLCXXPX"  label="Concentration of chlorophyll-c {chl-c} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHCZ"  label="CHLOROPHYLL-C1+C2"    />
+      <exact>
+         <element  key="SDN:P01:74:CHLC12PX"  label="Concentration of chlorophyll-c1+c2 per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHC3"  label="CHLOROPHYLL-C3"    />
+      <exact>
+         <element  key="SDN:P01:74:CHLC03PX"  label="Concentration of chlorophyll-c3 {chl-c3} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHLT"  label="CHLOROPHYLL-TOTAL"    />
+      <exact>
+         <element  key="SDN:P01:74:CHLTVOLU"  label="Concentration of chlorophyll {Chl CAS 1406-65-1} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CIDA"  label="CHLOROPHYLLIDE A"    />
+      <exact>
+         <element  key="SDN:P01:74:CIDAHPP1"  label="Concentration of chlorophyllide-a {CAS 14897-06-4} per unit volume of the water body [particulate &gt;GF/F phase] by filtration, acetone extraction and high performance liquid chromatography (HPLC)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CLAY"  label="CLAY IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:CLAYZZZZ"  label="Proportion of particles (clay size-fraction) in sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FCO2"  label="CO2 FUGACITY"    />
+      <exact>
+         <element  key="SDN:P01:74:FCO2XXXX"  label="Fugacity of carbon dioxide (at 100% humidity) {fCO2 CAS 124-38-9} in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:XCO2"  label="CO2 MOLE FRACTION IN DRY GAS"    />
+      <exact>
+         <element  key="SDN:P01:74:XCO2DCEQ"  label="Mole fraction in dry air of carbon dioxide {CO2 CAS 124-38-9} {xCO2} for the water body by equilibration with air, drying and constant temperature non-dispersive infra-red gas analysis and computation from pCO2 following correction to dry air and calibration against standards"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCO2"  label="CO2 PART. PRES IN DRY/WET GAS"    />
+      <exact>
+         <element  key="SDN:P01:74:PCO2XXXX"  label="Partial pressure of carbon dioxide {CO2 CAS 124-38-9} {pCO2} in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C363"  label="CO3&lt;63um IN DRY WGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0023"  label="Concentration of carbonate {CO32- CAS 3812-32-6} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COPF"  label="COCCOLITHOPHORIDAE PPC FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:PCFXMICC"  label="Sedimentation flux as carbon of Prymnesiophyceae (ITIS: 2135: WoRMS 115057) [Subgroup: coccolithophores] per unit time per unit area of the water body by sediment trapping and optical microscopy and abundance to carbon conversion"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CDO2"  label="COLORED DISS. ORGANIC MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:FCNTCDOM"  label="Raw signal (counts) of instrument output by linear-response CDOM fluorometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CDOM"  label="COLORED DISS. ORGANIC MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:FLUOCDOM"  label="Fluorescence of the water body by linear-response CDOM fluorometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OCNT"  label="COUNT OF BIOLOGICAL ENTITY"    />
+      <exact>
+         <element  key="SDN:P01:74:OCOUNT01"  label="Count (in assayed sample) of biological entity specified elsewhere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CXAP"  label="CROCOXANTHIN"    />
+      <exact>
+         <element  key="SDN:P01:74:CCXTXXP1"  label="Concentration of crocoxanthin {Croco CAS 21284-10-6} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCUF"  label="CU FLUX IN SETTLING PARTICLES"    />
+      <exact>
+         <element  key="SDN:P01:74:SFXCUZZZ"  label="Particle-bound sedimentation flux of copper {Cu CAS 7440-50-8} per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EWCS"  label="CURRENT EAST  STD. DEVIATION"    />
+      <exact>
+         <element  key="SDN:P01:74:SDEWZZZZ"  label="Eastward velocity standard deviation of water current in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EWCT"  label="CURRENT EAST COMPONENT"    />
+      <exact>
+         <element  key="SDN:P01:74:LCEWZZ01"  label="Eastward velocity of water current in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NSCT"  label="CURRENT NORTH COMPONENT"    />
+      <exact>
+         <element  key="SDN:P01:74:LCNSZZ01"  label="Northward velocity of water current in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NSCS"  label="CURRENT NORTH STD. DEVIATION"    />
+      <exact>
+         <element  key="SDN:P01:74:SDNSZZZZ"  label="Northward velocity standard deviation of water current in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HCSS"  label="CURRENT SPEED STD DEV"    />
+      <exact>
+         <element  key="SDN:P01:74:SDSAZZ01"  label="Speed standard deviation of water current in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCAP"  label="Ca IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MCAPP012"  label="Concentration of calcium {Ca CAS 7440-70-2} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCAS"  label="Ca IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MCASP012"  label="Concentration of calcium {Ca CAS 7440-70-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CA63"  label="Ca&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED35"  label="Concentration of calcium {Ca CAS 7440-70-2} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CADB"  label="Cadmium in biota"    />
+      <exact>
+         <element  key="SDN:P01:74:MMUSCDXX"  label="Concentration of cadmium {Cd CAS 7440-43-9} per unit dry weight of biota {Mytilus galloprovincialis (ITIS: 79456: WoRMS 140481) [Subcomponent: flesh]}"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CADS"  label="Cadmium in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:CDXXISPW"  label="Concentration of cadmium {Cd CAS 7440-43-9} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by in-situ pore water sampling, filtration, chelation, solvent extraction and atomic absorption spectroscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CADW"  label="Cadmium in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:CDUFWC02"  label="Concentration of cadmium {Cd CAS 7440-43-9} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCOW"  label="Carbon dioxide in water"    />
+      <exact>
+         <element  key="SDN:P01:74:PCO2EG01"  label="Partial pressure of carbon dioxide {CO2 CAS 124-38-9} {pCO2} in the water body by equilibration with air, drying and infra-red gas analysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CDSX"  label="Cd IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MCDSP012"  label="Concentration of cadmium {Cd CAS 7440-43-9} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CD45"  label="Cd&lt;0.4/0.45um IN WATER BODY"    />
+      <exact>
+         <element  key="SDN:P01:74:MTWD0009"  label="Concentration of cadmium {Cd CAS 7440-43-9} per unit volume of the water body [dissolved plus reactive particulate &lt;0.4/0.45um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CD63"  label="Cd&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:CONCDS02"  label="Concentration of cadmium {Cd CAS 7440-43-9} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CD40"  label="Cd&gt;0.4/0.45um IN WATER BODY"    />
+      <exact>
+         <element  key="SDN:P01:74:CDXXAAP2"  label="Concentration of cadmium {Cd CAS 7440-43-9} per unit volume of the water body [particulate &gt;0.4/0.45um phase] by acid leaching of filter residue and atomic absorption spectroscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCES"  label="Ce IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MCESP012"  label="Concentration of cerium {Ce CAS 7440-45-1} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CE63"  label="Ce&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED18"  label="Concentration of cerium {Ce CAS 7440-45-1} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHLS"  label="Chlorine IN DRY WGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0039"  label="Concentration of chlorine {Cl CAS 7782-50-5} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHAS"  label="Chlorophyll-a in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:SCLAFLT1"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit dry weight of sediment by acetone extraction and fluorometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CROW"  label="Chromium in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:CRUFWC02"  label="Concentration of chromium {Cr CAS 7440-47-3} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHRS"  label="Chrysene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:CHRSEDBD"  label="Concentration of chrysene {CAS 218-01-9} per unit dry weight of sediment &lt;2000um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CRYW"  label="Chrysene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC11"  label="Concentration of chrysene {CAS 218-01-9} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCLP"  label="Cl IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MCLPP012"  label="Concentration of chlorine {Cl CAS 7782-50-5} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COSX"  label="Co IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MCOSP012"  label="Concentration of cobalt {Co CAS 7440-48-4} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO63"  label="Co&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED36"  label="Concentration of cobalt {Co CAS 7440-48-4} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IRON"  label="Concentration of total iron per unit volume of the water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00033"  label="Concentration of total iron {total_Fe CAS 7439-89-6} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COPS"  label="Copper in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:CUXXISPW"  label="Concentration of copper {Cu CAS 7440-50-8} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by in-situ pore water sampling, filtration, chelation, solvent extraction and atomic absorption spectroscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCRS"  label="Cr IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MCRSP012"  label="Concentration of chromium {Cr CAS 7440-47-3} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CR63"  label="Cr&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED29"  label="Concentration of chromium {Cr CAS 7440-47-3} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CSSX"  label="Cs  IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:SEDSCSXX"  label="Concentration of caesium {Cs CAS 7440-46-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CS63"  label="Cs&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED07"  label="Concentration of caesium {Cs CAS 7440-46-2} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCUS"  label="Cu IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MCUSP012"  label="Concentration of copper {Cu CAS 7440-50-8} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CU63"  label="Cu&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED30"  label="Concentration of copper {Cu CAS 7440-50-8} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CDFW"  label="DARK FIXATION"    />
+      <exact>
+         <element  key="SDN:P01:74:SCUPDARK"  label="Uptake rate of carbon {C} {primary production} per day per unit volume of the water body [particulate &gt;unknown phase] by isotope-labelled tracer addition, incubation in the dark, filtration and counting residue"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DAYX"  label="DAY WITHIN MONTH"    />
+      <exact>
+         <element  key="SDN:P01:74:DAYXXXXX"  label="Day within month"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:C13D"  label="DELTA 13C (13C/12C)"    />
+      <exact>
+         <element  key="SDN:P01:74:D13COPXX"  label="Enrichment of carbon-13 in organic carbon {13C in organic_C CAS 14762-74-4} {delta(13)C} in the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:N15D"  label="DELTA 15N (15N/14N)"    />
+      <exact>
+         <element  key="SDN:P01:74:D15NOPXX"  label="Enrichment of nitrogen-15 in total nitrogen {15N_in_total_N CAS 14390-96-6} {delta(15)N} in the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HELD"  label="DELTA HELIUM 3"    />
+      <exact>
+         <element  key="SDN:P01:74:D3HEMXDG"  label="Enrichment of helium-3 {3He CAS 14762-55-1} in the water body [dissolved plus reactive particulate phase] by mass spectrometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SIGT"  label="DENSITY (Sigma-t)"    />
+      <exact>
+         <element  key="SDN:P01:74:SIGTEQST"  label="Sigma-T of the water body by computation from salinity and temperature using UNESCO algorithm"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DENS"  label="DENSITY (Sigma-theta)"    />
+      <exact>
+         <element  key="SDN:P01:74:SIGTEQ01"  label="Sigma-theta of the water body by computation from salinity and potential temperature using UNESCO algorithm"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DPS1"  label="DEPTH BELOW BOTTOM-LOWER LIMIT"    />
+      <exact>
+         <element  key="SDN:P01:74:MAXCDIST"  label="Depth (spatial coordinate) maximum relative to bed surface in the bed"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DPSF"  label="DEPTH BELOW SEA FLOOR"    />
+      <exact>
+         <element  key="SDN:P01:74:COREDIST"  label="Depth (spatial coordinate) relative to bed surface in the bed"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DEPH"  label="DEPTH BELOW SEA SURFACE"    />
+      <exact>
+         <element  key="SDN:P01:74:ADEPZZ01"  label="Depth (spatial coordinate) relative to water surface in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VMNL"  label="DEPTH OF THE DEEPEST TROUGH"    />
+      <exact>
+         <element  key="SDN:P01:74:GMNLZZ01"  label="Wave level minimum of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DEEX"  label="DEUTERIUM EXCESS"    />
+      <exact>
+         <element  key="SDN:P01:74:D2H18OWC"  label="Excess enrichment (with respect to 18O) of deuterium (in water molecules) {2H CAS 7782-39-0} in the water body by calculation from 18O and 2H enrichment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DEWT"  label="DEW POINT TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:CDEWZZ01"  label="Dew point temperature of the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DXAP"  label="DIADINOXANTHINE"    />
+      <exact>
+         <element  key="SDN:P01:74:DIADXXXX"  label="Concentration of diadinoxanthin {CAS 18457-54-0} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DIPF"  label="DIATOMS PPC FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:PCFXMITD"  label="Sedimentation flux as carbon of Bacillariophyceae (ITIS: 2287: WoRMS 148899) per unit time per unit area of the water body by sediment trapping and optical microscopy and abundance to carbon conversion"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TXAP"  label="DIATOXANTHINE"    />
+      <exact>
+         <element  key="SDN:P01:74:DIATXXXX"  label="Concentration of diatoxanthin {CAS 31063-73-7} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IC13"  label="DIC DELTA-13C"    />
+      <exact>
+         <element  key="SDN:P01:74:D13CMITX"  label="Enrichment of carbon-13 in inorganic carbon {13C in inorganic_C CAS 14762-74-4} {delta(13)C} in the water body [dissolved plus reactive particulate phase] by acidification and mass spectrometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DICP"  label="DIC IN SEDIMENT PORE WATER"    />
+      <narrow>
+         <element  key="SDN:P01:74:TCO2CAPW"  label="Concentration of total inorganic carbon {TCO2 CAS 7440-44-0} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by centrifugal extraction, filtration, acidification and CO2 quantification by gas analyser"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DFPF"  label="DINOFLAGELLATES PPC FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:PCFXMIDF"  label="Sedimentation flux as carbon of Dinoflagellates (ITIS: 9873: WoRMS 19542) per unit time per unit area of the water body by sediment trapping and optical microscopy and abundance to carbon conversion"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VPSP"  label="DIR. SPREADING AT WAVE PEAK"    />
+      <exact>
+         <element  key="SDN:P01:74:GSPRZZ01"  label="Directional spreading of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DRVA"  label="DIRECTION OF RADIAL VECTOR"    />
+      <exact>
+         <element  key="SDN:P01:74:LCDAWVRD"  label="Direction (towards) of water current (Eulerian measurement) in the water body by directional range-gated radar"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HCDT"  label="DIRECTION REL. TRUE NORTH"    />
+      <exact>
+         <element  key="SDN:P01:74:LCDAZZ01"  label="Direction (towards) of water current in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TPAW"  label="DISS. TRIPHOSPHATE ADENOSINE"    />
+      <exact>
+         <element  key="SDN:P01:74:ATPXZZDZ"  label="Concentration of adenosine triphosphate {ATP CAS 56-65-5} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETHW"  label="DISSOLVED 234 TH ACT. ERROR"    />
+      <exact>
+         <element  key="SDN:P01:74:E234THDX"  label="Activity combined uncertainty of thorium-234 {234Th CAS 15065-10-8} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TH4W"  label="DISSOLVED 234TH"    />
+      <exact>
+         <element  key="SDN:P01:74:A234THDX"  label="Activity of thorium-234 {234Th CAS 15065-10-8} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CL4W"  label="DISSOLVED C-TETRACHLORIDE"    />
+      <exact>
+         <element  key="SDN:P01:74:QCMXMASS"  label="Concentration of tetrachloromethane {CCl4 carbon tetrachloride CAS 56-23-5} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCDW"  label="DISSOLVED CADMIUM (Cd)"    />
+      <exact>
+         <element  key="SDN:P01:74:CDAFWC01"  label="Concentration of cadmium {Cd CAS 7440-43-9} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO2W"  label="DISSOLVED CARBON DIOXYD (CO2)"    />
+      <broad>
+         <element  key="SDN:P01:74:TCO2ZZXX"  label="Concentration of total inorganic carbon {TCO2 CAS 7440-44-0} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CF1W"  label="DISSOLVED CFC11"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP001"  label="Concentration of trichlorofluoromethane {CFC-11 CAS 75-69-4} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CE1W"  label="DISSOLVED CFC11 ERROR"    />
+      <exact>
+         <element  key="SDN:P01:74:MDMAPER1"  label="Concentration uncertainty of trichlorofluoromethane {CFC-11 CAS 75-69-4} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CF3W"  label="DISSOLVED CFC113"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP003"  label="Concentration of 1,1,2-trichloro-1,2,2-trifluoroethane {CFC-113 CAS 76-13-1} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CE3W"  label="DISSOLVED CFC113 ERROR"    />
+      <exact>
+         <element  key="SDN:P01:74:MDMAPER3"  label="Concentration uncertainty of 1,1,2-trichloro-1,2,2-trifluoroethane {CFC-113 CAS 76-13-1} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CF2W"  label="DISSOLVED CFC12"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP002"  label="Concentration of dichlorodifluoromethane {CFC-12 CAS 75-71-8} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CE2W"  label="DISSOLVED CFC12 ERROR"    />
+      <exact>
+         <element  key="SDN:P01:74:MDMAPER2"  label="Concentration uncertainty of dichlorodifluoromethane {CFC-12 CAS 75-71-8} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCOW"  label="DISSOLVED COBALT (Co)"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00156"  label="Concentration of cobalt {Co CAS 7440-48-4} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCU2"  label="DISSOLVED COPPER (Cu)"    />
+      <exact>
+         <element  key="SDN:P01:74:CUAFWC01"  label="Concentration of copper {Cu CAS 7440-50-8} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MCUW"  label="DISSOLVED COPPER (Cu)"    />
+      <exact>
+         <element  key="SDN:P01:74:CUXXZZZZ"  label="Concentration of copper {Cu CAS 7440-50-8} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HELW"  label="DISSOLVED HELIUM"    />
+      <exact>
+         <element  key="SDN:P01:74:HECNMASS"  label="Concentration of helium {He CAS 7440-59-7} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HEEW"  label="DISSOLVED HELIUM ERROR"    />
+      <exact>
+         <element  key="SDN:P01:74:HEERMASS"  label="Concentration uncertainty of helium {He CAS 7440-59-7} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TINW"  label="DISSOLVED INORGANIC NITROGEN"    />
+      <exact>
+         <element  key="SDN:P01:74:DINXZZZZ"  label="Concentration of inorganic nitrogen {inorganic_N} {DIN} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPBW"  label="DISSOLVED LEAD (Pb)"    />
+      <exact>
+         <element  key="SDN:P01:74:PBAFWC01"  label="Concentration of lead {Pb CAS 7439-92-1} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NEOW"  label="DISSOLVED NEON"    />
+      <exact>
+         <element  key="SDN:P01:74:NECNMASS"  label="Concentration of neon {Ne CAS 7440-01-9} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NEEW"  label="DISSOLVED NEON ERROR"    />
+      <exact>
+         <element  key="SDN:P01:74:NEERMASS"  label="Concentration uncertainty of neon {Ne CAS 7440-01-9} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNI2"  label="DISSOLVED NICKEL (Ni)"    />
+      <exact>
+         <element  key="SDN:P01:74:NIXXZZZZ"  label="Concentration of nickel {Ni CAS 7440-02-0} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNIW"  label="DISSOLVED NICKEL (Ni)"    />
+      <exact>
+         <element  key="SDN:P01:74:NIXXZZZZ"  label="Concentration of nickel {Ni CAS 7440-02-0} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CORG"  label="DISSOLVED ORGANIC CARBON"    />
+      <exact>
+         <element  key="SDN:P01:74:CORGZZZX"  label="Concentration of organic carbon {organic_C CAS 7440-44-0} {DOC} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NODW"  label="DISSOLVED ORGANIC NITROGEN"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP008"  label="Concentration of organic nitrogen {organic_N} {DON} per unit mass of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NORG"  label="DISSOLVED ORGANIC NITROGEN"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP009"  label="Concentration of organic nitrogen {organic_N} {DON} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOPW"  label="DISSOLVED ORGANIC PHOSPHORUS"    />
+      <exact>
+         <element  key="SDN:P01:74:ORGPDSZZ"  label="Concentration of organic phosphorus {organic_P CAS 7723-14-0} {DOP} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PODW"  label="DISSOLVED ORGANIC PHOSPHORUS"    />
+      <exact>
+         <element  key="SDN:P01:74:ORGPMSZZ"  label="Concentration of organic phosphorus {organic_P CAS 7723-14-0} {DOP} per unit mass of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOX1"  label="DISSOLVED OXYGEN"    />
+      <broad>
+         <element  key="SDN:P01:74:DOXYZZXX"  label="Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOX2"  label="DISSOLVED OXYGEN"    />
+      <broad>
+         <element  key="SDN:P01:74:DOXMZZXX"  label="Concentration of oxygen {O2 CAS 7782-44-7} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOXY"  label="DISSOLVED OXYGEN"    />
+      <broad>
+         <element  key="SDN:P01:74:DOXYZZXX"  label="Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MAGW"  label="DISSOLVED SILVER (Ag)"    />
+      <exact>
+         <element  key="SDN:P01:74:PBAFWC01"  label="Concentration of lead {Pb CAS 7439-92-1} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TRIW"  label="DISSOLVED TRITIUM"    />
+      <exact>
+         <element  key="SDN:P01:74:MXTX3H1H"  label="Atomic ratio of tritium/hydrogen {concentration of tritium} in the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TREW"  label="DISSOLVED TRITIUM ERROR"    />
+      <exact>
+         <element  key="SDN:P01:74:S3HHMXTX"  label="Atomic ratio standard error of tritium/hydrogen in the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MZNW"  label="DISSOLVED ZINC (Zn)"    />
+      <narrow>
+         <element  key="SDN:P01:74:ZNINCVDX"  label="Concentration of inorganic zinc {inorganic_Zn CAS 7440-66-6} per unit volume of the water body [dissolved plus reactive particulate phase] by cathodic stripping voltammetry"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHAD"  label="DIVINYL CHLOROPHYLL-A"    />
+      <exact>
+         <element  key="SDN:P01:74:DVCAXXXX"  label="Concentration of divinyl chlorophyll-a {DVchl-a} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHBD"  label="DIVINYL-CHLOROPHYLL-B"    />
+      <exact>
+         <element  key="SDN:P01:74:DVCBXXXX"  label="Concentration of divinyl chlorophyll-b {DVchl-b} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOCP"  label="DOC IN SEDIMENT PORE WATER"    />
+      <narrow>
+         <element  key="SDN:P01:74:CORGCOPW"  label="Concentration of organic carbon {organic_C CAS 7440-44-0} {DOC} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by centrifugal extraction, filtration and high temperature Pt catalytic oxidation"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DRYT"  label="DRY BULB TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:CTMPZZ01"  label="Temperature of the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DBIO"  label="DRY WEIGHT BIOMASS OF ENTITY"    />
+      <exact>
+         <element  key="SDN:P01:74:SDBIOL03"  label="Ash-free dry weight biomass of biological entity specified elsewhere per unit area of the bed"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DRDD"  label="DURATION (DAYS)"    />
+      <exact>
+         <element  key="SDN:P01:74:AZDRZZ01"  label="Sample duration"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DBAW"  label="Dibenzo(ah)anthracene in water"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC12"  label="Concentration of dibenzo(a,h)anthracene {CAS 53-70-3} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DBAS"  label="Dibenzo(ah)anthracene sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:DBAHASBD"  label="Concentration of dibenzo(a,h)anthracene {CAS 53-70-3} per unit dry weight of sediment &lt;2000um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DYSX"  label="Dy IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0025"  label="Concentration of dysprosium {Dy CAS 7429-91-6} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DY63"  label="Dy&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0002"  label="Concentration of dysprosium {Dy CAS 7429-91-6} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CNDC"  label="ELECTRICAL CONDUCTIVITY"    />
+      <exact>
+         <element  key="SDN:P01:74:CNDCZZ01"  label="Electrical conductivity of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CN02"  label="ELECTRICAL CONDUCTIVITY 2"    />
+      <exact>
+         <element  key="SDN:P01:74:CNDCPR02"  label="Electrical conductivity of the water body by in-situ conductivity cell (second sensor)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETDD"  label="ELLAPSED TIME"    />
+      <exact>
+         <element  key="SDN:P01:74:ELTMZZZZ"  label="Elapsed time"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHAE"  label="EPIMERE CHLOROPHYLL-A"    />
+      <exact>
+         <element  key="SDN:P01:74:CHLAEPIM"  label="Concentration of chlorophyll-a epimer per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VEMH"  label="ESTIMATED MAXIMUM WAVE HEIGHT"    />
+      <exact>
+         <element  key="SDN:P01:74:GCMXVS01"  label="Wave height maximum of waves on the water body by visual estimation"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ERSX"  label="Er IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0026"  label="Concentration of erbium {Er CAS 7440-52-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ER63"  label="Er&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0003"  label="Concentration of erbium {Er CAS 7440-52-0} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETBW"  label="Ethylbenzene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00093"  label="Concentration of ethylbenzene {CAS 100-41-4} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EUSX"  label="Eu IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0027"  label="Concentration of europium {Eu CAS 7440-53-1} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EU63"  label="Eu&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0004"  label="Concentration of europium {Eu CAS 7440-53-1} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MFEF"  label="FE FLUX IN SETTLING PARTICLES"    />
+      <exact>
+         <element  key="SDN:P01:74:SFXFEZZZ"  label="Particle-bound sedimentation flux of total iron {Fe CAS 7439-89-6} per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLPF"  label="FLAGELLATES PPC FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:PCFXMIFL"  label="Sedimentation flux as carbon of flagellates per unit time per unit area of the water body by sediment trapping and optical microscopy and abundance to carbon conversion"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLU1"  label="FLUORESCENCE"    />
+      <exact>
+         <element  key="SDN:P01:74:FVLTZZ01"  label="Raw signal (voltage) of instrument output by in-situ chlorophyll fluorometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLU2"  label="FLUORESCENCE"    />
+      <exact>
+         <element  key="SDN:P01:74:CPHLPM01"  label="Concentration of chlorophyll-a {chl-a CAS 479-61-8} per unit volume of the water body [particulate &gt;unknown phase] by in-situ chlorophyll fluorometer and manufacturer&apos;s calibration applied"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLU3"  label="FLUORESCENCE"    />
+      <exact>
+         <element  key="SDN:P01:74:FLUOZZZZ"  label="Fluorescence of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLUO"  label="FLUORESCENCE"    />
+      <exact>
+         <element  key="SDN:P01:74:FLUOZZZZ"  label="Fluorescence of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FUCP"  label="FUCOXANTHINE"    />
+      <exact>
+         <element  key="SDN:P01:74:FUCXZZZZ"  label="Concentration of fucoxanthin {CAS 3351-86-8} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FESP"  label="Fe IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MFEPP012"  label="Concentration of total iron {total_Fe CAS 7439-89-6} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MFEP"  label="Fe IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MFEPP012"  label="Concentration of total iron {total_Fe CAS 7439-89-6} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MFES"  label="Fe IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MFESP012"  label="Concentration of total iron {total_Fe CAS 7439-89-6} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FE63"  label="Fe&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED38"  label="Concentration of total iron {total_Fe CAS 7439-89-6} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLRS"  label="Fluoranthene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:FLXXSD01"  label="Concentration of fluoranthene {CAS 206-44-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLRW"  label="Fluoranthene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:AFLAGCD1"  label="Concentration of fluoranthene {CAS 206-44-0} per unit volume of the water body [dissolved plus reactive particulate &lt;GF/F phase] by filtration and gas chromatography"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLUS"  label="Fluorene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:FLESEDXD"  label="Concentration of fluorene {CAS 86-73-7} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:FLUW"  label="Fluorene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC13"  label="Concentration of fluorene {CAS 86-73-7} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VGTA"  label="GENERIC AVERAGE WAVE PERIOD"    />
+      <exact>
+         <element  key="SDN:P01:74:GTAMZZ01"  label="Period mean of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VGHS"  label="GENERIC SIGNIF. WAVE HEIGHT"    />
+      <exact>
+         <element  key="SDN:P01:74:GTDHZZ01"  label="Significant wave height of waves {Hs} on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GDIR"  label="GUST WIND DIRECTION"    />
+      <exact>
+         <element  key="SDN:P01:74:EGTDZZ01"  label="Direction (from) of wind (gust) relative to True North {wind direction} in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GSPD"  label="GUST WIND SPEED"    />
+      <exact>
+         <element  key="SDN:P01:74:EGTSZZ01"  label="Speed of wind (gust) {wind speed} in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GASX"  label="Ga IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:SEDSGAXX"  label="Concentration of gallium {Ga CAS 7440-55-3} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GA63"  label="Ga&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED08"  label="Concentration of gallium {Ga CAS 7440-55-3} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GDSX"  label="Gd IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0028"  label="Concentration of gadolinium {Gd CAS 7440-54-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GD63"  label="Gd&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0005"  label="Concentration of gadolinium {Gd CAS 7440-54-2} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ALTS"  label="HEIGHT ABOVE MEAN SEA LEVEL"    />
+      <exact>
+         <element  key="SDN:P01:74:AHSLZZ01"  label="Height (spatial coordinate) relative to sea level"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HEDW"  label="HELIUM DEV. OF ISOTOPIC RATIO"    />
+      <exact>
+         <element  key="SDN:P01:74:SDD3HEXX"  label="Enrichment standard deviation of helium-3 {3He CAS 14762-55-1} in the water body [dissolved plus reactive particulate phase] by mass spectrometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HEDE"  label="HELIUM ISOTOPIC RATIO ERROR"    />
+      <narrow>
+         <element  key="SDN:P01:74:S3HEMXDG"  label="Enrichment standard error of helium-3 {3He CAS 14762-55-1} in the water body [dissolved plus reactive particulate phase] by mass spectrometry"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NFHW"  label="HETEROTROPHIC NANOFLAGELLATES"    />
+      <exact>
+         <element  key="SDN:P01:74:NANFHETR"  label="Abundance of flagellates [Size: 2-20um Subgroup: heterotrophic] per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HNAC"  label="HIGH NUCLEIC ACID CONTENT"    />
+      <exact>
+         <element  key="SDN:P01:74:NA016999"  label="Abundance of bacteria (ITIS: 202421: WoRMS 6) [Subgroup: high nucleic acid cell content] per unit volume of the water body by SYBR Green I staining and flow cytometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HCSP"  label="HORIZONTAL CURRENT SPEED"    />
+      <exact>
+         <element  key="SDN:P01:74:LCSAZZ01"  label="Speed of water current (Eulerian measurement) in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSPD"  label="HORIZONTAL WIND SPEED"    />
+      <exact>
+         <element  key="SDN:P01:74:EWSBZZ01"  label="Speed of wind {wind speed} in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HSUL"  label="HYDROGEN SULPHIDE (H2S)"    />
+      <broad>
+         <element  key="SDN:P01:74:H2SXZZXX"  label="Concentration of hydrogen sulfide {H2S CAS 7783-06-4} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HXC1"  label="Hexachlorobiphenyl128 sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:PCBSD001"  label="Concentration of 2,2&apos;,3,3&apos;,4,4&apos;-hexachlorobiphenyl {PCB128 CAS 38380-07-3} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HXC2"  label="Hexachlorobiphenyl138 sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:PCBSD008"  label="Concentration of 2,2&apos;,3,4,4&apos;,5&apos;-hexachlorobiphenyl {PCB138 CAS 35065-28-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HXC3"  label="Hexachlorobiphenyl153 sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:PCBSD019"  label="Concentration of 2,2&apos;,4,4&apos;,5,5&apos;-hexachlorobiphenyl {PCB153 CAS 35065-27-1} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HXC4"  label="Hexachlorobiphenyl156 sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:PCBSD029"  label="Concentration of 2,3,3&apos;,4,4&apos;,5-hexachlorobiphenyl {PCB156 CAS 38380-08-4} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HFSX"  label="Hf IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:SEDSHFXX"  label="Concentration of hafnium {Hf CAS 7440-58-6} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HF63"  label="Hf&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0006"  label="Concentration of hafnium {Hf CAS 7440-58-6} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HGSX"  label="Hg IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MHGSP012"  label="Concentration of total mercury {total_Hg CAS 7439-97-6} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HOSX"  label="Ho IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0029"  label="Concentration of holmium {Ho CAS 7440-60-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HO63"  label="Ho&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0007"  label="Concentration of holmium {Ho CAS 7440-60-0} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MIIS"  label="I IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MIISP012"  label="Concentration of iodine {I2 CAS 7553-56-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGH5"  label="IMMERGED/SURF IRRADIANCE RATIO"    />
+      <exact>
+         <element  key="SDN:P01:74:PCTIRRXX"  label="Proportion of sub-surface irradiance (PAR wavelengths) {Percent light depth}"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ISMP"  label="INORGANIC SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:ISEDZZZZ"  label="Concentration of suspended particulate material (inorganic) {SPM} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IODI"  label="IODINE"    />
+      <broad>
+         <element  key="SDN:P01:74:IWCOLXXX"  label="Concentration of iodine {I2 CAS 7553-56-2} per unit volume of the water body"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OXIR"  label="ISOTOPIC RATIO O18/O16"    />
+      <exact>
+         <element  key="SDN:P01:74:D18OMXDG"  label="Enrichment of oxygen-18 in dissolved oxygen {18O in O2 CAS 14797-71-8} {delta(18)O} in the water body by mass spectrometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IDPW"  label="Indeno(1,2,3cd)pyrene in water"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC14"  label="Concentration of indeno(1,2,3-cd)pyrene {CAS 193-39-5} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:INDE"  label="Indeno(1,2,3cd)pyrene sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:HDCCZNPY"  label="Concentration of indeno(1,2,3-cd)pyrene {CAS 193-39-5} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:INCS"  label="Inorganic carbon in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0038"  label="Concentration of inorganic carbon {inorganic_C CAS 7440-44-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CJDY"  label="JULIAN DATE (CHRONOLOGICAL)"    />
+      <exact>
+         <element  key="SDN:P01:74:CJDY1101"  label="Julian Date (chronological)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MKKP"  label="K IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MKKPP012"  label="Concentration of potassium {K CAS 7440-09-7} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MKKS"  label="K IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MKKSP012"  label="Concentration of potassium {K CAS 7440-09-7} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LATX"  label="LATITUDE"    />
+      <exact>
+         <element  key="SDN:P01:74:ALATZZ01"  label="Latitude north"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LTUW"  label="LEUCINE UPTAKE RATE"    />
+      <exact>
+         <element  key="SDN:P01:74:LEUCXXXX"  label="Uptake rate of leucine {CAS 328-39-2} per hour per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR2"  label="LIGHT ATTENUATION COEFFICIENT"    />
+      <exact>
+         <element  key="SDN:P01:74:ATTNZZ01"  label="Attenuation (unspecified wavelength) per unit length of the water body by transmissometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGH3"  label="LIGHT IRRADIANCE CORRECTED PAR"    />
+      <exact>
+         <element  key="SDN:P01:74:PARECORR"  label="Downwelling vector irradiance as photons of electromagnetic radiation (PAR wavelengths) in the water body by cosine-collector radiometer and correction for variation in surface illumination"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGHT"  label="LIGHT IRRADIANCE IMMERGED PAR"    />
+      <exact>
+         <element  key="SDN:P01:74:PARERXUD"  label="Downwelling vector irradiance as photons of electromagnetic radiation (PAR wavelengths) in the water body by cosine-collector radiometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGH4"  label="LIGHT IRRADIANCE SURFACE PAR"    />
+      <exact>
+         <element  key="SDN:P01:74:IRRDSV01"  label="Downwelling vector irradiance as photons of electromagnetic radiation (PAR wavelengths) in the atmosphere by cosine-collector radiometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LSCT"  label="LIGHT SCATTERING"    />
+      <exact>
+         <element  key="SDN:P01:74:VSCTXXXX"  label="Volume scattering of light (unspecified wavelengths) by the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR3"  label="LIGHT TRANSMISSION"    />
+      <exact>
+         <element  key="SDN:P01:74:POPTZZ01"  label="Transmittance (unspecified wavelength) per unspecified length of the water body by transmissometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LIPI"  label="LIPIDS IN THE WATER COLUMN"    />
+      <exact>
+         <element  key="SDN:P01:74:LIPIDWCL"  label="Concentration of lipids per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LSIC"  label="LITHOGENIC CONTENT"    />
+      <exact>
+         <element  key="SDN:P01:74:LITHOSPM"  label="Concentration of lithogenic material per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LTHF"  label="LITHOGENIC FRACTION FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:LITHFLUX"  label="Sedimentation flux of suspended particulate material (lithogenic fraction) per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LINC"  label="LONG-WAVE INCOMING RADIATION"    />
+      <exact>
+         <element  key="SDN:P01:74:LWRDZZ01"  label="Downwelling vector irradiance as energy of electromagnetic radiation (longwave) in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LONX"  label="LONGITUDE"    />
+      <exact>
+         <element  key="SDN:P01:74:ALONZZ01"  label="Longitude east"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LUTW"  label="LUTEIN"    />
+      <exact>
+         <element  key="SDN:P01:74:LUTNHPP1"  label="Concentration of lutein {CAS 127-40-2} per unit volume of the water body [particulate &gt;GF/F phase] by filtration, acetone extraction and high performance liquid chromatography (HPLC)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MLAS"  label="La IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MLASP012"  label="Concentration of lanthanum {La CAS 7439-91-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LA63"  label="La&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED06"  label="Concentration of lanthanum {La CAS 7439-91-0} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LEAB"  label="Lead in biota"    />
+      <exact>
+         <element  key="SDN:P01:74:MMUSPBXX"  label="Concentration of lead {Pb CAS 7439-92-1} per unit dry weight of biota {Mytilus galloprovincialis (ITIS: 79456: WoRMS 140481) [Subcomponent: flesh]}"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LEAS"  label="Lead in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:PBXXISPW"  label="Concentration of lead {Pb CAS 7439-92-1} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by in-situ pore water sampling, filtration, chelation, solvent extraction and atomic absorption spectroscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LEAW"  label="Lead in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:PBUFWC02"  label="Concentration of lead {Pb CAS 7439-92-1} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LISX"  label="Li IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:LISEDXD1"  label="Concentration of lithium {Li CAS 7439-93-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LI63"  label="Li&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:LISEDAD1"  label="Concentration of lithium {Li CAS 7439-93-2} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LUSX"  label="Lu IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0030"  label="Concentration of lutetium {Lu CAS 7439-94-3} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LU63"  label="Lu&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0008"  label="Concentration of lutetium {Lu CAS 7439-94-3} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MAXD"  label="MAX. DEPTH BELOW SEA SURFACE"    />
+      <exact>
+         <element  key="SDN:P01:74:MAXWDIST"  label="Depth (spatial coordinate) maximum relative to water surface in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VZMX"  label="MAXI ZERO CROSSING WAVE HEIGHT"    />
+      <exact>
+         <element  key="SDN:P01:74:GZMXZZ01"  label="Zero-crossing wave height maximum of waves {Hmax} on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VCMX"  label="MAXIMUM CREST TO TROUGH WAVE HEIGHT"    />
+      <exact>
+         <element  key="SDN:P01:74:GCMXZZ01"  label="Wave height maximum of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VMXL"  label="MAXIMUM WAVE LEVEL"    />
+      <exact>
+         <element  key="SDN:P01:74:GMXLZZ01"  label="Wave level maximum of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTMX"  label="MAXIMUM WAVE PERIOD"    />
+      <exact>
+         <element  key="SDN:P01:74:GTZMZZ01"  label="Zero-crossing period maximum of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VST1"  label="MAXIMUM WAVE STEEPNESS"    />
+      <exact>
+         <element  key="SDN:P01:74:WVSTZZ01"  label="Wave steepness maximum of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSMP"  label="MEAN SPHERIC DIAM. MEDIAN"    />
+      <exact>
+         <element  key="SDN:P01:74:MDGSPSPM"  label="Grain-size median of particles in suspended particulate material by particle sizer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSDP"  label="MEAN SPHERIC DIAM. OF PARTICLE"    />
+      <exact>
+         <element  key="SDN:P01:74:MNGSPSPM"  label="Grain-size mean of particles in suspended particulate material by particle sizer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSZW"  label="MESOZOOPLANCTON DRY WEIGHT"    />
+      <exact>
+         <element  key="SDN:P01:74:MSBDGVTX"  label="Dry weight biomass of mesozooplankton per unit volume of the water body by gravimetry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSBO"  label="MESOZOOPLANKTON ASH-FREE DRY W"    />
+      <exact>
+         <element  key="SDN:P01:74:MSBOGVTX"  label="Ash-free dry weight biomass of mesozooplankton per unit volume of the water body by gravimetric determination of loss on ignition"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MEHG"  label="METHYLMERCURY CONTENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MUM13266"  label="Concentration of methylmercury cation {CH3Hg+ CAS 22967-92-6} per unit volume of the water body [dissolved plus reactive particulate &lt;0.4/0.45um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MIND"  label="MIN. DEPTH BELOW SEA SURFACE"    />
+      <exact>
+         <element  key="SDN:P01:74:MINWDIST"  label="Depth (spatial coordinate) minimum relative to water surface in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMNF"  label="MN FLUX IN SETTLING PARTICLES"    />
+      <exact>
+         <element  key="SDN:P01:74:SFXMNZZZ"  label="Particle-bound sedimentation flux of total manganese {Mn CAS 7439-96-5} per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MOLW"  label="MOLYBDENUM IN WATER BODY"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00157"  label="Concentration of molybdenum {Mo CAS 7439-98-7} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNTH"  label="MONTH"    />
+      <exact>
+         <element  key="SDN:P01:74:MNTHXXXX"  label="Month within year"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VMDR"  label="Mean direction in spectrum of waves from which waves are coming relative to True North"    />
+      <exact>
+         <element  key="SDN:P01:74:GMWDZZ01"  label="Direction (from) mean of waves {mean wave direction} on the water body by computation from 1st order Fourier coefficients of directional distribution of energy, A1 and B1"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:METW"  label="Methylbenzene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSX0006"  label="Concentration of methylbenzene {toluene CAS 108-88-3} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMGP"  label="Mg IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MMGPP012"  label="Concentration of magnesium {Mg CAS 7439-95-4} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMGS"  label="Mg IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MMGSP012"  label="Concentration of magnesium {Mg CAS 7439-95-4} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MG63"  label="Mg&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED17"  label="Concentration of magnesium {Mg CAS 7439-95-4} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMNP"  label="Mn IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MMNPP012"  label="Concentration of total manganese {total_Mn CAS 7439-96-5} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNSP"  label="Mn IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MMNPP012"  label="Concentration of total manganese {total_Mn CAS 7439-96-5} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMNS"  label="Mn IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MMNSP012"  label="Concentration of total manganese {total_Mn CAS 7439-96-5} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MN63"  label="Mn&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED37"  label="Concentration of total manganese {total_Mn CAS 7439-96-5} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MMOS"  label="Mo IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MMOSP012"  label="Concentration of molybdenum {Mo CAS 7439-98-7} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MO63"  label="Mo&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED10"  label="Concentration of molybdenum {Mo CAS 7439-98-7} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:N63X"  label="N&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:NSEDAD01"  label="Concentration of nitrogen {N} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HBAW"  label="NB OF HETEROTROPHIC BACTERIA"    />
+      <exact>
+         <element  key="SDN:P01:74:HBCCXXXX"  label="Abundance of bacteria (ITIS: 202421: WoRMS 6) [Subgroup: heterotrophic] per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NEXW"  label="NEOXANTHIN"    />
+      <exact>
+         <element  key="SDN:P01:74:NEOXHPP1"  label="Concentration of neoxanthin {CAS 30743-41-0} per unit volume of the water body [particulate &gt;GF/F phase] by filtration, acetone extraction and high performance liquid chromatography (HPLC)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NRAD"  label="NET TOTAL INCOMING RADIATION"    />
+      <exact>
+         <element  key="SDN:P01:74:NTLRDZ01"  label="Net vector irradiance as energy of electromagnetic radiation (longwave + shortwave) {net total radiation} in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTAW"  label="NITRATE (NO3-N) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP005"  label="Concentration of nitrate {NO3- CAS 14797-55-8} per unit mass of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTRA"  label="NITRATE (NO3-N) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:NTRAZZXX"  label="Concentration of nitrate {NO3- CAS 14797-55-8} per unit volume of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTRZ"  label="NITRATE + NITRITE CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:NTRZZZXX"  label="Concentration of nitrate+nitrite {NO3+NO2} per unit volume of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTZW"  label="NITRATE + NITRITE CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP006"  label="Concentration of nitrate+nitrite {NO3+NO2} per unit mass of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTAP"  label="NITRATE IN SEDIMENT PORE WATER"    />
+      <narrow>
+         <element  key="SDN:P01:74:NTRAAADC"  label="Concentration of nitrate {NO3- CAS 14797-55-8} per unit volume of the sediment pore water [dissolved plus reactive particulate phase] by centrifugal extraction and colorimetric autoanalysis and correction for nitrite"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NOUW"  label="NITRATE UPTAKE"    />
+      <exact>
+         <element  key="SDN:P01:74:AMUWXXXX"  label="Uptake rate of ammonium {NH4+ CAS 14798-03-9} per day per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NORW"  label="NITRIFICATION"    />
+      <broad>
+         <element  key="SDN:P01:74:NTRFZZZZ"  label="Oxidation rate (daily) of ammonium {NH4+ CAS 14798-03-9} {nitrification rate} per unit time per unit volume of the water body"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTIW"  label="NITRITE (NO2-N) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP007"  label="Concentration of nitrite {NO2- CAS 14797-65-0} per unit mass of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTRI"  label="NITRITE (NO2-N) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:NTRIZZXX"  label="Concentration of nitrite {NO2- CAS 14797-65-0} per unit volume of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTIP"  label="NITRITE IN SEDIMENT PORE WATER"    />
+      <narrow>
+         <element  key="SDN:P01:74:NTRIAADC"  label="Concentration of nitrite {NO2- CAS 14797-65-0} per unit volume of the sediment pore water [dissolved plus reactive particulate phase] by centrifugal extraction and colorimetric autoanalysis"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NIUW"  label="NITROGEN UPTAKE (FIXATION)"    />
+      <narrow>
+         <element  key="SDN:P01:74:N2FIXMS1"  label="Uptake rate of dinitrogen {N2 CAS 7727-37-9} {nitrogen fixation} per day per unit volume of the water body [particulate &gt;GF/F phase] by isotope-labelled tracer addition, on-deck incubation at simulated in-situ light level, filtration and mass spectrometry"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BCCS"  label="NUMBER OF BACTERIA IN SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:TBCCSVOL"  label="Abundance of bacteria (ITIS: 202421: WoRMS 6) per unit volume of the sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COPP"  label="NUMBER OF COPEPODS"    />
+      <exact>
+         <element  key="SDN:P01:74:Z300M00Z"  label="Abundance of Copepoda (ITIS: 85257: WoRMS 1080) per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CYAF"  label="NUMBER OF CYANOBACTERIA"    />
+      <exact>
+         <element  key="SDN:P01:74:CBCCAFTX"  label="Abundance of Cyanobacteria (ITIS: 601: WoRMS 146537) per unit volume of the water body by flow cytometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NNEF"  label="NUMBER OF NANOEUKARYOTES"    />
+      <exact>
+         <element  key="SDN:P01:74:ANAXX01X"  label="Abundance of nanoeukaryotic cells per unit volume of the water body by flow cytometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NPKF"  label="NUMBER OF NANOPROKARYOTES"    />
+      <exact>
+         <element  key="SDN:P01:74:ANPXX01X"  label="Abundance of nanoprokaryotic cells per unit volume of the water body by flow cytometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NUMP"  label="NUMBER OF PARTICLES 3-80UM"    />
+      <exact>
+         <element  key="SDN:P01:74:PARTAB02"  label="Abundance of particles (3-80um) per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NUMN"  label="NUMBER OF PARTICLES &gt;0.7UM"    />
+      <exact>
+         <element  key="SDN:P01:74:PARTAB03"  label="Abundance of particles (&gt;0.7um) per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NUNM"  label="NUMBER OF PARTICLES &gt;=480UM"    />
+      <exact>
+         <element  key="SDN:P01:74:PARTAB01"  label="Abundance of particles (&gt;=480um) per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCEF"  label="NUMBER OF PICOEUKARYOTES"    />
+      <exact>
+         <element  key="SDN:P01:74:PYEUA00A"  label="Abundance of picoeukaryotic cells per unit volume of the water body by flow cytometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PPKF"  label="NUMBER OF PICOPROKARYOTES"    />
+      <exact>
+         <element  key="SDN:P01:74:TBCCAFTX"  label="Abundance of bacteria (ITIS: 202421: WoRMS 6) per unit volume of the water body by flow cytometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRCF"  label="NUMBER OF PROCHLOROCOCCUS"    />
+      <exact>
+         <element  key="SDN:P01:74:P701A90Z"  label="Abundance of Prochlorococcus (ITIS: 610076: WoRMS 345515) per unit volume of the water body by flow cytometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:BCCW"  label="NUMBER OF SW BACTERIA"    />
+      <exact>
+         <element  key="SDN:P01:74:TBCCXXXX"  label="Abundance of bacteria (ITIS: 202421: WoRMS 6) per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CICW"  label="NUMBER OF SW CILIATES"    />
+      <exact>
+         <element  key="SDN:P01:74:P500M17Z"  label="Abundance of Ciliophora (ITIS: 46211: WoRMS 11) per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:COCW"  label="NUMBER OF SW COCCOLITHOPHORIDS"    />
+      <exact>
+         <element  key="SDN:P01:74:P490M00Z"  label="Abundance of Prymnesiophyceae (ITIS: 2135: WoRMS 115057) [Subgroup: coccolithophores] per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CRSW"  label="NUMBER OF SW CRYPTOPHYCEAE"    />
+      <exact>
+         <element  key="SDN:P01:74:J79A0596"  label="Abundance of Cryptophyceae (ITIS: 10598: WoRMS 17639) per unit volume of the water body by flow cytometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DTCW"  label="NUMBER OF SW DIATOMS"    />
+      <exact>
+         <element  key="SDN:P01:74:P000M00Z"  label="Abundance of Bacillariophyceae (ITIS: 2287: WoRMS 148899) per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DFCW"  label="NUMBER OF SW DINOFLAGELLATES"    />
+      <exact>
+         <element  key="SDN:P01:74:P200M00Z"  label="Abundance of Dinoflagellates (ITIS: 9873: WoRMS 19542) per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DINW"  label="NUMBER OF SW DYNOPHYSIS"    />
+      <exact>
+         <element  key="SDN:P01:74:P219M00Z"  label="Abundance of Dinophysis (ITIS: 9928: WoRMS 109462) per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GYRW"  label="NUMBER OF SW GYRODINIUM"    />
+      <exact>
+         <element  key="SDN:P01:74:P230M00Z"  label="Abundance of Gyrodinium (ITIS: 10077: WoRMS 109476) per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NCSW"  label="NUMBER OF SW NAKED CILIATES"    />
+      <exact>
+         <element  key="SDN:P01:74:PU03M00Z"  label="Abundance of aloricate ciliates per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NFCW"  label="NUMBER OF SW NANOFLAGELLATES"    />
+      <exact>
+         <element  key="SDN:P01:74:NANFTOTL"  label="Abundance of flagellates [Size: 2-20um] per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCEW"  label="NUMBER OF SW PICOEUCARYOTES"    />
+      <exact>
+         <element  key="SDN:P01:74:PYEUM00A"  label="Abundance of picoeukaryotic cells per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRCW"  label="NUMBER OF SW PROCHLOROCOCCUS"    />
+      <exact>
+         <element  key="SDN:P01:74:P701M90Z"  label="Abundance of Prochlorococcus (ITIS: 610076: WoRMS 345515) per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SNCW"  label="NUMBER OF SW SYNECHOCOCCUS"    />
+      <exact>
+         <element  key="SDN:P01:74:P700M90Z"  label="Abundance of Synechococcus (ITIS: 773: WoRMS 160572) per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TISW"  label="NUMBER OF SW TINTINNINA"    />
+      <exact>
+         <element  key="SDN:P01:74:P520M04Z"  label="Abundance of Tintinnina (ITIS: 46620: WoRMS 732976) per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SNCF"  label="NUMBER OF SYNECHOCOCCUS"    />
+      <exact>
+         <element  key="SDN:P01:74:P700A90Z"  label="Abundance of Synechococcus (ITIS: 773: WoRMS 160572) per unit volume of the water body by flow cytometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNAS"  label="Na IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MNASP012"  label="Concentration of sodium {Na CAS 7440-23-5} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NAPS"  label="Naphthalene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:NAPSEDXD"  label="Concentration of naphthalene {CAS 91-20-3} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NAPW"  label="Naphthalene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00110"  label="Concentration of naphthalene {CAS 91-20-3} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNBS"  label="Nb IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MNBSP012"  label="Concentration of niobium {Nb CAS 7440-03-1} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNDS"  label="Nd IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MNDSP012"  label="Concentration of neodymium {Nd CAS 7440-00-8} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ND63"  label="Nd&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED19"  label="Concentration of neodymium {Nd CAS 7440-00-8} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NISX"  label="Ni IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED31"  label="Concentration of nickel {Ni CAS 7440-02-0} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MNIS"  label="Ni IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MNISP012"  label="Concentration of nickel {Ni CAS 7440-02-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NIKS"  label="Nickel in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:NIXXISPW"  label="Concentration of nickel {Ni CAS 7440-02-0} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by in-situ pore water sampling, filtration, chelation, solvent extraction and atomic absorption spectroscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NIKW"  label="Nickel in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00027"  label="Concentration of nickel {Ni CAS 7440-02-0} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTR1"  label="Nitrate in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:ISMJUN07"  label="Concentration of nitrate {NO3- CAS 14797-55-8} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by centrifugal extraction, filtration and colorimetric autoanalysis and correction for nitrite"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTRS"  label="Nitrite in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:ISMJUN06"  label="Concentration of nitrite {NO2- CAS 14797-65-0} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by centrifugal extraction, filtration and colorimetric autoanalysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NITS"  label="Nitrogen in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:NSEDXD01"  label="Concentration of nitrogen {N} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:O18E"  label="O18 ENRICHMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:D18OCRDS"  label="Enrichment of oxygen-18 in water molecules {18O in H2O CAS 14797-71-8} {delta(18)O} in the water body by cavity ring-down spectrometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLEV"  label="OBSERVED SEA LEVEL"    />
+      <exact>
+         <element  key="SDN:P01:74:ASLVZZ01"  label="Surface elevation (unspecified datum) of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OPAP"  label="OPAL CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:OPCNSPMZ"  label="Concentration of biogenic silica {BSi opal} per unit dry weight of suspended particulate material"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TOMP"  label="ORGANIC MATTER CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:SPMTOTOR"  label="Concentration of total organic matter per unit dry weight of suspended particulate material"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OSMP"  label="ORGANIC SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:OSEDZZZZ"  label="Concentration of suspended particulate material (organic) {SPM} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OSAT"  label="OXYGEN SATURATION"    />
+      <exact>
+         <element  key="SDN:P01:74:OXYSZZ01"  label="Saturation of oxygen {O2 CAS 7782-44-7} in the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:DOCS"  label="Organic carbon DOC in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:CORGCOPW"  label="Concentration of organic carbon {organic_C CAS 7440-44-0} {DOC} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by centrifugal extraction, filtration and high temperature Pt catalytic oxidation"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OCCN"  label="Organic carbon in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:OCCNCAXT"  label="Concentration of organic carbon {organic_C CAS 7440-44-0} per unit dry weight of sediment by acidification and elemental analysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ONIS"  label="Organic nitrogen in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:TNCNCNXT"  label="Concentration of organic nitrogen {organic_N} per unit dry weight of sediment by elemental analysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPPP"  label="P IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MPPPP012"  label="Concentration of total phosphorus {total_P CAS 7723-14-0} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPPS"  label="P IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MPPSP012"  label="Concentration of total phosphorus {total_P CAS 7723-14-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LGH2"  label="PAR ATTENUATION COEFFICIENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RXXXPARK"  label="Light extinction coefficient (PAR wavelengths) {PAR attenuance} in the water body by radiometer and computation from variation of light intensity with depth"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SIOF"  label="PART. BIOGENIC Si FLUX"    />
+      <broad>
+         <element  key="SDN:P01:74:OPFXZZZZ"  label="Particle-bound sedimentation flux of biogenic silica {opal} per unit time per unit area of the water body"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO3F"  label="PART. CaCO3 FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:CCFXZZZZ"  label="Particle-bound sedimentation flux of calcium carbonate {CaCO3 CAS 471-34-1} per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:POCF"  label="PART. ORGANIC CARBON FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:OCFXCAXX"  label="Particle-bound sedimentation flux of carbon (organic) {organic_C CAS 7440-44-0} {POC} per unit time per unit area of the water body by sediment trapping, acidification and elemental analysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OMMF"  label="PART. ORGANIC MATTER FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:ORGFXAXX"  label="Particle-bound sedimentation flux of total organic matter per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PP1P"  label="PART. ORGANIC PHOSPHORUS (P)"    />
+      <broad>
+         <element  key="SDN:P01:74:OPHSVLPT"  label="Concentration of organic phosphorus {organic_P CAS 7723-14-0} {POP} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHTF"  label="PART. TOTAL CARBOHYDRATES FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:SFXCHYDR"  label="Particle-bound sedimentation flux of carbohydrates (total) per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TCCF"  label="PART. TOTAL CARBON FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:OCFXCZXX"  label="Particle-bound sedimentation flux of carbon {C CAS 7440-44-0} {&apos;POC&apos;} per unit time per unit area of the water body by sediment trapping and elemental analysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TNNF"  label="PART. TOTAL NITROGEN FLUX"    />
+      <broad>
+         <element  key="SDN:P01:74:TNFXCNXX"  label="Particle-bound sedimentation flux of nitrogen (total) {total_N} {&apos;PON&apos;} per unit time per unit area of the water body by sediment trapping and elemental analysis"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ETHP"  label="PARTICULATE 234 TH ACT. ERROR"    />
+      <exact>
+         <element  key="SDN:P01:74:E234THPX"  label="Activity combined uncertainty of thorium-234 {234Th CAS 15065-10-8} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TH4P"  label="PARTICULATE 234TH ACTIVTY"    />
+      <exact>
+         <element  key="SDN:P01:74:A234THPX"  label="Activity of thorium-234 {234Th CAS 15065-10-8} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PICP"  label="PARTICULATE INORGANIC CARBON"    />
+      <exact>
+         <element  key="SDN:P01:74:CINGZZZZ"  label="Concentration of inorganic carbon {inorganic_C CAS 7440-44-0} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PC1P"  label="PARTICULATE ORGANIC CARBON/POC"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP010"  label="Concentration of organic carbon {organic_C CAS 7440-44-0} {POC} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:POCP"  label="PARTICULATE ORGANIC CARBON/POC"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP010"  label="Concentration of organic carbon {organic_C CAS 7440-44-0} {POC} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PN1P"  label="PARTICULATE ORGANIC NITROGEN"    />
+      <exact>
+         <element  key="SDN:P01:74:NTOTZZZZ"  label="Concentration of total nitrogen {total_N} {PON} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PONP"  label="PARTICULATE ORGANIC NITROGEN"    />
+      <exact>
+         <element  key="SDN:P01:74:NTOTZZZZ"  label="Concentration of total nitrogen {total_N} {PON} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLCP"  label="PARTICULATE ORGANIC SILICA(SI)"    />
+      <broad>
+         <element  key="SDN:P01:74:OPALWCZZ"  label="Concentration of biogenic silica {BSi opal} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPBF"  label="PB FLUX IN SETTLING PARTICLES"    />
+      <exact>
+         <element  key="SDN:P01:74:SFXPBZZZ"  label="Particle-bound sedimentation flux of lead {Pb CAS 7439-92-1} per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PERP"  label="PERIDININE"    />
+      <exact>
+         <element  key="SDN:P01:74:PERDXXXX"  label="Concentration of peridinin {CAS 33281-81-1} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTZM"  label="PERIOD OF THE HIGHEST WAVE"    />
+      <exact>
+         <element  key="SDN:P01:74:GTHMXX01"  label="Period at maximum recorded height of waves {THmax} on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHPH"  label="PH"    />
+      <exact>
+         <element  key="SDN:P01:74:PHXXZZXX"  label="pH (unspecified scale) of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE6"  label="PHAEOPHYTIN &lt;3 MICRON"    />
+      <exact>
+         <element  key="SDN:P01:74:PHPTHPPB"  label="Concentration of phaeophytin {pheophytin} per unit volume of the water body [particulate GF/F-3um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE3"  label="PHAEOPHYTIN &gt;20 MICRON"    />
+      <exact>
+         <element  key="SDN:P01:74:PHPTHPPA"  label="Concentration of phaeophytin {pheophytin} per unit volume of the water body [particulate &gt;20um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE5"  label="PHAEOPHYTIN &gt;3 &lt;20 MICRON"    />
+      <exact>
+         <element  key="SDN:P01:74:PHPTHPPC"  label="Concentration of phaeophytin {pheophytin} per unit volume of the water body [particulate 3-20um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHTF"  label="PHAEOPIGMENTS VERTICAL FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:SFXPHAEO"  label="Particle-bound sedimentation flux of phaeopigments per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEP"  label="PHEOPHORBIDE A"    />
+      <exact>
+         <element  key="SDN:P01:74:PBAXXXP1"  label="Concentration of phaeophorbide-a {pheophorbide-a CAS 15664-29-6} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEA"  label="PHEOPHYTIN-A"    />
+      <exact>
+         <element  key="SDN:P01:74:PTAXZZXX"  label="Concentration of phaeophytin-a {pheophytin-a CAS 603-17-8} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEB"  label="PHEOPHYTIN-B"    />
+      <exact>
+         <element  key="SDN:P01:74:PHPBXXXX"  label="Concentration of phaeophytin-b {pheophytin-b CAS 3147-18-0} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEC"  label="PHEOPHYTIN-C"    />
+      <exact>
+         <element  key="SDN:P01:74:PHPCXXXX"  label="Concentration of phaeophytin-c per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE4"  label="PHEOPHYTINE / 10 MICRON FILTER"    />
+      <exact>
+         <element  key="SDN:P01:74:PHPT10ZZ"  label="Concentration of phaeophytin {pheophytin} per unit volume of the water body [particulate &gt;10um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHE2"  label="PHEOPHYTINE / 2 MICRON FILTER"    />
+      <exact>
+         <element  key="SDN:P01:74:PHPT02ZZ"  label="Concentration of phaeophytin {pheophytin} per unit volume of the water body [particulate &gt;2um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHOS"  label="PHOSPHATE (PO4-P) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:PHOSZZXX"  label="Concentration of phosphate {PO43- CAS 14265-44-2} per unit volume of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHOW"  label="PHOSPHATE (PO4-P) CONTENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MDMAP906"  label="Concentration of phosphate {PO43- CAS 14265-44-2} per unit mass of the water body [unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHOP"  label="PHOSPHATE IN SEDIMT PORE WATER"    />
+      <narrow>
+         <element  key="SDN:P01:74:PHOSAADC"  label="Concentration of phosphate {PO43- CAS 14265-44-2} per unit volume of the sediment pore water [dissolved plus reactive particulate phase] by centrifugal extraction and colorimetric autoanalysis"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHSP"  label="PHOSPHORUS IN SUSP. MATT."    />
+      <exact>
+         <element  key="SDN:P01:74:MPPPP012"  label="Concentration of total phosphorus {total_P CAS 7723-14-0} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHCW"  label="PHYTOPLANKTON ABUNDANCE"    />
+      <exact>
+         <element  key="SDN:P01:74:PU00M00Z"  label="Abundance of phytoplankton per unit volume of the water body by optical microscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:HEAD"  label="PLAT. HEADING REL. TRUE NORTH"    />
+      <exact>
+         <element  key="SDN:P01:74:HEADCM01"  label="Orientation (horizontal relative to true north) of measurement device {heading}"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SO4O"  label="PORE WATER SULFATE"    />
+      <broad>
+         <element  key="SDN:P01:74:SPHTMAXX"  label="Concentration of sulfate {SO4(2-) sulphate CAS 14808-79-8} per unit volume of the sediment pore water [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PO63"  label="PORG&lt;63um in DRY W. SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0024"  label="Concentration of organic phosphorus {organic_P CAS 7723-14-0} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PETD"  label="POTENTIAL EVAPOTRANSPIRATION"    />
+      <exact>
+         <element  key="SDN:P01:74:POTEVAPT"  label="Potential evapotranspiration"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PSAL"  label="PRACTICAL SALINITY"    />
+      <exact>
+         <element  key="SDN:P01:74:PSLTZZ01"  label="Practical salinity of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PS02"  label="PRACTICAL SALINITY 2"    />
+      <exact>
+         <element  key="SDN:P01:74:PSALPR02"  label="Practical salinity of the water body by conductivity cell (second sensor) and computation using UNESCO 1983 algorithm"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PXAP"  label="PRASINOXANTHINE"    />
+      <exact>
+         <element  key="SDN:P01:74:PXAPXXXX"  label="Concentration of prasinoxanthin {CAS 94705-97-2} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRRD"  label="PRECIPITATION RATE"    />
+      <exact>
+         <element  key="SDN:P01:74:CPRRRG01"  label="Precipitation rate (liquid water equivalent) in the atmosphere by in-situ rain gauge"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRRT"  label="PRECIPITATION RATE"    />
+      <exact>
+         <element  key="SDN:P01:74:CPRRRG01"  label="Precipitation rate (liquid water equivalent) in the atmosphere by in-situ rain gauge"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRAB"  label="PRESENCE OR ABSENCE OF ENTITY"    />
+      <exact>
+         <element  key="SDN:P01:74:PRESABS1"  label="Presence or absence of biological entity specified elsewhere by using 0 or 1 binary classification"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PROT"  label="PROTEIN"    />
+      <exact>
+         <element  key="SDN:P01:74:PROTWCOL"  label="Concentration of protein per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTZF"  label="PROTOZOA PPC FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:PCFXMIPZ"  label="Sedimentation flux as carbon of Protozoa (ITIS: 43780: WoRMS 5) per unit time per unit area of the water body by sediment trapping and optical microscopy and abundance to carbon conversion"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PT63"  label="PTOT&lt;63um in DRY W. SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0041"  label="Concentration of total phosphorus {total_P CAS 7723-14-0} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MPBS"  label="Pb IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MPBSP012"  label="Concentration of lead {Pb CAS 7439-92-1} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PB45"  label="Pb&lt;0.4/0.45um IN WATER BODY"    />
+      <exact>
+         <element  key="SDN:P01:74:MTWD0046"  label="Concentration of lead {Pb CAS 7439-92-1} per unit volume of the water body [dissolved plus reactive particulate &lt;0.4/0.45um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PB63"  label="Pb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:CONPBS02"  label="Concentration of lead {Pb CAS 7439-92-1} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PB40"  label="Pb&gt;0.4/0.45um IN WATER BODY"    />
+      <exact>
+         <element  key="SDN:P01:74:PBXXAAP2"  label="Concentration of lead {Pb CAS 7439-92-1} per unit volume of the water body [particulate &gt;0.4/0.45um phase] by acid leaching of filter residue and atomic absorption spectroscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PENW"  label="Pentachlorobiphenyl in water"    />
+      <exact>
+         <element  key="SDN:P01:74:AI18GCD1"  label="Concentration of 2,3&apos;,4,4&apos;,5-pentachlorobiphenyl {PCB118 CAS 31508-00-6} per unit volume of the water body [dissolved plus reactive particulate &lt;GF/F phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTC1"  label="Pentachlorobiphenyl101 in sed."    />
+      <exact>
+         <element  key="SDN:P01:74:PCBSD022"  label="Concentration of 2,2&apos;,4,5,5&apos;-pentachlorobiphenyl {PCB101 CAS 37680-73-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTC2"  label="Pentachlorobiphenyl118 in sed."    />
+      <exact>
+         <element  key="SDN:P01:74:PCBSD026"  label="Concentration of 2,3&apos;,4,4&apos;,5-pentachlorobiphenyl {PCB118 CAS 31508-00-6} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PCPW"  label="Pentachlorophenol in water"    />
+      <exact>
+         <element  key="SDN:P01:74:PCPAFXX1"  label="Concentration of pentachlorophenol {CAS 87-86-5} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VM01"  label="Period (at first spectral moment) of waves on the water body"    />
+      <exact>
+         <element  key="SDN:P01:74:GTZAM1ZZ"  label="Period at first spectral moment of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHAS"  label="Phaeopigments in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:SPHPFLT1"  label="Concentration of phaeopigments {pheopigments} per unit dry weight of sediment by acetone extraction and fluorometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHES"  label="Phenanthrene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:HDCCZHAN"  label="Concentration of phenanthrene {CAS 85-01-8} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHEW"  label="Phenanthrene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC16"  label="Concentration of phenanthrene {CAS 85-01-8} per unit volume of the water body [dissolved plus reactive particulate phase] by gas chromatography-mass spectrometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHSS"  label="Phosphate in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:ISMJUN05"  label="Concentration of phosphate {PO43- CAS 14265-44-2} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by centrifugal extraction, filtration and colorimetric autoanalysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRSX"  label="Pr IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0031"  label="Concentration of praseodymium {Pr CAS 7440-10-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PR63"  label="Pr&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0009"  label="Concentration of praseodymium {Pr CAS 7440-10-0} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PYRS"  label="Pyrene in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:HDCCZYRN"  label="Concentration of pyrene {CAS 129-00-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PYRW"  label="Pyrene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:CPAHWC02"  label="Concentration of pyrene {CAS 129-00-0} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RDVA"  label="RADIAL SEAWATER VELOCITY"    />
+      <exact>
+         <element  key="SDN:P01:74:LCSAWVRD"  label="Speed of water current (Eulerian measurement) in the water body by directional range-gated radar"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RNGE"  label="RANGE AWAY FROM INSTRUMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RIFNAX01"  label="Range (from fixed reference point) by unspecified GPS system"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TR10"  label="RED LIGHT TRANSMISSION 10CM"    />
+      <exact>
+         <element  key="SDN:P01:74:POPTSR01"  label="Transmittance (red light wavelength) per 10cm of the water body by 10cm path length red light transmissometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TR25"  label="RED LIGHT TRANSMISSION 25CM"    />
+      <exact>
+         <element  key="SDN:P01:74:POPTDR01"  label="Transmittance (red light wavelength) per 25cm of the water body by 25cm path length red light transmissometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:REDS"  label="REDOX POTENTIAL"    />
+      <exact>
+         <element  key="SDN:P01:74:RPOTPRTX"  label="Redox potential in the sediment by redox electrode"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RELH"  label="RELATIVE HUMIDITY"    />
+      <exact>
+         <element  key="SDN:P01:74:CRELZZ01"  label="Relative humidity of the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLVR"  label="RESIDUAL (OBS-PRED SEA LEVEL)"    />
+      <exact>
+         <element  key="SDN:P01:74:ASLVR101"  label="Surface elevation residual of the water body by subtraction of predicted value (unspecified source) from observed value"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RVFL"  label="RIVER FLOW RATE"    />
+      <exact>
+         <element  key="SDN:P01:74:RFDSCH01"  label="Riverine discharge of water"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MRBS"  label="Rb IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MRBSP012"  label="Concentration of rubidium {Rb CAS 7440-17-7} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RB63"  label="Rb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED11"  label="Concentration of rubidium {Rb CAS 7440-17-7} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SSXX"  label="S IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0040"  label="Concentration of sulfur {sulphur S CAS 7704-34-9} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSSP"  label="S IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MSSPP012"  label="Concentration of sulfur {sulphur S CAS 7704-34-9} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SSAL"  label="SALINITY (PRE-1978 DEFN)"    />
+      <exact>
+         <element  key="SDN:P01:74:ODSDM021"  label="Salinity of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SACC"  label="SALINITY ACCURACY"    />
+      <exact>
+         <element  key="SDN:P01:74:SALINACC"  label="Accuracy of salinity in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VOLF"  label="SAMPLE VOLUME BY FLOW METER"    />
+      <exact>
+         <element  key="SDN:P01:74:VOLFFMXX"  label="Volume of sample (filtered) from the water body by flow meter"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SAND"  label="SAND IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:SANDZZZZ"  label="Proportion of particles (sand size-fraction) in sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PRES"  label="SEA PRESSURE sea surface=0"    />
+      <narrow>
+         <element  key="SDN:P01:74:PRESPR01"  label="Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE01"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE02"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE03"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE04"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE05"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE06"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE07"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE08"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE09"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE10"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE11"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TE12"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TEMP"  label="SEA TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:TEMPPR01"  label="Temperature of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SECC"  label="SECCHI DISK DEPTH"    />
+      <exact>
+         <element  key="SDN:P01:74:SECCSDNX"  label="Visibility in the water body by Secchi disk"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:AMIS"  label="SEDIMENT AMINO-ACIDS"    />
+      <exact>
+         <element  key="SDN:P01:74:AMISP012"  label="Concentration of amino acids per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SIOS"  label="SEDIMENT BIOGENIC SiO2"    />
+      <broad>
+         <element  key="SDN:P01:74:OPCNSEDZ"  label="Concentration of biogenic silica {BSi opal} per unit dry weight of sediment"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHTS"  label="SEDIMENT CARBOHYDRATES"    />
+      <broad>
+         <element  key="SDN:P01:74:SEDCHYDX"  label="Concentration of carbohydrates (total) per unit dry weight of sediment"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CO3S"  label="SEDIMENT CARBONATES"    />
+      <broad>
+         <element  key="SDN:P01:74:CALCXXXX"  label="Concentration of carbonate {CO32- CAS 3812-32-6} per unit dry weight of sediment"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:LIPS"  label="SEDIMENT LIPIDS"    />
+      <exact>
+         <element  key="SDN:P01:74:LIPIDSED"  label="Concentration of lipids per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHNS"  label="SEDIMENT PHENOLS"    />
+      <exact>
+         <element  key="SDN:P01:74:PHENLSED"  label="Concentration of phenols per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TCCS"  label="SEDIMENT TOTAL CARBON"    />
+      <broad>
+         <element  key="SDN:P01:74:TCCNXXXX"  label="Concentration of total carbon {total_C CAS 7440-44-0} per unit dry weight of sediment"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TNNS"  label="SEDIMENT TOTAL NITROGEN"    />
+      <broad>
+         <element  key="SDN:P01:74:TNCNCNXT"  label="Concentration of organic nitrogen {organic_N} per unit dry weight of sediment by elemental analysis"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TOCS"  label="SEDIMENT TOTAL ORGANIC CARBON"    />
+      <broad>
+         <element  key="SDN:P01:74:OCCNXXXX"  label="Concentration of organic carbon {organic_C CAS 7440-44-0} per unit dry weight of sediment"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SINC"  label="SHORT-WAVE INCOMING RADIATION"    />
+      <exact>
+         <element  key="SDN:P01:74:CSLRZZXX"  label="Downwelling vector irradiance as energy of electromagnetic radiation (solar wavelengths) in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SAMA"  label="SIGNAL RETURN AMPLITUDE"    />
+      <exact>
+         <element  key="SDN:P01:74:ASAMACMX"  label="Signal return amplitude from the water body by in-situ acoustic current meter"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTDH"  label="SIGNIFICANT WAVE HEIGHT"    />
+      <exact>
+         <element  key="SDN:P01:74:HSTKDP01"  label="Significant wave height of waves {Hs} on the water body by Tucker-Draper method"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLCA"  label="SILICATE (SIO4-SI) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:SLCAZZXX"  label="Concentration of silicate {SiO44- CAS 17181-37-2} per unit volume of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLCW"  label="SILICATE (SIO4-SI) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP012"  label="Concentration of silicate {SiO44- CAS 17181-37-2} per unit mass of the water body [unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SILT"  label="SILT IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:SILTZZZZ"  label="Proportion of particles (silt size-fraction) in sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SVEL"  label="SOUND VELOCITY"    />
+      <exact>
+         <element  key="SDN:P01:74:SVELXXXX"  label="Sound velocity in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VSMC"  label="SPECT. MOMENT(0,2) WAVE PERIOD"    />
+      <narrow>
+         <element  key="SDN:P01:74:GTZAMAZ2"  label="Period at second spectral moment of waves on the water body by waverider"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VHM0"  label="SPECTRAL SIGNIFICANT WAVE HEIGHT HM0"    />
+      <exact>
+         <element  key="SDN:P01:74:HMZEZZ01"  label="Spectral significant wave height of waves {Hm0} on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:CHSD"  label="STD deviation chlorophyll-a"    />
+      <exact>
+         <element  key="SDN:P01:74:SCLAFLT2"  label="Concentration standard deviation of chlorophyll-a {chl-a CAS 479-61-8} per unit dry weight of sediment by acetone extraction and fluorometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OCSD"  label="STD deviation organic carbon"    />
+      <exact>
+         <element  key="SDN:P01:74:OCSDCAXT"  label="Concentration standard deviation of organic carbon {organic_C CAS 7440-44-0} per unit dry weight of sediment by acidification and elemental analysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ONSD"  label="STD deviation organic nitrogen"    />
+      <exact>
+         <element  key="SDN:P01:74:TNSDCNXT"  label="Concentration standard deviation of organic nitrogen {organic_N} per unit dry weight of sediment by elemental analysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TCSD"  label="STD deviation total carbon"    />
+      <exact>
+         <element  key="SDN:P01:74:SDTCCNXT"  label="Concentration standard deviation of total carbon {total_C CAS 7440-44-0} per unit dry weight of sediment by no acidification and elemental analysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ABED"  label="SURFACE SAMPLED OR OBSERVED"    />
+      <exact>
+         <element  key="SDN:P01:74:AREABEDS"  label="Area of sample {sampled area} from the bed"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SWDR"  label="SWELL DIRECTION  REL TRUE N."    />
+      <exact>
+         <element  key="SDN:P01:74:GDSWZZ01"  label="Direction (from) of waves (swell) on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SWHT"  label="SWELL HEIGHT"    />
+      <exact>
+         <element  key="SDN:P01:74:GHSWZZ01"  label="Wave height of waves (swell) on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SWPR"  label="SWELL PERIOD"    />
+      <exact>
+         <element  key="SDN:P01:74:GSZZXXXX"  label="Period of waves (swell) on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SBSX"  label="Sb IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0032"  label="Concentration of antimony {Sb CAS 7440-36-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SB63"  label="Sb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0010"  label="Concentration of antimony {Sb CAS 7440-36-0} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSCS"  label="Sc IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MSCSP012"  label="Concentration of scandium {Sc CAS 7440-20-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SC63"  label="Sc&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0011"  label="Concentration of scandium {Sc CAS 7440-20-2} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSIP"  label="Si IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MSIPP012"  label="Concentration of silicon {Si CAS 7440-21-3} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSIS"  label="Si IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MSISP012"  label="Concentration of silicon {Si CAS 7440-21-3} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SI63"  label="Si&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0019"  label="Concentration of silicon {Si CAS 7440-21-3} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SLC1"  label="Silicate in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:ISMJUN03"  label="Concentration of silicate {SiO44- CAS 17181-37-2} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by centrifugal extraction, filtration and colorimetric autoanalysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SMSX"  label="Sm IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0033"  label="Concentration of samarium {Sm CAS 7440-19-9} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SM63"  label="Sm&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0012"  label="Concentration of samarium {Sm CAS 7440-19-9} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SNSX"  label="Sn IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:SEDSSNXX"  label="Concentration of tin {Sn CAS 7440-31-5} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SN63"  label="Sn&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED12"  label="Concentration of tin {Sn CAS 7440-31-5} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MSRS"  label="Sr IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MSRSP012"  label="Concentration of strontium {Sr CAS 7440-24-6} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:SR63"  label="Sr&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED05"  label="Concentration of strontium {Sr CAS 7440-24-6} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:STYW"  label="Styrene in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00118"  label="Concentration of styrene {CAS 100-42-5} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHTX"  label="TEMPERATURE OF PH MEASUREMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:PHTXPR01"  label="Temperature of pH determination"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZNTH"  label="TILT OF MEASUREMENT PLATFORM"    />
+      <exact>
+         <element  key="SDN:P01:74:ZNTHSS01"  label="Orientation (tilt) of measurement platform by inclinometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TIME"  label="TIME WITHIN DAY"    />
+      <exact>
+         <element  key="SDN:P01:74:AHMSAA01"  label="Time (UT as hh24miss)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TCO2"  label="TOTAL CARBON DIOXYD (CO2)"    />
+      <broad>
+         <element  key="SDN:P01:74:TCO2ZZXX"  label="Concentration of total inorganic carbon {TCO2 CAS 7440-44-0} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TDPW"  label="TOTAL DISSOLVED PHOSPHORUS"    />
+      <exact>
+         <element  key="SDN:P01:74:TPHSDSZZ"  label="Concentration of total phosphorus {total_P CAS 7723-14-0} {TDP} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TDSW"  label="TOTAL DISSOLVED SOLID"    />
+      <exact>
+         <element  key="SDN:P01:74:RBYJLY27"  label="Concentration of solids (total dissolved) {TDS} per unit volume of the water body [dissolved plus reactive particulate &lt;1.5um phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:RDIN"  label="TOTAL INCIDENT RADIATION"    />
+      <exact>
+         <element  key="SDN:P01:74:TLRDZZ01"  label="Downwelling vector irradiance as energy of electromagnetic radiation (longwave + shortwave) {total radiation} in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TICW"  label="TOTAL INORGANIC CARBON"    />
+      <exact>
+         <element  key="SDN:P01:74:TCO2MSXX"  label="Concentration of total inorganic carbon {TCO2 CAS 7440-44-0} per unit mass of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TSMF"  label="TOTAL MASS FLUX"    />
+      <exact>
+         <element  key="SDN:P01:74:MSFXDWXX"  label="Sedimentation mass flux of suspended particulate material {SPM} per unit time per unit area of the water body by sediment trapping and gravimetry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NTOT"  label="TOTAL NITROGEN (N) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:NTOTZZXX"  label="Concentration of total nitrogen {total_N} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TOCW"  label="TOTAL ORGANIC CARBON"    />
+      <broad>
+         <element  key="SDN:P01:74:CORGZZTL"  label="Concentration of organic carbon {organic_C CAS 7440-44-0} {TOC} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TPCW"  label="TOTAL PARTICULATE CARBON"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP011"  label="Concentration of total carbon {total_C CAS 7440-44-0} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:NT1P"  label="TOTAL PARTICULATE NITROGEN"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP013"  label="Concentration of total nitrogen {total_N} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTNP"  label="TOTAL PARTICULATE NITROGEN"    />
+      <broad>
+         <element  key="SDN:P01:74:MDMAP013"  label="Concentration of total nitrogen {total_N} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PT1P"  label="TOTAL PARTICULATE PHOSPHORUS"    />
+      <broad>
+         <element  key="SDN:P01:74:TPHSMSPT"  label="Concentration of total phosphorus {total_P CAS 7723-14-0} per unit mass of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PTPP"  label="TOTAL PARTICULATE PHOSPHORUS"    />
+      <broad>
+         <element  key="SDN:P01:74:TPHSVLPT"  label="Concentration of total phosphorus {total_P CAS 7723-14-0} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MAGP"  label="TOTAL PARTICULATE SILVER"    />
+      <exact>
+         <element  key="SDN:P01:74:AGPCXX01"  label="Concentration of silver {Ag CAS 7440-22-4} per unit mass of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TPHP"  label="TOTAL PHAEOPIGMENTS"    />
+      <exact>
+         <element  key="SDN:P01:74:PHAEZZXX"  label="Concentration of phaeopigments {pheopigments} per unit volume of the water body [particulate &gt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PHTP"  label="TOTAL PHEOPHYTINE"    />
+      <exact>
+         <element  key="SDN:P01:74:PHPTZZZZ"  label="Concentration of phaeophytin {pheophytin} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TPHS"  label="TOTAL PHOSPHORUS (P) CONTENT"    />
+      <broad>
+         <element  key="SDN:P01:74:TPHSZZXX"  label="Concentration of total phosphorus {total_P CAS 7723-14-0} {TP or TDP} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:EPMP"  label="TOTAL SUSP. PART. MATTER/ESTER"    />
+      <exact>
+         <element  key="SDN:P01:74:TSEDGVPZ"  label="Concentration of suspended particulate material {SPM} per unit volume of the water body [particulate &gt;unknown phase] by filtration, drying and gravimetry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:GPMP"  label="TOTAL SUSP. PART. MATTER/GLASS"    />
+      <exact>
+         <element  key="SDN:P01:74:TSEDGVP1"  label="Concentration of suspended particulate material {SPM} per unit volume of the water body [particulate &gt;GF/F phase] by filtration, drying and gravimetry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TSMP"  label="TOTAL SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:TSEDZZZZ"  label="Concentration of suspended particulate material {SPM} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR4"  label="TURBIDITY"    />
+      <exact>
+         <element  key="SDN:P01:74:TURBXXXX"  label="Turbidity of water in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR5"  label="TURBIDITY"    />
+      <exact>
+         <element  key="SDN:P01:74:TURBXXXX"  label="Turbidity of water in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TUR6"  label="TURBIDITY"    />
+      <exact>
+         <element  key="SDN:P01:74:TURBXXXX"  label="Turbidity of water in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TBSX"  label="Tb IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0034"  label="Concentration of terbium {Tb CAS 7440-27-9} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TB63"  label="Tb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0013"  label="Concentration of terbium {Tb CAS 7440-27-9} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TETW"  label="Tetrachlorobiphenyl in water"    />
+      <exact>
+         <element  key="SDN:P01:74:AO77GCD1"  label="Concentration of 3,3&apos;,4,4&apos;-tetrachlorobiphenyl {PCB77 CAS 32598-13-3} per unit volume of the water body [dissolved plus reactive particulate &lt;GF/F phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TETS"  label="Tetrachlorobiphenyl sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:PCBSD023"  label="Concentration of 2,2&apos;,5,5&apos;-tetrachlorobiphenyl {PCB52 CAS 35693-99-3} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MTHS"  label="Th IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MTHSP012"  label="Concentration of thorium {Th CAS 7440-29-1} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:OXDE"  label="The isotopic enrichment of 2H in the hydrogen of water molecules"    />
+      <exact>
+         <element  key="SDN:P01:74:D2HBCRDS"  label="Enrichment of deuterium in water molecules {2H in H2O CAS 7782-39-0} {delta D or delta(2)H} in the water body by cavity ring-down spectrometry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MTIP"  label="Ti IN SUSPENDED MATTER"    />
+      <exact>
+         <element  key="SDN:P01:74:MTIPP012"  label="Concentration of titanium {Ti CAS 7440-32-6} per unit dry weight of suspended particulate material"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MTIS"  label="Ti IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MTISP012"  label="Concentration of titanium {Ti CAS 7440-32-6} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TLSX"  label="Tl IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0035"  label="Concentration of thallium {Tl CAS 7440-28-0} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TL63"  label="Tl&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0014"  label="Concentration of thallium {Tl CAS 7440-28-0} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TMSX"  label="Tm IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0036"  label="Concentration of thulium {Tm CAS 7440-30-4} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TM63"  label="Tm&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0015"  label="Concentration of thulium {Tm CAS 7440-30-4} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TOTS"  label="Total carbon in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:TCCNCNXT"  label="Concentration of total carbon {total_C CAS 7440-44-0} per unit dry weight of sediment by no acidification and elemental analysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TICS"  label="Total inorganic carbon sedimen"    />
+      <exact>
+         <element  key="SDN:P01:74:TCO2CAPW"  label="Concentration of total inorganic carbon {TCO2 CAS 7440-44-0} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by centrifugal extraction, filtration, acidification and CO2 quantification by gas analyser"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IROS"  label="Total iron in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:FEXXISPW"  label="Concentration of total iron {total_Fe CAS 7439-89-6} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by in-situ pore water sampling, filtration, chelation, solvent extraction and atomic absorption spectroscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:IROW"  label="Total iron in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00033"  label="Concentration of total iron {total_Fe CAS 7439-89-6} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MANW"  label="Total manganese in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00150"  label="Concentration of total manganese {total_Mn CAS 7439-96-5} per unit volume of the water body [dissolved plus reactive particulate &lt;unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MERB"  label="Total mercury in biota"    />
+      <exact>
+         <element  key="SDN:P01:74:D2930561"  label="Concentration of total mercury {total_Hg CAS 7439-97-6} per unit dry weight of biota {Mytilus galloprovincialis (ITIS: 79456: WoRMS 140481) [Subcomponent: flesh]}"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MERW"  label="Total mercury in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:HGUFWC02"  label="Concentration of total mercury {total_Hg CAS 7439-97-6} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TNIS"  label="Total nitrogen in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:CONISE16"  label="Concentration of total nitrogen {total_N} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.2um phase] by centrifugal extraction, filtration, oxidation and colorimetric autoanalysis"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:PETW"  label="Total petroleum in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:TPHUFWAT"  label="Concentration of total petroleum hydrocarbons {TPH} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TRBB"  label="Tributyltin cation in biota"    />
+      <exact>
+         <element  key="SDN:P01:74:MMUSTTBT"  label="Concentration of tributyltin cation {tributylstannylium TBT+ CAS 36643-28-4} per unit wet weight of biota {Mytilus galloprovincialis (ITIS: 79456: WoRMS 140481) [Subcomponent: flesh]}"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:TRCS"  label="Trichlorobiphenyl in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:PCBSD032"  label="Concentration of 2,4,4&apos;-trichlorobiphenyl {PCB28 CAS 7012-37-5} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MUUS"  label="U IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MUUSP012"  label="Concentration of uranium {U CAS 7440-61-1} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:U63X"  label="U&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED14"  label="Concentration of uranium {U CAS 7440-61-1} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:UVCT"  label="UPWARD CURRENT VELOCITY"    />
+      <exact>
+         <element  key="SDN:P01:74:LRZAZZZZ"  label="Upward velocity of water current in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:URAW"  label="URANIUM IN WATER BODY"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00035"  label="Concentration of uranium {U CAS 7440-61-1} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:UREA"  label="UREA"    />
+      <exact>
+         <element  key="SDN:P01:74:UREAZZZZ"  label="Concentration of urea {CAS 57-13-6} per unit volume of the water body [unknown phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MVVS"  label="V IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MVVSP012"  label="Concentration of vanadium {V CAS 7440-62-2} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:V63X"  label="V&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED02"  label="Concentration of vanadium {V CAS 7440-62-2} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VERR"  label="VELOCITY ERROR"    />
+      <exact>
+         <element  key="SDN:P01:74:ERRVADCP"  label="RMS error velocity by acoustic doppler current profiler (ADCP)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VCSP"  label="VERTICAL CURRENT SPEED"    />
+      <exact>
+         <element  key="SDN:P01:74:LRZAZZZZ"  label="Upward velocity of water current in the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VERT"  label="VERTICAL DISPLACEMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HEAVZZZZ"  label="Vertical displacement {heave}"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VIOW"  label="VIOLAXANTHIN"    />
+      <exact>
+         <element  key="SDN:P01:74:VILXHPP1"  label="Concentration of violaxanthin {CAS 126-29-4} per unit volume of the water body [particulate &gt;GF/F phase] by filtration, acetone extraction and high performance liquid chromatography (HPLC)"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VIAW"  label="VIRUS ABUNDANCE IN SEA WATER"    />
+      <exact>
+         <element  key="SDN:P01:74:VIRUXXXX"  label="Abundance of Virus per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VOCP"  label="VOLUME CONC. OF PARTICLES"    />
+      <exact>
+         <element  key="SDN:P01:74:TSEDBVOL"  label="Concentration of suspended particulate material per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VSAM"  label="VOLUME SAMPLED OF WATER BODY"    />
+      <exact>
+         <element  key="SDN:P01:74:VOLWBSMP"  label="Volume of sample from the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VANW"  label="Vanadium in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00042"  label="Concentration of vanadium {V CAS 7440-62-2} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WO63"  label="W&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0016"  label="Concentration of tungsten {W CAS 7440-33-7} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:H2OS"  label="WATER CONTENT"    />
+      <exact>
+         <element  key="SDN:P01:74:WCDRDRXX"  label="Concentration of water {H2O CAS 7732-18-5} per unit dry weight of sediment by drying and gravimetry"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VDIR"  label="WAVE DIRECTION REL. TRUE NORTH"    />
+      <exact>
+         <element  key="SDN:P01:74:GWDRZZ01"  label="Direction (from) of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VTPK"  label="WAVE PEAK PERIOD"    />
+      <exact>
+         <element  key="SDN:P01:74:GTPKZZ01"  label="Period at spectral maximum of waves {peak period Tp} on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VEPK"  label="WAVE SPECTRUM PEAK ENERGY"    />
+      <exact>
+         <element  key="SDN:P01:74:GEPKZZ01"  label="Highest energy value in spectrum of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:VPED"  label="WAVE SPECTRUM PEAK ENERGY DIR."    />
+      <exact>
+         <element  key="SDN:P01:74:GPEDZZ01"  label="Direction (from) at spectral maximum mean of waves on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WETT"  label="WET BULB TEMPERATURE"    />
+      <exact>
+         <element  key="SDN:P01:74:CWETZZ01"  label="Wet bulb temperature of the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WDIR"  label="WIND DIRECTION REL. TRUE NORTH"    />
+      <exact>
+         <element  key="SDN:P01:74:EWDAZZ01"  label="Direction (from) of wind relative to True North {wind direction} in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WMSP"  label="WIND SPEED - MAX AVER PER 2 MN"    />
+      <exact>
+         <element  key="SDN:P01:74:EWSTMX01"  label="Speed 2-minute maximum of wind {wind speed} in the atmosphere by in-situ anemometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSPE"  label="WIND SPEED EASTWARD COMPONENT"    />
+      <exact>
+         <element  key="SDN:P01:74:ESEWZZXX"  label="Eastward velocity of wind in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSPN"  label="WIND SPEED NORTHWARD COMPONENT"    />
+      <exact>
+         <element  key="SDN:P01:74:ESNSZZXX"  label="Northward velocity of wind in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSPU"  label="WIND SPEED UPWARD COMPONENT"    />
+      <exact>
+         <element  key="SDN:P01:74:ESZAZZ01"  label="Upward velocity of airflow in the atmosphere"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSTE"  label="WIND STRESS EAST COMPONENT"    />
+      <exact>
+         <element  key="SDN:P01:74:EWSTRRXX"  label="Eastward wind stress on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:WSTN"  label="WIND STRESS NORTH COMPONENT"    />
+      <exact>
+         <element  key="SDN:P01:74:NWSTRRXX"  label="Northward wind stress on the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MYYS"  label="Y IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MYYSP012"  label="Concentration of yttrium {Y CAS 7440-65-5} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:Y63X"  label="Y&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED15"  label="Concentration of yttrium {Y CAS 7440-65-5} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:YEAR"  label="YEAR"    />
+      <exact>
+         <element  key="SDN:P01:74:YEARXXXX"  label="Year since birth of Christ"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:YBSX"  label="Yb IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0037"  label="Concentration of ytterbium {Yb CAS 7440-64-4} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:YB63"  label="Yb&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0017"  label="Concentration of ytterbium {Yb CAS 7440-64-4} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZXAP"  label="ZEAXANTHINE"    />
+      <exact>
+         <element  key="SDN:P01:74:ZEAXXXXX"  label="Concentration of zeaxanthin {CAS 144-68-3} per unit volume of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MZNF"  label="ZN FLUX IN SETTLING PARTICLES"    />
+      <exact>
+         <element  key="SDN:P01:74:SFXZNZZZ"  label="Particle-bound sedimentation flux of zinc {Zn CAS 7440-66-6} per unit time per unit area of the water body"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZINS"  label="Zinc in sediment"    />
+      <exact>
+         <element  key="SDN:P01:74:ZNXXISPW"  label="Concentration of zinc {Zn CAS 7440-66-6} per unit volume of the sediment pore water [dissolved plus reactive particulate &lt;0.4/0.45um phase] by in-situ pore water sampling, filtration, chelation, solvent extraction and atomic absorption spectroscopy"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZINW"  label="Zinc in water body"    />
+      <exact>
+         <element  key="SDN:P01:74:RWS00028"  label="Concentration of zinc {Zn CAS 7440-66-6} per unit volume of the water body [dissolved plus reactive particulate phase]"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MZNS"  label="Zn IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MZNSP012"  label="Concentration of zinc {Zn CAS 7440-66-6} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZN63"  label="Zn&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:RWSSED32"  label="Concentration of zinc {Zn CAS 7440-66-6} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:MZRS"  label="Zr IN THE SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:MZRSP012"  label="Concentration of zirconium {Zr CAS 7440-67-7} per unit dry weight of sediment"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:74:ZR63"  label="Zr&lt;63um IN DRY WEIGHT SEDIMENT"    />
+      <exact>
+         <element  key="SDN:P01:74:HCMR0018"  label="Concentration of zirconium {Zr CAS 7440-67-7} per unit dry weight of sediment &lt;63um"    />
+      </exact>
+   </match>
+</mapping>

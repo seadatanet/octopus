@@ -7,7 +7,8 @@ public enum Conversion {
 	ODV_SDN_TO_CFPOINT("ODV to CFPoint"),
 	CFPOINT_TO_ODV_SDN("CFPoint to ODV"),
 	MGD_TO_ODV("MGD to ODV"),
-	EGO_TO_CFPOINT("EGO to CFPoint");
+	EGO_TO_CFPOINT("EGO to CFPoint"),
+	ADCP_TO_CFPOINT("ADCP to CFPoint");
 
 	String name;
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+   <vocabulary list="SDN:P09:75:"  version="75"  date="2023-09-29T02:00:03.000"  title="MEDATLAS Parameter Usage Vocabulary"   />
+   <mapped>
+      <vocabulary list="SDN:P09:75:"  version="75"  date="2023-09-29T02:00:03.000"  title="MEDATLAS Parameter Usage Vocabulary"   />
+   </mapped>
+   <match>
+      <element  key="SDN:P09:75:TUR1"  label="LIGHT DIFFUSION COEFFICIENT"    />
+      <exact>
+         <element  key="SDN:P09:75:TUR2"  label="LIGHT ATTENUATION COEFFICIENT"    />
+         <element  key="SDN:P09:75:TUR2"  label="LIGHT ATTENUATION COEFFICIENT"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P09:75:TCO2"  label="TOTAL CARBON DIOXYD (CO2)"    />
+      <exact>
+         <element  key="SDN:P09:75:CO2W"  label="DISSOLVED CARBON DIOXYD (CO2)"    />
+         <element  key="SDN:P09:75:CO2W"  label="DISSOLVED CARBON DIOXYD (CO2)"    />
+      </exact>
+   </match>
+</mapping>

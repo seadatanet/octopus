@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+   <vocabulary list="SDN:L05:89:"  version="89"  date="2023-09-01T02:00:07.000"  title="SeaDataNet device categories"   />
+   <mapped>
+      <vocabulary list="SDN:L05:89:"  version="89"  date="2023-09-01T02:00:07.000"  title="SeaDataNet device categories"   />
+   </mapped>
+   <match>
+      <element  key="SDN:L05:89:364"  label="1000 Hz top-bandwidth multi-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:154"  label="multi-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:363"  label="1000 Hz top-bandwidth single-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:153"  label="single-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:365"  label="2000 Hz top-bandwidth multi-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:154"  label="multi-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:372"  label="2000 Hz top-bandwidth single-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:153"  label="single-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:375"  label="250 Hz top-bandwidth multi-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:154"  label="multi-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:362"  label="250 Hz top-bandwidth single-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:153"  label="single-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:374"  label="60 Hz top-bandwidth multi-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:154"  label="multi-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:371"  label="60 Hz top-bandwidth single-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:153"  label="single-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:366"  label="&gt;2000 Hz top-bandwidth multi-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:154"  label="multi-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:373"  label="&gt;2000 Hz top-bandwidth single-channel seismic reflection systems"    />
+      <broad>
+         <element  key="SDN:L05:89:153"  label="single-channel seismic reflection systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:POS16"  label="Argos GPS-localised transmitters"    />
+      <broad>
+         <element  key="SDN:L05:89:301"  label="satellite positioning systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:POS17"  label="Argos doppler-localised transmitters"    />
+      <broad>
+         <element  key="SDN:L05:89:301"  label="satellite positioning systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:314"  label="Atmospheric chemistry remote sensors"    />
+      <exact>
+         <element  key="SDN:L05:89:309"  label="terrestrial radiometers"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:POS04"  label="Differential Global Positioning System receivers"    />
+      <broad>
+         <element  key="SDN:L05:89:301"  label="satellite positioning systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:389"  label="Expendable bathythermographs"    />
+      <broad>
+         <element  key="SDN:L05:89:132"  label="bathythermographs"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:POS02"  label="Global Navigation Satellite System receivers"    />
+      <broad>
+         <element  key="SDN:L05:89:301"  label="satellite positioning systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:390"  label="Mechanical bathythermographs"    />
+      <broad>
+         <element  key="SDN:L05:89:132"  label="bathythermographs"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:POS03"  label="NAVSTAR Global Positioning System receivers"    />
+      <broad>
+         <element  key="SDN:L05:89:301"  label="satellite positioning systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:POS18"  label="Navy Navigation Satellite System receivers"    />
+      <broad>
+         <element  key="SDN:L05:89:301"  label="satellite positioning systems"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:315"  label="Sea ice remote sensors"    />
+      <exact>
+         <element  key="SDN:L05:89:309"  label="terrestrial radiometers"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:LAB17"  label="accelerator mass spectrometers"    />
+      <broad>
+         <element  key="SDN:L05:89:LAB16"  label="mass spectrometers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:64"  label="active fishing gear"    />
+      <narrow>
+         <element  key="SDN:L05:89:62"  label="beam trawls"    />
+         <element  key="SDN:L05:89:23"  label="pelagic trawl nets"    />
+         <element  key="SDN:L05:89:61"  label="demersal trawl nets"    />
+         <element  key="SDN:L05:89:24"  label="benthos samplers"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:132"  label="bathythermographs"    />
+      <narrow>
+         <element  key="SDN:L05:89:389"  label="Expendable bathythermographs"    />
+         <element  key="SDN:L05:89:390"  label="Mechanical bathythermographs"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:62"  label="beam trawls"    />
+      <broad>
+         <element  key="SDN:L05:89:24"  label="benthos samplers"    />
+         <element  key="SDN:L05:89:64"  label="active fishing gear"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:24"  label="benthos samplers"    />
+      <broad>
+         <element  key="SDN:L05:89:64"  label="active fishing gear"    />
+      </broad>
+      <narrow>
+         <element  key="SDN:L05:89:61"  label="demersal trawl nets"    />
+         <element  key="SDN:L05:89:62"  label="beam trawls"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:311"  label="cameras"    />
+      <narrow>
+         <element  key="SDN:L05:89:378"  label="sediment profile imagers"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:61"  label="demersal trawl nets"    />
+      <broad>
+         <element  key="SDN:L05:89:24"  label="benthos samplers"    />
+         <element  key="SDN:L05:89:64"  label="active fishing gear"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:ERTQ"  label="earthquake"    />
+      <broad>
+         <element  key="SDN:L05:89:NATS"  label="natural source"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:70"  label="fish aggregating devices"    />
+      <broad>
+         <element  key="SDN:L05:89:63"  label="passive fishing gear"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:LAB19"  label="gas chromatograph mass spectrometers"    />
+      <broad>
+         <element  key="SDN:L05:89:LAB16"  label="mass spectrometers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:65"  label="gill nets"    />
+      <broad>
+         <element  key="SDN:L05:89:63"  label="passive fishing gear"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:LAB15"  label="inductively-coupled plasma mass spectrometers"    />
+      <broad>
+         <element  key="SDN:L05:89:LAB16"  label="mass spectrometers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:LAB48"  label="isotope ratio mass spectrometers"    />
+      <broad>
+         <element  key="SDN:L05:89:LAB16"  label="mass spectrometers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:LAB41"  label="laboratory cameras"    />
+      <exact>
+         <element  key="SDN:L05:89:311"  label="cameras"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:LAB16"  label="mass spectrometers"    />
+      <narrow>
+         <element  key="SDN:L05:89:LAB15"  label="inductively-coupled plasma mass spectrometers"    />
+         <element  key="SDN:L05:89:LAB17"  label="accelerator mass spectrometers"    />
+         <element  key="SDN:L05:89:LAB19"  label="gas chromatograph mass spectrometers"    />
+         <element  key="SDN:L05:89:LAB46"  label="proton transfer reaction mass spectrometers"    />
+         <element  key="SDN:L05:89:LAB47"  label="thermal ionisation mass spectrometers"    />
+         <element  key="SDN:L05:89:LAB48"  label="isotope ratio mass spectrometers"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:154"  label="multi-channel seismic reflection systems"    />
+      <narrow>
+         <element  key="SDN:L05:89:374"  label="60 Hz top-bandwidth multi-channel seismic reflection systems"    />
+         <element  key="SDN:L05:89:375"  label="250 Hz top-bandwidth multi-channel seismic reflection systems"    />
+         <element  key="SDN:L05:89:364"  label="1000 Hz top-bandwidth multi-channel seismic reflection systems"    />
+         <element  key="SDN:L05:89:365"  label="2000 Hz top-bandwidth multi-channel seismic reflection systems"    />
+         <element  key="SDN:L05:89:366"  label="&gt;2000 Hz top-bandwidth multi-channel seismic reflection systems"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:NATS"  label="natural source"    />
+      <narrow>
+         <element  key="SDN:L05:89:ERTQ"  label="earthquake"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:63"  label="passive fishing gear"    />
+      <narrow>
+         <element  key="SDN:L05:89:70"  label="fish aggregating devices"    />
+         <element  key="SDN:L05:89:65"  label="gill nets"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:23"  label="pelagic trawl nets"    />
+      <broad>
+         <element  key="SDN:L05:89:64"  label="active fishing gear"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:LAB46"  label="proton transfer reaction mass spectrometers"    />
+      <broad>
+         <element  key="SDN:L05:89:LAB16"  label="mass spectrometers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:72"  label="queen scallop dredges"    />
+      <exact>
+         <element  key="SDN:L05:89:24"  label="benthos samplers"    />
+      </exact>
+      <broad>
+         <element  key="SDN:L05:89:64"  label="active fishing gear"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:301"  label="satellite positioning systems"    />
+      <narrow>
+         <element  key="SDN:L05:89:POS03"  label="NAVSTAR Global Positioning System receivers"    />
+         <element  key="SDN:L05:89:POS02"  label="Global Navigation Satellite System receivers"    />
+         <element  key="SDN:L05:89:POS17"  label="Argos doppler-localised transmitters"    />
+         <element  key="SDN:L05:89:POS16"  label="Argos GPS-localised transmitters"    />
+         <element  key="SDN:L05:89:POS18"  label="Navy Navigation Satellite System receivers"    />
+         <element  key="SDN:L05:89:POS04"  label="Differential Global Positioning System receivers"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:71"  label="scallop dredges"    />
+      <exact>
+         <element  key="SDN:L05:89:24"  label="benthos samplers"    />
+      </exact>
+      <broad>
+         <element  key="SDN:L05:89:64"  label="active fishing gear"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:378"  label="sediment profile imagers"    />
+      <broad>
+         <element  key="SDN:L05:89:311"  label="cameras"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:153"  label="single-channel seismic reflection systems"    />
+      <narrow>
+         <element  key="SDN:L05:89:371"  label="60 Hz top-bandwidth single-channel seismic reflection systems"    />
+         <element  key="SDN:L05:89:362"  label="250 Hz top-bandwidth single-channel seismic reflection systems"    />
+         <element  key="SDN:L05:89:363"  label="1000 Hz top-bandwidth single-channel seismic reflection systems"    />
+         <element  key="SDN:L05:89:372"  label="2000 Hz top-bandwidth single-channel seismic reflection systems"    />
+         <element  key="SDN:L05:89:373"  label="&gt;2000 Hz top-bandwidth single-channel seismic reflection systems"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:LAB47"  label="thermal ionisation mass spectrometers"    />
+      <broad>
+         <element  key="SDN:L05:89:LAB16"  label="mass spectrometers"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L05:89:180"  label="underwater cameras"    />
+      <exact>
+         <element  key="SDN:L05:89:311"  label="cameras"    />
+      </exact>
+      <narrow>
+         <element  key="SDN:L05:89:378"  label="sediment profile imagers"    />
+      </narrow>
+   </match>
+</mapping>

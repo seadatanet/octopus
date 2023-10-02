@@ -19,6 +19,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
+import fr.ifremer.octopus.controller.checker.ADCPFormatChecker;
 import fr.ifremer.octopus.controller.checker.CFPointFormatChecker;
 import fr.ifremer.octopus.controller.checker.EGOGliderFormatChecker;
 import fr.ifremer.octopus.controller.checker.FormatChecker;
@@ -583,6 +584,16 @@ public abstract class AbstractController {
 									model.getOutputFormat().getName()));
 				}
 				break;
+			case CFPOINT_ADCP:
+				if (model.getOutputFormat().equals(Format.CFPOINT)) {
+					conversion = Conversion.ADCP_TO_CFPOINT;
+				} else {
+					throw new OctopusException(
+							MessageFormat.format(messages.getString("abstractcontroller.canNotConvertFromTo"),
+									model.getInputFormat().getName(),
+									model.getOutputFormat().getName()));
+				}
+				break;
 			default:
 				throw new OctopusException(
 						MessageFormat.format(messages.getString("abstractcontroller.conversionNotImplemented"),
@@ -790,18 +801,20 @@ public abstract class AbstractController {
 		switch (model.getInputFormat()) {
 		case MEDATLAS_SDN:
 		case MEDATLAS_NON_SDN:
-			checker= new MedatlasFormatChecker();
+			checker = new MedatlasFormatChecker();
 			break;
 		case ODV_SDN:
-			checker= new OdvFormatChecker();
+			checker = new OdvFormatChecker();
 			break;
 		case CFPOINT:
-		case CFPOINT_ADCP:
 		case CFPOINT_HFRADAR:
-			checker= new CFPointFormatChecker();
+			checker = new CFPointFormatChecker();
 			break;
 		case CFPOINT_EGOGLIDER:
-			checker= new EGOGliderFormatChecker();
+			checker = new EGOGliderFormatChecker();
+			break;
+		case CFPOINT_ADCP:
+			checker = new ADCPFormatChecker();
 			break;
 		default:
 			break;

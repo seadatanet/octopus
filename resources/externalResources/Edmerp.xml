@@ -2451,6 +2451,13 @@
     <Country>United Kingdom</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13526</Id>
+    <Title>Benthic biodiversity of seamounts in the southwest Indian Ocean</Title>
+    <Acronym />
+    <Coordinator>University of Oxford Department of Zoology</Coordinator>
+    <Country>United Kingdom</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12513</Id>
     <Title>Iodide in the ocean: distribution and impact on iodine flux and ozone loss</Title>
     <Acronym />
@@ -2483,13 +2490,6 @@
     <Title>Surface Mixed Layer at Submesoscales</Title>
     <Acronym>SMILES</Acronym>
     <Coordinator>University of Plymouth School of Marine Science and Engineering</Coordinator>
-    <Country>United Kingdom</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13526</Id>
-    <Title>Benthic biodiversity of seamounts in the southwest Indian Ocean</Title>
-    <Acronym />
-    <Coordinator>University of Oxford Department of Zoology</Coordinator>
     <Country>United Kingdom</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -3011,34 +3011,6 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12321</Id>
-    <Title>OCEANET</Title>
-    <Acronym>OCEANET</Acronym>
-    <Coordinator>Leibniz-Institute for Tropospheric Research</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12310</Id>
-    <Title>MarParCloud: Marine biogenic production, organic aerosols and maritime clouds: a process chain</Title>
-    <Acronym>MarParCloud</Acronym>
-    <Coordinator>Leibniz-Institute for Tropospheric Research</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11914</Id>
-    <Title>North Sea - Observation and Assessment of Habitats</Title>
-    <Acronym>NOAH</Acronym>
-    <Coordinator>Helmholtz-Zentrum Geesthacht, Centre for Materials and Coastal Research</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11802</Id>
-    <Title>Coastal Observation System for Northern and Arctic Seas</Title>
-    <Acronym>COSYNA</Acronym>
-    <Coordinator>Helmholtz-Zentrum Geesthacht, Centre for Materials and Coastal Research</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>13567</Id>
     <Title>The role of pelagic foodfalls in subsidizing deep-sea bottom communities in a changing ocean</Title>
     <Acronym>DeepC-Jelly</Acronym>
@@ -3235,6 +3207,34 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>12321</Id>
+    <Title>OCEANET</Title>
+    <Acronym>OCEANET</Acronym>
+    <Coordinator>Leibniz-Institute for Tropospheric Research</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12310</Id>
+    <Title>MarParCloud: Marine biogenic production, organic aerosols and maritime clouds: a process chain</Title>
+    <Acronym>MarParCloud</Acronym>
+    <Coordinator>Leibniz-Institute for Tropospheric Research</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11914</Id>
+    <Title>North Sea - Observation and Assessment of Habitats</Title>
+    <Acronym>NOAH</Acronym>
+    <Coordinator>Helmholtz-Zentrum Geesthacht, Centre for Materials and Coastal Research</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11802</Id>
+    <Title>Coastal Observation System for Northern and Arctic Seas</Title>
+    <Acronym>COSYNA</Acronym>
+    <Coordinator>Helmholtz-Zentrum Geesthacht, Centre for Materials and Coastal Research</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11903</Id>
     <Title>Transports and variability-driving mechanisms in Flemish Pass at the western boundary of the Subpolar North Atlantic</Title>
     <Acronym>FEPVAR</Acronym>
@@ -3319,108 +3319,31 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12019</Id>
-    <Title>Offshore Wind Research Platform No 1</Title>
-    <Acronym>FINO 1</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Id>12522</Id>
+    <Title>COnversion of a Nuisance to a Resource and Asset (CONTRA)</Title>
+    <Acronym>CONTRA</Acronym>
+    <Coordinator>University of Rostock, Institute of Biosciences</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12020</Id>
-    <Title>FINO 2 - Aufbau und Betrieb einer Messplattform zur Erforschung der westlichen Ostsee</Title>
-    <Acronym>FINO 2</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Id>11997</Id>
+    <Title>Baltic Coastal system analysis and status evaluation</Title>
+    <Acronym>BACOSA</Acronym>
+    <Coordinator>University of Rostock, Institute of Biosciences</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12021</Id>
-    <Title>FINO3 - research platform in the North Sea and the Baltic No. 3</Title>
-    <Acronym>FINO 3</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Id>12313</Id>
+    <Title>Magmatic evolution of island arc and backarc crust and implications for hydrothermal venting in the NE Tonga arc</Title>
+    <Acronym>TONGARIFT</Acronym>
+    <Coordinator>Friedrich-Alexander-University Erlangen-Nürnberg</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13633</Id>
-    <Title>FINO - researchplatforms in North- and Baltic Sea</Title>
-    <Acronym>FINO5</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13634</Id>
-    <Title>FINO6 - research platforms in North- and Baltic Sea</Title>
-    <Acronym>FINO6</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13635</Id>
-    <Title>General data on the OpenRAVE project</Title>
-    <Acronym>OpenRave</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12088</Id>
-    <Title>NSSS – BSH North Sea Summer Survey</Title>
-    <Acronym>NSSS</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12319</Id>
-    <Title>ARGO-Germany</Title>
-    <Acronym>ARGO-Germany</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12218</Id>
-    <Title>Sediment dynamics in the North- and Baltic Sea - delimitation of sea-floor-types considering the subsurface structure and the influence of benthic organisms on</Title>
-    <Acronym>SEDINO</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13704</Id>
-    <Title>Freak Waves II - Investigations on the occurrence of extreme waves in the North Sea</Title>
-    <Acronym>Freak Waves II</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13703</Id>
-    <Title>Area-wide high-resolution sediment mapping of the Exclusive Economic Zone (EEZ) of the North Sea and Baltic Sea (Phase 4)</Title>
-    <Acronym>SedAWZ-IV</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12499</Id>
-    <Title>Area-wide high-resolution sediment mapping of the Exclusive Economic Zone (EEZ) of the North Sea and Baltic Sea (Phase 3)</Title>
-    <Acronym>SedAWZ-III</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13628</Id>
-    <Title>Chemical emissions from offshore wind farms – Potential impacts on the marine environment and their evaluation</Title>
-    <Acronym>OffChEm</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13657</Id>
-    <Title>Pilottest  of an innovative Monitoring focussing on Eutrophication and Pelagic habitatsnd pelagic habitats in the North Sea</Title>
-    <Acronym>iMonEP</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>8148</Id>
-    <Title>Sea Surface Temperature in the Baltic</Title>
-    <Acronym>SST</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Id>7625</Id>
+    <Title>KM3Net - Design study for a Deep Sea Facility in the Mediterranean for Neutrino Astronomy and Associated Sciences</Title>
+    <Acronym>KM3Net</Acronym>
+    <Coordinator>Friedrich-Alexander-University Erlangen-Nürnberg</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -3445,24 +3368,66 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12522</Id>
-    <Title>COnversion of a Nuisance to a Resource and Asset (CONTRA)</Title>
-    <Acronym>CONTRA</Acronym>
-    <Coordinator>University of Rostock, Institute of Biosciences</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11997</Id>
-    <Title>Baltic Coastal system analysis and status evaluation</Title>
-    <Acronym>BACOSA</Acronym>
-    <Coordinator>University of Rostock, Institute of Biosciences</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>4270</Id>
     <Title>HUMBOLDT</Title>
     <Acronym>HUMBOLDT</Acronym>
     <Coordinator>Fraunhofer Institute for Computer Graphics</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11940</Id>
+    <Title>Geopotenzial Deutsche Nordsee</Title>
+    <Acronym>GPDN</Acronym>
+    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12010</Id>
+    <Title>Potenzialanalyse des Europäischen Nordmeeres und angrenzender Randmeere der Arktis</Title>
+    <Acronym>PANORAMA</Acronym>
+    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12073</Id>
+    <Title>PAGE FOUR: The passive and shear continental margin at Mozambique</Title>
+    <Acronym>SO231 PAGE FOUR</Acronym>
+    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12028</Id>
+    <Title>INDEX: Indian Ocean Exploration activities</Title>
+    <Acronym>INDEX</Acronym>
+    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12312</Id>
+    <Title>Manganese Nodule Exploration in Areas Licensed to Germany</Title>
+    <Acronym>MANGAN</Acronym>
+    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12344</Id>
+    <Title>Eco-technological solutions to remove micro-pollutants and micro-plastic from contaminated water</Title>
+    <Acronym>BONUS ECOMAP</Acronym>
+    <Coordinator>Institute of Geosciences , University of Kiel</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13631</Id>
+    <Title>Paleoceanography of the southern Tasman Sea and glacier history of the South Island, New Zealand, over the last glacial-interglacial cycles</Title>
+    <Acronym>PaläoTaNZ</Acronym>
+    <Coordinator>Carl von Ossietzky University of Oldenburg, Institute for Chemistry and Biology of the Marine Environment </Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11801</Id>
+    <Title>TRR 51 Roseobacter</Title>
+    <Acronym>TRR 51</Acronym>
+    <Coordinator>Carl von Ossietzky University of Oldenburg, Institute for Chemistry and Biology of the Marine Environment </Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -3676,17 +3641,115 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12313</Id>
-    <Title>Magmatic evolution of island arc and backarc crust and implications for hydrothermal venting in the NE Tonga arc</Title>
-    <Acronym>TONGARIFT</Acronym>
-    <Coordinator>Friedrich-Alexander-University Erlangen-Nürnberg</Coordinator>
+    <Id>12019</Id>
+    <Title>Offshore Wind Research Platform No 1</Title>
+    <Acronym>FINO 1</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7625</Id>
-    <Title>KM3Net - Design study for a Deep Sea Facility in the Mediterranean for Neutrino Astronomy and Associated Sciences</Title>
-    <Acronym>KM3Net</Acronym>
-    <Coordinator>Friedrich-Alexander-University Erlangen-Nürnberg</Coordinator>
+    <Id>12020</Id>
+    <Title>FINO 2 - Aufbau und Betrieb einer Messplattform zur Erforschung der westlichen Ostsee</Title>
+    <Acronym>FINO 2</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12021</Id>
+    <Title>FINO3 - research platform in the North Sea and the Baltic No. 3</Title>
+    <Acronym>FINO 3</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13633</Id>
+    <Title>FINO - researchplatforms in North- and Baltic Sea</Title>
+    <Acronym>FINO5</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13634</Id>
+    <Title>FINO6 - research platforms in North- and Baltic Sea</Title>
+    <Acronym>FINO6</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13635</Id>
+    <Title>General data on the OpenRAVE project</Title>
+    <Acronym>OpenRave</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12088</Id>
+    <Title>NSSS – BSH North Sea Summer Survey</Title>
+    <Acronym>NSSS</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12319</Id>
+    <Title>ARGO-Germany</Title>
+    <Acronym>ARGO-Germany</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12218</Id>
+    <Title>Sediment dynamics in the North- and Baltic Sea - delimitation of sea-floor-types considering the subsurface structure and the influence of benthic organisms on</Title>
+    <Acronym>SEDINO</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13704</Id>
+    <Title>Freak Waves II - Investigations on the occurrence of extreme waves in the North Sea</Title>
+    <Acronym>Freak Waves II</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13703</Id>
+    <Title>Area-wide high-resolution sediment mapping of the Exclusive Economic Zone (EEZ) of the North Sea and Baltic Sea (Phase 4)</Title>
+    <Acronym>SedAWZ-IV</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12499</Id>
+    <Title>Area-wide high-resolution sediment mapping of the Exclusive Economic Zone (EEZ) of the North Sea and Baltic Sea (Phase 3)</Title>
+    <Acronym>SedAWZ-III</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13628</Id>
+    <Title>Chemical emissions from offshore wind farms – Potential impacts on the marine environment and their evaluation</Title>
+    <Acronym>OffChEm</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13657</Id>
+    <Title>Pilottest  of an innovative Monitoring focussing on Eutrophication and Pelagic habitatsnd pelagic habitats in the North Sea</Title>
+    <Acronym>iMonEP</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>8148</Id>
+    <Title>Sea Surface Temperature in the Baltic</Title>
+    <Acronym>SST</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7738</Id>
+    <Title>Baltic Sea Information Motorways</Title>
+    <Acronym>BASIM</Acronym>
+    <Coordinator>Technology Centre Luebeck</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -3708,125 +3771,6 @@
     <Title>Spatial Planning in Coastal Zones</Title>
     <Acronym>PlanCoast</Acronym>
     <Coordinator>Ministry of Transport, Building and Regional Development Mecklenburg--Vorpommern</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7738</Id>
-    <Title>Baltic Sea Information Motorways</Title>
-    <Acronym>BASIM</Acronym>
-    <Coordinator>Technology Centre Luebeck</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11940</Id>
-    <Title>Geopotenzial Deutsche Nordsee</Title>
-    <Acronym>GPDN</Acronym>
-    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12010</Id>
-    <Title>Potenzialanalyse des Europäischen Nordmeeres und angrenzender Randmeere der Arktis</Title>
-    <Acronym>PANORAMA</Acronym>
-    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12073</Id>
-    <Title>PAGE FOUR: The passive and shear continental margin at Mozambique</Title>
-    <Acronym>SO231 PAGE FOUR</Acronym>
-    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12028</Id>
-    <Title>INDEX: Indian Ocean Exploration activities</Title>
-    <Acronym>INDEX</Acronym>
-    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12312</Id>
-    <Title>Manganese Nodule Exploration in Areas Licensed to Germany</Title>
-    <Acronym>MANGAN</Acronym>
-    <Coordinator>Federal Institute for Geosciences and Natural Resources , Hannover</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12344</Id>
-    <Title>Eco-technological solutions to remove micro-pollutants and micro-plastic from contaminated water</Title>
-    <Acronym>BONUS ECOMAP</Acronym>
-    <Coordinator>Institute of Geosciences , University of Kiel</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13631</Id>
-    <Title>Paleoceanography of the southern Tasman Sea and glacier history of the South Island, New Zealand, over the last glacial-interglacial cycles</Title>
-    <Acronym>PaläoTaNZ</Acronym>
-    <Coordinator>Carl von Ossietzky University of Oldenburg, Institute for Chemistry and Biology of the Marine Environment </Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11801</Id>
-    <Title>TRR 51 Roseobacter</Title>
-    <Acronym>TRR 51</Acronym>
-    <Coordinator>Carl von Ossietzky University of Oldenburg, Institute for Chemistry and Biology of the Marine Environment </Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13568</Id>
-    <Title>Icelandic marine Animals: Genetics and Ecology</Title>
-    <Acronym>ICEAGE</Acronym>
-    <Coordinator>Senckenberg by the Sea, Wilhelmshaven</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12070</Id>
-    <Title>Madeira Archipelago Pre-Seamount Stages: Oceanographic campaign around Madeira Archipelago</Title>
-    <Acronym>MAPS</Acronym>
-    <Coordinator>Senckenberg by the Sea, Wilhelmshaven</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>9675</Id>
-    <Title>Land-Ocean Interactions in the Coastal Zone, delta management lessons</Title>
-    <Acronym>LOICZ-deltas</Acronym>
-    <Coordinator>GKSS Research Center</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>4269</Id>
-    <Title>BALTic sea Experiment</Title>
-    <Acronym>BALTEX</Acronym>
-    <Coordinator>GKSS Research Center</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7573</Id>
-    <Title>FERRYBOX - FerryBox: from on-line oceanographic observations to environmental information</Title>
-    <Acronym>FERRYBOX</Acronym>
-    <Coordinator>GKSS Research Center</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7719</Id>
-    <Title>Rogue waves - Forecast and impact on marine structures</Title>
-    <Acronym>MAXWAVE</Acronym>
-    <Coordinator>GKSS Research Center</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>3110</Id>
-    <Title>Preparation, integration of analysis tools for operational forecast of nutrients in European rivers estuaries (PIONEER)</Title>
-    <Acronym>PIONEER</Acronym>
-    <Coordinator>GKSS Research Center</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7923</Id>
-    <Title>System of hierarchical monitoring of Intertidal Areas</Title>
-    <Acronym>HIMOM</Acronym>
-    <Coordinator>GKSS Research Center</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -3967,6 +3911,62 @@
     <Title>North Sea ecological time series (LTER)</Title>
     <Acronym>LTER Benthos</Acronym>
     <Coordinator>Alfred Wegener Institute Helmholtz Centre for Polar and Marine Research</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13568</Id>
+    <Title>Icelandic marine Animals: Genetics and Ecology</Title>
+    <Acronym>ICEAGE</Acronym>
+    <Coordinator>Senckenberg by the Sea, Wilhelmshaven</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12070</Id>
+    <Title>Madeira Archipelago Pre-Seamount Stages: Oceanographic campaign around Madeira Archipelago</Title>
+    <Acronym>MAPS</Acronym>
+    <Coordinator>Senckenberg by the Sea, Wilhelmshaven</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>9675</Id>
+    <Title>Land-Ocean Interactions in the Coastal Zone, delta management lessons</Title>
+    <Acronym>LOICZ-deltas</Acronym>
+    <Coordinator>GKSS Research Center</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>4269</Id>
+    <Title>BALTic sea Experiment</Title>
+    <Acronym>BALTEX</Acronym>
+    <Coordinator>GKSS Research Center</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7573</Id>
+    <Title>FERRYBOX - FerryBox: from on-line oceanographic observations to environmental information</Title>
+    <Acronym>FERRYBOX</Acronym>
+    <Coordinator>GKSS Research Center</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7719</Id>
+    <Title>Rogue waves - Forecast and impact on marine structures</Title>
+    <Acronym>MAXWAVE</Acronym>
+    <Coordinator>GKSS Research Center</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>3110</Id>
+    <Title>Preparation, integration of analysis tools for operational forecast of nutrients in European rivers estuaries (PIONEER)</Title>
+    <Acronym>PIONEER</Acronym>
+    <Coordinator>GKSS Research Center</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7923</Id>
+    <Title>System of hierarchical monitoring of Intertidal Areas</Title>
+    <Acronym>HIMOM</Acronym>
+    <Coordinator>GKSS Research Center</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -5160,17 +5160,10 @@
     <Country>Italy</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13693</Id>
-    <Title>Marine forest coastal restoration: an underwater gardening socio-ecological plan - OCEAN CITIZEN</Title>
-    <Acronym>Marine forest coastal restoration: an underwater gardening socio-ecological plan</Acronym>
-    <Coordinator>University of Lecce</Coordinator>
-    <Country>Italy</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7618</Id>
-    <Title>COMMODE - Communities of Marine Microorganisms for oil degradation</Title>
-    <Acronym>COMMODE</Acronym>
-    <Coordinator>CNR, Institute for the Marine and Coastal Environment (Messina)</Coordinator>
+    <Id>3090</Id>
+    <Title>European Light DOsimeter NETwork (ELDONET)</Title>
+    <Acronym>ELDONET</Acronym>
+    <Coordinator>CNR, Biophysics Institute</Coordinator>
     <Country>Italy</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -5188,10 +5181,17 @@
     <Country>Italy</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3090</Id>
-    <Title>European Light DOsimeter NETwork (ELDONET)</Title>
-    <Acronym>ELDONET</Acronym>
-    <Coordinator>CNR, Biophysics Institute</Coordinator>
+    <Id>13693</Id>
+    <Title>Marine forest coastal restoration: an underwater gardening socio-ecological plan - OCEAN CITIZEN</Title>
+    <Acronym>Marine forest coastal restoration: an underwater gardening socio-ecological plan</Acronym>
+    <Coordinator>University of Lecce</Coordinator>
+    <Country>Italy</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7618</Id>
+    <Title>COMMODE - Communities of Marine Microorganisms for oil degradation</Title>
+    <Acronym>COMMODE</Acronym>
+    <Coordinator>CNR, Institute for the Marine and Coastal Environment (Messina)</Coordinator>
     <Country>Italy</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -5199,13 +5199,6 @@
     <Title>MApping of a COmplete GlacIal depositional system</Title>
     <Acronym>MAGICO</Acronym>
     <Coordinator>National Institute of Oceanography and Applied Geophysics - OGS, Infrastructures Division</Coordinator>
-    <Country>Italy</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11718</Id>
-    <Title>Novel Surfactant from safe &amp;amp; sustainable Exploitation of Seaweed</Title>
-    <Acronym>SEASURF</Acronym>
-    <Coordinator>Natural Technologies Italia s.r.l</Coordinator>
     <Country>Italy</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -5223,6 +5216,13 @@
     <Country>Italy</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11718</Id>
+    <Title>Novel Surfactant from safe &amp;amp; sustainable Exploitation of Seaweed</Title>
+    <Acronym>SEASURF</Acronym>
+    <Coordinator>Natural Technologies Italia s.r.l</Coordinator>
+    <Country>Italy</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12372</Id>
     <Title>Environmental Monitoring Plan LNG Porto Viro on behalf of Adriatic LNG since 2017</Title>
     <Acronym>LNG-PortoViro 2017</Acronym>
@@ -5235,13 +5235,6 @@
     <Acronym>LNG-PortoViro-2005-2016</Acronym>
     <Coordinator>Adriatic LNG</Coordinator>
     <Country>Italy</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12471</Id>
-    <Title>Ballast water management system for Adriatic Sea protection</Title>
-    <Acronym>BALMAS</Acronym>
-    <Coordinator>Institute for Water of the Republic of Slovenia</Coordinator>
-    <Country>Slovenia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12296</Id>
@@ -5272,11 +5265,11 @@
     <Country>Italy</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13595</Id>
-    <Title>International  Bottom  Trawl  Survey  in  the  Mediterranean</Title>
-    <Acronym>MEDITS</Acronym>
-    <Coordinator>COISPA Tecnologia &amp; Ricerca</Coordinator>
-    <Country>Italy</Country>
+    <Id>12471</Id>
+    <Title>Ballast water management system for Adriatic Sea protection</Title>
+    <Acronym>BALMAS</Acronym>
+    <Coordinator>Institute for Water of the Republic of Slovenia</Coordinator>
+    <Country>Slovenia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12464</Id>
@@ -5318,6 +5311,13 @@
     <Title>Clean Sea Life</Title>
     <Acronym>Clean Sea Life</Acronym>
     <Coordinator>Ente Parco Nazionale dell'Asinara</Coordinator>
+    <Country>Italy</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13595</Id>
+    <Title>International  Bottom  Trawl  Survey  in  the  Mediterranean</Title>
+    <Acronym>MEDITS</Acronym>
+    <Coordinator>COISPA Tecnologia &amp; Ricerca</Coordinator>
     <Country>Italy</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -6924,38 +6924,10 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11752</Id>
-    <Title>Reconocimiento Geologico Y Geofisico del margen continental Nor-Iberico: Estudio integrado de las cuencas sedimentarias y evolucion geodinamica del Golfo de Viz</Title>
-    <Acronym>MARCONI</Acronym>
-    <Coordinator>Institute of Marine Sciences, Mediterranean Marine and Environmental Research Centre, Department of Marine Science</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11347</Id>
-    <Title>Transport and larval recruitment of coastal benthic crustaceans: Importance of the coastal forcers agents and mareal  regime</Title>
-    <Acronym>RECLUTA</Acronym>
-    <Coordinator>University of Cadiz, Andalusian Center of marine science and marine technology </Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11212</Id>
-    <Title>Characterization of the quality of the upbringing fish</Title>
-    <Acronym>CAPESCRI</Acronym>
-    <Coordinator>University of Las Palmas de Gran Canaria. Universitary Institute of Animal Health and Food Security </Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12062</Id>
     <Title>Citizens’ Observatory for Coast and Ocean Optical Monitoring</Title>
     <Acronym>CITCLOPS</Acronym>
     <Coordinator>Barcelona Digital Technology Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12386</Id>
-    <Title>MarRisk</Title>
-    <Acronym>MarRisk</Acronym>
-    <Coordinator>MeteoGalicia</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -6984,6 +6956,34 @@
     <Title>Cost-effective sensors, interoperable with international existing ocean observing systems, to meet EU policies requirements</Title>
     <Acronym>COMMON SENSE</Acronym>
     <Coordinator>Leitat Technological Center</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12386</Id>
+    <Title>MarRisk</Title>
+    <Acronym>MarRisk</Acronym>
+    <Coordinator>MeteoGalicia</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11752</Id>
+    <Title>Reconocimiento Geologico Y Geofisico del margen continental Nor-Iberico: Estudio integrado de las cuencas sedimentarias y evolucion geodinamica del Golfo de Viz</Title>
+    <Acronym>MARCONI</Acronym>
+    <Coordinator>Institute of Marine Sciences, Mediterranean Marine and Environmental Research Centre, Department of Marine Science</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11347</Id>
+    <Title>Transport and larval recruitment of coastal benthic crustaceans: Importance of the coastal forcers agents and mareal  regime</Title>
+    <Acronym>RECLUTA</Acronym>
+    <Coordinator>University of Cadiz, Andalusian Center of marine science and marine technology </Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11212</Id>
+    <Title>Characterization of the quality of the upbringing fish</Title>
+    <Acronym>CAPESCRI</Acronym>
+    <Coordinator>University of Las Palmas de Gran Canaria. Universitary Institute of Animal Health and Food Security </Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -9682,13 +9682,6 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11980</Id>
-    <Title>Off-shore Renewable Energy Conversion platforms- Coordination Action</Title>
-    <Acronym>ORECCA</Acronym>
-    <Coordinator>Fraunhofer Institute for Wind Energy and Energy System</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>10880</Id>
     <Title>Investigation of the genomic and proteomic effects of metal contamination in seaweeds</Title>
     <Acronym />
@@ -9715,6 +9708,13 @@
     <Acronym>PCEADPPOPMT</Acronym>
     <Coordinator>Institute of Technology Tralee</Coordinator>
     <Country>Ireland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11980</Id>
+    <Title>Off-shore Renewable Energy Conversion platforms- Coordination Action</Title>
+    <Acronym>ORECCA</Acronym>
+    <Coordinator>Fraunhofer Institute for Wind Energy and Energy System</Coordinator>
+    <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>11972</Id>
@@ -9941,13 +9941,6 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11987</Id>
-    <Title>Measuring Coastal Sustainability</Title>
-    <Acronym>SUSTAIN</Acronym>
-    <Coordinator>EUCC, The Coastal Union</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>10700</Id>
     <Title>Restoration and Management of the Murrough Wetlands for Annex I Habitats and Waterbirds</Title>
     <Acronym>LIFE-Nature</Acronym>
@@ -9967,6 +9960,13 @@
     <Acronym />
     <Coordinator>Biospheric Engineering Ltd.</Coordinator>
     <Country>Ireland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11987</Id>
+    <Title>Measuring Coastal Sustainability</Title>
+    <Acronym>SUSTAIN</Acronym>
+    <Coordinator>EUCC, The Coastal Union</Coordinator>
+    <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>11081</Id>
@@ -10008,196 +10008,6 @@
     <Title>Ecohydrodynamical data analysis and modelling studies of the Gibraltar Strait</Title>
     <Acronym>ECOGIB</Acronym>
     <Coordinator>University of Liège, GeoHydrodynamics and Environment Research</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11149</Id>
-    <Title>Structure and dynamics of proteins</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>University of Antwerp, Faculty of Pharmaceutical, Biomedical and Veterinary Sciences, Department of Biochemistry and Biotechnology, Protein Chemistry Research Group</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11062</Id>
-    <Title>Research into the feasibility and efficiency of ultrasonic underwater communication</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>University College 'Karel De Grote Hogeschool Antwerpen'</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11262</Id>
-    <Title>Sediment Identification for Geotechnics by Marine Acoustics</Title>
-    <Acronym>SIGMA</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Engineering, Fundamental Electricity and Instrumentation</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11180</Id>
-    <Title>Automisation of acoustic laboratory experiments in a watertank to be used in the research for the improvement of measurement methods for the characterization...</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Engineering, Fundamental Electricity and Instrumentation</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11153</Id>
-    <Title>Ecotoxicology of European Cetaceans</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Ecotoxicology and Polar Ecology Laboratory</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11150</Id>
-    <Title>Marine ecosystems functioning</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11179</Id>
-    <Title>Lipofilicity and normalization of organic micro- pollutants in organic systems</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11151</Id>
-    <Title>Management mangroves of Kenya: synthesis ecological data</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11181</Id>
-    <Title>Cooperation in the investigations over long-term exploitation of natural resources in mangrove forests</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11152</Id>
-    <Title>Bioconcentration of organic micropollutants in marine ecosystems</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Laboratory for Aquaculture &amp; Artemia Reference Center</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11148</Id>
-    <Title>Vegetative dynamics in mangrove- areas: a comparison of the current state of the art and the evolution during the past 50 years using photography from the air</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Plant Biology and Nature Management</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11120</Id>
-    <Title>Quaternary climate reconstruction through stabile isotope research of continental sediments</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Geology, Isotope Geology and Evolution of the Paleoenvironments</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11077</Id>
-    <Title>Electronic Port Surveillance System</Title>
-    <Acronym>EPOS</Acronym>
-    <Coordinator>AG Haven Oostende</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11261</Id>
-    <Title>Development of an integrated approach for the removal of tributyltin (TBT) from waterways and harbours: prevention, treatment and reuse of TBT contaminated s...</Title>
-    <Acronym>
-    </Acronym>
-    <Coordinator>Autonoom Gemeentelijk Havenbedrijf Antwerpen</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11085</Id>
-    <Title>Co-ordination action to implement an advisory council for maritime transport research in Europe</Title>
-    <Acronym>Acmare/Waterbor</Acronym>
-    <Coordinator>Federal Public Service Foreign Affairs, Foreign Trade and Development Cooperation</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11078</Id>
-    <Title>Visionary concepts for vessels and floating structures</Title>
-    <Acronym>VISIONS</Acronym>
-    <Coordinator>Community of European Shipyards' Associations</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11097</Id>
-    <Title>European Framework for Safe, Efficient and Environmentally-Friendly Ship Operations</Title>
-    <Acronym>FLAGSHIP</Acronym>
-    <Coordinator>Community of European Shipyards' Associations</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11093</Id>
-    <Title>Improving egg and larval quality in pikeperch by broodstock management, husbandry and nutrition and sex control</Title>
-    <Acronym>LUCIOPERCIMPROV</Acronym>
-    <Coordinator>University of Namur, Department of Biology, Research Unit in Organismic Biology</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11079</Id>
-    <Title>Sustainable Economically Efficient Wave Energy Converter</Title>
-    <Acronym>SEEWEC</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11160</Id>
-    <Title>Full scale dynamic load monitoring of rubble mound breakwaters</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11130</Id>
-    <Title>Study of run-up and run-down on a rubble-mound breakwater based on full scale measurements</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11127</Id>
-    <Title>Support quality management - model texts for hydraulic structures. First study 2000</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11124</Id>
-    <Title>The Optimisation of Crest Level Design of Sloping Coastal Structures through Prototype Monitoring and Modelling</Title>
-    <Acronym>OPTICREST</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11141</Id>
-    <Title>Coastal Engineering - Coastal Hydraulics</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11142</Id>
-    <Title>Support quality management - standard specifications for hydraulic structures. Study 1999</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11173</Id>
-    <Title>Laboratory investigation on rubble mound breakwaters</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11174</Id>
-    <Title>Rubble Mound Breakwater Monitoring. Western Breakwater at Zeebrugge</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -10416,6 +10226,196 @@
     <Title>General research on the actual applicability of environmental regulations in seaports</Title>
     <Acronym>unknown</Acronym>
     <Coordinator>Ghent University, Maritime Institute, Dpt. International Public Law</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11077</Id>
+    <Title>Electronic Port Surveillance System</Title>
+    <Acronym>EPOS</Acronym>
+    <Coordinator>AG Haven Oostende</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11261</Id>
+    <Title>Development of an integrated approach for the removal of tributyltin (TBT) from waterways and harbours: prevention, treatment and reuse of TBT contaminated s...</Title>
+    <Acronym>
+    </Acronym>
+    <Coordinator>Autonoom Gemeentelijk Havenbedrijf Antwerpen</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11085</Id>
+    <Title>Co-ordination action to implement an advisory council for maritime transport research in Europe</Title>
+    <Acronym>Acmare/Waterbor</Acronym>
+    <Coordinator>Federal Public Service Foreign Affairs, Foreign Trade and Development Cooperation</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11078</Id>
+    <Title>Visionary concepts for vessels and floating structures</Title>
+    <Acronym>VISIONS</Acronym>
+    <Coordinator>Community of European Shipyards' Associations</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11097</Id>
+    <Title>European Framework for Safe, Efficient and Environmentally-Friendly Ship Operations</Title>
+    <Acronym>FLAGSHIP</Acronym>
+    <Coordinator>Community of European Shipyards' Associations</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11093</Id>
+    <Title>Improving egg and larval quality in pikeperch by broodstock management, husbandry and nutrition and sex control</Title>
+    <Acronym>LUCIOPERCIMPROV</Acronym>
+    <Coordinator>University of Namur, Department of Biology, Research Unit in Organismic Biology</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11079</Id>
+    <Title>Sustainable Economically Efficient Wave Energy Converter</Title>
+    <Acronym>SEEWEC</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11160</Id>
+    <Title>Full scale dynamic load monitoring of rubble mound breakwaters</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11130</Id>
+    <Title>Study of run-up and run-down on a rubble-mound breakwater based on full scale measurements</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11127</Id>
+    <Title>Support quality management - model texts for hydraulic structures. First study 2000</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11124</Id>
+    <Title>The Optimisation of Crest Level Design of Sloping Coastal Structures through Prototype Monitoring and Modelling</Title>
+    <Acronym>OPTICREST</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11141</Id>
+    <Title>Coastal Engineering - Coastal Hydraulics</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11142</Id>
+    <Title>Support quality management - standard specifications for hydraulic structures. Study 1999</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11173</Id>
+    <Title>Laboratory investigation on rubble mound breakwaters</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11174</Id>
+    <Title>Rubble Mound Breakwater Monitoring. Western Breakwater at Zeebrugge</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Bridges, Roads and Hydraulic Structures</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11149</Id>
+    <Title>Structure and dynamics of proteins</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>University of Antwerp, Faculty of Pharmaceutical, Biomedical and Veterinary Sciences, Department of Biochemistry and Biotechnology, Protein Chemistry Research Group</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11062</Id>
+    <Title>Research into the feasibility and efficiency of ultrasonic underwater communication</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>University College 'Karel De Grote Hogeschool Antwerpen'</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11262</Id>
+    <Title>Sediment Identification for Geotechnics by Marine Acoustics</Title>
+    <Acronym>SIGMA</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Engineering, Fundamental Electricity and Instrumentation</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11180</Id>
+    <Title>Automisation of acoustic laboratory experiments in a watertank to be used in the research for the improvement of measurement methods for the characterization...</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Engineering, Fundamental Electricity and Instrumentation</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11153</Id>
+    <Title>Ecotoxicology of European Cetaceans</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Ecotoxicology and Polar Ecology Laboratory</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11150</Id>
+    <Title>Marine ecosystems functioning</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11179</Id>
+    <Title>Lipofilicity and normalization of organic micro- pollutants in organic systems</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11151</Id>
+    <Title>Management mangroves of Kenya: synthesis ecological data</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11181</Id>
+    <Title>Cooperation in the investigations over long-term exploitation of natural resources in mangrove forests</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11152</Id>
+    <Title>Bioconcentration of organic micropollutants in marine ecosystems</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Laboratory for Aquaculture &amp; Artemia Reference Center</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11148</Id>
+    <Title>Vegetative dynamics in mangrove- areas: a comparison of the current state of the art and the evolution during the past 50 years using photography from the air</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Plant Biology and Nature Management</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11120</Id>
+    <Title>Quaternary climate reconstruction through stabile isotope research of continental sediments</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Geology, Isotope Geology and Evolution of the Paleoenvironments</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -11034,13 +11034,6 @@
     <Acronym />
     <Coordinator>Ghent University, Faculty of Sciences, Department of Biology, Marine Biology Section</Coordinator>
     <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11575</Id>
-    <Title>MyOcean</Title>
-    <Acronym>MyOcean</Acronym>
-    <Coordinator>Mercator Ocean</Coordinator>
-    <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>9636</Id>
@@ -12072,17 +12065,87 @@
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7636</Id>
-    <Title>MYTIMED</Title>
-    <Acronym>MYTIMED</Acronym>
-    <Coordinator>Toulon Var Technologies</Coordinator>
+    <Id>11833</Id>
+    <Title>Terra-mediterranean earth science experiment</Title>
+    <Acronym>TerMEx</Acronym>
+    <Coordinator>University of Orleans, Institut des Sciences de la Terre d'Orleans </Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3113</Id>
-    <Title>SAFE - Performance of soft beach systems and nourishment measures for european coasts</Title>
-    <Acronym>SAFE</Acronym>
-    <Coordinator>SOGREAH</Coordinator>
+    <Id>11818</Id>
+    <Title>Cooperative airborne radiometer for ocean and land studies</Title>
+    <Acronym>CAROLS</Acronym>
+    <Coordinator>Centre National d'Etudes Spatiales </Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11831</Id>
+    <Title>Soil Moisture and Ocean Salinity</Title>
+    <Acronym>SMOS</Acronym>
+    <Coordinator>European Space Agency </Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12240</Id>
+    <Title>Continuous High Resolution Observation of the MEditerranean sea</Title>
+    <Acronym>CHROME</Acronym>
+    <Coordinator>Mediterranean Institute of Oceanography (Marseille)</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12241</Id>
+    <Title>Observing Submesoscale Coupling At High Resolution (OSCAHR)</Title>
+    <Acronym>OSCAHR</Acronym>
+    <Coordinator>Mediterranean Institute of Oceanography (Marseille)</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12291</Id>
+    <Title>MISE (In situ High-Frequency Monitoring of Phytoplankton)</Title>
+    <Acronym>EC2CO-PNEC-MISE</Acronym>
+    <Coordinator>Mediterranean Institute of Oceanography (Marseille)</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13603</Id>
+    <Title>CARLIT: Coastal mapping</Title>
+    <Acronym>CARLIT</Acronym>
+    <Coordinator>Mediterranean Institute Of Oceanography (Luminy)</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>9591</Id>
+    <Title>TRADITIONAL FISHERIES</Title>
+    <Acronym>PAME</Acronym>
+    <Coordinator>Ifremer, LERLR - Labo Environnement Ressources Languedoc-Roussillon</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>9556</Id>
+    <Title>OCEANIC CIRCULATION</Title>
+    <Acronym>CIRO</Acronym>
+    <Coordinator>Laboratory of Phyical Oceanography, CNRS-IFREMER-IRD-UBO</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>9586</Id>
+    <Title>CORIOLIS ARGO-FRANCE</Title>
+    <Acronym>CORIOLIS ARGO-FRANCE</Acronym>
+    <Coordinator>Laboratory of Phyical Oceanography, CNRS-IFREMER-IRD-UBO</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11824</Id>
+    <Title>LEFE</Title>
+    <Acronym>LEFE</Acronym>
+    <Coordinator>CNRS, Insu Technical Division, La Seyne-sur-Mer</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11866</Id>
+    <Title>HYdrological cycle in Mediterranean EXperiment (HYMEX)</Title>
+    <Acronym>HYMEX</Acronym>
+    <Coordinator>Météo France, National Center for Meteorological Research</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -12121,17 +12184,17 @@
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11824</Id>
-    <Title>LEFE</Title>
-    <Acronym>LEFE</Acronym>
-    <Coordinator>CNRS, Insu Technical Division, La Seyne-sur-Mer</Coordinator>
+    <Id>11575</Id>
+    <Title>MyOcean</Title>
+    <Acronym>MyOcean</Acronym>
+    <Coordinator>Mercator Ocean</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11866</Id>
-    <Title>HYdrological cycle in Mediterranean EXperiment (HYMEX)</Title>
-    <Acronym>HYMEX</Acronym>
-    <Coordinator>Météo France, National Center for Meteorological Research</Coordinator>
+    <Id>7959</Id>
+    <Title>A Functional Genomic Approach to Measuring Stress in Fish Aquaculture</Title>
+    <Acronym>STRESSGENES</Acronym>
+    <Coordinator>Institut National de la Recherche Agronomique, Joint Research Unit for Fish Physiology, Biodiversity and the Environment</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -12163,10 +12226,17 @@
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7959</Id>
-    <Title>A Functional Genomic Approach to Measuring Stress in Fish Aquaculture</Title>
-    <Acronym>STRESSGENES</Acronym>
-    <Coordinator>Institut National de la Recherche Agronomique, Joint Research Unit for Fish Physiology, Biodiversity and the Environment</Coordinator>
+    <Id>7636</Id>
+    <Title>MYTIMED</Title>
+    <Acronym>MYTIMED</Acronym>
+    <Coordinator>Toulon Var Technologies</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>3113</Id>
+    <Title>SAFE - Performance of soft beach systems and nourishment measures for european coasts</Title>
+    <Acronym>SAFE</Acronym>
+    <Coordinator>SOGREAH</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -12254,87 +12324,17 @@
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11818</Id>
-    <Title>Cooperative airborne radiometer for ocean and land studies</Title>
-    <Acronym>CAROLS</Acronym>
-    <Coordinator>Centre National d'Etudes Spatiales </Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11831</Id>
-    <Title>Soil Moisture and Ocean Salinity</Title>
-    <Acronym>SMOS</Acronym>
-    <Coordinator>European Space Agency </Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11833</Id>
-    <Title>Terra-mediterranean earth science experiment</Title>
-    <Acronym>TerMEx</Acronym>
-    <Coordinator>University of Orleans, Institut des Sciences de la Terre d'Orleans </Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12240</Id>
-    <Title>Continuous High Resolution Observation of the MEditerranean sea</Title>
-    <Acronym>CHROME</Acronym>
-    <Coordinator>Mediterranean Institute of Oceanography (Marseille)</Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12241</Id>
-    <Title>Observing Submesoscale Coupling At High Resolution (OSCAHR)</Title>
-    <Acronym>OSCAHR</Acronym>
-    <Coordinator>Mediterranean Institute of Oceanography (Marseille)</Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12291</Id>
-    <Title>MISE (In situ High-Frequency Monitoring of Phytoplankton)</Title>
-    <Acronym>EC2CO-PNEC-MISE</Acronym>
-    <Coordinator>Mediterranean Institute of Oceanography (Marseille)</Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13603</Id>
-    <Title>CARLIT: Coastal mapping</Title>
-    <Acronym>CARLIT</Acronym>
-    <Coordinator>Mediterranean Institute Of Oceanography (Luminy)</Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>9591</Id>
-    <Title>TRADITIONAL FISHERIES</Title>
-    <Acronym>PAME</Acronym>
-    <Coordinator>Ifremer, LERLR - Labo Environnement Ressources Languedoc-Roussillon</Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>9556</Id>
-    <Title>OCEANIC CIRCULATION</Title>
-    <Acronym>CIRO</Acronym>
-    <Coordinator>Laboratory of Phyical Oceanography, CNRS-IFREMER-IRD-UBO</Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>9586</Id>
-    <Title>CORIOLIS ARGO-FRANCE</Title>
-    <Acronym>CORIOLIS ARGO-FRANCE</Acronym>
-    <Coordinator>Laboratory of Phyical Oceanography, CNRS-IFREMER-IRD-UBO</Coordinator>
-    <Country>France</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13632</Id>
-    <Title>Keep Sweden Tidy</Title>
-    <Acronym>HSR</Acronym>
-    <Coordinator>The Keep Sweden Tidy Foundation</Coordinator>
+    <Id>8055</Id>
+    <Title>EUROSAT - European Salmon Tour</Title>
+    <Acronym>EUROSAT</Acronym>
+    <Coordinator>Forshaga Municipality</Coordinator>
     <Country>Sweden</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13617</Id>
-    <Title>Waterbody Assessment Tools for Ecological Reference conditions and status in Sweden</Title>
-    <Acronym>WATERS</Acronym>
-    <Coordinator>Swedish Institute for the Marine Environment</Coordinator>
+    <Id>8043</Id>
+    <Title>Regulating remobilisation, bioavailability &amp; translocation of radionuclides</Title>
+    <Acronym>REMOTRANS</Acronym>
+    <Coordinator>Lund University, Department of Radiation Physics</Coordinator>
     <Country>Sweden</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -12359,17 +12359,17 @@
     <Country>Sweden</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>8055</Id>
-    <Title>EUROSAT - European Salmon Tour</Title>
-    <Acronym>EUROSAT</Acronym>
-    <Coordinator>Forshaga Municipality</Coordinator>
+    <Id>13632</Id>
+    <Title>Keep Sweden Tidy</Title>
+    <Acronym>HSR</Acronym>
+    <Coordinator>The Keep Sweden Tidy Foundation</Coordinator>
     <Country>Sweden</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>8043</Id>
-    <Title>Regulating remobilisation, bioavailability &amp; translocation of radionuclides</Title>
-    <Acronym>REMOTRANS</Acronym>
-    <Coordinator>Lund University, Department of Radiation Physics</Coordinator>
+    <Id>13617</Id>
+    <Title>Waterbody Assessment Tools for Ecological Reference conditions and status in Sweden</Title>
+    <Acronym>WATERS</Acronym>
+    <Coordinator>Swedish Institute for the Marine Environment</Coordinator>
     <Country>Sweden</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -12574,6 +12574,181 @@
     <Acronym>SWE_Nat_Mar_Mon_1965_1978</Acronym>
     <Coordinator>The Swedish Board of Fisheries</Coordinator>
     <Country>Sweden</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>8068</Id>
+    <Title>Development and Validation of LC-MS Reference Method for Analysis of Lipophillic Shellfish Toxins</Title>
+    <Acronym>BIOTOX</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7936</Id>
+    <Title>NECESSITY - Nephrops and Cetacean Species Selection Information and Technology</Title>
+    <Acronym>NECESSITY</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10710</Id>
+    <Title>Development of fishing gears with reduced effects on the environment</Title>
+    <Acronym>DEGREE</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7938</Id>
+    <Title>SALIMPACT: The Impact of Aquaculture on Natural Salmonid Populations</Title>
+    <Acronym>SALIMPACT</Acronym>
+    <Coordinator>Wageningen University, Cell Biology and Immunology Group</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11496</Id>
+    <Title>Monitoring and Evaluation of Spatially Managed Areas</Title>
+    <Acronym>MESMA</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11606</Id>
+    <Title>International Bottom Trawl Surveys (IBTS)</Title>
+    <Acronym>IBTS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11607</Id>
+    <Title>North Sea Beam Trawl Survey</Title>
+    <Acronym>BTS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11608</Id>
+    <Title>Demersal Young Fish Survey</Title>
+    <Acronym>DYFS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11609</Id>
+    <Title>Sole Net Survey</Title>
+    <Acronym>SNS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11610</Id>
+    <Title>Herring Larvae Survey</Title>
+    <Acronym>IHLS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11611</Id>
+    <Title>NS Herring Acoustic Survey</Title>
+    <Acronym>NHAS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11612</Id>
+    <Title>International Mackerel and Horse Mackerel Egg Survey (Triennial)</Title>
+    <Acronym>MEGS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11613</Id>
+    <Title>Blue Whiting Survey</Title>
+    <Acronym>BWHTS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11614</Id>
+    <Title>Mackerel Egg Survey</Title>
+    <Acronym>NSMEGS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12082</Id>
+    <Title>Monitoring Windfarm Prinses Amalia</Title>
+    <Acronym>PAWP</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12092</Id>
+    <Title>Shortlist Wind op Zee</Title>
+    <Acronym>SWOZ</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12148</Id>
+    <Title>Maasvlakte 2 Nature Compensation Project Vis</Title>
+    <Acronym>MV2 Vis</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11926</Id>
+    <Title>Discard Sampling Gillnet Fishery</Title>
+    <Acronym>DISGILL</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11927</Id>
+    <Title>Discard Sampling Otter Trawl Fishery</Title>
+    <Acronym>DISOT</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11915</Id>
+    <Title>Monitoring Offshore Windfarm Egmond aan Zee</Title>
+    <Acronym>OWEZ</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11639</Id>
+    <Title>Managing Fisheries to Conserve Groundfish and Benthic Invertebrate Species Diversity</Title>
+    <Acronym>MAFCONS</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11603</Id>
+    <Title>Discard Sampling Crangon Fishery</Title>
+    <Acronym>DISCRAN</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11604</Id>
+    <Title>Discard Sampling Nephrops Fishery</Title>
+    <Acronym>DISN</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11605</Id>
+    <Title>Discard Sampling Beam Trawl Fishery</Title>
+    <Acronym>DISBT</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11615</Id>
+    <Title>Discard Sampling Pelagic Fishery</Title>
+    <Acronym>DISP</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>11643</Id>
@@ -12940,181 +13115,6 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>8068</Id>
-    <Title>Development and Validation of LC-MS Reference Method for Analysis of Lipophillic Shellfish Toxins</Title>
-    <Acronym>BIOTOX</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7936</Id>
-    <Title>NECESSITY - Nephrops and Cetacean Species Selection Information and Technology</Title>
-    <Acronym>NECESSITY</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10710</Id>
-    <Title>Development of fishing gears with reduced effects on the environment</Title>
-    <Acronym>DEGREE</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7938</Id>
-    <Title>SALIMPACT: The Impact of Aquaculture on Natural Salmonid Populations</Title>
-    <Acronym>SALIMPACT</Acronym>
-    <Coordinator>Wageningen University, Cell Biology and Immunology Group</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11496</Id>
-    <Title>Monitoring and Evaluation of Spatially Managed Areas</Title>
-    <Acronym>MESMA</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11606</Id>
-    <Title>International Bottom Trawl Surveys (IBTS)</Title>
-    <Acronym>IBTS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11607</Id>
-    <Title>North Sea Beam Trawl Survey</Title>
-    <Acronym>BTS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11608</Id>
-    <Title>Demersal Young Fish Survey</Title>
-    <Acronym>DYFS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11609</Id>
-    <Title>Sole Net Survey</Title>
-    <Acronym>SNS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11610</Id>
-    <Title>Herring Larvae Survey</Title>
-    <Acronym>IHLS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11611</Id>
-    <Title>NS Herring Acoustic Survey</Title>
-    <Acronym>NHAS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11612</Id>
-    <Title>International Mackerel and Horse Mackerel Egg Survey (Triennial)</Title>
-    <Acronym>MEGS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11613</Id>
-    <Title>Blue Whiting Survey</Title>
-    <Acronym>BWHTS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11614</Id>
-    <Title>Mackerel Egg Survey</Title>
-    <Acronym>NSMEGS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12082</Id>
-    <Title>Monitoring Windfarm Prinses Amalia</Title>
-    <Acronym>PAWP</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12092</Id>
-    <Title>Shortlist Wind op Zee</Title>
-    <Acronym>SWOZ</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12148</Id>
-    <Title>Maasvlakte 2 Nature Compensation Project Vis</Title>
-    <Acronym>MV2 Vis</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11926</Id>
-    <Title>Discard Sampling Gillnet Fishery</Title>
-    <Acronym>DISGILL</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11927</Id>
-    <Title>Discard Sampling Otter Trawl Fishery</Title>
-    <Acronym>DISOT</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11915</Id>
-    <Title>Monitoring Offshore Windfarm Egmond aan Zee</Title>
-    <Acronym>OWEZ</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11639</Id>
-    <Title>Managing Fisheries to Conserve Groundfish and Benthic Invertebrate Species Diversity</Title>
-    <Acronym>MAFCONS</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11603</Id>
-    <Title>Discard Sampling Crangon Fishery</Title>
-    <Acronym>DISCRAN</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11604</Id>
-    <Title>Discard Sampling Nephrops Fishery</Title>
-    <Acronym>DISN</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11605</Id>
-    <Title>Discard Sampling Beam Trawl Fishery</Title>
-    <Acronym>DISBT</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11615</Id>
-    <Title>Discard Sampling Pelagic Fishery</Title>
-    <Acronym>DISP</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>9726</Id>
     <Title>Black Sea Web Project</Title>
     <Acronym>Black Sea Web</Acronym>
@@ -13430,45 +13430,10 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7995</Id>
-    <Title>FAUNA EUROPAEA</Title>
-    <Acronym>FAUNA EUROPAEA</Acronym>
-    <Coordinator>University of Amsterdam, Zoological Museum Amsterdam</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>8064</Id>
-    <Title>MAYA II: Marine &amp; Yachting in the North Sea and Irish Sea</Title>
-    <Acronym>MAYA II</Acronym>
-    <Coordinator>Zeeland Province</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7917</Id>
-    <Title>Coastal Practice Network</Title>
-    <Acronym>CoPraNet</Acronym>
-    <Coordinator>EUCC, The Coastal Union</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>3080</Id>
-    <Title>Prediction of Aggregated-scale Coastal Evolution (PACE)</Title>
-    <Acronym>PACE</Acronym>
-    <Coordinator>University of Twente</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12214</Id>
     <Title>EMODnet Arctic Sea Basin Checkpoint</Title>
     <Acronym>EMODnet - Arctic</Acronym>
     <Coordinator>ARCADIS</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11370</Id>
-    <Title>Managing Cultural Heritage Underwater</Title>
-    <Acronym>MACHU</Acronym>
-    <Coordinator>National Office for Cultural Heritage</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -13556,6 +13521,41 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11370</Id>
+    <Title>Managing Cultural Heritage Underwater</Title>
+    <Acronym>MACHU</Acronym>
+    <Coordinator>National Office for Cultural Heritage</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>3080</Id>
+    <Title>Prediction of Aggregated-scale Coastal Evolution (PACE)</Title>
+    <Acronym>PACE</Acronym>
+    <Coordinator>University of Twente</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7917</Id>
+    <Title>Coastal Practice Network</Title>
+    <Acronym>CoPraNet</Acronym>
+    <Coordinator>EUCC, The Coastal Union</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7995</Id>
+    <Title>FAUNA EUROPAEA</Title>
+    <Acronym>FAUNA EUROPAEA</Acronym>
+    <Coordinator>University of Amsterdam, Zoological Museum Amsterdam</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>8064</Id>
+    <Title>MAYA II: Marine &amp; Yachting in the North Sea and Irish Sea</Title>
+    <Acronym>MAYA II</Acronym>
+    <Coordinator>Zeeland Province</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12145</Id>
     <Title>Icelandic Tide Gauge Network</Title>
     <Acronym>ITGN</Acronym>
@@ -13605,6 +13605,27 @@
     <Country>Iceland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>12480</Id>
+    <Title>Innovation in the Framework of the Atlantic Deep Ocean</Title>
+    <Acronym>iFADO</Acronym>
+    <Coordinator>MARETEC , Instituto Superior Tecnico, Universidade de Lisboa</Coordinator>
+    <Country>Portugal</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10129</Id>
+    <Title>Hindcast of Dynamic Processes of the Ocean and Coastal Areas of Europe</Title>
+    <Acronym>HIPOCAS-NAS</Acronym>
+    <Coordinator>Technical University of Lisbon, Institute of Engineering, Department of Mechanical Engineering (IMAR network)</Coordinator>
+    <Country>Portugal</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7632</Id>
+    <Title>INSEA - Data Integration System for Eutrophication Assessment in coastal waters</Title>
+    <Acronym>INSEA</Acronym>
+    <Coordinator>MARETEC , Instituto Superior Tecnico, Universidade de Lisboa</Coordinator>
+    <Country>Portugal</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>7674</Id>
     <Title>Hfi - Frequency Initiative</Title>
     <Acronym>Hfi</Acronym>
@@ -13637,27 +13658,6 @@
     <Title>PLANKTON NET -</Title>
     <Acronym>PLANKTON NET</Acronym>
     <Coordinator>National Institute of Fisheries</Coordinator>
-    <Country>Portugal</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12480</Id>
-    <Title>Innovation in the Framework of the Atlantic Deep Ocean</Title>
-    <Acronym>iFADO</Acronym>
-    <Coordinator>MARETEC , Instituto Superior Tecnico, Universidade de Lisboa</Coordinator>
-    <Country>Portugal</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10129</Id>
-    <Title>Hindcast of Dynamic Processes of the Ocean and Coastal Areas of Europe</Title>
-    <Acronym>HIPOCAS-NAS</Acronym>
-    <Coordinator>Technical University of Lisbon, Institute of Engineering, Department of Mechanical Engineering (IMAR network)</Coordinator>
-    <Country>Portugal</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7632</Id>
-    <Title>INSEA - Data Integration System for Eutrophication Assessment in coastal waters</Title>
-    <Acronym>INSEA</Acronym>
-    <Coordinator>MARETEC , Instituto Superior Tecnico, Universidade de Lisboa</Coordinator>
     <Country>Portugal</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -13913,20 +13913,6 @@
     <Country>Portugal</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12405</Id>
-    <Title>Promoting Sustainable Aquaculture in the Sado estuary</Title>
-    <Acronym>AQUASADO</Acronym>
-    <Coordinator>Marine and Environmental Sciences Centre, Faculty of Sciences of the University of Lisbon</Coordinator>
-    <Country>Portugal</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12407</Id>
-    <Title>From benthic resting stages to HAB events: understanding the role of physical-biological coupling off NW Portugal</Title>
-    <Acronym>HabWAVE</Acronym>
-    <Coordinator>Marine and Environmental Sciences Centre, Faculty of Sciences of the University of Lisbon</Coordinator>
-    <Country>Portugal</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12431</Id>
     <Title>Beach nourishment: an integrated methodology for coastal management support</Title>
     <Acronym>SANDTRACK</Acronym>
@@ -13945,6 +13931,20 @@
     <Title>Unlocking the megatsunami deadlock: using the near-source impacts to constrain tsunami generation by volcanic flank collapses</Title>
     <Acronym>UNTIeD</Acronym>
     <Coordinator>Dom Luiz Institute</Coordinator>
+    <Country>Portugal</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12405</Id>
+    <Title>Promoting Sustainable Aquaculture in the Sado estuary</Title>
+    <Acronym>AQUASADO</Acronym>
+    <Coordinator>Marine and Environmental Sciences Centre, Faculty of Sciences of the University of Lisbon</Coordinator>
+    <Country>Portugal</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12407</Id>
+    <Title>From benthic resting stages to HAB events: understanding the role of physical-biological coupling off NW Portugal</Title>
+    <Acronym>HabWAVE</Acronym>
+    <Coordinator>Marine and Environmental Sciences Centre, Faculty of Sciences of the University of Lisbon</Coordinator>
     <Country>Portugal</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -13976,6 +13976,27 @@
     <Country>Norway</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>8044</Id>
+    <Title>Improving the quality of cultivated scallops to ensure a viable aquaculture production</Title>
+    <Acronym>SCALQUAL</Acronym>
+    <Coordinator>Scalpro AS</Coordinator>
+    <Country>Norway</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>8057</Id>
+    <Title>SEARCH: Sea-Lice resistance to Chemotherapeutants</Title>
+    <Acronym>SEARCH</Acronym>
+    <Coordinator>Norwegian school of Veterinary Science</Coordinator>
+    <Country>Norway</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7924</Id>
+    <Title>TRACEFISH - Traceability of Fish Products</Title>
+    <Acronym>TRACEFISH</Acronym>
+    <Coordinator>NOFIMA Market</Coordinator>
+    <Country>Norway</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10606</Id>
     <Title>The Dynamic Continental Margin Between the Mid-Atlantic-Ridge System (Mohns Ridge, Knipovich Ridge) and the Bear Island Region</Title>
     <Acronym>Continental Margin</Acronym>
@@ -13987,27 +14008,6 @@
     <Title>Reindeer Herders Vulnerability Network Study: Reindeer Pastoralism in a changing climate</Title>
     <Acronym>EALAT</Acronym>
     <Coordinator>Sami University College</Coordinator>
-    <Country>Norway</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10611</Id>
-    <Title>The Impacts of Oil and Gas Activity on Peoples in the Arctic Using a Multiple Securities Perspective</Title>
-    <Acronym>GAPS</Acronym>
-    <Coordinator>University of Tromsø</Coordinator>
-    <Country>Norway</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10585</Id>
-    <Title>Arctic Predators as Indicators of Tundra Ecosystem State)</Title>
-    <Acronym>ArcticWOLVES</Acronym>
-    <Coordinator>University of Tromsø</Coordinator>
-    <Country>Norway</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10773</Id>
-    <Title>TUNU-Programme: MARINE FISHES OF NE GREENLAND – diversity and adaptation</Title>
-    <Acronym>TUNU-MAFIG</Acronym>
-    <Coordinator>University of Tromsø</Coordinator>
     <Country>Norway</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -14032,24 +14032,24 @@
     <Country>Norway</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>8044</Id>
-    <Title>Improving the quality of cultivated scallops to ensure a viable aquaculture production</Title>
-    <Acronym>SCALQUAL</Acronym>
-    <Coordinator>Scalpro AS</Coordinator>
+    <Id>10611</Id>
+    <Title>The Impacts of Oil and Gas Activity on Peoples in the Arctic Using a Multiple Securities Perspective</Title>
+    <Acronym>GAPS</Acronym>
+    <Coordinator>University of Tromsø</Coordinator>
     <Country>Norway</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>8057</Id>
-    <Title>SEARCH: Sea-Lice resistance to Chemotherapeutants</Title>
-    <Acronym>SEARCH</Acronym>
-    <Coordinator>Norwegian school of Veterinary Science</Coordinator>
+    <Id>10585</Id>
+    <Title>Arctic Predators as Indicators of Tundra Ecosystem State)</Title>
+    <Acronym>ArcticWOLVES</Acronym>
+    <Coordinator>University of Tromsø</Coordinator>
     <Country>Norway</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7924</Id>
-    <Title>TRACEFISH - Traceability of Fish Products</Title>
-    <Acronym>TRACEFISH</Acronym>
-    <Coordinator>NOFIMA Market</Coordinator>
+    <Id>10773</Id>
+    <Title>TUNU-Programme: MARINE FISHES OF NE GREENLAND – diversity and adaptation</Title>
+    <Acronym>TUNU-MAFIG</Acronym>
+    <Coordinator>University of Tromsø</Coordinator>
     <Country>Norway</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -14231,6 +14231,13 @@
     <Id>11454</Id>
     <Title>Ecological Processes and Impacts Governing the Resilience and Alternations in the Porsangerfjord and the Hardangerfjord</Title>
     <Acronym>Epigraph</Acronym>
+    <Coordinator>Institute of Marine Research</Coordinator>
+    <Country>Norway</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13724</Id>
+    <Title>OLAMUR</Title>
+    <Acronym>OLAMUR</Acronym>
     <Coordinator>Institute of Marine Research</Coordinator>
     <Country>Norway</Country>
   </SimpleMetadata>
@@ -14431,6 +14438,13 @@
     <Country>Finland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>7693</Id>
+    <Title>The role of Baltic Sea ice and ice biota in wintertime nutrient cycles and organic matter transformations and transfer</Title>
+    <Acronym>ICEMAT</Acronym>
+    <Coordinator>Tvärminne Zoolgical Station</Coordinator>
+    <Country>Finland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>7690</Id>
     <Title>Ensemble model simulations as a tool to study the Baltic Sea and the Gulf of Finland eutrophication</Title>
     <Acronym>EUTROPHICATION-MAPS</Acronym>
@@ -14449,69 +14463,6 @@
     <Title>Dynamics of dissolved organic matter in the Gulf of Finland</Title>
     <Acronym>DOM</Acronym>
     <Coordinator>Finnish Institute of Marine Research </Coordinator>
-    <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7693</Id>
-    <Title>The role of Baltic Sea ice and ice biota in wintertime nutrient cycles and organic matter transformations and transfer</Title>
-    <Acronym>ICEMAT</Acronym>
-    <Coordinator>Tvärminne Zoolgical Station</Coordinator>
-    <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>4338</Id>
-    <Title>Hydrodynamical control of cyanobacterial blooms in the Baltic Sea: the effect of small-scale turbulence.</Title>
-    <Acronym />
-    <Coordinator>Finnish Institute of Marine Research </Coordinator>
-    <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>4339</Id>
-    <Title>Dynamics and regulation of cyanobacterial blooms in the Baltic Sea.</Title>
-    <Acronym />
-    <Coordinator>Finnish Institute of Marine Research </Coordinator>
-    <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>4345</Id>
-    <Title>Hydrophysical and grazing control of phytoplankton species diversity.</Title>
-    <Acronym />
-    <Coordinator>Finnish Institute of Marine Research </Coordinator>
-    <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>4281</Id>
-    <Title>Baltic Sea Research Programme</Title>
-    <Acronym>BIREME</Acronym>
-    <Coordinator>Helsinki Commission </Coordinator>
-    <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>8144</Id>
-    <Title>Quality assurance of phytoplankton monitoring in the Baltic sea</Title>
-    <Acronym>not provided</Acronym>
-    <Coordinator>Helsinki Commission </Coordinator>
-    <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10788</Id>
-    <Title>Marine Monitoring in the COMBINE Programme of HELCOM</Title>
-    <Acronym>COMBINE</Acronym>
-    <Coordinator>Helsinki Commission </Coordinator>
-    <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>4277</Id>
-    <Title>Baltic Sea Regional Project</Title>
-    <Acronym>BSRP</Acronym>
-    <Coordinator>Helsinki Commission </Coordinator>
-    <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7732</Id>
-    <Title>Developing Policies &amp; Adaptation Strategies to Climate Change in the Baltic Sea Region</Title>
-    <Acronym>ASTRA</Acronym>
-    <Coordinator>Geological Survey of Finland</Coordinator>
     <Country>Finland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -14560,6 +14511,62 @@
     <Id>7689</Id>
     <Title>Envisat and Sea Ice conditions in the Baltic Sea</Title>
     <Acronym>ESSI</Acronym>
+    <Coordinator>Finnish Institute of Marine Research </Coordinator>
+    <Country>Finland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>4281</Id>
+    <Title>Baltic Sea Research Programme</Title>
+    <Acronym>BIREME</Acronym>
+    <Coordinator>Helsinki Commission </Coordinator>
+    <Country>Finland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>8144</Id>
+    <Title>Quality assurance of phytoplankton monitoring in the Baltic sea</Title>
+    <Acronym>not provided</Acronym>
+    <Coordinator>Helsinki Commission </Coordinator>
+    <Country>Finland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10788</Id>
+    <Title>Marine Monitoring in the COMBINE Programme of HELCOM</Title>
+    <Acronym>COMBINE</Acronym>
+    <Coordinator>Helsinki Commission </Coordinator>
+    <Country>Finland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>4277</Id>
+    <Title>Baltic Sea Regional Project</Title>
+    <Acronym>BSRP</Acronym>
+    <Coordinator>Helsinki Commission </Coordinator>
+    <Country>Finland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7732</Id>
+    <Title>Developing Policies &amp; Adaptation Strategies to Climate Change in the Baltic Sea Region</Title>
+    <Acronym>ASTRA</Acronym>
+    <Coordinator>Geological Survey of Finland</Coordinator>
+    <Country>Finland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>4338</Id>
+    <Title>Hydrodynamical control of cyanobacterial blooms in the Baltic Sea: the effect of small-scale turbulence.</Title>
+    <Acronym />
+    <Coordinator>Finnish Institute of Marine Research </Coordinator>
+    <Country>Finland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>4339</Id>
+    <Title>Dynamics and regulation of cyanobacterial blooms in the Baltic Sea.</Title>
+    <Acronym />
+    <Coordinator>Finnish Institute of Marine Research </Coordinator>
+    <Country>Finland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>4345</Id>
+    <Title>Hydrophysical and grazing control of phytoplankton species diversity.</Title>
+    <Acronym />
     <Coordinator>Finnish Institute of Marine Research </Coordinator>
     <Country>Finland</Country>
   </SimpleMetadata>
@@ -16220,6 +16227,27 @@ Gulf basin-MASS</Title>
     <Country>Russian Federation</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11362</Id>
+    <Title>Geothermal research for sedimentary basins</Title>
+    <Acronym />
+    <Coordinator>Institute of Environmental Geoscience RAS</Coordinator>
+    <Country>Russian Federation</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11358</Id>
+    <Title>Caspian Sea Environmental And Industrial Data &amp; Information Service</Title>
+    <Acronym>CASPINFO</Acronym>
+    <Coordinator>Institute of Environmental Geoscience RAS</Coordinator>
+    <Country>Russian Federation</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11359</Id>
+    <Title>BlackseaScene</Title>
+    <Acronym />
+    <Coordinator>Institute of Environmental Geoscience RAS</Coordinator>
+    <Country>Russian Federation</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11387</Id>
     <Title>Information Retrieval System for Fauna and Flora in Protected Natural Areas of the Russian Federation</Title>
     <Acronym>natreserves</Acronym>
@@ -16259,27 +16287,6 @@ Gulf basin-MASS</Title>
     <Title>Alien species on the territory of Russia</Title>
     <Acronym>alien</Acronym>
     <Coordinator>Severtsov Institute of Ecology and Evolution Russian Academy of Sciences </Coordinator>
-    <Country>Russian Federation</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11362</Id>
-    <Title>Geothermal research for sedimentary basins</Title>
-    <Acronym />
-    <Coordinator>Institute of Environmental Geoscience RAS</Coordinator>
-    <Country>Russian Federation</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11358</Id>
-    <Title>Caspian Sea Environmental And Industrial Data &amp; Information Service</Title>
-    <Acronym>CASPINFO</Acronym>
-    <Coordinator>Institute of Environmental Geoscience RAS</Coordinator>
-    <Country>Russian Federation</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11359</Id>
-    <Title>BlackseaScene</Title>
-    <Acronym />
-    <Coordinator>Institute of Environmental Geoscience RAS</Coordinator>
     <Country>Russian Federation</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -18833,10 +18840,10 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13686</Id>
-    <Title>Integrated Pollution Monitoring Programme of the Turkish Seas: 2020-2022</Title>
-    <Acronym />
-    <Coordinator>TUBITAK, Marmara Research Center, Environment Institute (Marine and Inland Waters Management SBU)</Coordinator>
+    <Id>12338</Id>
+    <Title>Monitoring commercially important small pelagic fishes in the Black Sea</Title>
+    <Acronym>N.A.</Acronym>
+    <Coordinator>Central Fisheries Research Institute</Coordinator>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -18847,10 +18854,10 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12338</Id>
-    <Title>Monitoring commercially important small pelagic fishes in the Black Sea</Title>
-    <Acronym>N.A.</Acronym>
-    <Coordinator>Central Fisheries Research Institute</Coordinator>
+    <Id>13686</Id>
+    <Title>Integrated Pollution Monitoring Programme of the Turkish Seas: 2020-2022</Title>
+    <Acronym />
+    <Coordinator>TUBITAK, Marmara Research Center, Environment Institute (Marine and Inland Waters Management SBU)</Coordinator>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -19526,17 +19533,17 @@ Gulf basin-MASS</Title>
     <Country>Latvia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13626</Id>
-    <Title>Research of marine protected habitats in EEZ and determination of the necessary conservation status in Latvia</Title>
-    <Acronym>LIFE REEF</Acronym>
-    <Coordinator>Nature Conservation Agency</Coordinator>
-    <Country>Latvia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12086</Id>
     <Title>Innovative approaches for marine biodiversity monitoring and assessment of conservation status of nature values in the Baltic Sea</Title>
     <Acronym>MARMONI</Acronym>
     <Coordinator>Baltic Environmental Forum, Latvia</Coordinator>
+    <Country>Latvia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13626</Id>
+    <Title>Research of marine protected habitats in EEZ and determination of the necessary conservation status in Latvia</Title>
+    <Acronym>LIFE REEF</Acronym>
+    <Coordinator>Nature Conservation Agency</Coordinator>
     <Country>Latvia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -20506,17 +20513,17 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12395</Id>
-    <Title>Sensors for LArge scale HydrodynaMic Imaging of ocean floor</Title>
-    <Acronym>LAkHsMI</Acronym>
-    <Coordinator>Tallinn University of Technology , School of Information Technologies, Centre for Biorobotics</Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12025</Id>
     <Title>Baltic Sea information on the acoustic soundscape (BIAS)</Title>
     <Acronym>VEU570</Acronym>
     <Coordinator>Tallinn University of Technology</Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12395</Id>
+    <Title>Sensors for LArge scale HydrodynaMic Imaging of ocean floor</Title>
+    <Acronym>LAkHsMI</Acronym>
+    <Coordinator>Tallinn University of Technology , School of Information Technologies, Centre for Biorobotics</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -23950,6 +23957,20 @@ Gulf basin-MASS</Title>
     <Country>Latvia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11233</Id>
+    <Title>The potential of currents for environmental management of the Baltic Sea maritime industry</Title>
+    <Acronym>BalticWay</Acronym>
+    <Coordinator>Institute of Cybernetics at Tallinn University of Technology </Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11219</Id>
+    <Title>Environmental Risk Governance of the Baltic Sea</Title>
+    <Acronym>RISKGOV</Acronym>
+    <Coordinator>Sodertorn University, Centre for Baltic and East European Studies</Coordinator>
+    <Country>Sweden</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11240</Id>
     <Title>Improving Societal Conditions for the Baltic Sea Protection</Title>
     <Acronym>PROBALT</Acronym>
@@ -23969,20 +23990,6 @@ Gulf basin-MASS</Title>
     <Acronym>INFLOW</Acronym>
     <Coordinator>Geological Survey of Finland</Coordinator>
     <Country>Finland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11233</Id>
-    <Title>The potential of currents for environmental management of the Baltic Sea maritime industry</Title>
-    <Acronym>BalticWay</Acronym>
-    <Coordinator>Institute of Cybernetics at Tallinn University of Technology </Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11219</Id>
-    <Title>Environmental Risk Governance of the Baltic Sea</Title>
-    <Acronym>RISKGOV</Acronym>
-    <Coordinator>Sodertorn University, Centre for Baltic and East European Studies</Coordinator>
-    <Country>Sweden</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>11237</Id>

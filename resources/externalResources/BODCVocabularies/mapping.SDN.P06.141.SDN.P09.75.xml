@@ -2693,6 +2693,12 @@
       </related>
    </match>
    <match>
+      <element  key="SDN:P09:75:TIDE"  label="PREDICTED SEA LEVEL"    />
+      <related>
+         <element  key="SDN:P06:75:ULAA"  label="Metres"    />
+      </related>
+   </match>
+   <match>
       <element  key="SDN:P09:75:PRAB"  label="PRESENCE OR ABSENCE OF ENTITY"    />
       <related>
          <element  key="SDN:P06:75:UUUU"  label="Dimensionless"    />

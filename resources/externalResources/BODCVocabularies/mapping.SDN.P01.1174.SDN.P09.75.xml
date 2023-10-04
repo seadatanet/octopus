@@ -2591,6 +2591,12 @@
       </exact>
    </match>
    <match>
+      <element  key="SDN:P09:75:TIDE"  label="PREDICTED SEA LEVEL"    />
+      <exact>
+         <element  key="SDN:P01:75:ASLVTI01"  label="Surface elevation (unspecified datum) of the water body by unspecified prediction algorithm"    />
+      </exact>
+   </match>
+   <match>
       <element  key="SDN:P09:75:PRAB"  label="PRESENCE OR ABSENCE OF ENTITY"    />
       <exact>
          <element  key="SDN:P01:75:PRESABS1"  label="Presence or absence of biological entity specified elsewhere by using 0 or 1 binary classification"    />

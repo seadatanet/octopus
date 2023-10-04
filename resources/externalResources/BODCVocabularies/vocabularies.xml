@@ -26,7 +26,7 @@
    <vocabulary list="SDN:C00:8:"  version="8"  date="2019-05-16T01:00:05.000"  title="BODC Seafloor Depth Data Sources"   />
    <vocabulary list="SDN:C10:12:"  version="12"  date="2018-09-21T01:00:04.000"  title="BODC series feature types"   />
    <vocabulary list="SDN:C16:9:"  version="9"  date="2012-11-07T02:00:06.000"  title="SeaDataNet sea areas"   />
-   <vocabulary list="SDN:C17:1074:"  version="1074"  date="2023-09-23T02:00:05.000"  title="ICES Platform Codes"   />
+   <vocabulary list="SDN:C17:1075:"  version="1075"  date="2023-10-03T02:00:04.000"  title="ICES Platform Codes"   />
    <vocabulary list="SDN:C18:6:"  version="6"  date="2008-10-03T01:00:04.000"  title="Intergovernmental Oceanographic Commission countries"   />
    <vocabulary list="SDN:C19:24:"  version="24"  date="2023-09-13T02:00:02.000"  title="SeaVoX salt and fresh water body gazetteer"   />
    <vocabulary list="SDN:C30:38:"  version="38"  date="2023-09-06T02:00:04.000"  title="Active vocabulary content governance authorities"   />
@@ -186,7 +186,7 @@
    <vocabulary list="SDN:N04:3:"  version="3"  date="2007-08-18T01:00:04.000"  title="NERC DataGrid on-line reference types"   />
    <vocabulary list="SDN:N05:3:"  version="3"  date="2017-05-05T01:00:02.000"  title="NERC data discovery service input metadata document standards"   />
    <vocabulary list="SDN:N06:1:"  version="1"  date="2021-05-26T02:00:06.000"  title="NERC Environmental Data Centres DataCite General Resource Types"   />
-   <vocabulary list="SDN:OD1:3:"  version="3"  date="2023-09-29T02:00:03.000"  title="ODATIS aggregation parameters and Essential Variable names"   />
+   <vocabulary list="SDN:OD1:4:"  version="4"  date="2023-10-04T02:00:03.000"  title="ODATIS aggregation parameters and Essential Variable names"   />
    <vocabulary list="SDN:OG1:18:"  version="18"  date="2023-08-08T02:00:05.000"  title="OceanGliders Parameter Usage Vocabulary"   />
    <vocabulary list="SDN:P01:1174:"  version="1174"  date="2023-09-29T02:00:03.000"  title="BODC Parameter Usage Vocabulary"   />
    <vocabulary list="SDN:P02:126:"  version="126"  date="2023-08-31T02:00:06.000"  title="SeaDataNet Parameter Discovery Vocabulary"   />
@@ -230,7 +230,7 @@
    <vocabulary list="SDN:R05:0:"  version="0"  date="2020-04-04T14:47:54.000"  title="Argo position accuracy"   />
    <vocabulary list="SDN:R06:0:"  version="0"  date="2020-04-04T14:45:13.000"  title="Argo data state indicators"   />
    <vocabulary list="SDN:R07:1:"  version="1"  date="2020-04-08T02:00:04.000"  title="Argo history action codes"   />
-   <vocabulary list="SDN:R08:3:"  version="3"  date="2023-09-29T02:00:03.000"  title="Argo instrument types"   />
+   <vocabulary list="SDN:R08:4:"  version="4"  date="2023-10-04T02:00:03.000"  title="Argo instrument types"   />
    <vocabulary list="SDN:R09:1:"  version="1"  date="2020-04-08T02:00:04.000"  title="Argo positioning system"   />
    <vocabulary list="SDN:R10:1:"  version="1"  date="2020-04-08T02:00:04.000"  title="Argo transmission systems"   />
    <vocabulary list="SDN:R11:2:"  version="2"  date="2022-06-08T02:00:02.000"  title="Argo real-time quality-control test identifiers"   />
@@ -248,7 +248,7 @@
    <vocabulary list="SDN:R24:3:"  version="3"  date="2023-09-01T02:00:07.000"  title="Argo platform maker"   />
    <vocabulary list="SDN:R25:2:"  version="2"  date="2021-02-10T02:00:03.000"  title="Argo sensor types"   />
    <vocabulary list="SDN:R26:4:"  version="4"  date="2021-09-15T02:00:07.000"  title="Argo sensor manufacturers"   />
-   <vocabulary list="SDN:R27:11:"  version="11"  date="2023-09-01T02:00:07.000"  title="Argo sensor models"   />
+   <vocabulary list="SDN:R27:12:"  version="12"  date="2023-10-04T02:00:03.000"  title="Argo sensor models"   />
    <vocabulary list="SDN:R28:1:"  version="1"  date="2023-06-23T02:00:02.000"  title="Argo controller board types and generations"   />
    <vocabulary list="SDN:R40:2:"  version="2"  date="2023-08-01T02:00:04.000"  title="Argo Principal Investigator (PI) names"   />
    <vocabulary list="SDN:RD2:0:"  version="0"  date="2020-04-04T14:29:09.000"  title="Argo delayed-mode quality control measurement flags"   />
@@ -279,7 +279,7 @@
    <vocabulary list="SDN:S24:24:"  version="24"  date="2022-10-12T02:00:03.000"  title="BODC semantic model sphere phase subgroup names"   />
    <vocabulary list="SDN:S25:169:"  version="169"  date="2023-09-12T02:00:03.000"  title="BODC parameter semantic model biological entity names"   />
    <vocabulary list="SDN:S26:36:"  version="36"  date="2022-10-12T02:00:03.000"  title="BODC parameter semantic model matrices"   />
-   <vocabulary list="SDN:S27:164:"  version="164"  date="2023-08-15T02:00:03.000"  title="BODC parameter semantic model chemical substances"   />
+   <vocabulary list="SDN:S27:165:"  version="165"  date="2023-10-03T02:00:04.000"  title="BODC parameter semantic model chemical substances"   />
    <vocabulary list="SDN:S28:1:"  version="1"  date="2016-11-12T02:00:05.000"  title="Seaglider Guidance and Control Phase Settings"   />
    <vocabulary list="SDN:S29:76:"  version="76"  date="2023-08-31T02:00:06.000"  title="BODC parameter semantic model physical entity compound names"   />
    <vocabulary list="SDN:S30:4:"  version="4"  date="2022-06-14T02:00:01.000"  title="BODC parameter semantic model relationships between biological entities"   />

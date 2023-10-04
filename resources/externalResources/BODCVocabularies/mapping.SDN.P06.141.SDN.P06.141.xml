@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+   <vocabulary list="SDN:P06:141:"  version="141"  date="2023-09-05T02:01:39.000"  title="BODC-approved data storage units"   />
+   <mapped>
+      <vocabulary list="SDN:P06:141:"  version="141"  date="2023-09-05T02:01:39.000"  title="BODC-approved data storage units"   />
+   </mapped>
+   <match>
+      <element  key="SDN:P06:141:VVCC"  label="Cubic centimetres"    />
+      <exact>
+         <element  key="SDN:P06:141:VVML"  label="Millilitres"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:CMCM"  label="Cubic millimetres per cubic metre"    />
+      <exact>
+         <element  key="SDN:P06:141:UBLV"  label="Parts per billion by volume"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:DKPM"  label="Degrees Kelvin per metre"    />
+      <exact>
+         <element  key="SDN:P06:141:KPMT"  label="Kelvins per metre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:UUBQ"  label="Microbecquerels per litre"    />
+      <exact>
+         <element  key="SDN:P06:141:MBQM"  label="Millibecquerels per cubic metre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:XGCC"  label="Micrograms per cubic centimetre"    />
+      <exact>
+         <element  key="SDN:P06:141:UUGS"  label="Micrograms per millilitre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:UUKG"  label="Micrograms per kilogram"    />
+      <exact>
+         <element  key="SDN:P06:141:NGPG"  label="Nanograms per gram"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:UUGS"  label="Micrograms per millilitre"    />
+      <exact>
+         <element  key="SDN:P06:141:UMGL"  label="Milligrams per litre"    />
+         <element  key="SDN:P06:141:XGCC"  label="Micrograms per cubic centimetre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:CMUM"  label="Micromoles per cubic metre"    />
+      <exact>
+         <element  key="SDN:P06:141:UPNM"  label="Nanomoles per litre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:MBQM"  label="Millibecquerels per cubic metre"    />
+      <exact>
+         <element  key="SDN:P06:141:UUBQ"  label="Microbecquerels per litre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:VVML"  label="Millilitres"    />
+      <exact>
+         <element  key="SDN:P06:141:VVCC"  label="Cubic centimetres"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:NGPG"  label="Nanograms per gram"    />
+      <exact>
+         <element  key="SDN:P06:141:UUKG"  label="Micrograms per kilogram"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:UPNM"  label="Nanomoles per litre"    />
+      <exact>
+         <element  key="SDN:P06:141:CMUM"  label="Micromoles per cubic metre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:NCM3"  label="Number per cubic centimetre"    />
+      <exact>
+         <element  key="SDN:P06:141:UCML"  label="Number per millilitre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:UCML"  label="Number per millilitre"    />
+      <exact>
+         <element  key="SDN:P06:141:NCM3"  label="Number per cubic centimetre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:UBLV"  label="Parts per billion by volume"    />
+      <exact>
+         <element  key="SDN:P06:141:CMCM"  label="Cubic millimetres per cubic metre"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:UPDS"  label="Percentage of dry sediment"    />
+      <exact>
+         <element  key="SDN:P06:141:UPCT"  label="Percent"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:P06:141:UMSG"  label="Square metres per gram of dry sediment"    />
+      <exact>
+         <element  key="SDN:P06:141:SMPG"  label="Square metres per gram"    />
+      </exact>
+   </match>
+</mapping>

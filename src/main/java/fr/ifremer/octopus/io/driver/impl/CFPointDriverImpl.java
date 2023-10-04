@@ -35,6 +35,9 @@ public class CFPointDriverImpl extends Driver {
 			else if (netCdfFormat == NETCDF_FORMAT.EGOGlider) {
 				format = Format.CFPOINT_EGOGLIDER;
 			}
+			else if (netCdfFormat == NETCDF_FORMAT.ADCP) {
+				format = Format.CFPOINT_ADCP;
+			}
 			
 			inputFile.close();
 		} catch (IOException e) {

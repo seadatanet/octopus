@@ -18,6 +18,7 @@ import fr.ifremer.octopus.utils.NetworkUtils;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.octopus.view.edmo.EdmoController;
 import fr.ifremer.octopus.view.edmo.EdmoHandler;
+import fr.ifremer.sismer_tools.edmerp.EdmerpManager;
 import fr.ifremer.sismer_tools.externalresources.ExternalResourcesManager;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
@@ -110,10 +111,16 @@ public class PreferencesController {
 		// add listener AFTER first select
 		themeChoiceBox.valueProperty().addListener((observable, oldValue, newValue) -> updateTheme(themeChoiceBox.getSelectionModel().getSelectedIndex()));
 
-		// edmo
+		// EDMO
 		// call manager to create instance and init EDMO list
 		EdmoManager.getInstance();
 		updateEdmoText();
+
+		// EDMERP
+		// call manager to create instance and init EDMERP list
+		EdmerpManager.getInstance();
+		updateEdmerpText();
+		
 		// DEFAULT DIRECTORIES
 		inputDefault.setText(PreferencesManager.getInstance().getInputDefaultPath());
 		outputDefault.setText(PreferencesManager.getInstance().getOutputDefaultPath());
@@ -132,6 +139,16 @@ public class PreferencesController {
 			edmoCodeValue.setText(edmo_code + " - " + edmo_name);
 		}
 
+	}
+	
+	public void updateEdmerpText() {
+		// TODO
+//		String edmo = PreferencesManager.getInstance().getEdmoCode();
+//		if (!edmo.isEmpty()) {
+//			int edmo_code = Integer.valueOf(PreferencesManager.getInstance().getEdmoCode());
+//			String edmo_name = EdmoHandler.getEdmoName(edmo_code);
+//			edmoCodeValue.setText(edmo_code + " - " + edmo_name);
+//		}
 	}
 
 	public void updateEdmoText(Integer edmo_code, String edmo_name) {
@@ -294,6 +311,15 @@ public class PreferencesController {
 					appendTextToBodcLog(Level.ERROR, e.getMessage());
 				}
 
+				// EDMERP
+				try {
+					String res=ExternalResourcesManager.getInstance().getEdmerpManager().reload();
+					appendTextToBodcLog(Level.INFO, res);
+				} catch (Exception e1) {
+					LOGGER.error(e1.getMessage() );
+					appendTextToBodcLog(Level.ERROR, "ERROR: EDMERP check failed. Please check your internet connection.");
+				}
+				
 				// CSR
 				try {
 					String res=ExternalResourcesManager.getInstance().getCsrListManager().reload();

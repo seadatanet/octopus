@@ -18,6 +18,10 @@ src/test/resources/odv/out/
 # Fichiers et dossiers des editeurs de code
 .vscode/
 
+# Fichiers de runtime
+octopusDB/
+*.csv
+
 # Fichiers de backup 
 *.back
 

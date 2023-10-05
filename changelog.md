@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.0
+
+### Evolutions
+* Conversion des fichiers ADCP provenant de CASCADE.
+* Check des fichiers ADCP obtenus.
+* Gestion de la ressource EDMERP (mise à jour par webservice).
+
 ## 1.9.0
 
 ### Evolutions

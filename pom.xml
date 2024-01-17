@@ -796,9 +796,9 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<!-- http://www.ifremer.fr/isi/softwareversion/ -> to be installed in a 
 			maven repository -->
 		<dependency>
-			<groupId>fr.ifremer.seadatanet</groupId>
-			<artifactId>SoftwareVersionApi</artifactId>
-			<version>1.0</version>
+			<groupId>fr.ifremer</groupId>
+			<artifactId>SoftwareVersionApi-javax</artifactId>
+			<version>3.1.2</version>
 		</dependency>
 
 		<!-- ************************* ****** ************************* -->

@@ -737,7 +737,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 	</pluginRepositories>
 
 	<repositories>
-		<repository>
+		<!--<repository>
 			<id>gitlab-maven-internal</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/1226/packages/maven</url>
 		</repository>
@@ -745,7 +745,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<repository>
 			<id>gitlab-maven-octopus</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
+		</repository>-->
+		<repository>
+		    <id>gitlab-sdn-maven</id>
+		    <url>https://gitlab.ifremer.fr/api/v4/groups/seadatanet/-/packages/maven</url>
 		</repository>
+
 	</repositories>
 
 	<distributionManagement>
@@ -755,12 +760,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		</repository>-->
 
 		<repository>
-			<id>gitlab-maven-octopus</id>
+			<id>gitlab-sdn-maven</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>gitlab-maven-octopus</id>
+			<id>gitlab-sdn-maven</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
 		</snapshotRepository>
 	</distributionManagement>

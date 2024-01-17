@@ -32,7 +32,7 @@ variables:
     -DdeployAtEnd=true
 
 # default image
-image: gitlab-registry.ifremer.fr/ifremer-commons/docker/images/maven-javafx:maven-3.8.5-jdk-8-javafx
+image: gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven-javafx:maven-javafx-3.8.5
 
 # Cache downloaded dependencies and plugins between builds.
 # To keep cache across branches, usage of 'key: "$CI_PROJECT_ID"'

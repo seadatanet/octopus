@@ -204,6 +204,13 @@
     <Country>United Kingdom</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13732</Id>
+    <Title>P2P: Predators to Plankton - Biophysical Controls in Antarctic Polynyas</Title>
+    <Acronym>P2P</Acronym>
+    <Coordinator>University of East Anglia, School of Environmental Sciences</Coordinator>
+    <Country>United Kingdom</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>3094</Id>
     <Title>Maerl Biodiversity: Functional Structure and Anthropogenic Impacts (BIOMAERL)</Title>
     <Acronym>BIOMAERL</Acronym>
@@ -2521,6 +2528,20 @@
     <Country>United Kingdom</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13708</Id>
+    <Title>The Gulf Stream control of the North Atlantic carbon sink C-Streams</Title>
+    <Acronym>C-Streams</Acronym>
+    <Coordinator>University of Liverpool Department of Earth, Ocean and Ecological Sciences</Coordinator>
+    <Country>United Kingdom</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13702</Id>
+    <Title>Southern Ocean carbon indices and metrics</Title>
+    <Acronym>SARDINE</Acronym>
+    <Coordinator>University of Liverpool Department of Earth, Ocean and Ecological Sciences</Coordinator>
+    <Country>United Kingdom</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12441</Id>
     <Title>CROZET (Benthic CROZEX)</Title>
     <Acronym>CROZET</Acronym>
@@ -2552,20 +2573,6 @@
     <Id>13554</Id>
     <Title>Can we detect changes in Arctic ecosystems? (ARISE)</Title>
     <Acronym>ARISE</Acronym>
-    <Coordinator>University of Liverpool Department of Earth, Ocean and Ecological Sciences</Coordinator>
-    <Country>United Kingdom</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13708</Id>
-    <Title>The Gulf Stream control of the North Atlantic carbon sink C-Streams</Title>
-    <Acronym>C-Streams</Acronym>
-    <Coordinator>University of Liverpool Department of Earth, Ocean and Ecological Sciences</Coordinator>
-    <Country>United Kingdom</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13702</Id>
-    <Title>Southern Ocean carbon indices and metrics</Title>
-    <Acronym>SARDINE</Acronym>
     <Coordinator>University of Liverpool Department of Earth, Ocean and Ecological Sciences</Coordinator>
     <Country>United Kingdom</Country>
   </SimpleMetadata>
@@ -2657,7 +2664,7 @@
     <Id>13710</Id>
     <Title>geoDYNAmics &amp; METallogeny DYNAMET</Title>
     <Acronym>DYNAMET</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Eastshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel (eastshore campus)</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -2745,6 +2752,13 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13730</Id>
+    <Title>Red Sea Paleoenvironmental Evolution under Monsoon fluctuations in the Pleistocene to Holocene</Title>
+    <Acronym>REPLENISH</Acronym>
+    <Coordinator>Institute for Geology (Hamburg)</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11900</Id>
     <Title>German Marine Monitoring Programme.</Title>
     <Acronym>BLMP</Acronym>
@@ -2787,6 +2801,13 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>12012</Id>
+    <Title>Maldives Carbonate Stratigraphy, IODP Pre-Site Survey</Title>
+    <Acronym>MALSTROM</Acronym>
+    <Coordinator>University of Hamburg</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>13636</Id>
     <Title>Towards an understanding of carbonate platforms in the icehouse world - ICECARB</Title>
     <Acronym>ICECARB</Acronym>
@@ -2801,16 +2822,16 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12012</Id>
-    <Title>Maldives Carbonate Stratigraphy, IODP Pre-Site Survey</Title>
-    <Acronym>MALSTROM</Acronym>
+    <Id>12514</Id>
+    <Title>Arctic-subarctic ocean flux array for european climate: north</Title>
+    <Acronym>ASOF-N</Acronym>
     <Coordinator>University of Hamburg</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12514</Id>
-    <Title>Arctic-subarctic ocean flux array for european climate: north</Title>
-    <Acronym>ASOF-N</Acronym>
+    <Id>13735</Id>
+    <Title>EPOC - Explaining and Predicting the Ocean Conveyor</Title>
+    <Acronym>EPOC</Acronym>
     <Coordinator>University of Hamburg</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
@@ -3014,154 +3035,161 @@
     <Id>13567</Id>
     <Title>The role of pelagic foodfalls in subsidizing deep-sea bottom communities in a changing ocean</Title>
     <Acronym>DeepC-Jelly</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12518</Id>
     <Title>Improving and Integrating European Ocean Observing and Forecasting Systems for Sustainable Use of the Oceans</Title>
     <Acronym>EUROSEA</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>13621</Id>
     <Title>CO2 removal by alkalinity enhancement: potential, benefits and risks</Title>
     <Acronym>CDRmare RETAKE</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13637</Id>
-    <Title>MARINE CARBON SINKS in decarbonisation pathways</Title>
-    <Acronym>CDRmare</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>11933</Id>
     <Title>Climate-Biogeochemistry Interactions in the Tropical Ocean</Title>
     <Acronym>SFB 754</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13637</Id>
+    <Title>MARINE CARBON SINKS in decarbonisation pathways</Title>
+    <Acronym>CDRmare</Acronym>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>11934</Id>
     <Title>Understanding of active methane seeps along the Hikurangi Margin</Title>
     <Acronym>Nemesys</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>11948</Id>
     <Title>Biological Impacts Of Ocean Acidification</Title>
     <Acronym>BIOACID</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12377</Id>
     <Title>Coastal Upwelling System in a Changing Ocean</Title>
     <Acronym>CUSCO</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12017</Id>
     <Title>Surface Ocean Processes in the Anthropocene</Title>
     <Acronym>SOPRAN</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12027</Id>
     <Title>Organic very short lived substances and their Air sea Exchange from the Indian Ocean to the Stratosphere</Title>
     <Acronym>OASIS Geomar</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12075</Id>
     <Title>TIMM - FLEXMOT – Flexible Long-term Monitoring Tool</Title>
     <Acronym>TIMM-FLEXMOT</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12077</Id>
     <Title>Biodiversity changes - investigating causes, consequences and management implications</Title>
     <Acronym>BONUS Bio-C3</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13728</Id>
+    <Title>Coastal Fishery, Biodiversity, Spatial Use and Climate Change: A Participative Approach to navigate the Western Baltic Sea into a Sustainable Future</Title>
+    <Acronym>DAM SpaCeParti</Acronym>
+    <Coordinator>German Marine Research Consortium</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12078</Id>
     <Title>Transdrift Laptev Sea</Title>
     <Acronym>TRANSDRIFT</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12100</Id>
     <Title>Near-coastal supply of oxygen and dissolved organic matter to the oxygen minimum zone (B09)</Title>
     <Acronym>SFB 754 B09</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12297</Id>
     <Title>Optimizing and Enhancing the Integrated Atlantic Ocean Observing System</Title>
     <Acronym>AtlantOS</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12318</Id>
     <Title>GoJelly - A gelatinous solution to plastic pollution</Title>
     <Acronym>GoJelly</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12316</Id>
     <Title>Trace gas air-sea exchange using eddy correlation</Title>
     <Acronym>TRASE-EC</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>11937</Id>
     <Title>Southwest African Coastal Upwelling System and Benguela Nino's</Title>
     <Acronym>SACUS</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>13561</Id>
     <Title>Benguela Niños: Physical processes and long-term variability</Title>
     <Acronym>BANINO</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12322</Id>
     <Title>The  Plio/Pleistocene to Holocene development of the pelagic North Pacific from surface to depth</Title>
     <Acronym>SO 264 – SONNE-EMPEROR</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12442</Id>
     <Title>A New Threat to the Stratospheric Ozone Layer from Anthropogenic Very Short-lived Halocarbons</Title>
     <Acronym>AVeSH</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12438</Id>
     <Title>Horizontal and vertical oceanic distribution, transport, and impact of microplastics</Title>
     <Acronym>HOTMIC</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -3175,21 +3203,21 @@
     <Id>13560</Id>
     <Title>Boost Applied munition detection through Smart data inTegration and AI workflows</Title>
     <Acronym>BASTA</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12224</Id>
     <Title>Environmental Monitoring for the Delaboration of Munitions in the Sea</Title>
     <Acronym>UDEMM</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12226</Id>
     <Title>RITTER ISLAND:  Tsunami research: Reconstructing the lateral collapse of a volcano</Title>
     <Acronym>Ritter Island</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -3571,6 +3599,13 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13726</Id>
+    <Title>MESMO - Modelling of radiation effects in marine organisms</Title>
+    <Acronym>MESMO</Acronym>
+    <Coordinator>Thünen-Institute of Fisheries Ecology</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12216</Id>
     <Title>Decision aid for marine munitions</Title>
     <Acronym>Daimon</Acronym>
@@ -3634,6 +3669,13 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13729</Id>
+    <Title>Gill net fisheries: Development of alternative management approaches (STELLA2)</Title>
+    <Acronym>STELLA2</Acronym>
+    <Coordinator>Thünen-Institute of Baltic Sea Fisheries</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12515</Id>
     <Title>Reduction of plastic waste from the brown shrimp fishery through gear modifications (DRopS)</Title>
     <Acronym>DRopS</Acronym>
@@ -3679,6 +3721,13 @@
     <Id>13635</Id>
     <Title>General data on the OpenRAVE project</Title>
     <Acronym>OpenRave</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13733</Id>
+    <Title>Marine environmental observation network in the North Sea and Baltic Sea</Title>
+    <Acronym>MARNET</Acronym>
     <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
@@ -3900,6 +3949,13 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13727</Id>
+    <Title>Assessment, evaluation and mapping of benthic species and biotopes in the German Exclusive Economic Zone (EEZ) of the North Sea</Title>
+    <Acronym>LABEL</Acronym>
+    <Coordinator>Federal Agency for Nature Conservation</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>13697</Id>
     <Title>West Antarctic Ice Sheet history and processes in the Bellingshausen Sea (WAIS-BELL)</Title>
     <Acronym>WAIS-BELL</Acronym>
@@ -3973,14 +4029,14 @@
     <Id>11923</Id>
     <Title>Carbon dioxide in the Atlantic Ocean</Title>
     <Acronym>CARINA</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12219</Id>
     <Title>Strategies for Environmental Monitoring of Marine Carbon Capture and Storage</Title>
     <Acronym>STEMM-CCS</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -4001,35 +4057,35 @@
     <Id>12432</Id>
     <Title>Role of Eddies in the Carbon Pump of Eastern Boundary Upwelling Systems</Title>
     <Acronym>REEBUS</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12220</Id>
     <Title>Origin and Evolution of the Bering Sea: An intergrated geochronological, volcanological, petrological, and geochemical approach</Title>
     <Acronym>BERING</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12011</Id>
     <Title>Exploring the temporal and geochemical evolution of the Central Walvis Ridge</Title>
     <Acronym>SO233-WALVIS II</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>12023</Id>
     <Title>Suspected Large Igneous Province</Title>
     <Acronym>SLIP</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>11913</Id>
     <Title>SO225 - MANIHIKI II-Leg 2: The Manihikiplateau - Evolition, structure and impacts of oceanic plateaus</Title>
     <Acronym>MANIHIKI II</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel (Westshore campus)</Coordinator>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -10095,13 +10151,6 @@
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11157</Id>
-    <Title>Ecotoxicological study on the effect of pollutants on Turbellaria</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Hasselt University, Department of Biology, Geology, Research group on Biodiversity, Phylogeny and Population Studies</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11073</Id>
     <Title>Systematics, ecology and biogeography of marine organisms in the Indian Ocean. I</Title>
     <Acronym>unknown</Acronym>
@@ -10113,6 +10162,13 @@
     <Title>Systematics, ecology and biogeography of marine organisms in the Indian Ocean. II</Title>
     <Acronym>unknown</Acronym>
     <Coordinator>Ghent University, Faculty of Sciences, Department of Biology, Nematology</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11157</Id>
+    <Title>Ecotoxicological study on the effect of pollutants on Turbellaria</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Hasselt University, Department of Biology, Geology, Research group on Biodiversity, Phylogeny and Population Studies</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -12163,6 +12219,13 @@
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13725</Id>
+    <Title>MARION DUFRESNE ATMOSPHERIC PROGRAM INDIAN OCEAN</Title>
+    <Acronym>MAP-IO</Acronym>
+    <Coordinator>Aerology Laboratory</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12060</Id>
     <Title>EUROFLEETS 2 : Towards an Alliance of European Research Fleets</Title>
     <Acronym>EUROFLEETS</Acronym>
@@ -12187,6 +12250,13 @@
     <Id>11575</Id>
     <Title>MyOcean</Title>
     <Acronym>MyOcean</Acronym>
+    <Coordinator>Mercator Ocean</Coordinator>
+    <Country>France</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13736</Id>
+    <Title>French Ocean Observing System</Title>
+    <Acronym>FrOOS</Acronym>
     <Coordinator>Mercator Ocean</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
@@ -13479,6 +13549,13 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11675</Id>
+    <Title>Monitoring the effect on benthic communities at sites in the Dutch Coastal Waters were sea sand is extracted or replenished</Title>
+    <Acronym />
+    <Coordinator>Wageningen Marine Research (Yerseke)</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11640</Id>
     <Title>Inventory of the distribution and abundance of sublittoral wild mussel beds in the western Dutch Wadden Sea</Title>
     <Acronym />
@@ -13510,13 +13587,6 @@
     <Id>11672</Id>
     <Title>National programme Sea and Coastal Research</Title>
     <Acronym>ZKO</Acronym>
-    <Coordinator>Wageningen Marine Research (Yerseke)</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11675</Id>
-    <Title>Monitoring the effect on benthic communities at sites in the Dutch Coastal Waters were sea sand is extracted or replenished</Title>
-    <Acronym />
     <Coordinator>Wageningen Marine Research (Yerseke)</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -14977,13 +15047,6 @@
     <Country>Italy</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11497</Id>
-    <Title>Geographical Atlas of Caspian sea</Title>
-    <Acronym>GAC</Acronym>
-    <Coordinator>Geographical Society of Azerbaijan</Coordinator>
-    <Country>Azerbaijan</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11486</Id>
     <Title>Influence of phisical-oceanographic factors on distribution of sewage in a coastal zone of Apsheron peninsula</Title>
     <Acronym />
@@ -14995,6 +15058,13 @@
     <Title>The reasons of fluctuation of a level of Caspian sea</Title>
     <Acronym />
     <Coordinator>Institute of Geology of the Azerbaijan, National Academy of  Sciences</Coordinator>
+    <Country>Azerbaijan</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11497</Id>
+    <Title>Geographical Atlas of Caspian sea</Title>
+    <Acronym>GAC</Acronym>
+    <Coordinator>Geographical Society of Azerbaijan</Coordinator>
     <Country>Azerbaijan</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -16766,13 +16836,6 @@ Gulf basin-MASS</Title>
     <Country>Bulgaria</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12380</Id>
-    <Title>Galata gas platform real time data</Title>
-    <Acronym>Galata_platform</Acronym>
-    <Coordinator>Institute of Oceanology, Bulgarian Academy of Sciences </Coordinator>
-    <Country>Bulgaria</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11763</Id>
     <Title>BulArgo</Title>
     <Acronym>BulArgo</Acronym>
@@ -16783,6 +16846,13 @@ Gulf basin-MASS</Title>
     <Id>11764</Id>
     <Title>POMOS</Title>
     <Acronym>POMOS</Acronym>
+    <Coordinator>Institute of Oceanology, Bulgarian Academy of Sciences </Coordinator>
+    <Country>Bulgaria</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12380</Id>
+    <Title>Galata gas platform real time data</Title>
+    <Acronym>Galata_platform</Acronym>
     <Coordinator>Institute of Oceanology, Bulgarian Academy of Sciences </Coordinator>
     <Country>Bulgaria</Country>
   </SimpleMetadata>
@@ -22281,6 +22351,13 @@ Gulf basin-MASS</Title>
     <Title>MBP Monitoring project</Title>
     <Acronym>MBP_Monitor</Acronym>
     <Coordinator>National Institute of Biology, Marine Biology Station</Coordinator>
+    <Country>Slovenia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13734</Id>
+    <Title>Co-creating strong uptake of REMEDIES for the future of our oceans through deploying plastic litter valorisation and prevention pathways</Title>
+    <Acronym>REMEDIES</Acronym>
+    <Coordinator>National Institute of Chemistry</Coordinator>
     <Country>Slovenia</Country>
   </SimpleMetadata>
   <SimpleMetadata>

@@ -134,7 +134,7 @@ deploy_snapshot:
     - seadatanet-runner
   script:
    - mvn versions:set -DnewVersion="$SNAPSHOT_VERSION"
-   - mvn $MAVEN_CLI_OPTS deploy
+   - mvn $MAVEN_CLI_OPTS -U deploy
   only:
     - develop
 

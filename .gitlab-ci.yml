@@ -137,6 +137,7 @@ deploy_snapshot:
    - mvn $MAVEN_CLI_OPTS -U deploy
   only:
     - develop
+    - feature/octopus_1_10_with_jre
 
 # On branch develop with manual action (available after deploy_snapshot)
 deploy_release:
@@ -149,5 +150,6 @@ deploy_release:
     - mvn $MAVEN_CLI_OPTS deploy
   only:
     - develop
+    - feature/octopus_1_10_with_jre
   when: manual
 

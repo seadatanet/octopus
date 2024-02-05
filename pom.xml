@@ -41,6 +41,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>fr.ifremer.octopus.MainApp</start-class>
 		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
+		<jrepath>${basedir}/jre</jrepath>
 	</properties>
 
 	<build>

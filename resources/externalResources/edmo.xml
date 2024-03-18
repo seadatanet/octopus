@@ -3861,11 +3861,11 @@ P.O. Box 2214
   <Organisation>
     <n_code>144</n_code>
     <input_date />
-    <last_update>12/23/2020 7:59:53 PM</last_update>
+    <last_update>2/15/2024 5:02:15 PM</last_update>
     <date_created>4/23/2004 12:00:00 AM</date_created>
     <organisation_exists>False</organisation_exists>
-    <organisation_changed_into />
-    <organisation_changed_year />
+    <organisation_changed_into>5060</organisation_changed_into>
+    <organisation_changed_year>2018</organisation_changed_year>
     <Longitude />
     <Latitude />
     <collate_id>120</collate_id>
@@ -5651,11 +5651,11 @@ De Pintelaan 185</address>
   <Organisation>
     <n_code>252</n_code>
     <input_date />
-    <last_update>12/23/2020 7:33:48 PM</last_update>
+    <last_update>3/4/2024 9:13:38 AM</last_update>
     <date_created />
     <organisation_exists>False</organisation_exists>
-    <organisation_changed_into />
-    <organisation_changed_year />
+    <organisation_changed_into>5921</organisation_changed_into>
+    <organisation_changed_year>2018</organisation_changed_year>
     <Longitude />
     <Latitude />
     <collate_id>120</collate_id>
@@ -8998,7 +8998,7 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>383</n_code>
     <input_date />
-    <last_update>11/9/2017 10:11:02 AM</last_update>
+    <last_update>3/4/2024 4:11:38 PM</last_update>
     <date_created>3/16/1992 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -9016,7 +9016,7 @@ Miguel Servet 177</address>
     <state>Co. Galway</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>colin.odowd@nuigalway.ie</email>
+    <email>colin.odowd@universityofgalway.ie</email>
     <phone>+353-95-32754</phone>
     <fax>+353-95-32753</fax>
     <website>http://www.macehead.org/</website>
@@ -9025,7 +9025,7 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>385</n_code>
     <input_date />
-    <last_update>8/29/2018 11:16:57 AM</last_update>
+    <last_update>3/4/2024 4:11:06 PM</last_update>
     <date_created>3/16/1992 12:00:00 AM</date_created>
     <organisation_exists>False</organisation_exists>
     <organisation_changed_into>388</organisation_changed_into>
@@ -9034,16 +9034,16 @@ Miguel Servet 177</address>
     <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/nui-galway-societies.jpg</logo>
-    <name>Applied Geophysics Unit, NUI Galway</name>
+    <name>Applied Geophysics Unit, University of Galway</name>
     <native_name />
-    <abbreviated_name>Physics NUIG</abbreviated_name>
+    <abbreviated_name>Physics University of Galway</abbreviated_name>
     <address>Ryan Institute</address>
     <zipcode>H91 TK33</zipcode>
     <city>University Road</city>
     <state>Galway</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>info@nuigalway.ie</email>
+    <email>info@universityofgalway.ie</email>
     <phone>+353-91-524411</phone>
     <fax />
     <website>https://www.nuigalway.ie/our-research/listings/institute-for-environment-marine-and-energy.html</website>
@@ -9052,7 +9052,7 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>386</n_code>
     <input_date />
-    <last_update>5/28/2015 4:17:53 PM</last_update>
+    <last_update>3/4/2024 4:10:41 PM</last_update>
     <date_created>2/16/1992 12:00:00 AM</date_created>
     <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
@@ -9061,7 +9061,7 @@ Miguel Servet 177</address>
     <Latitude>53.2774</Latitude>
     <collate_id>396</collate_id>
     <logo />
-    <name>Department of Microbiology, Ryan Institute, NUI Galway</name>
+    <name>Department of Microbiology, Ryan Institute, University of Galway</name>
     <native_name />
     <abbreviated_name />
     <address>University Road</address>
@@ -9073,13 +9073,13 @@ Miguel Servet 177</address>
     <email>inapplicable</email>
     <phone />
     <fax />
-    <website>http://mri.nuigalway.ie/</website>
+    <website>http://mri.universityofgalway.ie/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
     <n_code>388</n_code>
     <input_date />
-    <last_update>11/9/2017 10:01:21 AM</last_update>
+    <last_update>3/4/2024 4:10:20 PM</last_update>
     <date_created>2/16/1992 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -9088,19 +9088,19 @@ Miguel Servet 177</address>
     <Latitude>53.28</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/nui-galway-societies.jpg</logo>
-    <name>Department of Earth and Ocean Sciences, NUI Galway</name>
+    <name>Department of Earth and Ocean Sciences, University of Galway</name>
     <native_name />
-    <abbreviated_name>EOS NUIG</abbreviated_name>
-    <address>School of Natural Sciences, National University of Ireland Galway</address>
+    <abbreviated_name>EOS University of Galway</abbreviated_name>
+    <address>School of Natural Sciences, University of Galway</address>
     <zipcode>H91 CF50</zipcode>
     <city>University Road</city>
     <state>Galway</state>
     <country>15</country>
     <country_c32>IE</country_c32>
     <email>lorna.larkin@nuigalway.ie</email>
-    <phone>+353-91-492126 </phone>
-    <fax>+353-91-494533 </fax>
-    <website>http://www.nuigalway.ie/eos/</website>
+    <phone>+353-91-492126</phone>
+    <fax>+353-91-494533</fax>
+    <website>http://www.universityofgalway.ie/eos/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -9575,7 +9575,7 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>412</n_code>
     <input_date />
-    <last_update>11/8/2017 12:55:28 PM</last_update>
+    <last_update>3/4/2024 4:08:31 PM</last_update>
     <date_created>3/21/1996 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -9584,19 +9584,19 @@ Miguel Servet 177</address>
     <Latitude>53.2775</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/nui-galway-societies.jpg</logo>
-    <name>Department of Zoology, Ryan Institute, NUI Galway</name>
+    <name>Department of Zoology, Ryan Institute, University of Galway</name>
     <native_name>An Roinn Zó-eolaíocht, Ollscoil Náisuinta na hEireann Gaillimh</native_name>
-    <abbreviated_name>Zoology NUIG</abbreviated_name>
+    <abbreviated_name>Zoology University of Galway</abbreviated_name>
     <address>Ryan Institute</address>
     <zipcode />
     <city>University Road</city>
     <state>Galway</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>anne.cryan@nuigalway.ie</email>
+    <email>anne.cryan@universityofgalway.ie</email>
     <phone>+353-91-492323</phone>
     <fax>+353-91-750526</fax>
-    <website>http://www.nuigalway.ie/zoology/</website>
+    <website>http://www.universityofgalway.ie/zoology/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -11648,7 +11648,7 @@ BP 7</address>
   <Organisation>
     <n_code>520</n_code>
     <input_date />
-    <last_update>5/6/2015 2:40:36 PM</last_update>
+    <last_update>1/23/2024 7:46:55 AM</last_update>
     <date_created>8/23/2001 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -11660,7 +11660,8 @@ BP 7</address>
     <name>IRD, Centre de  Noumea</name>
     <native_name />
     <abbreviated_name />
-    <address>BP A5</address>
+    <address>101 promenade Roger Laroque
+BP A5</address>
     <zipcode>98848</zipcode>
     <city>NOUMEA CEDEX5</city>
     <state>Nouvelle Calédonie</state>
@@ -17959,7 +17960,7 @@ Parc de Sophia Antipolis</address>
   <Organisation>
     <n_code>773</n_code>
     <input_date />
-    <last_update>11/8/2017 11:52:35 AM</last_update>
+    <last_update>3/4/2024 4:12:53 PM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -17968,25 +17969,25 @@ Parc de Sophia Antipolis</address>
     <Latitude>53.2786</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/gmit.png</logo>
-    <name>Galway-Mayo Institute of Technology</name>
+    <name>ATU - Atlantic Technological University</name>
     <native_name>Institúid Teicneolaíochta Na Gaillimhe-Maigh Eo</native_name>
-    <abbreviated_name>GMIT</abbreviated_name>
-    <address>Galway-Mayo Institute of Technology (Galway Campus)</address>
+    <abbreviated_name>ATU</abbreviated_name>
+    <address>ATU (Galway Campus)</address>
     <zipcode>H91 T8NW</zipcode>
     <city>Dublin Road</city>
     <state>Galway</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>info@gmit.ie</email>
+    <email>info@atu.ie</email>
     <phone>+353-91-753161</phone>
     <fax>+353-91-751107</fax>
-    <website>https://www.gmit.ie/</website>
+    <website>https://www.atu.ie/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
     <n_code>774</n_code>
     <input_date />
-    <last_update>11/16/2017 11:27:17 AM</last_update>
+    <last_update>3/4/2024 4:05:20 PM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -17995,19 +17996,20 @@ Parc de Sophia Antipolis</address>
     <Latitude>53.2774</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/nui-galway-societies.jpg</logo>
-    <name>NUI Galway</name>
+    <name>University of Galway</name>
     <native_name>Ollscoil Náisiunta Eireann na Gaillimhe</native_name>
-    <abbreviated_name>NUIG</abbreviated_name>
-    <address>NUIG</address>
+    <abbreviated_name>University of Galway</abbreviated_name>
+    <address>University Road,
+Galway</address>
     <zipcode>H91 TK33</zipcode>
     <city>University Road</city>
     <state>Galway</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>info@nuigalway.ie</email>
+    <email>info@universityofgalway.ie</email>
     <phone>+353-91-492126</phone>
     <fax>+353-91-494533</fax>
-    <website>http://www.nuigalway.ie</website>
+    <website>http://www.universityofgalway.ie</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -18205,16 +18207,16 @@ Blindern</address>
   <Organisation>
     <n_code>782</n_code>
     <input_date />
-    <last_update>11/8/2017 11:10:36 AM</last_update>
+    <last_update>3/4/2024 4:07:41 PM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
-    <organisation_changed_into />
+    <organisation_changed_into>385</organisation_changed_into>
     <organisation_changed_year />
     <Longitude>-9.0596</Longitude>
     <Latitude>53.2768</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/isrg.gif</logo>
-    <name>Irish Seaweed Research Group, NUI Galway</name>
+    <name>Irish Seaweed Research Group, University of Galway</name>
     <native_name />
     <abbreviated_name />
     <address>Ryan Institute</address>
@@ -25142,7 +25144,7 @@ Campus de Beaulieu, Bâtiment 15
   <Organisation>
     <n_code>1096</n_code>
     <input_date />
-    <last_update>3/13/2015 3:16:13 PM</last_update>
+    <last_update>1/29/2024 2:25:37 PM</last_update>
     <date_created>10/19/2005 2:27:11 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -25151,21 +25153,20 @@ Campus de Beaulieu, Bâtiment 15
     <Latitude>49.46</Latitude>
     <collate_id>486</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/486/logo_m2c.jpg</logo>
-    <name>University of Rouen, Laboratory of Continental and Coastal Morphodynamics</name>
-    <native_name>Universite de Rouen, Laboratoire de  Morphodynamique Continentale et Côtière- UMR 6143 (MC2)</native_name>
-    <abbreviated_name>MC2</abbreviated_name>
-    <address>Universite de Rouen,
-Bât.IRESE A
-10 Boulevard de Broglie</address>
+    <name>University of Rouen Normandy, M2C - Continental and Coastal Morphodynamics - UMR 6143</name>
+    <native_name>Universite de Rouen Normandie, M2C - Morphodynamique Continentale et Côtière - UMR 6143</native_name>
+    <abbreviated_name>M2C</abbreviated_name>
+    <address>Universite de Rouen Normandie
+Place Emile Blondel</address>
     <zipcode>76821</zipcode>
-    <city>MONT SAINT AIGNAN</city>
+    <city>MONT SAINT AIGNAN Cedex</city>
     <state />
     <country>10</country>
     <country_c32>FR</country_c32>
-    <email>robert.lafite@univ-rouen.fr</email>
+    <email />
     <phone>+33(0)2 35.14.66.04</phone>
     <fax />
-    <website>http://www.unicaen.fr/m2c/</website>
+    <website>https://recherche.univ-rouen.fr/m2c-morphodynamique-continentale-et-cotiere-umr-6143-629712.kjsp</website>
     <c_country>France</c_country>
   </Organisation>
   <Organisation>
@@ -50309,7 +50310,7 @@ Apartado 7586- Alfragide
   <Organisation>
     <n_code>2126</n_code>
     <input_date>6/10/2009 12:23:10 PM</input_date>
-    <last_update>11/6/2017 10:06:32 AM</last_update>
+    <last_update>3/4/2024 4:06:55 PM</last_update>
     <date_created>6/10/2009 12:23:10 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -50318,9 +50319,9 @@ Apartado 7586- Alfragide
     <Latitude>53.2775</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/ryaninstitute.png</logo>
-    <name>Ryan Institute, National University of Ireland Galway</name>
+    <name>Ryan Institute, University of Galway.</name>
     <native_name>OÉ Gaillimh</native_name>
-    <abbreviated_name>NUIG</abbreviated_name>
+    <abbreviated_name>University of Galway</abbreviated_name>
     <address>Ryan Institute</address>
     <zipcode>H91 TK33</zipcode>
     <city>University Road</city>
@@ -50330,7 +50331,7 @@ Apartado 7586- Alfragide
     <email>info@nuigalway.ie</email>
     <phone>+353-91-524411</phone>
     <fax />
-    <website>https://www.nuigalway.ie/ryaninstitute/</website>
+    <website>https://www.universityofgalway.ie/ryaninstitute/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -67045,7 +67046,7 @@ Alton Road</address>
   <Organisation>
     <n_code>2773</n_code>
     <input_date>4/7/2011 10:48:02 AM</input_date>
-    <last_update>11/1/2017 10:23:06 AM</last_update>
+    <last_update>3/4/2024 4:09:12 PM</last_update>
     <date_created>4/7/2011 10:48:02 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -67054,11 +67055,10 @@ Alton Road</address>
     <Latitude>53.284</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/semru.jpg</logo>
-    <name>Socio-Economic Marine Research Unit, NUI Galway</name>
+    <name>Socio-Economic Marine Research Unit, University of Galway</name>
     <native_name>Aonad Taighde ar Ghnéithe Socheacnamaíocha na Mara</native_name>
     <abbreviated_name>SEMRU</abbreviated_name>
-    <address>J.E. Cairnes School of Business and Economics, National University of Ireland, Galway
-</address>
+    <address>J.E. Cairnes School of Business and Economics, University of Galway</address>
     <zipcode>H91 WN80</zipcode>
     <city>Upper Newcastle</city>
     <state>Galway</state>
@@ -67067,7 +67067,7 @@ Alton Road</address>
     <email />
     <phone>+353-91-493105</phone>
     <fax>+353-91-524130</fax>
-    <website>http://www.nuigalway.ie/semru/</website>
+    <website>http://www.universityofgalway.ie/semru/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -112434,7 +112434,7 @@ BP A5
   <Organisation>
     <n_code>4486</n_code>
     <input_date>2/19/2016 10:18:27 AM</input_date>
-    <last_update>8/31/2020 11:05:17 AM</last_update>
+    <last_update>3/3/2024 9:37:25 PM</last_update>
     <date_created>2/19/2016 10:18:27 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -112442,7 +112442,7 @@ BP A5
     <Longitude>3.6604</Longitude>
     <Latitude>43.3966</Latitude>
     <collate_id>486</collate_id>
-    <logo />
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/486/marbec-logo.png</logo>
     <name>Marine Biodiversity, Exploitation and Conservation (Sète)</name>
     <native_name>Marine Biodiversite, Exploitation et Conservation (Sète)</native_name>
     <abbreviated_name>MARBEC</abbreviated_name>
@@ -117275,11 +117275,11 @@ PO BOX 15000
   <Organisation>
     <n_code>4664</n_code>
     <input_date>3/18/2017 8:26:31 PM</input_date>
-    <last_update>9/6/2023 2:37:12 PM</last_update>
+    <last_update>2/13/2024 6:04:11 PM</last_update>
     <date_created>3/18/2017 8:26:31 PM</date_created>
     <organisation_exists>False</organisation_exists>
-    <organisation_changed_into>1650</organisation_changed_into>
-    <organisation_changed_year />
+    <organisation_changed_into>5921</organisation_changed_into>
+    <organisation_changed_year>2018</organisation_changed_year>
     <Longitude />
     <Latitude />
     <collate_id>120</collate_id>
@@ -142994,7 +142994,7 @@ PO Box 326</address>
   <Organisation>
     <n_code>5617</n_code>
     <input_date>10/5/2022 12:11:43 PM</input_date>
-    <last_update>10/5/2022 12:17:13 PM</last_update>
+    <last_update>3/7/2024 3:06:38 PM</last_update>
     <date_created>10/5/2022 12:11:43 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -143015,8 +143015,8 @@ Pearse Road,</address>
     <state>Donegal</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>ronan@ondine-survey.com</email>
-    <phone>+35 386 409 6859</phone>
+    <email />
+    <phone />
     <fax />
     <website>https://ondine-survey.com/
 </website>
@@ -150958,5 +150958,831 @@ B.P. 20
     <fax />
     <website>https://www.exail.com/</website>
     <c_country />
+  </Organisation>
+  <Organisation>
+    <n_code>5911</n_code>
+    <input_date>1/23/2024 5:37:37 PM</input_date>
+    <last_update>1/23/2024 5:43:02 PM</last_update>
+    <date_created>1/23/2024 5:37:37 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-6.5611</Longitude>
+    <Latitude>55.0632</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Causeway Geotech</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Causeway Geotech Ltd,
+</address>
+    <zipcode>BT53 7QL</zipcode>
+    <city>Ballymoney</city>
+    <state>Antrim</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>INFO@CAUSEWAYGEOTECH.COM</email>
+    <phone>+44 (0)28 2766 6640</phone>
+    <fax />
+    <website>https://causewaygeotech.com/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5912</n_code>
+    <input_date>1/23/2024 5:45:47 PM</input_date>
+    <last_update>1/23/2024 5:47:52 PM</last_update>
+    <date_created>1/23/2024 5:45:47 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-4.2849</Longitude>
+    <Latitude>57.3684</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Affric LTD</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Lochview Office, Loch Duntelchaig
+</address>
+    <zipcode>IV2 6AW</zipcode>
+    <city>Farr</city>
+    <state>Inverness</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>info@affriclimited.co.uk</email>
+    <phone>+44 (0)1808 521 498</phone>
+    <fax />
+    <website>https://www.affriclimited.co.uk/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5913</n_code>
+    <input_date>1/25/2024 10:36:28 AM</input_date>
+    <last_update>1/25/2024 10:38:18 AM</last_update>
+    <date_created>1/25/2024 10:36:28 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-0.1568</Longitude>
+    <Latitude>51.52</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Avineon Europe Limited, trading as Tensing</name>
+    <native_name />
+    <abbreviated_name>Tensing</abbreviated_name>
+    <address>83 Baker Street,
+</address>
+    <zipcode>W1U 6AG</zipcode>
+    <city>London</city>
+    <state>City of London</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>uk@avineon-tensing.com</email>
+    <phone />
+    <fax />
+    <website>https://www.tensing.com/en/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5914</n_code>
+    <input_date>1/26/2024 7:34:09 PM</input_date>
+    <last_update>1/26/2024 7:38:09 PM</last_update>
+    <date_created>1/26/2024 7:34:09 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>10.3326</Longitude>
+    <Latitude>44.8125</Latitude>
+    <collate_id>120</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/120/logo-lipu.png</logo>
+    <name>Italian Liga for Protection of Birds</name>
+    <native_name>Lega Italiana Protezione Uccelli</native_name>
+    <abbreviated_name>LIPU</abbreviated_name>
+    <address>Via Pasubio 3/B</address>
+    <zipcode>43100</zipcode>
+    <city>Parma</city>
+    <state />
+    <country>18</country>
+    <country_c32>IT</country_c32>
+    <email>info@lipu.it</email>
+    <phone>+390521273043</phone>
+    <fax />
+    <website>http://www.lipu.it/</website>
+    <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5915</n_code>
+    <input_date>1/26/2024 7:46:13 PM</input_date>
+    <last_update>1/26/2024 7:53:36 PM</last_update>
+    <date_created>1/26/2024 7:46:13 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>9.5003</Longitude>
+    <Latitude>40.9246</Latitude>
+    <collate_id>120</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/120/mpa-tavo-logo.png</logo>
+    <name>Tavorala Marine Protected Area</name>
+    <native_name>Area Marina Protetta Tavolara Punta Coda Cavallo</native_name>
+    <abbreviated_name>Tavorala MPA</abbreviated_name>
+    <address>Via San Giovanni 14</address>
+    <zipcode>07026</zipcode>
+    <city>Olbia</city>
+    <state>Sardinia</state>
+    <country>18</country>
+    <country_c32>IT</country_c32>
+    <email>segreteria@amptavolara.it</email>
+    <phone>0789/203013</phone>
+    <fax />
+    <website>https://www.amptavolara.com/en/</website>
+    <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5916</n_code>
+    <input_date>1/26/2024 8:02:35 PM</input_date>
+    <last_update>1/26/2024 8:03:43 PM</last_update>
+    <date_created>1/26/2024 8:02:35 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>120</collate_id>
+    <logo />
+    <name>Egadi Islands Marine Protected Area</name>
+    <native_name>AMP Isole Egadi</native_name>
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city />
+    <state />
+    <country>18</country>
+    <country_c32>IT</country_c32>
+    <email>info@ampisoleegadi.it</email>
+    <phone />
+    <fax />
+    <website>https://www.ampisoleegadi.it/ (under development)</website>
+    <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5917</n_code>
+    <input_date>1/31/2024 1:49:17 PM</input_date>
+    <last_update>1/31/2024 1:56:44 PM</last_update>
+    <date_created>1/31/2024 1:49:17 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-2.775</Longitude>
+    <Latitude>55.6084</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Holequest</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Winston Road
+</address>
+    <zipcode>TD1 2DA</zipcode>
+    <city>Galashiels</city>
+    <state>Selkirkshire</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>info@holequest.co.uk</email>
+    <phone>+44(0) 1896 752295</phone>
+    <fax />
+    <website>https://www.holequest.co.uk/
+</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5918</n_code>
+    <input_date>2/7/2024 12:03:45 PM</input_date>
+    <last_update>2/7/2024 12:08:07 PM</last_update>
+    <date_created>2/7/2024 12:03:45 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.4869</Longitude>
+    <Latitude>50.9155</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Cooper Marine Advisors Ltd</name>
+    <native_name />
+    <abbreviated_name />
+    <address>38 Rumbridge Street
+</address>
+    <zipcode>SO40 9DS</zipcode>
+    <city>Southampton</city>
+    <state>Hampshire</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>Bill@CooperMarineAdvisors.co.uk</email>
+    <phone>+44 (0)751 8538940</phone>
+    <fax />
+    <website>http://www.coopermarineadvisors.co.uk/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5919</n_code>
+    <input_date>2/7/2024 12:13:25 PM</input_date>
+    <last_update>2/9/2024 3:50:09 PM</last_update>
+    <date_created>2/7/2024 12:13:25 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-2.5091</Longitude>
+    <Latitude>55.9938</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Ocean Science Consulting Limited</name>
+    <native_name />
+    <abbreviated_name>OSC</abbreviated_name>
+    <address>Spott Road
+</address>
+    <zipcode>EH42 1RR</zipcode>
+    <city>Dunbar</city>
+    <state>East Lothian</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>info@osc.co.uk</email>
+    <phone>+44 (0)1368865722</phone>
+    <fax />
+    <website>https://www.osc.co.uk/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5920</n_code>
+    <input_date>2/13/2024 4:57:19 PM</input_date>
+    <last_update>2/13/2024 5:00:10 PM</last_update>
+    <date_created>2/13/2024 4:57:19 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-0.9839</Longitude>
+    <Latitude>50.8574</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Havant Borough Council</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Public Service Plaza,
+</address>
+    <zipcode>PO9 2AX</zipcode>
+    <city>Havant</city>
+    <state>Hampshire</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>coastal.team@havant.gov.uk</email>
+    <phone />
+    <fax />
+    <website>https://www.havant.gov.uk/ 
+</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5921</n_code>
+    <input_date>2/13/2024 5:52:02 PM</input_date>
+    <last_update>2/13/2024 6:02:30 PM</last_update>
+    <date_created>2/13/2024 5:52:02 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>14.2598</Longitude>
+    <Latitude>40.844</Latitude>
+    <collate_id>120</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/120/cnr-ismar-logo.png</logo>
+    <name>National Research Council, Institute of Marine Sciences, Naples section</name>
+    <native_name>Consiglio Nazionale delle Ricerche, Istituto di Scienze Marine, Sede di Napoli</native_name>
+    <abbreviated_name>CNR-ISMAR</abbreviated_name>
+    <address>Calata Porta Di Massa, Porto di Napoli snc</address>
+    <zipcode>80133</zipcode>
+    <city>Naples</city>
+    <state />
+    <country>18</country>
+    <country_c32>IT</country_c32>
+    <email>responsabile@na.ismar.cnr.it</email>
+    <phone>+390815423802</phone>
+    <fax />
+    <website>https://www.ismar.cnr.it/en/institute/naples/</website>
+    <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5922</n_code>
+    <input_date>2/15/2024 11:16:47 AM</input_date>
+    <last_update>2/15/2024 11:17:33 AM</last_update>
+    <date_created>2/15/2024 11:16:47 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>7.3075</Longitude>
+    <Latitude>43.6992</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Osu Stamar - Uar2017</name>
+    <native_name>Sorbonne Université / Osu Stamar - Uar2017</native_name>
+    <abbreviated_name />
+    <address>IMEV1 quai de la Corderie</address>
+    <zipcode>06230</zipcode>
+    <city>Villefranche-sur-Mer</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5923</n_code>
+    <input_date>2/22/2024 12:02:55 PM</input_date>
+    <last_update>2/22/2024 12:08:27 PM</last_update>
+    <date_created>2/22/2024 12:02:55 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-4.5673</Longitude>
+    <Latitude>48.3622</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Ifremer EDROME Carnot Institute</name>
+    <native_name>Ifremer EDROME Carnot Institute</native_name>
+    <abbreviated_name />
+    <address>Centre Bretagne – 
+ZI de la Pointe du Diable  
+</address>
+    <zipcode>29280</zipcode>
+    <city>Plouzané</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5924</n_code>
+    <input_date>2/22/2024 12:09:04 PM</input_date>
+    <last_update>2/22/2024 12:25:09 PM</last_update>
+    <date_created>2/22/2024 12:09:04 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-4.4376</Longitude>
+    <Latitude>36.7145</Latitude>
+    <collate_id>353</collate_id>
+    <logo />
+    <name>Alboran Sea Naval Society</name>
+    <native_name>Liga Naval Mar de Alborán</native_name>
+    <abbreviated_name />
+    <address>C/ Mauricio Moro Pareto nº11, Bloque D, 8º-A</address>
+    <zipcode>29006</zipcode>
+    <city>Málaga</city>
+    <state />
+    <country>8</country>
+    <country_c32>ES</country_c32>
+    <email>Info@liganavalmardealboran.es</email>
+    <phone>+34 616 55 03 07</phone>
+    <fax />
+    <website>https://www.liganavalmardealboran.es</website>
+    <c_country>Spain</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5925</n_code>
+    <input_date>2/22/2024 12:36:55 PM</input_date>
+    <last_update>2/22/2024 12:41:09 PM</last_update>
+    <date_created>2/22/2024 12:36:55 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>2.3467</Longitude>
+    <Latitude>48.8431</Latitude>
+    <collate_id>486</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/486/lgens.jpg</logo>
+    <name>LABORATOIRE DE GEOLOGIE – ENS</name>
+    <native_name>LABORATOIRE DE GEOLOGIE – ENS</native_name>
+    <abbreviated_name>LG ENS</abbreviated_name>
+    <address>24, rue L'homond</address>
+    <zipcode>75231</zipcode>
+    <city>Paris</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>helene.rouby@ens.fr</email>
+    <phone>+33(0)144322211</phone>
+    <fax />
+    <website>http://www.geologie.ens.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5926</n_code>
+    <input_date>2/22/2024 12:54:49 PM</input_date>
+    <last_update>2/22/2024 12:54:55 PM</last_update>
+    <date_created>2/22/2024 12:54:49 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Universidad del Caribe</name>
+    <native_name>Universidad del Caribe</native_name>
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city>Cancun</city>
+    <state />
+    <country>125</country>
+    <country_c32>MX</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.unicaribe.mx/</website>
+    <c_country>Mexico</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5927</n_code>
+    <input_date>2/22/2024 1:02:16 PM</input_date>
+    <last_update>2/22/2024 1:06:03 PM</last_update>
+    <date_created>2/22/2024 1:02:16 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>6.1616</Longitude>
+    <Latitude>52.255</Latitude>
+    <collate_id>575</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/575/w-v-logo.png</logo>
+    <name>Witteveen en Bos</name>
+    <native_name>Witteveen en Bos</native_name>
+    <abbreviated_name />
+    <address>Leeuwenbrug 8</address>
+    <zipcode>7411 TJ</zipcode>
+    <city>Deventer</city>
+    <state />
+    <country>24</country>
+    <country_c32>NL</country_c32>
+    <email>info@witteveenbos.com</email>
+    <phone>+31(0)570697911</phone>
+    <fax />
+    <website>https://www.witteveenbos.com/</website>
+    <c_country>Netherlands</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5928</n_code>
+    <input_date>2/26/2024 11:26:58 AM</input_date>
+    <last_update>2/26/2024 11:27:04 AM</last_update>
+    <date_created>2/26/2024 11:26:58 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>School of Earth and Environmental Sciences, Seoul National University</name>
+    <native_name>School of Earth and Environmental Sciences, Seoul National University</native_name>
+    <abbreviated_name />
+    <address>1 Gwanak-ro, Gwanak-gu
+</address>
+    <zipcode>08826 </zipcode>
+    <city>Seoul</city>
+    <state />
+    <country>108</country>
+    <country_c32>KR</country_c32>
+    <email />
+    <phone>+8228806738</phone>
+    <fax />
+    <website>https://sees.snu.ac.kr/en</website>
+    <c_country>Korea, Republic of</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5929</n_code>
+    <input_date>3/3/2024 11:29:38 AM</input_date>
+    <last_update>3/3/2024 11:34:27 AM</last_update>
+    <date_created>3/3/2024 11:29:38 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>10.4187</Longitude>
+    <Latitude>43.7101</Latitude>
+    <collate_id>120</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/120/trust-it-logo.png</logo>
+    <name>Trust-IT Services</name>
+    <native_name>Trust-IT Services</native_name>
+    <abbreviated_name>Trust-IT</abbreviated_name>
+    <address>Via Francesco Redi, 10, Apt. #11-12, 4th floor
+</address>
+    <zipcode>56124</zipcode>
+    <city>Pisa</city>
+    <state />
+    <country>18</country>
+    <country_c32>IT</country_c32>
+    <email>s.muscella@trust-itservices.com</email>
+    <phone>+3905028359</phone>
+    <fax />
+    <website>https://www.trust-itservices.com/</website>
+    <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5930</n_code>
+    <input_date>3/3/2024 12:07:49 PM</input_date>
+    <last_update>3/4/2024 8:59:15 AM</last_update>
+    <date_created>3/3/2024 12:07:49 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>10.4246</Longitude>
+    <Latitude>43.7191</Latitude>
+    <collate_id>120</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/120/logo_isti.png</logo>
+    <name>CNR, Institute of Information Science and Technologies "Alessandro Faedo" - ISTI</name>
+    <native_name>CNR, ISTI - Istituto di Scienza e Tecnologie dell'Informazione</native_name>
+    <abbreviated_name>CNR-ISTI</abbreviated_name>
+    <address />
+    <zipcode>56124</zipcode>
+    <city>Pisa</city>
+    <state />
+    <country>18</country>
+    <country_c32>IT</country_c32>
+    <email>segreteriascientifica@isti.cnr.it</email>
+    <phone>+390506212902</phone>
+    <fax />
+    <website>https://www.isti.cnr.it/</website>
+    <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5931</n_code>
+    <input_date>3/3/2024 9:03:45 PM</input_date>
+    <last_update>3/3/2024 9:09:09 PM</last_update>
+    <date_created>3/3/2024 9:03:45 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>0.1873</Longitude>
+    <Latitude>52.0801</Latitude>
+    <collate_id>43</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/43/embl-logo.png</logo>
+    <name>European Molecular Biology Laboratory - European Bioinformatics Institute</name>
+    <native_name>European Molecular Biology Laboratory - European Bioinformatics Institute</native_name>
+    <abbreviated_name>EMBL-EBI</abbreviated_name>
+    <address>Wellcome Genome Campus, Hinxton</address>
+    <zipcode>CB10 1SD</zipcode>
+    <city>Cambridge</city>
+    <state />
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email />
+    <phone>+441223494444</phone>
+    <fax />
+    <website>https://www.ebi.ac.uk/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5932</n_code>
+    <input_date>3/3/2024 9:11:23 PM</input_date>
+    <last_update>3/3/2024 9:18:09 PM</last_update>
+    <date_created>3/3/2024 9:11:23 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>12.489</Longitude>
+    <Latitude>41.883</Latitude>
+    <collate_id>120</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/120/fao-logo.png</logo>
+    <name>Food and Agriculture Organization of the United Nations - Fisheries and Aquaculture Division</name>
+    <native_name>Food and Agriculture Organization of the United Nations - Fisheries and Aquaculture Division</native_name>
+    <abbreviated_name>FAO-NFI</abbreviated_name>
+    <address>Viale delle Terme di Caracalla</address>
+    <zipcode>00153</zipcode>
+    <city>Rome</city>
+    <state />
+    <country>18</country>
+    <country_c32>IT</country_c32>
+    <email>FAO-HQ@fao.org</email>
+    <phone>+390657051</phone>
+    <fax />
+    <website>http://www.fao.org/fishery/en</website>
+    <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5933</n_code>
+    <input_date>3/3/2024 9:22:59 PM</input_date>
+    <last_update>3/3/2024 9:27:01 PM</last_update>
+    <date_created>3/3/2024 9:22:59 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>4.9558</Longitude>
+    <Latitude>52.3545</Latitude>
+    <collate_id>575</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/575/uva-logo.png</logo>
+    <name>University of Amsterdam, Institute of information technology</name>
+    <native_name>Universiteit van Amsterdam, Instituut voor Informatica</native_name>
+    <abbreviated_name>UvA-IVI</abbreviated_name>
+    <address>Science park 904</address>
+    <zipcode>1098XH</zipcode>
+    <city>Amsterdam</city>
+    <state />
+    <country>24</country>
+    <country_c32>NL</country_c32>
+    <email>receptie-wtcw-c@uva.nl</email>
+    <phone>+31(0)205258626</phone>
+    <fax />
+    <website>https://ivi.uva.nl/</website>
+    <c_country>Netherlands</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5934</n_code>
+    <input_date>3/3/2024 9:29:50 PM</input_date>
+    <last_update>3/3/2024 9:35:18 PM</last_update>
+    <date_created>3/3/2024 9:29:50 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>1.4848</Longitude>
+    <Latitude>43.5498</Latitude>
+    <collate_id>486</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/486/cls-logo.png</logo>
+    <name>Collecte Localisation Satellites SA</name>
+    <native_name>Collecte Localisation Satellites SA</native_name>
+    <abbreviated_name>CLS</abbreviated_name>
+    <address>Rue Hermes 8</address>
+    <zipcode>31520</zipcode>
+    <city>Ramonville st Agne</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone>+33(0)561394700</phone>
+    <fax />
+    <website>http://www.cls.fr</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5935</n_code>
+    <input_date>3/3/2024 9:40:00 PM</input_date>
+    <last_update>3/3/2024 9:47:08 PM</last_update>
+    <date_created>3/3/2024 9:40:00 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>25.0724</Longitude>
+    <Latitude>35.3053</Latitude>
+    <collate_id>269</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/269/forth-logo.png</logo>
+    <name>Foundation for Research and Technology Hellas, Institute of Computer Science</name>
+    <native_name>Foundation for Research and Technology Hellas, Institute of Computer Science</native_name>
+    <abbreviated_name>FORTH</abbreviated_name>
+    <address>N Plastira str 100, Vassilika Vouton
+</address>
+    <zipcode>70013</zipcode>
+    <city>Heraklion</city>
+    <state>Crete</state>
+    <country>13</country>
+    <country_c32>GR</country_c32>
+    <email>ics@ics.forth.gr</email>
+    <phone>+302810391608</phone>
+    <fax />
+    <website>https://www.ics.forth.gr/</website>
+    <c_country>Greece</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5936</n_code>
+    <input_date>3/3/2024 11:11:47 PM</input_date>
+    <last_update>3/3/2024 11:13:53 PM</last_update>
+    <date_created>3/3/2024 11:11:47 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>4.9544</Longitude>
+    <Latitude>52.3569</Latitude>
+    <collate_id>575</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/575/egi-logo.png</logo>
+    <name>EGI Foundation</name>
+    <native_name>Stichting EGI</native_name>
+    <abbreviated_name>EGI</abbreviated_name>
+    <address>Science Park 140</address>
+    <zipcode>1098XG</zipcode>
+    <city>Amsterdam</city>
+    <state />
+    <country>24</country>
+    <country_c32>NL</country_c32>
+    <email>contact@egi.eu</email>
+    <phone>+31(0)208932007</phone>
+    <fax />
+    <website>https://www.egi.eu</website>
+    <c_country>Netherlands</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5937</n_code>
+    <input_date>3/3/2024 11:16:16 PM</input_date>
+    <last_update>3/3/2024 11:23:15 PM</last_update>
+    <date_created>3/3/2024 11:16:16 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>10.6253</Longitude>
+    <Latitude>59.9053</Latitude>
+    <collate_id>612</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/612/hub-ocean.png</logo>
+    <name>HUB Ocean</name>
+    <native_name>Stiftelsen HUB Ocean</native_name>
+    <abbreviated_name>HUB Ocean</abbreviated_name>
+    <address>Oksenoyveien 10</address>
+    <zipcode>1366</zipcode>
+    <city>Lysaker</city>
+    <state />
+    <country>25</country>
+    <country_c32>NO</country_c32>
+    <email>info@oceandata.earth</email>
+    <phone />
+    <fax />
+    <website>https://www.hubocean.earth/platform</website>
+    <c_country>Norway</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5938</n_code>
+    <input_date>3/3/2024 11:25:56 PM</input_date>
+    <last_update>3/3/2024 11:28:50 PM</last_update>
+    <date_created>3/3/2024 11:25:56 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-4.5493</Longitude>
+    <Latitude>48.3654</Latitude>
+    <collate_id>486</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/486/oceanscope.png</logo>
+    <name>Oceanscope</name>
+    <native_name>Oceanscope</native_name>
+    <abbreviated_name />
+    <address>38 rue Jim Sevellec</address>
+    <zipcode>29200</zipcode>
+    <city>Brest</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.ocean-scope.com/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5939</n_code>
+    <input_date>3/3/2024 11:31:40 PM</input_date>
+    <last_update>3/3/2024 11:35:41 PM</last_update>
+    <date_created>3/3/2024 11:31:40 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>8.5484</Longitude>
+    <Latitude>47.3829</Latitude>
+    <collate_id>8888</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/8888/ethz-logo.png</logo>
+    <name>ETH Zürich, Department of Environmental Systems Sciences</name>
+    <native_name>Eidgenössische Technische Hochschule Zürich</native_name>
+    <abbreviated_name>ETHZ-D-USYS</abbreviated_name>
+    <address>Universitätstrasse 16
+
+</address>
+    <zipcode>8092</zipcode>
+    <city>Zurich</city>
+    <state />
+    <country>184</country>
+    <country_c32>CH</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://usys.ethz.ch/en/department.html</website>
+    <c_country>Switzerland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5940</n_code>
+    <input_date>3/7/2024 4:17:43 PM</input_date>
+    <last_update>3/7/2024 4:29:56 PM</last_update>
+    <date_created>3/7/2024 4:17:43 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-6.2536</Longitude>
+    <Latitude>53.3485</Latitude>
+    <collate_id>396</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/nms-logo.png</logo>
+    <name>National Monuments Service</name>
+    <native_name>National Monuments Service</native_name>
+    <abbreviated_name>NMS</abbreviated_name>
+    <address>Department of Housing, Local Government and Heritage, Custom House</address>
+    <zipcode>1</zipcode>
+    <city>Dublin</city>
+    <state />
+    <country>15</country>
+    <country_c32>IE</country_c32>
+    <email>nationalmonuments@housing.gov.ie</email>
+    <phone>0858049231</phone>
+    <fax />
+    <website>https://www.archaeology.ie/</website>
+    <c_country>Ireland</c_country>
   </Organisation>
 </Organisations>

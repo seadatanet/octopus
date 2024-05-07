@@ -29706,7 +29706,7 @@ The University of Leeds
   <Organisation>
     <n_code>1344</n_code>
     <input_date>3/14/2007 5:25:03 PM</input_date>
-    <last_update>11/7/2017 10:00:39 AM</last_update>
+    <last_update>3/21/2024 6:16:37 PM</last_update>
     <date_created>3/14/2007 5:25:03 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -29714,20 +29714,20 @@ The University of Leeds
     <Longitude>-6.9361</Longitude>
     <Latitude>52.8273</Latitude>
     <collate_id>396</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/itc_logo_2017.png</logo>
-    <name>Institute of Technology, Carlow</name>
-    <native_name>Institúid Teicneolaíochta Cheatharlach</native_name>
-    <abbreviated_name>ITC</abbreviated_name>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/setu-logo.jpg</logo>
+    <name>South East Technological University, Carlow</name>
+    <native_name>Ollscoil Teicneolaíochta an Oirdheiscirt, Ceatharlach</native_name>
+    <abbreviated_name>SETU, Carlow</abbreviated_name>
     <address>Kilkenny Road</address>
     <zipcode>R93 V960</zipcode>
     <city>Moanacurragh</city>
     <state>Carlow</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email />
+    <email>info.cw@setu.ie</email>
     <phone>+353-59-9175000</phone>
     <fax>+353-59-9175005</fax>
-    <website>http://www.itcarlow.ie/</website>
+    <website>https://www.setu.ie/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -50310,7 +50310,7 @@ Apartado 7586- Alfragide
   <Organisation>
     <n_code>2126</n_code>
     <input_date>6/10/2009 12:23:10 PM</input_date>
-    <last_update>3/4/2024 4:06:55 PM</last_update>
+    <last_update>3/21/2024 11:50:13 AM</last_update>
     <date_created>6/10/2009 12:23:10 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -50328,7 +50328,7 @@ Apartado 7586- Alfragide
     <state>Galway</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>info@nuigalway.ie</email>
+    <email>info@universityofgalway.ie</email>
     <phone>+353-91-524411</phone>
     <fax />
     <website>https://www.universityofgalway.ie/ryaninstitute/</website>
@@ -50585,7 +50585,7 @@ Bidston Hill</address>
   <Organisation>
     <n_code>2137</n_code>
     <input_date>7/1/2009 5:13:26 PM</input_date>
-    <last_update>11/6/2017 9:56:45 AM</last_update>
+    <last_update>3/21/2024 5:43:21 PM</last_update>
     <date_created>7/1/2009 5:13:26 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -50593,20 +50593,20 @@ Bidston Hill</address>
     <Longitude>-7.1397</Longitude>
     <Latitude>52.246</Latitude>
     <collate_id>396</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/waterford-institute-of-technology2.png</logo>
-    <name>Waterford Institute of Technology</name>
-    <native_name>Institúid Teicneolaíochta Phort Láirge</native_name>
-    <abbreviated_name>WIT</abbreviated_name>
-    <address>Waterford Institute of Technology</address>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/setu-logo.jpg</logo>
+    <name>South East Technological University</name>
+    <native_name>Ollscoil Teicneolaíochta an Oirdheiscirt</native_name>
+    <abbreviated_name>SETU</abbreviated_name>
+    <address>Kilbarry</address>
     <zipcode>X91 K0EK</zipcode>
     <city>Cork Road</city>
     <state>Waterford</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>info@wit.ie</email>
+    <email>info.wd@setu.ie</email>
     <phone>+353-51-302000</phone>
     <fax />
-    <website>https://www.wit.ie/</website>
+    <website>https://www.setu.ie/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -57797,7 +57797,7 @@ Admiralty Road</address>
   <Organisation>
     <n_code>2418</n_code>
     <input_date>3/16/2010 9:22:16 PM</input_date>
-    <last_update>11/1/2017 10:39:49 AM</last_update>
+    <last_update>3/21/2024 5:06:54 PM</last_update>
     <date_created>3/16/2010 9:22:16 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -57805,10 +57805,10 @@ Admiralty Road</address>
     <Longitude>-9.6731</Longitude>
     <Latitude>52.2863</Latitude>
     <collate_id>396</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/tralee.jpeg</logo>
-    <name>Institute of Technology Tralee</name>
-    <native_name>Institiúid Teicneolaíochta Trá Lí</native_name>
-    <abbreviated_name>ITT</abbreviated_name>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/mtu_logo.jpg</logo>
+    <name>Munster Technological University, Tralee</name>
+    <native_name>Ollscoil Teicneolaíochta na Mamhan, Trá Lí</native_name>
+    <abbreviated_name>MTU, Tralee</abbreviated_name>
     <address>Dromtacker</address>
     <zipcode>V92 HD4V</zipcode>
     <city>Tralee</city>
@@ -67073,7 +67073,7 @@ Alton Road</address>
   <Organisation>
     <n_code>2774</n_code>
     <input_date>4/11/2011 10:45:01 AM</input_date>
-    <last_update>11/1/2017 10:19:28 AM</last_update>
+    <last_update>3/22/2024 2:58:00 PM</last_update>
     <date_created>4/11/2011 10:45:01 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -67082,10 +67082,10 @@ Alton Road</address>
     <Latitude>54.9524</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/lyit.gif</logo>
-    <name>Centre of Applied Marine Biotechnology, LYIT</name>
+    <name>Centre of Applied Marine Biotechnology, ATU</name>
     <native_name />
     <abbreviated_name>CAMBIO</abbreviated_name>
-    <address>Business Innovation Centre, Letterkenny Institute of Technology, Port Road</address>
+    <address>Business Innovation Centre, ATU, Port Road</address>
     <zipcode>F92 FC93</zipcode>
     <city>Letterkenny</city>
     <state>Co. Donegal</state>
@@ -74705,7 +74705,7 @@ Postboks 358</address>
   <Organisation>
     <n_code>3058</n_code>
     <input_date>8/14/2012 3:28:44 PM</input_date>
-    <last_update>11/1/2017 10:04:33 AM</last_update>
+    <last_update>5/6/2024 10:26:06 AM</last_update>
     <date_created>8/14/2012 3:28:44 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -74713,17 +74713,17 @@ Postboks 358</address>
     <Longitude>-8.4601</Longitude>
     <Latitude>54.2786</Latitude>
     <collate_id>396</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/it_sligo_(col).jpg</logo>
-    <name>Institute of Technology Sligo</name>
-    <native_name>Institute of Technology Sligo</native_name>
-    <abbreviated_name>IT Sligo</abbreviated_name>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/atu-logo.jpg</logo>
+    <name>Atlantic Technological University</name>
+    <native_name>Ollscoil Teicneolaíochta an Atlantaigh</native_name>
+    <abbreviated_name>ATU, Sligo</abbreviated_name>
     <address>Ash Lane</address>
     <zipcode>F91 YW50</zipcode>
     <city>Bellanode</city>
     <state>Sligo</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>info@itsligo.ie</email>
+    <email>admissions.sligo@atu.ie</email>
     <phone>+353-71-9155222</phone>
     <fax>+353-71-9160475</fax>
     <website>https://www.itsligo.ie/</website>
@@ -74732,7 +74732,7 @@ Postboks 358</address>
   <Organisation>
     <n_code>3059</n_code>
     <input_date>8/14/2012 3:29:35 PM</input_date>
-    <last_update>11/1/2017 10:00:13 AM</last_update>
+    <last_update>3/21/2024 4:07:55 PM</last_update>
     <date_created>8/14/2012 3:29:35 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -74740,20 +74740,22 @@ Postboks 358</address>
     <Longitude>-7.9051</Longitude>
     <Latitude>53.4189</Latitude>
     <collate_id>396</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/ait.png</logo>
-    <name>Athlone Institute of Technology</name>
-    <native_name>Athlone Institute of Technology</native_name>
-    <abbreviated_name>AIT</abbreviated_name>
-    <address>Dublin Road</address>
-    <zipcode />
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/tus-logo.png</logo>
+    <name>Technological University of the Shannon</name>
+    <native_name>Ollscoil Teicneolaíochta na Sionainne</native_name>
+    <abbreviated_name>TUS</abbreviated_name>
+    <address>Athlone Campus
+University Road, Athlone
+Co. Westmeath</address>
+    <zipcode>N37 HD68</zipcode>
     <city>Athlone</city>
     <state>Co. Westmeath</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email />
-    <phone>+ 353-90-6468000</phone>
-    <fax>+ 353-90 6468148</fax>
-    <website>https://www.ait.ie/</website>
+    <email>reception.midlands@tus.ie</email>
+    <phone>+353 090 6468001</phone>
+    <fax />
+    <website>https://tus.ie/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -74922,7 +74924,7 @@ Postboks 358</address>
   <Organisation>
     <n_code>3066</n_code>
     <input_date>8/14/2012 3:32:52 PM</input_date>
-    <last_update>11/1/2017 9:32:17 AM</last_update>
+    <last_update>3/21/2024 4:30:16 PM</last_update>
     <date_created>8/14/2012 3:32:52 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -74930,20 +74932,21 @@ Postboks 358</address>
     <Longitude>-8.5337</Longitude>
     <Latitude>51.8847</Latitude>
     <collate_id>396</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/cit.png</logo>
-    <name>Cork Institute of Technology</name>
-    <native_name>Institúid Teicneolaíochta Chorcaí</native_name>
-    <abbreviated_name>CIT</abbreviated_name>
-    <address>Rossa Avenue</address>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/mtu_logo.jpg</logo>
+    <name>Munster Technological University</name>
+    <native_name>Ollscoil Teicneolaíochta na Mamhan</native_name>
+    <abbreviated_name>MTU</abbreviated_name>
+    <address>Bishopstown,
+Cork, Ireland.</address>
     <zipcode>T12 P928</zipcode>
     <city>Bishopstown</city>
     <state>Cork</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email />
+    <email>infoCork@mtu.ie</email>
     <phone>+353-21-4326100</phone>
     <fax>+353-21-4545343</fax>
-    <website>https://www.cit.ie/</website>
+    <website>https://www.mtu.ie/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -75003,7 +75006,7 @@ Postboks 358</address>
   <Organisation>
     <n_code>3069</n_code>
     <input_date>8/14/2012 3:34:04 PM</input_date>
-    <last_update>10/31/2017 11:58:17 AM</last_update>
+    <last_update>3/21/2024 4:17:52 PM</last_update>
     <date_created>8/14/2012 3:34:04 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -75011,26 +75014,28 @@ Postboks 358</address>
     <Longitude>-8.6487</Longitude>
     <Latitude>52.675</Latitude>
     <collate_id>396</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/lit.png</logo>
-    <name>Limerick Institute of Technology</name>
-    <native_name>Institúid Teicneolaíocht Luimneach</native_name>
-    <abbreviated_name>LIT</abbreviated_name>
-    <address />
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/tus-logo.png</logo>
+    <name>Technological University of the Shannon, Limerick</name>
+    <native_name>Ollscoil Teicneolaíochta na Sionainne, Luimneach</native_name>
+    <abbreviated_name>TUS, Limerick</abbreviated_name>
+    <address>Moylish Campus
+Moylish Park
+Limerick</address>
     <zipcode>V94 EC5T</zipcode>
     <city>Moylish Park</city>
     <state>Limerick</state>
     <country>15</country>
     <country_c32>IE</country_c32>
     <email />
-    <phone>+353-61-208208</phone>
-    <fax>+353-61-208208</fax>
-    <website>http://www.lit.ie/default.aspx</website>
+    <phone>+353 61 293000</phone>
+    <fax />
+    <website>https://tus.ie/campuses/moylish/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
     <n_code>3070</n_code>
     <input_date>8/14/2012 3:34:25 PM</input_date>
-    <last_update>10/31/2017 11:54:35 AM</last_update>
+    <last_update>3/21/2024 3:53:49 PM</last_update>
     <date_created>8/14/2012 3:34:25 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -75038,20 +75043,22 @@ Postboks 358</address>
     <Longitude>-6.363</Longitude>
     <Latitude>53.2911</Latitude>
     <collate_id>396</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/institute_of_technology,_tallaght_(logo).jpeg</logo>
-    <name>Institute of Technology Tallaght</name>
-    <native_name>Institúid Teicneolaíocht Tamhlacht  </native_name>
-    <abbreviated_name>ITT</abbreviated_name>
-    <address>Blessington Road</address>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/tudublin_(logo).jpeg</logo>
+    <name>Technological University Dublin, Tallaght</name>
+    <native_name>Ollscoil Teicneolaíochta Bhaile Átha Cliath, Tamhlacht</native_name>
+    <abbreviated_name>TU Dublin, Tallaght</abbreviated_name>
+    <address>Old Blessington Road, 
+Belgard Road and Greenhills Road,
+Tallaght</address>
     <zipcode>D24 FKT9</zipcode>
     <city>Tallaght</city>
     <state>Dublin 24</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>info@ittdublin.ie</email>
-    <phone>+353-1-4042000</phone>
-    <fax>+353-1-4042700</fax>
-    <website>https://www.it-tallaght.ie/</website>
+    <email>admissions@tudublin.ie</email>
+    <phone>+353 1 404 2000</phone>
+    <fax />
+    <website>https://www.tudublin.ie/explore/our-campuses/tallaght/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -81532,7 +81539,7 @@ Manor Garth</address>
   <Organisation>
     <n_code>3308</n_code>
     <input_date>10/7/2013 3:17:14 PM</input_date>
-    <last_update>10/31/2017 11:25:07 AM</last_update>
+    <last_update>4/16/2024 12:36:13 PM</last_update>
     <date_created>10/7/2013 3:17:14 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -81541,8 +81548,8 @@ Manor Garth</address>
     <Latitude>53.3358</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/dttas.jpg</logo>
-    <name>Department of Transport, Tourism and Sport</name>
-    <native_name>An Roinn Iompair Turasoireachta agus Spóirt</native_name>
+    <name>Department of Transport</name>
+    <native_name>An Roinn Iompair</native_name>
     <abbreviated_name>DTTAS</abbreviated_name>
     <address>Marine Building, Leeson Lane</address>
     <zipcode>D02 TR60</zipcode>
@@ -117768,26 +117775,26 @@ Strandgatan 37</address>
   <Organisation>
     <n_code>4682</n_code>
     <input_date>4/20/2017 1:20:12 PM</input_date>
-    <last_update>4/20/2017 1:22:22 PM</last_update>
+    <last_update>4/9/2024 12:52:51 PM</last_update>
     <date_created>4/20/2017 1:20:12 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-1.7996</Longitude>
-    <Latitude>52.3688</Latitude>
+    <Longitude>-0.8437</Longitude>
+    <Latitude>51.4048</Latitude>
     <collate_id>43</collate_id>
     <logo />
     <name>Kenneth Pye Associates Ltd</name>
     <native_name />
     <abbreviated_name />
-    <address>Blythe Valley Innovation Centre</address>
-    <zipcode>B90 8AJ</zipcode>
-    <city>Solihull</city>
-    <state>West Midlands</state>
+    <address>8E Millars Brook Office Park</address>
+    <zipcode>RG41 2AD</zipcode>
+    <city>Wokingham</city>
+    <state>Berkshire</state>
     <country>11</country>
     <country_c32>GB</country_c32>
     <email>info@kpal.co.uk</email>
-    <phone>+44 (0)121 506 9067</phone>
+    <phone>+44 (0)118 304 8416</phone>
     <fax>+44 (0)121 506 9001</fax>
     <website>http://www.kpal.co.uk/</website>
     <c_country>United Kingdom</c_country>
@@ -121173,7 +121180,7 @@ Belvedere Road</address>
   <Organisation>
     <n_code>4807</n_code>
     <input_date>1/16/2018 3:34:34 PM</input_date>
-    <last_update>1/16/2018 3:37:35 PM</last_update>
+    <last_update>3/20/2024 5:39:08 PM</last_update>
     <date_created>1/16/2018 3:34:34 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -121182,7 +121189,7 @@ Belvedere Road</address>
     <Latitude>55.9524</Latitude>
     <collate_id>43</collate_id>
     <logo />
-    <name>The Crown Estate Scotland</name>
+    <name>Crown Estate Scotland</name>
     <native_name />
     <abbreviated_name />
     <address>6 Bells Brae</address>
@@ -139312,7 +139319,7 @@ Laurelhill Business Park</address>
   <Organisation>
     <n_code>5482</n_code>
     <input_date>12/2/2021 5:05:32 PM</input_date>
-    <last_update>12/2/2021 5:14:31 PM</last_update>
+    <last_update>3/18/2024 3:56:16 PM</last_update>
     <date_created>12/2/2021 5:05:32 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -139331,7 +139338,7 @@ Ord,</address>
     <state>Isle of Skye</state>
     <country>11</country>
     <country_c32>GB</country_c32>
-    <email>info@slef.org.uk</email>
+    <email>info@southskyeseas.org.uk </email>
     <phone />
     <fax />
     <website>https://www.slef.org.uk/</website>
@@ -151378,20 +151385,20 @@ ZI de la Pointe du Diable
   <Organisation>
     <n_code>5926</n_code>
     <input_date>2/22/2024 12:54:49 PM</input_date>
-    <last_update>2/22/2024 12:54:55 PM</last_update>
+    <last_update>3/25/2024 10:24:13 PM</last_update>
     <date_created>2/22/2024 12:54:49 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude />
-    <Latitude />
+    <Longitude>-86.8219</Longitude>
+    <Latitude>21.2006</Latitude>
     <collate_id>8888</collate_id>
     <logo />
     <name>Universidad del Caribe</name>
     <native_name>Universidad del Caribe</native_name>
     <abbreviated_name />
-    <address />
-    <zipcode />
+    <address>Esquina Fraccionamiento, Tabachines</address>
+    <zipcode>77528</zipcode>
     <city>Cancun</city>
     <state />
     <country>125</country>
@@ -151761,7 +151768,7 @@ ZI de la Pointe du Diable
   <Organisation>
     <n_code>5940</n_code>
     <input_date>3/7/2024 4:17:43 PM</input_date>
-    <last_update>3/7/2024 4:29:56 PM</last_update>
+    <last_update>4/30/2024 10:31:10 AM</last_update>
     <date_created>3/7/2024 4:17:43 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -151784,5 +151791,254 @@ ZI de la Pointe du Diable
     <fax />
     <website>https://www.archaeology.ie/</website>
     <c_country>Ireland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5941</n_code>
+    <input_date>3/20/2024 5:43:58 PM</input_date>
+    <last_update>3/20/2024 5:47:49 PM</last_update>
+    <date_created>3/20/2024 5:43:58 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.1771</Longitude>
+    <Latitude>50.8711</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Mossy Earth</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Boundary Oak, Earnley Manor Close, Earnley
+</address>
+    <zipcode>PO20 7JQ</zipcode>
+    <city>Chichester</city>
+    <state>West Sussex</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>team@mossy.earth</email>
+    <phone />
+    <fax />
+    <website>https://www.mossy.earth/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5942</n_code>
+    <input_date>3/21/2024 10:03:40 PM</input_date>
+    <last_update>3/21/2024 10:10:43 PM</last_update>
+    <date_created>3/21/2024 10:03:40 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>8.847</Longitude>
+    <Latitude>53.1074</Latitude>
+    <collate_id>96</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/96/fugro_logo.jpg</logo>
+    <name>Fugro</name>
+    <native_name>Fugro</native_name>
+    <abbreviated_name />
+    <address>Fahrenheitstrasse 7</address>
+    <zipcode>28359</zipcode>
+    <city>Bremen</city>
+    <state />
+    <country>5</country>
+    <country_c32>DE</country_c32>
+    <email />
+    <phone>+494214088850</phone>
+    <fax />
+    <website>https://www.fugro.com</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5943</n_code>
+    <input_date>4/5/2024 10:42:07 AM</input_date>
+    <last_update>4/8/2024 11:11:37 AM</last_update>
+    <date_created>4/5/2024 10:42:07 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-3.9137988</Longitude>
+    <Latitude>40.5548331</Latitude>
+    <collate_id>353</collate_id>
+    <logo />
+    <name>Deep Insight S.L</name>
+    <native_name>Deep Insight S.L</native_name>
+    <abbreviated_name>Deep Insight S.L</abbreviated_name>
+    <address>Paseo del Norte, 21, Local Izquierda.</address>
+    <zipcode>28290</zipcode>
+    <city>Las Rozas de Madrid</city>
+    <state />
+    <country>8</country>
+    <country_c32>ES</country_c32>
+    <email />
+    <phone>+34 650 15 46 97</phone>
+    <fax />
+    <website>https://www.deep-insight.es/</website>
+    <c_country>Spain</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5944</n_code>
+    <input_date>4/5/2024 2:13:59 PM</input_date>
+    <last_update>4/5/2024 2:16:51 PM</last_update>
+    <date_created>4/5/2024 2:13:59 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>5.265</Longitude>
+    <Latitude>59.4144</Latitude>
+    <collate_id>612</collate_id>
+    <logo />
+    <name>REACH SUBSEA</name>
+    <native_name />
+    <abbreviated_name>RS
+</abbreviated_name>
+    <address>Billingstadsletta 14
+</address>
+    <zipcode>NO-1396</zipcode>
+    <city>Billingstad</city>
+    <state>Rogaland</state>
+    <country>25</country>
+    <country_c32>NO</country_c32>
+    <email>post@reachsubsea.com</email>
+    <phone />
+    <fax />
+    <website>https://reachsubsea.no
+</website>
+    <c_country>Norway</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5945</n_code>
+    <input_date>4/22/2024 3:31:06 PM</input_date>
+    <last_update>4/22/2024 3:34:24 PM</last_update>
+    <date_created>4/22/2024 3:31:06 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-2.9738</Longitude>
+    <Latitude>56.4632</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Abertay University, School of Applied Sciences, Division of Health Sciences</name>
+    <native_name />
+    <abbreviated_name>Abertay Health Sciences</abbreviated_name>
+    <address>Bell Street</address>
+    <zipcode>DD1 1HG</zipcode>
+    <city>Dundee</city>
+    <state>Angus</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>sez@abertay.ac.uk</email>
+    <phone>+44 (0)1382 308000</phone>
+    <fax />
+    <website>https://www.abertay.ac.uk/schools/school-of-applied-sciences/division-of-health-sciences/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5946</n_code>
+    <input_date>4/23/2024 12:43:06 PM</input_date>
+    <last_update>4/23/2024 12:47:13 PM</last_update>
+    <date_created>4/23/2024 12:43:06 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.6206</Longitude>
+    <Latitude>55.0084</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Ecotekinica UK Ltd</name>
+    <native_name />
+    <abbreviated_name />
+    <address>4 Lansdowne Terrace
+</address>
+    <zipcode>NE3 4TA</zipcode>
+    <city>Newcastle upon Tyne</city>
+    <state>Tyne and Wear</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>heather@eco-teknica.com</email>
+    <phone />
+    <fax />
+    <website>https://www.eco-teknica.com
+</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5947</n_code>
+    <input_date>4/29/2024 12:00:22 PM</input_date>
+    <last_update>4/29/2024 12:00:45 PM</last_update>
+    <date_created>4/29/2024 12:00:22 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>45.282</Longitude>
+    <Latitude>-12.805</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Marine Natural Park Of Mayotte</name>
+    <native_name>Office Français Pour La Biodiversité / Parc Naturel Marin De Mayotte</native_name>
+    <abbreviated_name />
+    <address>Centre d'affaire de l'aéroportPamandzi</address>
+    <zipcode>97615</zipcode>
+    <city>Mayotte</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>parcmarin.mayotte@ofb.gouv.fr</email>
+    <phone>02 69 60 73 65</phone>
+    <fax />
+    <website>https://parc-marin-mayotte.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5948</n_code>
+    <input_date>5/1/2024 12:18:35 PM</input_date>
+    <last_update>5/1/2024 12:20:10 PM</last_update>
+    <date_created>5/1/2024 12:18:35 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>0.9461</Longitude>
+    <Latitude>51.8766</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>University of Essex, School of Life Sciences </name>
+    <native_name />
+    <abbreviated_name />
+    <address>University of Essex</address>
+    <zipcode>CO4 3SQ</zipcode>
+    <city>Colchester </city>
+    <state>Essex</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>enquiries@essex.ac.uk</email>
+    <phone>+44 (0) 1206 873333</phone>
+    <fax />
+    <website>https://www.essex.ac.uk/departments/life-sciences</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5949</n_code>
+    <input_date>5/1/2024 12:25:53 PM</input_date>
+    <last_update>5/6/2024 10:15:29 AM</last_update>
+    <date_created>5/1/2024 12:25:53 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-4.2547</Longitude>
+    <Latitude>51.6891</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Atlantic Edge Oysters  (Tethys Oysters Ltd)</name>
+    <native_name />
+    <abbreviated_name />
+    <address>14 Rectory Road</address>
+    <zipcode>SA62 4JA</zipcode>
+    <city>Llangwm</city>
+    <state>Pembrokeshire</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>tethysoysters@gmail.com</email>
+    <phone />
+    <fax />
+    <website>https://find-and-update.company-information.service.gov.uk/company/10286350</website>
+    <c_country>United Kingdom</c_country>
   </Organisation>
 </Organisations>

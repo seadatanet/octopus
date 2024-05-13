@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import fr.ifremer.sismer_tools.externalresources.ExternalResourcesManager;

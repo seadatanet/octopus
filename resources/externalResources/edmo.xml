@@ -152041,4 +152041,61 @@ ZI de la Pointe du Diable
     <website>https://find-and-update.company-information.service.gov.uk/company/10286350</website>
     <c_country>United Kingdom</c_country>
   </Organisation>
+  <Organisation>
+    <n_code>5950</n_code>
+    <input_date>5/7/2024 7:16:51 PM</input_date>
+    <last_update>5/7/2024 7:23:06 PM</last_update>
+    <date_created>5/7/2024 7:16:51 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>12.4874</Longitude>
+    <Latitude>41.9284</Latitude>
+    <collate_id>120</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/120/medsharks-logo.png</logo>
+    <name>MedSharks</name>
+    <native_name>MedSharks</native_name>
+    <abbreviated_name />
+    <address>Via Ruggero Fauro, 82</address>
+    <zipcode>0197</zipcode>
+    <city>Rome</city>
+    <state />
+    <country>18</country>
+    <country_c32>IT</country_c32>
+    <email>ele@medsharks.org</email>
+    <phone>+39 3396955671</phone>
+    <fax />
+    <website>http://www.medsharks.org/
+</website>
+    <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5951</n_code>
+    <input_date>5/7/2024 8:17:04 PM</input_date>
+    <last_update>5/7/2024 8:23:14 PM</last_update>
+    <date_created>5/7/2024 8:17:04 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>114.2683</Longitude>
+    <Latitude>22.3374</Latitude>
+    <collate_id>8888</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/8888/hkust-logo.png</logo>
+    <name>Department of Ocean Science, The Hong Kong University of Science and Technology</name>
+    <native_name />
+    <abbreviated_name>OCES-HKUST</abbreviated_name>
+    <address>Room 5474, 5/F, Lifts 25-26
+Clear Water Bay, Kowloon
+</address>
+    <zipcode />
+    <city>Hong Kong</city>
+    <state />
+    <country>64</country>
+    <country_c32>CN</country_c32>
+    <email>oces@ust.hk</email>
+    <phone>(852)2358 310</phone>
+    <fax />
+    <website>https://oces.hkust.edu.hk/</website>
+    <c_country>China</c_country>
+  </Organisation>
 </Organisations>

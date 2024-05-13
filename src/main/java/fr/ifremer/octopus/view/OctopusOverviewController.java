@@ -485,6 +485,11 @@ public class OctopusOverviewController {
 				disableOdv = true;
 			}
 
+			if (octopusGuiController.getModel().getInputFormat() == Format.CFPOINT && octopusGuiController.getModel().getInputNetCdfFormat() == NETCDF_FORMAT.CFPointFromADCP) {
+				disableOdv = true;
+				disableCfPoint = true;
+			}
+
 			buttonExportMedatlas.disableProperty().setValue(disableMedatlas);
 			buttonExportOdv.disableProperty().setValue(disableOdv);
 			buttonExportCfpoint.disableProperty().setValue(disableCfPoint);
@@ -494,6 +499,13 @@ public class OctopusOverviewController {
 			}else{
 				radioMulti.setSelected(true);
 			}
+			
+			// Disable check for ADCP
+			if (f == Format.CFPOINT_ADCP) {
+				
+				checkButton.setDisable(true);
+			}
+
 
 
 			outCDI.setDisable(! (f==Format.MGD_81 || f==Format.MGD_98));

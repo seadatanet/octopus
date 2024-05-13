@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabulary list="SDN:L08:5:"  version="5"  date="2021-05-05T02:00:15.000"  title="SeaDataNet Data Access Restriction Policies"  >
+   <element  key="SDN:L08::CC"  label="collection cost charge"  shortLabel="collection_charge"  date="2006-12-05T16:18:33.000"  />
+   <element  key="SDN:L08::RS"  label="by negotiation"  shortLabel="restricted"  date="2012-05-16T07:24:54.000"  />
+   <element  key="SDN:L08::MO"  label="moratorium"  shortLabel="moratorium"  date="2006-12-05T16:18:33.000"  />
+   <element  key="SDN:L08::LS"  label="SeaDataNet licence"  shortLabel="SDN_licence"  date="2008-09-25T08:31:26.000"  />
+   <element  key="SDN:L08::NA"  label="no access"  shortLabel="none"  date="2006-12-05T16:18:33.000"  />
+   <element  key="SDN:L08::NC"  label="distribution cost charge"  shortLabel="distribution_charge"  date="2006-12-05T16:18:33.000"  />
+   <element  key="SDN:L08::UK"  label="unknown"  shortLabel="unknown"  date="2006-12-05T16:18:33.000"  />
+   <element  key="SDN:L08::OG"  label="organisation"  shortLabel="organisation"  date="2006-12-05T16:18:33.000"  />
+   <element  key="SDN:L08::UN"  label="unrestricted"  shortLabel="unrestricted"  date="2006-12-05T16:18:33.000"  />
+   <element  key="SDN:L08::LI"  label="licence"  shortLabel="licence"  date="2006-12-05T16:18:33.000"  />
+   <element  key="SDN:L08::CA"  label="Creative Commons Attribution 3.0 Unported"  shortLabel="CC BY 3.0"  date="2021-05-04T15:04:03.000"  />
+   <element  key="SDN:L08::CB"  label="Creative Commons Attribution 4.0 International"  shortLabel="CC BY 4.0"  date="2020-11-12T00:26:02.000"  />
+   <element  key="SDN:L08::SR"  label="academic"  shortLabel="academic"  date="2006-12-05T16:18:33.000"  />
+   <element  key="SDN:L08::FE"  label="commercial charge"  shortLabel="commercial_charge"  date="2006-12-05T16:18:33.000"  />
+</vocabulary>

@@ -26,8 +26,12 @@ import fr.ifremer.octopus.model.OctopusModel.OUTPUT_TYPE;
 import fr.ifremer.octopus.utils.EdmoManager;
 import fr.ifremer.octopus.utils.PreferencesManager;
 import fr.ifremer.seadatanet.cfpoint.util.UnitConversionManager;
+import fr.ifremer.sismer_tools.edmerp.EdmerpManager;
 import fr.ifremer.sismer_tools.externalresources.ExternalResourcesManager;
 import fr.ifremer.sismer_tools.seadatanet.Format;
+import fr.ifremer.sismer_tools.externalresources.ns_ws_edmerp.Edmerp_webservice;
+import fr.ifremer.sismer_tools.externalresources.ns_ws_edmerp.Edmerp_webserviceLocator;
+import fr.ifremer.sismer_tools.externalresources.ns_ws_edmerp.Edmerp_webserviceSoap;
 import sdn.vocabulary.interfaces.VocabularyException;
 
 public class BatchController extends AbstractController{
@@ -198,6 +202,16 @@ public class BatchController extends AbstractController{
 			String message = e.getMessage();
 
 			LOGGER.error(message);
+		}
+
+		// EDMERP
+
+		try {
+			LOGGER.info("Update EDMERP codes");
+			String res = ExternalResourcesManager.getInstance().getEdmerpManager().reload();
+			LOGGER.info(res);
+		} catch (Exception e1) {
+			LOGGER.error(e1.getMessage());
 		}
 
 		// CSR

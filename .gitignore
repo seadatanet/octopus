@@ -9,7 +9,7 @@ dependency-reduced-pom.xml
 .classpath
 .settings/
 logs/
-externalResources/
+# externalResources/
 src/test/resources/MGD81/out/
 src/test/resources/cfpoint/out/
 src/test/resources/medatlas/out/
@@ -17,6 +17,10 @@ src/test/resources/odv/out/
 
 # Fichiers et dossiers des editeurs de code
 .vscode/
+
+# Fichiers de runtime
+octopusDB/
+*.csv
 
 # Fichiers de backup 
 *.back

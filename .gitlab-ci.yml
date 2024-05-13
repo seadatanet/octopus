@@ -4,33 +4,12 @@
 # .gitlab-ci.yml file inspired by the template https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Maven.gitlab-ci.yml
 
 # ---------------------------------------------------------------
-# CI workflows
-# ---------------------------------------------------------------
-# 3 different jobs executing their own mvn command:
-# - on branches feature/hotfix/master at each commit: mvn verify 
-# - on branch develop at each commit: mvn deploy snapshot (at each merge request if branch develop is protected)
-# - on branch develop with manual action: mvn deploy release (available after generating a snapshot)
-
-# ---------------------------------------------------------------
 # Note on Maven stages
 # ---------------------------------------------------------------
 # Maven has the following default lifecycle: (not a comprehensive list)
 #    validate > compile > test > package > integration-test > verify > install > deploy
 # So the command `mvn verify` will execute the following lifecycle:
 #    validate > compile > test > package > integration-test > verify
-
-# ---------------------------------------------------------------
-# Snapshot and Release management 
-# ---------------------------------------------------------------
-# Note on Maven distribution management :
-#   From <distributionManagement> section in pom.xml and default maven configuration :
-#     - if pom.xml section `project.version` contains "SNAPSHOT" (e.g "1.2-SNAPSHOT"), artifacts are uploaded to snapshotRepository (gitlab-maven-project)
-#     - if not (e.g "1.2"), artifacts are uploaded to repository (gitlab-maven-internal)
-# 
-# Project version management:
-#   - Incrementation of `project.version` is handled by the maintainer of the repo.
-#   - The following gitlab-ci pipeline ignores "-SNAPSHOT" if written in `project.version` and handles SNAPSHOT and RELEASE distribution itself
-#   - The repo maintainer only has to maintain `project.version` as (MAJOR.)MINOR.FIX
 
 variables:
   # Download for dependencies and plugins or upload messages are set to Slf4jMavenTransferListener=INFO. To disable set to WARN.
@@ -53,8 +32,7 @@ variables:
     -DdeployAtEnd=true
 
 # default image
-#image: localhost:5000/mycorretto:8
-image: gitlab-registry.ifremer.fr/ifremer-commons/docker/images/maven-javafx:maven-3.8.5-jdk-8-javafx
+image: gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven-javafx:maven-javafx-3.8.5
 
 # Cache downloaded dependencies and plugins between builds.
 # To keep cache across branches, usage of 'key: "$CI_PROJECT_ID"'
@@ -78,6 +56,17 @@ before_script:
   - mkdir -p tmp 
   - tar xf externalResources.tar.gz -C tmp 
   - mv tmp/* externalResources
+  
+#  - mkdir -p tmp 
+#  - tar xf externalResources.tar.gz -C tmp
+#  - ls tmp/
+#  - echo "Resources found in resources:"
+#  - ls resources/
+#  - ls resources/externalResources/
+#  - rm -r resources/externalResources/
+#  - mkdir resources/externalResources/
+#  - mv tmp/* resources/externalResources/
+#  - ls resources/externalResources/
 
   # Creating test output folders
   - 'mkdir -p src/test/resources/cfpoint/input/profile
@@ -133,7 +122,7 @@ build_verify:
   tags:
     - seadatanet-runner
   script:
-    - mvn $MAVEN_CLI_OPTS verify
+    - mvn $MAVEN_CLI_OPTS install
   except:
     - develop 
 
@@ -145,7 +134,7 @@ deploy_snapshot:
     - seadatanet-runner
   script:
    - mvn versions:set -DnewVersion="$SNAPSHOT_VERSION"
-   - mvn $MAVEN_CLI_OPTS deploy
+   - mvn $MAVEN_CLI_OPTS -U deploy
   only:
     - develop
 

@@ -1,5 +1,40 @@
 # Changelog
 
+## 1.10.0
+
+### Evolutions
+* Conversion des fichiers ADCP provenant de CASCADE.
+* Check des fichiers ADCP obtenus.
+* Gestion de la ressource EDMERP (mise à jour par webservice).
+
+## 1.9.0
+
+### Evolutions
+* Conversion de données marégraphie sans référence verticale en CFPoint.
+
+## 1.8.2
+
+### Evolutions
+* Amélioration de la gestion de csrCodeList.xml.
+* Génération de SDN REFERENCE pour EDMERP.
+
+## 1.8.1
+
+### Evolutions
+* Mise à jour de la librairie SdnVocabulary 2.2.
+
+## 1.8.0
+
+### Evolutions
+* Ajout d'un checker et d'un convertisseur pour les fichiers "Microlitters in Sediments" (SODV).
+* Mise à jour de la librairie SdnVocabulary pour la détection des gliders.
+* Mise à jour de l'URL de service de csrCodeList.
+* Mise à jour de l'URL de service SoftwareVersionSoap.
+
+### Corrections
+* Correctif pour éviter la génération multiple de métadonnées pour un même CDI.
+* Correctif d'un message d'erreur (numéro de ligne incorrect) en cas d'erreur de détection de station.
+
 ## 1.7.1
 ### Corrections
 * Correction concernant la gestion des conversions BODV et MODV.

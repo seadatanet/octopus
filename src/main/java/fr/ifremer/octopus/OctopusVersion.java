@@ -1,10 +1,7 @@
 package fr.ifremer.octopus;
 
-import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.MessageFormat;
-import java.util.Properties;
 import java.util.ResourceBundle;
 
 import org.apache.logging.log4j.LogManager;
@@ -19,41 +16,22 @@ public class OctopusVersion {
 	static final Logger LOGGER = LogManager.getLogger(OctopusVersion.class.getName());
 	protected static String version = null;
 	
+	/**
+	 * Retrieve the application version (from Maven version).
+	 * 
+	 * @return the current Octopus version.
+	 */
 	public static String getVersion() {
-		
-		   if (version != null) {
-		        return version;
-		    }
-		   
-		   // try to load from maven properties first
-	    try {
-	        Properties p = new Properties();
-	        InputStream is = OctopusVersion.class.getResourceAsStream("/META-INF/maven/fr.ifremer/octopus/pom.properties");
-	        if (is != null) {
-	            p.load(is);
-	            version = p.getProperty("version", "");
-	        }
-	    } catch (Exception e) {
-	        // ignore
-	    }
 
-	    // fallback to using Java API
-	    if (version == null) {
-	        Package aPackage = OctopusVersion.class.getPackage();
-	        if (aPackage != null) {
-	            version = aPackage.getImplementationVersion();
-	            if (version == null) {
-	                version = aPackage.getSpecificationVersion();
-	            }
-	        }
-	    }
+		if (version != null) {
+			return version;
+		}
 
-	    if (version == null) {
-	        // we could not compute the version so use a blank
-	        version = "";
-	    }
+		ResourceBundle about = ResourceBundle.getBundle("bundles/about", PreferencesManager.getInstance().getLocale());
 
-	    return version;
+		version = about.getString("about.version");
+
+		return version;
 	}
 	
 	public static SoftwareState check () {
@@ -61,8 +39,7 @@ public class OctopusVersion {
 		SoftwareState state = null;
 		try
 		{                      
-			client = new SoftwareVersionClient(new URL("http://www.ifremer.fr/SoftwareVersionSoap/SoftwareVersionWebService?wsdl"));                                
-
+			client = new SoftwareVersionClient(new URL("https://www.seadatanet.org/SoftwareVersionSoap/SoftwareVersionWebService?wsdl"));                                
 
 			state = client.getSoftwareState("OCTOPUS", getVersion());
 			if(state.getState() == STATE.LAST_VERSION){

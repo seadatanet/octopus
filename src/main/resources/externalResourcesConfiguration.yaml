@@ -48,6 +48,7 @@ writeBodcReference: https://www.seadatanet.org/urnurl/SDN:{0}::{1}
 cdiUrlPatterns:
     - (?i)^https://cdi\.seadatanet\.org/report/edmo/([0-9]+)/([^/\?\s]+)/xml/?$
     - (?i)^http://seadatanet\.maris2\.nl/v_cdi_v3/print_xml\.asp\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
+    - (?i)^https://cdi\.seadatanet\.org/report/edmo/([0-9]+)/([^/\?\s]+)/?$
 
 # URL pattern to write a CDI URL.
 # {0} is EDMO_CODE, {1} is LOCAL_CDI_ID.
@@ -63,17 +64,23 @@ csrUrlPatterns:
     - (?i)^https://seadata\.bsh\.de/cgi-csr/XML/xmlDownload_V2\.pl\?csrref=([^/\?\s]+)$
     - (?i)^http://seadata\.bsh\.de/cgi-csr/XML/xmlDownload_V2\.pl\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
     - (?i)^https://seadata\.bsh\.de/cgi-csr/XML/xmlDownload_V2\.pl\?edmo=([0-9]+)&identifier=([^/\?\s]+)$
+    - (?i)^https://csr\.seadatanet\.org/report/([^/\?\s]+)/xml$
+    - (?i)^https://csr\.seadatanet\.org/report/edmo/([0-9]+)/([^/\?\s]+)/xml$
 
 # URL pattern to write a CSR URL. EDMO / id version.
 # {0} is EDMO_CODE, {1} is the CSR identifier.
-writeCsrReference: https://seadata.bsh.de/cgi-csr/XML/xmlDownload_V2.pl?edmo={0}&identifier={1}
+writeCsrReference: https://csr.seadatanet.org/report/edmo/{0}/{1}/xml
 
 # URL pattern to write a CSR URL. BSH ref version
 # {0} is the BSF reference.
-writeCsrReferenceBshRef: https://seadata.bsh.de/cgi-csr/XML/xmlDownload_V2.pl?csrref={0}
+writeCsrReferenceBshRef: https://csr.seadatanet.org/report/{0}/xml
 
 # Web service URL to retrieve the CSR.
-csrListWebServiceUrl: https://seadata.bsh.de/isoCodelists/sdnCodelists/csrCodeList.xml
+csrListWebServiceUrl: https://csr.seadatanet.org/isoCodelists/csrCodeList.xml
 
 # Web service URL for EDMO data.
 edmoWebServiceUrl: https://edmo.seadatanet.org/ws/ws_edmo.asmx
+
+# URL pattern to write a EDMERP URL.
+# {0} is EDMERP code.
+writeEdmerpReference: https://edmerp.seadatanet.org/report/{0}

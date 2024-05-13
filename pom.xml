@@ -9,7 +9,7 @@
 	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
 It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
-	<version>${my.version}</version>
+	<version>1.10.0</version>
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
 		<name>ifremer</name>
@@ -41,7 +41,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>fr.ifremer.octopus.MainApp</start-class>
 		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
-		<my.version>1.7.2</my.version>
+		<jrepath>${basedir}/jre</jrepath>
 	</properties>
 
 	<build>
@@ -63,7 +63,21 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-
+			
+			<!-- To access Maven artifact version at runtime -->
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-jar-plugin</artifactId>
+			    <configuration>
+			        <archive>                   
+			            <manifest>
+			                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+			                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+			            </manifest>
+			        </archive>
+			    </configuration>
+			</plugin>
+						
 			<!-- ===================================== ASSEMBLY =========================================== -->
 
 			<!-- Builds the artifact with its dependencies -->
@@ -80,7 +94,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<!-- Rename the artifact -->
-							<finalName>${project.artifactId}-${my.version}</finalName>
+							<finalName>${project.artifactId}-${version}</finalName>
 							<filters>
 								<filter>
 									<artifact>*:*</artifact>
@@ -142,7 +156,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-resources-linux</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -165,7 +179,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-resource-win</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -203,13 +217,14 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<!-- 					</execution> -->
 			<!-- 				</executions> -->
 			<!-- 			</plugin> -->
+			
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
 				<executions>
 					<execution>
 						<id>copy-resources-linux64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -253,7 +268,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-resource-win64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -290,12 +305,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jar-linux</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
 							<destinationFile>target/livrableLinux/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -310,12 +325,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jar-win</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
 							<destinationFile>target/livrableWin/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -335,7 +350,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<!-- 							<goal>copy</goal> -->
 			<!-- 						</goals> -->
 			<!-- 						<configuration> -->
-			<!-- 							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> -->
+			<!-- 							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> -->
 			<!-- 							<destinationFile>target/livrableLinux32/octopus/octopus.jar</destinationFile> -->
 			<!-- 						</configuration> -->
 			<!-- 					</execution> -->
@@ -348,12 +363,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jar-linux64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
 							<destinationFile>target/livrableLinux64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -373,7 +388,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<!-- 							<goal>copy</goal> -->
 			<!-- 						</goals> -->
 			<!-- 						<configuration> -->
-			<!-- 							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> -->
+			<!-- 							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> -->
 			<!-- 							<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile> -->
 			<!-- 						</configuration> -->
 			<!-- 					</execution> -->
@@ -386,12 +401,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jar-win64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile>
+							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
 							<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
@@ -401,12 +416,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 
 			<!-- <plugin> <groupId>com.coderplus.maven.plugins</groupId> <artifactId>copy-rename-maven-plugin</artifactId> 
 				<version>1.0</version> <executions> <execution> <id>copy-jar-win32</id> <phase>install</phase> 
-				<goals> <goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> 
+				<goals> <goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> 
 				<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile> 
 				</configuration> </execution> </executions> </plugin> <plugin> <groupId>com.coderplus.maven.plugins</groupId> 
 				<artifactId>copy-rename-maven-plugin</artifactId> <version>1.0</version> 
 				<executions> <execution> <id>copy-jar-win64</id> <phase>install</phase> <goals> 
-				<goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${my.version}.jar</sourceFile> 
+				<goal>copy</goal> </goals> <configuration> <sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> 
 				<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile> 
 				</configuration> </execution> </executions> </plugin> -->
 
@@ -419,7 +434,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-win</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -438,7 +453,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-win-java10</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -458,7 +473,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-linux</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -476,7 +491,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-linux-java10</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -514,7 +529,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-win64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -552,7 +567,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-exe-linux64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
@@ -595,7 +610,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jre-win64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -640,7 +655,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<executions>
 					<execution>
 						<id>copy-jre-linux64</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -655,6 +670,62 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<inherited>true</inherited>
+				<executions>
+					<execution>
+						<id>make-Linux</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/zipLinux.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+					<execution>
+						<id>make-Linux64</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/zipLinux64.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+					<execution>
+						<id>make-Win</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/zipWin.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+					<execution>
+						<id>make-Win64</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/zipWin64.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+				</executions> 
+			</plugin>
 		</plugins>
 	</build>
 
@@ -667,20 +738,35 @@ It is a unique and ergonomic tool for many format conversions.</description>
 	</pluginRepositories>
 
 	<repositories>
-		<repository>
+		<!--<repository>
 			<id>gitlab-maven-internal</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/1226/packages/maven</url>
 		</repository>
+
+		<repository>
+			<id>gitlab-maven-octopus</id>
+			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
+		</repository>-->
+		<repository>
+		    <id>gitlab-sdn-maven</id>
+		    <url>https://gitlab.ifremer.fr/api/v4/groups/seadatanet/-/packages/maven</url>
+		</repository>
+
 	</repositories>
 
 	<distributionManagement>
-		<repository>
+		<!-- <repository>
 			<id>gitlab-maven-internal</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/1226/packages/maven</url>
+		</repository>-->
+
+		<repository>
+			<id>gitlab-sdn-maven</id>
+			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>gitlab-maven-project</id>
+			<id>gitlab-sdn-maven</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
 		</snapshotRepository>
 	</distributionManagement>
@@ -692,7 +778,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.37</version>
+			<version>0.43</version>
 			<!-- <classifier>jar-with-dependencies</classifier> -->
 			<exclusions>
 				<exclusion>
@@ -705,15 +791,15 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer</groupId>
 			<artifactId>mgd</artifactId>
-			<version>1.19</version>
+			<version>1.22</version>
 		</dependency>
 
 		<!-- http://www.ifremer.fr/isi/softwareversion/ -> to be installed in a 
 			maven repository -->
 		<dependency>
-			<groupId>fr.ifremer.seadatanet</groupId>
-			<artifactId>SoftwareVersionApi</artifactId>
-			<version>1.0</version>
+			<groupId>fr.ifremer</groupId>
+			<artifactId>SoftwareVersionApi-javax</artifactId>
+			<version>3.1.2</version>
 		</dependency>
 
 		<!-- ************************* ****** ************************* -->

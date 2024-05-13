@@ -25,7 +25,7 @@ public class SDNVocabsTest {
 		}
 	}
 	@Test
-//	@Ignore
+	@Ignore
 	public void reloadBODCVocabs() {
 		try {
 			ExternalResourcesManager.getInstance().deleteAndReload();

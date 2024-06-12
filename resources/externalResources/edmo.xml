@@ -9270,7 +9270,7 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>397</n_code>
     <input_date />
-    <last_update>11/9/2017 9:29:15 AM</last_update>
+    <last_update>5/13/2024 10:55:30 AM</last_update>
     <date_created>3/16/1992 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -9279,31 +9279,31 @@ Miguel Servet 177</address>
     <Latitude>53.3321</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/dccae_logo-3-600x250.jpg</logo>
-    <name>Department of Communications, Climate Action and Environment</name>
-    <native_name>Roinn Cumarsáide, Gníomhaithe ar son na hAeráide &amp; Comhshaoil</native_name>
-    <abbreviated_name>DCCAE</abbreviated_name>
-    <address>Department of Communications, Climate Action and Environment</address>
+    <name>Department of the Environment, Climate and Communications</name>
+    <native_name>An Roinn Comhshaoil, Aeráide agus Cumarsáide</native_name>
+    <abbreviated_name>DECC</abbreviated_name>
+    <address>Department of the Environment, Climate and Communications</address>
     <zipcode>D02 X285</zipcode>
     <city>29-31 Adelaide Road</city>
     <state>Dublin 2</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>customer.service@dccae.gov.ie</email>
+    <email>customer.service@decc.gov.ie</email>
     <phone>+353-1-6782000</phone>
     <fax />
-    <website />
+    <website>http://www.gov.ie/decc/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
     <n_code>398</n_code>
     <input_date />
-    <last_update>11/8/2017 1:47:17 PM</last_update>
+    <last_update>5/13/2024 10:23:59 AM</last_update>
     <date_created>3/16/1992 12:00:00 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-8.4924</Longitude>
-    <Latitude>51.8922</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/ucc.png</logo>
     <name>Department of Geography, University College Cork</name>
@@ -9324,13 +9324,13 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>399</n_code>
     <input_date />
-    <last_update>11/8/2017 12:33:42 PM</last_update>
+    <last_update>5/13/2024 10:24:22 AM</last_update>
     <date_created>3/16/1992 12:00:00 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-8.4834</Longitude>
-    <Latitude>51.8982</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo />
     <name>Department of Geology, School of Biological, Earth and Environmental Sciences, University College Cork</name>
@@ -9351,13 +9351,13 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>400</n_code>
     <input_date />
-    <last_update>11/8/2017 1:42:58 PM</last_update>
+    <last_update>5/13/2024 10:24:33 AM</last_update>
     <date_created>3/16/1992 12:00:00 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-8.4833</Longitude>
-    <Latitude>51.8981</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/ucc.png</logo>
     <name>School of Biochemistry and Cell Biology, University College Cork</name>
@@ -9629,13 +9629,13 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>416</n_code>
     <input_date />
-    <last_update>11/8/2017 12:51:14 PM</last_update>
+    <last_update>5/13/2024 10:29:02 AM</last_update>
     <date_created>3/21/1996 12:00:00 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-6.2518</Longitude>
-    <Latitude>53.3432</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/tcd-logo-home.jpg</logo>
     <name>Department of Zoology, Trinity College Dublin</name>
@@ -9656,13 +9656,13 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>418</n_code>
     <input_date />
-    <last_update>11/8/2017 12:47:26 PM</last_update>
+    <last_update>5/13/2024 10:28:53 AM</last_update>
     <date_created>3/21/1996 12:00:00 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-6.2518</Longitude>
-    <Latitude>53.3442</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/tcd.jpg</logo>
     <name>Department of Botany, Trinity College Dublin</name>
@@ -17931,13 +17931,13 @@ Parc de Sophia Antipolis</address>
   <Organisation>
     <n_code>770</n_code>
     <input_date />
-    <last_update>11/8/2017 12:57:29 PM</last_update>
+    <last_update>5/13/2024 10:25:04 AM</last_update>
     <date_created />
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-8.4833</Longitude>
-    <Latitude>51.8982</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/bees.jpg</logo>
     <name>Department of Zoology, School of Biological, Earth and Environmental Sciences, University College Cork</name>
@@ -30784,7 +30784,7 @@ Newforge Lane
   <Organisation>
     <n_code>1388</n_code>
     <input_date>9/6/2007 1:27:47 PM</input_date>
-    <last_update>11/7/2017 9:46:42 AM</last_update>
+    <last_update>5/13/2024 10:34:20 AM</last_update>
     <date_created>9/6/2007 1:27:47 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -30793,19 +30793,19 @@ Newforge Lane
     <Latitude>53.34</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/dbei.png</logo>
-    <name>Department of Business, Enterprise and Innovation</name>
-    <native_name>An Roinn Gnó, Fiontar agus Nuálaíochta</native_name>
-    <abbreviated_name>DBEI</abbreviated_name>
+    <name>Department of Enterprise, Trade and Employment</name>
+    <native_name>An Roinn Fiontar, Trádála agus Fostaíochta</native_name>
+    <abbreviated_name>DETE</abbreviated_name>
     <address>23 Kildare Street</address>
     <zipcode>D02 TD30</zipcode>
     <city>23 Kildare Street</city>
     <state>Dublin 2</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>info@dbei.gov.ie</email>
+    <email>info@enterprise.gov.ie</email>
     <phone>+353-1-6312121</phone>
     <fax />
-    <website>https://dbei.gov.ie:443/en/</website>
+    <website>https://enterprise.gov.ie/en/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -74705,7 +74705,7 @@ Postboks 358</address>
   <Organisation>
     <n_code>3058</n_code>
     <input_date>8/14/2012 3:28:44 PM</input_date>
-    <last_update>5/6/2024 10:26:06 AM</last_update>
+    <last_update>5/13/2024 10:21:40 AM</last_update>
     <date_created>8/14/2012 3:28:44 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -74714,7 +74714,7 @@ Postboks 358</address>
     <Latitude>54.2786</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/atu-logo.jpg</logo>
-    <name>Atlantic Technological University</name>
+    <name>Atlantic Technological University, Sligo</name>
     <native_name>Ollscoil Teicneolaíochta an Atlantaigh</native_name>
     <abbreviated_name>ATU, Sligo</abbreviated_name>
     <address>Ash Lane</address>
@@ -77323,7 +77323,7 @@ Arundel Street
   <Organisation>
     <n_code>3154</n_code>
     <input_date>11/29/2012 3:32:10 PM</input_date>
-    <last_update>11/19/2018 3:19:42 PM</last_update>
+    <last_update>5/23/2024 12:01:01 PM</last_update>
     <date_created>11/29/2012 3:32:10 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -77337,7 +77337,7 @@ Arundel Street
     <abbreviated_name>CMCC</abbreviated_name>
     <address>Via Augusto Imperatore, 16- Lecce - 73100 - mariabarbara.galati@cmcc.it</address>
     <zipcode />
-    <city>Bologna</city>
+    <city>Lecce</city>
     <state />
     <country>18</country>
     <country_c32>IT</country_c32>
@@ -152097,5 +152097,88 @@ Clear Water Bay, Kowloon
     <fax />
     <website>https://oces.hkust.edu.hk/</website>
     <c_country>China</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5952</n_code>
+    <input_date>5/23/2024 12:18:04 PM</input_date>
+    <last_update>5/23/2024 12:18:57 PM</last_update>
+    <date_created>5/23/2024 12:18:04 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-9.1504</Longitude>
+    <Latitude>38.7077</Latitude>
+    <collate_id>590</collate_id>
+    <logo />
+    <name>COLAB Atlantic</name>
+    <native_name />
+    <abbreviated_name>COLAB</abbreviated_name>
+    <address>Museu das Comunicações
+Rua do Instituto Industrial 16</address>
+    <zipcode>1200-225</zipcode>
+    <city>Lisbon</city>
+    <state />
+    <country>27</country>
+    <country_c32>PT</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://colabatlantic.com/</website>
+    <c_country>Portugal</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5953</n_code>
+    <input_date>6/3/2024 7:26:57 AM</input_date>
+    <last_update>6/3/2024 12:44:23 PM</last_update>
+    <date_created>6/3/2024 7:26:57 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>11.1451418117525</Longitude>
+    <Latitude>51.7748638806016</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Julius Kühn-Institut – Federal Research Centre for Cultivated Plants</name>
+    <native_name>Julius Kühn-Institut (JKI) - Bundesforschungsinstitut für Kulturpflanzen</native_name>
+    <abbreviated_name>JKI</abbreviated_name>
+    <address>Erwin-Baur-Str. 27, 06484 Quedlinburg</address>
+    <zipcode>06484</zipcode>
+    <city>Quedlinburg</city>
+    <state />
+    <country>5</country>
+    <country_c32>DE</country_c32>
+    <email>poststelle@julius-kuehn.de</email>
+    <phone>+49 (0) 3946 47-0</phone>
+    <fax>+49 (0) 3946 47-1302</fax>
+    <website>https://www.julius-kuehn.de/</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5954</n_code>
+    <input_date>6/10/2024 1:47:47 PM</input_date>
+    <last_update>6/10/2024 1:49:15 PM</last_update>
+    <date_created>6/10/2024 1:47:47 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-2.9064</Longitude>
+    <Latitude>53.2901</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>SGS M-Scan Ltd</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Inward Way</address>
+    <zipcode>CH65 3EN</zipcode>
+    <city>Ellesmere Port</city>
+    <state>Cheshire</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email />
+    <phone>+44 151 350 6600</phone>
+    <fax />
+    <website>https://www.sgs.com/en-gb
+</website>
+    <c_country>United Kingdom</c_country>
   </Organisation>
 </Organisations>

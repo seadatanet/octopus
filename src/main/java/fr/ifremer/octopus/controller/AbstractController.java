@@ -21,6 +21,7 @@ import org.apache.logging.log4j.Logger;
 import fr.ifremer.medatlas.input.MedatlasInputFileManager;
 import fr.ifremer.octopus.controller.checker.ADCPFormatChecker;
 import fr.ifremer.octopus.controller.checker.CFPointFormatChecker;
+import fr.ifremer.octopus.controller.checker.CODASFormatChecker;
 import fr.ifremer.octopus.controller.checker.EGOGliderFormatChecker;
 import fr.ifremer.octopus.controller.checker.FormatChecker;
 import fr.ifremer.octopus.controller.checker.MedatlasFormatChecker;
@@ -585,6 +586,7 @@ public abstract class AbstractController {
 				}
 				break;
 			case CFPOINT_ADCP:
+			case CFPOINT_CODAS:
 				if (model.getOutputFormat().equals(Format.CFPOINT)) {
 					conversion = Conversion.ADCP_TO_CFPOINT;
 				} else {
@@ -815,6 +817,9 @@ public abstract class AbstractController {
 			break;
 		case CFPOINT_ADCP:
 			checker = new ADCPFormatChecker();
+			break;
+		case CFPOINT_CODAS:
+			checker = new CODASFormatChecker();
 			break;
 		default:
 			break;

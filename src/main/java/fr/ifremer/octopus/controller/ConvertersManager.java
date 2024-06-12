@@ -68,13 +68,14 @@ public class ConvertersManager {
 				conv = new EGOGliderSimpleReader(inputFile.getAbsolutePath(), Integer.valueOf(edmo));
 				break;
 			case CFPOINT_ADCP:
+			case CFPOINT_CODAS:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
 				if (edmo==null|| edmo.isEmpty()){
 					throw new OctopusException(messages.getString("converter.setEdmoInSettings"));
 				}
-				conv = new ADCPSimpleReader(inputFile.getAbsolutePath(), Integer.valueOf(edmo));
+				conv = new ADCPSimpleReader(inputFile.getAbsolutePath(), Integer.valueOf(edmo), inputFormat);
 				break;
-				case MGD_81:
+			case MGD_81:
 				edmo = PreferencesManager.getInstance().getEdmoCode();
 				if (edmo==null|| edmo.isEmpty()){
 					throw new OctopusException(messages.getString("converter.setEdmoInSettings"));
@@ -162,6 +163,7 @@ public class ConvertersManager {
 		case CFPOINT_EGOGLIDER:
 			return ((EGOGliderSimpleReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion ,unitsTranslationFileName, outputFormat);
 		case CFPOINT_ADCP:
+		case CFPOINT_CODAS:
 			return ((ADCPSimpleReader)conv).print(cdiList, outputFileAbsolutePath, originatorSoftwareName, originatorSoftwareVersion ,unitsTranslationFileName, outputFormat);
 		case MGD_81:
 		case MGD_98:
@@ -187,6 +189,7 @@ public class ConvertersManager {
 				((EGOGliderSimpleReader)conv).close();
 				break;
 			case CFPOINT_ADCP:
+			case CFPOINT_CODAS:
 				((ADCPSimpleReader)conv).close();
 				break;
 			case MGD_81:

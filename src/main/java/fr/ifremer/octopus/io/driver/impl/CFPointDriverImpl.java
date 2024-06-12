@@ -38,6 +38,9 @@ public class CFPointDriverImpl extends Driver {
 			else if (netCdfFormat == NETCDF_FORMAT.ADCP) {
 				format = Format.CFPOINT_ADCP;
 			}
+			else if (netCdfFormat == NETCDF_FORMAT.CODAS) {
+				format = Format.CFPOINT_CODAS;
+			}
 			
 			inputFile.close();
 		} catch (IOException e) {

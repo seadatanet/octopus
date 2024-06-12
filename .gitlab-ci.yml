@@ -52,7 +52,7 @@ before_script:
 
   # TODO : TEMPORARY SOLUTION
   # Downloading saved externalResources in Gitlab 
-  - 'curl -fsSL --header "PRIVATE-TOKEN: gpovEMQsfa-EC9XzDJ5_" "https://gitlab.ifremer.fr/api/v4/projects/2512/repository/archive.tar.gz?sha=master" -o externalResources.tar.gz'
+  - 'curl -fsSL --header "PRIVATE-TOKEN: WPX6aDKc7vyV7RRxzf5C" "https://gitlab.ifremer.fr/api/v4/projects/2512/repository/archive.tar.gz?sha=master" -o externalResources.tar.gz'
   - mkdir -p tmp 
   - tar xf externalResources.tar.gz -C tmp 
   - mv tmp/* externalResources

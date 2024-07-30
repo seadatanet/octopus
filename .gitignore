@@ -5,9 +5,6 @@ builds/
 # Fichiers et dossiers generes a la compilation
 *.log
 dependency-reduced-pom.xml
-.factorypath
-.classpath
-.settings/
 logs/
 # externalResources/
 src/test/resources/MGD81/out/
@@ -15,13 +12,40 @@ src/test/resources/cfpoint/out/
 src/test/resources/medatlas/out/
 src/test/resources/odv/out/
 
-# Fichiers et dossiers des editeurs de code
-.vscode/
-
 # Fichiers de runtime
 octopusDB/
 *.csv
 
 # Fichiers de backup 
 *.back
+
+.m2/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
 

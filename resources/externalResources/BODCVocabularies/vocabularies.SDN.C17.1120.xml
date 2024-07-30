@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocabularies>
+   <vocabulary list="SDN:P17:51:"  version="51"  date="2023-10-13T02:00:01.000"  title="Partnership for Observation of the Global Ocean ships of interest"   />
+   <vocabulary list="SDN:L06:17:"  version="17"  date="2021-03-25T14:00:02.000"  title="SeaVoX Platform Categories"   />
+   <vocabulary list="SDN:L19:4:"  version="4"  date="2021-07-07T14:21:48.000"  title="SeaDataNet keyword types"   />
+</vocabularies>

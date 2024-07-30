@@ -1,153 +1,34 @@
-# ---------------------------------------------------------------
-# Gitlab-CI file for Octopus project
-# ---------------------------------------------------------------
-# .gitlab-ci.yml file inspired by the template https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Maven.gitlab-ci.yml
-
-# ---------------------------------------------------------------
-# Note on Maven stages
-# ---------------------------------------------------------------
-# Maven has the following default lifecycle: (not a comprehensive list)
-#    validate > compile > test > package > integration-test > verify > install > deploy
-# So the command `mvn verify` will execute the following lifecycle:
-#    validate > compile > test > package > integration-test > verify
+include:
+    - project: dev-ops/templates/automatisation/ci-cd
+      ref: main
+      file: /pipelines/java-publish.yml
 
 variables:
-  # Download for dependencies and plugins or upload messages are set to Slf4jMavenTransferListener=INFO. To disable set to WARN.
-  # `showDateTime` will show the passed time in milliseconds. You need to specify `--batch-mode` to make this work.
-  MAVEN_OPTS: >-
-    -Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository
-    -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=INFO
-    -Dorg.slf4j.simpleLogger.showDateTime=true
-    -Dhttps.protocols=TLSv1.2
-    -Djava.awt.headless=true
+  # Build
+  JAVA_VERSION: 8
+  JAVA_BUILDER_BUILD_IMAGE: gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven-javafx:maven-javafx-3.8.5
+  JAVA_BUILDER_MAVEN_SETTINGS_PATH: ci_settings.xml
+  JAVA_BUILDER_SKIP_TESTS: "true"
+  JAVA_BUILDER_ARTIFACTS_PATH: "**/target/*.[zip|jar]"
+  # Secret detection
+#  SECRET_DETECTION_HISTORIC_SCAN: "true"
 
-  # `installAtEnd` and `deployAtEnd` are only effective with recent version of the corresponding plugins.
-  MAVEN_CLI_OPTS: >-
-    -s ci_settings.xml 
-    --batch-mode
-    --errors 
-    --fail-at-end 
-    --show-version 
-    -DinstallAtEnd=true 
-    -DdeployAtEnd=true
 
-# default image
-image: gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven-javafx:maven-javafx-3.8.5
 
-# Cache downloaded dependencies and plugins between builds.
-# To keep cache across branches, usage of 'key: "$CI_PROJECT_ID"'
-cache:
-  key: "$CI_PROJECT_ID"
-  paths:
-    - .m2/repository
-
-before_script:
-  # Setting up version based on <version> section in pom.xml, RELEASE_VERSION is stripped out of "-SNAPSHOT"
-  - RAW_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
-  - RELEASE_VERSION=${RAW_VERSION%-SNAPSHOT}
-  - SNAPSHOT_VERSION="${RELEASE_VERSION}-SNAPSHOT"
-
-  # Setting up timezone for timezone dependant tests
-  - export TZ=Europe/Paris
-
-  # TODO : TEMPORARY SOLUTION
-  # Downloading saved externalResources in Gitlab 
-  - 'curl -fsSL --header "PRIVATE-TOKEN: WPX6aDKc7vyV7RRxzf5C" "https://gitlab.ifremer.fr/api/v4/projects/2512/repository/archive.tar.gz?sha=master" -o externalResources.tar.gz'
-  - mkdir -p tmp 
-  - tar xf externalResources.tar.gz -C tmp 
-  - mv tmp/* externalResources
-  
-#  - mkdir -p tmp 
-#  - tar xf externalResources.tar.gz -C tmp
-#  - ls tmp/
-#  - echo "Resources found in resources:"
-#  - ls resources/
-#  - ls resources/externalResources/
-#  - rm -r resources/externalResources/
-#  - mkdir resources/externalResources/
-#  - mv tmp/* resources/externalResources/
-#  - ls resources/externalResources/
-
-  # Creating test output folders
-  - 'mkdir -p src/test/resources/cfpoint/input/profile
-              src/test/resources/cfpoint/input/timeseries
-              src/test/resources/cfpoint/input/trajectory
-              src/test/resources/cfpoint/out/cfpoint/profile/dir_cf_2_cf_Mono_emptyCDI/diap
-              src/test/resources/cfpoint/out/cfpoint/profile/dir_cf_2_cf_Mono_emptyCDI/diap_withNoRef
-              src/test/resources/cfpoint/out/cfpoint/timeseries
-              src/test/resources/cfpoint/out/cfpoint/trajectory
-              src/test/resources/medatlas/input/profile
-              src/test/resources/medatlas/input/profile_invalid
-              src/test/resources/medatlas/input/timeseries
-              src/test/resources/medatlas/input/trajectory
-              src/test/resources/medatlas/inputNonSDN/profile/outcoriolis
-              src/test/resources/medatlas/out/cfpoint/profile/dir_profile_med_2_cf_Multi_emptyCDI.nc
-              src/test/resources/medatlas/out/cfpoint/timeseries
-              src/test/resources/medatlas/out/cfpoint/trajectory
-              src/test/resources/medatlas/out/medatlas/profile/dir_profile_med_2_med_Multi_emptyCDI
-              src/test/resources/medatlas/out/medatlas/timeseries
-              src/test/resources/medatlas/out/medatlas/trajectory
-              src/test/resources/medatlas/out/odv/profile/file_profile_med_2_odv_Mono_2CDI_inputNoRef
-              src/test/resources/medatlas/out/odv/timeseries
-              src/test/resources/medatlas/out/odv/trajectory
-              src/test/resources/MGD81/input
-              src/test/resources/MGD81/out/odv
-              src/test/resources/MGD81/out/odv/200201002062_v81
-              src/test/resources/MGD81/out/odv/81
-              src/test/resources/MGD98/input
-              src/test/resources/MGD98/out
-              src/test/resources/odv/input/profile
-              src/test/resources/odv/input/profile_invalid
-              src/test/resources/odv/input/timeseries
-              src/test/resources/odv/input/trajectory
-              src/test/resources/odv/out/cfpoint/profile/file_odv_2_cf_Mono_emptyCDI
-              src/test/resources/odv/out/cfpoint/timeseries
-              src/test/resources/odv/out/cfpoint/trajectory
-              src/test/resources/odv/out/odv/profile
-              src/test/resources/odv/out/odv/timeseries
-              src/test/resources/odv/out/odv/trajectory'
-
-# Indicating path to test reports for gitlab visualization
-.report_test:
-  artifacts:
-    when: always
-    reports:
-      junit:
-        - target/surefire-reports/TEST-*.xml
-        
-# On branches feature/hotfix/master at each commit
-build_verify:
-  extends: .report_test
-  stage: build
-  tags:
-    - seadatanet-runner
-  script:
-    - mvn $MAVEN_CLI_OPTS install
-  except:
-    - develop 
-
-# On branch develop at each commit
-deploy_snapshot:
-  extends: .report_test
-  stage: deploy
-  tags:
-    - seadatanet-runner
-  script:
-   - mvn versions:set -DnewVersion="$SNAPSHOT_VERSION"
-   - mvn $MAVEN_CLI_OPTS -U deploy
-  only:
-    - develop
-
-# On branch develop with manual action (available after deploy_snapshot)
-deploy_release:
-  extends: .report_test
-  stage: deploy
-  tags:
-    - seadatanet-runner
-  script:
-    - mvn versions:set -DnewVersion="$RELEASE_VERSION"
-    - mvn $MAVEN_CLI_OPTS deploy
-  only:
-    - develop
-  when: manual
-
+# surcharge des assets de la release gitlab
+release:gitlab:create 🚀:
+  release:
+    name: Release $RELEASE_VERSION
+    description: $CI_COMMIT_TAG_MESSAGE
+    tag_name: $RELEASE_VERSION
+    ref: $CI_COMMIT_SHA
+    assets:
+      links:
+        - name: octopus-$RELEASE_VERSION-Win64_standalone.zip
+          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win64_standalone.zip"
+        - name: octopus-$RELEASE_VERSION-Win.zip
+          url: "${CI_API_V4_URL}/projects/1225/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win.zip"
+        - name: octopus-$RELEASE_VERSION-Linux64_standalone.zip
+          url: "${CI_API_V4_URL}/projects/1225/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Linux64_standalone.zip"
+        - name: octopus-$RELEASE_VERSION-Linux.zip
+          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Linux.zip"

@@ -1,0 +1,94 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: OCTOPUS Software
+message: >-
+  A multiformat checker, converter ans splitter tool for
+  SeaDataNet standards. It is a unique and ergonomic tool
+  for many format conversions.
+type: software
+authors:
+  - name: Ifremer
+    address: 1625 route de Sainte-Anne
+    city: Plouzané
+    post-code: '29280'
+    country: FR
+    location: Bretagne
+    website: 'https://www.seadatanet.org/'
+    email: sdn-userdesk@seadatanet.org
+identifiers:
+  - type: url
+    value: 'https://doi.org/10.17882/100968'
+repository-code: 'https://github.com/seadatanet/octopus'
+url: 'https://www.seadatanet.org/Software/OCTOPUS'
+abstract: >-
+  OCTOPUS is a multiformat splitter & converter tool for
+  SeaDataNet (SDN) formats. It is a unique and ergonomic
+  tool for many format conversions.
+
+
+  The following conversions are possible with OCTOPUS:
+
+  - Non SDN MedAtlas to SDN MedAtlas
+
+  - Non SDN MedAtlas to SDN ODV
+
+  - Non SDN MedAtlas to SDN NetCDF
+
+  - Non SDN NetCDF Shipboard ADCP to SDN NetCDF
+
+  - SDN MedAtlas to SDN ODV
+
+  - SDN MedAtlas to SDN NetCDF
+
+  - SDN ODV to SDN NetCDF
+
+  - SDN NetCDF to SDN ODV
+
+
+  And for marine geophysical data:
+
+  - MGDv81 to SDN ODV
+
+  - MGDv98 to SDN ODV
+
+
+  OCTOPUS also allows:
+
+  - to split a multistation file into monostation ones
+
+  - to extract 1 to n stations from a multistation file and
+  export them into another multistation file or several
+  monostation ones
+
+  - to check the compliance of SDN MedAtlas, SDN ODV, SDN
+  NetCDF and HFRadar NetCDF formats
+
+  - to check the compliance of ODV variant SDN formats for
+  biology, microlitter and flow cytometry
+
+  - to convert EGO glider files to SDN netCDF (CFPoint)
+  format
+
+  - to generate the SDN coupling table
+keywords:
+  - SeaDataNet
+  - check
+  - convertion
+  - split
+  - ODV
+  - netCDF
+  - MedAtlas
+  - MGD
+  - EGO
+  - ADCP
+  - ODV variants
+  - Biology (BODV)
+  - Flow cytometry
+  - Microlitter in water column (MODV)
+  - Microlitter in sediments (SODV)
+  - CDI
+license: SeaDataNet licence 1.0
+version: '1.10.0'
+date-released: '2024-05-14'

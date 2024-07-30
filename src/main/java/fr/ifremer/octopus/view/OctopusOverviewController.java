@@ -501,7 +501,7 @@ public class OctopusOverviewController {
 			}
 			
 			// Disable check for ADCP
-			if (f == Format.CFPOINT_ADCP) {
+			if (f == Format.CFPOINT_ADCP || f == Format.CFPOINT_CODAS) {
 				
 				checkButton.setDisable(true);
 			}

@@ -1,0 +1,85 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "Physical oceanography",
+    "author": [
+        {
+            "id": "https://orcid.org/0009-0008-1759-5254",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Service des Systèmes d'Informations Scientifiques pour la MER, Ifremer, France"
+            },
+            "email": "steven.piel@ifremer.fr",
+            "familyName": "PIEL",
+            "givenName": "Steven"
+        },
+        {
+            "type": "Role",
+            "schema:author": "https://orcid.org/0009-0008-1759-5254",
+            "roleName": "Marine data management Projects manager",
+            "startDate": "2023-10-02"
+        },
+        {
+            "id": "_:author_2",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Capgemini Engineering, Brest, France"
+            },
+            "familyName": "CROUZILLE",
+            "givenName": "Sébastien"
+        },
+        {
+            "type": "Role",
+            "schema:author": "_:author_2",
+            "roleName": "Developer"
+        }
+    ],
+    "codeRepository": "https://github.com/seadatanet/octopus",
+    "dateCreated": "2024-07-04",
+    "dateModified": "2024-05-14",
+    "datePublished": "2024-07-04",
+    "description": "OCTOPUS is a multiformat checker, splitter and converter tool for SeaDataNet (SDN) formats. It is a unique and ergonomic tool for many format conversions.",
+    "downloadUrl": "https://www.seadatanet.org/Software/OCTOPUS/Download-Octopus-1.10.0",
+    "funder": {
+        "type": "Organization",
+        "name": "Ifremer"
+    },
+    "keywords": [
+        "SeaDataNet",
+        "check",
+        "convertion",
+        "split",
+        "ODV",
+        "netCDF",
+        "MedAtlas",
+        "MGD",
+        "EGO",
+        "ADCP",
+        "ODV variants",
+        "Biology (BODV)",
+        "Flow cytometry",
+        "Microlitter in water column (MODV)",
+        "Microlitter in sediments (SODV)",
+        "CDI"
+    ],
+    "license": "https://github.com/seadatanet/octopus?tab=License-1-ov-file",
+    "name": "OCTOPUS",
+    "operatingSystem": [
+        "Windows",
+        "Linux"
+    ],
+    "programmingLanguage": "Java",
+    "releaseNotes": "OCTOPUS version 1.10.0 (14/05/2024)\nAdds-on\n    Conversion of Shipboard ADCP files from Cascade software\n    Check of generated ADCP files\n    EDMERP resource handling (update via webservice)",
+    "review": {
+        "type": "Review",
+        "reviewBody": "to be uptaded once validated with SEANOE"
+    },
+    "softwareRequirements": [
+        "Java 1.8.0_131 or greater (but lower than 1.9)",
+        "https://github.com/seadatanet/octopus#requirements-supported-environments-installation"
+    ],
+    "version": "1.10.0",
+    "referencePublication": "https://doi.org/10.1000/100968"
+}

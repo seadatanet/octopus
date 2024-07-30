@@ -730,45 +730,43 @@ It is a unique and ergonomic tool for many format conversions.</description>
 	</build>
 
 	<pluginRepositories>
+
 		<pluginRepository>
-			<id>oss.sonatype.org</id>
-			<name>OSS Sonatype Staging</name>
-			<url>https://oss.sonatype.org/content/groups/staging</url>
-		</pluginRepository>
+            <id>nexus-ifremer-release</id>
+            <name>maven-release</name>
+            <url>https://nexus.isival.ifremer.fr/repository/maven-private-release/</url>
+        </pluginRepository>
+
 	</pluginRepositories>
 
 	<repositories>
-		<!--<repository>
-			<id>gitlab-maven-internal</id>
-			<url>https://gitlab.ifremer.fr/api/v4/projects/1226/packages/maven</url>
+
+		<repository>
+			<id>nexus-ifremer-release</id>
+			<name>maven-release</name>
+			<url>https://nexus.isival.ifremer.fr/repository/maven-private-release/</url>
 		</repository>
 
 		<repository>
-			<id>gitlab-maven-octopus</id>
-			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
-		</repository>-->
-		<repository>
-		    <id>gitlab-sdn-maven</id>
-		    <url>https://gitlab.ifremer.fr/api/v4/groups/seadatanet/-/packages/maven</url>
+			<id>nexus-ifremer-snapshot</id>
+			<name>maven-snapshot</name>
+			<url>https://nexus.isival.ifremer.fr/repository/maven-private-snapshot/</url>
 		</repository>
 
 	</repositories>
 
 	<distributionManagement>
-		<!-- <repository>
-			<id>gitlab-maven-internal</id>
-			<url>https://gitlab.ifremer.fr/api/v4/projects/1226/packages/maven</url>
-		</repository>-->
 
 		<repository>
-			<id>gitlab-sdn-maven</id>
+			<id>ifr-gitlab-group</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>gitlab-sdn-maven</id>
+			<id>ifr-gitlab-group</id>
 			<url>https://gitlab.ifremer.fr/api/v4/projects/2338/packages/maven</url>
 		</snapshotRepository>
+
 	</distributionManagement>
 
 

@@ -1,9 +1,6 @@
 # OCTOPUS Software (multiformat checker, splitter and converter tool for [SeaDataNet formats](https://archimer.ifremer.fr/doc/00454/56547/))
 ![OCTOPUS Software logo](https://www.seadatanet.org/var/storage/images/_aliases/fullsize/media/seadatanet2-media/illustrations_sdc_sdn2_sdn/octopus_logo_2/10256-1-eng-GB/Octopus_logo_2.png "OCTOPUS logo")
 
-> [!IMPORTANT]
-> **The source codes will be made available by the end of August 2024**
-
 ## Badges
 [![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=21&a=11113&i=31000&r=103)
 Assesment done on 26/07/2024

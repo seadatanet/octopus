@@ -26,14 +26,14 @@ under the License.
 
   <servers>
       <server>
-        <id>gitlab-sdn-maven</id>
+        <id>ifr-gitlab-group</id>
         <configuration>
-        <httpHeaders>
-            <property>
-            <name>Job-Token</name>
-            <value>${env.CI_JOB_TOKEN}</value>
-            </property>
-        </httpHeaders>
+          <httpHeaders>
+              <property>
+              <name>Job-Token</name>
+              <value>${env.CI_JOB_TOKEN}</value>
+              </property>
+          </httpHeaders>
         </configuration>
       </server>
     </servers>

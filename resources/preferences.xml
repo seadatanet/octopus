@@ -2,9 +2,9 @@
 <preferences>
     <couplingEnabled>false</couplingEnabled>
     <couplingPrefix></couplingPrefix>
-    <edmocode></edmocode>
-    <inputDefaultPath></inputDefaultPath>
+    <edmocode>43</edmocode>
+    <inputDefaultPath>C:\Users\scrouzil.CORP\Documents\mcosismer\SEADATANET\Octopus\Mantis\63847\data</inputDefaultPath>
     <language>uk</language>
-    <outputDefaultPath></outputDefaultPath>
+    <outputDefaultPath>C:\Users\scrouzil.CORP\Documents\mcosismer\SEADATANET\Octopus\Mantis\63847\data\out</outputDefaultPath>
     <theme>1</theme>
 </preferences>

@@ -8971,13 +8971,13 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>380</n_code>
     <input_date />
-    <last_update>11/9/2017 10:15:42 AM</last_update>
+    <last_update>6/19/2024 10:29:39 AM</last_update>
     <date_created>3/11/1992 12:00:00 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-6.2237</Longitude>
-    <Latitude>53.3083</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/ucd.jpg</logo>
     <name>University College Dublin, School of Biology and Environmental Science</name>
@@ -9079,13 +9079,13 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>388</n_code>
     <input_date />
-    <last_update>3/4/2024 4:10:20 PM</last_update>
+    <last_update>6/12/2024 10:17:57 AM</last_update>
     <date_created>2/16/1992 12:00:00 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-9.06</Longitude>
-    <Latitude>53.28</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/nui-galway-societies.jpg</logo>
     <name>Department of Earth and Ocean Sciences, University of Galway</name>
@@ -9575,13 +9575,13 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>412</n_code>
     <input_date />
-    <last_update>3/4/2024 4:08:31 PM</last_update>
+    <last_update>6/12/2024 10:17:20 AM</last_update>
     <date_created>3/21/1996 12:00:00 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-9.0594</Longitude>
-    <Latitude>53.2775</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/nui-galway-societies.jpg</logo>
     <name>Department of Zoology, Ryan Institute, University of Galway</name>
@@ -9602,9 +9602,9 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>414</n_code>
     <input_date />
-    <last_update>11/8/2017 12:38:34 PM</last_update>
+    <last_update>8/13/2024 10:55:06 AM</last_update>
     <date_created>3/21/1996 12:00:00 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
     <Longitude>-6.2555</Longitude>
@@ -17960,7 +17960,7 @@ Parc de Sophia Antipolis</address>
   <Organisation>
     <n_code>773</n_code>
     <input_date />
-    <last_update>3/4/2024 4:12:53 PM</last_update>
+    <last_update>6/19/2024 11:17:36 AM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -17969,7 +17969,7 @@ Parc de Sophia Antipolis</address>
     <Latitude>53.2786</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/gmit.png</logo>
-    <name>ATU - Atlantic Technological University</name>
+    <name>Atlantic Technological University</name>
     <native_name>Institúid Teicneolaíochta Na Gaillimhe-Maigh Eo</native_name>
     <abbreviated_name>ATU</abbreviated_name>
     <address>ATU (Galway Campus)</address>
@@ -42078,16 +42078,16 @@ H. Javid ave. 31a</address>
   <Organisation>
     <n_code>1819</n_code>
     <input_date>1/20/2009 4:33:47 PM</input_date>
-    <last_update>11/6/2017 10:24:52 AM</last_update>
+    <last_update>8/13/2024 10:59:56 AM</last_update>
     <date_created>1/20/2009 4:33:47 PM</date_created>
-    <organisation_exists>False</organisation_exists>
+    <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude />
-    <Latitude />
+    <Longitude>-6.24813</Longitude>
+    <Latitude>53.337487</Latitude>
     <collate_id>396</collate_id>
     <logo />
-    <name>Electricity Supply Board</name>
+    <name>Electricity Supply Board (ESB)</name>
     <native_name />
     <abbreviated_name>ESB</abbreviated_name>
     <address>27 Lower Fitzwilliam St</address>
@@ -42877,7 +42877,7 @@ PO Box 152</address>
   <Organisation>
     <n_code>1848</n_code>
     <input_date>2/9/2009 4:42:13 PM</input_date>
-    <last_update>11/14/2017 10:44:04 AM</last_update>
+    <last_update>8/13/2024 10:59:40 AM</last_update>
     <date_created>2/9/2009 4:42:13 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -42886,7 +42886,7 @@ PO Box 152</address>
     <Latitude>51.8342</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/marei.png</logo>
-    <name>Marine Renewable Energy Ireland</name>
+    <name>Marine Renewable Energy Ireland (MaREI)</name>
     <native_name>Marine Renewable Energy Ireland</native_name>
     <abbreviated_name>MaREI</abbreviated_name>
     <address>Environmental Research Institute, 
@@ -50310,13 +50310,13 @@ Apartado 7586- Alfragide
   <Organisation>
     <n_code>2126</n_code>
     <input_date>6/10/2009 12:23:10 PM</input_date>
-    <last_update>3/21/2024 11:50:13 AM</last_update>
+    <last_update>6/19/2024 10:21:33 AM</last_update>
     <date_created>6/10/2009 12:23:10 PM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-9.0594</Longitude>
-    <Latitude>53.2775</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/ryaninstitute.png</logo>
     <name>Ryan Institute, University of Galway.</name>
@@ -50612,13 +50612,13 @@ Bidston Hill</address>
   <Organisation>
     <n_code>2138</n_code>
     <input_date>7/1/2009 5:13:57 PM</input_date>
-    <last_update>11/1/2017 10:57:13 AM</last_update>
+    <last_update>6/19/2024 10:25:18 AM</last_update>
     <date_created>7/1/2009 5:13:57 PM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-6.2682</Longitude>
-    <Latitude>53.337</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/dit_logocol2013_web.jpg</logo>
     <name>School of Biological Sciences, Dublin Institute of Technology</name>
@@ -66992,7 +66992,7 @@ Alton Road</address>
   <Organisation>
     <n_code>2771</n_code>
     <input_date>4/7/2011 8:35:42 AM</input_date>
-    <last_update>11/1/2017 10:27:04 AM</last_update>
+    <last_update>8/12/2024 6:00:21 PM</last_update>
     <date_created>4/7/2011 8:35:42 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -67001,7 +67001,7 @@ Alton Road</address>
     <Latitude>53.3337</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/blog-seai-logo.jpg</logo>
-    <name>Sustainable Energy Authority of Ireland</name>
+    <name>Sustainable Energy Authority of Ireland (SEAI)</name>
     <native_name>Sustainable Energy Authority of Ireland</native_name>
     <abbreviated_name>SEAI</abbreviated_name>
     <address>Wilton Park House</address>
@@ -67046,13 +67046,13 @@ Alton Road</address>
   <Organisation>
     <n_code>2773</n_code>
     <input_date>4/7/2011 10:48:02 AM</input_date>
-    <last_update>3/4/2024 4:09:12 PM</last_update>
+    <last_update>6/19/2024 10:27:25 AM</last_update>
     <date_created>4/7/2011 10:48:02 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year>2010</organisation_changed_year>
-    <Longitude>-9.0658</Longitude>
-    <Latitude>53.284</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/semru.jpg</logo>
     <name>Socio-Economic Marine Research Unit, University of Galway</name>
@@ -67073,13 +67073,13 @@ Alton Road</address>
   <Organisation>
     <n_code>2774</n_code>
     <input_date>4/11/2011 10:45:01 AM</input_date>
-    <last_update>3/22/2024 2:58:00 PM</last_update>
+    <last_update>6/19/2024 10:31:29 AM</last_update>
     <date_created>4/11/2011 10:45:01 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-7.7209</Longitude>
-    <Latitude>54.9524</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/lyit.gif</logo>
     <name>Centre of Applied Marine Biotechnology, ATU</name>
@@ -77323,27 +77323,27 @@ Arundel Street
   <Organisation>
     <n_code>3154</n_code>
     <input_date>11/29/2012 3:32:10 PM</input_date>
-    <last_update>5/23/2024 12:01:01 PM</last_update>
+    <last_update>6/25/2024 2:12:44 PM</last_update>
     <date_created>11/29/2012 3:32:10 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>18.171695</Longitude>
-    <Latitude>40.352358</Latitude>
+    <Longitude>18.19604389</Longitude>
+    <Latitude>40.357865349</Latitude>
     <collate_id>120</collate_id>
     <logo />
     <name>Euro-Mediterranean Centre on Climate Change</name>
     <native_name>Euro-Mediterranean Centre on Climate Change</native_name>
-    <abbreviated_name>CMCC</abbreviated_name>
-    <address>Via Augusto Imperatore, 16- Lecce - 73100 - mariabarbara.galati@cmcc.it</address>
+    <abbreviated_name>CMCC Foundation</abbreviated_name>
+    <address>Via Marco Biagi 5 - 73100 Lecce</address>
     <zipcode />
     <city>Lecce</city>
     <state />
     <country>18</country>
     <country_c32>IT</country_c32>
-    <email>mariabarbara.galati@cmcc.it</email>
-    <phone>+39 0832 288650 (int. 225) - Le 	+39 051 3782636 - Bo</phone>
-    <fax>+39 0832 277603 - Le 	+39-051-3782654 - Bo</fax>
+    <email>viviana.piermattei@cmcc.it</email>
+    <phone>+39 0766366549</phone>
+    <fax />
     <website>https://www.cmcc.it/</website>
     <c_country>Italy</c_country>
   </Organisation>
@@ -80394,13 +80394,13 @@ P.O. Box 8408</address>
   <Organisation>
     <n_code>3266</n_code>
     <input_date>4/29/2013 10:39:21 AM</input_date>
-    <last_update>2/27/2017 10:44:10 AM</last_update>
+    <last_update>8/12/2024 12:47:27 PM</last_update>
     <date_created>4/29/2013 10:39:21 AM</date_created>
-    <organisation_exists>True</organisation_exists>
+    <organisation_exists>False</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>14.5602</Longitude>
-    <Latitude>67.2897</Latitude>
+    <Longitude />
+    <Latitude />
     <collate_id>612</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/612/logo-site-eng_university_of_nordland.png</logo>
     <name>University of Nordland</name>
@@ -81755,28 +81755,28 @@ Manor Garth</address>
   <Organisation>
     <n_code>3316</n_code>
     <input_date>10/7/2013 3:22:22 PM</input_date>
-    <last_update>10/31/2017 10:53:54 AM</last_update>
+    <last_update>6/12/2024 10:15:53 AM</last_update>
     <date_created>10/7/2013 3:22:22 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>-6.2531</Longitude>
-    <Latitude>53.3487</Latitude>
+    <Longitude>-6.25384</Longitude>
+    <Latitude>53.3484428104787</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/dhplg.jpg</logo>
-    <name>Department of Housing, Planning and Local Government</name>
-    <native_name>Department of Housing, Planning and Local Government</native_name>
-    <abbreviated_name>DHPLG</abbreviated_name>
-    <address>Custom House</address>
+    <name>Department of Housing, Local Government and Heritage</name>
+    <native_name>Department of Housing, Local Government and Heritage</native_name>
+    <abbreviated_name>DHLGH</abbreviated_name>
+    <address>Department of Housing, Local Government and Heritage, Custom House, Dublin</address>
     <zipcode>D01 W6X0</zipcode>
-    <city>Dublin 2</city>
+    <city>Dublin 1</city>
     <state />
     <country>15</country>
     <country_c32>IE</country_c32>
     <email />
     <phone>+353-1-8882000</phone>
     <fax />
-    <website>https://www.housing.gov.ie/</website>
+    <website>https://www.gov.ie/en/organisation/department-of-housing-local-government-and-heritage/</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -103472,6 +103472,33 @@ Pilgrim House</address>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
+    <n_code>4136</n_code>
+    <input_date>5/22/2015 4:07:29 PM</input_date>
+    <last_update>6/12/2024 10:27:45 AM</last_update>
+    <date_created />
+    <organisation_exists>False</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>396</collate_id>
+    <logo />
+    <name>Mannin Bay Salmon Co. Ltd.</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city>Curhownagh</city>
+    <state />
+    <country>15</country>
+    <country_c32>IE</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Ireland</c_country>
+  </Organisation>
+  <Organisation>
     <n_code>4137</n_code>
     <input_date>5/22/2015 4:07:29 PM</input_date>
     <last_update>10/26/2017 10:10:06 AM</last_update>
@@ -115211,7 +115238,7 @@ Avenue René Cassin</address>
   <Organisation>
     <n_code>4588</n_code>
     <input_date>10/27/2016 12:50:42 PM</input_date>
-    <last_update>2/8/2017 4:37:10 PM</last_update>
+    <last_update>7/18/2024 2:25:56 PM</last_update>
     <date_created>10/27/2016 12:50:42 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -115220,22 +115247,23 @@ Avenue René Cassin</address>
     <Latitude>48.36</Latitude>
     <collate_id>486</collate_id>
     <logo />
-    <name>Jcomm In-Situ Observations Programme Support Centre</name>
-    <native_name>Jcomm In-Situ Observations Programme Support Centre</native_name>
-    <abbreviated_name>JCOMMOPS</abbreviated_name>
+    <name>OceanOPS</name>
+    <native_name>OceanOPS</native_name>
+    <abbreviated_name>OceanOPS</abbreviated_name>
     <address>Technopole
 Campus Ifremer
-1625 Route de Sainte Anne Z.I. Pointe du Diable
+1625 Route de Sainte Anne 
+Z.I. Pointe du Diable
 </address>
     <zipcode>29280</zipcode>
     <city>Plouzane</city>
     <state />
     <country>10</country>
     <country_c32>FR</country_c32>
-    <email>support@jcommops.org</email>
-    <phone>+33 2 29 00 85 86</phone>
+    <email>support@ocean-ops.org</email>
+    <phone>+33 2 29 00 85 85</phone>
     <fax />
-    <website>http://www.jcommops.org</website>
+    <website>https://www.ocean-ops.org/</website>
     <c_country>France</c_country>
   </Organisation>
   <Organisation>
@@ -122818,28 +122846,28 @@ BP 81227</address>
   <Organisation>
     <n_code>4869</n_code>
     <input_date>5/25/2018 10:17:16 AM</input_date>
-    <last_update>5/25/2018 10:17:44 AM</last_update>
+    <last_update>7/30/2024 11:57:35 AM</last_update>
     <date_created>5/25/2018 10:17:16 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>3.0334</Longitude>
-    <Latitude>42.5477</Latitude>
+    <Longitude>3.0375</Longitude>
+    <Latitude>42.5456</Latitude>
     <collate_id>486</collate_id>
     <logo />
-    <name>French Agency For Biodiversity</name>
-    <native_name>Agence Française Pour La Biodiversité, Parc Naturel Marin Du Golfe Du Lion</native_name>
-    <abbreviated_name>AFB</abbreviated_name>
-    <address>2 Avenue de Charlemagne</address>
+    <name>Marine Natural Park of Lion Gulf</name>
+    <native_name>Parc Naturel Marin du Golfe du Lion</native_name>
+    <abbreviated_name>PNM GL</abbreviated_name>
+    <address>2 impasse Charlemagne</address>
     <zipcode>66700</zipcode>
     <city>Argelès-sur-Mer</city>
     <state />
     <country>10</country>
     <country_c32>FR</country_c32>
-    <email>parcmarin.golfe-lion@afbiodiversite.fr</email>
-    <phone>+33 (0)4 68 68 40 20</phone>
-    <fax>+33 (0)4 68 37 16 59</fax>
-    <website>http://www.parc-marin-golfe-lion.fr/</website>
+    <email>parcmarin.golfe-lion@ofb.gouv.fr</email>
+    <phone>+33 (0)7 85 71 38 99</phone>
+    <fax />
+    <website>https://parc-marin-golfe-lion.fr/</website>
     <c_country>France</c_country>
   </Organisation>
   <Organisation>
@@ -127854,13 +127882,13 @@ Campus de Azurém
   <Organisation>
     <n_code>5057</n_code>
     <input_date>4/4/2019 11:08:22 AM</input_date>
-    <last_update>12/18/2020 1:38:44 PM</last_update>
+    <last_update>7/5/2024 12:15:16 PM</last_update>
     <date_created />
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
-    <Longitude>16.4414</Longitude>
-    <Latitude>43.5131</Latitude>
+    <Longitude>15.2397</Longitude>
+    <Latitude>44.1098</Latitude>
     <collate_id>700</collate_id>
     <logo />
     <name>Public Institution RERA SD for Coordination and Development of Split Dalmatia County</name>
@@ -145315,7 +145343,7 @@ Knightsbridge
   <Organisation>
     <n_code>5701</n_code>
     <input_date>1/25/2023 9:48:01 AM</input_date>
-    <last_update>1/25/2023 10:00:42 AM</last_update>
+    <last_update>7/30/2024 11:44:36 AM</last_update>
     <date_created>1/25/2023 9:48:01 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -145326,7 +145354,7 @@ Knightsbridge
     <logo />
     <name>Picardy Estuaries And Opal Sea Marine Park</name>
     <native_name>Office Français Pour La Biodiversité / Parc Naturel Marin Des Estuaires Picards Et De La Mer D'Opale</native_name>
-    <abbreviated_name />
+    <abbreviated_name>PNM EPMO</abbreviated_name>
     <address>Chemin de la WarenneEcault</address>
     <zipcode>62360</zipcode>
     <city>Saint-Etienne-au-Mont</city>
@@ -145342,7 +145370,7 @@ Knightsbridge
   <Organisation>
     <n_code>5702</n_code>
     <input_date>1/25/2023 10:03:39 AM</input_date>
-    <last_update>1/25/2023 10:04:14 AM</last_update>
+    <last_update>7/15/2024 1:30:36 PM</last_update>
     <date_created>1/25/2023 10:03:39 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -145354,9 +145382,9 @@ Knightsbridge
     <name>Research Laboratory On Radionuclide Transfers In Aquatic Ecosystems</name>
     <native_name>Institut De Radioprotection Et De Sureté Nucléaire / Laboratoire De Recherche Sur Les Transferts De Radionucléides Dans Les Écosystèmes Aquatiques</native_name>
     <abbreviated_name />
-    <address>BP 3</address>
+    <address>Centre de Cadarache</address>
     <zipcode>13115</zipcode>
-    <city>Saint-Paul-Lez-Durance CEDEX</city>
+    <city>Saint-Paul-Lez-Durance</city>
     <state />
     <country>10</country>
     <country_c32>FR</country_c32>
@@ -151385,7 +151413,7 @@ ZI de la Pointe du Diable
   <Organisation>
     <n_code>5926</n_code>
     <input_date>2/22/2024 12:54:49 PM</input_date>
-    <last_update>3/25/2024 10:24:13 PM</last_update>
+    <last_update>6/25/2024 9:59:30 AM</last_update>
     <date_created>2/22/2024 12:54:49 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -151393,8 +151421,8 @@ ZI de la Pointe du Diable
     <Longitude>-86.8219</Longitude>
     <Latitude>21.2006</Latitude>
     <collate_id>8888</collate_id>
-    <logo />
-    <name>Universidad del Caribe</name>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/8888/caribe.png</logo>
+    <name>University of the Caribbean</name>
     <native_name>Universidad del Caribe</native_name>
     <abbreviated_name />
     <address>Esquina Fraccionamiento, Tabachines</address>
@@ -151963,7 +151991,7 @@ ZI de la Pointe du Diable
   <Organisation>
     <n_code>5947</n_code>
     <input_date>4/29/2024 12:00:22 PM</input_date>
-    <last_update>4/29/2024 12:00:45 PM</last_update>
+    <last_update>7/30/2024 11:43:42 AM</last_update>
     <date_created>4/29/2024 12:00:22 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -151974,7 +152002,7 @@ ZI de la Pointe du Diable
     <logo />
     <name>Marine Natural Park Of Mayotte</name>
     <native_name>Office Français Pour La Biodiversité / Parc Naturel Marin De Mayotte</native_name>
-    <abbreviated_name />
+    <abbreviated_name>PNM Mayotte</abbreviated_name>
     <address>Centre d'affaire de l'aéroportPamandzi</address>
     <zipcode>97615</zipcode>
     <city>Mayotte</city>
@@ -152180,5 +152208,1231 @@ Rua do Instituto Industrial 16</address>
     <website>https://www.sgs.com/en-gb
 </website>
     <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5955</n_code>
+    <input_date>6/13/2024 11:04:27 AM</input_date>
+    <last_update>6/13/2024 11:06:13 AM</last_update>
+    <date_created>6/13/2024 11:04:27 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-0.1118</Longitude>
+    <Latitude>51.5014</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Wood Thilsted Partners</name>
+    <native_name />
+    <abbreviated_name />
+    <address>1st Floor, 91 – 94 Lower Marsh
+</address>
+    <zipcode>SE1 7AB</zipcode>
+    <city>London</city>
+    <state>City of London</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>gis@woodthilsted.com</email>
+    <phone />
+    <fax />
+    <website>https://woodthilsted.com/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5956</n_code>
+    <input_date>6/13/2024 11:11:02 AM</input_date>
+    <last_update>6/13/2024 11:13:25 AM</last_update>
+    <date_created>6/13/2024 11:11:02 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-2.4921</Longitude>
+    <Latitude>51.3297</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Eco Marine Consultants Ltd.</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Unit 1C Timsbury Workshop Estate
+Hayeswood Road, 
+</address>
+    <zipcode>BA2 0HQ</zipcode>
+    <city>Bath</city>
+    <state>Somerset</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>info@ecomarineconsultants.co.uk</email>
+    <phone>+44(0)1761 472913 </phone>
+    <fax />
+    <website>https://ecomarineconsultants.co.uk/
+</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5957</n_code>
+    <input_date>6/13/2024 11:16:21 AM</input_date>
+    <last_update>6/13/2024 11:17:46 AM</last_update>
+    <date_created>6/13/2024 11:16:21 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.2557</Longitude>
+    <Latitude>54.585</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>SGS United Kingdom Ltd</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Aurora Court, Barton Road, Riverside Park
+</address>
+    <zipcode>TS2 1RY</zipcode>
+    <city>Middlesborough</city>
+    <state>North Yorkshire</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.sgs.com/en-gb
+</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5958</n_code>
+    <input_date>7/1/2024 5:03:12 PM</input_date>
+    <last_update>7/1/2024 5:11:30 PM</last_update>
+    <date_created>7/1/2024 5:03:12 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-4.2456</Longitude>
+    <Latitude>55.8599</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Sulmara</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Floor 5 — The Garment Factory 
+10 Montrose Street
+</address>
+    <zipcode>G1 1RE</zipcode>
+    <city>Glasgow</city>
+    <state>Lanarkshire</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>stuart.macdonald@sulmara.com</email>
+    <phone />
+    <fax />
+    <website>https://www.sulmara.com/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5959</n_code>
+    <input_date>7/5/2024 12:11:18 PM</input_date>
+    <last_update>7/5/2024 12:20:30 PM</last_update>
+    <date_created>7/5/2024 12:11:18 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>15.2396805</Longitude>
+    <Latitude>44.109753</Latitude>
+    <collate_id>700</collate_id>
+    <logo />
+    <name>Zadar County Development Agency</name>
+    <native_name>Zadar County Development Agency</native_name>
+    <abbreviated_name />
+    <address>Put Murvice 14</address>
+    <zipcode>23000</zipcode>
+    <city>Zadar</city>
+    <state />
+    <country>14</country>
+    <country_c32>HR</country_c32>
+    <email>zadra@zadra.hr</email>
+    <phone>385 23 492 880</phone>
+    <fax>385 23 492 881</fax>
+    <website>https://www.zadra.hr/en/</website>
+    <c_country>Croatia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5960</n_code>
+    <input_date>7/5/2024 12:19:07 PM</input_date>
+    <last_update>7/5/2024 12:19:26 PM</last_update>
+    <date_created>7/5/2024 12:19:07 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>16.4366</Longitude>
+    <Latitude>43.5084</Latitude>
+    <collate_id>700</collate_id>
+    <logo />
+    <name>Sunce</name>
+    <native_name>Sunce</native_name>
+    <abbreviated_name />
+    <address>Obala hrvatskog narodnog preporoda 7</address>
+    <zipcode>21000</zipcode>
+    <city>Split</city>
+    <state />
+    <country>14</country>
+    <country_c32>HR</country_c32>
+    <email>info@sunce-st.org</email>
+    <phone>38521360779</phone>
+    <fax />
+    <website>https://sunce-st.org/en/</website>
+    <c_country>Croatia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5961</n_code>
+    <input_date>7/5/2024 12:22:58 PM</input_date>
+    <last_update>7/5/2024 12:23:16 PM</last_update>
+    <date_created>7/5/2024 12:22:58 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>15.2232</Longitude>
+    <Latitude>44.1118</Latitude>
+    <collate_id>700</collate_id>
+    <logo />
+    <name>University of Zadar</name>
+    <native_name>University of Zadar</native_name>
+    <abbreviated_name />
+    <address>Mihovila Pavlinovica 1</address>
+    <zipcode>23000</zipcode>
+    <city>Zadar</city>
+    <state />
+    <country>14</country>
+    <country_c32>HR</country_c32>
+    <email>info@unizd.hr</email>
+    <phone>23 200 665</phone>
+    <fax />
+    <website>http://www.unizd.hr/</website>
+    <c_country>Croatia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5962</n_code>
+    <input_date>7/5/2024 12:25:15 PM</input_date>
+    <last_update>7/5/2024 12:25:52 PM</last_update>
+    <date_created>7/5/2024 12:25:15 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>15.9674836</Longitude>
+    <Latitude>45.8294246</Latitude>
+    <collate_id>700</collate_id>
+    <logo />
+    <name>Ruder Boškovic Institute Zagreb</name>
+    <native_name>Ruder Boškovic Institute Zagreb</native_name>
+    <abbreviated_name />
+    <address>Bijenicka cesta 54</address>
+    <zipcode>10000</zipcode>
+    <city>Zagreb</city>
+    <state />
+    <country>14</country>
+    <country_c32>HR</country_c32>
+    <email>sorlic@irb.hr</email>
+    <phone>385 1 4561 111</phone>
+    <fax />
+    <website>https://www.irb.hr/eng</website>
+    <c_country>Croatia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5963</n_code>
+    <input_date>7/5/2024 12:27:40 PM</input_date>
+    <last_update>7/5/2024 12:27:46 PM</last_update>
+    <date_created>7/5/2024 12:27:40 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>14.4331393</Longitude>
+    <Latitude>45.3306119</Latitude>
+    <collate_id>700</collate_id>
+    <logo />
+    <name>University of Rijeka - Faculty of Maritime Studies</name>
+    <native_name>University of Rijeka - Faculty of Maritime Studies</native_name>
+    <abbreviated_name />
+    <address>Studentska ulica 2</address>
+    <zipcode>51000</zipcode>
+    <city>Rijeka</city>
+    <state />
+    <country>14</country>
+    <country_c32>HR</country_c32>
+    <email>dekanat@pfri.uniri.hr</email>
+    <phone>385 (0)51 338 411</phone>
+    <fax />
+    <website>https://www.pfri.uniri.hr</website>
+    <c_country>Croatia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5964</n_code>
+    <input_date>7/5/2024 12:29:51 PM</input_date>
+    <last_update>7/5/2024 12:30:05 PM</last_update>
+    <date_created>7/5/2024 12:29:51 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>12.1974314</Longitude>
+    <Latitude>44.4176675</Latitude>
+    <collate_id>120</collate_id>
+    <logo />
+    <name>Municipality of Ravenna</name>
+    <native_name>Comune di Ravenna</native_name>
+    <abbreviated_name />
+    <address>Piazza del Popolo, 1</address>
+    <zipcode>48121</zipcode>
+    <city>Ravenna</city>
+    <state />
+    <country>18</country>
+    <country_c32>IT</country_c32>
+    <email>mgmarini@comune.ra.it</email>
+    <phone>39 0544 482111</phone>
+    <fax />
+    <website>https://www.comune.ra.it/</website>
+    <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5965</n_code>
+    <input_date>7/11/2024 2:41:45 PM</input_date>
+    <last_update>7/11/2024 2:44:02 PM</last_update>
+    <date_created>7/11/2024 2:41:45 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.4834</Longitude>
+    <Latitude>54.8322</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>French Electricity Company/ EDF Renewables</name>
+    <native_name>Electricitie de France/EDF RENOUVLEABLES
+</native_name>
+    <abbreviated_name>EDF-R
+</abbreviated_name>
+    <address>EDF Renewables</address>
+    <zipcode>DH4 5RA</zipcode>
+    <city>Houghton le Spring</city>
+    <state>Sunderland</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>michelle.campbell-robson@edf-re.uk</email>
+    <phone />
+    <fax />
+    <website>https://www.edf-re.uk/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5966</n_code>
+    <input_date>7/19/2024 12:52:13 PM</input_date>
+    <last_update>7/19/2024 12:52:23 PM</last_update>
+    <date_created>7/19/2024 12:52:13 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>1390</collate_id>
+    <logo />
+    <name>Wildlife Computers</name>
+    <native_name />
+    <abbreviated_name />
+    <address />
+    <zipcode />
+    <city>Seattle</city>
+    <state>Washington</state>
+    <country>43</country>
+    <country_c32>US</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://wildlifecomputers.com/</website>
+    <c_country>United States</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5967</n_code>
+    <input_date>8/1/2024 11:41:09 AM</input_date>
+    <last_update>8/1/2024 11:50:54 AM</last_update>
+    <date_created>8/1/2024 11:41:09 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-0.9608</Longitude>
+    <Latitude>45.9385</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Marine Natural Park Of Gironde Estuary And Pertuis Sea</name>
+    <native_name>Office Français Pour La Biodiversité / Parc Naturel Marin Estuaire De La Gironde Et De La Mer Des Pertuis</native_name>
+    <abbreviated_name />
+    <address>93 rue de la République</address>
+    <zipcode>17300</zipcode>
+    <city>Rochefort</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>parcmarin-girondepertuis@ofb.gouv.fr</email>
+    <phone />
+    <fax />
+    <website>https://parc-marin-gironde-pertuis.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5968</n_code>
+    <input_date>8/1/2024 11:44:11 AM</input_date>
+    <last_update>8/1/2024 11:50:33 AM</last_update>
+    <date_created>8/1/2024 11:44:11 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.065</Longitude>
+    <Latitude>45.9147</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Natural Reserve Of Moeze-Oleron</name>
+    <native_name>Réserves Naturelles De France / Réserve Naturelle De Moëze-Oléron</native_name>
+    <abbreviated_name />
+    <address>Route de plaisance</address>
+    <zipcode>17780</zipcode>
+    <city>Saint-Froult</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone>+33(0)7 68 24 70 23</phone>
+    <fax />
+    <website>https://www.reserve-moeze-oleron.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5969</n_code>
+    <input_date>8/1/2024 11:45:32 AM</input_date>
+    <last_update>8/1/2024 11:45:37 AM</last_update>
+    <date_created>8/1/2024 11:45:32 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-3.1019</Longitude>
+    <Latitude>48.8663</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Natural Reserve Of Talbert Sillon</name>
+    <native_name>Réserves Naturelles De France / Réserve Naturelle Du Sillon De Talbert</native_name>
+    <abbreviated_name />
+    <address>48 rue du Sillon de Talbert</address>
+    <zipcode>22610</zipcode>
+    <city>Pleubian</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>maison.sillon@mairie-pleubian.fr</email>
+    <phone>+33(0)2 96 16 54 67</phone>
+    <fax />
+    <website>https://www.reserve-sillondetalbert.bzh/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5970</n_code>
+    <input_date>8/1/2024 11:46:52 AM</input_date>
+    <last_update>8/1/2024 11:50:19 AM</last_update>
+    <date_created>8/1/2024 11:46:52 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-2.4062</Longitude>
+    <Latitude>47.324</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Veolia</name>
+    <native_name>Veolia / Veolia</native_name>
+    <abbreviated_name />
+    <address>Veolia Eau CGE - Région Centre Ouest 6 rue Nathalie Sarraute TSA 20527</address>
+    <zipcode>44205</zipcode>
+    <city>Nantes Cedex 2</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone>+33(0)3 21 32 13 74</phone>
+    <fax />
+    <website>https://www.service.eau.veolia.fr/home.html</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5971</n_code>
+    <input_date>8/1/2024 11:48:17 AM</input_date>
+    <last_update>8/1/2024 11:49:54 AM</last_update>
+    <date_created>8/1/2024 11:48:17 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>1.84</Longitude>
+    <Latitude>50.6678</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Eden 62</name>
+    <native_name>Syndicat Mixte / Eden 62</native_name>
+    <abbreviated_name />
+    <address>2 rue ClaudeBP 113</address>
+    <zipcode>62240</zipcode>
+    <city>Desvres</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>contact@eden62.fr</email>
+    <phone>+33(0)3 21 32 13 74</phone>
+    <fax />
+    <website>https://eden62.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5972</n_code>
+    <input_date>8/1/2024 11:49:31 AM</input_date>
+    <last_update>8/1/2024 11:49:36 AM</last_update>
+    <date_created>8/1/2024 11:49:31 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-0.959</Longitude>
+    <Latitude>45.9431</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Birdlife France</name>
+    <native_name>Ligue Pour La Protection Des Oiseaux / Ligue Pour La Protection Des Oiseaux</native_name>
+    <abbreviated_name />
+    <address>Les Fonderies Royales8 rue du Docteur PujosCS 90263</address>
+    <zipcode>17305</zipcode>
+    <city>Rochefort Cedex</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone>+33(0)5 46 82 12 34</phone>
+    <fax />
+    <website>https://www.lpo.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5973</n_code>
+    <input_date>8/1/2024 11:52:16 AM</input_date>
+    <last_update>8/1/2024 11:52:21 AM</last_update>
+    <date_created>8/1/2024 11:52:16 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-0.4997</Longitude>
+    <Latitude>43.8934</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Landes Coast Joint Association</name>
+    <native_name>Syndicat Mixte / Syndicat Mixte Du Littoral Landais</native_name>
+    <abbreviated_name />
+    <address>23 rue Victor Hugo</address>
+    <zipcode>40025</zipcode>
+    <city>Mont-de-Marsan</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone>+33(0)5 58 05 40 40</phone>
+    <fax />
+    <website />
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5974</n_code>
+    <input_date>8/1/2024 11:53:28 AM</input_date>
+    <last_update>8/1/2024 11:53:34 AM</last_update>
+    <date_created>8/1/2024 11:53:28 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.577</Longitude>
+    <Latitude>49.0439</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Friends Of Haven Coast</name>
+    <native_name>Les Amis De La Côte Des Havres / Les Amis De La Côte Des Havres</native_name>
+    <abbreviated_name />
+    <address>2 rue Louis Perier</address>
+    <zipcode>50230</zipcode>
+    <city>Agon-Coutainville</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>questions@lesamisdelacotedeshavres.fr</email>
+    <phone>+33(0)2 35 46 04 97</phone>
+    <fax />
+    <website>http://lesamisdelacotedeshavres.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5975</n_code>
+    <input_date>8/1/2024 11:54:51 AM</input_date>
+    <last_update>8/1/2024 11:54:58 AM</last_update>
+    <date_created>8/1/2024 11:54:51 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.7745</Longitude>
+    <Latitude>43.3587</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Municipality Of Hendaye</name>
+    <native_name>Collectivités Territoriales Françaises / Commune D'Hendaye</native_name>
+    <abbreviated_name />
+    <address>Place de la RépubliqueBP 60150</address>
+    <zipcode>64701</zipcode>
+    <city>Hendaye Cedex</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone>+33(0)5 59 48 23 23</phone>
+    <fax />
+    <website>https://www.hendaye.fr/fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5976</n_code>
+    <input_date>8/1/2024 11:56:14 AM</input_date>
+    <last_update>8/1/2024 11:56:19 AM</last_update>
+    <date_created>8/1/2024 11:56:14 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>0.0831</Longitude>
+    <Latitude>49.5483</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Aquacaux</name>
+    <native_name>Aquacaux / Aquacaux</native_name>
+    <abbreviated_name />
+    <address>70 chemin de Saint-Andrieux</address>
+    <zipcode>76930</zipcode>
+    <city>Octeville-sur-Mer</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone>+33(0)2 35 46 04 97</phone>
+    <fax />
+    <website>https://www.aquacaux.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5977</n_code>
+    <input_date>8/1/2024 12:26:10 PM</input_date>
+    <last_update>8/1/2024 12:26:21 PM</last_update>
+    <date_created>8/1/2024 12:26:10 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-3.445</Longitude>
+    <Latitude>48.8157</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Natural Reserve Of The Seven Islands</name>
+    <native_name>Réserves Naturelles De France / Réserve Naturelle Des Sept Îles</native_name>
+    <abbreviated_name />
+    <address>Les Fonderies Royales8 rue du Docteur PujosCS 90263</address>
+    <zipcode>17305</zipcode>
+    <city>Rochefort Cedex</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>rn.saintdenisdupayre@lpo.fr</email>
+    <phone>+33(0)5 46 82 12 34</phone>
+    <fax />
+    <website>https://www.lpo.fr/sites-naturels/reserve-naturelle-des-sept-iles</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5978</n_code>
+    <input_date>8/1/2024 12:27:34 PM</input_date>
+    <last_update>8/1/2024 12:27:39 PM</last_update>
+    <date_created>8/1/2024 12:27:34 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.0749</Longitude>
+    <Latitude>45.5422</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Permanent Center For Environment Initiatives Medoc</name>
+    <native_name>Centre Permanent D'Initiatives Pour L'Environnement / Centre Permanent D'Initiatives Pour L'Environnement Médoc</native_name>
+    <abbreviated_name />
+    <address>15 bis route de Soulac</address>
+    <zipcode>33123</zipcode>
+    <city>Le Verdon-sur-Mer</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>contact@curuma.org</email>
+    <phone>+33(0)5 56 09 65 57</phone>
+    <fax />
+    <website>https://curuma-cpiemedoc.jimdofree.com/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5979</n_code>
+    <input_date>8/1/2024 12:28:46 PM</input_date>
+    <last_update>8/1/2024 12:28:50 PM</last_update>
+    <date_created>8/1/2024 12:28:46 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.5217</Longitude>
+    <Latitude>49.2092</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Permanent Center For Environment Initiatives Cotentin</name>
+    <native_name>Centre Permanent D'Initiatives Pour L'Environnement / Centre Permanent D'Initiatives Pour L'Environnement Cotentin</native_name>
+    <abbreviated_name />
+    <address>30 rue d'hippodromeBP 42</address>
+    <zipcode>50430</zipcode>
+    <city>Lessay</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>accueil@cpiecotentin.com</email>
+    <phone>+33(0)2 33 46 37 06</phone>
+    <fax />
+    <website>https://www.cpiecotentin.com/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5980</n_code>
+    <input_date>8/1/2024 12:30:01 PM</input_date>
+    <last_update>8/1/2024 12:30:05 PM</last_update>
+    <date_created>8/1/2024 12:30:01 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>2.3644</Longitude>
+    <Latitude>51.0301</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Permanent Center For Environment Initiatives Maritime Flanders</name>
+    <native_name>Centre Permanent D'Initiatives Pour L'Environnement / Centre Permanent D'Initiatives Pour L'Environnement Flandre Maritime</native_name>
+    <abbreviated_name />
+    <address>Rue Jean Delvallez</address>
+    <zipcode>59123</zipcode>
+    <city>Zuydcoote</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>contact@cpieflandremaritime.fr</email>
+    <phone>+33(0)3 28 26 86 76</phone>
+    <fax />
+    <website>https://www.cpieflandremaritime.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5981</n_code>
+    <input_date>8/1/2024 12:31:12 PM</input_date>
+    <last_update>8/1/2024 12:31:17 PM</last_update>
+    <date_created>8/1/2024 12:31:12 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.3702</Longitude>
+    <Latitude>46.2081</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Community Of Municipalities Of Ré Island</name>
+    <native_name>Collectivités Territoriales Françaises / Communauté De Communes De L'Île De Ré</native_name>
+    <abbreviated_name />
+    <address>3 rue du Père Ignace</address>
+    <zipcode>17410</zipcode>
+    <city>Saint-Martin-de-Ré</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>accueil@cc-iledere.fr</email>
+    <phone>+33(0)5 46 09 00 97</phone>
+    <fax />
+    <website>https://cdciledere.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5982</n_code>
+    <input_date>8/1/2024 12:32:29 PM</input_date>
+    <last_update>8/1/2024 12:32:33 PM</last_update>
+    <date_created>8/1/2024 12:32:29 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.1597</Longitude>
+    <Latitude>46.1412</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Territory Environment Ocean</name>
+    <native_name>Territoire Environnement Océan / Territoire Environnement Océan</native_name>
+    <abbreviated_name />
+    <address>15 rue Alfred Kastler</address>
+    <zipcode>17000</zipcode>
+    <city>La Rochelle</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>teo.larochelle@gmail.com</email>
+    <phone>+33(0)6 17 70 54 39</phone>
+    <fax />
+    <website>https://www.teo-la-rochelle.org/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5983</n_code>
+    <input_date>8/1/2024 12:33:23 PM</input_date>
+    <last_update>8/1/2024 12:33:28 PM</last_update>
+    <date_created>8/1/2024 12:33:23 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Association Of The Defense Of The Eastern Littoral Environment</name>
+    <native_name>Association De Défense De L'Environnement / Association De Défense De L'Environnement Du Littoral-Est</native_name>
+    <abbreviated_name />
+    <address>Maison de la vie associativeRue du 11 Novembre 1918</address>
+    <zipcode>59140</zipcode>
+    <city>Dunkerque</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>http://assoadele.over-blog.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5984</n_code>
+    <input_date>8/1/2024 12:34:31 PM</input_date>
+    <last_update>8/1/2024 12:34:37 PM</last_update>
+    <date_created>8/1/2024 12:34:31 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-2.3485</Longitude>
+    <Latitude>46.7247</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Municipality Of Yeu Island</name>
+    <native_name>Collectivités Territoriales Françaises / Commune De L'Île D'Yeu</native_name>
+    <abbreviated_name />
+    <address>11 quai de la Mairie</address>
+    <zipcode>85350</zipcode>
+    <city>L'Île d'Yeu</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone>+33(0)2 51 59 45 45</phone>
+    <fax />
+    <website>https://mairie.ile-yeu.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5985</n_code>
+    <input_date>8/1/2024 12:55:53 PM</input_date>
+    <last_update>8/1/2024 12:56:00 PM</last_update>
+    <date_created>8/1/2024 12:55:53 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-0.8767</Longitude>
+    <Latitude>45.8279</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Biodiversity Objectives</name>
+    <native_name>Objectifs Biodiversités / Objectifs Biodiversités</native_name>
+    <abbreviated_name />
+    <address>22 rue du Docteur Gilbert</address>
+    <zipcode>17250</zipcode>
+    <city>Pont-L'Abbé-D'Arnoult</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>association.obios@gmail.com</email>
+    <phone />
+    <fax />
+    <website>http://www.objectifs-biodiversites.com/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5986</n_code>
+    <input_date>8/1/2024 12:57:22 PM</input_date>
+    <last_update>8/1/2024 12:57:26 PM</last_update>
+    <date_created>8/1/2024 12:57:22 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-4.2705</Longitude>
+    <Latitude>47.7992</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Guilvinec Public Maritime High School</name>
+    <native_name>Lycée Public Maritime Du Guilvinec / Lycée Public Maritime Du Guilvinec</native_name>
+    <abbreviated_name />
+    <address>Avenue Jos QuiniouBP 32</address>
+    <zipcode>29730</zipcode>
+    <city>Treffiagat</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>lpm-le-guilvinec@developpement-durable.gouv.fr</email>
+    <phone>+33(0)2 98 58 96 00</phone>
+    <fax />
+    <website>https://lycee-maritime-guilvinec.bzh/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5987</n_code>
+    <input_date>8/1/2024 12:58:43 PM</input_date>
+    <last_update>8/1/2024 12:58:47 PM</last_update>
+    <date_created>8/1/2024 12:58:43 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.0265</Longitude>
+    <Latitude>44.6133</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Marine Natural Park Of Arcachon Basin</name>
+    <native_name>Office Français Pour La Biodiversité / Parc Naturel Marin Bassin D'Arcachon</native_name>
+    <abbreviated_name />
+    <address>4 rue Copernic</address>
+    <zipcode>33470</zipcode>
+    <city>Le Teich</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>parcmarin.bassinarcachon@ofb.gouv.fr</email>
+    <phone>+33 (0)5 56 22 06 86</phone>
+    <fax />
+    <website>https://parc-marin-bassin-arcachon.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5988</n_code>
+    <input_date>8/1/2024 12:59:57 PM</input_date>
+    <last_update>8/1/2024 1:00:01 PM</last_update>
+    <date_created>8/1/2024 12:59:57 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.631</Longitude>
+    <Latitude>46.4334</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Estuary Associative Groupe</name>
+    <native_name>Groupe Associatif Estuaire / Groupe Associatif Estuaire</native_name>
+    <abbreviated_name />
+    <address>Rue de Louza</address>
+    <zipcode>85440</zipcode>
+    <city>Talmont-Saint-Hilaire</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>association.estuaire@gmail.com</email>
+    <phone>+33(0)2 51 20 74 85</phone>
+    <fax />
+    <website>https://estuaire.net/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5989</n_code>
+    <input_date>8/1/2024 1:01:18 PM</input_date>
+    <last_update>8/1/2024 1:01:23 PM</last_update>
+    <date_created>8/1/2024 1:01:18 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-2.6746</Longitude>
+    <Latitude>48.5176</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Natural Reserve Of Saint-Brieuc Bay</name>
+    <native_name>Réserves Naturelles De France / Réserve Naturelle De La Baie De Saint-Brieuc</native_name>
+    <abbreviated_name />
+    <address>Site de l'étoile</address>
+    <zipcode>22120</zipcode>
+    <city>Hillion</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>rn.saintbrieuc@espaces-naturels.fr</email>
+    <phone>+33(0)2 96 32 31 40</phone>
+    <fax />
+    <website>https://www.reservebaiedesaintbrieuc.com/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5990</n_code>
+    <input_date>8/1/2024 1:05:12 PM</input_date>
+    <last_update>8/1/2024 1:05:29 PM</last_update>
+    <date_created>8/1/2024 1:05:12 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-4.7795</Longitude>
+    <Latitude>48.3547</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Marine Natural Park Of Iroise</name>
+    <native_name>Office Français Pour La Biodiversité / Parc Naturel Marin D'Iroise</native_name>
+    <abbreviated_name />
+    <address>23 rue Radio Conquet</address>
+    <zipcode>29217</zipcode>
+    <city>Le Conquet</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>parcmarin.iroise@ofb.gouv.fr</email>
+    <phone>+33 (0)2 98 44 17 00</phone>
+    <fax />
+    <website>https://parc-marin-iroise.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5991</n_code>
+    <input_date>8/1/2024 1:06:38 PM</input_date>
+    <last_update>8/1/2024 1:06:43 PM</last_update>
+    <date_created>8/1/2024 1:06:38 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.467</Longitude>
+    <Latitude>48.406</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Bretagne Vivante</name>
+    <native_name>Société Nationale De Protection De La Nature / Bretagne Vivante</native_name>
+    <abbreviated_name />
+    <address>19 rue de Gouesnou</address>
+    <zipcode>29200</zipcode>
+    <city>Brest</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>contact@bretagne-vivante.org</email>
+    <phone>+33(0)2 98 49 07 18</phone>
+    <fax />
+    <website>https://www.bretagne-vivante.org/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5992</n_code>
+    <input_date>8/1/2024 1:07:47 PM</input_date>
+    <last_update>8/1/2024 1:07:52 PM</last_update>
+    <date_created>8/1/2024 1:07:47 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-3.1568</Longitude>
+    <Latitude>47.3532</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Community Of Municipalities Of Belle-Île-En-Mer</name>
+    <native_name>Collectivités Territoriales Françaises / Communauté De Communes De Belle-Île-En-Mer</native_name>
+    <abbreviated_name />
+    <address>56 rue Alexis DananHaute Boulogne</address>
+    <zipcode>56360</zipcode>
+    <city>Le Palais</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>ccbi@ccbi.fr</email>
+    <phone>+33(0)2 97 31 83 04</phone>
+    <fax />
+    <website>https://www.ccbi.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5993</n_code>
+    <input_date>8/1/2024 1:08:55 PM</input_date>
+    <last_update>8/1/2024 1:09:00 PM</last_update>
+    <date_created>8/1/2024 1:08:55 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-1.7845</Longitude>
+    <Latitude>46.4969</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Municipality Of Sables-D'Olonne</name>
+    <native_name>Collectivités Territoriales Françaises / Commune Des Sables D'Olonne</native_name>
+    <abbreviated_name />
+    <address>Mairie des Sables d'OlonneCS 2184221 place du Poilu de France</address>
+    <zipcode>85118</zipcode>
+    <city>Les Sables d'Olonne</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>mailcontact@lessablesdolonne.fr</email>
+    <phone>+33(0)2 51 23 16 00</phone>
+    <fax />
+    <website>https://www.lessablesdolonne.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5994</n_code>
+    <input_date>8/1/2024 1:10:09 PM</input_date>
+    <last_update>8/1/2024 1:10:14 PM</last_update>
+    <date_created>8/1/2024 1:10:09 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-0.2358</Longitude>
+    <Latitude>49.2642</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Permanent Center For Environment Initiatives Orne Valley</name>
+    <native_name>Centre Permanent D'Initiatives Pour L'Environnement / Centre Permanent D'Initiatives Pour L'Environnement Vallée De L'Orne</native_name>
+    <abbreviated_name />
+    <address>Boulevard maritime</address>
+    <zipcode>14121</zipcode>
+    <city>Sallenelles</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email>accueil@cpievdo.fr</email>
+    <phone>+33(0)2 31 78 71 06</phone>
+    <fax />
+    <website>https://www.cpievdo.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5995</n_code>
+    <input_date>8/2/2024 11:58:28 AM</input_date>
+    <last_update>8/2/2024 12:06:34 PM</last_update>
+    <date_created>8/2/2024 11:58:28 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>12.082704917</Longitude>
+    <Latitude>54.1174203</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>FIUM GmbH &amp; Co. KG - Institute for fish and environment, Rostock, Germany</name>
+    <native_name>Institut für Fisch und Umwelt</native_name>
+    <abbreviated_name>FIUM</abbreviated_name>
+    <address>Fischerweg 408</address>
+    <zipcode>D-18069</zipcode>
+    <city>Rostock</city>
+    <state />
+    <country>5</country>
+    <country_c32>DE</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.fium.de/</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5996</n_code>
+    <input_date>8/7/2024 3:31:23 PM</input_date>
+    <last_update>8/8/2024 9:33:02 AM</last_update>
+    <date_created>8/7/2024 3:31:23 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>18.39592</Longitude>
+    <Latitude>59.3376</Latitude>
+    <collate_id>545</collate_id>
+    <logo />
+    <name>Varmdo municipality</name>
+    <native_name>Varmdo kommun</native_name>
+    <abbreviated_name>Varmdo</abbreviated_name>
+    <address>Skogsbovägen 9–11
+</address>
+    <zipcode>134 81</zipcode>
+    <city>Gustavsberg</city>
+    <state />
+    <country>30</country>
+    <country_c32>SE</country_c32>
+    <email>varmdo.kommun@varmdo.se</email>
+    <phone>08-570 470 00</phone>
+    <fax />
+    <website>https://www.varmdo.se/</website>
+    <c_country>Sweden</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5997</n_code>
+    <input_date>8/7/2024 5:01:53 PM</input_date>
+    <last_update>8/7/2024 5:06:11 PM</last_update>
+    <date_created>8/7/2024 5:01:53 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>0.5131</Longitude>
+    <Latitude>51.3058</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Adonis Blue Environmental Consultants</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Tyland Barn,</address>
+    <zipcode>ME14 3BD</zipcode>
+    <city>Maidstone</city>
+    <state>Kent</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>hello@adonisblue.org.uk</email>
+    <phone>+44 (0)1622 357 821 </phone>
+    <fax />
+    <website>https://www.adonisblueenvironmental.org.uk/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>5998</n_code>
+    <input_date>8/12/2024 11:47:44 AM</input_date>
+    <last_update>8/12/2024 12:42:26 PM</last_update>
+    <date_created>8/12/2024 11:47:44 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>14.56026</Longitude>
+    <Latitude>67.28913</Latitude>
+    <collate_id>612</collate_id>
+    <logo />
+    <name>Nord University, Bodø</name>
+    <native_name>Nord Universitet, Bodø</native_name>
+    <abbreviated_name />
+    <address>Universitetsalléen 11, 8026 Bodø</address>
+    <zipcode />
+    <city />
+    <state />
+    <country>25</country>
+    <country_c32>NO</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.nord.no/en</website>
+    <c_country>Norway</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6009</n_code>
+    <input_date>8/16/2024 2:07:18 PM</input_date>
+    <last_update>8/19/2024 4:53:35 PM</last_update>
+    <date_created>8/16/2024 2:07:18 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude />
+    <Latitude />
+    <collate_id>590</collate_id>
+    <logo />
+    <name>Regional Government of the Azores, Regional Directorate for Fisheries (DRP)</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Rua Cônsul Dabney - Colónia Alemã Apartado 9</address>
+    <zipcode>9900-014</zipcode>
+    <city>Horta</city>
+    <state>Faial Island</state>
+    <country>27</country>
+    <country_c32>PT</country_c32>
+    <email>info.drp@azores.gov.pt</email>
+    <phone>+351292202400</phone>
+    <fax />
+    <website>https://portal.azores.gov.pt/en/web/drp</website>
+    <c_country>Portugal</c_country>
   </Organisation>
 </Organisations>

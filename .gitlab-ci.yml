@@ -137,6 +137,7 @@ deploy_snapshot:
    - mvn $MAVEN_CLI_OPTS -U deploy
   only:
     - develop
+    - feature/63847/CODAS
 
 # On branch develop with manual action (available after deploy_snapshot)
 deploy_release:

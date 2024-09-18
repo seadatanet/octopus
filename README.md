@@ -1,18 +1,22 @@
 # OCTOPUS Software (multiformat checker, splitter and converter tool for [SeaDataNet formats](https://archimer.ifremer.fr/doc/00454/56547/))
+
 ![OCTOPUS Software logo](https://www.seadatanet.org/var/storage/images/_aliases/fullsize/media/seadatanet2-media/illustrations_sdc_sdn2_sdn/octopus_logo_2/10256-1-eng-GB/Octopus_logo_2.png "OCTOPUS logo")
 
 > [!IMPORTANT]
 > **The source codes will be made available by the end of August 2024**
 
 ## Badges
-[![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=21&a=11113&i=31000&r=103)
-Assesment done on 26/07/2024
 
-## Overview 
+[![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=21&a=32112&i=31101&r=021)
 
-OCTOPUS is a **multiformat checker, splitter and converter tool** for [SeaDataNet (SDN) formats](https://archimer.ifremer.fr/doc/00454/56547/). It is a unique and ergonomic tool for many format conversions. 
+Assesment done on 16/09/2024
+
+## Overview
+
+OCTOPUS is a **multiformat checker, splitter and converter tool** for [SeaDataNet (SDN) formats](https://archimer.ifremer.fr/doc/00454/56547/). It is a unique and ergonomic tool for many format conversions.
 
 The following conversions are possible with OCTOPUS:
+
 - Non SDN MedAtlas to SDN MedAtlas
 - Non SDN MedAtlas to SDN ODV
 - Non SDN MedAtlas to SDN NetCDF
@@ -23,10 +27,12 @@ The following conversions are possible with OCTOPUS:
 - SDN NetCDF to SDN ODV
 
 And for marine geophysical data:
+
 - MGDv81 to SDN ODV
 - MGDv98 to SDN ODV
 
 OCTOPUS also allows:
+
 - to split a multistation file into monostation ones
 - to extract 1 to n stations from a multistation file and export them into another multistation file or several monostation ones
 - to check the compliance of SDN MedAtlas, SDN ODV, SDN NetCDF and HFRadar NetCDF formats
@@ -53,11 +59,12 @@ OCTOPUS also allows:
 
 ## Contributors
 
-Project Supervisor: 
+Project Supervisor:
 
 - [Steven PIEL](https://github.com/spiel-ifremer), [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0009-0008-1759-5254](https://orcid.org/0009-0008-1759-5254)
 
-Developers: 
+Developers:
+
 - Sébastien CROUZILLE, Capgemini Engineering, Brest, France
 - Pierre MAHOUDO, Capgemini Engineering, Brest, France
 
@@ -69,7 +76,7 @@ Actual Contributors:
 - Cécile PERTUISOT, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0000-0002-5474-2224](https://orcid.org/0000-0002-5474-2224)
 - Marine VERNET, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0000-0002-3906-5579](https://orcid.org/0000-0002-3906-5579)
 
-Past Contributors: 
+Past Contributors:
 
 - Sophie BREGENT, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France
 - Michèle FICHAUT, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0000-0001-5900-6149](https://orcid.org/0000-0001-5900-6149)
@@ -111,6 +118,7 @@ SeaDataNet, check, convertion, split, ODV, netCDF, MedAtlas, MGD, EGO, ADCP, ODV
 ## Requirements, Supported Environments, Installation
 
 ### Requirements
+
 Octopus is written in Java.
 
 Octopus is available in 2 versions:
@@ -138,6 +146,7 @@ OCTOPUS can be used in interactive mode or in batch mode.
 For settings and details of all other available functions, please refer to the [user manual](https://www.seadatanet.org/content/download/698/file/SDN_OCTOPUS_UserManual.pdf).
 
 ## License
+
 [SeaDataNet licence 1.0](https://www.seadatanet.org/Data-Access/License/1.0)
 
 > [!NOTE]

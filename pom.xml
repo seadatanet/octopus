@@ -753,6 +753,11 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<url>https://nexus.isival.ifremer.fr/repository/maven-private-snapshot/</url>
 		</repository>
 
+		<repository>
+		    <id>gitlab-sdn-maven</id>
+		    <url>https://gitlab.ifremer.fr/api/v4/groups/seadatanet/-/packages/maven</url>
+		</repository>
+
 	</repositories>
 
 	<distributionManagement>
@@ -777,7 +782,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
 			<version>0.44-SNAPSHOT</version>
-			<!-- <classifier>jar-with-dependencies</classifier> -->
 			<exclusions>
 				<exclusion>
 					<groupId>org.slf4j</groupId>

@@ -36,6 +36,17 @@ under the License.
           </httpHeaders>
         </configuration>
       </server>
+      <server>
+        <id>gitlab-sdn-maven</id>
+        <configuration>
+          <httpHeaders>
+              <property>
+              <name>Deploy-Token</name>
+              <value>${env.GITLAB_SDN_TOKEN}</value>
+              </property>
+          </httpHeaders>
+        </configuration>
+      </server>
     </servers>
 
 </settings>

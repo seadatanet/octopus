@@ -13061,7 +13061,7 @@ Rua da Mouraria, 31</address>
   <Organisation>
     <n_code>574</n_code>
     <input_date />
-    <last_update>1/11/2023 1:43:50 PM</last_update>
+    <last_update>8/29/2024 12:20:52 PM</last_update>
     <date_created>4/12/2001 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -13084,7 +13084,7 @@ Van Alkemadelaan 786</address>
     <email>hydro.admin@mindef.nl</email>
     <phone>+31889516752</phone>
     <fax />
-    <website>http://www.hydro.nl</website>
+    <website>https://www.defensie.nl/hydro</website>
     <c_country>Netherlands</c_country>
   </Organisation>
   <Organisation>
@@ -13485,7 +13485,7 @@ Praça Gomes Teixeira</address>
   <Organisation>
     <n_code>589</n_code>
     <input_date />
-    <last_update>11/12/2013 11:17:43 AM</last_update>
+    <last_update>8/22/2024 12:22:54 PM</last_update>
     <date_created>6/23/1995 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -13493,10 +13493,10 @@ Praça Gomes Teixeira</address>
     <Longitude>-9.1575</Longitude>
     <Latitude>38.7085</Latitude>
     <collate_id>590</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/ihcorint.gif</logo>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/logo_ih.png</logo>
     <name>Hydrographic Institute, Division of Marine Geology</name>
-    <native_name>Instituto Hidrografico</native_name>
-    <abbreviated_name>IHPT</abbreviated_name>
+    <native_name>Instituto Hidrográfico, Divisão de Geologia Marinha</native_name>
+    <abbreviated_name>IHPT-GM</abbreviated_name>
     <address>Rua das Trinas, 49
 
 </address>
@@ -13505,16 +13505,16 @@ Praça Gomes Teixeira</address>
     <state />
     <country>27</country>
     <country_c32>PT</country_c32>
-    <email>dirtecnica@hidrografico.pt</email>
-    <phone>+351 210943000</phone>
-    <fax>+351 210943299</fax>
-    <website>http://www.hidrografico.pt</website>
+    <email>centrodados@hidrografico.pt</email>
+    <phone>+351 210 943 000</phone>
+    <fax>+351 210 943 299</fax>
+    <website>https://www.hidrografico.pt</website>
     <c_country>Portugal</c_country>
   </Organisation>
   <Organisation>
     <n_code>590</n_code>
     <input_date />
-    <last_update>11/12/2013 11:17:17 AM</last_update>
+    <last_update>8/22/2024 12:27:05 PM</last_update>
     <date_created>6/23/1995 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -13522,20 +13522,20 @@ Praça Gomes Teixeira</address>
     <Longitude>-9.1575</Longitude>
     <Latitude>38.7085</Latitude>
     <collate_id>590</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/ihcorint.gif</logo>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/logo_ih.png</logo>
     <name>Hydrographic Institute</name>
-    <native_name>Instituto Hidrografico</native_name>
+    <native_name>Instituto Hidrográfico</native_name>
     <abbreviated_name>IHPT</abbreviated_name>
     <address>Rua das Trinas, 49</address>
     <zipcode>1249-093</zipcode>
     <city>Lisboa</city>
-    <state>Lisboa</state>
+    <state />
     <country>27</country>
     <country_c32>PT</country_c32>
-    <email>mail@hidrografico.pt</email>
-    <phone>+351 210943000</phone>
-    <fax>+351 210943299</fax>
-    <website>http://www.hidrografico.pt</website>
+    <email>centrodados@hidrografico.pt</email>
+    <phone>+351 210 943 000</phone>
+    <fax>+351 210 943 299</fax>
+    <website>https://www.hidrografico.pt/</website>
     <c_country>Portugal</c_country>
   </Organisation>
   <Organisation>
@@ -13651,7 +13651,7 @@ Av. do Brasil, 101</address>
   <Organisation>
     <n_code>595</n_code>
     <input_date />
-    <last_update>11/12/2013 10:58:26 AM</last_update>
+    <last_update>8/22/2024 12:25:15 PM</last_update>
     <date_created>6/23/1995 12:00:00 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -13659,21 +13659,21 @@ Av. do Brasil, 101</address>
     <Longitude>-9.1575</Longitude>
     <Latitude>38.7085</Latitude>
     <collate_id>590</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/ihcorint.gif</logo>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/logo_ih.png</logo>
     <name>Hydrographic Institute, Division of Oceanography</name>
-    <native_name>Instituto Hidrografico - Divisão de Oceanografia</native_name>
+    <native_name>Instituto Hidrográfico, Divisão de Oceanografia</native_name>
     <abbreviated_name>IHPT-OC</abbreviated_name>
     <address>Rua das Trinas, 49
 </address>
     <zipcode>1249-093</zipcode>
     <city>Lisboa</city>
-    <state>Lisboa</state>
+    <state />
     <country>27</country>
     <country_c32>PT</country_c32>
-    <email>oceanografia@hidrografico.pt</email>
+    <email>centrodados@hidrografico.pt</email>
     <phone>+351 210 943 000</phone>
     <fax>+351 210 943 299</fax>
-    <website>http://www.hidrografico.pt</website>
+    <website>https://www.hidrografico.pt</website>
     <c_country>Portugal</c_country>
   </Organisation>
   <Organisation>
@@ -30120,7 +30120,7 @@ Postboks 1870 Nordnes</address>
   <Organisation>
     <n_code>1362</n_code>
     <input_date>6/15/2007 11:38:53 AM</input_date>
-    <last_update>8/16/2019 3:11:52 PM</last_update>
+    <last_update>8/22/2024 12:28:59 PM</last_update>
     <date_created>6/15/2007 11:38:53 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -30128,21 +30128,21 @@ Postboks 1870 Nordnes</address>
     <Longitude>-9.1575</Longitude>
     <Latitude>38.7085</Latitude>
     <collate_id>590</collate_id>
-    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/ihcorint.gif</logo>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/logo_ih.png</logo>
     <name>Hydrographic Institute, Hydrographic Surveying Vessel Task Group</name>
-    <native_name>Instituto Hidrografico - Agrupamento de Navios Hidrográficos</native_name>
+    <native_name>Instituto Hidrográfico - Agrupamento de Navios Hidrográficos</native_name>
     <abbreviated_name>IHPT-ANH</abbreviated_name>
     <address>Rua das Trinas, 49
 </address>
     <zipcode>1249-093</zipcode>
     <city>Lisboa</city>
-    <state>Lisboa</state>
+    <state />
     <country>27</country>
     <country_c32>PT</country_c32>
-    <email>navios@hidrografico.pt</email>
-    <phone>+351 210943000</phone>
-    <fax>+351 210943299</fax>
-    <website>http://www.hidrografico.pt/op/26</website>
+    <email>centrodados@hidrografico.pt</email>
+    <phone>+351 210 943 000</phone>
+    <fax>+351 210 943 299</fax>
+    <website>https://www.hidrografico.pt</website>
     <c_country>Portugal</c_country>
   </Organisation>
   <Organisation>
@@ -34690,7 +34690,7 @@ Park Place</address>
   <Organisation>
     <n_code>1534</n_code>
     <input_date>2/29/2008 11:58:40 AM</input_date>
-    <last_update>11/11/2013 5:07:05 PM</last_update>
+    <last_update>8/22/2024 12:07:50 PM</last_update>
     <date_created>2/29/2008 11:58:40 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -34698,20 +34698,20 @@ Park Place</address>
     <Longitude>-9.1575</Longitude>
     <Latitude>38.7085</Latitude>
     <collate_id>590</collate_id>
-    <logo />
-    <name>Hydrographic Institute, Division of Chemistry</name>
-    <native_name>Instituto Hidrografico- Divisao de Quimica</native_name>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/logo_ih.png</logo>
+    <name>Hydrographic Institute, Division of Chemistry and Pollution of the Marine Environment</name>
+    <native_name>Instituto Hidrográfico, Divisão de Química e Poluição do Meio Marinho</native_name>
     <abbreviated_name>IHPT-QP</abbreviated_name>
     <address>Rua das Trinas, 49</address>
     <zipcode>1249-093</zipcode>
     <city>Lisboa</city>
-    <state>Lisboa</state>
+    <state />
     <country>27</country>
     <country_c32>PT</country_c32>
-    <email>www.hidrografico.pt</email>
+    <email>centrodados@hidrografico.pt</email>
     <phone>+351 210 943 000</phone>
     <fax>+351 210 943 299</fax>
-    <website>http://www.hidrografico.pt</website>
+    <website>https://www.hidrografico.pt/</website>
     <c_country>Portugal</c_country>
   </Organisation>
   <Organisation>
@@ -35071,7 +35071,7 @@ P.O. Box 96</address>
   <Organisation>
     <n_code>1550</n_code>
     <input_date>3/27/2008 8:16:03 AM</input_date>
-    <last_update>5/4/2018 1:02:50 PM</last_update>
+    <last_update>8/29/2024 10:22:46 AM</last_update>
     <date_created>3/27/2008 8:16:03 AM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -35080,8 +35080,8 @@ P.O. Box 96</address>
     <Latitude>60.1653</Latitude>
     <collate_id>628</collate_id>
     <logo />
-    <name>Helsinki Commission </name>
-    <native_name>Baltic Marine Environment Protection Commission  </native_name>
+    <name>Baltic Marine Environment Protection Commission</name>
+    <native_name>Helsinki Commission</native_name>
     <abbreviated_name>HELCOM</abbreviated_name>
     <address>Katajanokanlaituri 6 B
 </address>
@@ -56348,7 +56348,7 @@ Treverva</address>
   <Organisation>
     <n_code>2359</n_code>
     <input_date>12/16/2009 6:16:21 PM</input_date>
-    <last_update>10/23/2014 12:25:18 PM</last_update>
+    <last_update>9/4/2024 3:22:01 PM</last_update>
     <date_created>12/16/2009 6:16:21 PM</date_created>
     <organisation_exists>True</organisation_exists>
     <organisation_changed_into />
@@ -56359,14 +56359,14 @@ Treverva</address>
     <logo />
     <name>Marine Ecological Surveys Ltd</name>
     <native_name>Marine Ecological Surveys Ltd</native_name>
-    <abbreviated_name />
+    <abbreviated_name>MESL</abbreviated_name>
     <address>3 Palace Yard Mews</address>
     <zipcode>BA1 2NH</zipcode>
     <city>Bath</city>
     <state />
     <country>11</country>
     <country_c32>GB</country_c32>
-    <email>marine@seasurvey.co.uk </email>
+    <email>marine@seasurvey.co.uk</email>
     <phone>+44 (0)1225 442211</phone>
     <fax>+44 (0)1225 444411</fax>
     <website />
@@ -153434,5 +153434,143 @@ Hayeswood Road,
     <fax />
     <website>https://portal.azores.gov.pt/en/web/drp</website>
     <c_country>Portugal</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6010</n_code>
+    <input_date>8/23/2024 11:24:57 AM</input_date>
+    <last_update>8/23/2024 11:54:49 AM</last_update>
+    <date_created>8/23/2024 11:24:57 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>-5.7771</Longitude>
+    <Latitude>56.5361</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Community Association of Lochs and Sounds</name>
+    <native_name>Community Association of Lochs and Sounds 
+</native_name>
+    <abbreviated_name>CAOLAS
+</abbreviated_name>
+    <address>Kiel House 
+</address>
+    <zipcode>PA80 5XT</zipcode>
+    <city>Lochaline</city>
+    <state>Highland</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>admin@caolas.org</email>
+    <phone />
+    <fax />
+    <website>https://www.caolas.org/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6011</n_code>
+    <input_date>9/17/2024 3:22:49 PM</input_date>
+    <last_update>9/17/2024 3:26:40 PM</last_update>
+    <date_created>9/17/2024 3:22:49 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>5.762336</Longitude>
+    <Latitude>45.194234</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Cnrs / </name>
+    <native_name>Cnrs / Institut Des Géosciences De L'Environnement - Umr 5001</native_name>
+    <abbreviated_name />
+    <address />
+    <zipcode>38400</zipcode>
+    <city>Saint-Martin-d'Hères</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.ige-grenoble.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6012</n_code>
+    <input_date>9/17/2024 3:24:41 PM</input_date>
+    <last_update>9/17/2024 3:29:36 PM</last_update>
+    <date_created>9/17/2024 3:24:41 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>105.8003</Longitude>
+    <Latitude>21.0469</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>University Of Science And Technology Of Hanoi</name>
+    <native_name>Vietnamese Academy Of Science And Technology / University Of Science And Technology Of Hanoi</native_name>
+    <abbreviated_name />
+    <address>18 Hoang Quoc VietCau Giay</address>
+    <zipcode />
+    <city>Hanoi</city>
+    <state />
+    <country>177</country>
+    <country_c32>VN</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://usth.edu.vn/</website>
+    <c_country>Viet Nam</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6013</n_code>
+    <input_date>9/17/2024 3:28:45 PM</input_date>
+    <last_update>9/17/2024 3:30:57 PM</last_update>
+    <date_created>9/17/2024 3:28:45 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>106.7026</Longitude>
+    <Latitude>20.8609</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Institute Of Marine Environment And Resources</name>
+    <native_name>Vietnamese Academy Of Science And Technology / Institute Of Marine Environment And Resources</native_name>
+    <abbreviated_name />
+    <address>246 Da Nang StreetCau Tre WardNgo Quyen District</address>
+    <zipcode />
+    <city>Hai Phong</city>
+    <state />
+    <country>177</country>
+    <country_c32>VN</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>http://www.imer.ac.vn/</website>
+    <c_country>Viet Nam</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6014</n_code>
+    <input_date>9/19/2024 9:07:35 AM</input_date>
+    <last_update>9/19/2024 10:16:17 AM</last_update>
+    <date_created>9/19/2024 9:07:35 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <Longitude>24.5114</Longitude>
+    <Latitude>45.3401</Latitude>
+    <collate_id>697</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/697/logo_seamod.png</logo>
+    <name>seamod.ro</name>
+    <native_name>seamod.ro</native_name>
+    <abbreviated_name>seamod</abbreviated_name>
+    <address>Valea Iepii nr.1, 117635 Salatrucu, Judet. Arges, Romania</address>
+    <zipcode />
+    <city />
+    <state />
+    <country>28</country>
+    <country_c32>RO</country_c32>
+    <email>luc@ seamod.ro</email>
+    <phone>+40 730392633</phone>
+    <fax />
+    <website>https://www.seamod.ro/</website>
+    <c_country>Romania</c_country>
   </Organisation>
 </Organisations>

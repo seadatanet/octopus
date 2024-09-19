@@ -36,6 +36,13 @@
     <Country>United Kingdom</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>8873</Id>
+    <Title>Preliminary development of tissue Toxicity Identification Evaluation (TIE) techniques</Title>
+    <Acronym />
+    <Coordinator>Department for Environment, Food and Rural Affairs</Coordinator>
+    <Country>United Kingdom</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>8858</Id>
     <Title>Implications of the nature &amp; quality of dredged material for its beneficial placement in the coastal environment</Title>
     <Acronym />
@@ -87,13 +94,6 @@
   <SimpleMetadata>
     <Id>8865</Id>
     <Title>Role of Biota and Dredged Material on Intertidal Sediment Dynamics</Title>
-    <Acronym />
-    <Coordinator>Department for Environment, Food and Rural Affairs</Coordinator>
-    <Country>United Kingdom</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>8873</Id>
-    <Title>Preliminary development of tissue Toxicity Identification Evaluation (TIE) techniques</Title>
     <Acronym />
     <Coordinator>Department for Environment, Food and Rural Affairs</Coordinator>
     <Country>United Kingdom</Country>
@@ -911,6 +911,13 @@
     <Country>United Kingdom</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>8866</Id>
+    <Title>Development of guidance for sediment transport monitoring programmes in response to construction of offshore windfarms</Title>
+    <Acronym />
+    <Coordinator>Department for Environment, Food and Rural Affairs</Coordinator>
+    <Country>United Kingdom</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>8874</Id>
     <Title>Evaluation of the effects of photoactivation on chemicals in the aquatic environment and the long term effects on them</Title>
     <Acronym />
@@ -955,13 +962,6 @@
   <SimpleMetadata>
     <Id>8880</Id>
     <Title>The role of the Arctic in global climate change</Title>
-    <Acronym />
-    <Coordinator>Department for Environment, Food and Rural Affairs</Coordinator>
-    <Country>United Kingdom</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>8866</Id>
-    <Title>Development of guidance for sediment transport monitoring programmes in response to construction of offshore windfarms</Title>
     <Acronym />
     <Coordinator>Department for Environment, Food and Rural Affairs</Coordinator>
     <Country>United Kingdom</Country>
@@ -2850,13 +2850,6 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12012</Id>
-    <Title>Maldives Carbonate Stratigraphy, IODP Pre-Site Survey</Title>
-    <Acronym>MALSTROM</Acronym>
-    <Coordinator>University of Hamburg</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>13636</Id>
     <Title>Towards an understanding of carbonate platforms in the icehouse world - ICECARB</Title>
     <Acronym>ICECARB</Acronym>
@@ -2867,6 +2860,13 @@
     <Id>12417</Id>
     <Title>MASCARA: Saya de Malha carbonates, oceanography and biogeochemistry (Western Indian Ocean)</Title>
     <Acronym>MASCARA</Acronym>
+    <Coordinator>University of Hamburg</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12012</Id>
+    <Title>Maldives Carbonate Stratigraphy, IODP Pre-Site Survey</Title>
+    <Acronym>MALSTROM</Acronym>
     <Coordinator>University of Hamburg</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
@@ -3277,16 +3277,16 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13561</Id>
-    <Title>Benguela Niños: Physical processes and long-term variability</Title>
-    <Acronym>BANINO</Acronym>
+    <Id>11937</Id>
+    <Title>Southwest African Coastal Upwelling System and Benguela Nino's</Title>
+    <Acronym>SACUS</Acronym>
     <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11937</Id>
-    <Title>Southwest African Coastal Upwelling System and Benguela Nino's</Title>
-    <Acronym>SACUS</Acronym>
+    <Id>13561</Id>
+    <Title>Benguela Niños: Physical processes and long-term variability</Title>
+    <Acronym>BANINO</Acronym>
     <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
@@ -3746,27 +3746,6 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13633</Id>
-    <Title>FINO - researchplatforms in North- and Baltic Sea</Title>
-    <Acronym>FINO5</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13634</Id>
-    <Title>FINO6 - research platforms in North- and Baltic Sea</Title>
-    <Acronym>FINO6</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13635</Id>
-    <Title>General data on the OpenRAVE project</Title>
-    <Acronym>OpenRave</Acronym>
-    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12019</Id>
     <Title>Offshore Wind Research Platform No 1</Title>
     <Acronym>FINO 1</Acronym>
@@ -3791,6 +3770,27 @@
     <Id>13733</Id>
     <Title>Marine environmental observation network in the North Sea and Baltic Sea</Title>
     <Acronym>MARNET</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13633</Id>
+    <Title>FINO - researchplatforms in North- and Baltic Sea</Title>
+    <Acronym>FINO5</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13634</Id>
+    <Title>FINO6 - research platforms in North- and Baltic Sea</Title>
+    <Acronym>FINO6</Acronym>
+    <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13635</Id>
+    <Title>General data on the OpenRAVE project</Title>
+    <Acronym>OpenRave</Acronym>
     <Coordinator>Federal Maritime and Hydrographic Agency</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
@@ -4460,6 +4460,13 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11913</Id>
+    <Title>SO225 - MANIHIKI II-Leg 2: The Manihikiplateau - Evolition, structure and impacts of oceanic plateaus</Title>
+    <Acronym>MANIHIKI II</Acronym>
+    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
+    <Country>Germany</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12023</Id>
     <Title>Suspected Large Igneous Province</Title>
     <Acronym>SLIP</Acronym>
@@ -4470,13 +4477,6 @@
     <Id>12011</Id>
     <Title>Exploring the temporal and geochemical evolution of the Central Walvis Ridge</Title>
     <Acronym>SO233-WALVIS II</Acronym>
-    <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
-    <Country>Germany</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11913</Id>
-    <Title>SO225 - MANIHIKI II-Leg 2: The Manihikiplateau - Evolition, structure and impacts of oceanic plateaus</Title>
-    <Acronym>MANIHIKI II</Acronym>
     <Coordinator>Helmholtz Centre for Ocean Research Kiel</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
@@ -4670,16 +4670,16 @@
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13692</Id>
-    <Title>Placing the deep Baltic Sea sediment stratigraphy in a precise chronological framework: Improved paleoenvironmental studies and 14C reservoir age calibration</Title>
-    <Acronym>BaltChron</Acronym>
+    <Id>12500</Id>
+    <Title>Synchronized records of Circum-Baltic Holocene environmental change</Title>
+    <Acronym>SYNCBALT</Acronym>
     <Coordinator>Leibniz Institute for Baltic Sea Research Warnemünde</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12500</Id>
-    <Title>Synchronized records of Circum-Baltic Holocene environmental change</Title>
-    <Acronym>SYNCBALT</Acronym>
+    <Id>13692</Id>
+    <Title>Placing the deep Baltic Sea sediment stratigraphy in a precise chronological framework: Improved paleoenvironmental studies and 14C reservoir age calibration</Title>
+    <Acronym>BaltChron</Acronym>
     <Coordinator>Leibniz Institute for Baltic Sea Research Warnemünde</Coordinator>
     <Country>Germany</Country>
   </SimpleMetadata>
@@ -5692,13 +5692,6 @@
     <Country>Poland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12049</Id>
-    <Title>Polish Baltic Monitoring Programme 2010-2011</Title>
-    <Acronym>COMBINE 2010 - 2011</Acronym>
-    <Coordinator>Institute of Meteorology and Water Management National Research Institute, Poland</Coordinator>
-    <Country>Poland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12213</Id>
     <Title>Polish MSFD monitoring 2014-2017</Title>
     <Acronym>Polish MSFD monitoring 2014-2017</Acronym>
@@ -5734,6 +5727,20 @@
     <Country>Poland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>12049</Id>
+    <Title>Polish Baltic Monitoring Programme 2010-2011</Title>
+    <Acronym>COMBINE 2010 - 2011</Acronym>
+    <Coordinator>Institute of Meteorology and Water Management National Research Institute, Poland</Coordinator>
+    <Country>Poland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7724</Id>
+    <Title>Understanding the mechanisms of stock recovery</Title>
+    <Acronym>UNCOVER</Acronym>
+    <Coordinator>National Marine Fisheries Research Institute </Coordinator>
+    <Country>Poland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>7707</Id>
     <Title>International Baltic Sea Sampling Program for commercial fishing fleets II</Title>
     <Acronym>IBSSP II</Acronym>
@@ -5765,13 +5772,6 @@
     <Id>7711</Id>
     <Title>Population dynamics of the most important commercial fish in the Baltic Sea</Title>
     <Acronym>NB-1</Acronym>
-    <Coordinator>National Marine Fisheries Research Institute </Coordinator>
-    <Country>Poland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7724</Id>
-    <Title>Understanding the mechanisms of stock recovery</Title>
-    <Acronym>UNCOVER</Acronym>
     <Coordinator>National Marine Fisheries Research Institute </Coordinator>
     <Country>Poland</Country>
   </SimpleMetadata>
@@ -5825,13 +5825,6 @@
     <Country>Poland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12212</Id>
-    <Title>IMGW's research</Title>
-    <Acronym>BSRP_IMGW</Acronym>
-    <Coordinator>Institute of Meteorology and Water Management National Research Institute, Poland</Coordinator>
-    <Country>Poland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12047</Id>
     <Title>System for the exchange of information on ecosystem state of Vistula Lagoon in frame of the Polish – Russian transboundary cooperation</Title>
     <Acronym>PL0223</Acronym>
@@ -5842,6 +5835,13 @@
     <Id>12048</Id>
     <Title>Polish Baltic Monitoring Programme  2012-2013</Title>
     <Acronym>COMBINE 2012-2013</Acronym>
+    <Coordinator>Institute of Meteorology and Water Management National Research Institute, Poland</Coordinator>
+    <Country>Poland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12212</Id>
+    <Title>IMGW's research</Title>
+    <Acronym>BSRP_IMGW</Acronym>
     <Coordinator>Institute of Meteorology and Water Management National Research Institute, Poland</Coordinator>
     <Country>Poland</Country>
   </SimpleMetadata>
@@ -5993,13 +5993,6 @@
     <Country>Poland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12468</Id>
-    <Title>Arctic Climate and Environment of the Nordic Seas and the Svalbard – Greenland Area</Title>
-    <Acronym>AWAKE</Acronym>
-    <Coordinator>Institute of Oceanology, Polish Academy of Sciences</Coordinator>
-    <Country>Poland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12454</Id>
     <Title>Interannual variability of properties and distribution of deep and intermediate water in the Nordic Seas</Title>
     <Acronym>DWINS</Acronym>
@@ -6014,16 +6007,23 @@
     <Country>Poland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12492</Id>
-    <Title>Western Arctic Currents Measurements</Title>
-    <Acronym>WACuM</Acronym>
+    <Id>12459</Id>
+    <Title>Pomiary oraz analiza strumieni aerozolu morskiego</Title>
+    <Acronym>BaSEAF</Acronym>
     <Coordinator>Institute of Oceanology, Polish Academy of Sciences</Coordinator>
     <Country>Poland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12459</Id>
-    <Title>Pomiary oraz analiza strumieni aerozolu morskiego</Title>
-    <Acronym>BaSEAF</Acronym>
+    <Id>12468</Id>
+    <Title>Arctic Climate and Environment of the Nordic Seas and the Svalbard – Greenland Area</Title>
+    <Acronym>AWAKE</Acronym>
+    <Coordinator>Institute of Oceanology, Polish Academy of Sciences</Coordinator>
+    <Country>Poland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12492</Id>
+    <Title>Western Arctic Currents Measurements</Title>
+    <Acronym>WACuM</Acronym>
     <Coordinator>Institute of Oceanology, Polish Academy of Sciences</Coordinator>
     <Country>Poland</Country>
   </SimpleMetadata>
@@ -6042,16 +6042,16 @@
     <Country>Poland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7730</Id>
-    <Title>Ecosystem approach to marine spatial planning - Polish marine areas of the Nature 2000</Title>
-    <Acronym />
+    <Id>12490</Id>
+    <Title>Arctic benthic ecosystems under change: the impact of deglaciation and boreal species transportation by macroplastic</Title>
+    <Acronym>ADAMANT</Acronym>
     <Coordinator>Institute of Oceanology, Polish Academy of Sciences</Coordinator>
     <Country>Poland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12490</Id>
-    <Title>Arctic benthic ecosystems under change: the impact of deglaciation and boreal species transportation by macroplastic</Title>
-    <Acronym>ADAMANT</Acronym>
+    <Id>7730</Id>
+    <Title>Ecosystem approach to marine spatial planning - Polish marine areas of the Nature 2000</Title>
+    <Acronym />
     <Coordinator>Institute of Oceanology, Polish Academy of Sciences</Coordinator>
     <Country>Poland</Country>
   </SimpleMetadata>
@@ -6434,13 +6434,6 @@
     <Country>Greece</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11874</Id>
-    <Title>Thermaikos Systems Project</Title>
-    <Acronym>THESYP</Acronym>
-    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
-    <Country>Greece</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11916</Id>
     <Title>Amvrakikos Systems Project</Title>
     <Acronym>AMVSYP</Acronym>
@@ -6448,9 +6441,9 @@
     <Country>Greece</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7624</Id>
-    <Title>PINCTADA - Pinctada radiata: An invading biondicator in the Mediterranean</Title>
-    <Acronym>PINCTADA</Acronym>
+    <Id>11874</Id>
+    <Title>Thermaikos Systems Project</Title>
+    <Acronym>THESYP</Acronym>
     <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
     <Country>Greece</Country>
   </SimpleMetadata>
@@ -6458,6 +6451,13 @@
     <Id>7589</Id>
     <Title>Synthetic Report of a seven-year period (1993-1999) of the international program MED POL</Title>
     <Acronym />
+    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
+    <Country>Greece</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7624</Id>
+    <Title>PINCTADA - Pinctada radiata: An invading biondicator in the Mediterranean</Title>
+    <Acronym>PINCTADA</Acronym>
     <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
     <Country>Greece</Country>
   </SimpleMetadata>
@@ -6560,13 +6560,6 @@
     <Country>Greece</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10427</Id>
-    <Title>Study of inner Saronikos ecosystem, under the influence of Psittalia sewage treatment unit (Phase B-E)</Title>
-    <Acronym>PSITTALIA B-E</Acronym>
-    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
-    <Country>Greece</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12087</Id>
     <Title>Recording of biological parameters of Saronikos Gulf</Title>
     <Acronym>BIOSAR</Acronym>
@@ -6574,9 +6567,9 @@
     <Country>Greece</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7598</Id>
-    <Title>ESPEN - An Enhanced operational System for wave monitoring and Prediction with Applications in HEllenic Navigation</Title>
-    <Acronym>ESPEN</Acronym>
+    <Id>10427</Id>
+    <Title>Study of inner Saronikos ecosystem, under the influence of Psittalia sewage treatment unit (Phase B-E)</Title>
+    <Acronym>PSITTALIA B-E</Acronym>
     <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
     <Country>Greece</Country>
   </SimpleMetadata>
@@ -6595,6 +6588,13 @@
     <Country>Greece</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>7598</Id>
+    <Title>ESPEN - An Enhanced operational System for wave monitoring and Prediction with Applications in HEllenic Navigation</Title>
+    <Acronym>ESPEN</Acronym>
+    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
+    <Country>Greece</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>7585</Id>
     <Title>Wave Climate of Ship routes for the Safety of the New Technology Ships</Title>
     <Acronym />
@@ -6609,13 +6609,6 @@
     <Country>Greece</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7592</Id>
-    <Title>AMPHITRITE - Techniques for the Development of an Methodology for Seismic Hazard Assessment</Title>
-    <Acronym>AMPHITRITE</Acronym>
-    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
-    <Country>Greece</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>7595</Id>
     <Title>ESTIA - Advanced Software Program and Integrated system for decision support and seismic risk management</Title>
     <Acronym>ESTIA</Acronym>
@@ -6626,6 +6619,13 @@
     <Id>7596</Id>
     <Title>IRIS - Development of airborne system of hyperspectral sensors</Title>
     <Acronym>IRIS</Acronym>
+    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
+    <Country>Greece</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7592</Id>
+    <Title>AMPHITRITE - Techniques for the Development of an Methodology for Seismic Hazard Assessment</Title>
+    <Acronym>AMPHITRITE</Acronym>
     <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
     <Country>Greece</Country>
   </SimpleMetadata>
@@ -6686,6 +6686,13 @@
     <Country>Greece</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>7633</Id>
+    <Title>EUTRO-UNEP - Assessment of eutrophication in the Mediterranean coastal waters (EUTRO-UNEP)</Title>
+    <Acronym>EUTRO-UNEP</Acronym>
+    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
+    <Country>Greece</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>7637</Id>
     <Title>HABs - Development of electrochemical immunosensors for the detection of toxins present during harmful algae blooms</Title>
     <Acronym>HABs</Acronym>
@@ -6696,13 +6703,6 @@
     <Id>7641</Id>
     <Title>THERMAIKOS 2006 - Monitoring the quality of the Marine Environment of the Gulf of Thessaloniki during 2006</Title>
     <Acronym>THERMAIKOS 2006</Acronym>
-    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
-    <Country>Greece</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7633</Id>
-    <Title>EUTRO-UNEP - Assessment of eutrophication in the Mediterranean coastal waters (EUTRO-UNEP)</Title>
-    <Acronym>EUTRO-UNEP</Acronym>
     <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
     <Country>Greece</Country>
   </SimpleMetadata>
@@ -6798,6 +6798,13 @@
     <Country>Greece</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>7616</Id>
+    <Title>MNEMIOPSIS - Invasion of Mnemiopsis into the Saronikos Gulf, Aegean Sea: A question of origin and effect on ecosystem</Title>
+    <Acronym>MNEMIOPSIS</Acronym>
+    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
+    <Country>Greece</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>7623</Id>
     <Title>Study of the annual and biological cycles of plankton in a coastal area</Title>
     <Acronym />
@@ -6808,20 +6815,6 @@
     <Id>11877</Id>
     <Title>Ecological study of the S-SE Attiki coastal area from Marathonas to Anavyssos</Title>
     <Acronym>SOUTH EBOIKOS</Acronym>
-    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
-    <Country>Greece</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7616</Id>
-    <Title>MNEMIOPSIS - Invasion of Mnemiopsis into the Saronikos Gulf, Aegean Sea: A question of origin and effect on ecosystem</Title>
-    <Acronym>MNEMIOPSIS</Acronym>
-    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
-    <Country>Greece</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7617</Id>
-    <Title>Microbial symbionts of marine invertebrates as possible source of metabolites with industrial application</Title>
-    <Acronym />
     <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
     <Country>Greece</Country>
   </SimpleMetadata>
@@ -6840,8 +6833,8 @@
     <Country>Greece</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7621</Id>
-    <Title>Submarine area of Skiros Island</Title>
+    <Id>7617</Id>
+    <Title>Microbial symbionts of marine invertebrates as possible source of metabolites with industrial application</Title>
     <Acronym />
     <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
     <Country>Greece</Country>
@@ -6857,6 +6850,13 @@
     <Id>7629</Id>
     <Title>SANTORINI - Exploration of the submarine deposits and morphology of Santorini volcano</Title>
     <Acronym>SANTORINI</Acronym>
+    <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
+    <Country>Greece</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7621</Id>
+    <Title>Submarine area of Skiros Island</Title>
+    <Acronym />
     <Coordinator>Hellenic Centre for Marine Research, Institute of Oceanography</Coordinator>
     <Country>Greece</Country>
   </SimpleMetadata>
@@ -7449,16 +7449,16 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11269</Id>
-    <Title>Study and observation of the climatic variability in the East Center Atlantic Ocean , subtropicalgyre. Canary deep hydrographic section</Title>
-    <Acronym>RAPROCAN II</Acronym>
+    <Id>3084</Id>
+    <Title>European time series oceanic station of Canary Islands (ESTOC)</Title>
+    <Acronym>ESTOC</Acronym>
     <Coordinator>IEO-CSIC, Oceanographic Centre of Canary Island</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3084</Id>
-    <Title>European time series oceanic station of Canary Islands (ESTOC)</Title>
-    <Acronym>ESTOC</Acronym>
+    <Id>11269</Id>
+    <Title>Study and observation of the climatic variability in the East Center Atlantic Ocean , subtropicalgyre. Canary deep hydrographic section</Title>
+    <Acronym>RAPROCAN II</Acronym>
     <Coordinator>IEO-CSIC, Oceanographic Centre of Canary Island</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -7855,13 +7855,6 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3071</Id>
-    <Title>Analysis of the stock structure of Trachurus trachurus using genetic biomarkers (HOMSIR)</Title>
-    <Acronym>HOMSIR</Acronym>
-    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11325</Id>
     <Title>Biology and dynamics of the  populations of blue jack mackerel and atlantic mackerel in the ICES area</Title>
     <Acronym>BIOJUVER</Acronym>
@@ -7876,9 +7869,30 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>3071</Id>
+    <Title>Analysis of the stock structure of Trachurus trachurus using genetic biomarkers (HOMSIR)</Title>
+    <Acronym>HOMSIR</Acronym>
+    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>3060</Id>
     <Title>Study of the anticiclonic estructures as concentration and transport factor of hake larvae in South Biscay</Title>
     <Acronym>MESOLARVA</Acronym>
+    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10674</Id>
+    <Title>Pelagic species biology (anchovy, sardine, mackerel) in ICES area</Title>
+    <Acronym>BIOPEL</Acronym>
+    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10675</Id>
+    <Title>Pelagic Species Biology (anchovy, sardine, mackerel) in ICES area</Title>
+    <Acronym>BIOPEL-2</Acronym>
     <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -7900,20 +7914,6 @@
     <Id>11324</Id>
     <Title>Biology and dynamics of the anchovy (Biscay Bay) and sardine populations in the ICES area</Title>
     <Acronym>BIODAS-04</Acronym>
-    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10674</Id>
-    <Title>Pelagic species biology (anchovy, sardine, mackerel) in ICES area</Title>
-    <Acronym>BIOPEL</Acronym>
-    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10675</Id>
-    <Title>Pelagic Species Biology (anchovy, sardine, mackerel) in ICES area</Title>
-    <Acronym>BIOPEL-2</Acronym>
     <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -7988,6 +7988,13 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11206</Id>
+    <Title>Biology, ecology and dynamic of the North Atlantic Albacore exploited by the Spanish fishery</Title>
+    <Acronym>ATLANTAS-2</Acronym>
+    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11314</Id>
     <Title>Study of the biology and fishery of fishing bait and trolling albacore in the North Atlantic Ocean and Mediterranean Sea.</Title>
     <Acronym>ATLANALB</Acronym>
@@ -7998,20 +8005,6 @@
     <Id>11315</Id>
     <Title>Biology, ecology and surface fisheries of the albacore of the north Atlantic Ocean and Mediterranean Sea</Title>
     <Acronym>ATLANTA</Acronym>
-    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11206</Id>
-    <Title>Biology, ecology and dynamic of the North Atlantic Albacore exploited by the Spanish fishery</Title>
-    <Acronym>ATLANTAS-2</Acronym>
-    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10899</Id>
-    <Title>Evaluation of the demersal fisheries resources in Porcupine area</Title>
-    <Acronym>PORCUPINE</Acronym>
     <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -8030,6 +8023,13 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>10899</Id>
+    <Title>Evaluation of the demersal fisheries resources in Porcupine area</Title>
+    <Acronym>PORCUPINE</Acronym>
+    <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>3061</Id>
     <Title>Remote sensing characterization of hydrographic features in South Biscay</Title>
     <Acronym>HIDROCAN</Acronym>
@@ -8037,16 +8037,16 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10641</Id>
-    <Title>Climatic Variability Study in North East Atlantic</Title>
-    <Acronym>VACLAN</Acronym>
+    <Id>10889</Id>
+    <Title>Consolidation, coordination and Optimization of the observing system and evaluation of climatic variability of northeast Atlantic and the Bay of Biscay oceanic</Title>
+    <Acronym>COVACLAN</Acronym>
     <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10889</Id>
-    <Title>Consolidation, coordination and Optimization of the observing system and evaluation of climatic variability of northeast Atlantic and the Bay of Biscay oceanic</Title>
-    <Acronym>COVACLAN</Acronym>
+    <Id>10641</Id>
+    <Title>Climatic Variability Study in North East Atlantic</Title>
+    <Acronym>VACLAN</Acronym>
     <Coordinator>IEO-CSIC, Santander Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -8114,16 +8114,16 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11207</Id>
-    <Title>Study of the marine resources in waters of the Southwestern Atlantic Ocean</Title>
-    <Acronym>ATLANTIS</Acronym>
+    <Id>11316</Id>
+    <Title>SouthWest Atlantic Fisheries</Title>
+    <Acronym>ATSW</Acronym>
     <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11316</Id>
-    <Title>SouthWest Atlantic Fisheries</Title>
-    <Acronym>ATSW</Acronym>
+    <Id>11207</Id>
+    <Title>Study of the marine resources in waters of the Southwestern Atlantic Ocean</Title>
+    <Acronym>ATLANTIS</Acronym>
     <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -8184,16 +8184,16 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11330</Id>
+    <Id>10677</Id>
     <Title>Long distance fisheries biology</Title>
-    <Acronym>BIOPESLE-2</Acronym>
+    <Acronym>BIOPESLE</Acronym>
     <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10677</Id>
+    <Id>11330</Id>
     <Title>Long distance fisheries biology</Title>
-    <Acronym>BIOPESLE</Acronym>
+    <Acronym>BIOPESLE-2</Acronym>
     <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -8268,13 +8268,6 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3058</Id>
-    <Title>Far Fisheries of the North Atlantic (PESQLEJAN)</Title>
-    <Acronym>PESQLEJjAN</Acronym>
-    <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11198</Id>
     <Title>Spanish Deep-Sea Fisheries in North-Atlantic Ocean</Title>
     <Acronym>PESLEESAN</Acronym>
@@ -8282,9 +8275,9 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11222</Id>
-    <Title>Follow-up of the marine pollution on the Atlantic Spanish coast in the area of the OSPAR Convention: Integration of the chemical and biological monitoring</Title>
-    <Acronym>CONQUIBIOS</Acronym>
+    <Id>3058</Id>
+    <Title>Far Fisheries of the North Atlantic (PESQLEJAN)</Title>
+    <Acronym>PESQLEJjAN</Acronym>
     <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -8292,6 +8285,13 @@
     <Id>10542</Id>
     <Title>Study of heavy metal content in mussels and sediments of the Spanish Atlantic coast</Title>
     <Acronym>METATLANT</Acronym>
+    <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11222</Id>
+    <Title>Follow-up of the marine pollution on the Atlantic Spanish coast in the area of the OSPAR Convention: Integration of the chemical and biological monitoring</Title>
+    <Acronym>CONQUIBIOS</Acronym>
     <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -8338,9 +8338,9 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11836</Id>
-    <Title>Variabilidad de la estructura y funcionamiento de las redes tróficas pelágicas en áreas productivas del mar de Alborán</Title>
-    <Acronym>TROFOALBORAN</Acronym>
+    <Id>11242</Id>
+    <Title>Evaluation of the  condition in the Mediterranean Iberian littoral: spatial distribution and temporary trends of eutrophication indicators (MEDPOL program)</Title>
+    <Acronym>EUTROFIZACION</Acronym>
     <Coordinator>IEO-CSIC, Malaga Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -8352,30 +8352,9 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11242</Id>
-    <Title>Evaluation of the  condition in the Mediterranean Iberian littoral: spatial distribution and temporary trends of eutrophication indicators (MEDPOL program)</Title>
-    <Acronym>EUTROFIZACION</Acronym>
-    <Coordinator>IEO-CSIC, Malaga Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11201</Id>
-    <Title>LAS COMUNIDADES BENTONICAS DEL ARCO DE SCOTIA: COMPARACION ENTRE LA BIODIVERSIDAD DE LA ANTARTIDA OCCIDENTAL Y ORIENTAL</Title>
-    <Acronym />
-    <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12510</Id>
-    <Title>Biodiversidad de los ecosistemas bentónicos de África</Title>
-    <Acronym>ECOAFRIK_3</Acronym>
-    <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10642</Id>
-    <Title>Integrated study of the benthonic biodiversity of Bellingshausen Sea and Antartic Peninsula (West Antartida)</Title>
-    <Acronym>BENTART-2006</Acronym>
+    <Id>11836</Id>
+    <Title>Variabilidad de la estructura y funcionamiento de las redes tróficas pelágicas en áreas productivas del mar de Alborán</Title>
+    <Acronym>TROFOALBORAN</Acronym>
     <Coordinator>IEO-CSIC, Malaga Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -8387,6 +8366,27 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>12510</Id>
+    <Title>Biodiversidad de los ecosistemas bentónicos de África</Title>
+    <Acronym>ECOAFRIK_3</Acronym>
+    <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11201</Id>
+    <Title>LAS COMUNIDADES BENTONICAS DEL ARCO DE SCOTIA: COMPARACION ENTRE LA BIODIVERSIDAD DE LA ANTARTIDA OCCIDENTAL Y ORIENTAL</Title>
+    <Acronym />
+    <Coordinator>IEO-CSIC, Vigo Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10642</Id>
+    <Title>Integrated study of the benthonic biodiversity of Bellingshausen Sea and Antartic Peninsula (West Antartida)</Title>
+    <Acronym>BENTART-2006</Acronym>
+    <Coordinator>IEO-CSIC, Malaga Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10631</Id>
     <Title>Integrated Historic Analysis of the Oceanic climate</Title>
     <Acronym>AHINCO</Acronym>
@@ -8394,16 +8394,16 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11310</Id>
-    <Title>Estimations of abundance and variations in the populations of small pelagic fish of the Mediterranean Sea</Title>
-    <Acronym>APEMED</Acronym>
+    <Id>11259</Id>
+    <Title>Evaluation of the Mediterranean pelagic resources</Title>
+    <Acronym>PELMED3</Acronym>
     <Coordinator>IEO-CSIC, Malaga Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11259</Id>
-    <Title>Evaluation of the Mediterranean pelagic resources</Title>
-    <Acronym>PELMED3</Acronym>
+    <Id>11310</Id>
+    <Title>Estimations of abundance and variations in the populations of small pelagic fish of the Mediterranean Sea</Title>
+    <Acronym>APEMED</Acronym>
     <Coordinator>IEO-CSIC, Malaga Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -8625,13 +8625,6 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10666</Id>
-    <Title>Spatial distribution,temporal tendencies and biologic effects associated with chemical pollution in problematic points and reference IberianMediterranean coast</Title>
-    <Acronym>MEDPOLIEO</Acronym>
-    <Coordinator>IEO-CSIC,  Murcia Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11254</Id>
     <Title>Study of the marine pollution and his biological effects in the Mediterranean Spanish littoral: finalization of activities and disclosure of results </Title>
     <Acronym>MEDPOLIEO-T</Acronym>
@@ -8650,6 +8643,13 @@
     <Title>Study of the effects of the heavy metals pollution on Mytilus galloprovincialis from the Spanish Mediterranean coast</Title>
     <Acronym />
     <Coordinator>IEO-CSIC, Murcia Experimental Aquaculture Facilities</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10666</Id>
+    <Title>Spatial distribution,temporal tendencies and biologic effects associated with chemical pollution in problematic points and reference IberianMediterranean coast</Title>
+    <Acronym>MEDPOLIEO</Acronym>
+    <Coordinator>IEO-CSIC,  Murcia Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -8744,6 +8744,13 @@
     <Country>Spain</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11890</Id>
+    <Title>Temporal series of Mediterranean oceanographic data</Title>
+    <Acronym>RADMED-DOS</Acronym>
+    <Coordinator>IEO-CSIC, Balearic Islands Oceanographic Centre</Coordinator>
+    <Country>Spain</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>3074</Id>
     <Title>Study of tides in Balearic Sea</Title>
     <Acronym>MAREBAL</Acronym>
@@ -8775,13 +8782,6 @@
     <Id>10904</Id>
     <Title>Regional circulation, environment and larval distribution of the red tuna and related species in the Balearic Islands waters</Title>
     <Acronym>TUNIBAL</Acronym>
-    <Coordinator>IEO-CSIC, Balearic Islands Oceanographic Centre</Coordinator>
-    <Country>Spain</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11890</Id>
-    <Title>Temporal series of Mediterranean oceanographic data</Title>
-    <Acronym>RADMED-DOS</Acronym>
     <Coordinator>IEO-CSIC, Balearic Islands Oceanographic Centre</Coordinator>
     <Country>Spain</Country>
   </SimpleMetadata>
@@ -9087,16 +9087,16 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11954</Id>
-    <Title>Supporting governance and multi-stakeholder participation in aquaculture research and innovation</Title>
-    <Acronym>AquaInnova</Acronym>
+    <Id>11975</Id>
+    <Title>European Marine Research Knowledge Transfer and Uptake of Results</Title>
+    <Acronym>MarineTT</Acronym>
     <Coordinator>AquaTT UETP Ltd.</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11975</Id>
-    <Title>European Marine Research Knowledge Transfer and Uptake of Results</Title>
-    <Acronym>MarineTT</Acronym>
+    <Id>11954</Id>
+    <Title>Supporting governance and multi-stakeholder participation in aquaculture research and innovation</Title>
+    <Acronym>AquaInnova</Acronym>
     <Coordinator>AquaTT UETP Ltd.</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
@@ -9150,13 +9150,6 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7916</Id>
-    <Title>Coastal Communities Network (CoCoNet)</Title>
-    <Acronym>CoCoNet</Acronym>
-    <Coordinator>Department of Zoology, School of Biological, Earth and Environmental Sciences, University College Cork</Coordinator>
-    <Country>Ireland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>7918</Id>
     <Title>CorePoint</Title>
     <Acronym>CorePoint</Acronym>
@@ -9199,6 +9192,13 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>7916</Id>
+    <Title>Coastal Communities Network (CoCoNet)</Title>
+    <Acronym>CoCoNet</Acronym>
+    <Coordinator>Department of Zoology, School of Biological, Earth and Environmental Sciences, University College Cork</Coordinator>
+    <Country>Ireland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10694</Id>
     <Title>Joined-up Thinking from Joined-up Data, Fisheries Data Integration and Analysis</Title>
     <Acronym>Joined-up Thinking from Joined-up Data, Fisheries Data Integration and Analysis</Acronym>
@@ -9227,9 +9227,9 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7907</Id>
-    <Title>The assessment of orange roughy (Hoplostethus atlanticus) stocks in the deep waters off the west of Ireland</Title>
-    <Acronym>Orange Roughy</Acronym>
+    <Id>10699</Id>
+    <Title>Modelling the Ecology, Population Dynamics, Assessment &amp; Management of Nephrops in the Waters around GB &amp; Ireland</Title>
+    <Acronym>Modelling the Ecology, Population Dynamics, Assessment &amp; Management of Nephrops</Acronym>
     <Coordinator>Department of Zoology, School of Biological, Earth and Environmental Sciences, University College Cork</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
@@ -9241,9 +9241,9 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10699</Id>
-    <Title>Modelling the Ecology, Population Dynamics, Assessment &amp; Management of Nephrops in the Waters around GB &amp; Ireland</Title>
-    <Acronym>Modelling the Ecology, Population Dynamics, Assessment &amp; Management of Nephrops</Acronym>
+    <Id>7907</Id>
+    <Title>The assessment of orange roughy (Hoplostethus atlanticus) stocks in the deep waters off the west of Ireland</Title>
+    <Acronym>Orange Roughy</Acronym>
     <Coordinator>Department of Zoology, School of Biological, Earth and Environmental Sciences, University College Cork</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
@@ -9395,13 +9395,6 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10854</Id>
-    <Title>Long-Term Dynamics of Herring Populations around Ireland</Title>
-    <Acronym />
-    <Coordinator>Atlantic Technological University</Coordinator>
-    <Country>Ireland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>10864</Id>
     <Title>Early life history of commercially important flatfish species</Title>
     <Acronym />
@@ -9418,6 +9411,13 @@
   <SimpleMetadata>
     <Id>10866</Id>
     <Title>Data for the sustainable management of an emerging fisheries resource</Title>
+    <Acronym />
+    <Coordinator>Atlantic Technological University</Coordinator>
+    <Country>Ireland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10854</Id>
+    <Title>Long-Term Dynamics of Herring Populations around Ireland</Title>
     <Acronym />
     <Coordinator>Atlantic Technological University</Coordinator>
     <Country>Ireland</Country>
@@ -9605,16 +9605,16 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10591</Id>
-    <Title>Impacts of Increased Atmospheric CO2 on Ocean Chemistry and Ecosystems</Title>
-    <Acronym>N/A</Acronym>
+    <Id>10597</Id>
+    <Title>MAP: Secondary Marine Aerosol Production from Natural Sources Programme</Title>
+    <Acronym>MAP</Acronym>
     <Coordinator>University of Galway</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10597</Id>
-    <Title>MAP: Secondary Marine Aerosol Production from Natural Sources Programme</Title>
-    <Acronym>MAP</Acronym>
+    <Id>10591</Id>
+    <Title>Impacts of Increased Atmospheric CO2 on Ocean Chemistry and Ecosystems</Title>
+    <Acronym>N/A</Acronym>
     <Coordinator>University of Galway</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
@@ -9668,16 +9668,16 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7992</Id>
-    <Title>Validation of non-contact techniques for marine water characteristics</Title>
-    <Acronym>N/A</Acronym>
+    <Id>7990</Id>
+    <Title>Iodine in commercially used Irish seaweeds</Title>
+    <Acronym>PDOC/01/005</Acronym>
     <Coordinator>University College Dublin</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7990</Id>
-    <Title>Iodine in commercially used Irish seaweeds</Title>
-    <Acronym>PDOC/01/005</Acronym>
+    <Id>7992</Id>
+    <Title>Validation of non-contact techniques for marine water characteristics</Title>
+    <Acronym>N/A</Acronym>
     <Coordinator>University College Dublin</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
@@ -9696,6 +9696,13 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>10862</Id>
+    <Title>Trends And Trajectories Of Ireland’s Seafood Needs: Towards The Goal Of Sustainability</Title>
+    <Acronym />
+    <Coordinator>University College Dublin</Coordinator>
+    <Country>Ireland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>8007</Id>
     <Title>The life history &amp; spatial pop structure of the smooth hound species, Mustelus mustelus &amp; Mustelus asterias NE Atlantic</Title>
     <Acronym>MARBEE</Acronym>
@@ -9703,8 +9710,8 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10862</Id>
-    <Title>Trends And Trajectories Of Ireland’s Seafood Needs: Towards The Goal Of Sustainability</Title>
+    <Id>10839</Id>
+    <Title>Biodiversity-ecosystem function relationships: the importance of functional diversity, mechanism and environmental context</Title>
     <Acronym />
     <Coordinator>University College Dublin</Coordinator>
     <Country>Ireland</Country>
@@ -9727,13 +9734,6 @@
     <Id>8012</Id>
     <Title>Population dynamics of key species in rocky intertidal habitats - Patellid impets in a warming world</Title>
     <Acronym>N/A</Acronym>
-    <Coordinator>University College Dublin</Coordinator>
-    <Country>Ireland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10839</Id>
-    <Title>Biodiversity-ecosystem function relationships: the importance of functional diversity, mechanism and environmental context</Title>
-    <Acronym />
     <Coordinator>University College Dublin</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
@@ -9941,13 +9941,6 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11984</Id>
-    <Title>Remote Sensing as a Tool for Detection, Quantification and evaluation of Submarine Groundwater Discharge to Irish Coastal Waters</Title>
-    <Acronym>RSTDQSDGDICW</Acronym>
-    <Coordinator>Marine Institute</Coordinator>
-    <Country>Ireland</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11953</Id>
     <Title>The Assessment and Potential Human Impact of Exposure to Environmental Contaminants on Marine and Freshwater Bivalves</Title>
     <Acronym>APHIEECMFB</Acronym>
@@ -9959,6 +9952,13 @@
     <Title>Using Participatory Governance to Adapt to Climate Change</Title>
     <Acronym>CLAD</Acronym>
     <Coordinator>Environmental Protection Agency</Coordinator>
+    <Country>Ireland</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11984</Id>
+    <Title>Remote Sensing as a Tool for Detection, Quantification and evaluation of Submarine Groundwater Discharge to Irish Coastal Waters</Title>
+    <Acronym>RSTDQSDGDICW</Acronym>
+    <Coordinator>Marine Institute</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -10109,15 +10109,15 @@
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10875</Id>
-    <Title>The analysis of vegetation composition in relation to salinity levels in Irish Lagoons in order to create a base line for determining the impact of global clima</Title>
+    <Id>10879</Id>
+    <Title>The role of salinity in structuring intertidal estuarine ecosystems with regard to global climate change.</Title>
     <Acronym />
     <Coordinator>University College Cork</Coordinator>
     <Country>Ireland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10879</Id>
-    <Title>The role of salinity in structuring intertidal estuarine ecosystems with regard to global climate change.</Title>
+    <Id>10875</Id>
+    <Title>The analysis of vegetation composition in relation to salinity levels in Irish Lagoons in order to create a base line for determining the impact of global clima</Title>
     <Acronym />
     <Coordinator>University College Cork</Coordinator>
     <Country>Ireland</Country>
@@ -10446,6 +10446,13 @@
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11155</Id>
+    <Title>Optimisation of coastal defence works in front of the Flemish coast</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Hydraulics Laboratory</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11140</Id>
     <Title>Time dependent transport of natural sediment mixtures with application toward sewer systems and river estuaries</Title>
     <Acronym>unknown</Acronym>
@@ -10462,20 +10469,6 @@
   <SimpleMetadata>
     <Id>11134</Id>
     <Title>Study of the behaviour of partly cohesive sediments in steady and unsteady flow</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Hydraulics Laboratory</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11155</Id>
-    <Title>Optimisation of coastal defence works in front of the Flemish coast</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Hydraulics Laboratory</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11139</Id>
-    <Title>Laboratory investigation on wave run-up and overtopping</Title>
     <Acronym>unknown</Acronym>
     <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Hydraulics Laboratory</Coordinator>
     <Country>Belgium</Country>
@@ -10498,6 +10491,13 @@
     <Id>11137</Id>
     <Title>Geohydraulic behaviour of rubble breakwaters: Opticrest</Title>
     <Acronym>OPTICREST</Acronym>
+    <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Hydraulics Laboratory</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11139</Id>
+    <Title>Laboratory investigation on wave run-up and overtopping</Title>
+    <Acronym>unknown</Acronym>
     <Coordinator>Ghent University, Faculty of Engineering, Department of Civil Engineering, Hydraulics Laboratory</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
@@ -10699,13 +10699,6 @@
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11179</Id>
-    <Title>Lipofilicity and normalization of organic micro- pollutants in organic systems</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11150</Id>
     <Title>Marine ecosystems functioning</Title>
     <Acronym>unknown</Acronym>
@@ -10713,8 +10706,8 @@
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11151</Id>
-    <Title>Management mangroves of Kenya: synthesis ecological data</Title>
+    <Id>11179</Id>
+    <Title>Lipofilicity and normalization of organic micro- pollutants in organic systems</Title>
     <Acronym>unknown</Acronym>
     <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
     <Country>Belgium</Country>
@@ -10722,6 +10715,13 @@
   <SimpleMetadata>
     <Id>11181</Id>
     <Title>Cooperation in the investigations over long-term exploitation of natural resources in mangrove forests</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11151</Id>
+    <Title>Management mangroves of Kenya: synthesis ecological data</Title>
     <Acronym>unknown</Acronym>
     <Coordinator>Vrije Universiteit Brussel, Faculty of Sciences, Department of Biology, Laboratory of Ecology and Systematics</Coordinator>
     <Country>Belgium</Country>
@@ -10769,13 +10769,6 @@
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11065</Id>
-    <Title>Habitat suitability models</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Sciences, Department of Biology, Marine Biology Section</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11363</Id>
     <Title>Artificial reefs in relationship with the infauna of surrounding soft substrates: the role of changes in predator-prey interactions versus changes in the physic</Title>
     <Acronym />
@@ -10811,6 +10804,13 @@
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11065</Id>
+    <Title>Habitat suitability models</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Sciences, Department of Biology, Marine Biology Section</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11060</Id>
     <Title>Molecular diversity of marine invertebrates</Title>
     <Acronym>unknown</Acronym>
@@ -10839,6 +10839,13 @@
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11104</Id>
+    <Title>Dynamics and assessment of Kenyan mangrove ecosystem</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Vrije Universiteit Brussels, Faculty of Sciences, Department of Chemistry, Laboratory of Analytical and Environmental Chemistry</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11076</Id>
     <Title>Interaction between water column and intertidal zones of Scheldt River: Biogeochemical cycles of C and N</Title>
     <Acronym>unknown</Acronym>
@@ -10846,9 +10853,9 @@
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11104</Id>
-    <Title>Dynamics and assessment of Kenyan mangrove ecosystem</Title>
-    <Acronym>unknown</Acronym>
+    <Id>11121</Id>
+    <Title>Ocean Margin Exchange II-phase I</Title>
+    <Acronym>OMEX-II</Acronym>
     <Coordinator>Vrije Universiteit Brussels, Faculty of Sciences, Department of Chemistry, Laboratory of Analytical and Environmental Chemistry</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
@@ -10863,13 +10870,6 @@
     <Id>11159</Id>
     <Title>Modelling of biogeochemical processes that define the fluxes of biogenic material in the head of water</Title>
     <Acronym>unknown</Acronym>
-    <Coordinator>Vrije Universiteit Brussels, Faculty of Sciences, Department of Chemistry, Laboratory of Analytical and Environmental Chemistry</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11121</Id>
-    <Title>Ocean Margin Exchange II-phase I</Title>
-    <Acronym>OMEX-II</Acronym>
     <Coordinator>Vrije Universiteit Brussels, Faculty of Sciences, Department of Chemistry, Laboratory of Analytical and Environmental Chemistry</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
@@ -11175,41 +11175,6 @@
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11117</Id>
-    <Title>Coring Stable and Instable Realms in European Seas</Title>
-    <Acronym>CORSAIRES</Acronym>
-    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11086</Id>
-    <Title>Microbial Diversity and Functionality in Cold-Water Coral Reef Ecosystems</Title>
-    <Acronym>MICROSYSTEMS</Acronym>
-    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11171</Id>
-    <Title>Marine geology: Fase 2 - Partim Seismostratigraphy</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11163</Id>
-    <Title>High resolution geophysical study on the 'Paardenmarkt'</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11164</Id>
-    <Title>Theoretical and experimental study of the destabilization of methane hydrates at the seabed</Title>
-    <Acronym>unknown</Acronym>
-    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11123</Id>
     <Title>Slope instability and mass wasting events along glacial continental margins</Title>
     <Acronym>unknown</Acronym>
@@ -11240,6 +11205,41 @@
   <SimpleMetadata>
     <Id>11129</Id>
     <Title>Deep sea geophysics. Objective: Natural methane hydrates</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11117</Id>
+    <Title>Coring Stable and Instable Realms in European Seas</Title>
+    <Acronym>CORSAIRES</Acronym>
+    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11086</Id>
+    <Title>Microbial Diversity and Functionality in Cold-Water Coral Reef Ecosystems</Title>
+    <Acronym>MICROSYSTEMS</Acronym>
+    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11171</Id>
+    <Title>Marine geology: Fase 2 - Partim Seismostratigraphy</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11163</Id>
+    <Title>High resolution geophysical study on the 'Paardenmarkt'</Title>
+    <Acronym>unknown</Acronym>
+    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11164</Id>
+    <Title>Theoretical and experimental study of the destabilization of methane hydrates at the seabed</Title>
     <Acronym>unknown</Acronym>
     <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
     <Country>Belgium</Country>
@@ -11393,16 +11393,16 @@
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9548</Id>
-    <Title>SARA-JANUS</Title>
-    <Acronym>SARA-JANUS</Acronym>
+    <Id>9571</Id>
+    <Title>ESONET - EUROPEAN SEAFLOOR OBSERVATORIES NETWORK</Title>
+    <Acronym>ESONET</Acronym>
     <Coordinator>Ifremer, Technologicals Research and Development</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9571</Id>
-    <Title>ESONET - EUROPEAN SEAFLOOR OBSERVATORIES NETWORK</Title>
-    <Acronym>ESONET</Acronym>
+    <Id>9548</Id>
+    <Title>SARA-JANUS</Title>
+    <Acronym>SARA-JANUS</Acronym>
     <Coordinator>Ifremer, Technologicals Research and Development</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
@@ -11526,16 +11526,16 @@
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11823</Id>
-    <Title>EXTREMA</Title>
-    <Acronym>EXTREMA</Acronym>
+    <Id>10573</Id>
+    <Title>EXTREME</Title>
+    <Acronym>EXTREME</Acronym>
     <Coordinator>CE de Cadarache IRSN/SERNAT/LERCM, Institut de Radioprotection et de Surete Nucleaire</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10573</Id>
-    <Title>EXTREME</Title>
-    <Acronym>EXTREME</Acronym>
+    <Id>11823</Id>
+    <Title>EXTREMA</Title>
+    <Acronym>EXTREMA</Acronym>
     <Coordinator>CE de Cadarache IRSN/SERNAT/LERCM, Institut de Radioprotection et de Surete Nucleaire</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
@@ -12177,16 +12177,16 @@
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10763</Id>
-    <Title>MOMAR - FRANCE (Monitoring Mid Atlantic Ridge)</Title>
-    <Acronym>MOMAR</Acronym>
+    <Id>9605</Id>
+    <Title>DORSALES</Title>
+    <Acronym>DORSALES</Acronym>
     <Coordinator>Institute of Earth Physics of Paris</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9605</Id>
-    <Title>DORSALES</Title>
-    <Acronym>DORSALES</Acronym>
+    <Id>10763</Id>
+    <Title>MOMAR - FRANCE (Monitoring Mid Atlantic Ridge)</Title>
+    <Acronym>MOMAR</Acronym>
     <Coordinator>Institute of Earth Physics of Paris</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
@@ -12296,16 +12296,16 @@
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12391</Id>
-    <Title>European Marine Observation and Data Network - Bathymetry - High Resolution Seabed Mapping</Title>
-    <Acronym>EMODnet HRSM2</Acronym>
+    <Id>12237</Id>
+    <Title>European Marine Observation and Data Network - High Resolution Seabed Mapping</Title>
+    <Acronym>EMODnet HRSM</Acronym>
     <Coordinator>Hydrographic and oceanographic service of the French navy</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12237</Id>
-    <Title>European Marine Observation and Data Network - High Resolution Seabed Mapping</Title>
-    <Acronym>EMODnet HRSM</Acronym>
+    <Id>12391</Id>
+    <Title>European Marine Observation and Data Network - Bathymetry - High Resolution Seabed Mapping</Title>
+    <Acronym>EMODnet HRSM2</Acronym>
     <Coordinator>Hydrographic and oceanographic service of the French navy</Coordinator>
     <Country>France</Country>
   </SimpleMetadata>
@@ -12933,16 +12933,16 @@
     <Country>Sweden</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10710</Id>
-    <Title>Development of fishing gears with reduced effects on the environment</Title>
-    <Acronym>DEGREE</Acronym>
+    <Id>7936</Id>
+    <Title>NECESSITY - Nephrops and Cetacean Species Selection Information and Technology</Title>
+    <Acronym>NECESSITY</Acronym>
     <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7936</Id>
-    <Title>NECESSITY - Nephrops and Cetacean Species Selection Information and Technology</Title>
-    <Acronym>NECESSITY</Acronym>
+    <Id>10710</Id>
+    <Title>Development of fishing gears with reduced effects on the environment</Title>
+    <Acronym>DEGREE</Acronym>
     <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -12958,48 +12958,6 @@
     <Title>SALIMPACT: The Impact of Aquaculture on Natural Salmonid Populations</Title>
     <Acronym>SALIMPACT</Acronym>
     <Coordinator>Wageningen University, Cell Biology and Immunology Group</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12148</Id>
-    <Title>Maasvlakte 2 Nature Compensation Project Vis</Title>
-    <Acronym>MV2 Vis</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12082</Id>
-    <Title>Monitoring Windfarm Prinses Amalia</Title>
-    <Acronym>PAWP</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12092</Id>
-    <Title>Shortlist Wind op Zee</Title>
-    <Acronym>SWOZ</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11926</Id>
-    <Title>Discard Sampling Gillnet Fishery</Title>
-    <Acronym>DISGILL</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11927</Id>
-    <Title>Discard Sampling Otter Trawl Fishery</Title>
-    <Acronym>DISOT</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11915</Id>
-    <Title>Monitoring Offshore Windfarm Egmond aan Zee</Title>
-    <Acronym>OWEZ</Acronym>
-    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -13073,9 +13031,44 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11615</Id>
-    <Title>Discard Sampling Pelagic Fishery</Title>
-    <Acronym>DISP</Acronym>
+    <Id>12148</Id>
+    <Title>Maasvlakte 2 Nature Compensation Project Vis</Title>
+    <Acronym>MV2 Vis</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12082</Id>
+    <Title>Monitoring Windfarm Prinses Amalia</Title>
+    <Acronym>PAWP</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12092</Id>
+    <Title>Shortlist Wind op Zee</Title>
+    <Acronym>SWOZ</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11926</Id>
+    <Title>Discard Sampling Gillnet Fishery</Title>
+    <Acronym>DISGILL</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11927</Id>
+    <Title>Discard Sampling Otter Trawl Fishery</Title>
+    <Acronym>DISOT</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11915</Id>
+    <Title>Monitoring Offshore Windfarm Egmond aan Zee</Title>
+    <Acronym>OWEZ</Acronym>
     <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -13097,6 +13090,13 @@
     <Id>11605</Id>
     <Title>Discard Sampling Beam Trawl Fishery</Title>
     <Acronym>DISBT</Acronym>
+    <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11615</Id>
+    <Title>Discard Sampling Pelagic Fishery</Title>
+    <Acronym>DISP</Acronym>
     <Coordinator>Wageningen Marine Research, IJmuiden</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -13185,13 +13185,6 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9697</Id>
-    <Title>Biological-chemical  instrument</Title>
-    <Acronym>WT*2-BCI</Acronym>
-    <Coordinator>Rijkswaterstaat Water, Traffic and Environment</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>9730</Id>
     <Title>SAFECOAST</Title>
     <Acronym>SAFECOAST</Acronym>
@@ -13202,6 +13195,13 @@
     <Id>9728</Id>
     <Title>Densitycurrents study fot the long-term vision of the Scheldt Estuary</Title>
     <Acronym>Density Currents study Scheldt estuary</Acronym>
+    <Coordinator>Rijkswaterstaat Water, Traffic and Environment</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>9697</Id>
+    <Title>Biological-chemical  instrument</Title>
+    <Acronym>WT*2-BCI</Acronym>
     <Coordinator>Rijkswaterstaat Water, Traffic and Environment</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -13262,16 +13262,16 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9669</Id>
-    <Title>Tox-plankton</Title>
-    <Acronym>Tox-plankton</Acronym>
+    <Id>9698</Id>
+    <Title>Field effects</Title>
+    <Acronym>WT*3-eff</Acronym>
     <Coordinator>Rijkswaterstaat Water, Traffic and Environment</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9698</Id>
-    <Title>Field effects</Title>
-    <Acronym>WT*3-eff</Acronym>
+    <Id>9669</Id>
+    <Title>Tox-plankton</Title>
+    <Acronym>Tox-plankton</Acronym>
     <Coordinator>Rijkswaterstaat Water, Traffic and Environment</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -13619,13 +13619,6 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9724</Id>
-    <Title>The European Marine Research Stations Network</Title>
-    <Acronym>MARS</Acronym>
-    <Coordinator>Netherlands Institute for Ecology, Centre for Estuarine and Marine Ecology</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>10139</Id>
     <Title>Creating a Long Term Infrastructure for Marine Biodiversity Research European Economic Area and the Newly Assoc. States</Title>
     <Acronym>MARBENA</Acronym>
@@ -13643,6 +13636,13 @@
     <Id>8027</Id>
     <Title>MARine BIOdiversity research in Europe</Title>
     <Acronym>BIOMARE</Acronym>
+    <Coordinator>Netherlands Institute for Ecology, Centre for Estuarine and Marine Ecology</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>9724</Id>
+    <Title>The European Marine Research Stations Network</Title>
+    <Acronym>MARS</Acronym>
     <Coordinator>Netherlands Institute for Ecology, Centre for Estuarine and Marine Ecology</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -13668,9 +13668,9 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9726</Id>
-    <Title>Black Sea Web Project</Title>
-    <Acronym>Black Sea Web</Acronym>
+    <Id>9661</Id>
+    <Title>Caspian Scientific Network Website</Title>
+    <Acronym>CaspScience-Net</Acronym>
     <Coordinator>Marine Information Service</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -13682,23 +13682,16 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>9726</Id>
+    <Title>Black Sea Web Project</Title>
+    <Acronym>Black Sea Web</Acronym>
+    <Coordinator>Marine Information Service</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10426</Id>
     <Title>Black Sea Scientific Network</Title>
     <Acronym>BlackSeaScene</Acronym>
-    <Coordinator>Marine Information Service</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>9661</Id>
-    <Title>Caspian Scientific Network Website</Title>
-    <Acronym>CaspScience-Net</Acronym>
-    <Coordinator>Marine Information Service</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>9662</Id>
-    <Title>Electronic Marketplace for Information on Decommissioning of Offshore Installations - EMIDOI</Title>
-    <Acronym>EMIDOI</Acronym>
     <Coordinator>Marine Information Service</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -13745,34 +13738,6 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9664</Id>
-    <Title>Marine Sand and Gravel Information Service</Title>
-    <Acronym>MAGIS</Acronym>
-    <Coordinator>Marine Information Service</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11373</Id>
-    <Title>Preparatory action for European Marine Observation and Data Network - Lot 1 - Hydrography</Title>
-    <Acronym>EMODNet Hydrography</Acronym>
-    <Coordinator>Marine Information Service</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10783</Id>
-    <Title>Upgrade Black Sea Scientific Network</Title>
-    <Acronym>UP-GRADE BS-SCENE</Acronym>
-    <Coordinator>Marine Information Service</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10784</Id>
-    <Title>Caspian Sea Environmental And Industrial Data &amp; Information Service</Title>
-    <Acronym>CASPINFO</Acronym>
-    <Coordinator>Marine Information Service</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>9727</Id>
     <Title>System of industry metocean data for the offshore and research communities</Title>
     <Acronym>SIMORC</Acronym>
@@ -13801,6 +13766,41 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>9664</Id>
+    <Title>Marine Sand and Gravel Information Service</Title>
+    <Acronym>MAGIS</Acronym>
+    <Coordinator>Marine Information Service</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11373</Id>
+    <Title>Preparatory action for European Marine Observation and Data Network - Lot 1 - Hydrography</Title>
+    <Acronym>EMODNet Hydrography</Acronym>
+    <Coordinator>Marine Information Service</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10783</Id>
+    <Title>Upgrade Black Sea Scientific Network</Title>
+    <Acronym>UP-GRADE BS-SCENE</Acronym>
+    <Coordinator>Marine Information Service</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10784</Id>
+    <Title>Caspian Sea Environmental And Industrial Data &amp; Information Service</Title>
+    <Acronym>CASPINFO</Acronym>
+    <Coordinator>Marine Information Service</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>9662</Id>
+    <Title>Electronic Marketplace for Information on Decommissioning of Offshore Installations - EMIDOI</Title>
+    <Acronym>EMIDOI</Acronym>
+    <Coordinator>Marine Information Service</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11370</Id>
     <Title>Managing Cultural Heritage Underwater</Title>
     <Acronym>MACHU</Acronym>
@@ -13822,6 +13822,13 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11910</Id>
+    <Title>Building with Nature</Title>
+    <Acronym>BwN</Acronym>
+    <Coordinator>Wageningen Marine Research (Yerseke)</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11673</Id>
     <Title>Maasvlakte 2 Nature Compensation Project</Title>
     <Acronym>MV2 Benthos</Acronym>
@@ -13836,23 +13843,9 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11910</Id>
-    <Title>Building with Nature</Title>
-    <Acronym>BwN</Acronym>
-    <Coordinator>Wageningen Marine Research (Yerseke)</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11695</Id>
     <Title>Monitoring seed mussel collectors</Title>
     <Acronym>SMC</Acronym>
-    <Coordinator>Wageningen Marine Research (Yerseke)</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11675</Id>
-    <Title>Monitoring the effect on benthic communities at sites in the Dutch Coastal Waters were sea sand is extracted or replenished</Title>
-    <Acronym />
     <Coordinator>Wageningen Marine Research (Yerseke)</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -13887,6 +13880,13 @@
   <SimpleMetadata>
     <Id>11642</Id>
     <Title>Population dynamics of cockle beds on tidal flats in the Eastern- and Western Scheldt, the Netherlands</Title>
+    <Acronym />
+    <Coordinator>Wageningen Marine Research (Yerseke)</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11675</Id>
+    <Title>Monitoring the effect on benthic communities at sites in the Dutch Coastal Waters were sea sand is extracted or replenished</Title>
     <Acronym />
     <Coordinator>Wageningen Marine Research (Yerseke)</Coordinator>
     <Country>Netherlands</Country>
@@ -14067,9 +14067,9 @@
     <Country>Portugal</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12444</Id>
-    <Title>Monitorização Ambiental da Zona Económica Exclusiva Portuguesa</Title>
-    <Acronym>MONIZEE</Acronym>
+    <Id>11418</Id>
+    <Title>HERMIONE</Title>
+    <Acronym>HERMIONE</Acronym>
     <Coordinator>Hydrographic Institute</Coordinator>
     <Country>Portugal</Country>
   </SimpleMetadata>
@@ -14088,9 +14088,9 @@
     <Country>Portugal</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11418</Id>
-    <Title>HERMIONE</Title>
-    <Acronym>HERMIONE</Acronym>
+    <Id>12444</Id>
+    <Title>Monitorização Ambiental da Zona Económica Exclusiva Portuguesa</Title>
+    <Acronym>MONIZEE</Acronym>
     <Coordinator>Hydrographic Institute</Coordinator>
     <Country>Portugal</Country>
   </SimpleMetadata>
@@ -14126,6 +14126,27 @@
     <Id>7662</Id>
     <Title>RIMAR - Study and quantification of natural hazards linked to the sea</Title>
     <Acronym>RIMAR</Acronym>
+    <Coordinator>Hydrographic Institute</Coordinator>
+    <Country>Portugal</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7672</Id>
+    <Title>TRANSCAN - Study of the physical processes occurred in the canyons and there effect on sedimentary transport</Title>
+    <Acronym>TRANSCAN</Acronym>
+    <Coordinator>Hydrographic Institute</Coordinator>
+    <Country>Portugal</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7664</Id>
+    <Title>NUACE - Non-Cooperant Underwater Acoustic Channel Estimation</Title>
+    <Acronym>NUACE</Acronym>
+    <Coordinator>Hydrographic Institute</Coordinator>
+    <Country>Portugal</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>7665</Id>
+    <Title>RADAR - Environmental Assessment with a Random Array of Acoustic Receivers</Title>
+    <Acronym>RADAR</Acronym>
     <Coordinator>Hydrographic Institute</Coordinator>
     <Country>Portugal</Country>
   </SimpleMetadata>
@@ -14175,27 +14196,6 @@
     <Id>7681</Id>
     <Title>DYNCOSTAL - Physical and biogeochemical dynamics of coastal countercurrents - a study case in Algarve Luff</Title>
     <Acronym>DYNCOSTAL</Acronym>
-    <Coordinator>Hydrographic Institute</Coordinator>
-    <Country>Portugal</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7672</Id>
-    <Title>TRANSCAN - Study of the physical processes occurred in the canyons and there effect on sedimentary transport</Title>
-    <Acronym>TRANSCAN</Acronym>
-    <Coordinator>Hydrographic Institute</Coordinator>
-    <Country>Portugal</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7664</Id>
-    <Title>NUACE - Non-Cooperant Underwater Acoustic Channel Estimation</Title>
-    <Acronym>NUACE</Acronym>
-    <Coordinator>Hydrographic Institute</Coordinator>
-    <Country>Portugal</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>7665</Id>
-    <Title>RADAR - Environmental Assessment with a Random Array of Acoustic Receivers</Title>
-    <Acronym>RADAR</Acronym>
     <Coordinator>Hydrographic Institute</Coordinator>
     <Country>Portugal</Country>
   </SimpleMetadata>
@@ -14910,28 +14910,28 @@
     <Id>4281</Id>
     <Title>Baltic Sea Research Programme</Title>
     <Acronym>BIREME</Acronym>
-    <Coordinator>Helsinki Commission </Coordinator>
+    <Coordinator>Baltic Marine Environment Protection Commission</Coordinator>
     <Country>Finland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>8144</Id>
     <Title>Quality assurance of phytoplankton monitoring in the Baltic sea</Title>
     <Acronym>not provided</Acronym>
-    <Coordinator>Helsinki Commission </Coordinator>
+    <Coordinator>Baltic Marine Environment Protection Commission</Coordinator>
     <Country>Finland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>10788</Id>
     <Title>Marine Monitoring in the COMBINE Programme of HELCOM</Title>
     <Acronym>COMBINE</Acronym>
-    <Coordinator>Helsinki Commission </Coordinator>
+    <Coordinator>Baltic Marine Environment Protection Commission</Coordinator>
     <Country>Finland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
     <Id>4277</Id>
     <Title>Baltic Sea Regional Project</Title>
     <Acronym>BSRP</Acronym>
-    <Coordinator>Helsinki Commission </Coordinator>
+    <Coordinator>Baltic Marine Environment Protection Commission</Coordinator>
     <Country>Finland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -14998,13 +14998,6 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12176</Id>
-    <Title>MOUNDFORCE (Dutch participation)</Title>
-    <Acronym>MOUNDFORCE  - NL</Acronym>
-    <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12198</Id>
     <Title>CARBONATE (Dutch participation)</Title>
     <Acronym>CARBONATE  - NL</Acronym>
@@ -15012,9 +15005,9 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12184</Id>
-    <Title>NIOZ North Sea Monitoring Activities (NIOZ-project)</Title>
-    <Acronym>NIOZ-NSea MONITOR</Acronym>
+    <Id>12176</Id>
+    <Title>MOUNDFORCE (Dutch participation)</Title>
+    <Acronym>MOUNDFORCE  - NL</Acronym>
     <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -15026,9 +15019,9 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12193</Id>
-    <Title>Marine Ecosystems Regulations (Dutch participation)</Title>
-    <Acronym>MERLIM  - NL</Acronym>
+    <Id>12184</Id>
+    <Title>NIOZ North Sea Monitoring Activities (NIOZ-project)</Title>
+    <Acronym>NIOZ-NSea MONITOR</Acronym>
     <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -15036,6 +15029,13 @@
     <Id>12177</Id>
     <Title>Technical Evaluation Cruises (NIOZ-project)</Title>
     <Acronym>NIOZ-Technical Test Cruises</Acronym>
+    <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12193</Id>
+    <Title>Marine Ecosystems Regulations (Dutch participation)</Title>
+    <Acronym>MERLIM  - NL</Acronym>
     <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -15103,9 +15103,9 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12175</Id>
-    <Title>Longterm Ocean-Climate Observations (Dutch participation)</Title>
-    <Acronym>LOCO  - NL</Acronym>
+    <Id>12201</Id>
+    <Title>Bay of Biscay Boundary (Dutch participation)</Title>
+    <Acronym>BBB  - NL</Acronym>
     <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -15138,9 +15138,9 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12201</Id>
-    <Title>Bay of Biscay Boundary (Dutch participation)</Title>
-    <Acronym>BBB  - NL</Acronym>
+    <Id>12175</Id>
+    <Title>Longterm Ocean-Climate Observations (Dutch participation)</Title>
+    <Acronym>LOCO  - NL</Acronym>
     <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -15215,6 +15215,13 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>12164</Id>
+    <Title>TR871 (NIOZ-project)</Title>
+    <Acronym>NIOZ-TR871</Acronym>
+    <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12202</Id>
     <Title>D. Geology of the Arabian Sea (Dutch participation)</Title>
     <Acronym>IOP-D  - NL</Acronym>
@@ -15239,13 +15246,6 @@
     <Id>12149</Id>
     <Title>A. Monsoons and Coastal Ecosystem in Kenia (Dutch participation)</Title>
     <Acronym>IOP-A &amp;lt;NL&amp;gt;</Acronym>
-    <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12164</Id>
-    <Title>TR871 (NIOZ-project)</Title>
-    <Acronym>NIOZ-TR871</Acronym>
     <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -15306,13 +15306,6 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12179</Id>
-    <Title>Changes in vertical stratification and their impact on phytoplankton communities (Dutch participation)</Title>
-    <Acronym>STRATIPHYT  - NL</Acronym>
-    <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
-    <Country>Netherlands</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12183</Id>
     <Title>Primary Production in the North Sea: CHAnges in Resource Limitation and Energy Transfer (Dutch participation)</Title>
     <Acronym>CHARLET  - NL</Acronym>
@@ -15320,9 +15313,9 @@
     <Country>Netherlands</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12162</Id>
-    <Title>Processes on the Continental Slope (NIOZ-project)</Title>
-    <Acronym>NIOZ-PROCS</Acronym>
+    <Id>12179</Id>
+    <Title>Changes in vertical stratification and their impact on phytoplankton communities (Dutch participation)</Title>
+    <Acronym>STRATIPHYT  - NL</Acronym>
     <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -15330,6 +15323,13 @@
     <Id>12155</Id>
     <Title>EMIR 2002 (NIOZ-project)</Title>
     <Acronym>NIOZ-EMIR</Acronym>
+    <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
+    <Country>Netherlands</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12162</Id>
+    <Title>Processes on the Continental Slope (NIOZ-project)</Title>
+    <Acronym>NIOZ-PROCS</Acronym>
     <Coordinator>Royal Netherlands Institute for Sea Research</Coordinator>
     <Country>Netherlands</Country>
   </SimpleMetadata>
@@ -15362,13 +15362,6 @@
     <Country>Azerbaijan</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11497</Id>
-    <Title>Geographical Atlas of Caspian sea</Title>
-    <Acronym>GAC</Acronym>
-    <Coordinator>Geographical Society of Azerbaijan</Coordinator>
-    <Country>Azerbaijan</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11485</Id>
     <Title>Development of non-stationary model of a turbulent boundary layer</Title>
     <Acronym />
@@ -15387,6 +15380,13 @@
     <Title>Research of turbulent diffusion in the Azerbaijan shelf of Caspian sea</Title>
     <Acronym>RTDCS</Acronym>
     <Coordinator>Institute of Ecology, Azerbaijan National Space Agency</Coordinator>
+    <Country>Azerbaijan</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11497</Id>
+    <Title>Geographical Atlas of Caspian sea</Title>
+    <Acronym>GAC</Acronym>
+    <Coordinator>Geographical Society of Azerbaijan</Coordinator>
     <Country>Azerbaijan</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -16297,6 +16297,13 @@ Gulf basin-MASS</Title>
     <Country>Russian Federation</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>10181</Id>
+    <Title>JOINT IOC/WMO SHIP-OF-OPPORTUNITY PROGRAMME Ship-of-Opportunity Programme</Title>
+    <Acronym>SOOP</Acronym>
+    <Coordinator>State Oceanographic Institute </Coordinator>
+    <Country>Russian Federation</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10199</Id>
     <Title>Marine  pollution monitoring</Title>
     <Acronym>MARPOLMON</Acronym>
@@ -16307,13 +16314,6 @@ Gulf basin-MASS</Title>
     <Id>10186</Id>
     <Title>The Seas of former USSR . 1981-1990.</Title>
     <Acronym>Seas</Acronym>
-    <Coordinator>State Oceanographic Institute </Coordinator>
-    <Country>Russian Federation</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10181</Id>
-    <Title>JOINT IOC/WMO SHIP-OF-OPPORTUNITY PROGRAMME Ship-of-Opportunity Programme</Title>
-    <Acronym>SOOP</Acronym>
     <Coordinator>State Oceanographic Institute </Coordinator>
     <Country>Russian Federation</Country>
   </SimpleMetadata>
@@ -17137,13 +17137,6 @@ Gulf basin-MASS</Title>
     <Country>Bulgaria</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12380</Id>
-    <Title>Galata gas platform real time data</Title>
-    <Acronym>Galata_platform</Acronym>
-    <Coordinator>Institute of Oceanology, Bulgarian Academy of Sciences </Coordinator>
-    <Country>Bulgaria</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11763</Id>
     <Title>BulArgo</Title>
     <Acronym>BulArgo</Acronym>
@@ -17154,6 +17147,13 @@ Gulf basin-MASS</Title>
     <Id>11764</Id>
     <Title>POMOS</Title>
     <Acronym>POMOS</Acronym>
+    <Coordinator>Institute of Oceanology, Bulgarian Academy of Sciences </Coordinator>
+    <Country>Bulgaria</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12380</Id>
+    <Title>Galata gas platform real time data</Title>
+    <Acronym>Galata_platform</Acronym>
     <Coordinator>Institute of Oceanology, Bulgarian Academy of Sciences </Coordinator>
     <Country>Bulgaria</Country>
   </SimpleMetadata>
@@ -18229,13 +18229,6 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13685</Id>
-    <Title>Investigating the changes in the Northeastern Mediterranean fish assemblages over the last 40 years, the role of eutrophication, fisheries pressure, climate...</Title>
-    <Acronym>MED40</Acronym>
-    <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
-    <Country>Turkey</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12122</Id>
     <Title>Investigations on the Mediterranean Monk Seal on the coast of Antalya</Title>
     <Acronym />
@@ -18313,6 +18306,20 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13685</Id>
+    <Title>Investigating the changes in the Northeastern Mediterranean fish assemblages over the last 40 years, the role of eutrophication, fisheries pressure, climate...</Title>
+    <Acronym>MED40</Acronym>
+    <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
+    <Country>Turkey</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>872</Id>
+    <Title>Grazing, growth and production of Calanus euxinus in the Black Sea</Title>
+    <Acronym />
+    <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
+    <Country>Turkey</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10709</Id>
     <Title>Dead/Live Copepod Ratios: seasonal variations in Mersin Bay</Title>
     <Acronym />
@@ -18322,13 +18329,6 @@ Gulf basin-MASS</Title>
   <SimpleMetadata>
     <Id>10619</Id>
     <Title>Toxicity and ecological impacts of potentially harmful diatom  Pseudo-nitzschia seriata in the Black Sea</Title>
-    <Acronym />
-    <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
-    <Country>Turkey</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>872</Id>
-    <Title>Grazing, growth and production of Calanus euxinus in the Black Sea</Title>
     <Acronym />
     <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
     <Country>Turkey</Country>
@@ -18411,16 +18411,16 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10708</Id>
-    <Title>Integrated Meteorology / Oceanography Network</Title>
-    <Acronym />
+    <Id>10624</Id>
+    <Title>Multidisciplinary Analysis of the Caspian Sea Ecosystem</Title>
+    <Acronym>MACE</Acronym>
     <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10624</Id>
-    <Title>Multidisciplinary Analysis of the Caspian Sea Ecosystem</Title>
-    <Acronym>MACE</Acronym>
+    <Id>10708</Id>
+    <Title>Integrated Meteorology / Oceanography Network</Title>
+    <Acronym />
     <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
     <Country>Turkey</Country>
   </SimpleMetadata>
@@ -18516,13 +18516,6 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10630</Id>
-    <Title>LONG TERM BIOMONITORING, TREND AND COMPLIANCE MONITORING PROGRAM IN COASTAL AREAS FROM AEGEAN, NORTHEASTERN MEDITERRANEAN AND EUTROFICATION MONITORING IN MERSIN</Title>
-    <Acronym />
-    <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
-    <Country>Turkey</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>868</Id>
     <Title>Impact of phosphorus and nitrogen variations in Northeastern Med. coastal waters to the phytoplankton composition distr</Title>
     <Acronym />
@@ -18530,8 +18523,8 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>842</Id>
-    <Title>Evaluation of biogeochemical impact of African dust deposition to the East Mediterranean basin by combining ground-based and satellite measurements</Title>
+    <Id>10630</Id>
+    <Title>LONG TERM BIOMONITORING, TREND AND COMPLIANCE MONITORING PROGRAM IN COASTAL AREAS FROM AEGEAN, NORTHEASTERN MEDITERRANEAN AND EUTROFICATION MONITORING IN MERSIN</Title>
     <Acronym />
     <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
     <Country>Turkey</Country>
@@ -18539,6 +18532,13 @@ Gulf basin-MASS</Title>
   <SimpleMetadata>
     <Id>10707</Id>
     <Title>Climatic Importance of Aerosols Above the Eastern Mediterranean</Title>
+    <Acronym />
+    <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
+    <Country>Turkey</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>842</Id>
+    <Title>Evaluation of biogeochemical impact of African dust deposition to the East Mediterranean basin by combining ground-based and satellite measurements</Title>
     <Acronym />
     <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
     <Country>Turkey</Country>
@@ -18628,9 +18628,16 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12408</Id>
-    <Title>Interactions of Primary Production with Physical Dynamics in the Black Sea</Title>
-    <Acronym>-</Acronym>
+    <Id>13791</Id>
+    <Title>Marmara Integrated Modelling System, Phase III</Title>
+    <Acronym>MARMOD Phase III</Acronym>
+    <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
+    <Country>Turkey</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>13792</Id>
+    <Title>Mediterranean Integrated Pollution Monitoring 2023-2025</Title>
+    <Acronym>Monitoring 2023-2025</Acronym>
     <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
     <Country>Turkey</Country>
   </SimpleMetadata>
@@ -18651,6 +18658,13 @@ Gulf basin-MASS</Title>
   <SimpleMetadata>
     <Id>12265</Id>
     <Title>Microbial reactions in seas using new approaches: genetic, bio-geochemistry and modeling</Title>
+    <Acronym>-</Acronym>
+    <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
+    <Country>Turkey</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12408</Id>
+    <Title>Interactions of Primary Production with Physical Dynamics in the Black Sea</Title>
     <Acronym>-</Acronym>
     <Coordinator>Institute of Marine Sciences, Middle East Technical University</Coordinator>
     <Country>Turkey</Country>
@@ -19106,13 +19120,6 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11473</Id>
-    <Title>Environmental Monitoring of the Black Sea Basin: Monitoring and Information Systems for Reducing Oil Pollution</Title>
-    <Acronym>BS MONINFO</Acronym>
-    <Coordinator>Permanent Secretariat Commission on the Protection of the Black Sea Against Pollution</Coordinator>
-    <Country>Turkey</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11478</Id>
     <Title>Environmental Monitoring of the Black Sea Basin: Monitoring and Information Systems for Reducing Oil Pollution Phase 2</Title>
     <Acronym>BS MONINFO 2</Acronym>
@@ -19120,16 +19127,9 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11477</Id>
-    <Title>Support to the Black Sea Commission for Implementation of the Marine Strategy</Title>
-    <Acronym />
-    <Coordinator>Permanent Secretariat Commission on the Protection of the Black Sea Against Pollution</Coordinator>
-    <Country>Turkey</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11337</Id>
-    <Title>Black Sea Integrated Monitoring and Assessment Programme</Title>
-    <Acronym>BSIMAP</Acronym>
+    <Id>11473</Id>
+    <Title>Environmental Monitoring of the Black Sea Basin: Monitoring and Information Systems for Reducing Oil Pollution</Title>
+    <Acronym>BS MONINFO</Acronym>
     <Coordinator>Permanent Secretariat Commission on the Protection of the Black Sea Against Pollution</Coordinator>
     <Country>Turkey</Country>
   </SimpleMetadata>
@@ -19141,8 +19141,15 @@ Gulf basin-MASS</Title>
     <Country>Turkey</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11476</Id>
-    <Title>BSC – UNEP Marine Litter Activities</Title>
+    <Id>11337</Id>
+    <Title>Black Sea Integrated Monitoring and Assessment Programme</Title>
+    <Acronym>BSIMAP</Acronym>
+    <Coordinator>Permanent Secretariat Commission on the Protection of the Black Sea Against Pollution</Coordinator>
+    <Country>Turkey</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11477</Id>
+    <Title>Support to the Black Sea Commission for Implementation of the Marine Strategy</Title>
     <Acronym />
     <Coordinator>Permanent Secretariat Commission on the Protection of the Black Sea Against Pollution</Coordinator>
     <Country>Turkey</Country>
@@ -19150,6 +19157,13 @@ Gulf basin-MASS</Title>
   <SimpleMetadata>
     <Id>7748</Id>
     <Title>Black Sea Ecosystem Recovery Project (BSERP) 1st Pilot Monitoring of the Black Sea</Title>
+    <Acronym />
+    <Coordinator>Permanent Secretariat Commission on the Protection of the Black Sea Against Pollution</Coordinator>
+    <Country>Turkey</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11476</Id>
+    <Title>BSC – UNEP Marine Litter Activities</Title>
     <Acronym />
     <Coordinator>Permanent Secretariat Commission on the Protection of the Black Sea Against Pollution</Coordinator>
     <Country>Turkey</Country>
@@ -19288,34 +19302,6 @@ Gulf basin-MASS</Title>
     <Country>Romania</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11552</Id>
-    <Title>Study of deltaic-estuarine and littoral ambience - sediment and water dynamics</Title>
-    <Acronym />
-    <Coordinator>National Institute of Marine Geology and Geoecology</Coordinator>
-    <Country>Romania</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11554</Id>
-    <Title>Geological and sedimentological mapping of the Romanian continental platform</Title>
-    <Acronym>HS-1997</Acronym>
-    <Coordinator>National Institute of Marine Geology and Geoecology</Coordinator>
-    <Country>Romania</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11443</Id>
-    <Title>High resolution mapping in front of Danube Delta up to 20 m isobath, for delineating to the east the limit of Danube Delta Biosphere</Title>
-    <Acronym>HRM-DDBR</Acronym>
-    <Coordinator>National Institute of Marine Geology and Geoecology</Coordinator>
-    <Country>Romania</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11444</Id>
-    <Title>Detailed mapping up to 20 m depth for offshore delimitatation of strictly protected zone between Cape Midia and Vama Veche</Title>
-    <Acronym>HRM-CM-VM</Acronym>
-    <Coordinator>National Institute of Marine Geology and Geoecology</Coordinator>
-    <Country>Romania</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11568</Id>
     <Title>Geological and sedimentological mapping of the Romanian continental platform</Title>
     <Acronym>HS-1998</Acronym>
@@ -19365,6 +19351,34 @@ Gulf basin-MASS</Title>
     <Country>Romania</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11552</Id>
+    <Title>Study of deltaic-estuarine and littoral ambience - sediment and water dynamics</Title>
+    <Acronym />
+    <Coordinator>National Institute of Marine Geology and Geoecology</Coordinator>
+    <Country>Romania</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11554</Id>
+    <Title>Geological and sedimentological mapping of the Romanian continental platform</Title>
+    <Acronym>HS-1997</Acronym>
+    <Coordinator>National Institute of Marine Geology and Geoecology</Coordinator>
+    <Country>Romania</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11443</Id>
+    <Title>High resolution mapping in front of Danube Delta up to 20 m isobath, for delineating to the east the limit of Danube Delta Biosphere</Title>
+    <Acronym>HRM-DDBR</Acronym>
+    <Coordinator>National Institute of Marine Geology and Geoecology</Coordinator>
+    <Country>Romania</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11444</Id>
+    <Title>Detailed mapping up to 20 m depth for offshore delimitatation of strictly protected zone between Cape Midia and Vama Veche</Title>
+    <Acronym>HRM-CM-VM</Acronym>
+    <Coordinator>National Institute of Marine Geology and Geoecology</Coordinator>
+    <Country>Romania</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11550</Id>
     <Title>Geo-ecological and geological study of the sediments dynamics at St. George mouth - Danube Delta</Title>
     <Acronym />
@@ -19407,9 +19421,9 @@ Gulf basin-MASS</Title>
     <Country>Romania</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11950</Id>
-    <Title>MSFD GUIDING IMPROVEMENTS IN THE BLACK SEA INTEGRATED MONITORING SYSTEM</Title>
-    <Acronym>MISIS</Acronym>
+    <Id>13794</Id>
+    <Title>The in-depth study of the marine ecosystem and the intelligent exploitation of its resources by integrating blue economy principles</Title>
+    <Acronym>SMART-BLUE</Acronym>
     <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
     <Country>Romania</Country>
   </SimpleMetadata>
@@ -19421,9 +19435,9 @@ Gulf basin-MASS</Title>
     <Country>Romania</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10789</Id>
-    <Title>Complex system for the application of the GIS and remote sensing technics for environmental quality monitoring and Romanian ICZM implementation support</Title>
-    <Acronym>IMAGIS</Acronym>
+    <Id>11950</Id>
+    <Title>MSFD GUIDING IMPROVEMENTS IN THE BLACK SEA INTEGRATED MONITORING SYSTEM</Title>
+    <Acronym>MISIS</Acronym>
     <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
     <Country>Romania</Country>
   </SimpleMetadata>
@@ -19431,6 +19445,13 @@ Gulf basin-MASS</Title>
     <Id>12089</Id>
     <Title>Constanta Space Technologies Competence Centre Dedicated to the Romanian Marine and Coastal Regions Sustainable Development</Title>
     <Acronym>COSMOMAR</Acronym>
+    <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
+    <Country>Romania</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10789</Id>
+    <Title>Complex system for the application of the GIS and remote sensing technics for environmental quality monitoring and Romanian ICZM implementation support</Title>
+    <Acronym>IMAGIS</Acronym>
     <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
     <Country>Romania</Country>
   </SimpleMetadata>
@@ -19484,6 +19505,13 @@ Gulf basin-MASS</Title>
     <Country>Romania</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>10615</Id>
+    <Title>Levstat - sea level dataset</Title>
+    <Acronym />
+    <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
+    <Country>Romania</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10456</Id>
     <Title>Scientific and technological transfer platform for operational oceanography, vector for security increase in western Black Sea</Title>
     <Acronym>SOCOP</Acronym>
@@ -19494,20 +19522,6 @@ Gulf basin-MASS</Title>
     <Id>4292</Id>
     <Title>Service contract concerning coastal erosion evaluation of the needs for action</Title>
     <Acronym>EUROSION Subcontract</Acronym>
-    <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
-    <Country>Romania</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10615</Id>
-    <Title>Levstat - sea level dataset</Title>
-    <Acronym />
-    <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
-    <Country>Romania</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10455</Id>
-    <Title>SCIENTIFIC AND TECHNOLOGIC PARTNERSHIP FOR PROMOTING THE SUSTAINABLE MANAGEMENT OF ROMANIAN MARINE FISHERIES BASED ON THE ECOSYSTEMIC APPROACH</Title>
-    <Acronym>PSTPMR</Acronym>
     <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
     <Country>Romania</Country>
   </SimpleMetadata>
@@ -19526,6 +19540,13 @@ Gulf basin-MASS</Title>
     <Country>Romania</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>10455</Id>
+    <Title>SCIENTIFIC AND TECHNOLOGIC PARTNERSHIP FOR PROMOTING THE SUSTAINABLE MANAGEMENT OF ROMANIAN MARINE FISHERIES BASED ON THE ECOSYSTEMIC APPROACH</Title>
+    <Acronym>PSTPMR</Acronym>
+    <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
+    <Country>Romania</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10487</Id>
     <Title>Input assessment of heavy metals and persistent organics pollutants of Danube River in the nearshore area.</Title>
     <Acronym />
@@ -19540,6 +19561,13 @@ Gulf basin-MASS</Title>
     <Country>Romania</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>4295</Id>
+    <Title>Multimedia distance training package for Eastern Europe on Integrated Coastal Management</Title>
+    <Acronym>Coastlearn</Acronym>
+    <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
+    <Country>Romania</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10518</Id>
     <Title>Inventorying and reconsidering of the Black Sea coastal  land based pollution sources according with the E.U. regulations.</Title>
     <Acronym />
@@ -19550,13 +19578,6 @@ Gulf basin-MASS</Title>
     <Id>4303</Id>
     <Title>European Lifestyles and Marine Ecosystems</Title>
     <Acronym>ELME</Acronym>
-    <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
-    <Country>Romania</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>4295</Id>
-    <Title>Multimedia distance training package for Eastern Europe on Integrated Coastal Management</Title>
-    <Acronym>Coastlearn</Acronym>
     <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
     <Country>Romania</Country>
   </SimpleMetadata>
@@ -19610,6 +19631,13 @@ Gulf basin-MASS</Title>
     <Country>Romania</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13793</Id>
+    <Title>Study on the integrated monitoring programme of the Black Sea marine ecosystem according to the requirements of the Marine Strategy Framework Directive (2008/56</Title>
+    <Acronym>Monitoring_2023-2024</Acronym>
+    <Coordinator>National Institute for Marine Research and Development "Grigore Antipa"</Coordinator>
+    <Country>Romania</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12399</Id>
     <Title>Scientific and information support to aid the sustainable development of maritime activities</Title>
     <Acronym>SIMAR</Acronym>
@@ -19638,13 +19666,6 @@ Gulf basin-MASS</Title>
     <Country>Romania</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>4331</Id>
-    <Title>Role of phase exch. in the dyn. of maj. &amp; trace elem., &amp; in the transformation of land-based loading of the Gulf of Riga</Title>
-    <Acronym />
-    <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
-    <Country>Latvia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>4312</Id>
     <Title>Studies on biogeochemical transformation of antropogenic load in the southern part of the Gulf of Riga</Title>
     <Acronym />
@@ -19659,9 +19680,23 @@ Gulf basin-MASS</Title>
     <Country>Latvia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>4331</Id>
+    <Title>Role of phase exch. in the dyn. of maj. &amp; trace elem., &amp; in the transformation of land-based loading of the Gulf of Riga</Title>
+    <Acronym />
+    <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
+    <Country>Latvia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12440</Id>
     <Title>Towards joint management of the transboundary Gauja/Koiva river basin district</Title>
     <Acronym>Gauja/Koiva</Acronym>
+    <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
+    <Country>Latvia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>4317</Id>
+    <Title>Gulf of Riga: sub - pjoject PELAGIC EUTROPHICATION and SEDIMENTATION</Title>
+    <Acronym>GoR</Acronym>
     <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
     <Country>Latvia</Country>
   </SimpleMetadata>
@@ -19694,13 +19729,6 @@ Gulf basin-MASS</Title>
     <Country>Latvia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>4317</Id>
-    <Title>Gulf of Riga: sub - pjoject PELAGIC EUTROPHICATION and SEDIMENTATION</Title>
-    <Acronym>GoR</Acronym>
-    <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
-    <Country>Latvia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>4328</Id>
     <Title>Elaboration of the scientific basis for sustainable managment of the Open Baltic Ecosystems</Title>
     <Acronym />
@@ -19715,15 +19743,15 @@ Gulf basin-MASS</Title>
     <Country>Latvia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>4330</Id>
-    <Title>The infl. of anthropogen. load on sustain. developm. &amp; qual. of fish resourc. in Latvian water bodies &amp; fish farms</Title>
+    <Id>4309</Id>
+    <Title>The Role of Environmetal factors on the Bloom of Potentially Toxic Phytoplankton and Production of Algal Toxins</Title>
     <Acronym />
     <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
     <Country>Latvia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>4309</Id>
-    <Title>The Role of Environmetal factors on the Bloom of Potentially Toxic Phytoplankton and Production of Algal Toxins</Title>
+    <Id>4330</Id>
+    <Title>The infl. of anthropogen. load on sustain. developm. &amp; qual. of fish resourc. in Latvian water bodies &amp; fish farms</Title>
     <Acronym />
     <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
     <Country>Latvia</Country>
@@ -19739,6 +19767,20 @@ Gulf basin-MASS</Title>
     <Id>13622</Id>
     <Title>National Marine monitoring program in Latvia</Title>
     <Acronym>Monitorings</Acronym>
+    <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
+    <Country>Latvia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12371</Id>
+    <Title>Knowledge improvement in marine environmental status of marine waters of Latvia</Title>
+    <Acronym>ZF</Acronym>
+    <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
+    <Country>Latvia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>4329</Id>
+    <Title>Investigation of riverine N, P, Si and heavy metal bioavailability by compound size groups</Title>
+    <Acronym />
     <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
     <Country>Latvia</Country>
   </SimpleMetadata>
@@ -19764,22 +19806,8 @@ Gulf basin-MASS</Title>
     <Country>Latvia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12371</Id>
-    <Title>Knowledge improvement in marine environmental status of marine waters of Latvia</Title>
-    <Acronym>ZF</Acronym>
-    <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
-    <Country>Latvia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>4311</Id>
     <Title>Investigation of the Pelagic - Bentic Interaction in the Open Part of the Gulf of Riga</Title>
-    <Acronym />
-    <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
-    <Country>Latvia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>4329</Id>
-    <Title>Investigation of riverine N, P, Si and heavy metal bioavailability by compound size groups</Title>
     <Acronym />
     <Coordinator>Latvian Institute of Aquatic Ecology</Coordinator>
     <Country>Latvia</Country>
@@ -19946,14 +19974,14 @@ Gulf basin-MASS</Title>
     <Country>Croatia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10755</Id>
+    <Id>10743</Id>
     <Title>Sea monitoring (transect Kastela Bay - Island of Vis)</Title>
     <Acronym>MALA PRODUKCIJA</Acronym>
     <Coordinator>Institute of Oceanography and Fisheries</Coordinator>
     <Country>Croatia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10743</Id>
+    <Id>10755</Id>
     <Title>Sea monitoring (transect Kastela Bay - Island of Vis)</Title>
     <Acronym>MALA PRODUKCIJA</Acronym>
     <Coordinator>Institute of Oceanography and Fisheries</Coordinator>
@@ -19963,13 +19991,6 @@ Gulf basin-MASS</Title>
     <Id>7885</Id>
     <Title>Pelagic monitoring - acoustic assessment of small pelagic fish and monitoring of pelagic ecosystem in the Adriatic Sea</Title>
     <Acronym>PELMON</Acronym>
-    <Coordinator>Institute of Oceanography and Fisheries</Coordinator>
-    <Country>Croatia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10741</Id>
-    <Title>Oceanographic investigation for study of influence hotels in Mala luka on marine environment</Title>
-    <Acronym>RAVNICE-MALA LUKA</Acronym>
     <Coordinator>Institute of Oceanography and Fisheries</Coordinator>
     <Country>Croatia</Country>
   </SimpleMetadata>
@@ -19984,6 +20005,13 @@ Gulf basin-MASS</Title>
     <Id>7879</Id>
     <Title>Monitoring the marine coastal current of the North Adriatic</Title>
     <Acronym>NASCUM-HR</Acronym>
+    <Coordinator>Institute of Oceanography and Fisheries</Coordinator>
+    <Country>Croatia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10741</Id>
+    <Title>Oceanographic investigation for study of influence hotels in Mala luka on marine environment</Title>
+    <Acronym>RAVNICE-MALA LUKA</Acronym>
     <Coordinator>Institute of Oceanography and Fisheries</Coordinator>
     <Country>Croatia</Country>
   </SimpleMetadata>
@@ -20009,16 +20037,16 @@ Gulf basin-MASS</Title>
     <Country>Croatia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10745</Id>
-    <Title>Oceanographic monitoring of the wide area of the city of Stobrec</Title>
-    <Acronym>EKOS</Acronym>
+    <Id>10740</Id>
+    <Title>Investigation of sea quality in the area of the sewage system Kastela - Trogir</Title>
+    <Acronym>EKO-CIOVO</Acronym>
     <Coordinator>Institute of Oceanography and Fisheries</Coordinator>
     <Country>Croatia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10740</Id>
-    <Title>Investigation of sea quality in the area of the sewage system Kastela - Trogir</Title>
-    <Acronym>EKO-CIOVO</Acronym>
+    <Id>10745</Id>
+    <Title>Oceanographic monitoring of the wide area of the city of Stobrec</Title>
+    <Acronym>EKOS</Acronym>
     <Coordinator>Institute of Oceanography and Fisheries</Coordinator>
     <Country>Croatia</Country>
   </SimpleMetadata>
@@ -20247,6 +20275,13 @@ Gulf basin-MASS</Title>
     <Country>Poland</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>12093</Id>
+    <Title>CALYPSO</Title>
+    <Acronym>CALYPSO</Acronym>
+    <Coordinator>Oceanography Malta Research Group, Department of Geosciences, University of Malta</Coordinator>
+    <Country>Malta</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>13651</Id>
     <Title>CALYPSO South: Extending data and services for safer navigation and marine protection</Title>
     <Acronym>CALYPSO South</Acronym>
@@ -20257,13 +20292,6 @@ Gulf basin-MASS</Title>
     <Id>13652</Id>
     <Title>GLIDER South</Title>
     <Acronym>GLIDER South</Acronym>
-    <Coordinator>Oceanography Malta Research Group, Department of Geosciences, University of Malta</Coordinator>
-    <Country>Malta</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12093</Id>
-    <Title>CALYPSO</Title>
-    <Acronym>CALYPSO</Acronym>
     <Coordinator>Oceanography Malta Research Group, Department of Geosciences, University of Malta</Coordinator>
     <Country>Malta</Country>
   </SimpleMetadata>
@@ -20338,6 +20366,20 @@ Gulf basin-MASS</Title>
     <Country>Israel</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11883</Id>
+    <Title>Gulf of Riga as a Resource for Wind Energy</Title>
+    <Acronym>GORWIND</Acronym>
+    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11861</Id>
+    <Title>Muuga Seawater-Pumped Hydro Accumulation Power Plant environmental impacts to Muuga bay currents and coastal processes</Title>
+    <Acronym>Lep11043</Acronym>
+    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10771</Id>
     <Title>Muuga harbour marine environment monitoring 2007</Title>
     <Acronym>Lep7075</Acronym>
@@ -20359,20 +20401,6 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11883</Id>
-    <Title>Gulf of Riga as a Resource for Wind Energy</Title>
-    <Acronym>GORWIND</Acronym>
-    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11861</Id>
-    <Title>Muuga Seawater-Pumped Hydro Accumulation Power Plant environmental impacts to Muuga bay currents and coastal processes</Title>
-    <Acronym>Lep11043</Acronym>
-    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12002</Id>
     <Title>Monitoring of benthic infauna in the Gulf of Finland</Title>
     <Acronym>VE625</Acronym>
@@ -20383,13 +20411,6 @@ Gulf basin-MASS</Title>
     <Id>12003</Id>
     <Title>Open sea monitoring 2013</Title>
     <Acronym>Project LMIN13076</Acronym>
-    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11849</Id>
-    <Title>Clines in stratified estuaries – implications to ecosystem functioning</Title>
-    <Acronym>ETF9023</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
@@ -20422,16 +20443,16 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11862</Id>
-    <Title>Joint field observations in the Gulf of Finland</Title>
-    <Acronym>VE462</Acronym>
+    <Id>11849</Id>
+    <Title>Clines in stratified estuaries – implications to ecosystem functioning</Title>
+    <Acronym>ETF9023</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11865</Id>
-    <Title>Monitoring in the sea areas of Hundipea harbour and Paljassaare dumping site during dredging activities in the Hundipea harbour</Title>
-    <Acronym>Lep10095</Acronym>
+    <Id>11862</Id>
+    <Title>Joint field observations in the Gulf of Finland</Title>
+    <Acronym>VE462</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
@@ -20506,6 +20527,20 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11865</Id>
+    <Title>Monitoring in the sea areas of Hundipea harbour and Paljassaare dumping site during dredging activities in the Hundipea harbour</Title>
+    <Acronym>Lep10095</Acronym>
+    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12281</Id>
+    <Title>Update of the mixing zone of hazardous substances in the sutrface water originating from Järve Biopuhastus OÜ Kohtla-Järve wastewater discharge</Title>
+    <Acronym>LEP17054</Acronym>
+    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>12232</Id>
     <Title>Determining the mixing zone of hazardous substances originating from AS Sillamäe-Veevärk sewage treatment plants wastewater discharge</Title>
     <Acronym>Lep15009</Acronym>
@@ -20516,13 +20551,6 @@ Gulf basin-MASS</Title>
     <Id>12233</Id>
     <Title>Determining the mixing zone of hazardous substances originating from AS Nitrofert wastewater discharge </Title>
     <Acronym>Lep15005</Acronym>
-    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>12281</Id>
-    <Title>Update of the mixing zone of hazardous substances in the sutrface water originating from Järve Biopuhastus OÜ Kohtla-Järve wastewater discharge</Title>
-    <Acronym>LEP17054</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
@@ -20604,6 +20632,13 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13642</Id>
+    <Title>Analysis techniques for quantifying nano- and microplastic particles and their degradation in the marine environment</Title>
+    <Acronym>ANDROMEDA</Acronym>
+    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>13552</Id>
     <Title>Marine field intercalibration for parameters indicating eutrophication (MARICAL)</Title>
     <Acronym>VA19040</Acronym>
@@ -20653,9 +20688,9 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13642</Id>
-    <Title>Analysis techniques for quantifying nano- and microplastic particles and their degradation in the marine environment</Title>
-    <Acronym>ANDROMEDA</Acronym>
+    <Id>10770</Id>
+    <Title>Measurements to describe wave characteristics and regime of currents in the region of off-shore shallows</Title>
+    <Acronym>Lep7060</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
@@ -20699,13 +20734,6 @@ Gulf basin-MASS</Title>
     <Title>Development of toxic plankton blooms in the Estonian  waters: response to hydrophysical and meteorological contitions</Title>
     <Acronym />
     <Coordinator>Estonian Marine Institute</Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10770</Id>
-    <Title>Measurements to describe wave characteristics and regime of currents in the region of off-shore shallows</Title>
-    <Acronym>Lep7060</Acronym>
-    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -20779,13 +20807,6 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>12282</Id>
-    <Title>Monitoring of microlitter in the sea surface in Estonian waters.</Title>
-    <Acronym>LMIN17077</Acronym>
-    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>12234</Id>
     <Title>Monitoring of marine litter in Estonian sea area</Title>
     <Acronym>LMIN16036</Acronym>
@@ -20796,6 +20817,13 @@ Gulf basin-MASS</Title>
     <Id>12235</Id>
     <Title>Open sea monitoring 2016</Title>
     <Acronym>Lep16069</Acronym>
+    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>12282</Id>
+    <Title>Monitoring of microlitter in the sea surface in Estonian waters.</Title>
+    <Acronym>LMIN17077</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
@@ -20814,6 +20842,13 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11850</Id>
+    <Title>Estonian observatory of aquatic environment (VeeOBS)</Title>
+    <Acronym>AR12042</Acronym>
+    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>11852</Id>
     <Title>BalticSeaNow.info - Innovative participatory forum for the Baltic Sea (BalticSeaNow.info)</Title>
     <Acronym>VIR438</Acronym>
@@ -20824,13 +20859,6 @@ Gulf basin-MASS</Title>
     <Id>11853</Id>
     <Title>The relative importance of mixotrophy in the eutrophic Gulf of Finland </Title>
     <Acronym>ETF8930</Acronym>
-    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11850</Id>
-    <Title>Estonian observatory of aquatic environment (VeeOBS)</Title>
-    <Acronym>AR12042</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
@@ -20856,16 +20884,16 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11886</Id>
-    <Title>Monitoring of suspended matter distribution during dredging works at the Naissaar Island II Sand Appropriation in Dec.2009 - Jan. 2010 </Title>
-    <Acronym>Lep9134</Acronym>
+    <Id>11863</Id>
+    <Title>Probable locations of windfarms in the open sea in relation to most favourable meteorological, hydrographical, ice and environmental conditions</Title>
+    <Acronym>EMP53</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11863</Id>
-    <Title>Probable locations of windfarms in the open sea in relation to most favourable meteorological, hydrographical, ice and environmental conditions</Title>
-    <Acronym>EMP53</Acronym>
+    <Id>11886</Id>
+    <Title>Monitoring of suspended matter distribution during dredging works at the Naissaar Island II Sand Appropriation in Dec.2009 - Jan. 2010 </Title>
+    <Acronym>Lep9134</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
@@ -20891,9 +20919,9 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13744</Id>
-    <Title>Investigation of water quality; physical and biogeochemical parameters of water column, and spreading of pollutants in the frame of envirionental impact assesme</Title>
-    <Acronym>LLMMEE22082</Acronym>
+    <Id>13675</Id>
+    <Title>Joint European Research Infrastructure of Coastal Observatories: Design Study - JERICO-DS</Title>
+    <Acronym>VFP20057</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
@@ -20912,6 +20940,13 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>13630</Id>
+    <Title>Central Baltic Sea Circulation Experiment</Title>
+    <Acronym>CABLE</Acronym>
+    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
+    <Country>Estonia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>13678</Id>
     <Title>Investigations on the wind farm construction in the Gulf of Riga</Title>
     <Acronym>LLMMEE22079</Acronym>
@@ -20919,16 +20954,9 @@ Gulf basin-MASS</Title>
     <Country>Estonia</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>13675</Id>
-    <Title>Joint European Research Infrastructure of Coastal Observatories: Design Study - JERICO-DS</Title>
-    <Acronym>VFP20057</Acronym>
-    <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
-    <Country>Estonia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>13630</Id>
-    <Title>Central Baltic Sea Circulation Experiment</Title>
-    <Acronym>CABLE</Acronym>
+    <Id>13744</Id>
+    <Title>Investigation of water quality; physical and biogeochemical parameters of water column, and spreading of pollutants in the frame of envirionental impact assesme</Title>
+    <Acronym>LLMMEE22082</Acronym>
     <Coordinator>Department of Marine Systems at Tallinn University of Technology</Coordinator>
     <Country>Estonia</Country>
   </SimpleMetadata>
@@ -21325,16 +21353,16 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10353</Id>
-    <Title>INVESTIGATION OF MARINE ECOSYSTEMS ON THE BASIS OF INTEGRATED USE OF SATELLITE REMOTE MEASUREMENTS AND MODELS</Title>
-    <Acronym>SATELLITE OCEANOLOGY</Acronym>
+    <Id>10378</Id>
+    <Title>Creation of multidisciplinary oceanographic observation system of the Black Sea basin</Title>
+    <Acronym>OPERATIVE OCEANOGRAPHY</Acronym>
     <Coordinator>Marine Hydrophysical Institute</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10378</Id>
-    <Title>Creation of multidisciplinary oceanographic observation system of the Black Sea basin</Title>
-    <Acronym>OPERATIVE OCEANOGRAPHY</Acronym>
+    <Id>10353</Id>
+    <Title>INVESTIGATION OF MARINE ECOSYSTEMS ON THE BASIS OF INTEGRATED USE OF SATELLITE REMOTE MEASUREMENTS AND MODELS</Title>
+    <Acronym>SATELLITE OCEANOLOGY</Acronym>
     <Coordinator>Marine Hydrophysical Institute</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -21346,13 +21374,6 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11720</Id>
-    <Title>Drifter technologies for active research and near-water atmosphere in Oceans and the basins of the Azov Sea and Black Sea</Title>
-    <Acronym>Drifter Technologies</Acronym>
-    <Coordinator>Marine Hydrophysical Institute</Coordinator>
-    <Country>Ukraine</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>10355</Id>
     <Title>DEVELOPMENT OF NEW METHODS OF SATELLITE DRIFTER TECHNOLOGY</Title>
     <Acronym>DRIFTER</Acronym>
@@ -21360,9 +21381,9 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10356</Id>
-    <Title>DEVELOPMENT OF METHODICAL, TECHNICAL, METROLOGY AND ALGORITHMIC SOFTWARE OF THE ECOLOGICAL CONTROL OF WATER ENVIRONMENT</Title>
-    <Acronym>ECOHYDROCONTROL</Acronym>
+    <Id>11720</Id>
+    <Title>Drifter technologies for active research and near-water atmosphere in Oceans and the basins of the Azov Sea and Black Sea</Title>
+    <Acronym>Drifter Technologies</Acronym>
     <Coordinator>Marine Hydrophysical Institute</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -21370,6 +21391,13 @@ Gulf basin-MASS</Title>
     <Id>10380</Id>
     <Title>Development of automated systems of ecological water control</Title>
     <Acronym>Ecohydrocontrol</Acronym>
+    <Coordinator>Marine Hydrophysical Institute</Coordinator>
+    <Country>Ukraine</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>10356</Id>
+    <Title>DEVELOPMENT OF METHODICAL, TECHNICAL, METROLOGY AND ALGORITHMIC SOFTWARE OF THE ECOLOGICAL CONTROL OF WATER ENVIRONMENT</Title>
+    <Acronym>ECOHYDROCONTROL</Acronym>
     <Coordinator>Marine Hydrophysical Institute</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -21395,13 +21423,6 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10351</Id>
-    <Title>INTERDISCIPLINARY RESEARCH OF FUNDAMENTAL PROCESSES OF FORMATION AND EVOLUTION OF ECOSYSTEM</Title>
-    <Acronym>ECOSYSTEM</Acronym>
-    <Coordinator>Marine Hydrophysical Institute</Coordinator>
-    <Country>Ukraine</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>10447</Id>
     <Title>Creation of system for collection, processing, archiving and using oceanographic, geological-geophysical and ecological-economical information for Black Sea</Title>
     <Acronym>Inform-resource</Acronym>
@@ -21423,9 +21444,30 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>10351</Id>
+    <Title>INTERDISCIPLINARY RESEARCH OF FUNDAMENTAL PROCESSES OF FORMATION AND EVOLUTION OF ECOSYSTEM</Title>
+    <Acronym>ECOSYSTEM</Acronym>
+    <Coordinator>Marine Hydrophysical Institute</Coordinator>
+    <Country>Ukraine</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10349</Id>
     <Title>Investigation of optimal integration processes providing development of coastal regions of Ukraine</Title>
     <Acronym>INTEGRATION</Acronym>
+    <Coordinator>Marine Hydrophysical Institute</Coordinator>
+    <Country>Ukraine</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11722</Id>
+    <Title>Crimean Sea coasts</Title>
+    <Acronym>Sea coast</Acronym>
+    <Coordinator>Marine Hydrophysical Institute</Coordinator>
+    <Country>Ukraine</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11724</Id>
+    <Title>Complex cross-disciplinary research of the oceanologic processes</Title>
+    <Acronym>Fundamental Oceanology</Acronym>
     <Coordinator>Marine Hydrophysical Institute</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -21486,23 +21528,9 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11722</Id>
-    <Title>Crimean Sea coasts</Title>
-    <Acronym>Sea coast</Acronym>
-    <Coordinator>Marine Hydrophysical Institute</Coordinator>
-    <Country>Ukraine</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11724</Id>
-    <Title>Complex cross-disciplinary research of the oceanologic processes</Title>
-    <Acronym>Fundamental Oceanology</Acronym>
-    <Coordinator>Marine Hydrophysical Institute</Coordinator>
-    <Country>Ukraine</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11840</Id>
-    <Title>Black Sea regional subsystem of the Global Sea Level Observing System</Title>
-    <Acronym>Black Sea MedGLOSS</Acronym>
+    <Id>10354</Id>
+    <Title>CREATION OF NEW MARINE INFORMATION SYSTEMS AND TECHNOLOGIES</Title>
+    <Acronym>SEA INFORMATICS</Acronym>
     <Coordinator>Marine Hydrophysical Institute</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -21514,9 +21542,9 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10354</Id>
-    <Title>CREATION OF NEW MARINE INFORMATION SYSTEMS AND TECHNOLOGIES</Title>
-    <Acronym>SEA INFORMATICS</Acronym>
+    <Id>11840</Id>
+    <Title>Black Sea regional subsystem of the Global Sea Level Observing System</Title>
+    <Acronym>Black Sea MedGLOSS</Acronym>
     <Coordinator>Marine Hydrophysical Institute</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -21584,15 +21612,15 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10373</Id>
-    <Title>TECHNOLOGIES FOR THE MARINE ANIMALS AND ALGAE BIOMASS CULTIVATION AND PROCESSING</Title>
+    <Id>10375</Id>
+    <Title>TECHNOLOGY FOR DETECTION AND QUANTITATIVE EVALUATION OF THE DEEP-WATERS GAS DISCHARGES PARAMETERS</Title>
     <Acronym />
     <Coordinator>Institute of Biology of the Southern Seas, NAS of Ukraine</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10375</Id>
-    <Title>TECHNOLOGY FOR DETECTION AND QUANTITATIVE EVALUATION OF THE DEEP-WATERS GAS DISCHARGES PARAMETERS</Title>
+    <Id>10373</Id>
+    <Title>TECHNOLOGIES FOR THE MARINE ANIMALS AND ALGAE BIOMASS CULTIVATION AND PROCESSING</Title>
     <Acronym />
     <Coordinator>Institute of Biology of the Southern Seas, NAS of Ukraine</Coordinator>
     <Country>Ukraine</Country>
@@ -21626,6 +21654,20 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11564</Id>
+    <Title>Studies of Ukrainian marine coastal zone climate features</Title>
+    <Acronym>Theme 23/06</Acronym>
+    <Coordinator>Ukrainian Hydrometeorological Institute, Marine Branch</Coordinator>
+    <Country>Ukraine</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11565</Id>
+    <Title>Development of the automated researche data processing methods for preparation of the state water cadastre issues on seas and riverine deltas</Title>
+    <Acronym>Theme 24/06</Acronym>
+    <Coordinator>Ukrainian Hydrometeorological Institute, Marine Branch</Coordinator>
+    <Country>Ukraine</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10346</Id>
     <Title>Studies of the Actual Loads of Nutrients and their Dissolved Fractions</Title>
     <Acronym>BSERP/GEF</Acronym>
@@ -21654,16 +21696,9 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11564</Id>
-    <Title>Studies of Ukrainian marine coastal zone climate features</Title>
-    <Acronym>Theme 23/06</Acronym>
-    <Coordinator>Ukrainian Hydrometeorological Institute, Marine Branch</Coordinator>
-    <Country>Ukraine</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11565</Id>
-    <Title>Development of the automated researche data processing methods for preparation of the state water cadastre issues on seas and riverine deltas</Title>
-    <Acronym>Theme 24/06</Acronym>
+    <Id>11563</Id>
+    <Title>Monitoring of marine environment quality of the Ukrainian coastal zone of the Black and Azov seas and nuclear-chemical pollution of atmospheric precipitations</Title>
+    <Acronym>Theme 19/09</Acronym>
     <Coordinator>Ukrainian Hydrometeorological Institute, Marine Branch</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -21675,9 +21710,9 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11563</Id>
-    <Title>Monitoring of marine environment quality of the Ukrainian coastal zone of the Black and Azov seas and nuclear-chemical pollution of atmospheric precipitations</Title>
-    <Acronym>Theme 19/09</Acronym>
+    <Id>11562</Id>
+    <Title>Preparation of the Azov sea Atlas of waves, sea level and currents</Title>
+    <Acronym>Theme 18/09</Acronym>
     <Coordinator>Ukrainian Hydrometeorological Institute, Marine Branch</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -21685,13 +21720,6 @@ Gulf basin-MASS</Title>
     <Id>11566</Id>
     <Title>Development of mathematical modeling methods for dynamical processes within the coastal zones and estuaries of the Azov-Black Sea basin</Title>
     <Acronym>Theme 25/06</Acronym>
-    <Coordinator>Ukrainian Hydrometeorological Institute, Marine Branch</Coordinator>
-    <Country>Ukraine</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11562</Id>
-    <Title>Preparation of the Azov sea Atlas of waves, sea level and currents</Title>
-    <Acronym>Theme 18/09</Acronym>
     <Coordinator>Ukrainian Hydrometeorological Institute, Marine Branch</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -22018,27 +22046,6 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10408</Id>
-    <Title>Oil and herbicide pollution in the Black Sea : detection and biological impact</Title>
-    <Acronym />
-    <Coordinator>Odessa National I.I.Mechnikov University</Coordinator>
-    <Country>Ukraine</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10409</Id>
-    <Title>To learn dynamics conditioned of technogenesis of deformations geochemistry of fields of base landscapes</Title>
-    <Acronym />
-    <Coordinator>Odessa National I.I.Mechnikov University</Coordinator>
-    <Country>Ukraine</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10410</Id>
-    <Title>THE STUDY OF THE INFLUENCING OF THE MODERN GEOLOGIC PROCESSES ON ECOSYSTEMPROCESSES ON REPEATABILITY MARINE ECOSYSTEMS</Title>
-    <Acronym />
-    <Coordinator>Odessa National I.I.Mechnikov University</Coordinator>
-    <Country>Ukraine</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11543</Id>
     <Title>To study geological structure and modern exogenous geological processes and to assess destruction of surface and coast of the Zmiinyi Island.</Title>
     <Acronym>ZM-336-2008</Acronym>
@@ -22060,23 +22067,23 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11540</Id>
-    <Title>To study the chemical composition of atmospheric precipitations and depositions and to estimate of  atmospheric fluxes of nitrogen, phosphorus and sulphur compo</Title>
-    <Acronym>ZM-328-2008</Acronym>
+    <Id>10408</Id>
+    <Title>Oil and herbicide pollution in the Black Sea : detection and biological impact</Title>
+    <Acronym />
     <Coordinator>Odessa National I.I.Mechnikov University</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11541</Id>
-    <Title>To carry out the integrated investigations and to estimate  marine waters quality near of Zmiinyi island using of  the EU Water Framework Directive recommendati</Title>
-    <Acronym>ZM-329-2008</Acronym>
+    <Id>10409</Id>
+    <Title>To learn dynamics conditioned of technogenesis of deformations geochemistry of fields of base landscapes</Title>
+    <Acronym />
     <Coordinator>Odessa National I.I.Mechnikov University</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11542</Id>
-    <Title>Integrated studies and assessment of current ecological state of the Zmiinyi Island coastal ecosystem taking into account the requirements of the Black Sea Conv</Title>
-    <Acronym>423</Acronym>
+    <Id>10410</Id>
+    <Title>THE STUDY OF THE INFLUENCING OF THE MODERN GEOLOGIC PROCESSES ON ECOSYSTEMPROCESSES ON REPEATABILITY MARINE ECOSYSTEMS</Title>
+    <Acronym />
     <Coordinator>Odessa National I.I.Mechnikov University</Coordinator>
     <Country>Ukraine</Country>
   </SimpleMetadata>
@@ -22151,6 +22158,27 @@ Gulf basin-MASS</Title>
     <Country>Ukraine</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11540</Id>
+    <Title>To study the chemical composition of atmospheric precipitations and depositions and to estimate of  atmospheric fluxes of nitrogen, phosphorus and sulphur compo</Title>
+    <Acronym>ZM-328-2008</Acronym>
+    <Coordinator>Odessa National I.I.Mechnikov University</Coordinator>
+    <Country>Ukraine</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11541</Id>
+    <Title>To carry out the integrated investigations and to estimate  marine waters quality near of Zmiinyi island using of  the EU Water Framework Directive recommendati</Title>
+    <Acronym>ZM-329-2008</Acronym>
+    <Coordinator>Odessa National I.I.Mechnikov University</Coordinator>
+    <Country>Ukraine</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11542</Id>
+    <Title>Integrated studies and assessment of current ecological state of the Zmiinyi Island coastal ecosystem taking into account the requirements of the Black Sea Conv</Title>
+    <Acronym>423</Acronym>
+    <Coordinator>Odessa National I.I.Mechnikov University</Coordinator>
+    <Country>Ukraine</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>9071</Id>
     <Title>Long-term changes in Baltic algal species and ecosystems</Title>
     <Acronym>BIOBASE</Acronym>
@@ -22221,13 +22249,6 @@ Gulf basin-MASS</Title>
     <Country>Denmark</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>8130</Id>
-    <Title>Estuarine QUALity classes for Water Framework Directive indicators</Title>
-    <Acronym>EQUAL</Acronym>
-    <Coordinator>Aarhus University, Department of Bioscience, Marine Ecology Roskilde</Coordinator>
-    <Country>Denmark</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>9040</Id>
     <Title>Characterisation of the Baltic Sea Ecosystem: Dynamics and Function of Coastal Types</Title>
     <Acronym>CHARM</Acronym>
@@ -22263,16 +22284,16 @@ Gulf basin-MASS</Title>
     <Country>Denmark</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>7587</Id>
-    <Title>ORFOIS - Origin and Fate of biogenic particle fluxes in the Ocean</Title>
-    <Acronym>ORFOIS</Acronym>
+    <Id>9053</Id>
+    <Title>Physical forcing and biogeochemical fluxes in shallow coastal ecosystems</Title>
+    <Acronym>PHASE</Acronym>
     <Coordinator>Aarhus University, Department of Bioscience, Marine Ecology Roskilde</Coordinator>
     <Country>Denmark</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9053</Id>
-    <Title>Physical forcing and biogeochemical fluxes in shallow coastal ecosystems</Title>
-    <Acronym>PHASE</Acronym>
+    <Id>7587</Id>
+    <Title>ORFOIS - Origin and Fate of biogenic particle fluxes in the Ocean</Title>
+    <Acronym>ORFOIS</Acronym>
     <Coordinator>Aarhus University, Department of Bioscience, Marine Ecology Roskilde</Coordinator>
     <Country>Denmark</Country>
   </SimpleMetadata>
@@ -22347,15 +22368,15 @@ Gulf basin-MASS</Title>
     <Country>Denmark</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9046</Id>
-    <Title>Recruitment of juvenile fish</Title>
+    <Id>9050</Id>
+    <Title>Effect of benthic primary producers on the nitrogen balance in shallow marine waters</Title>
     <Acronym />
     <Coordinator>Aarhus University, Department of Bioscience, Marine Ecology Roskilde</Coordinator>
     <Country>Denmark</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9050</Id>
-    <Title>Effect of benthic primary producers on the nitrogen balance in shallow marine waters</Title>
+    <Id>9046</Id>
+    <Title>Recruitment of juvenile fish</Title>
     <Acronym />
     <Coordinator>Aarhus University, Department of Bioscience, Marine Ecology Roskilde</Coordinator>
     <Country>Denmark</Country>
@@ -22375,6 +22396,13 @@ Gulf basin-MASS</Title>
     <Country>Denmark</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>9080</Id>
+    <Title>Plankton in tropical seas - important routes in the food network</Title>
+    <Acronym />
+    <Coordinator>Aarhus University, Department of Bioscience, Marine Ecology Roskilde</Coordinator>
+    <Country>Denmark</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>9048</Id>
     <Title>The effect of freshwater outflow on the heterotrophic turnover of organic matter in the Randers Fjord and Hevring Bay</Title>
     <Acronym />
@@ -22382,9 +22410,9 @@ Gulf basin-MASS</Title>
     <Country>Denmark</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>9080</Id>
-    <Title>Plankton in tropical seas - important routes in the food network</Title>
-    <Acronym />
+    <Id>8130</Id>
+    <Title>Estuarine QUALity classes for Water Framework Directive indicators</Title>
+    <Acronym>EQUAL</Acronym>
     <Coordinator>Aarhus University, Department of Bioscience, Marine Ecology Roskilde</Coordinator>
     <Country>Denmark</Country>
   </SimpleMetadata>
@@ -22830,6 +22858,13 @@ Gulf basin-MASS</Title>
     <Country>Lebanon</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>10485</Id>
+    <Title>Fertility and pollution Study along the Algerian coast</Title>
+    <Acronym />
+    <Coordinator>Ecole Nationale Superieure des Sciences de la Mer et de l Amenagement du Littoral</Coordinator>
+    <Country>Algeria</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>7898</Id>
     <Title>Contamination Assessment of the South Mediterranean Sea</Title>
     <Acronym>RAF/7</Acronym>
@@ -22839,13 +22874,6 @@ Gulf basin-MASS</Title>
   <SimpleMetadata>
     <Id>7899</Id>
     <Title>Monitoring of pollution by hydrocarbon oil in the Algerian coast</Title>
-    <Acronym />
-    <Coordinator>Ecole Nationale Superieure des Sciences de la Mer et de l Amenagement du Littoral</Coordinator>
-    <Country>Algeria</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10485</Id>
-    <Title>Fertility and pollution Study along the Algerian coast</Title>
     <Acronym />
     <Coordinator>Ecole Nationale Superieure des Sciences de la Mer et de l Amenagement du Littoral</Coordinator>
     <Country>Algeria</Country>
@@ -22872,9 +22900,23 @@ Gulf basin-MASS</Title>
     <Country>Algeria</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>11765</Id>
+    <Title>New biotechnology techniques on algae: biotechnological exploitation of seaweeds</Title>
+    <Acronym>NEBTA</Acronym>
+    <Coordinator>Institut National des Sciences et Technologies de la Mer</Coordinator>
+    <Country>Tunisia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10515</Id>
     <Title>Status and inventory of biodiversity and damaged ecosystem</Title>
     <Acronym>SINDBED</Acronym>
+    <Coordinator>Institut National des Sciences et Technologies de la Mer</Coordinator>
+    <Country>Tunisia</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11777</Id>
+    <Title>Benthos status and Habitat</Title>
+    <Acronym>EBHaR</Acronym>
     <Coordinator>Institut National des Sciences et Technologies de la Mer</Coordinator>
     <Country>Tunisia</Country>
   </SimpleMetadata>
@@ -22903,20 +22945,6 @@ Gulf basin-MASS</Title>
     <Id>11771</Id>
     <Title>Status of introduced species and threatened marine vertebrates: Systematics, distribution, ecology, biology and interaction with fishery</Title>
     <Acronym>-</Acronym>
-    <Coordinator>Institut National des Sciences et Technologies de la Mer</Coordinator>
-    <Country>Tunisia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11765</Id>
-    <Title>New biotechnology techniques on algae: biotechnological exploitation of seaweeds</Title>
-    <Acronym>NEBTA</Acronym>
-    <Coordinator>Institut National des Sciences et Technologies de la Mer</Coordinator>
-    <Country>Tunisia</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11777</Id>
-    <Title>Benthos status and Habitat</Title>
-    <Acronym>EBHaR</Acronym>
     <Coordinator>Institut National des Sciences et Technologies de la Mer</Coordinator>
     <Country>Tunisia</Country>
   </SimpleMetadata>
@@ -23201,8 +23229,8 @@ Gulf basin-MASS</Title>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3474</Id>
-    <Title>Oral spawning induction in fish - non invasive control of repro- duction in fish by dietary delivery of the bioactive peptide GNRH.</Title>
+    <Id>3471</Id>
+    <Title>The establishment of small farmers in aquaculture as a part of the National Reconstruction and Development-aid programme in South-Africa.</Title>
     <Acronym />
     <Coordinator>Katholieke Universiteit Leuven, Laboratory of Animal Diversity and Systematics</Coordinator>
     <Country>Belgium</Country>
@@ -23243,8 +23271,8 @@ Gulf basin-MASS</Title>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3471</Id>
-    <Title>The establishment of small farmers in aquaculture as a part of the National Reconstruction and Development-aid programme in South-Africa.</Title>
+    <Id>3474</Id>
+    <Title>Oral spawning induction in fish - non invasive control of repro- duction in fish by dietary delivery of the bioactive peptide GNRH.</Title>
     <Acronym />
     <Coordinator>Katholieke Universiteit Leuven, Laboratory of Animal Diversity and Systematics</Coordinator>
     <Country>Belgium</Country>
@@ -23495,13 +23523,6 @@ Gulf basin-MASS</Title>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3543</Id>
-    <Title>The carbon cycle and the future level of atmospheric CO2</Title>
-    <Acronym />
-    <Coordinator>Université Libre de Bruxelles, Laboratory of Chemical Oceanography and Water Geochemistry</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11296</Id>
     <Title>Exogenic contributions into the marine ecosystem; Interactions between the water column, sediments, and the waters in between</Title>
     <Acronym />
@@ -23511,6 +23532,13 @@ Gulf basin-MASS</Title>
   <SimpleMetadata>
     <Id>11280</Id>
     <Title>Transfer and behaviour of trace metals in the estuary of the Scheldt</Title>
+    <Acronym />
+    <Coordinator>Université Libre de Bruxelles, Laboratory of Chemical Oceanography and Water Geochemistry</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>3543</Id>
+    <Title>The carbon cycle and the future level of atmospheric CO2</Title>
     <Acronym />
     <Coordinator>Université Libre de Bruxelles, Laboratory of Chemical Oceanography and Water Geochemistry</Coordinator>
     <Country>Belgium</Country>
@@ -23565,6 +23593,13 @@ Gulf basin-MASS</Title>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>10132</Id>
+    <Title>Contribution of High - Intensity Gas Seeps in the Black Sea to Methane Emission to the Atmosphere</Title>
+    <Acronym>CRIMEA</Acronym>
+    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>3602</Id>
     <Title>Dynamic of the antarctic shelf-slope: an innovative geophysic approach</Title>
     <Acronym />
@@ -23575,13 +23610,6 @@ Gulf basin-MASS</Title>
     <Id>3603</Id>
     <Title>A continuous holocene record of ENSO variability in Southern Chile - A clue to a better understanding of interhemispheric climate teleconnections (ENSO-CHILI)</Title>
     <Acronym>ENSO-CHILI UGent-RCMG</Acronym>
-    <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>10132</Id>
-    <Title>Contribution of High - Intensity Gas Seeps in the Black Sea to Methane Emission to the Atmosphere</Title>
-    <Acronym>CRIMEA</Acronym>
     <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
@@ -23611,13 +23639,6 @@ Gulf basin-MASS</Title>
     <Title>QUantification of Erosion/Sedimentation patterns to Trace the natural versus anthropogenic sediment dynamics</Title>
     <Acronym>QUEST4D</Acronym>
     <Coordinator>Ghent University, Faculty of Sciences, Department Geology and Soil Science, Renard Centre of Marine Geology</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>11305</Id>
-    <Title>Study of the lobster Artemia with regard to the improvement of its use in the foodchain as a source of food in aquaculture</Title>
-    <Acronym />
-    <Coordinator>Ghent University, Laboratory for Aquaculture &amp; Artemia Reference Center</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
@@ -23686,6 +23707,13 @@ Gulf basin-MASS</Title>
   <SimpleMetadata>
     <Id>3617</Id>
     <Title>Establishment of aquaculture farming as a part of the national reconstruction and development programme in South-Africa.</Title>
+    <Acronym />
+    <Coordinator>Ghent University, Laboratory for Aquaculture &amp; Artemia Reference Center</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11305</Id>
+    <Title>Study of the lobster Artemia with regard to the improvement of its use in the foodchain as a source of food in aquaculture</Title>
     <Acronym />
     <Coordinator>Ghent University, Laboratory for Aquaculture &amp; Artemia Reference Center</Coordinator>
     <Country>Belgium</Country>
@@ -23943,16 +23971,16 @@ Gulf basin-MASS</Title>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3532</Id>
-    <Title>Biogeochemical carbon, nitrogen and phosphorus fluxes in the North Sea</Title>
-    <Acronym>CANOPY VUB-ANCH</Acronym>
+    <Id>3530</Id>
+    <Title>Gebruik laboratoriumcontainer voor toezicht op mariene verontreiniging.</Title>
+    <Acronym>CLEANLAB VUB-ANCH</Acronym>
     <Coordinator>Vrije Universiteit Brussels, Faculty of Sciences, Department of Chemistry, Laboratory of Analytical and Environmental Chemistry</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>3530</Id>
-    <Title>Gebruik laboratoriumcontainer voor toezicht op mariene verontreiniging.</Title>
-    <Acronym>CLEANLAB VUB-ANCH</Acronym>
+    <Id>3532</Id>
+    <Title>Biogeochemical carbon, nitrogen and phosphorus fluxes in the North Sea</Title>
+    <Acronym>CANOPY VUB-ANCH</Acronym>
     <Coordinator>Vrije Universiteit Brussels, Faculty of Sciences, Department of Chemistry, Laboratory of Analytical and Environmental Chemistry</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
@@ -24062,13 +24090,6 @@ Gulf basin-MASS</Title>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10493</Id>
-    <Title>Historical dataset submitted by MUMM for the REVAMP project.</Title>
-    <Acronym>REVAMP</Acronym>
-    <Coordinator>Royal Belgian Institute of Natural Sciences, Management Unit of North Sea and Scheldt Estuary Mathematical Models</Coordinator>
-    <Country>Belgium</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
     <Id>11367</Id>
     <Title>Optical remote sensing of coastal waters</Title>
     <Acronym>BELCOLOUR</Acronym>
@@ -24076,9 +24097,9 @@ Gulf basin-MASS</Title>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11439</Id>
-    <Title>Resuscitation of the data collected during the first years of modern oceanography in Belgium</Title>
-    <Acronym>PMPZ-DBII</Acronym>
+    <Id>10493</Id>
+    <Title>Historical dataset submitted by MUMM for the REVAMP project.</Title>
+    <Acronym>REVAMP</Acronym>
     <Coordinator>Royal Belgian Institute of Natural Sciences, Management Unit of North Sea and Scheldt Estuary Mathematical Models</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
@@ -24086,6 +24107,13 @@ Gulf basin-MASS</Title>
     <Id>11273</Id>
     <Title>(CIPS/ICWB) SEA - an extensive multidisciplinary Belgian survey of the eastern half of Southern Bight of North Sea</Title>
     <Acronym />
+    <Coordinator>Royal Belgian Institute of Natural Sciences, Management Unit of North Sea and Scheldt Estuary Mathematical Models</Coordinator>
+    <Country>Belgium</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>11439</Id>
+    <Title>Resuscitation of the data collected during the first years of modern oceanography in Belgium</Title>
+    <Acronym>PMPZ-DBII</Acronym>
     <Coordinator>Royal Belgian Institute of Natural Sciences, Management Unit of North Sea and Scheldt Estuary Mathematical Models</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
@@ -24146,16 +24174,16 @@ Gulf basin-MASS</Title>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>11904</Id>
-    <Title>Marine sand and gravel extraction in the Belgian part of the North Sea</Title>
-    <Acronym>ZAGRI</Acronym>
+    <Id>10507</Id>
+    <Title>Evaluation of climate change impacts and adaptation responses for marine activities (CLIMAR)</Title>
+    <Acronym>CLIMAR</Acronym>
     <Coordinator>Royal Belgian Institute of Natural Sciences, Management Unit of North Sea and Scheldt Estuary Mathematical Models</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
   <SimpleMetadata>
-    <Id>10507</Id>
-    <Title>Evaluation of climate change impacts and adaptation responses for marine activities (CLIMAR)</Title>
-    <Acronym>CLIMAR</Acronym>
+    <Id>11904</Id>
+    <Title>Marine sand and gravel extraction in the Belgian part of the North Sea</Title>
+    <Acronym>ZAGRI</Acronym>
     <Coordinator>Royal Belgian Institute of Natural Sciences, Management Unit of North Sea and Scheldt Estuary Mathematical Models</Coordinator>
     <Country>Belgium</Country>
   </SimpleMetadata>
@@ -24643,6 +24671,34 @@ Gulf basin-MASS</Title>
     <Country>Cyprus</Country>
   </SimpleMetadata>
   <SimpleMetadata>
+    <Id>8096</Id>
+    <Title>Cyprus Basin Oceanography</Title>
+    <Acronym>CYBO</Acronym>
+    <Coordinator>Cyprus Oceanography Center</Coordinator>
+    <Country>Cyprus</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>8098</Id>
+    <Title>Mediterranean regional subsystem of the Global Sea Level Observing System</Title>
+    <Acronym>MedGLOSS </Acronym>
+    <Coordinator>Cyprus Oceanography Center</Coordinator>
+    <Country>Cyprus</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>8105</Id>
+    <Title>Cyprus Coastal Ocean Forecasting and Observing System</Title>
+    <Acronym>CYCOFOS</Acronym>
+    <Coordinator>Cyprus Oceanography Center</Coordinator>
+    <Country>Cyprus</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
+    <Id>8108</Id>
+    <Title>Cyprus Coastal Oceanography</Title>
+    <Acronym>CYCO</Acronym>
+    <Coordinator>Cyprus Oceanography Center</Coordinator>
+    <Country>Cyprus</Country>
+  </SimpleMetadata>
+  <SimpleMetadata>
     <Id>10551</Id>
     <Title>Prevention and management of sea originated risks to the coastal zone.</Title>
     <Acronym>CORI</Acronym>
@@ -24681,34 +24737,6 @@ Gulf basin-MASS</Title>
     <Id>11925</Id>
     <Title>Providing marine data and forecasts via mobile touch screen devices to reach out to a large audience of potential users</Title>
     <Acronym>SEA MOBILE</Acronym>
-    <Coordinator>Cyprus Oceanography Center</Coordinator>
-    <Country>Cyprus</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>8096</Id>
-    <Title>Cyprus Basin Oceanography</Title>
-    <Acronym>CYBO</Acronym>
-    <Coordinator>Cyprus Oceanography Center</Coordinator>
-    <Country>Cyprus</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>8098</Id>
-    <Title>Mediterranean regional subsystem of the Global Sea Level Observing System</Title>
-    <Acronym>MedGLOSS </Acronym>
-    <Coordinator>Cyprus Oceanography Center</Coordinator>
-    <Country>Cyprus</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>8105</Id>
-    <Title>Cyprus Coastal Ocean Forecasting and Observing System</Title>
-    <Acronym>CYCOFOS</Acronym>
-    <Coordinator>Cyprus Oceanography Center</Coordinator>
-    <Country>Cyprus</Country>
-  </SimpleMetadata>
-  <SimpleMetadata>
-    <Id>8108</Id>
-    <Title>Cyprus Coastal Oceanography</Title>
-    <Acronym>CYCO</Acronym>
     <Coordinator>Cyprus Oceanography Center</Coordinator>
     <Country>Cyprus</Country>
   </SimpleMetadata>

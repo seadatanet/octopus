@@ -1,7 +1,5 @@
 include:
-    - project: dev-ops/templates/automatisation/ci-cd
-      ref: main
-      file: /pipelines/java-publish.yml
+  - component: $CI_SERVER_FQDN/dev-ops/templates/automatisation/ci-cd/pipeline-java-publish@~latest
 
 variables:
   # Build

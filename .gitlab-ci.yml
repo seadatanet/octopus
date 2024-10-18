@@ -6,7 +6,7 @@ variables:
   JAVA_VERSION: 8
   JAVA_BUILDER_BUILD_IMAGE: gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven-javafx:maven-javafx-3.8.5
   JAVA_BUILDER_MAVEN_SETTINGS_PATH: ci_settings.xml
-  JAVA_BUILDER_SKIP_TESTS: "true"
+  JAVA_BUILDER_TESTS_ENABLE: false
   JAVA_BUILDER_ARTIFACTS_PATH: "**/target/*.[zip|jar]"
   # Secret detection
 #  SECRET_DETECTION_HISTORIC_SCAN: "true"

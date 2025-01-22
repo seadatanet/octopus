@@ -2,6 +2,8 @@
 
 ![OCTOPUS Software logo](https://www.seadatanet.org/var/storage/images/_aliases/fullsize/media/seadatanet2-media/illustrations_sdc_sdn2_sdn/octopus_logo_2/10256-1-eng-GB/Octopus_logo_2.png "OCTOPUS logo")
 
+[![DOI](doi_octopus.svg)](https://doi.org/10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0)
+
 ## Badges
 
 [![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=21&a=32112&i=31101&r=021)

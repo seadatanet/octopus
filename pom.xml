@@ -734,7 +734,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<pluginRepository>
             <id>nexus-ifremer-release</id>
             <name>maven-release</name>
-            <url>https://nexus.isival.ifremer.fr/repository/maven-private-release/</url>
+            <url>https://nexus.ifremer.fr/repository/maven-private-release/</url>
         </pluginRepository>
 
 	</pluginRepositories>
@@ -744,13 +744,13 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<repository>
 			<id>nexus-ifremer-release</id>
 			<name>maven-release</name>
-			<url>https://nexus.isival.ifremer.fr/repository/maven-private-release/</url>
+			<url>https://nexus.ifremer.fr/repository/maven-private-release/</url>
 		</repository>
 
 		<repository>
 			<id>nexus-ifremer-snapshot</id>
 			<name>maven-snapshot</name>
-			<url>https://nexus.isival.ifremer.fr/repository/maven-private-snapshot/</url>
+			<url>https://nexus.ifremer.fr/repository/maven-private-snapshot/</url>
 		</repository>
 
 		<repository>

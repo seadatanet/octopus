@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.11.1
+
+### Corrections
+* Fix d'un problème de chargement du webservice EDMO.
+
+## 1.11.0
+
+### Evolutions
+* Conversion des fichiers ADCP provenant de CODAS.
+
 ## 1.10.0
 
 ### Evolutions

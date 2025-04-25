@@ -1,0 +1,193 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "type": "SoftwareSourceCode",
+    "author": [
+        {
+            "id": "https://orcid.org/0009-0008-1759-5254",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ifremer"
+            },
+            "email": "steven.piel@ifremer.fr",
+            "familyName": "PIEL",
+            "givenName": "Steven"
+        }
+    ],
+    "codeRepository": "https://github.com/seadatanet/octopus",
+    "contributor": [
+        {
+            "id": "_:contributor_1",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ifremer"
+            },
+            "email": "vincent.fachero@ifremer.fr",
+            "familyName": "FACHERO",
+            "givenName": "Vincent"
+        },
+        {
+            "id": "https://orcid.org/0000-0001-9327-4366",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ifremer"
+            },
+            "email": "julie.gatti@ifremer.fr",
+            "familyName": "GATTI",
+            "givenName": "Julie"
+        },
+        {
+            "id": "_:contributor_3",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ifremer"
+            },
+            "email": "francoise.le-hingrat@ifremer.fr",
+            "familyName": "LE HINGRAT",
+            "givenName": "Françoise"
+        },
+        {
+            "id": "https://orcid.org/0000-0002-5474-2224",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ifremer"
+            },
+            "email": "cecile.pertuisot@ifremer.fr",
+            "familyName": "PERTUISOT",
+            "givenName": "Cécile"
+        },
+        {
+            "id": "https://orcid.org/0000-0002-3906-5579",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ifremer"
+            },
+            "email": "marine.vernet@ifremer.fr",
+            "familyName": "VERNET",
+            "givenName": "Marine"
+        },
+        {
+            "id": "_:contributor_6",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Altran"
+            },
+            "familyName": "BREGENT",
+            "givenName": "Sophie"
+        },
+        {
+            "type": "schema:Role",
+            "contributor": "_:contributor_6",
+            "schema:roleName": "Developer",
+            "schema:startDate": "2015-07-03",
+            "schema:endDate": "2020-03-01"
+        },
+        {
+            "id": "https://orcid.org/0000-0001-5900-6149",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ifremer"
+            },
+            "familyName": "FICHAUT",
+            "givenName": "Michèle"
+        },
+        {
+            "id": "_:contributor_8",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ifremer"
+            },
+            "familyName": "LE LONQUER",
+            "givenName": "Leo"
+        },
+        {
+            "id": "https://orcid.org/0009-0009-7337-5245",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ifremer"
+            },
+            "email": "vanessa.tosello@ifremer.fr",
+            "familyName": "TOSELLO",
+            "givenName": "Vanessa"
+        },
+        {
+            "id": "_:contributor_10",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Capgemini Engineering"
+            },
+            "familyName": "CROUZILLE",
+            "givenName": "Sébastien"
+        },
+        {
+            "type": "schema:Role",
+            "contributor": "_:contributor_10",
+            "schema:roleName": "Developer",
+            "schema:startDate": "2019-01-01"
+        },
+        {
+            "id": "_:contributor_11",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Capgemini Engineering"
+            },
+            "familyName": "MAHOUDO",
+            "givenName": "Pierre"
+        },
+        {
+            "type": "schema:Role",
+            "contributor": "_:contributor_11",
+            "schema:roleName": "Developer",
+            "schema:startDate": "2022-01-01"
+        }
+    ],
+    "dateCreated": "2015-07-03",
+    "dateModified": "2024-09-19",
+    "datePublished": "2015-07-03",
+    "description": "OCTOPUS is a multiformat checker, splitter and converter tool for SeaDataNet (SDN) formats. It is a unique and ergonomic tool for many format conversions.",
+    "downloadUrl": "https://files.seadatanet.org/Logiciels/octopus-1.11.0-Win.zip",
+    "funder": {
+        "type": "Organization",
+        "name": "Ifremer, European Commission under the Horizon 2020 (SeaDataNet projects: SeaDataNet, SeaDataNet 2, SeaDataCloud)"
+    },
+    "identifier": "10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0",
+    "keywords": [
+        "SeaDataNet",
+        "check",
+        "convertion",
+        "split",
+        "ODV",
+        "netCDF",
+        "MedAtlas",
+        "MGD",
+        "EGO",
+        "ADCP",
+        "ODV variants",
+        "Biology (BODV)",
+        "Flow cytometry",
+        "Microlitter in water column (MODV)",
+        "Microlitter in sediments (SODV)",
+        "CDI"
+    ],
+    "license": "https://spdx.org/licenses/LGPL-3.0",
+    "name": "Octopus",
+    "operatingSystem": [
+        "Windows",
+        "Linux"
+    ],
+    "programmingLanguage": "Java",
+    "releaseNotes": "Conversion of ADCP files from CODAS.",
+    "runtimePlatform": "JVM",
+    "version": "1.11.0"
+}

@@ -9,8 +9,11 @@ logs/
 # externalResources/
 src/test/resources/MGD81/out/
 src/test/resources/cfpoint/out/
-src/test/resources/medatlas/out/
-src/test/resources/odv/out/
+# src/test/resources/medatlas/out/
+# src/test/resources/odv/out/
+
+# Mais inclure les fichiers readme.md dans ce repertoire et ses sous-repertoires
+# !src/test/resources/medatlas/out/odv/profile/readme.md
 
 # Fichiers de runtime
 octopusDB/
@@ -49,3 +52,4 @@ build/
 ### VS Code ###
 .vscode/
 
+/.apt_generated_tests/

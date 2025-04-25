@@ -2,8 +2,7 @@
 
 ![OCTOPUS Software logo](https://www.seadatanet.org/var/storage/images/_aliases/fullsize/media/seadatanet2-media/illustrations_sdc_sdn2_sdn/octopus_logo_2/10256-1-eng-GB/Octopus_logo_2.png "OCTOPUS logo")
 
-> [!IMPORTANT]
-> **The source codes will be made available by the end of August 2024**
+[![DOI]([doi_octopus.svg](https://img.shields.io/badge/DOI-10.12770/097e42fc--1aeb--4683--a781--35d92fa307f0-blue?label=DOI))](https://doi.org/10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0)
 
 ## Badges
 
@@ -147,7 +146,4 @@ For settings and details of all other available functions, please refer to the [
 
 ## License
 
-[SeaDataNet licence 1.0](https://www.seadatanet.org/Data-Access/License/1.0)
-
-> [!NOTE]
-> Octopus software licence will probably move by the end of 2024 to a [SPDX standard licence](https://spdx.org/licenses/)
+[GNU Lesser General Public License v3.0 only](https://spdx.org/licenses/LGPL-3.0-only.html)

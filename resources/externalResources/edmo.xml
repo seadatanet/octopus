@@ -10293,30 +10293,30 @@ Miguel Servet 177</address>
   <Organisation>
     <n_code>414</n_code>
     <input_date />
-    <last_update>8/13/2024 10:55:06 AM</last_update>
+    <last_update>4/16/2025 10:27:48 AM</last_update>
     <date_created>3/21/1996 12:00:00 AM</date_created>
     <organisation_exists>False</organisation_exists>
-    <organisation_changed_into />
+    <organisation_changed_into>5141</organisation_changed_into>
     <organisation_changed_year />
     <main_parent_organisation>False</main_parent_organisation>
-    <related_to_main_organisation />
+    <related_to_main_organisation>0</related_to_main_organisation>
     <Longitude>-6.2555</Longitude>
     <Latitude>53.3321</Latitude>
     <collate_id>396</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/396/dccae_logo-3-600x250.jpg</logo>
-    <name>Petroleum Affairs Division</name>
-    <native_name>PAD Roinn Cumarsáide, Gníomhaithe ar son na hAeráide &amp; Comshaoil</native_name>
-    <abbreviated_name>PAD</abbreviated_name>
-    <address>Department of Communications, Climate Actions and Environment</address>
-    <zipcode>D02 X285</zipcode>
-    <city>29-31 Adelaide Road</city>
+    <name>Geoscience Regulation Office</name>
+    <native_name>Geoscience Regulation Office</native_name>
+    <abbreviated_name />
+    <address>Department of the Environment, Climate and Communications</address>
+    <zipcode>D04K7X4 </zipcode>
+    <city>Dublin</city>
     <state>Dublin 2</state>
     <country>15</country>
     <country_c32>IE</country_c32>
-    <email>emd.info@dccae.gov.ie</email>
-    <phone>+353-1-6782663</phone>
-    <fax>+353-1-6782449</fax>
-    <website>https://www.dccae.gov.ie/en-ie/natural-resources/topics/Oil-Gas-Exploration-Production/Pages/home.aspx</website>
+    <email>GSRO@decc.gov.ie</email>
+    <phone>+353 1 6782000</phone>
+    <fax />
+    <website>https://experience.arcgis.com/experience/a186544ca13f491cb25cb4721f19c948</website>
     <c_country>Ireland</c_country>
   </Organisation>
   <Organisation>
@@ -167528,5 +167528,64 @@ Via Enrico Fermi 2749</address>
     <fax />
     <website>https://www.sisecam.com/en</website>
     <c_country>Turkey</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6099</n_code>
+    <input_date>4/11/2025 10:45:52 AM</input_date>
+    <last_update>4/11/2025 10:46:18 AM</last_update>
+    <date_created>4/11/2025 10:45:52 AM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>False</main_parent_organisation>
+    <related_to_main_organisation>0</related_to_main_organisation>
+    <Longitude>6.3841852</Longitude>
+    <Latitude>50.91270163</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Agroisolab GmbH</name>
+    <native_name>Agroisolab GmbH</native_name>
+    <abbreviated_name />
+    <address>Prof. Rehm Straße 6
+</address>
+    <zipcode>52428</zipcode>
+    <city>Jülich</city>
+    <state />
+    <country>5</country>
+    <country_c32>DE</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://agroisolab.de</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6100</n_code>
+    <input_date>4/17/2025 7:03:58 PM</input_date>
+    <last_update>4/17/2025 7:08:23 PM</last_update>
+    <date_created>4/17/2025 7:03:58 PM</date_created>
+    <organisation_exists>True</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>False</main_parent_organisation>
+    <related_to_main_organisation>0</related_to_main_organisation>
+    <Longitude>-4.55967</Longitude>
+    <Latitude>48.35999</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>IRD, Instrumentation, Analytical Means, Observatories in Geophysics and Oceanography (IMAGO)</name>
+    <native_name>IRD, Instrumentation, Moyen Analytiques, Observatoirews en Geophysique et Oceanographie (IMAGO)</native_name>
+    <abbreviated_name />
+    <address>IRD Centre de Brest, Technopôle de Brest-Iroise</address>
+    <zipcode>29280</zipcode>
+    <city>Plouzane</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://imago.ird.fr/</website>
+    <c_country>France</c_country>
   </Organisation>
 </Organisations>

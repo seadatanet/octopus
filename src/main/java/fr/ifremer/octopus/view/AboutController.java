@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.web.WebView;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -63,14 +64,26 @@ public class AboutController {
 				 inputRoadmap = getClass().getResourceAsStream(pathString);
 			}
 			
-			String content = new BufferedReader(new InputStreamReader(inputRoadmap))
-			  .lines().collect(Collectors.joining("\n"));
-			presentationWebView.getEngine().loadContent(content);
+			String content = new BufferedReader(new InputStreamReader(inputRoadmap)).lines()
+					.collect(Collectors.joining("\n"));
+
+			// Charger l'image et la convertir en base64
+			InputStream imageStream = getClass().getResourceAsStream("/images/lgplv3-147x51.png");
+			if (imageStream != null) {
+				byte[] imageBytes = IOUtils.toByteArray(imageStream);
+				String base64Image = java.util.Base64.getEncoder().encodeToString(imageBytes);
+
+				content = content.replace("<img id=\"lgplLogo\" alt=\"LGPL v3 Logo\">",
+						"<img id=\"lgplLogo\" alt=\"LGPL v3 Logo\" src=\"data:image/png;base64," + base64Image + "\">");
+			}
+
+			presentationWebView.getEngine().loadContent(content);			
 			
 		} catch (Exception e) {
 			LOGGER.error(e.getMessage());
 			LOGGER.error("error on presentation read");
-		} 
+		}
+		
 		aboutVersion.setText(OctopusVersion.getVersion());
 	}
 	 

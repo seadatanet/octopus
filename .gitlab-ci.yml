@@ -25,8 +25,8 @@ release:gitlab:create 🚀:
         - name: octopus-$RELEASE_VERSION-Win64_standalone.zip
           url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win64_standalone.zip"
         - name: octopus-$RELEASE_VERSION-Win.zip
-          url: "${CI_API_V4_URL}/projects/1225/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win.zip"
+          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win.zip"
         - name: octopus-$RELEASE_VERSION-Linux64_standalone.zip
-          url: "${CI_API_V4_URL}/projects/1225/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Linux64_standalone.zip"
+          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Linux64_standalone.zip"
         - name: octopus-$RELEASE_VERSION-Linux.zip
           url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Linux.zip"

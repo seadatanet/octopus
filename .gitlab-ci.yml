@@ -1,13 +1,11 @@
 include:
   - component: $CI_SERVER_FQDN/dev-ops/templates/automatisation/ci-cd/pipeline-java-publish@~latest
-
-variables:
-  # Build
-  JAVA_VERSION: 8
-  JAVA_BUILDER_BUILD_IMAGE: gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven-javafx:maven-javafx-3.8.5
-  JAVA_BUILDER_MAVEN_SETTINGS_PATH: ci_settings.xml
-  JAVA_BUILDER_TESTS_ENABLE: false
-  JAVA_BUILDER_ARTIFACTS_PATH: "**/target/*.[zip|jar]"
+    inputs:
+      java_builder_artifacts_path: "**/target/*.[zip|jar]"
+      java_builder_build_image: "gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven-javafx:maven-javafx-3.8.5"
+      java_builder_maven_settings_path: "ci_settings.xml"
+      java_builder_tests_enable: "false"
+      java_version: 8
   # Secret detection
 #  SECRET_DETECTION_HISTORIC_SCAN: "true"
 

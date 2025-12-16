@@ -48,7 +48,6 @@ OCTOPUS also allows:
 | ODV SDN | <p align="center">❌</p> | <p align="center">✅</p> | <p align="center">❌</p> | <p align="center">✅</p> |
 | ODV variants | <p align="center">❌</p> | <p align="center">❌</p> | <p align="center">✅</p> | <p align="center">❌</p> |
 | netCDF SDN (Cfpoint) | <p align="center">❌</p> | <p align="center">✅</p> | <p align="center">❌</p> | <p align="center">✅</p> |
-| MGDv81 | <p align="center">❌</p> | <p align="center">✅</p> | <p align="center">❌</p> | <p align="center">❌</p> |
 | MGDv98 | <p align="center">❌</p> | <p align="center">✅</p> | <p align="center">❌</p> | <p align="center">❌</p> |
 | netCDF gliders | <p align="center">❌</p> | <p align="center">❌</p> | <p align="center">❌</p> | <p align="center">✅</p> |
 | netCDF S-ADCP | <p align="center">❌</p> | <p align="center">❌</p> | <p align="center">❌</p> | <p align="center">✅</p> |

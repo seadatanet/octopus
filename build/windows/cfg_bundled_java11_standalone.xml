@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>true</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>octopus.jar</jar>
+  <outfile>C:\Users\scrouzil.CORP\_PROJECTS_\SEADATANET\octopus_bundle\octopus\build\windows\octopus_winStandalone.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>true</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\scrouzil.CORP\_PROJECTS_\SEADATANET\octopus_bundle\octopus\build\Octopus_logo.ico</icon>
+  <classPath>
+    <mainClass>fr.ifremer.octopus.MainApp</mainClass>
+    <cp>octopus.jar</cp>
+    <cp>lib/*</cp>
+ </classPath>
+  <jre>
+    <path>jre</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>true</requires64Bit>
+    <minVersion>11.0.27</minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>

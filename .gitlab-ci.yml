@@ -1,17 +1,11 @@
 include:
   - component: $CI_SERVER_FQDN/dev-ops/templates/automatisation/ci-cd/pipeline-java-publish@~latest
-
-variables:
-  # Build
-  JAVA_VERSION: 8
-  JAVA_BUILDER_BUILD_IMAGE: gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven-javafx:maven-javafx-3.8.5
-  JAVA_BUILDER_MAVEN_SETTINGS_PATH: ci_settings.xml
-  JAVA_BUILDER_TESTS_ENABLE: false
-  JAVA_BUILDER_ARTIFACTS_PATH: "**/target/*.[zip|jar]"
-  # Secret detection
-#  SECRET_DETECTION_HISTORIC_SCAN: "true"
-
-
+    inputs:
+      java_version: 11
+      java_builder_build_image: gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven:eclipse-temurin-11-alpine-javafx17
+      java_builder_maven_settings_path: ci_settings.xml
+      java_builder_tests_enable: true
+      java_builder_artifacts_path: "**/target/*.[zip|jar]"
 
 # surcharge des assets de la release gitlab
 release:gitlab:create 🚀:
@@ -23,7 +17,7 @@ release:gitlab:create 🚀:
     assets:
       links:
         - name: octopus-$RELEASE_VERSION-Win64_standalone.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win64_standalone.zip"
+          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win_standalone.zip"
         - name: octopus-$RELEASE_VERSION-Win.zip
           url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win.zip"
         - name: octopus-$RELEASE_VERSION-Linux64_standalone.zip

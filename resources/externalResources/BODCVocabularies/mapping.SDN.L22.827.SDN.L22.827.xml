@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+   <vocabulary list="SDN:L22:827:"  version="827"  date="2026-02-24T02:00:00.000"  title="SeaVoX Device Catalogue"   />
+   <mapped>
+      <vocabulary list="SDN:L22:827:"  version="827"  date="2026-02-24T02:00:00.000"  title="SeaVoX Device Catalogue"   />
+   </mapped>
+   <match>
+      <element  key="SDN:L22:827:TOOL0425"  label="Chelsea Technologies Group Alphatracka II transmissometer"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0065"  label="Chelsea Technologies Group Alphatracka transmissometer"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0065"  label="Chelsea Technologies Group Alphatracka transmissometer"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0425"  label="Chelsea Technologies Group Alphatracka II transmissometer"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0424"  label="Chelsea Technologies Group Aquatracka III fluorometer"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0049"  label="Chelsea Technologies Group Aquatracka fluorometer"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0049"  label="Chelsea Technologies Group Aquatracka fluorometer"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0424"  label="Chelsea Technologies Group Aquatracka III fluorometer"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0354"  label="Hydrophone"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0360"  label="Institut Francais du Petrole Geomecanique hydrophone array"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1577"  label="Hydroptic Underwater Vision Profiler 5 DEEP {UVP5} imaging sensor series"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL2109"  label="Hydroptic Underwater Vision Profiler 5 StandarD {UVP5} imaging sensor"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL2110"  label="Hydroptic Underwater Vision Profiler 5 High Definition {UVP5} imaging sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL2154"  label="Hydroptic Underwater Vision Profiler 5 {UVP5} imaging sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1650"  label="Hydroptic Underwater Vision Profiler 5 Shallow {UVP5} imaging sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL2109"  label="Hydroptic Underwater Vision Profiler 5 StandarD {UVP5} imaging sensor"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL2109"  label="Hydroptic Underwater Vision Profiler 5 StandarD {UVP5} imaging sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL2154"  label="Hydroptic Underwater Vision Profiler 5 {UVP5} imaging sensor series"    />
+      </broad>
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1577"  label="Hydroptic Underwater Vision Profiler 5 DEEP {UVP5} imaging sensor series"    />
+         <element  key="SDN:L22:827:TOOL2106"  label="Hydroptic Underwater Vision Profiler 5 standard Zoomed {UVP5} imaging sensor"    />
+         <element  key="SDN:L22:827:TOOL1650"  label="Hydroptic Underwater Vision Profiler 5 Shallow {UVP5} imaging sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL2106"  label="Hydroptic Underwater Vision Profiler 5 standard Zoomed {UVP5} imaging sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL2109"  label="Hydroptic Underwater Vision Profiler 5 StandarD {UVP5} imaging sensor"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL2154"  label="Hydroptic Underwater Vision Profiler 5 {UVP5} imaging sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL2109"  label="Hydroptic Underwater Vision Profiler 5 StandarD {UVP5} imaging sensor"    />
+         <element  key="SDN:L22:827:TOOL2110"  label="Hydroptic Underwater Vision Profiler 5 High Definition {UVP5} imaging sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL2107"  label="Hydroptic Underwater Vision Profiler 6 High Frequency {UVP6} imaging sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL2141"  label="Hydroptic Underwater Vision Profiler 6 {UVP6} imaging sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1578"  label="Hydroptic Underwater Vision Profiler 6 LP {UVP6} imaging sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL2141"  label="Hydroptic Underwater Vision Profiler 6 {UVP6} imaging sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL2141"  label="Hydroptic Underwater Vision Profiler 6 {UVP6} imaging sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1578"  label="Hydroptic Underwater Vision Profiler 6 LP {UVP6} imaging sensor"    />
+         <element  key="SDN:L22:827:TOOL2107"  label="Hydroptic Underwater Vision Profiler 6 High Frequency {UVP6} imaging sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0360"  label="Institut Francais du Petrole Geomecanique hydrophone array"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0354"  label="Hydrophone"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL2197"  label="Institute of Marine Sciences KduPRO-RGB radiometer"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL2196"  label="Institute of Marine Sciences KduPRO-RGB radiometer system"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL2196"  label="Institute of Marine Sciences KduPRO-RGB radiometer system"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL2197"  label="Institute of Marine Sciences KduPRO-RGB radiometer"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0697"  label="MetOcean Surface Velocity Program (SVP)-Iridium Drifter"    />
+      <exact>
+         <element  key="SDN:L22:827:TOOL000X"  label="inapplicable"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0897"  label="Nortek 1 MHz acoustic wave and current profiler"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0898"  label="Nortek acoustic wave and current profiler"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0895"  label="Nortek 400 kHz acoustic wave and current profiler"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0898"  label="Nortek acoustic wave and current profiler"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0896"  label="Nortek 600 kHz acoustic wave and current profiler"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0898"  label="Nortek acoustic wave and current profiler"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0477"  label="Nortek Aquadopp 3000 3D Doppler current meter"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0089"  label="Nortek Aquadopp 3D Doppler current meter"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0089"  label="Nortek Aquadopp 3D Doppler current meter"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0476"  label="Nortek Aquadopp 6000 3D Doppler current meter"    />
+         <element  key="SDN:L22:827:TOOL0477"  label="Nortek Aquadopp 3000 3D Doppler current meter"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0392"  label="Nortek Aquadopp 400 kHz Doppler current profiler"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0888"  label="Nortek Aquadopp Doppler current profiler"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0887"  label="Nortek Aquadopp 600 kHz Doppler current profiler"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0888"  label="Nortek Aquadopp Doppler current profiler"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0476"  label="Nortek Aquadopp 6000 3D Doppler current meter"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0089"  label="Nortek Aquadopp 3D Doppler current meter"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0888"  label="Nortek Aquadopp Doppler current profiler"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0392"  label="Nortek Aquadopp 400 kHz Doppler current profiler"    />
+         <element  key="SDN:L22:827:TOOL0887"  label="Nortek Aquadopp 600 kHz Doppler current profiler"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0904"  label="Nortek Continental 190 kHz Doppler current profiler"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0905"  label="Nortek Continental Doppler current profiler"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0903"  label="Nortek Continental 470 kHz Doppler current profiler"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0905"  label="Nortek Continental Doppler current profiler"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0905"  label="Nortek Continental Doppler current profiler"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0904"  label="Nortek Continental 190 kHz Doppler current profiler"    />
+         <element  key="SDN:L22:827:TOOL0903"  label="Nortek Continental 470 kHz Doppler current profiler"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0898"  label="Nortek acoustic wave and current profiler"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0895"  label="Nortek 400 kHz acoustic wave and current profiler"    />
+         <element  key="SDN:L22:827:TOOL0896"  label="Nortek 600 kHz acoustic wave and current profiler"    />
+         <element  key="SDN:L22:827:TOOL0897"  label="Nortek 1 MHz acoustic wave and current profiler"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0403"  label="Paroscientific 410K Pressure Transducer"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0931"  label="Paroscientific Digiquartz depth sensors"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0475"  label="Paroscientific 415K Pressure Transducer"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0931"  label="Paroscientific Digiquartz depth sensors"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0931"  label="Paroscientific Digiquartz depth sensors"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0403"  label="Paroscientific 410K Pressure Transducer"    />
+         <element  key="SDN:L22:827:TOOL0475"  label="Paroscientific 415K Pressure Transducer"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1920"  label="Pro-Oceanus GTD-Pro dissolved gas sensor"    />
+      <exact>
+         <element  key="SDN:L22:827:TOOL0679"  label="Pro-Oceanus GTD-Pro dissolved gas sensor"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0494"  label="Rotronic Hygromet MP102H temperature and humidity probe"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0618"  label="Rotronic Instruments Hygromet (MP1xxH) humidity and temperature probe series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0495"  label="Rotronic Hygromet MP402H temperature and humidity probe"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0618"  label="Rotronic Instruments Hygromet (MP1xxH) humidity and temperature probe series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0618"  label="Rotronic Instruments Hygromet (MP1xxH) humidity and temperature probe series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0494"  label="Rotronic Hygromet MP102H temperature and humidity probe"    />
+         <element  key="SDN:L22:827:TOOL0495"  label="Rotronic Hygromet MP402H temperature and humidity probe"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0399"  label="Rotronic Instruments MP103A humidity and temperature probe"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0617"  label="Rotronic Instruments MP1xxA humidity and temperature probe series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0617"  label="Rotronic Instruments MP1xxA humidity and temperature probe series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0399"  label="Rotronic Instruments MP103A humidity and temperature probe"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0022"  label="Sea-Bird SBE 37 MicroCat IM-CT with optional pressure (submersible) CTD sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1450"  label="Sea-Bird SBE 37 MicroCat IM-CTP (submersible) CTD sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1450"  label="Sea-Bird SBE 37 MicroCat IM-CTP (submersible) CTD sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0022"  label="Sea-Bird SBE 37 MicroCat IM-CT with optional pressure (submersible) CTD sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0019"  label="Sea-Bird SBE 37 MicroCat IMP-CT with optional pressure (submersible) CTD sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1451"  label="Sea-Bird SBE 37 MicroCat IMP-CTP (submersible) CTD sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1451"  label="Sea-Bird SBE 37 MicroCat IMP-CTP (submersible) CTD sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0019"  label="Sea-Bird SBE 37 MicroCat IMP-CT with optional pressure (submersible) CTD sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0021"  label="Sea-Bird SBE 37 MicroCat SI-CT with optional pressure (submersible) CTD sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1452"  label="Sea-Bird SBE 37 MicroCat SI-CTP (submersible) CTD sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1452"  label="Sea-Bird SBE 37 MicroCat SI-CTP (submersible) CTD sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0021"  label="Sea-Bird SBE 37 MicroCat SI-CT with optional pressure (submersible) CTD sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0020"  label="Sea-Bird SBE 37 MicroCat SIP-CT with optional pressure (submersible) CTD sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1453"  label="Sea-Bird SBE 37 MicroCat SIP-CTP (submersible) CTD sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1453"  label="Sea-Bird SBE 37 MicroCat SIP-CTP (submersible) CTD sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0020"  label="Sea-Bird SBE 37 MicroCat SIP-CT with optional pressure (submersible) CTD sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0017"  label="Sea-Bird SBE 37 MicroCat SM-CT with optional pressure (submersible) CTD sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1456"  label="Sea-Bird SBE 37 MicroCat SM-CTP (submersible) CTD sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1456"  label="Sea-Bird SBE 37 MicroCat SM-CTP (submersible) CTD sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0017"  label="Sea-Bird SBE 37 MicroCat SM-CT with optional pressure (submersible) CTD sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0018"  label="Sea-Bird SBE 37 MicroCat SMP-CT with optional pressure (submersible) CTD sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1457"  label="Sea-Bird SBE 37 MicroCat SMP-CTP (submersible) CTD sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0634"  label="Sea-Bird SBE 37 MicroCat SMP-CT-IDO with optional pressure (submersible) CTD sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1458"  label="Sea-Bird SBE 37 MicroCat SMP-CTP-IDO (submersible) CTD sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0869"  label="Sea-Bird SBE 37 MicroCat SMP-CT-ODO with optional pressure (submersible) CTD sensor series"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL1459"  label="Sea-Bird SBE 37 MicroCat SMP-CTP-ODO (submersible) CTD sensor"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1457"  label="Sea-Bird SBE 37 MicroCat SMP-CTP (submersible) CTD sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0018"  label="Sea-Bird SBE 37 MicroCat SMP-CT with optional pressure (submersible) CTD sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1458"  label="Sea-Bird SBE 37 MicroCat SMP-CTP-IDO (submersible) CTD sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0634"  label="Sea-Bird SBE 37 MicroCat SMP-CT-IDO with optional pressure (submersible) CTD sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1459"  label="Sea-Bird SBE 37 MicroCat SMP-CTP-ODO (submersible) CTD sensor"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0869"  label="Sea-Bird SBE 37 MicroCat SMP-CT-ODO with optional pressure (submersible) CTD sensor series"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:NETT0193"  label="Semi-Balloon Otter Trawl"    />
+      <narrow>
+         <element  key="SDN:L22:827:NETT0194"  label="Semi-Balloon Otter Trawl (14 m headrope; single-warp operation) - Merrett and Marshall (1980)"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:NETT0194"  label="Semi-Balloon Otter Trawl (14 m headrope; single-warp operation) - Merrett and Marshall (1980)"    />
+      <broad>
+         <element  key="SDN:L22:827:NETT0193"  label="Semi-Balloon Otter Trawl"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0486"  label="Thermo Finnigan {Thermo Fisher Scientific} AS 3000 autosampler"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0487"  label="Thermo Finnigan {Thermo Fisher Scientific} SpectraSYSTEM high performance liquid chromatograph"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0487"  label="Thermo Finnigan {Thermo Fisher Scientific} SpectraSYSTEM high performance liquid chromatograph"    />
+      <narrow>
+         <element  key="SDN:L22:827:TOOL0488"  label="Thermo Finnigan {Thermo Fisher Scientific} UV6000LP photodiode array detector"    />
+         <element  key="SDN:L22:827:TOOL0486"  label="Thermo Finnigan {Thermo Fisher Scientific} AS 3000 autosampler"    />
+      </narrow>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL0488"  label="Thermo Finnigan {Thermo Fisher Scientific} UV6000LP photodiode array detector"    />
+      <broad>
+         <element  key="SDN:L22:827:TOOL0487"  label="Thermo Finnigan {Thermo Fisher Scientific} SpectraSYSTEM high performance liquid chromatograph"    />
+      </broad>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1807"  label="Turner Designs 10AU fluorometer"    />
+      <exact>
+         <element  key="SDN:L22:827:TOOL0393"  label="Turner Designs 10AU fluorometer"    />
+      </exact>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1976"  label="WET Labs {Sea-Bird WETLabs} ECO MCOMS FLBB2 scattering and fluorescence sensor"    />
+      <related>
+         <element  key="SDN:L22:827:TOOL1713"  label="WET Labs {Sea-Bird WETLabs} ECO MCOMS scattering fluorescence sensor"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1977"  label="WET Labs {Sea-Bird WETLabs} ECO MCOMS FLBBCD scattering and fluorescence sensor"    />
+      <related>
+         <element  key="SDN:L22:827:TOOL1713"  label="WET Labs {Sea-Bird WETLabs} ECO MCOMS scattering fluorescence sensor"    />
+      </related>
+   </match>
+   <match>
+      <element  key="SDN:L22:827:TOOL1713"  label="WET Labs {Sea-Bird WETLabs} ECO MCOMS scattering fluorescence sensor"    />
+      <related>
+         <element  key="SDN:L22:827:TOOL1976"  label="WET Labs {Sea-Bird WETLabs} ECO MCOMS FLBB2 scattering and fluorescence sensor"    />
+         <element  key="SDN:L22:827:TOOL1977"  label="WET Labs {Sea-Bird WETLabs} ECO MCOMS FLBBCD scattering and fluorescence sensor"    />
+      </related>
+   </match>
+</mapping>

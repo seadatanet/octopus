@@ -4,6 +4,11 @@
 
 [![DOI](https://img.shields.io/badge/DOI-10.12770/097e42fc--1aeb--4683--a781--35d92fa307f0-blue?label=DOI)](https://doi.org/10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0)
 
+## Persistent identifiers
+
+- **DOI**: used for citation of software releases (see DOI badge above).
+- **SWHID**: will be used as a persistent identifier for the source code, enabling precise reference to the archived code in Software Heritage (to be added after tagging v1.12.0).
+
 ## Badges
 
 [![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=21&a=32112&i=31101&r=021)

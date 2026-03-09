@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.12.0
+
+### Evolutions
+* Passage à OpenJDK 11.
+
 ## 1.11.1
 
 ### Corrections

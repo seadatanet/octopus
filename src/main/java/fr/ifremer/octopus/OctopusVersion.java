@@ -46,11 +46,15 @@ public class OctopusVersion {
 				LOGGER.info(state.getDescription());
 			}else{
 				ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
-				String[] lastDate = state.getLastVersionDay().split("-");
 				String dialogMessage1=MessageFormat.format(messages.getString("rootController.OctopusVersionCurrent"), state.getVersion()  );
-				String dialogMessage2=MessageFormat.format(messages.getString("rootController.OctopusVersionUpdateAvailable"), state.getLastVersion(), lastDate[0], lastDate[1], lastDate[2]);
-				
-				LOGGER.info(dialogMessage1+ " "+dialogMessage2);
+				String lastVersionDay = state.getLastVersionDay();
+				if (lastVersionDay != null) {
+					String[] lastDate = lastVersionDay.split("-");
+					String dialogMessage2=MessageFormat.format(messages.getString("rootController.OctopusVersionUpdateAvailable"), state.getLastVersion(), lastDate[0], lastDate[1], lastDate[2]);
+					LOGGER.info(dialogMessage1+ " "+dialogMessage2);
+				} else {
+					LOGGER.info(dialogMessage1);
+				}
 			}
 
 
@@ -58,7 +62,7 @@ public class OctopusVersion {
 		catch(Exception e)
 		{
 			ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
-			LOGGER.warn(messages.getString("rootController.OctopusVersionUnreachable"), e);
+			LOGGER.warn(messages.getString("rootController.OctopusVersionUnreachable"));
 			return null;
 		}
 		return state;

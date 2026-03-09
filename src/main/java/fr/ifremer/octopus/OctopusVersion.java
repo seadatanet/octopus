@@ -42,19 +42,20 @@ public class OctopusVersion {
 			client = new SoftwareVersionClient(new URL("https://www.seadatanet.org/SoftwareVersionSoap/SoftwareVersionWebService?wsdl"));                                
 
 			state = client.getSoftwareState("OCTOPUS", getVersion());
+			ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
+			LOGGER.info("OctopusVersion state from service: {}", state.getState());
 			if(state.getState() == STATE.LAST_VERSION){
 				LOGGER.info(state.getDescription());
+			}else if(state.getState() == STATE.OLD_VERSION || state.getState() == STATE.UNKNOWN_VERSION){
+				// lastVersionInstant is guaranteed to be set for these states
+				String[] lastDate = state.getLastVersionDay().split("-");
+				String dialogMessage1=MessageFormat.format(messages.getString("rootController.OctopusVersionCurrent"), state.getVersion());
+				String dialogMessage2=MessageFormat.format(messages.getString("rootController.OctopusVersionUpdateAvailable"), state.getLastVersion(), lastDate[0], lastDate[1], lastDate[2]);
+				LOGGER.info(dialogMessage1+ " "+dialogMessage2);
 			}else{
-				ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
-				String dialogMessage1=MessageFormat.format(messages.getString("rootController.OctopusVersionCurrent"), state.getVersion()  );
-				String lastVersionDay = state.getLastVersionDay();
-				if (lastVersionDay != null) {
-					String[] lastDate = lastVersionDay.split("-");
-					String dialogMessage2=MessageFormat.format(messages.getString("rootController.OctopusVersionUpdateAvailable"), state.getLastVersion(), lastDate[0], lastDate[1], lastDate[2]);
-					LOGGER.info(dialogMessage1+ " "+dialogMessage2);
-				} else {
-					LOGGER.info(dialogMessage1);
-				}
+				// SOAP_ERROR or UNKNOWN_SOFTWARE : service unreachable or returned no data
+				LOGGER.warn(messages.getString("rootController.OctopusVersionUnreachable"));
+				return null;
 			}
 
 

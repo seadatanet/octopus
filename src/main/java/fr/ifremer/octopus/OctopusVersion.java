@@ -58,7 +58,7 @@ public class OctopusVersion {
 		catch(Exception e)
 		{
 			ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
-			LOGGER.warn(messages.getString("rootController.OctopusVersionUnreachable"));
+			LOGGER.warn(messages.getString("rootController.OctopusVersionUnreachable"), e);
 			return null;
 		}
 		return state;

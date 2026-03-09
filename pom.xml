@@ -140,6 +140,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 								</transformer>
 								<!-- Workaround for shade + log4j2 + standalone application JAR -->
 								<transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer" />
+								<!-- Merge META-INF/services files instead of overwriting them (needed for JAX-WS/Axis2 SPI discovery) -->
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
 							</transformers>
 						</configuration>
 					</execution>

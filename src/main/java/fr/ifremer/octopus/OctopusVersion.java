@@ -43,7 +43,6 @@ public class OctopusVersion {
 
 			state = client.getSoftwareState("OCTOPUS", getVersion());
 			ResourceBundle messages = ResourceBundle.getBundle("bundles/messages", PreferencesManager.getInstance().getLocale());
-			LOGGER.info("OctopusVersion state from service: {}", state.getState());
 			if(state.getState() == STATE.LAST_VERSION){
 				LOGGER.info(state.getDescription());
 			}else if(state.getState() == STATE.OLD_VERSION || state.getState() == STATE.UNKNOWN_VERSION){

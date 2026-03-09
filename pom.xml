@@ -142,6 +142,10 @@ It is a unique and ergonomic tool for many format conversions.</description>
 								<transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer" />
 								<!-- Merge META-INF/services files instead of overwriting them (needed for JAX-WS/Axis2 SPI discovery) -->
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+								<!-- Merge jax-ws-catalog.xml entries from all JARs to preserve WSDL local references -->
+								<transformer implementation="org.apache.maven.plugins.shade.resource.XmlAppendingTransformer">
+									<resource>META-INF/jax-ws-catalog.xml</resource>
+								</transformer>
 							</transformers>
 						</configuration>
 					</execution>

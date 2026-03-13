@@ -10,17 +10,17 @@ include:
 # surcharge des assets de la release gitlab
 release:gitlab:create 🚀:
   release:
-    name: Release $RELEASE_VERSION
+    name: Release $MAVEN_RELEASE_VERSION
     description: $CI_COMMIT_TAG_MESSAGE
-    tag_name: $RELEASE_VERSION
+    tag_name: $MAVEN_RELEASE_VERSION
     ref: $CI_COMMIT_SHA
     assets:
       links:
-        - name: octopus-$RELEASE_VERSION-Win64_standalone.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win_standalone.zip"
-        - name: octopus-$RELEASE_VERSION-Win.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win.zip"
-        - name: octopus-$RELEASE_VERSION-Linux64_standalone.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Linux64_standalone.zip"
-        - name: octopus-$RELEASE_VERSION-Linux.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Linux.zip"
+        - name: octopus-$MAVEN_RELEASE_VERSION-Win64_standalone.zip
+          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$MAVEN_RELEASE_VERSION/octopus-$MAVEN_RELEASE_VERSION-Win_standalone.zip"
+        - name: octopus-$MAVEN_RELEASE_VERSION-Win.zip
+          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$MAVEN_RELEASE_VERSION/octopus-$MAVEN_RELEASE_VERSION-Win.zip"
+        - name: octopus-$MAVEN_RELEASE_VERSION-Linux64_standalone.zip
+          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$MAVEN_RELEASE_VERSION/octopus-$MAVEN_RELEASE_VERSION-Linux64_standalone.zip"
+        - name: octopus-$MAVEN_RELEASE_VERSION-Linux.zip
+          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$MAVEN_RELEASE_VERSION/octopus-$MAVEN_RELEASE_VERSION-Linux.zip"

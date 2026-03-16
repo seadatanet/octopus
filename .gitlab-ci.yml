@@ -6,21 +6,11 @@ include:
       java_builder_maven_settings_path: ci_settings.xml
       java_builder_tests_enable: true
       java_builder_artifacts_path: "**/target/*.[zip|jar]"
-
-# surcharge des assets de la release gitlab
-release:gitlab:create 🚀:
-  release:
-    name: Release $CI_COMMIT_TAG
-    description: $CI_COMMIT_TAG_MESSAGE
-    tag_name: $CI_COMMIT_TAG
-    ref: $CI_COMMIT_SHA
-    assets:
-      links:
-        - name: octopus-$CI_COMMIT_TAG-Win64_standalone.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Win_standalone.zip"
-        - name: octopus-$CI_COMMIT_TAG-Win.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Win.zip"
-        - name: octopus-$CI_COMMIT_TAG-Linux64_standalone.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Linux64_standalone.zip"
-        - name: octopus-$CI_COMMIT_TAG-Linux.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Linux.zip"
+      release_artifact_name: Version Windows 64 bit
+      release_artifact_url: ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Win.zip
+      release_assets:
+        default: ""
+        description: |
+          Version Windows 64 bit Standalone|${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Win_standalone.zip
+          Version Linux|${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Linux.zip
+          Version Linux Standalone|${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Linux64_standalone.zip

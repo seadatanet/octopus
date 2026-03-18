@@ -1,6 +1,7 @@
 # Dossiers de builds
 target/
 builds/
+bin/
 
 # Fichiers et dossiers generes a la compilation
 *.log

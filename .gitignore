@@ -1,6 +1,7 @@
 # Dossiers de builds
 target/
 builds/
+bin/
 
 # Fichiers et dossiers generes a la compilation
 *.log
@@ -45,7 +46,6 @@ octopusDB/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
@@ -53,3 +53,6 @@ build/
 .vscode/
 
 /.apt_generated_tests/
+
+# Ignorer les dossiers legal problematiques du JRE Linux
+jre/*/legal/

@@ -28,6 +28,7 @@ import org.apache.logging.log4j.core.layout.PatternLayout;
 		printObject = true)
 public final class TextAreaAppender extends AbstractAppender {
 	private static ListView<String> listViewLog;
+	private static final java.util.List<String> messageBuffer = new java.util.ArrayList<>();
 
 
 	private final ReadWriteLock rwLock = new ReentrantReadWriteLock();
@@ -50,12 +51,18 @@ public final class TextAreaAppender extends AbstractAppender {
 		readLock.lock();
 
 		final String message = new String(getLayout().toByteArray(event));
+		final String loggerName = event.getLoggerName();
+		
 		try {
 			Platform.runLater(() -> {
 				try {
 					if (listViewLog!=null){
 						listViewLog.getItems().add(message);
-                           
+					} else {
+						// Buffer messages until ListView is ready
+						synchronized (messageBuffer) {
+							messageBuffer.add(message);
+						}
 					}
 				} catch (final Throwable t) {
 					System.out.println("Error while append to TextArea: "
@@ -64,7 +71,6 @@ public final class TextAreaAppender extends AbstractAppender {
 			});
 		} catch (final IllegalStateException ex) {
 			ex.printStackTrace();
-
 		} finally {
 			readLock.unlock();
 		}
@@ -98,5 +104,13 @@ public final class TextAreaAppender extends AbstractAppender {
 
 	public static void setListView(ListView<String>listView) {
 		listViewLog = listView;
+		
+		// Flush buffered messages to ListView
+		synchronized (messageBuffer) {
+			if (!messageBuffer.isEmpty() && listViewLog != null) {
+				listViewLog.getItems().addAll(messageBuffer);
+				messageBuffer.clear();
+			}
+		}
 	}
 }

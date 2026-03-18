@@ -156,23 +156,23 @@
     "dateModified": "2024-09-19",
     "datePublished": "2015-07-03",
     "description": "OCTOPUS is a multiformat checker, splitter and converter tool for SeaDataNet (SDN) formats. It is a unique and ergonomic tool for many format conversions.",
-    "downloadUrl": "https://files.seadatanet.org/Logiciels/octopus-1.11.1-Win.zip",
+    "downloadUrl": "https://files.seadatanet.org/Logiciels/octopus-1.12.0-Win.zip",
     "funder": {
         "type": "Organization",
         "name": "Ifremer, European Commission under the Horizon 2020 (SeaDataNet projects: SeaDataNet, SeaDataNet 2, SeaDataCloud)"
     },
     "identifier": [
-  {
-    "@type": "PropertyValue",
-    "propertyID": "DOI",
-    "value": "10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0"
-  },
-  {
-    "@type": "PropertyValue",
-    "propertyID": "SWHID",
-    "value": "swh:1:rev:TO_BE_SET_AFTER_TAGGING;origin=https://github.com/seadatanet/octopus"
-  }
-],
+    {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0"
+    },
+    {
+        "@type": "PropertyValue",
+        "propertyID": "SWHID",
+        "value": "swh:1:rev:TO_BE_SET_AFTER_TAGGING;origin=https://github.com/seadatanet/octopus"
+    }
+    ],
     "keywords": [
         "SeaDataNet",
         "check",
@@ -200,5 +200,5 @@
     "programmingLanguage": "Java",
     "releaseNotes": "Conversion of ADCP files from CODAS.",
     "runtimePlatform": "JVM",
-    "version": "1.11.1"
+    "version": "1.12.0"
 }

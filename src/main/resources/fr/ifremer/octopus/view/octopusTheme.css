@@ -46,7 +46,7 @@ RadioButton{
      -fx-text-fill: #ffffff;
 }
 .context-menu {
-    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    /* -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin"; */
     -fx-background-color: #7f007f;
     -fx-background-insets: 0, 1, 2;
     -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;

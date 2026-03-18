@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>true</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>octopus.jar</jar>
+  <outfile>C:\Users\scrouzil.CORP\_PROJECTS_\SEADATANET\octopus_bundle\octopus\build\windows\octopus_win.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>true</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\scrouzil.CORP\_PROJECTS_\SEADATANET\octopus_bundle\octopus\build\Octopus_logo.ico</icon>
+  <classPath>
+    <mainClass>fr.ifremer.octopus.MainApp</mainClass>
+    <cp>octopus.jar</cp>
+    <cp>lib/*</cp>
+ </classPath>
+  <jre>
+    <!-- No bundled JRE: uses the system JRE -->
+    <!-- PREREQUISITE: User must have a JDK with integrated JavaFX (e.g., Zulu FX, Liberica Full) -->
+    <!-- For custom JavaFX installations, use the provided launch_octopus.bat script instead -->
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>true</requires64Bit>
+    <minVersion>11</minVersion>
+    <maxVersion></maxVersion>
+    <opt>--add-modules javafx.controls,javafx.fxml,javafx.web,javafx.base,javafx.graphics</opt>
+    <opt>--add-modules java.xml.crypto</opt>
+  </jre>
+</launch4jConfig>

@@ -75,12 +75,6 @@ public class MainApp extends Application {
 		}else{
 			System.out.println("launch Octopus in GUI mode");
 
-			// add GUI log appender
-			LoggerContext context = (LoggerContext) LogManager.getContext(false);
-			Configuration contextConfiguration = context.getConfiguration();
-			Appender appender = contextConfiguration.getAppender("JavaFXLogger");
-			contextConfiguration.getRootLogger().addAppender(appender, Level.INFO, null);
-			appender.start();
 			launch(args);
 		}
 	}

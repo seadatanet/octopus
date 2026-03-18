@@ -37,7 +37,6 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.CheckBox;
-import javafx.scene.control.CheckBoxBuilder;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableCell;
@@ -268,7 +267,8 @@ public class OctopusOverviewController {
 	@SuppressWarnings("deprecation")
 	public CheckBox getSelectAllCheckBox() {
 		if (selectAllCheckBox == null) {
-			final CheckBox selectAllCheckBox = CheckBoxBuilder.create().build();
+//			final CheckBox selectAllCheckBox = CheckBoxBuilder.create().build();
+			final CheckBox selectAllCheckBox = new CheckBox();
 			selectAllCheckBox.setSelected(true);
 			// Adding EventHandler to the CheckBox to select/deselect all cdis in table.
 			selectAllCheckBox.setOnAction(new EventHandler<ActionEvent>() {

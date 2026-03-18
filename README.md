@@ -127,8 +127,8 @@ Octopus is written in Java.
 
 Octopus is available in 2 versions:
 
-- a "classic" version, without Java. It requires java 1.8.0_131 or greater (but lower than 1.9) already installed in the system.
-- a "standalone" version, with Java 1.8.0_201 bundled into it (located in the `octopus/jre` directory).
+- a "classic" version, without Java. It requires java 11 or greater, with JavaFX 17 or greater, already installed in the system.
+- a "standalone" version, with OpenJDK 11.0.27 and JavaFX 17 bundled into it (located in the `octopus/jre` directory).
 
 ### Supported Environments
 

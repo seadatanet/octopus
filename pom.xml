@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -9,7 +10,7 @@
 	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
 It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
-	<version>1.11.1-SNAPSHOT</version>
+	<version>1.12.0</version>
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
 		<name>ifremer</name>
@@ -42,6 +43,11 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<start-class>fr.ifremer.octopus.MainApp</start-class>
 		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
 		<jrepath>${basedir}/jre</jrepath>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<log4j.version>2.17.1</log4j.version>
+		<javafx.version>17.0.8</javafx.version>
 	</properties>
 
 	<build>
@@ -54,30 +60,49 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		</resources>
 		<plugins>
 
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.3</version>
+			<configuration>
+				<source>${maven.compiler.source}</source>
+				<target>${maven.compiler.target}</target>
+				<!-- Remove/comment this if compiling with a OpenJDK+OpenJFX bundle (ex: Zulu) -->
+				<compilerArgs>
+					<arg>--module-path</arg>
+					<arg>${env.PATH_TO_FX}</arg>
+					<arg>--add-modules</arg>
+					<arg>javafx.base,javafx.graphics,javafx.controls,javafx.fxml,javafx.web</arg>
+				</compilerArgs>
+			</configuration>
+		</plugin>			<!-- To facilitate JavaFX build and run in maven -->
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.3</version>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>0.0.8</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<mainClass>fr.ifremer.octopus.MainApp</mainClass>
 				</configuration>
 			</plugin>
-			
+
+
 			<!-- To access Maven artifact version at runtime -->
 			<plugin>
-			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-jar-plugin</artifactId>
-			    <configuration>
-			        <archive>                   
-			            <manifest>
-			                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-			                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-			            </manifest>
-			        </archive>
-			    </configuration>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+						<manifestEntries>
+							<Multi-Release>false</Multi-Release>
+						</manifestEntries>
+					</archive>
+				</configuration>
 			</plugin>
-						
+
 			<!-- ===================================== ASSEMBLY =========================================== -->
 
 			<!-- Builds the artifact with its dependencies -->
@@ -102,6 +127,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 										<exclude>META-INF/*.SF</exclude>
 										<exclude>META-INF/*.DSA</exclude>
 										<exclude>META-INF/*.RSA</exclude>
+										<exclude>module-info.class</exclude>
 									</excludes>
 								</filter>
 							</filters>
@@ -114,6 +140,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 								</transformer>
 								<!-- Workaround for shade + log4j2 + standalone application JAR -->
 								<transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer" />
+								<!-- Merge META-INF/services files instead of overwriting them (needed for JAX-WS/Axis2 SPI discovery) -->
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+								<!-- Merge jax-ws-catalog.xml entries from all JARs to preserve WSDL local references -->
+								<transformer implementation="org.apache.maven.plugins.shade.resource.XmlAppendingTransformer">
+									<resource>META-INF/jax-ws-catalog.xml</resource>
+								</transformer>
 							</transformers>
 						</configuration>
 					</execution>
@@ -127,28 +159,18 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</dependencies>
 			</plugin>
 
-			<!-- ===================================== JAVADOC =========================================== -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.3</version>
-				<configuration>
-					<docfilessubdirs>true</docfilessubdirs>
-				</configuration>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-						<configuration>
-							<additionalparam>-Xdoclint:none</additionalparam>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-
-			<!-- ===================================== COPY RESOURCES =========================================== -->
+		<!-- ===================================== JAVADOC =========================================== -->
+		<!-- NOTE: Javadoc désactivé car non livré avec l'application.
+		     Pour générer le javadoc si besoin, utilisez: mvn javadoc:javadoc -->
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-javadoc-plugin</artifactId>
+			<version>2.10.3</version>
+			<configuration>
+				<docfilessubdirs>true</docfilessubdirs>
+				<skip>true</skip>
+			</configuration>
+		</plugin>			<!-- ===================================== COPY RESOURCES =========================================== -->
 			<!-- Linux without JRE -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -196,28 +218,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Linux with JRE -->
-			<!-- 			<plugin> -->
-			<!-- 				<artifactId>maven-resources-plugin</artifactId> -->
-			<!-- 				<version>2.7</version> -->
-			<!-- 				<executions> -->
-			<!-- 					<execution> -->
-			<!-- 						<id>copy-resources-linux32</id> -->
-			<!-- 						<phase>install</phase> -->
-			<!-- 						<goals> -->
-			<!-- 							<goal>copy-resources</goal> -->
-			<!-- 						</goals> -->
-			<!-- 						<configuration> -->
-			<!-- 							<outputDirectory>${basedir}/target/livrableLinux32/octopus/resources</outputDirectory> -->
-			<!-- 							<resources> -->
-			<!-- 								<resource> -->
-			<!-- 									<directory>resources</directory> -->
-			<!-- 								</resource> -->
-			<!-- 							</resources> -->
-			<!-- 						</configuration> -->
-			<!-- 					</execution> -->
-			<!-- 				</executions> -->
-			<!-- 			</plugin> -->
-			
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
@@ -229,7 +229,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrableLinux64/octopus/resources</outputDirectory>
+							<outputDirectory>${basedir}/target/livrableLinuxStandalone/octopus/resources</outputDirectory>
 							<resources>
 								<resource>
 									<directory>resources</directory>
@@ -241,27 +241,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Windows with JRE -->
-			<!-- 			<plugin> -->
-			<!-- 				<artifactId>maven-resources-plugin</artifactId> -->
-			<!-- 				<version>2.7</version> -->
-			<!-- 				<executions> -->
-			<!-- 					<execution> -->
-			<!-- 						<id>copy-resource-win32</id> -->
-			<!-- 						<phase>install</phase> -->
-			<!-- 						<goals> -->
-			<!-- 							<goal>copy-resources</goal> -->
-			<!-- 						</goals> -->
-			<!-- 						<configuration> -->
-			<!-- 							<outputDirectory>${basedir}/target/livrableWin32/octopus/resources</outputDirectory> -->
-			<!-- 							<resources> -->
-			<!-- 								<resource> -->
-			<!-- 									<directory>resources</directory> -->
-			<!-- 								</resource> -->
-			<!-- 							</resources> -->
-			<!-- 						</configuration> -->
-			<!-- 					</execution> -->
-			<!-- 				</executions> -->
-			<!-- 			</plugin> -->
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
@@ -273,7 +252,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrableWin64/octopus/resources</outputDirectory>
+							<outputDirectory>${basedir}/target/livrableWinStandalone/octopus/resources</outputDirectory>
 							<resources>
 								<resource>
 									<directory>resources</directory>
@@ -297,6 +276,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</configuration> </execution> </executions> </plugin> -->
 
 			<!-- ===================================== COPY AND RENAME JAR =========================================== -->
+
 			<!-- Linux without JRE -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
@@ -337,25 +317,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</executions>
 			</plugin>
 
-			<!-- Linux with JRE -->
-			<!-- 			<plugin> -->
-			<!-- 				<groupId>com.coderplus.maven.plugins</groupId> -->
-			<!-- 				<artifactId>copy-rename-maven-plugin</artifactId> -->
-			<!-- 				<version>1.0</version> -->
-			<!-- 				<executions> -->
-			<!-- 					<execution> -->
-			<!-- 						<id>copy-jar-linux32</id> -->
-			<!-- 						<phase>install</phase> -->
-			<!-- 						<goals> -->
-			<!-- 							<goal>copy</goal> -->
-			<!-- 						</goals> -->
-			<!-- 						<configuration> -->
-			<!-- 							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> -->
-			<!-- 							<destinationFile>target/livrableLinux32/octopus/octopus.jar</destinationFile> -->
-			<!-- 						</configuration> -->
-			<!-- 					</execution> -->
-			<!-- 				</executions> -->
-			<!-- 			</plugin> -->
+			<!-- Linux with JRE (standalone) -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -369,31 +331,13 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
-							<destinationFile>target/livrableLinux64/octopus/octopus.jar</destinationFile>
+							<destinationFile>target/livrableLinuxStandalone/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
 
-			<!-- Windows with JRE -->
-			<!-- 			<plugin> -->
-			<!-- 				<groupId>com.coderplus.maven.plugins</groupId> -->
-			<!-- 				<artifactId>copy-rename-maven-plugin</artifactId> -->
-			<!-- 				<version>1.0</version> -->
-			<!-- 				<executions> -->
-			<!-- 					<execution> -->
-			<!-- 						<id>copy-jar-win32</id> -->
-			<!-- 						<phase>install</phase> -->
-			<!-- 						<goals> -->
-			<!-- 							<goal>copy</goal> -->
-			<!-- 						</goals> -->
-			<!-- 						<configuration> -->
-			<!-- 							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile> -->
-			<!-- 							<destinationFile>target/livrableWin32/octopus/octopus.jar</destinationFile> -->
-			<!-- 						</configuration> -->
-			<!-- 					</execution> -->
-			<!-- 				</executions> -->
-			<!-- 			</plugin> -->
+			<!-- Windows with JRE (standalone) -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -407,12 +351,11 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<sourceFile>target/${project.artifactId}-${version}.jar</sourceFile>
-							<destinationFile>target/livrableWin64/octopus/octopus.jar</destinationFile>
+							<destinationFile>target/livrableWinStandalone/octopus/octopus.jar</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-
 
 			<!-- <plugin> <groupId>com.coderplus.maven.plugins</groupId> <artifactId>copy-rename-maven-plugin</artifactId> 
 				<version>1.0</version> <executions> <execution> <id>copy-jar-win32</id> <phase>install</phase> 
@@ -436,30 +379,22 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						<id>copy-exe-win</id>
 						<phase>package</phase>
 						<goals>
-							<goal>copy</goal>
-						</goals>
-						<configuration>
-							<sourceFile>build/octopus.exe</sourceFile>
-							<destinationFile>target/livrableWin/octopus/octopus.exe</destinationFile>
-						</configuration>
-
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>com.coderplus.maven.plugins</groupId>
-				<artifactId>copy-rename-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
+						<goal>copy</goal>
+					</goals>
+					<configuration>
+						<sourceFile>build/windows/octopus_win.exe</sourceFile>
+						<destinationFile>target/livrableWin/octopus/octopus.exe</destinationFile>
+					</configuration>
+				</execution>
 					<execution>
-						<id>copy-exe-win-java10</id>
+						<id>copy-bat-win</id>
 						<phase>package</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>build/octopus_java9.exe</sourceFile>
-							<destinationFile>target/livrableWin/octopus/octopus_java9.exe</destinationFile>
+							<sourceFile>build/windows/launch_octopus.bat</sourceFile>
+							<destinationFile>target/livrableWin/octopus/launch_octopus.bat</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
@@ -484,44 +419,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>com.coderplus.maven.plugins</groupId>
-				<artifactId>copy-rename-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<id>copy-exe-linux-java10</id>
-						<phase>package</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
-						<configuration>
-							<sourceFile>build/octopus_java9.sh</sourceFile>
-							<destinationFile>target/livrableLinux/octopus/octopus_java9.sh</destinationFile>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 
 			<!-- Windows with JRE -->
-			<!-- 			<plugin> -->
-			<!-- 				<groupId>com.coderplus.maven.plugins</groupId> -->
-			<!-- 				<artifactId>copy-rename-maven-plugin</artifactId> -->
-			<!-- 				<version>1.0</version> -->
-			<!-- 				<executions> -->
-			<!-- 					<execution> -->
-			<!-- 						<id>copy-exe-win32</id> -->
-			<!-- 						<phase>install</phase> -->
-			<!-- 						<goals> -->
-			<!-- 							<goal>copy</goal> -->
-			<!-- 						</goals> -->
-			<!-- 						<configuration> -->
-			<!-- 							<sourceFile>build/windows/octopus_win32.exe</sourceFile> -->
-			<!-- 							<destinationFile>target/livrableWin32/octopus/octopus.exe</destinationFile> -->
-			<!-- 						</configuration> -->
-			<!-- 					</execution> -->
-			<!-- 				</executions> -->
-			<!-- 			</plugin> -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -534,32 +433,14 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<sourceFile>build/windows/octopus_win64.exe</sourceFile>
-							<destinationFile>target/livrableWin64/octopus/octopus.exe</destinationFile>
+							<sourceFile>build/windows/octopus_winStandalone.exe</sourceFile>
+							<destinationFile>target/livrableWinStandalone/octopus/octopus.exe</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
 
 			<!-- Linux with JRE -->
-			<!-- 			<plugin> -->
-			<!-- 				<groupId>com.coderplus.maven.plugins</groupId> -->
-			<!-- 				<artifactId>copy-rename-maven-plugin</artifactId> -->
-			<!-- 				<version>1.0</version> -->
-			<!-- 				<executions> -->
-			<!-- 					<execution> -->
-			<!-- 						<id>copy-exe-linux32</id> -->
-			<!-- 						<phase>install</phase> -->
-			<!-- 						<goals> -->
-			<!-- 							<goal>copy</goal> -->
-			<!-- 						</goals> -->
-			<!-- 						<configuration> -->
-			<!-- 							<sourceFile>build/linux/octopus.sh</sourceFile> -->
-			<!-- 							<destinationFile>target/livrableLinux32/octopus/octopus.sh</destinationFile> -->
-			<!-- 						</configuration> -->
-			<!-- 					</execution> -->
-			<!-- 				</executions> -->
-			<!-- 			</plugin> -->
 			<plugin>
 				<groupId>com.coderplus.maven.plugins</groupId>
 				<artifactId>copy-rename-maven-plugin</artifactId>
@@ -573,7 +454,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</goals>
 						<configuration>
 							<sourceFile>build/linux/octopus.sh</sourceFile>
-							<destinationFile>target/livrableLinux64/octopus/octopus.sh</destinationFile>
+							<destinationFile>target/livrableLinuxStandalone/octopus/octopus.sh</destinationFile>
 						</configuration>
 					</execution>
 				</executions>
@@ -582,28 +463,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<!-- ===================================== COPY JREs =========================================== -->
 
 			<!-- Windows -->
-			<!-- 			<plugin> -->
-			<!-- 				<artifactId>maven-resources-plugin</artifactId> -->
-			<!-- 				<version>2.7</version> -->
-			<!-- 				<executions> -->
-			<!-- 					<execution> -->
-			<!-- 						<id>copy-jre-win32</id> -->
-			<!-- 						<phase>install</phase> -->
-			<!-- 						<goals> -->
-			<!-- 							<goal>copy-resources</goal> -->
-			<!-- 						</goals> -->
-			<!-- 						<configuration> -->
-			<!-- 							<outputDirectory>${basedir}/target/livrableWin32/octopus/jre</outputDirectory> -->
-			<!-- 							<resources> -->
-			<!-- 								<resource> -->
-			<!-- 									<directory>${jrepath}/windows/32bits</directory> -->
-			<!-- 								</resource> -->
-			<!-- 							</resources> -->
-			<!-- 						</configuration> -->
-			<!-- 					</execution> -->
-			<!-- 				</executions> -->
-			<!-- 			</plugin> -->
-
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
@@ -615,7 +474,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrableWin64/octopus/jre</outputDirectory>
+							<outputDirectory>${basedir}/target/livrableWinStandalone/octopus/jre</outputDirectory>
 							<resources>
 								<resource>
 									<directory>${jrepath}/windows/64bits</directory>
@@ -627,28 +486,6 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			</plugin>
 
 			<!-- Linux -->
-			<!-- 			<plugin> -->
-			<!-- 				<artifactId>maven-resources-plugin</artifactId> -->
-			<!-- 				<version>2.7</version> -->
-			<!-- 				<executions> -->
-			<!-- 					<execution> -->
-			<!-- 						<id>copy-jre-linux32</id> -->
-			<!-- 						<phase>install</phase> -->
-			<!-- 						<goals> -->
-			<!-- 							<goal>copy-resources</goal> -->
-			<!-- 						</goals> -->
-			<!-- 						<configuration> -->
-			<!-- 							<outputDirectory>${basedir}/target/livrableLinux32/octopus/jre</outputDirectory> -->
-			<!-- 							<resources> -->
-			<!-- 								<resource> -->
-			<!-- 									<directory>${jrepath}/linux/32bits</directory> -->
-			<!-- 								</resource> -->
-			<!-- 							</resources> -->
-			<!-- 						</configuration> -->
-			<!-- 					</execution> -->
-			<!-- 				</executions> -->
-			<!-- 			</plugin> -->
-
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
@@ -660,7 +497,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrableLinux64/octopus/jre</outputDirectory>
+							<outputDirectory>${basedir}/target/livrableLinuxStandalone/octopus/jre</outputDirectory>
 							<resources>
 								<resource>
 									<directory>${jrepath}/linux/64bits</directory>
@@ -689,14 +526,14 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</configuration>
 					</execution>
 					<execution>
-						<id>make-Linux64</id>
+						<id>make-Linux-standalone</id>
 						<phase>package</phase>
 						<goals>
 							<goal>single</goal>
 						</goals>
 						<configuration>
 							<descriptors>
-								<descriptor>src/main/assembly/zipLinux64.xml</descriptor>
+								<descriptor>src/main/assembly/zipLinuxStandalone.xml</descriptor>
 							</descriptors>
 						</configuration>
 					</execution>
@@ -713,18 +550,18 @@ It is a unique and ergonomic tool for many format conversions.</description>
 						</configuration>
 					</execution>
 					<execution>
-						<id>make-Win64</id>
+						<id>make-Win-standalone</id>
 						<phase>package</phase>
 						<goals>
 							<goal>single</goal>
 						</goals>
 						<configuration>
 							<descriptors>
-								<descriptor>src/main/assembly/zipWin64.xml</descriptor>
+								<descriptor>src/main/assembly/zipWinStandalone.xml</descriptor>
 							</descriptors>
 						</configuration>
 					</execution>
-				</executions> 
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
@@ -732,14 +569,33 @@ It is a unique and ergonomic tool for many format conversions.</description>
 	<pluginRepositories>
 
 		<pluginRepository>
-            <id>nexus-ifremer-release</id>
-            <name>maven-release</name>
-            <url>https://nexus.ifremer.fr/repository/maven-private-release/</url>
-        </pluginRepository>
+			<id>nexus-ifremer-release</id>
+			<name>maven-release</name>
+			<url>https://nexus.ifremer.fr/repository/maven-private-release/</url>
+		</pluginRepository>
+
+<!--		<pluginRepository>-->
+<!--			<id>nexus-ifremer-release-isival</id>-->
+<!--			<name>maven-release</name>-->
+<!--			<url>https://nexus.isival.ifremer.fr/repository/maven-private-release/</url>-->
+<!--		</pluginRepository>-->
 
 	</pluginRepositories>
 
 	<repositories>
+
+		<!-- Maven Central Repository, for JavaFX dependencies -->
+		<repository>
+			<id>central</id>
+			<name>Maven Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 
 		<repository>
 			<id>nexus-ifremer-release</id>
@@ -753,9 +609,21 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<url>https://nexus.ifremer.fr/repository/maven-private-snapshot/</url>
 		</repository>
 
+<!--		<repository>-->
+<!--			<id>nexus-ifremer-release-isival</id>-->
+<!--			<name>maven-release</name>-->
+<!--			<url>https://nexus.isival.ifremer.fr/repository/maven-private-release/</url>-->
+<!--		</repository>-->
+
+<!--		<repository>-->
+<!--			<id>nexus-ifremer-snapshot-isival</id>-->
+<!--			<name>maven-snapshot</name>-->
+<!--			<url>https://nexus.isival.ifremer.fr/repository/maven-private-snapshot/</url>-->
+<!--		</repository>-->
+
 		<repository>
-		    <id>gitlab-sdn-maven</id>
-		    <url>https://gitlab.ifremer.fr/api/v4/groups/seadatanet/-/packages/maven</url>
+			<id>gitlab-sdn-maven</id>
+			<url>https://gitlab.ifremer.fr/api/v4/groups/seadatanet/-/packages/maven</url>
 		</repository>
 
 	</repositories>
@@ -774,6 +642,30 @@ It is a unique and ergonomic tool for many format conversions.</description>
 
 	</distributionManagement>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.ws.commons.axiom</groupId>
+				<artifactId>axiom-api</artifactId>
+				<version>1.2.22</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ws.commons.axiom</groupId>
+				<artifactId>axiom-impl</artifactId>
+				<version>1.2.22</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ws.commons.axiom</groupId>
+				<artifactId>axiom-dom</artifactId>
+				<version>1.2.22</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ws.commons.axiom</groupId>
+				<artifactId>axiom-c14n</artifactId>
+				<version>1.2.22</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
 
@@ -781,7 +673,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer.seadatanet</groupId>
 			<artifactId>medatlasreader</artifactId>
-			<version>0.45-SNAPSHOT</version>
+			<version>0.46</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.slf4j</groupId>
@@ -793,18 +685,85 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>fr.ifremer</groupId>
 			<artifactId>mgd</artifactId>
-			<version>1.24-SNAPSHOT</version>
+			<version>1.25</version>
 		</dependency>
 
 		<!-- http://www.ifremer.fr/isi/softwareversion/ -> to be installed in a 
 			maven repository -->
 		<dependency>
 			<groupId>fr.ifremer</groupId>
-			<artifactId>SoftwareVersionApi-javax</artifactId>
-			<version>3.1.2</version>
+			<artifactId>SoftwareVersionApi-jakarta</artifactId>
+			<version>4.0.0</version>
 		</dependency>
 
-		<!-- ************************* ****** ************************* -->
+		<!-- JAX-WS runtime pour Java 11+ -->
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>jaxws-rt</artifactId>
+			<version>2.3.5</version>
+		</dependency>
+
+		<!-- Workaround for old xml libs -->
+<!--		<dependency>-->
+<!--			<groupId>xml-resolver</groupId>-->
+<!--			<artifactId>xml-resolver</artifactId>-->
+<!--			<version>1.2</version>-->
+<!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/com.sun.org.apache.xml.internal/resolver -->
+<!--		<dependency>-->
+<!--		    <groupId>com.sun.org.apache.xml.internal</groupId>-->
+<!--		    <artifactId>resolver</artifactId>-->
+<!--		    <version>20050927</version>-->
+<!--		</dependency>-->
+		<!-- SOAP avec Attachments API -->
+		<dependency>
+			<groupId>com.sun.xml.messaging.saaj</groupId>
+			<artifactId>saaj-impl</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>jaxws-ri</artifactId>
+			<version>2.3.5</version>
+			<type>pom</type>
+		</dependency>
+
+	<!-- JavaFX pour Java 11+ -->
+	<!-- IMPORTANT : Les dépendances JavaFX sont commentées car JavaFX est fourni par :
+	     - Le JDK Zulu avec JavaFX pour la compilation/développement dans Eclipse
+	     - Le JRE généré par jlink (avec modules JavaFX) pour les livrables standalone
+	     - L'installation utilisateur (OpenJFX ou JDK avec JavaFX) pour les livrables non-standalone
+	-->
+	<!--
+	<dependency>
+		<groupId>org.openjfx</groupId>
+		<artifactId>javafx-base</artifactId>
+		<version>${javafx.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openjfx</groupId>
+		<artifactId>javafx-controls</artifactId>
+		<version>${javafx.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openjfx</groupId>
+		<artifactId>javafx-graphics</artifactId>
+		<version>${javafx.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openjfx</groupId>
+		<artifactId>javafx-fxml</artifactId>
+		<version>${javafx.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openjfx</groupId>
+		<artifactId>javafx-web</artifactId>
+		<version>${javafx.version}</version>
+	</dependency>
+	-->
+	
+	<!-- ************************* ****** ************************* -->
 		<dependency>
 			<groupId>org.apache.any23</groupId>
 			<artifactId>apache-any23-encoding</artifactId>
@@ -853,6 +812,53 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<version>1.6.3</version>
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.apache.ws.commons.axiom</groupId>
+			<artifactId>axiom-api</artifactId>
+			<version>1.2.22</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.geronimo.specs</groupId>
+					<artifactId>geronimo-stax-api_1.0_spec</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.ws.commons.axiom</groupId>
+			<artifactId>axiom-impl</artifactId>
+			<version>1.2.22</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.geronimo.specs</groupId>
+					<artifactId>geronimo-stax-api_1.0_spec</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.ws.commons.axiom</groupId>
+			<artifactId>axiom-dom</artifactId>
+			<version>1.2.22</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.geronimo.specs</groupId>
+					<artifactId>geronimo-stax-api_1.0_spec</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.ws.commons.axiom</groupId>
+			<artifactId>axiom-c14n</artifactId>
+			<version>1.2.22</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.geronimo.specs</groupId>
+					<artifactId>geronimo-stax-api_1.0_spec</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+
 		<!-- Apache Commons -->
 		<dependency>
 			<groupId>commons-lang</groupId>
@@ -874,12 +880,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
-			<version>2.17.1</version>
+			<version>${log4j.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
-			<version>2.17.1</version>
+			<version>${log4j.version}</version>
 		</dependency>
 
 		<!-- junit -->

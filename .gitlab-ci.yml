@@ -1,30 +1,14 @@
 include:
   - component: $CI_SERVER_FQDN/dev-ops/templates/automatisation/ci-cd/pipeline-java-publish@~latest
     inputs:
+      java_version: 11
+      java_builder_build_image: gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven:eclipse-temurin-11-alpine-javafx17
+      java_builder_maven_settings_path: ci_settings.xml
+      java_builder_tests_enable: true
       java_builder_artifacts_path: "**/target/*.[zip|jar]"
-      java_builder_build_image: "gitlab-registry.ifremer.fr/ifremer-commons/docker/internal-images/maven-javafx:maven-javafx-3.8.5"
-      java_builder_maven_settings_path: "ci_settings.xml"
-      java_builder_tests_enable: "false"
-      java_version: 8
-  # Secret detection
-#  SECRET_DETECTION_HISTORIC_SCAN: "true"
-
-
-
-# surcharge des assets de la release gitlab
-release:gitlab:create 🚀:
-  release:
-    name: Release $RELEASE_VERSION
-    description: $CI_COMMIT_TAG_MESSAGE
-    tag_name: $RELEASE_VERSION
-    ref: $CI_COMMIT_SHA
-    assets:
-      links:
-        - name: octopus-$RELEASE_VERSION-Win64_standalone.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win64_standalone.zip"
-        - name: octopus-$RELEASE_VERSION-Win.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Win.zip"
-        - name: octopus-$RELEASE_VERSION-Linux64_standalone.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Linux64_standalone.zip"
-        - name: octopus-$RELEASE_VERSION-Linux.zip
-          url: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$RELEASE_VERSION/octopus-$RELEASE_VERSION-Linux.zip"
+      release_artifact_name: Version Windows 64 bit
+      release_artifact_url: ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Win.zip
+      release_assets: |
+        Version Windows 64 bit Standalone|${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Win_standalone.zip
+        Version Linux|${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Linux.zip
+        Version Linux Standalone|${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Linux64_standalone.zip

@@ -39,9 +39,13 @@
 
 
 	<Loggers>
+		<Logger name="org.apache.axis2" level="DEBUG" additivity="false">
+			<AppenderRef ref="Console"/>
+			<AppenderRef ref="RollingFile"/>
+		</Logger>
 <!-- 	default level is INFO -->
 		<Root level="INFO">
-<!--             <AppenderRef ref="JavaFXLogger"/> -->
+            <AppenderRef ref="JavaFXLogger"/>
 			<AppenderRef ref="Console" level="INFO" />
 			<AppenderRef ref="RollingFile" level="INFO" />
 			

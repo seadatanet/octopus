@@ -54,5 +54,5 @@ octopusDB/
 
 /.apt_generated_tests/
 
-# Ignorer les dossiers legal problematiques du JRE Linux
-jre/*/legal/
+# JREs déportées sur OwnCloud, téléchargées au build
+jre/

@@ -41,7 +41,7 @@ It is a unique and ergonomic tool for many format conversions.</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>fr.ifremer.octopus.MainApp</start-class>
-		<jre.windows.version>11.0.27</jre.windows.version>
+		<jre.windows.version>11.0.27.1</jre.windows.version>
 		<jre.linux.version>11.0.28</jre.linux.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>

@@ -120,6 +120,7 @@ public class PreferencesManager {
 	}
 
 	public String getInputDefaultPath(){
+		if (preferences.getInputDefaultPath() == null) return null;
 		File f = new File(preferences.getInputDefaultPath());
 		if (f.exists()){
 			return preferences.getInputDefaultPath();
@@ -128,6 +129,7 @@ public class PreferencesManager {
 		}
 	}
 	public String getOutputDefaultPath(){
+		if (preferences.getOutputDefaultPath() == null) return null;
 		File f = new File(preferences.getOutputDefaultPath());
 		if (f.exists()){
 			return preferences.getOutputDefaultPath();

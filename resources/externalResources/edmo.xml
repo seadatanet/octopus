@@ -810,7 +810,7 @@ FitzRoy Road</address>
   <Organisation>
     <n_code>28</n_code>
     <input_date />
-    <last_update>1/21/2026 1:53:39 PM</last_update>
+    <last_update>3/17/2026 1:11:01 PM</last_update>
     <date_created>6/14/1995 12:00:00 AM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -821,17 +821,16 @@ FitzRoy Road</address>
     <Latitude>52.4583</Latitude>
     <collate_id>43</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/43/001347_cefas_logo.gif</logo>
-    <name>Centre for Environment, Fisheries and Aquaculture Science, Lowestoft Laboratory</name>
+    <name>Centre for Environment, Fisheries and Aquaculture Science (Cefas), Lowestoft Laboratory</name>
     <native_name />
     <abbreviated_name>CEFAS</abbreviated_name>
-    <address>Pakefield Road
-</address>
+    <address>Pakefield Road</address>
     <zipcode>NR33 OHT</zipcode>
     <city>Lowestoft</city>
     <state>Suffolk</state>
     <country>11</country>
     <country_c32>GB</country_c32>
-    <email>datamanager@cefas.co.uk</email>
+    <email>data.manager@cefas.gov.uk</email>
     <phone>+44 (0)1502 562244</phone>
     <fax />
     <website>http://www.cefas.co.uk/</website>
@@ -2849,7 +2848,7 @@ NW1 Otto-Hahn-Allee 1
   <Organisation>
     <n_code>96</n_code>
     <input_date />
-    <last_update>1/21/2026 1:53:39 PM</last_update>
+    <last_update>4/28/2026 11:28:40 AM</last_update>
     <date_created>7/20/1995 12:00:00 AM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -2872,7 +2871,7 @@ NW1 Otto-Hahn-Allee 1
     <email>dod@bsh.de</email>
     <phone>+49 40 3190 3410</phone>
     <fax>+49 40 3190 5000</fax>
-    <website>https://www.bsh.de/DE/DATEN/Ozeanographisches_Datenzentrum/ozeanographisches_datenzentrum_node.html</website>
+    <website>https://www.bsh.de/EN/DATA/Climate-and-Sea/Oceanographic_Data_Center/oceanographic_data_center_node.html</website>
     <c_country>Germany</c_country>
   </Organisation>
   <Organisation>
@@ -17575,7 +17574,7 @@ Iv.Javakhishvili Tbilisi State University</address>
   <Organisation>
     <n_code>700</n_code>
     <input_date />
-    <last_update>3/9/2017 8:15:37 AM</last_update>
+    <last_update>4/23/2026 10:38:24 AM</last_update>
     <date_created>5/18/2004 12:00:00 AM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -17588,7 +17587,7 @@ Iv.Javakhishvili Tbilisi State University</address>
     <logo />
     <name>Institute of Oceanography and Fisheries</name>
     <native_name>Institut za Oceanografiju i Ribarstvo</native_name>
-    <abbreviated_name>IOF</abbreviated_name>
+    <abbreviated_name>IOR</abbreviated_name>
     <address>Setaliste Ivana Mestrovica 63
 P.O.BOX 500</address>
     <zipcode>21000</zipcode>
@@ -28651,7 +28650,7 @@ Olbersweg 24</address>
   <Organisation>
     <n_code>1158</n_code>
     <input_date />
-    <last_update>8/9/2010 5:35:24 PM</last_update>
+    <last_update>6/3/2026 9:15:07 AM</last_update>
     <date_created>2/6/2006 1:08:32 PM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -28663,13 +28662,9 @@ Olbersweg 24</address>
     <collate_id>96</collate_id>
     <logo />
     <name>Technical University of Berlin</name>
-    <native_name>Technische Universitaet Berlin</native_name>
+    <native_name>Technische Universität Berlin</native_name>
     <abbreviated_name />
-    <address>Institut fuer Schiffs und Meerestechnik
-sekr. SG 17
-Mulller Breslau Strasse
-Schleuseninsel
-</address>
+    <address>Straße des 17. Juni 135</address>
     <zipcode>10623</zipcode>
     <city>Berlin</city>
     <state />
@@ -30347,7 +30342,7 @@ Campus Universitaire de Dely Ibrahim, Bois des Cars, Dely Ibrahim.
   <Organisation>
     <n_code>1232</n_code>
     <input_date />
-    <last_update>1/21/2026 1:53:39 PM</last_update>
+    <last_update>6/2/2026 4:33:29 PM</last_update>
     <date_created>6/15/2006 4:05:01 PM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -30367,7 +30362,7 @@ Campus Universitaire de Dely Ibrahim, Bois des Cars, Dely Ibrahim.
     <state />
     <country>48</country>
     <country_c32>TN</country_c32>
-    <email>cherif.sammari@instm.rnrt.tn</email>
+    <email>sana.benismail@instm.rnrt.tn</email>
     <phone>+2 16 71 73 04 20</phone>
     <fax>+2 16 71 73 26 22</fax>
     <website>http://www.instm.rnrt.tn</website>
@@ -36424,7 +36419,7 @@ Av. Rovisco Pais, 1
   <Organisation>
     <n_code>1507</n_code>
     <input_date>1/9/2008 3:54:41 PM</input_date>
-    <last_update>6/2/2008 4:26:22 PM</last_update>
+    <last_update>5/19/2026 3:51:03 PM</last_update>
     <date_created>1/9/2008 3:54:41 PM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -36435,19 +36430,22 @@ Av. Rovisco Pais, 1
     <Latitude>53.1484</Latitude>
     <collate_id>96</collate_id>
     <logo />
-    <name>Carl von Ossietzky University of Oldenburg, Institute for Chemistry and Biology of the Marine Environment </name>
-    <native_name>Carl von Ossietzky Universität Oldenburg - Institut für Chemie und Biologie des Meeres</native_name>
+    <name>Institute for Chemistry and Biology of the Marine Environment (ICBM)
+School of Mathematics and Science
+Carl von Ossietzky Universität Oldenburg</name>
+    <native_name>Carl von Ossietzky Universität Oldenburg 
+Institut für Chemie und Biologie des Meeres (ICBM)</native_name>
     <abbreviated_name>ICBM</abbreviated_name>
-    <address>Ammerländer Heerstr. 114-118</address>
+    <address>Ammerländer Heerstraße 114-118</address>
     <zipcode>26129</zipcode>
     <city>Oldenburg</city>
     <state />
     <country>5</country>
     <country_c32>DE</country_c32>
-    <email>koordinator@uni-oldenburg.de</email>
-    <phone>+49 441 798-0</phone>
-    <fax>+49 441 798-3000</fax>
-    <website>https://uol.de/</website>
+    <email>icbm@uol.de</email>
+    <phone>+49 441 798-5279</phone>
+    <fax />
+    <website>https://uol.de/icbm</website>
     <c_country>Germany</c_country>
   </Organisation>
   <Organisation>
@@ -36779,10 +36777,10 @@ Bâtiment G</address>
   <Organisation>
     <n_code>1519</n_code>
     <input_date>2/6/2008 4:53:13 PM</input_date>
-    <last_update>1/21/2026 1:53:39 PM</last_update>
+    <last_update>3/26/2026 12:03:58 PM</last_update>
     <date_created>2/6/2008 4:53:13 PM</date_created>
-    <organisation_exists>1</organisation_exists>
-    <organisation_changed_into />
+    <organisation_exists>0</organisation_exists>
+    <organisation_changed_into>6231</organisation_changed_into>
     <organisation_changed_year />
     <main_parent_organisation>0</main_parent_organisation>
     <related_to_main_organisation />
@@ -36790,7 +36788,7 @@ Bâtiment G</address>
     <Latitude>47.5232</Latitude>
     <collate_id>486</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/486/001399_iav.gif</logo>
-    <name>Institut de l'Aménagement de la Vilaine </name>
+    <name>Institut de l'Aménagement de la Vilaine</name>
     <native_name>Institut de l'Aménagement de la Vilaine</native_name>
     <abbreviated_name>IAV</abbreviated_name>
     <address>Boulevard Bretagne</address>
@@ -56740,7 +56738,7 @@ Koning Albert II-laan 20 bus 5
   <Organisation>
     <n_code>2224</n_code>
     <input_date>9/12/2009 10:08:41 PM</input_date>
-    <last_update>1/21/2026 1:53:39 PM</last_update>
+    <last_update>3/17/2026 2:41:35 PM</last_update>
     <date_created>9/12/2009 10:08:41 PM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -56751,7 +56749,7 @@ Koning Albert II-laan 20 bus 5
     <Latitude>50.6131</Latitude>
     <collate_id>43</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/43/001347_cefas_logo.gif</logo>
-    <name>Centre for Environment, Fisheries and Aquaculture Science, Weymouth Laboratory</name>
+    <name>Centre for Environment, Fisheries and Aquaculture Science (Cefas), Weymouth Laboratory</name>
     <native_name />
     <abbreviated_name>CEFAS</abbreviated_name>
     <address>The Nothe, Barrack Road</address>
@@ -56760,7 +56758,7 @@ Koning Albert II-laan 20 bus 5
     <state>Dorset</state>
     <country>11</country>
     <country_c32>GB</country_c32>
-    <email>datamanager@cefas.co.uk</email>
+    <email>data.manager@cefas.gov.uk</email>
     <phone>+44 (0) 1305 206600</phone>
     <fax />
     <website>http://www.cefas.co.uk</website>
@@ -86905,32 +86903,30 @@ Joseph Proudman Building,
   <Organisation>
     <n_code>3289</n_code>
     <input_date>7/12/2013 4:01:20 PM</input_date>
-    <last_update>1/21/2026 1:53:39 PM</last_update>
+    <last_update>4/8/2026 1:32:31 PM</last_update>
     <date_created>7/12/2013 4:01:20 PM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
     <organisation_changed_year />
     <main_parent_organisation>0</main_parent_organisation>
     <related_to_main_organisation />
-    <Longitude>-6.7683</Longitude>
-    <Latitude>62.0113</Latitude>
+    <Longitude>-6.78265</Longitude>
+    <Latitude>62.0087</Latitude>
     <collate_id>3084</collate_id>
     <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/3084/000524_jardfeingi-logo.jpg</logo>
-    <name>Jardfeingi, the Faroe Islands Earth and Energy Directorate</name>
-    <native_name>Jardfeingi, the Faroe Islands Earth and Energy Directorate</native_name>
+    <name>Jardfeingi, The Faroese Geological Survey</name>
+    <native_name>Jarðfeingi</native_name>
     <abbreviated_name>Jardfeingi</abbreviated_name>
-    <address>Brekkutún 1
-Postsmoga 3059
-</address>
-    <zipcode>FO 110</zipcode>
+    <address>Jóannesar paturssonargøta 32-34, Postboks 3059</address>
+    <zipcode>FO-110</zipcode>
     <city>Tórshavn</city>
     <state />
     <country>78</country>
     <country_c32>FO</country_c32>
     <email>jardfeingi@jardfeingi.fo</email>
     <phone>+298 357000</phone>
-    <fax>+298 357001</fax>
-    <website>http://jf.fo/</website>
+    <fax />
+    <website>http://www.jardfeingi.fo/</website>
     <c_country>Faroe Islands</c_country>
   </Organisation>
   <Organisation>
@@ -107518,11 +107514,11 @@ Place Nicolas Copernic
   <Organisation>
     <n_code>4011</n_code>
     <input_date>4/8/2015 11:36:04 AM</input_date>
-    <last_update>7/11/2018 11:12:11 AM</last_update>
+    <last_update>5/6/2026 12:00:39 PM</last_update>
     <date_created />
     <organisation_exists>0</organisation_exists>
     <organisation_changed_into>4017</organisation_changed_into>
-    <organisation_changed_year />
+    <organisation_changed_year>2002</organisation_changed_year>
     <main_parent_organisation>0</main_parent_organisation>
     <related_to_main_organisation />
     <Longitude />
@@ -107532,8 +107528,7 @@ Place Nicolas Copernic
     <name>State Laboratory of Schleswig-Holstein (Duplicate)</name>
     <native_name>Lebensmittel- Veterinär- und Umweltuntersuchungsamt des Landes Schleswig-Holstein</native_name>
     <abbreviated_name>LVUG</abbreviated_name>
-    <address>Max-Eyth-Str. 5
-</address>
+    <address>Max-Eyth-Str. 5</address>
     <zipcode>24537</zipcode>
     <city>Neumünster</city>
     <state />
@@ -130691,7 +130686,7 @@ Emigrantvägen 2B
   <Organisation>
     <n_code>4830</n_code>
     <input_date>3/27/2018 11:11:59 AM</input_date>
-    <last_update>3/27/2018 11:14:33 AM</last_update>
+    <last_update>4/13/2026 12:44:05 PM</last_update>
     <date_created>3/27/2018 11:11:59 AM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -130702,8 +130697,8 @@ Emigrantvägen 2B
     <Latitude>46.5202</Latitude>
     <collate_id>8888</collate_id>
     <logo />
-    <name>Swiss Federal Institute of Technology in Lausanne</name>
-    <native_name>École Polytechnique Fédérale de Lausanne</native_name>
+    <name>École Polytechnique Fédérale de Lausanne</name>
+    <native_name>Swiss Federal Institute of Technology in Lausanne</native_name>
     <abbreviated_name>EPFL</abbreviated_name>
     <address>Route Cantonale</address>
     <zipcode>1015</zipcode>
@@ -138134,35 +138129,6 @@ Eldo House,
     <phone>+44 (0)1736 365429</phone>
     <fax />
     <website>http://www.cismas.org.uk</website>
-    <c_country>United Kingdom</c_country>
-  </Organisation>
-  <Organisation>
-    <n_code>5089</n_code>
-    <input_date>6/21/2019 3:50:25 PM</input_date>
-    <last_update>8/23/2019 11:17:38 PM</last_update>
-    <date_created>6/21/2019 3:50:25 PM</date_created>
-    <organisation_exists>1</organisation_exists>
-    <organisation_changed_into />
-    <organisation_changed_year />
-    <main_parent_organisation>0</main_parent_organisation>
-    <related_to_main_organisation />
-    <Longitude>-5.0668</Longitude>
-    <Latitude>50.2615</Latitude>
-    <collate_id>43</collate_id>
-    <logo />
-    <name>Cornwall Council</name>
-    <native_name />
-    <abbreviated_name />
-    <address>Kennall Building, Old County Hall, </address>
-    <zipcode>TR1 3AY</zipcode>
-    <city>Truro</city>
-    <state>Cornwall</state>
-    <country>11</country>
-    <country_c32>GB</country_c32>
-    <email>webmanager@cornwall.gov.uk</email>
-    <phone />
-    <fax />
-    <website>https://www.cornwall.gov.uk/</website>
     <c_country>United Kingdom</c_country>
   </Organisation>
   <Organisation>
@@ -160593,7 +160559,7 @@ CS 10070
   <Organisation>
     <n_code>5862</n_code>
     <input_date>11/2/2023 7:18:04 AM</input_date>
-    <last_update>11/2/2023 7:19:31 AM</last_update>
+    <last_update>6/1/2026 9:47:47 AM</last_update>
     <date_created>11/2/2023 7:18:04 AM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -160604,7 +160570,7 @@ CS 10070
     <Latitude>48.9754</Latitude>
     <collate_id>8888</collate_id>
     <logo />
-    <name>Institute of hydrobiology Biology Centre CAS</name>
+    <name>Biology Centre CAS</name>
     <native_name />
     <abbreviated_name />
     <address>Na Sádkách 702/7</address>
@@ -168079,7 +168045,7 @@ Rte des Hydrocarbures</address>
   <Organisation>
     <n_code>6119</n_code>
     <input_date>6/27/2025 3:35:47 PM</input_date>
-    <last_update>6/27/2025 3:35:59 PM</last_update>
+    <last_update>3/25/2026 9:41:25 AM</last_update>
     <date_created>6/27/2025 3:35:47 PM</date_created>
     <organisation_exists>1</organisation_exists>
     <organisation_changed_into />
@@ -171127,5 +171093,818 @@ Parks Road
     <fax>+39 0916890965</fax>
     <website>https://www.pa.ingv.it/</website>
     <c_country>Italy</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6225</n_code>
+    <input_date>3/13/2026 1:32:58 PM</input_date>
+    <last_update>3/13/2026 1:33:06 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>1</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-18.1201</Longitude>
+    <Latitude>65.6851</Latitude>
+    <collate_id>583</collate_id>
+    <logo />
+    <name>Natural Science Institute of Iceland</name>
+    <native_name>Náttúrufræðistofnun</native_name>
+    <abbreviated_name>NATT</abbreviated_name>
+    <address>Borgum við Norðurslóð</address>
+    <zipcode>600</zipcode>
+    <city>Akurey</city>
+    <state />
+    <country>17</country>
+    <country_c32>IS</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.natt.is</website>
+    <c_country>Iceland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6226</n_code>
+    <input_date>3/16/2026 5:11:59 PM</input_date>
+    <last_update>3/16/2026 5:12:04 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation />
+    <related_to_main_organisation />
+    <Longitude>5.37821</Longitude>
+    <Latitude>43.3043</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>University Of  Mediterranean Sea (U2)</name>
+    <native_name>Université De La Méditerranée (U2) / Laboratoire De Chimie De L'Environnement - Umr 7376</native_name>
+    <abbreviated_name />
+    <address>3 place Victor Hugo, Case 29CS 80249</address>
+    <zipcode>13331</zipcode>
+    <city>Marseille Cedex 3</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://lce.univ-amu.fr/fr</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6227</n_code>
+    <input_date>3/17/2026 1:21:02 PM</input_date>
+    <last_update>3/17/2026 1:29:53 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>1</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-5.06895</Longitude>
+    <Latitude>50.2597</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>Cornwall Council</name>
+    <native_name />
+    <abbreviated_name />
+    <address>New County Hall
+Treyew Road</address>
+    <zipcode>TR1 3AY</zipcode>
+    <city>Truro</city>
+    <state>Cornwall</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>planning@cornwall.gov.uk</email>
+    <phone>+44(0)300 1234 100</phone>
+    <fax />
+    <website>http://www.cornwall.gov.uk/</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6228</n_code>
+    <input_date>3/25/2026 9:43:15 AM</input_date>
+    <last_update>3/26/2026 11:16:32 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation />
+    <related_to_main_organisation />
+    <Longitude>-8.4141</Longitude>
+    <Latitude>40.1921</Latitude>
+    <collate_id>590</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/001721_undersee_logo.jpg</logo>
+    <name>UNDERSEE</name>
+    <native_name>UNDERSEE</native_name>
+    <abbreviated_name />
+    <address>IPN - Instituto Pedro Nunes, Rua Pedro Nunes Edifício C</address>
+    <zipcode>3030-199</zipcode>
+    <city>Coimbra</city>
+    <state />
+    <country>27</country>
+    <country_c32>PT</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>http://undersee.io/</website>
+    <c_country>Portugal</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6229</n_code>
+    <input_date>3/25/2026 10:08:19 AM</input_date>
+    <last_update>3/25/2026 10:12:00 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation />
+    <related_to_main_organisation />
+    <Longitude>-27.2307</Longitude>
+    <Latitude>38.6581</Latitude>
+    <collate_id>590</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/590/001722_iaata_logo.png</logo>
+    <name>University of the Azores, Group for Climate, Meteorology and Global Change</name>
+    <native_name>University of the Azores, Group for Climate, Meteorology and Global Change</native_name>
+    <abbreviated_name>GCMMG</abbreviated_name>
+    <address>Rua Capitão João d'Ávila</address>
+    <zipcode>9700-042</zipcode>
+    <city>Angra do Heroísmo</city>
+    <state>Azores</state>
+    <country>27</country>
+    <country_c32>PT</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://iitaa.uac.pt/?i=grupo-clima-meteorologia-e-mudancas-globais</website>
+    <c_country>Portugal</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6230</n_code>
+    <input_date>3/25/2026 10:34:10 AM</input_date>
+    <last_update>3/26/2026 11:17:31 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>1</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>7.26545</Longitude>
+    <Latitude>43.7176</Latitude>
+    <collate_id>486</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/486/001723_univ_azur_logo.png</logo>
+    <name>University Cote d’Azur</name>
+    <native_name>University Cote d’Azur</native_name>
+    <abbreviated_name />
+    <address>Grand Château 28 (administration)</address>
+    <zipcode>06103</zipcode>
+    <city>Nice</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://univ-cotedazur.eu/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6231</n_code>
+    <input_date>3/26/2026 11:24:55 AM</input_date>
+    <last_update>3/26/2026 12:32:56 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation />
+    <related_to_main_organisation />
+    <Longitude>-2.07509</Longitude>
+    <Latitude>47.6552</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Eaux et Vilaine</name>
+    <native_name />
+    <abbreviated_name />
+    <address>8, avenue du Pèlerin</address>
+    <zipcode>35600</zipcode>
+    <city>Redon</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://eaux-et-vilaine.bzh</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6232</n_code>
+    <input_date>4/1/2026 10:12:33 AM</input_date>
+    <last_update>4/1/2026 10:14:05 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>1</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-5.31713</Longitude>
+    <Latitude>35.8912</Latitude>
+    <collate_id>353</collate_id>
+    <logo />
+    <name>Foundation Museo Del Mar de Ceuta</name>
+    <native_name>Fundación Museo del Mar Ceuta</native_name>
+    <abbreviated_name />
+    <address>Muelle España s/n</address>
+    <zipcode>51001</zipcode>
+    <city>Ceuta</city>
+    <state />
+    <country>8</country>
+    <country_c32>ES</country_c32>
+    <email>info@museodelmarceuta.com</email>
+    <phone />
+    <fax />
+    <website>https://www.museodelmarceuta.com/</website>
+    <c_country>Spain</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6233</n_code>
+    <input_date>4/2/2026 6:04:33 PM</input_date>
+    <last_update>4/2/2026 6:04:40 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude />
+    <Latitude />
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Aqua-Terra Lab Kft</name>
+    <native_name>Aqua-Terra Lab Kft</native_name>
+    <abbreviated_name />
+    <address>Wartha Vince street 1/2</address>
+    <zipcode>8200</zipcode>
+    <city>Veszprém</city>
+    <state />
+    <country>249</country>
+    <country_c32>HU</country_c32>
+    <email>info@aquaterra.hu</email>
+    <phone />
+    <fax />
+    <website>https://www.aquaterra.hu/</website>
+    <c_country>Hungary</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6234</n_code>
+    <input_date>4/15/2026 9:58:02 AM</input_date>
+    <last_update>4/15/2026 9:58:26 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>7.76531</Longitude>
+    <Latitude>48.5801</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Cnrs / Institut Terre Et Environnement De Strasbourg - Umr 7063</name>
+    <native_name />
+    <abbreviated_name />
+    <address>5 rue René Descartes</address>
+    <zipcode>67084</zipcode>
+    <city>Strasbourg Cedex</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://ites.unistra.fr/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6235</n_code>
+    <input_date>4/21/2026 5:11:08 PM</input_date>
+    <last_update>4/22/2026 9:13:33 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>8.94135</Longitude>
+    <Latitude>54.315</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Schleswig-Holstein Wadden Sea National Park Authority, State Agency for Coastal Defence, National Park and Marine Conservation Schleswig-Holstein</name>
+    <native_name />
+    <abbreviated_name>NPV LKN.SH</abbreviated_name>
+    <address>Schlossgarten 1</address>
+    <zipcode>25832</zipcode>
+    <city>Tönning</city>
+    <state />
+    <country>5</country>
+    <country_c32>DE</country_c32>
+    <email>nationalpark@lkn.landsh.de</email>
+    <phone />
+    <fax />
+    <website>https://www.schleswig-holstein.de/DE/landesregierung/ministerien-behoerden/LKN/lkn_node</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6236</n_code>
+    <input_date>4/21/2026 5:17:00 PM</input_date>
+    <last_update>4/22/2026 9:12:16 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>7.63528</Longitude>
+    <Latitude>51.9955</Latitude>
+    <collate_id>96</collate_id>
+    <logo />
+    <name>Federation of German Avifaunists</name>
+    <native_name />
+    <abbreviated_name>DDA</abbreviated_name>
+    <address>An den Speichern 2</address>
+    <zipcode>48157</zipcode>
+    <city>Münster</city>
+    <state />
+    <country>5</country>
+    <country_c32>DE</country_c32>
+    <email>info@dda-web.de</email>
+    <phone>0251 - 210 140 00</phone>
+    <fax />
+    <website>https://www.dda-web.de/</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6237</n_code>
+    <input_date>4/22/2026 11:22:01 AM</input_date>
+    <last_update>4/22/2026 11:23:06 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>3.04689</Longitude>
+    <Latitude>43.0253</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Semop Port-La-Nouvelle</name>
+    <native_name>Port De Port-La-Nouvelle / Semop Port-La-Nouvelle</native_name>
+    <abbreviated_name />
+    <address>115 Av. Adolphe Turrel</address>
+    <zipcode>11210</zipcode>
+    <city>Port-la-Nouvelle</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.port-la-nouvelle.com/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6238</n_code>
+    <input_date>4/27/2026 2:04:21 PM</input_date>
+    <last_update>4/27/2026 2:07:11 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>1</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-1.25067</Longitude>
+    <Latitude>51.7591</Latitude>
+    <collate_id>43</collate_id>
+    <logo />
+    <name>University of Oxford, Department of Biology</name>
+    <native_name />
+    <abbreviated_name>Oxford Biology</abbreviated_name>
+    <address>Life and Mind Building</address>
+    <zipcode>OX1 3EL</zipcode>
+    <city>Oxford</city>
+    <state>Oxfordshire</state>
+    <country>11</country>
+    <country_c32>GB</country_c32>
+    <email>comms@biology.ox.ac.uk</email>
+    <phone>+44 (0)1865 275000</phone>
+    <fax />
+    <website>https://www.biology.ox.ac.uk</website>
+    <c_country>United Kingdom</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6239</n_code>
+    <input_date>4/29/2026 2:32:20 PM</input_date>
+    <last_update>4/29/2026 2:33:17 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-4.36961</Longitude>
+    <Latitude>48.3359</Latitude>
+    <collate_id>486</collate_id>
+    <logo />
+    <name>Skravik</name>
+    <native_name>Skravik / Skravik</native_name>
+    <abbreviated_name />
+    <address>Quai An AodPort du Tinduff</address>
+    <zipcode>29470</zipcode>
+    <city>Plougastel-Daoulas</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.skravik.com/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6240</n_code>
+    <input_date>4/30/2026 4:23:20 PM</input_date>
+    <last_update>4/30/2026 4:24:40 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>51.5276</Longitude>
+    <Latitude>25.3274</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Ministry of Environment and Climate Change</name>
+    <native_name>وزارة البيئة والتغير المناخي</native_name>
+    <abbreviated_name>MECC</abbreviated_name>
+    <address>Ministry of Environment and Climate Change, Al Dafna, Doha, Qatar</address>
+    <zipcode>N/A</zipcode>
+    <city>Doha</city>
+    <state />
+    <country>142</country>
+    <country_c32>QA</country_c32>
+    <email>info@mecc.gov.qa</email>
+    <phone>16066</phone>
+    <fax />
+    <website>https://www.mecc.gov.qa/</website>
+    <c_country>Qatar</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6241</n_code>
+    <input_date>4/30/2026 4:31:49 PM</input_date>
+    <last_update>4/30/2026 4:31:59 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>37.2246</Longitude>
+    <Latitude>19.5534</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Faculty of Marine Science and Fisheries, Red Sea University</name>
+    <native_name>Laboratory for Marine Ecological Monitoring</native_name>
+    <abbreviated_name>FMSF-LMEM</abbreviated_name>
+    <address>Port Sudan, P. O. box 24, Sudan</address>
+    <zipcode>3311</zipcode>
+    <city>Port Sudan</city>
+    <state />
+    <country>149</country>
+    <country_c32>SD</country_c32>
+    <email />
+    <phone>249999824559</phone>
+    <fax />
+    <website>https://www.rsu.edu.sd/center/81</website>
+    <c_country>Sudan</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6242</n_code>
+    <input_date>5/5/2026 11:21:58 AM</input_date>
+    <last_update>5/5/2026 11:25:27 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>1</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-6.231</Longitude>
+    <Latitude>53.3315</Latitude>
+    <collate_id>396</collate_id>
+    <logo />
+    <name>EirGrid Plc</name>
+    <native_name />
+    <abbreviated_name />
+    <address>The Oval</address>
+    <zipcode>D04 FW28</zipcode>
+    <city>Dublin</city>
+    <state>County Dublin</state>
+    <country>15</country>
+    <country_c32>IE</country_c32>
+    <email>info@eirgrid.com</email>
+    <phone />
+    <fax />
+    <website>https://www.eirgrid.ie/</website>
+    <c_country>Ireland</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6243</n_code>
+    <input_date>6/1/2026 2:57:08 PM</input_date>
+    <last_update>6/1/2026 3:00:14 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>139.761</Longitude>
+    <Latitude>35.7184</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>University of Tokyo – Earthquake Research Institute</name>
+    <native_name />
+    <abbreviated_name />
+    <address>1-1-1 Yayoi, Bunkyo-ku</address>
+    <zipcode>113-0032</zipcode>
+    <city>Tokyo</city>
+    <state />
+    <country>41</country>
+    <country_c32>JP</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website />
+    <c_country>Japan</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6244</n_code>
+    <input_date>6/4/2026 11:47:52 AM</input_date>
+    <last_update>6/4/2026 11:48:13 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>9.79705</Longitude>
+    <Latitude>53.6764</Latitude>
+    <collate_id>96</collate_id>
+    <logo>https://edmo.seadatanet.org/pictures/sea-search/organisations/96/001724_download.jpeg</logo>
+    <name>GBA Group Environment</name>
+    <native_name>GBA Gesellschaft für Bioanalytik mbH</native_name>
+    <abbreviated_name>GBA</abbreviated_name>
+    <address>Flensburger Straße 15</address>
+    <zipcode>25421</zipcode>
+    <city>Pinneberg</city>
+    <state>Schleswig-Holstein</state>
+    <country>5</country>
+    <country_c32>DE</country_c32>
+    <email>pinneberg@gba-group.de</email>
+    <phone>+49 4101 7946 - 0</phone>
+    <fax>+49 4101 7946 - 260</fax>
+    <website>https://www.gba-group.com/environment/standorte/pinneberg/</website>
+    <c_country>Germany</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6245</n_code>
+    <input_date>6/8/2026 7:35:04 AM</input_date>
+    <last_update>6/8/2026 7:36:36 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>4.79427</Longitude>
+    <Latitude>51.5902</Latitude>
+    <collate_id>575</collate_id>
+    <logo />
+    <name>Stichting Breda University of Applied Sciences</name>
+    <native_name />
+    <abbreviated_name />
+    <address>Mgr. Hopmansstraat 2</address>
+    <zipcode>4817 JS</zipcode>
+    <city>Breda</city>
+    <state />
+    <country>24</country>
+    <country_c32>NL</country_c32>
+    <email>servicedesk@buas.nl</email>
+    <phone />
+    <fax />
+    <website>https://www.buas.nl/en</website>
+    <c_country>Netherlands</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6246</n_code>
+    <input_date>6/8/2026 10:43:22 AM</input_date>
+    <last_update>6/8/2026 10:44:39 AM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-4.57271</Longitude>
+    <Latitude>48.3618</Latitude>
+    <collate_id>483</collate_id>
+    <logo />
+    <name>Eodyn</name>
+    <native_name>Eodyn / Eodyn</native_name>
+    <abbreviated_name />
+    <address>Technopole Brest Iroise115, rue Claude Chappe</address>
+    <zipcode>29280</zipcode>
+    <city>Plouzané</city>
+    <state />
+    <country>10</country>
+    <country_c32>FR</country_c32>
+    <email />
+    <phone />
+    <fax />
+    <website>https://www.eodyn.com/</website>
+    <c_country>France</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6247</n_code>
+    <input_date>6/8/2026 2:02:15 PM</input_date>
+    <last_update>6/8/2026 2:03:19 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-87.2028</Longitude>
+    <Latitude>14.0974</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Center for the Study and Control of Contaminants</name>
+    <native_name>Centro de Estudios y Control de Contaminantes</native_name>
+    <abbreviated_name>CESCCO</abbreviated_name>
+    <address>Barrio Morazan, calle a cerro Juana Lainez, 20 metros de estacion de Bomberos, Edificio de cuatro plantas.</address>
+    <zipcode>11101</zipcode>
+    <city>Tegucigalpa</city>
+    <state />
+    <country>95</country>
+    <country_c32>HN</country_c32>
+    <email>cescco@serna.gob.hn</email>
+    <phone>+504 22311006</phone>
+    <fax />
+    <website>https://serna.gob.hn/direcciones/cescco/</website>
+    <c_country>Honduras</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6248</n_code>
+    <input_date>6/8/2026 2:05:00 PM</input_date>
+    <last_update>6/8/2026 2:05:44 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>104.939</Longitude>
+    <Latitude>11.5544</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Ministry of Environment</name>
+    <native_name />
+    <abbreviated_name>MoE</abbreviated_name>
+    <address>Lot. 503, Street Tonle Basac, Tonle Basac, Chamkarmon</address>
+    <zipcode>12010100</zipcode>
+    <city>Phnom Penh</city>
+    <state />
+    <country>105</country>
+    <country_c32>KH</country_c32>
+    <email>dek.vp@gmail.com</email>
+    <phone>(855)12771172</phone>
+    <fax />
+    <website>https://moe.gov.kh/</website>
+    <c_country>Cambodia</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6249</n_code>
+    <input_date>6/8/2026 2:08:31 PM</input_date>
+    <last_update>6/8/2026 2:09:06 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-6.64083</Longitude>
+    <Latitude>34.1311</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>National Centre for Nuclear Energy, Sciences and Technology (CNESTEN)</name>
+    <native_name>Centre National de l'Energie, des Sciences et des Techniques Nucléaires</native_name>
+    <abbreviated_name>CNESTEN</abbreviated_name>
+    <address>BP 382, RP 10001, Rabat, Morocco</address>
+    <zipcode>10000</zipcode>
+    <city>Rabat</city>
+    <state />
+    <country>22</country>
+    <country_c32>MA</country_c32>
+    <email>contact@cnesten.org.ma</email>
+    <phone>212668483655</phone>
+    <fax />
+    <website>www.cnesten.org.ma</website>
+    <c_country>Morocco</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6250</n_code>
+    <input_date>6/8/2026 2:11:48 PM</input_date>
+    <last_update>6/8/2026 2:11:58 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>18.3911</Longitude>
+    <Latitude>43.8543</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>University of Sarajevo Faculty of Natural Sciences and Mathematics Department of Chemistry</name>
+    <native_name>Univezitet u Sarajevu  Prirodno-matematički fakultet Odsjek za hemiju</native_name>
+    <abbreviated_name>UNSA PMF</abbreviated_name>
+    <address>Zmaja od Bosne 33-35</address>
+    <zipcode>71000</zipcode>
+    <city>Sarajevo</city>
+    <state />
+    <country>232</country>
+    <country_c32>BA</country_c32>
+    <email>pmf@pmf.unsa.ba</email>
+    <phone>38733279865</phone>
+    <fax />
+    <website>https://pmf.unsa.ba/</website>
+    <c_country>Bosnia and Herzegovina</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6251</n_code>
+    <input_date>6/8/2026 2:14:20 PM</input_date>
+    <last_update>6/8/2026 2:14:40 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>-66.883</Longitude>
+    <Latitude>10.403</Latitude>
+    <collate_id>8888</collate_id>
+    <logo />
+    <name>Foundation Institute for Advanced Studies IDEA</name>
+    <native_name>Fundación Instituto de Estudios Avanzados IDEA</native_name>
+    <abbreviated_name>IDEA</abbreviated_name>
+    <address>Carretera Nacional Hoyo de la Puerta, sector Sartenejas, Edificio B, en el Valle de Sartenejas, municipio Baruta, Estado Miranda, Venezuela.</address>
+    <zipcode>1080</zipcode>
+    <city>Baruta</city>
+    <state />
+    <country>174</country>
+    <country_c32>VE</country_c32>
+    <email>atencionalciudadano@idea.gob.ve</email>
+    <phone />
+    <fax />
+    <website>https://idea.gob.ve</website>
+    <c_country>Venezuela, Bolivarian Republic of</c_country>
+  </Organisation>
+  <Organisation>
+    <n_code>6252</n_code>
+    <input_date>6/8/2026 2:17:20 PM</input_date>
+    <last_update>6/8/2026 2:17:25 PM</last_update>
+    <date_created />
+    <organisation_exists>1</organisation_exists>
+    <organisation_changed_into />
+    <organisation_changed_year />
+    <main_parent_organisation>0</main_parent_organisation>
+    <related_to_main_organisation />
+    <Longitude>33.3771</Longitude>
+    <Latitude>35.1598</Latitude>
+    <collate_id>4537</collate_id>
+    <logo />
+    <name>Chemistry Department - University of Cyprus</name>
+    <native_name>Tmima Ximias - Panepistimio Kyprou</native_name>
+    <abbreviated_name>CHEM-UCY</abbreviated_name>
+    <address>Leoforos Panepistimiou 1</address>
+    <zipcode>2109</zipcode>
+    <city>Nicosia</city>
+    <state />
+    <country>4</country>
+    <country_c32>CY</country_c32>
+    <email>paschalidis.ioannis@ucy.ac.cy</email>
+    <phone>+357 22892785</phone>
+    <fax />
+    <website>https://www.ucy.ac.cy/chem</website>
+    <c_country>Cyprus</c_country>
   </Organisation>
 </Organisations>

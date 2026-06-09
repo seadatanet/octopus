@@ -68,12 +68,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				<source>${maven.compiler.source}</source>
 				<target>${maven.compiler.target}</target>
 				<!-- Remove/comment this if compiling with a OpenJDK+OpenJFX bundle (ex: Zulu) -->
-<!--				<compilerArgs>-->
-<!--					<arg>- -module-path</arg>-->
-<!--					<arg>${env.PATH_TO_FX}</arg>-->
-<!--					<arg>- -add-modules</arg>-->
-<!--					<arg>javafx.base,javafx.graphics,javafx.controls,javafx.fxml,javafx.web</arg>-->
-<!--				</compilerArgs>-->
+				<compilerArgs>
+					<arg>--module-path</arg>
+					<arg>${env.PATH_TO_FX}</arg>
+					<arg>--add-modules</arg>
+					<arg>javafx.base,javafx.graphics,javafx.controls,javafx.fxml,javafx.web</arg>
+				</compilerArgs>
 			</configuration>
 		</plugin>			<!-- To facilitate JavaFX build and run in maven -->
 			<plugin>

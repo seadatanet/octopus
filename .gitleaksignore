@@ -5,3 +5,5 @@
 # Faux positifs : noms d'algorithmes Java dans les fichiers de conf JRE (supprimés du projet)
 18c18bf6f22632c8be660a42e174c5d4223b80e4:jre/linux/64bits/conf/security/java.security:generic-api-key:896
 18c18bf6f22632c8be660a42e174c5d4223b80e4:jre/windows/64bits/conf/security/java.security:generic-api-key:897
+db4928d89cfc6ac3c51af53e2cab620343563356:jre/linux/64bits/conf/security/java.security:generic-api-key:896
+db4928d89cfc6ac3c51af53e2cab620343563356:jre/windows/64bits/conf/security/java.security:generic-api-key:897

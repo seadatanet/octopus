@@ -3,7 +3,4 @@
 # Force Linux shell scripts to use LF
 *.sh text eol=lf
 
-# Files in the Linux JRE
-jre/linux/** text eol=lf
-jre/linux/**/* text eol=lf
-jre/linux/64bits/** binary
+# (JRE files removed from source, see pom.xml download-maven-plugin)

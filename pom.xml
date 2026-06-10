@@ -10,7 +10,7 @@
 	<description>Octopus is a multiformat splitter &amp; converter tool for SeaDataNet format.
 It is a unique and ergonomic tool for many format conversions.</description>
 	<packaging>jar</packaging>
-	<version>1.12.0</version>
+	<version>1.12.1</version>
 	<organization>
 		<!-- Used as the 'Vendor' for JNLP generation -->
 		<name>ifremer</name>
@@ -41,8 +41,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>fr.ifremer.octopus.MainApp</start-class>
-		<!-- Setting jrepath is mandatory, if not set please use -d option when launching the build. -->
-		<jrepath>${basedir}/jre</jrepath>
+		<jre.windows.version>11.0.27.1</jre.windows.version>
+		<jre.linux.version>11.0.28</jre.linux.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
@@ -128,6 +128,8 @@ It is a unique and ergonomic tool for many format conversions.</description>
 										<exclude>META-INF/*.DSA</exclude>
 										<exclude>META-INF/*.RSA</exclude>
 										<exclude>module-info.class</exclude>
+										<!-- Split-package fix: org.w3c.dom is provided by java.xml module in Java 11+ -->
+										<exclude>org/w3c/dom/UserDataHandler.class</exclude>
 									</excludes>
 								</filter>
 							</filters>
@@ -460,49 +462,44 @@ It is a unique and ergonomic tool for many format conversions.</description>
 				</executions>
 			</plugin>
 
-			<!-- ===================================== COPY JREs =========================================== -->
+			<!-- ===================================== DOWNLOAD JREs depuis Nexus =========================================== -->
 
-			<!-- Windows -->
 			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
+					<!-- Windows JRE -->
 					<execution>
-						<id>copy-jre-win64</id>
-						<phase>package</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
+						<id>unpack-jre-win64</id>
+						<phase>prepare-package</phase>
+						<goals><goal>unpack</goal></goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrableWinStandalone/octopus/jre</outputDirectory>
-							<resources>
-								<resource>
-									<directory>${jrepath}/windows/64bits</directory>
-								</resource>
-							</resources>
+							<artifactItems>
+								<artifactItem>
+									<groupId>fr.ifremer.octopus.jre</groupId>
+									<artifactId>jre-windows-x64</artifactId>
+									<version>${jre.windows.version}</version>
+									<type>zip</type>
+									<outputDirectory>${project.build.directory}/livrableWinStandalone/octopus/jre</outputDirectory>
+								</artifactItem>
+							</artifactItems>
 						</configuration>
 					</execution>
-				</executions>
-			</plugin>
-
-			<!-- Linux -->
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
-				<executions>
+					<!-- Linux JRE -->
 					<execution>
-						<id>copy-jre-linux64</id>
-						<phase>package</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
+						<id>unpack-jre-linux64</id>
+						<phase>prepare-package</phase>
+						<goals><goal>unpack</goal></goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/livrableLinuxStandalone/octopus/jre</outputDirectory>
-							<resources>
-								<resource>
-									<directory>${jrepath}/linux/64bits</directory>
-								</resource>
-							</resources>
+							<artifactItems>
+								<artifactItem>
+									<groupId>fr.ifremer.octopus.jre</groupId>
+									<artifactId>jre-linux-x64</artifactId>
+									<version>${jre.linux.version}</version>
+									<type>zip</type>
+									<outputDirectory>${project.build.directory}/livrableLinuxStandalone/octopus/jre</outputDirectory>
+								</artifactItem>
+							</artifactItems>
 						</configuration>
 					</execution>
 				</executions>
@@ -793,6 +790,12 @@ It is a unique and ergonomic tool for many format conversions.</description>
 			<groupId>org.apache.axis</groupId>
 			<artifactId>axis</artifactId>
 			<version>1.4</version>
+			<exclusions>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>

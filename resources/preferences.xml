@@ -3,8 +3,6 @@
     <couplingEnabled>false</couplingEnabled>
     <couplingPrefix></couplingPrefix>
     <edmocode></edmocode>
-    <inputDefaultPath></inputDefaultPath>
     <language>uk</language>
-    <outputDefaultPath></outputDefaultPath>
     <theme>1</theme>
 </preferences>

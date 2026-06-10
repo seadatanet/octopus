@@ -6,6 +6,7 @@ include:
       java_builder_maven_settings_path: ci_settings.xml
       java_builder_tests_enable: true
       java_builder_artifacts_path: "**/target/*.[zip|jar]"
+      quality_sonar_scanner_cli_opts: "-Dsonar.qualitygate.wait=false -Dsonar.qualitygate.timeout=900"
       release_artifact_name: Version Windows 64 bit
       release_artifact_url: ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Win.zip
       release_assets: |

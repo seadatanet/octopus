@@ -2,6 +2,8 @@
 # Tokens expirés/révoqués détectés dans l'historique Git
 7f818ceb91d143d9bfee92073b9bb91f5c006d5a:.gitlab-ci.yml:generic-api-key:55
 29631fcfdeea910debb1b34e76a04b5a3c123741:.gitlab-ci.yml:generic-api-key:77
+# Faux positif : mention littérale de l'en-tête de clé privée dans un message de diagnostic CI (echo)
+134729301416bf3da493f471018a09fe8a4a9a94:.gitlab-ci.yml:private-key:81
 # Faux positifs : noms d'algorithmes Java dans les fichiers de conf JRE (supprimés du projet)
 18c18bf6f22632c8be660a42e174c5d4223b80e4:jre/linux/64bits/conf/security/java.security:generic-api-key:896
 18c18bf6f22632c8be660a42e174c5d4223b80e4:jre/windows/64bits/conf/security/java.security:generic-api-key:897

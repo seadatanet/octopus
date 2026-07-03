@@ -13,3 +13,259 @@ include:
         Version Windows 64 bit Standalone|${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Win_standalone.zip
         Version Linux|${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Linux.zip
         Version Linux Standalone|${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven/fr/ifremer/octopus/$CI_COMMIT_TAG/octopus-$CI_COMMIT_TAG-Linux64_standalone.zip
+
+# ==========================================
+# Mirroring SANS historique (SSH)
+# ==========================================
+github_publish_snapshot_ssh:
+  image: gitlab-registry.ifremer.fr/ifremer-commons/docker/images/alpine:3.22
+  resource_group: github_publish_snapshot_ssh
+  
+  variables:
+    GIT_STRATEGY: fetch
+    GITHUB_TARGET_BRANCH: main
+    GITHUB_TEST_REPO: git@github.com:seadatanet/octopus-test-ci-mirror.git
+    GIT_TERMINAL_PROMPT: "0"
+  
+  rules:
+    # Déclenchement MANUEL uniquement.
+    # Le RA peut lancer depuis N'IMPORTE QUELLE branche
+    - when: manual
+      allow_failure: true
+  
+  before_script:
+    - echo "╔════════════════════════════════════════════════════╗"
+    - echo "║  📤 Publication snapshot vers GitHub (SSH)         ║"
+    - echo "╚════════════════════════════════════════════════════╝"
+    - echo ""
+    - test -n "${GITHUB_TEST_REPO:-}" || (echo "❌ Variable GITHUB_TEST_REPO absente"; exit 1)
+    - |
+      if [ -z "${GITHUB_DEPLOY_KEY_TEST_B64:-}" ] && [ -z "${GITHUB_DEPLOY_KEY_TEST:-}" ]; then
+        echo "❌ Variable de clé absente: définir GITHUB_DEPLOY_KEY_TEST_B64 (recommandé) ou GITHUB_DEPLOY_KEY_TEST"
+        exit 1
+      fi
+    
+    # Installation des dépendances
+    - apk add --no-cache openssh-client git bash rsync
+    
+    # Configuration SSH pour GitHub
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "🔐 Configuration de la clé SSH..."
+    - |
+      if [ -n "${GITHUB_DEPLOY_KEY_TEST_B64:-}" ]; then
+        echo "ℹ️  Utilisation de GITHUB_DEPLOY_KEY_TEST_B64"
+        printf '%s' "${GITHUB_DEPLOY_KEY_TEST_B64}" | base64 -d > ~/.ssh/id_ed25519 || {
+          echo "❌ GITHUB_DEPLOY_KEY_TEST_B64 n'est pas un base64 valide"
+          exit 1
+        }
+      elif [ -f "${GITHUB_DEPLOY_KEY_TEST}" ]; then
+        cp "${GITHUB_DEPLOY_KEY_TEST}" ~/.ssh/id_ed25519
+      else
+        printf '%s\n' "${GITHUB_DEPLOY_KEY_TEST}" > ~/.ssh/id_ed25519
+      fi
+    - |
+      # Normalize potential Windows CRLF line endings from CI variables.
+      tr -d '\015' < ~/.ssh/id_ed25519 > ~/.ssh/id_ed25519.normalized
+      mv ~/.ssh/id_ed25519.normalized ~/.ssh/id_ed25519
+    - |
+      # Basic structural checks to provide actionable diagnostics without exposing secrets.
+      if [ ! -s ~/.ssh/id_ed25519 ]; then
+        echo "❌ Fichier de clé vide: GITHUB_DEPLOY_KEY_TEST ne contient aucune donnée exploitable"
+        exit 1
+      fi
+      first_line="$(head -n 1 ~/.ssh/id_ed25519 || true)"
+      last_line="$(tail -n 1 ~/.ssh/id_ed25519 || true)"
+      if echo "$first_line" | grep -Eq '^ssh-(ed25519|rsa) '; then
+        echo "❌ GITHUB_DEPLOY_KEY_TEST semble contenir une CLÉ PUBLIQUE (ssh-ed25519 ...)."
+        echo "   Il faut y mettre la clé privée complète (BEGIN ... PRIVATE KEY ... END)."
+        exit 1
+      fi
+      if echo "$first_line" | grep -Eq '^[A-Za-z]:\\|^/'; then
+        echo "❌ GITHUB_DEPLOY_KEY_TEST semble contenir un CHEMIN de fichier, pas la clé elle-même."
+        echo "   Dans GitLab, la variable de type File doit contenir le contenu de la clé privée."
+        exit 1
+      fi
+      if ! echo "$first_line" | grep -Eq '^-----BEGIN (OPENSSH|RSA|EC|DSA) PRIVATE KEY-----$'; then
+        echo "❌ En-tête de clé non reconnu: '$first_line'"
+        echo "   Attendu: Chaine valide de démarrage de clé privée."
+        exit 1
+      fi
+      if ! echo "$last_line" | grep -Eq '^-----END (OPENSSH|RSA|EC|DSA) PRIVATE KEY-----$'; then
+        echo "❌ Fin de clé non reconnue: '$last_line'"
+        echo "   La clé semble tronquée ou mal collée dans la variable GitLab."
+        exit 1
+      fi
+    - chmod 600 ~/.ssh/id_ed25519
+    - |
+      # Keep the test close to the real workflow: GitHub auth is validated by ssh -T below.
+      true
+    - ssh-keyscan -t ed25519 -p 443 -H ssh.github.com >> ~/.ssh/known_hosts 2>/dev/null
+    - chmod 644 ~/.ssh/known_hosts
+    - |
+      cat > ~/.ssh/config << 'EOF'
+      Host github.com
+        HostName ssh.github.com
+        Port 443
+        User git
+        IdentityFile ~/.ssh/id_ed25519
+        IdentitiesOnly yes
+        StrictHostKeyChecking yes
+      EOF
+    - chmod 600 ~/.ssh/config
+    
+    # Test de connexion
+    - echo "🧪 Test de connexion à GitHub..."
+    - |
+      ssh_test_output="$(ssh -T git@github.com 2>&1 || true)"
+      echo "${ssh_test_output}"
+      echo "${ssh_test_output}" | grep -q "successfully authenticated" || {
+        echo "❌ Auth SSH GitHub échouée (message de succès non détecté)"
+        exit 1
+      }
+    - echo ""
+    
+    # Configuration Git
+    - git config --global user.email "${GITHUB_PUBLISH_USER_EMAIL:-octopus-ci-publisher@ifremer.fr}"
+    - git config --global user.name "${GITHUB_PUBLISH_USER_NAME:-Octopus CI Publisher}"
+  
+  script: |
+    set -eu
+
+    echo "╔════════════════════════════════════════════════════╗"
+    echo "║  🚀 Publication du snapshot (SANS historique)     ║"
+    echo "╚════════════════════════════════════════════════════╝"
+    echo ""
+    echo "⚠️  ATTENTION : Cette opération va :"
+    echo "   1. Extraire le code source de la branche actuelle"
+    echo "   2. Force push vers GitHub main (SANS historique)"
+    echo "   3. Écraser le contenu existant sur GitHub"
+    echo "   4. GitLab reste totalement inchangé"
+    echo ""
+    echo "📊 Informations de publication :"
+    echo "   Projet GitLab  → ${CI_PROJECT_NAME}"
+    echo "   Branche source → ${CI_COMMIT_REF_NAME}"
+    echo "   Commit source  → ${CI_COMMIT_SHORT_SHA}"
+    echo "   Message        → ${CI_COMMIT_TITLE}"
+    echo "   Déclenché par  → ${GITLAB_USER_NAME} (${GITLAB_USER_EMAIL})"
+    echo "   Target GitHub  → ${GITHUB_TARGET_BRANCH}"
+    echo "   Repository     → ${GITHUB_TEST_REPO}"
+    echo ""
+
+    # Définition des répertoires de travail
+    export SRC_DIR="/tmp/github-src"
+    export DST_DIR="/tmp/github-dst"
+    rm -rf "${SRC_DIR}" "${DST_DIR}"
+    mkdir -p "${SRC_DIR}" "${DST_DIR}"
+
+    # Extraction du code source actuel (SANS historique Git)
+    echo "📥 Extraction du code source depuis GitLab (commit ${CI_COMMIT_SHORT_SHA})..."
+    git archive --format=tar "${CI_COMMIT_SHA}" | tar -xf - -C "${SRC_DIR}"
+    echo "✅ Code source extrait ($(du -sh ${SRC_DIR} | cut -f1))"
+    echo ""
+
+    # Clone ou init du repository GitHub
+    echo "📡 Connexion au repository GitHub..."
+    if git ls-remote --exit-code --heads "${GITHUB_TEST_REPO}" "${GITHUB_TARGET_BRANCH}" >/dev/null 2>&1; then
+      git clone --depth 1 --branch "${GITHUB_TARGET_BRANCH}" "${GITHUB_TEST_REPO}" "${DST_DIR}"
+      echo "✅ Branche existante trouvée sur GitHub : ${GITHUB_TARGET_BRANCH}"
+    else
+      echo "⚠️  Branche non trouvée, création d'un nouveau repository"
+      git init "${DST_DIR}"
+      git -C "${DST_DIR}" checkout -b "${GITHUB_TARGET_BRANCH}"
+      git -C "${DST_DIR}" remote add origin "${GITHUB_TEST_REPO}"
+    fi
+    echo ""
+
+    # Configuration Git dans le répertoire de destination
+    git -C "${DST_DIR}" config user.name "${GITHUB_PUBLISH_USER_NAME:-Octopus CI Publisher}"
+    git -C "${DST_DIR}" config user.email "${GITHUB_PUBLISH_USER_EMAIL:-octopus-ci-publisher@ifremer.fr}"
+
+    # Suppression de tout le contenu existant sur GitHub
+    echo "🗑️  Suppression du contenu existant sur GitHub..."
+    git -C "${DST_DIR}" rm -r --ignore-unmatch .
+    echo ""
+
+    # Copie du nouveau code source
+    echo "📋 Copie du nouveau code source..."
+    cp -a "${SRC_DIR}/." "${DST_DIR}/"
+    echo ""
+
+    # Ajout de tous les fichiers
+    echo "➕ Ajout des fichiers au commit..."
+    git -C "${DST_DIR}" add -A
+
+    # Vérification des changements
+    if git -C "${DST_DIR}" diff --cached --quiet; then
+      echo "ℹ️  Aucun changement détecté, publication annulée"
+      exit 0
+    fi
+
+    # Prévenir en amont des limites recommandées GitHub pour les gros fichiers.
+    echo "🔎 Vérification des fichiers volumineux (>50MB)..."
+    large_files="$(find "${SRC_DIR}" -type f -size +51200k 2>/dev/null | sed "s#^${SRC_DIR}/##")"
+    if [ -n "${large_files}" ]; then
+      echo "⚠️  Fichiers >50MB détectés (push possible mais avertissement GitHub probable) :"
+      echo "${large_files}" | sed 's/^/   - /'
+      echo ""
+    fi
+
+    # Statistiques des changements
+    echo ""
+    echo "📊 Statistiques des changements :"
+    git -C "${DST_DIR}" diff --cached --stat
+    echo ""
+
+    # Création du commit
+    COMMIT_MSG="Publish snapshot from ${CI_PROJECT_PATH}@${CI_COMMIT_SHORT_SHA}
+
+    Source branch: ${CI_COMMIT_REF_NAME}
+    Source commit: ${CI_COMMIT_SHA}
+    Commit message: ${CI_COMMIT_TITLE}
+    Published by: ${GITLAB_USER_NAME}
+    Published at: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+    ⚠️ This is a snapshot publication WITHOUT Git history.
+    Original history preserved on GitLab: ${CI_PROJECT_URL}"
+
+    echo "💾 Création du commit de publication..."
+    git -C "${DST_DIR}" commit -m "${COMMIT_MSG}"
+    echo ""
+
+    # Push vers GitHub (force push)
+    echo "📤 Push vers GitHub (force push - écrase l'historique existant)..."
+    git -C "${DST_DIR}" push origin "${GITHUB_TARGET_BRANCH}" --force
+
+    echo ""
+    echo "╔════════════════════════════════════════════════════╗"
+    echo "║  ✅ Publication terminée avec succès !             ║"
+    echo "╚════════════════════════════════════════════════════╝"
+    echo ""
+    echo "🔗 Voir le résultat :"
+    echo "   → https://github.com/seadatanet/octopus-test-ci-mirror"
+    echo ""
+    echo "📝 Résumé :"
+    echo "   • Code source de ${CI_COMMIT_REF_NAME}@${CI_COMMIT_SHORT_SHA} publié"
+    echo "   • Historique Git : NON conservé (snapshot seulement)"
+    echo "   • Fichiers volumineux de l'historique : Évités ✅"
+    echo "   • Repository GitLab : Inchangé ✅"
+    echo ""
+  
+  after_script:
+    # Nettoyage
+    - echo "🧹 Nettoyage..."
+    - rm -f ~/.ssh/id_ed25519
+    - rm -rf ~/.ssh
+    - rm -rf /tmp/github-src /tmp/github-dst
+  
+  environment:
+    name: github-snapshot-test
+    url: https://github.com/seadatanet/octopus-test-ci-mirror
+    deployment_tier: testing
+    on_stop: null
+  
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - stuck_or_timeout_failure

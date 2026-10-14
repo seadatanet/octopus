@@ -3,17 +3,27 @@
 ![OCTOPUS Software logo](https://www.seadatanet.org/var/storage/images/_aliases/fullsize/media/seadatanet2-media/illustrations_sdc_sdn2_sdn/octopus_logo_2/10256-1-eng-GB/Octopus_logo_2.png "OCTOPUS logo")
 
 [![DOI](https://img.shields.io/badge/DOI-10.12770/097e42fc--1aeb--4683--a781--35d92fa307f0-blue?label=DOI)](https://doi.org/10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0)
+[![Latest stable release](https://img.shields.io/github/v/release/seadatanet/octopus?label=latest%20release)](https://github.com/seadatanet/octopus/releases/latest)
+[![Software Heritage](https://img.shields.io/badge/Software%20Heritage-1.12.0-orange)](https://archive.softwareheritage.org/swh:1:dir:f746cd592bf17ba5313c23c35b562367e39d3b32;origin=https://github.com/seadatanet/octopus;visit=swh:1:snp:5f969a1e7f9bc047a22938f32bd0dfbd863bcbd2;anchor=swh:1:rev:25a6b44e24a3b184b814160c7206a459666c50c6)
 
 ## Persistent identifiers
 
 - **DOI**: used for citation of software releases (see DOI badge above).
-- **SWHID**: will be used as a persistent identifier for the source code, enabling precise reference to the archived code in Software Heritage (to be added after tagging v1.12.0).
+- **SWHID (OCTOPUS 1.12.0)**: [`swh:1:dir:f746cd592bf17ba5313c23c35b562367e39d3b32`](https://archive.softwareheritage.org/swh:1:dir:f746cd592bf17ba5313c23c35b562367e39d3b32;origin=https://github.com/seadatanet/octopus;visit=swh:1:snp:5f969a1e7f9bc047a22938f32bd0dfbd863bcbd2;anchor=swh:1:rev:25a6b44e24a3b184b814160c7206a459666c50c6) — persistent identifier for the archived source code directory of release `1.12.0`.
 
 ## Badges
 
 [![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=21&a=32112&i=31101&r=021)
 
-Assesment done on 16/09/2024
+Assessment done on 16/09/2024.
+
+## Latest stable release
+
+- **[Latest release on GitHub](https://github.com/seadatanet/octopus/releases/latest)** — release notes and source code associated with the current stable version.
+- **[Download OCTOPUS 1.12.0](https://www.seadatanet.org/Software/OCTOPUS/Download-Octopus-1.12.0)** — official Windows (64-bit) and Linux packages, with classic and standalone distributions.
+- **[Changelog](changelog.md)** — detailed history of changes.
+
+The classic distribution requires Java 11 or later and JavaFX 17 or later. The standalone distribution includes OpenJDK and JavaFX (see [Requirements](#requirements)).
 
 ## Overview
 
@@ -117,7 +127,7 @@ Java
 
 ### Keywords
 
-SeaDataNet, check, convertion, split, ODV, netCDF, MedAtlas, MGD, EGO, ADCP, ODV variants, Biology (BODV), Flow cytometry, Microlitter in water column (MODV), Microlitter in sediments (SODV), CDI
+SeaDataNet, check, conversion, split, ODV, netCDF, MedAtlas, MGD, EGO, ADCP, ODV variants, Biology (BODV), Flow cytometry, Microlitter in water column (MODV), Microlitter in sediments (SODV), CDI
 
 ## Requirements, Supported Environments, Installation
 
@@ -132,13 +142,13 @@ Octopus is available in 2 versions:
 
 ### Supported Environments
 
-The standalone version version doesn't require Java.
+The standalone version does not require a separate Java installation.
 
 Octopus is available for multiple platforms: Windows, Linux. 32 bits platforms are not supported.
 
 ### Installation
 
-Download the Octopus software from [SeaDataNet portal](https://www.seadatanet.org/Software/OCTOPUS/Download-Octopus-1.10.0).
+Download OCTOPUS from the [official SeaDataNet download page (version 1.12.0)](https://www.seadatanet.org/Software/OCTOPUS/Download-Octopus-1.12.0).
 
 Simply choose the version according to your system (Linux/Windows), and your Java configuration ("classic", "standalone").
 Copy the zip file on your computer and unzip it. The change log is available in OCTOPUS menu `help> about`
